@@ -1,0 +1,14 @@
+{
+  "data_audit_sha256": "1343185bda6ccc55f20aa3e517846f2e7119f3a62b4b2f091e90958404685004",
+  "decision_sha256": "a852f931aa41c2f67b1522651665feb67fad9d92116413553405fb3d9c3ba784",
+  "disclosure": "MODEL-ASSISTED OUTPUT REQUIRES HUMAN AUDIT",
+  "historical_replay_certified": false,
+  "history_sha256": "30f89a8dae945eb588898134b23c1a5276f94dd257ef0ae3f71b9befd670a058",
+  "investigation_profile": "event-delta",
+  "mode": "api",
+  "nomination_mode": "none",
+  "report_sha256": "696fdfa0e6ad4e960e3e4c60b0f44812caaa19e00688f58a80199858dcde0cc2",
+  "retrieval_backend": "local",
+  "run_id": "e98cc3a9-fe80-4db8-99d9-cc23a64c115f",
+  "status": "AWAITING_HUMAN_REVIEW"
+}

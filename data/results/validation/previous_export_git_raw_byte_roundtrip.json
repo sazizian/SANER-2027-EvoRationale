@@ -1,0 +1,8 @@
+{
+  "core_autocrlf_tested": true,
+  "external_remote_configured": false,
+  "files": 1876,
+  "note": "Local staging check before this validation record was added; all then-exported files and the artifact manifest retained exact raw bytes even with core.autocrlf=true. No remote or publication was performed.",
+  "published_to_github": false,
+  "status": "ALL_EXPORTED_FILES_STAGED_WITH_EXACT_RAW_BYTES"
+}

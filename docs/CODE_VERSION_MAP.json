@@ -1,0 +1,64 @@
+{
+  "active_runtime": {
+    "package_version": "4.9.0.dev0",
+    "path": "evorationale",
+    "python_core_sha256": "a0e1b1c0156e48d6a4bdae27a02fdfd9e0bedfbdd05bac79c2db812468937b22"
+  },
+  "historical_release_labels_do_not_replace_hash_identity": true,
+  "historical_sources": [
+    {
+      "package_metadata_version": "4.1.0rc1",
+      "path": "archive/original_v41_workspace",
+      "python_core_sha256": "83655ad7b7a65fc298073384975394f38fbf32b44f91cf443a73993a6b4fd27c",
+      "source_name": "v41_uploaded_workspace"
+    },
+    {
+      "package_metadata_version": "4.2.0.dev0",
+      "path": "archive/code/v42",
+      "python_core_sha256": "ab892cc339348fc6db243ecbdb18cb6df3a4959d5636332d5f2cdb7945fbdd09",
+      "source_name": "v42"
+    },
+    {
+      "package_metadata_version": "4.3.0.dev0",
+      "path": "archive/code/v43",
+      "python_core_sha256": "b53989d04604b68d76eddd92412db89b0b33025637e42649abda27714ee53d94",
+      "source_name": "v43"
+    },
+    {
+      "package_metadata_version": "4.4.0.dev0",
+      "path": "archive/code/v44",
+      "python_core_sha256": "9c7fc66afd6d315c5f02a7b4d88a10ca91c7ad43360fadba9d01cd3e71f91e3e",
+      "source_name": "v44"
+    },
+    {
+      "package_metadata_version": "4.5.0.dev0",
+      "path": "archive/code/v45",
+      "python_core_sha256": "e53412024165759b0dec7c6e45556f6857fca39674faf119acf1290f512f5afd",
+      "source_name": "v45"
+    },
+    {
+      "package_metadata_version": "4.5.0.dev0",
+      "path": "archive/code/v46",
+      "python_core_sha256": "a01d6dd7e5016c9224c0184053981eddd6621dcd3c6963edf3b391396d420d1b",
+      "source_name": "v46"
+    },
+    {
+      "package_metadata_version": "4.7.0.dev0",
+      "path": "archive/code/v47",
+      "python_core_sha256": "ef221a718301ba59167360c696b8b22d8e65b0747baf1c41f058aea54a942a23",
+      "source_name": "v47"
+    },
+    {
+      "package_metadata_version": "4.8.0.dev0",
+      "path": "archive/code/v48",
+      "python_core_sha256": "ab82ceb7019d8534515dd5e6ead0153b3d92bed545c6e251bc64e97d2a816853",
+      "source_name": "v48"
+    },
+    {
+      "package_metadata_version": "4.9.0.dev0",
+      "path": "archive/code/v49",
+      "python_core_sha256": "a0e1b1c0156e48d6a4bdae27a02fdfd9e0bedfbdd05bac79c2db812468937b22",
+      "source_name": "v49"
+    }
+  ]
+}

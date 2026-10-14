@@ -1,0 +1,24 @@
+commit_sha,committer_date,message,source_url
+68952e4476e47eb71321a2c7f92844e602d38d22,2024-06-07T07:07:54Z,InPlacePodVerticalScaling BETA update,https://github.com/kubernetes/enhancements/commit/68952e4476e47eb71321a2c7f92844e602d38d22
+453b7fe01b591860fb8ab5f1effad8a1d67932c6,2024-08-30T21:55:04Z,Rewrite version skew section,https://github.com/kubernetes/enhancements/commit/453b7fe01b591860fb8ab5f1effad8a1d67932c6
+60c5d7995204cb5d5f4fb957fe0770a6e0e2dfdd,2024-09-04T23:57:25Z,Atomic resizes,https://github.com/kubernetes/enhancements/commit/60c5d7995204cb5d5f4fb957fe0770a6e0e2dfdd
+ff92a6e55373625ff15d5a46f3f163a3b1a493f4,2024-09-05T05:11:59Z,Add validation & QOS class sections,https://github.com/kubernetes/enhancements/commit/ff92a6e55373625ff15d5a46f3f163a3b1a493f4
+d774b5cf414b6a13fd53064d157f2b535f25e430,2024-09-07T00:01:50Z,"Sidecars, ResourceQuota, Subresource, etc.",https://github.com/kubernetes/enhancements/commit/d774b5cf414b6a13fd53064d157f2b535f25e430
+1a4fefb34f1b420342acaef12fa53493ef66d03c,2024-09-09T17:12:56Z,Regen TOC,https://github.com/kubernetes/enhancements/commit/1a4fefb34f1b420342acaef12fa53493ef66d03c
+59e0e46649aa623160ad2cdc00e221794e51d1e8,2024-09-11T23:58:18Z,Add details to QOS Class proposal,https://github.com/kubernetes/enhancements/commit/59e0e46649aa623160ad2cdc00e221794e51d1e8
+079aa5fb9ab1a66f09f1d0c841025f7451474265,2024-09-17T00:06:36Z,Update from offline design discussions,https://github.com/kubernetes/enhancements/commit/079aa5fb9ab1a66f09f1d0c841025f7451474265
+a093b5b260a5016a5c6feb4407728fa1d1ee7dfd,2024-09-19T18:52:22Z,Update CRI changes,https://github.com/kubernetes/enhancements/commit/a093b5b260a5016a5c6feb4407728fa1d1ee7dfd
+be6445f8b7a20792aeb9da1f10f8bdb2c79e8194,2024-09-30T20:55:37Z,Move proposed QOS class changes out of beta scope,https://github.com/kubernetes/enhancements/commit/be6445f8b7a20792aeb9da1f10f8bdb2c79e8194
+964260d9c2da8f75423771fffd9989077d4d92aa,2024-09-30T23:54:56Z,"Drop AllocatedResources from beta scope, with new feature gate",https://github.com/kubernetes/enhancements/commit/964260d9c2da8f75423771fffd9989077d4d92aa
+d7b996fdccf555de7d5f951ee536041dd0d20305,2024-10-01T00:06:04Z,Pod level resize design sketch,https://github.com/kubernetes/enhancements/commit/d7b996fdccf555de7d5f951ee536041dd0d20305
+8a67b0703ea080a051a2569f577bccc3641b7954,2024-10-01T04:52:27Z,Cleanup,https://github.com/kubernetes/enhancements/commit/8a67b0703ea080a051a2569f577bccc3641b7954
+e53dcc52b8f0de6988e1dc34e2d6063be053e695,2024-10-03T00:04:06Z,PR feedback,https://github.com/kubernetes/enhancements/commit/e53dcc52b8f0de6988e1dc34e2d6063be053e695
+ad43d22c5b32b2f85ac47ab4a9f04ef6690f2f02,2024-10-04T17:09:44Z,PRR feedback,https://github.com/kubernetes/enhancements/commit/ad43d22c5b32b2f85ac47ab4a9f04ef6690f2f02
+9c2404dcfe491c7ce9917124a34a4ae5fd346969,2024-10-04T21:24:42Z,PRR: feature disablement,https://github.com/kubernetes/enhancements/commit/9c2404dcfe491c7ce9917124a34a4ae5fd346969
+5388d74bfe6bd321ddb0584d2d993c2f82a8795d,2024-10-07T17:01:37Z,Add note about static cpu policy being out of scope,https://github.com/kubernetes/enhancements/commit/5388d74bfe6bd321ddb0584d2d993c2f82a8795d
+8e48db13e95c5d174de95dd864f8c5d1beec3fc5,2024-10-08T14:22:50Z,Propose exposing allocated resources for non-running containers,https://github.com/kubernetes/enhancements/commit/8e48db13e95c5d174de95dd864f8c5d1beec3fc5
+a505a5a279973f011e02292fa858162097b69f51,2024-10-09T15:30:00Z,Notes about scheduler race condition,https://github.com/kubernetes/enhancements/commit/a505a5a279973f011e02292fa858162097b69f51
+da2e849176023b48579bca748ebc4124385e6b05,2024-10-09T15:45:39Z,Additional pros/cons for dropping allocated resources,https://github.com/kubernetes/enhancements/commit/da2e849176023b48579bca748ebc4124385e6b05
+7aee63a5e6f2a79499f4ba74bc032c0ae95a79ad,2024-10-09T15:47:31Z,Update TOC,https://github.com/kubernetes/enhancements/commit/7aee63a5e6f2a79499f4ba74bc032c0ae95a79ad
+ad13b95eae3dd61b2b82788d36fe392e039621be,2024-10-10T00:01:59Z,Add additional GA requirements,https://github.com/kubernetes/enhancements/commit/ad13b95eae3dd61b2b82788d36fe392e039621be
+04de3dac4669f4b2f792c17488c680ce4b144679,2024-10-10T00:07:16Z,Make ResizePolicy mutable,https://github.com/kubernetes/enhancements/commit/04de3dac4669f4b2f792c17488c680ce4b144679

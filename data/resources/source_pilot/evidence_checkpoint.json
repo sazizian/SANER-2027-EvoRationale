@@ -1,0 +1,1573 @@
+{
+  "status": "actual_evidence_checkpoint_no_new_human_judgments",
+  "new_api_calls": 0,
+  "review_stage_status": "stopped_after_six_source_only_pilot_cases",
+  "basis_for_stopping": "Coordinator reports both reviewers do not wish to continue.",
+  "pilot": {
+    "reviewer_1": {
+      "completed_source_cases": 6,
+      "submitted_concerns": 37,
+      "by_case": {
+        "P001": 6,
+        "P002": 6,
+        "P003": 7,
+        "P004": 8,
+        "P005": 4,
+        "P006": 6
+      },
+      "by_priority": {
+        "critical": 6,
+        "high": 19,
+        "medium": 10,
+        "low": 2
+      },
+      "literal_quote_checks": [
+        {
+          "concern_id": "P001-C01",
+          "excel_row": 2,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P001-C02",
+          "excel_row": 3,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P001-C03",
+          "excel_row": 4,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P001-C04",
+          "excel_row": 5,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P001-C05",
+          "excel_row": 6,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P001-C06",
+          "excel_row": 7,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P002-C01",
+          "excel_row": 8,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P002-C02",
+          "excel_row": 9,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P002-C03",
+          "excel_row": 10,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P002-C04",
+          "excel_row": 11,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P002-C05",
+          "excel_row": 12,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P002-C06",
+          "excel_row": 13,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P003-C01",
+          "excel_row": 14,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P003-C02",
+          "excel_row": 15,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P003-C03",
+          "excel_row": 16,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P003-C04",
+          "excel_row": 17,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P003-C05",
+          "excel_row": 18,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P003-C06",
+          "excel_row": 19,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P003-C07",
+          "excel_row": 20,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P004-C01",
+          "excel_row": 21,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P004-C02",
+          "excel_row": 22,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P004-C03",
+          "excel_row": 23,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P004-C04",
+          "excel_row": 24,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P004-C05",
+          "excel_row": 25,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P004-C06",
+          "excel_row": 26,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P004-C07",
+          "excel_row": 27,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P004-C08",
+          "excel_row": 28,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P005-C01",
+          "excel_row": 29,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P005-C02",
+          "excel_row": 30,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P005-C03",
+          "excel_row": 31,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P005-C04",
+          "excel_row": 32,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P006-C01",
+          "excel_row": 34,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P006-C02",
+          "excel_row": 35,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P006-C03",
+          "excel_row": 36,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P006-C04",
+          "excel_row": 37,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P006-C05",
+          "excel_row": 38,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P006-C06",
+          "excel_row": 39,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        }
+      ],
+      "disclosure_as_received": [
+        {
+          "excel_row": 2,
+          "reviewer_name_or_code": "reviewer_1",
+          "professional_role": "No AI assistant (Claude, Anthropic; configured model claude-opus-5-5) do not have permission to use.",
+          "years_relevant_experience": ". The human reviewer's years of experience were  supplied; ",
+          "relationship_to_research_team": "Not supplied. ",
+          "source_review_assistance": " every SourceLog and Concerns entry for P001-P006  was drafted ",
+          "source_review_completed_date": "2026-10-10",
+          "source_review_confirmation": " Confirmation by reviewer_1 (human) ",
+          "other_notes": "instructions.md states that 'A human concern is not a model inventory' and that main-phase reviewers must not consult an AI-generated inventory. Because this pilot concern list was AI-generated, the coordinator should decide whether it can serve as reviewer_1's pilot calibration before any pilot output packets are released. Output-review fields are left blank, as required at phase 1."
+        }
+      ],
+      "comparative_output_judgments_in_this_workbook": 0,
+      "original_sha256": "9f866f06e3bb6431eb6ba990cd8c9772b2c641fe523b89d95c7caeeb199023eb"
+    },
+    "reviewer_2": {
+      "completed_source_cases": 6,
+      "submitted_concerns": 35,
+      "by_case": {
+        "P001": 6,
+        "P002": 5,
+        "P003": 7,
+        "P004": 6,
+        "P005": 4,
+        "P006": 7
+      },
+      "by_priority": {
+        "critical": 5,
+        "high": 19,
+        "medium": 10,
+        "low": 1
+      },
+      "literal_quote_checks": [
+        {
+          "concern_id": "P001-C01",
+          "excel_row": 2,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P001-C02",
+          "excel_row": 3,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P001-C03",
+          "excel_row": 4,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P001-C04",
+          "excel_row": 5,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P001-C05",
+          "excel_row": 6,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P001-C06",
+          "excel_row": 7,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P002-C01",
+          "excel_row": 8,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P002-C02",
+          "excel_row": 9,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P002-C03",
+          "excel_row": 10,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P002-C04",
+          "excel_row": 11,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P002-C05",
+          "excel_row": 12,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P003-C01",
+          "excel_row": 13,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P003-C02",
+          "excel_row": 14,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P003-C03",
+          "excel_row": 15,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P003-C04",
+          "excel_row": 16,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P003-C05",
+          "excel_row": 17,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P003-C06",
+          "excel_row": 18,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P003-C07",
+          "excel_row": 19,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P004-C01",
+          "excel_row": 20,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P004-C02",
+          "excel_row": 21,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P004-C03",
+          "excel_row": 22,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P004-C04",
+          "excel_row": 23,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P004-C05",
+          "excel_row": 24,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P004-C06",
+          "excel_row": 25,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P005-C01",
+          "excel_row": 26,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P005-C02",
+          "excel_row": 27,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P005-C03",
+          "excel_row": 28,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P005-C04",
+          "excel_row": 29,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P006-C01",
+          "excel_row": 31,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P006-C02",
+          "excel_row": 32,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P006-C03",
+          "excel_row": 33,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P006-C04",
+          "excel_row": 34,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P006-C05",
+          "excel_row": 35,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P006-C06",
+          "excel_row": 36,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        },
+        {
+          "concern_id": "P006-C07",
+          "excel_row": 37,
+          "valid_line_references": true,
+          "literal_quote_in_cited_span": true
+        }
+      ],
+      "disclosure_as_received": [
+        {
+          "excel_row": 2,
+          "reviewer_name_or_code": "reviewer_2",
+          "professional_role": "NO AI",
+          "source_review_completed_date": "2026-10-10"
+        }
+      ],
+      "comparative_output_judgments_in_this_workbook": 0,
+      "original_sha256": "6df89efbea38ff98ea0d20ec083cb1a1d4ba0a3e8993ac32c2800858e1bdd930"
+    }
+  },
+  "pilot_interpretation": "72 submitted concern annotations across the same six cases; not 72 unique concerns and not output-quality ratings.",
+  "provenance_notes": {
+    "reviewer_1": "Coordinator reports Alex used AI only for writing. Original Disclosure contains broader/ambiguous AI-generated wording; preserve both records. Independent substantive authorship is not established by the workbook.",
+    "reviewer_2": "NO AI is entered under professional_role; role, experience, relationship and source-review confirmation are missing. Do not infer AI use.",
+    "semantic_cautions": [
+      "P003-C02: truncated fallback implementation does not establish complete verified behavior.",
+      "Reviewer 2 P004-C04: third-party/STL blocks are required after the own header; their position after every other block is not established.",
+      "Reviewer 2 P006-C03/C05: testing not documented is not equivalent to testing not performed."
+    ],
+    "unchanged_submissions": true
+  },
+  "abc_actual": {
+    "cases": 298,
+    "availability": {
+      "A": {
+        "first_attempt_complete_cases": 259,
+        "eventual_complete_cases": 293,
+        "failed_or_pending_cases": 5
+      },
+      "B": {
+        "first_attempt_complete_cases": 298,
+        "eventual_complete_cases": 298,
+        "failed_or_pending_cases": 0
+      },
+      "C": {
+        "first_attempt_complete_cases": 297,
+        "eventual_complete_cases": 298,
+        "failed_or_pending_cases": 0
+      }
+    },
+    "all_attempts_usage": {
+      "A": {
+        "recorded_requests": 944,
+        "input_tokens": 5159949,
+        "output_tokens": 950539,
+        "total_tokens": 6110488
+      },
+      "B": {
+        "recorded_requests": 894,
+        "input_tokens": 4813379,
+        "output_tokens": 892252,
+        "total_tokens": 5705631
+      },
+      "C": {
+        "recorded_requests": 895,
+        "input_tokens": 4340097,
+        "output_tokens": 630641,
+        "total_tokens": 4970738,
+        "attempts_without_usage": 1
+      }
+    },
+    "rejected_attempt_taxonomy": {
+      "rejected_attempts": 55,
+      "by_stage": {
+        "designbridge_stage3": 39,
+        "designbridge_stage1": 16
+      },
+      "overlapping_gate_reasons": {
+        "stage3_trace": 39,
+        "stage3_coverage": 23,
+        "stage1_provenance": 14,
+        "stage1_inventory": 15
+      },
+      "mutually_exclusive_reason_combinations": {
+        "stage3_trace": 16,
+        "stage3_coverage|stage3_trace": 23,
+        "stage1_inventory|stage1_provenance": 13,
+        "stage1_inventory": 2,
+        "stage1_provenance": 1
+      },
+      "issue_occurrences": {
+        "recommendations_not_structurally_traceable": 52,
+        "recommendation_missing_inventory_claim_reference": 49,
+        "stage3_missing_required_inventory_items": 36,
+        "nonmatching_claim_quotes": 16,
+        "inventory_items_not_source_linked": 20,
+        "inventory_references_nonverified_or_unknown_claim": 20,
+        "recommendation_unknown_evidence_id": 3,
+        "recommendation_missing_cited_claim_source_id": 3,
+        "claim_unknown_evidence_id": 1,
+        "claim_empty_quote": 1
+      },
+      "definition": "Gate reasons count attempts. Issue occurrences count individual claims, inventory items, recommendations or coverage entries; multiple reasons can overlap within one attempt. These are mechanical defects, not human semantic judgments."
+    },
+    "fixed_content_B_policy_replay": {
+      "status": "mechanical_fixed_content_policy_replay_only",
+      "condition": "B",
+      "cases": 298,
+      "accepted_if_every_A_predicate_required_on_the_existing_B_chain": 257,
+      "rejected_if_any_A_predicate_failed_on_the_existing_B_chain": 41,
+      "note": "This reuses the diagnostics of fixed B outputs. It neither reruns B with enforcement nor estimates semantic quality or counterfactual generation after rejection."
+    }
+  },
+  "by_thread_kind": [
+    {
+      "kind": "Discussion",
+      "condition": "A",
+      "cases": 116,
+      "first_complete": 103,
+      "eventual_complete": 114,
+      "reported_tokens": 2059402
+    },
+    {
+      "kind": "Discussion",
+      "condition": "B",
+      "cases": 116,
+      "first_complete": 116,
+      "eventual_complete": 116,
+      "reported_tokens": 1931210
+    },
+    {
+      "kind": "Discussion",
+      "condition": "C",
+      "cases": 116,
+      "first_complete": 116,
+      "eventual_complete": 116,
+      "reported_tokens": 1664744
+    },
+    {
+      "kind": "Issue",
+      "condition": "A",
+      "cases": 90,
+      "first_complete": 81,
+      "eventual_complete": 89,
+      "reported_tokens": 1541694
+    },
+    {
+      "kind": "Issue",
+      "condition": "B",
+      "cases": 90,
+      "first_complete": 90,
+      "eventual_complete": 90,
+      "reported_tokens": 1481053
+    },
+    {
+      "kind": "Issue",
+      "condition": "C",
+      "cases": 90,
+      "first_complete": 90,
+      "eventual_complete": 90,
+      "reported_tokens": 1260192
+    },
+    {
+      "kind": "Pull request",
+      "condition": "A",
+      "cases": 92,
+      "first_complete": 75,
+      "eventual_complete": 90,
+      "reported_tokens": 2509392
+    },
+    {
+      "kind": "Pull request",
+      "condition": "B",
+      "cases": 92,
+      "first_complete": 92,
+      "eventual_complete": 92,
+      "reported_tokens": 2293368
+    },
+    {
+      "kind": "Pull request",
+      "condition": "C",
+      "cases": 92,
+      "first_complete": 91,
+      "eventual_complete": 92,
+      "reported_tokens": 2045802
+    }
+  ],
+  "by_source_group": [
+    {
+      "source_group": "organization:tauri-apps",
+      "condition": "A",
+      "cases": 1,
+      "first_complete": 1,
+      "eventual_complete": 1,
+      "reported_tokens": 9161
+    },
+    {
+      "source_group": "organization:tauri-apps",
+      "condition": "B",
+      "cases": 1,
+      "first_complete": 1,
+      "eventual_complete": 1,
+      "reported_tokens": 9268
+    },
+    {
+      "source_group": "organization:tauri-apps",
+      "condition": "C",
+      "cases": 1,
+      "first_complete": 1,
+      "eventual_complete": 1,
+      "reported_tokens": 7584
+    },
+    {
+      "source_group": "repository:Alexhuszagh/rust-lexical",
+      "condition": "A",
+      "cases": 42,
+      "first_complete": 38,
+      "eventual_complete": 42,
+      "reported_tokens": 807665
+    },
+    {
+      "source_group": "repository:Alexhuszagh/rust-lexical",
+      "condition": "B",
+      "cases": 42,
+      "first_complete": 42,
+      "eventual_complete": 42,
+      "reported_tokens": 772580
+    },
+    {
+      "source_group": "repository:Alexhuszagh/rust-lexical",
+      "condition": "C",
+      "cases": 42,
+      "first_complete": 42,
+      "eventual_complete": 42,
+      "reported_tokens": 674999
+    },
+    {
+      "source_group": "repository:Azure/Enterprise-Scale",
+      "condition": "A",
+      "cases": 20,
+      "first_complete": 19,
+      "eventual_complete": 20,
+      "reported_tokens": 380638
+    },
+    {
+      "source_group": "repository:Azure/Enterprise-Scale",
+      "condition": "B",
+      "cases": 20,
+      "first_complete": 20,
+      "eventual_complete": 20,
+      "reported_tokens": 366429
+    },
+    {
+      "source_group": "repository:Azure/Enterprise-Scale",
+      "condition": "C",
+      "cases": 20,
+      "first_complete": 20,
+      "eventual_complete": 20,
+      "reported_tokens": 318179
+    },
+    {
+      "source_group": "repository:DioxusLabs/dioxus",
+      "condition": "A",
+      "cases": 91,
+      "first_complete": 78,
+      "eventual_complete": 89,
+      "reported_tokens": 1605789
+    },
+    {
+      "source_group": "repository:DioxusLabs/dioxus",
+      "condition": "B",
+      "cases": 91,
+      "first_complete": 91,
+      "eventual_complete": 91,
+      "reported_tokens": 1495780
+    },
+    {
+      "source_group": "repository:DioxusLabs/dioxus",
+      "condition": "C",
+      "cases": 91,
+      "first_complete": 91,
+      "eventual_complete": 91,
+      "reported_tokens": 1280348
+    },
+    {
+      "source_group": "repository:Expensify/App",
+      "condition": "A",
+      "cases": 32,
+      "first_complete": 23,
+      "eventual_complete": 31,
+      "reported_tokens": 1075889
+    },
+    {
+      "source_group": "repository:Expensify/App",
+      "condition": "B",
+      "cases": 32,
+      "first_complete": 32,
+      "eventual_complete": 32,
+      "reported_tokens": 958411
+    },
+    {
+      "source_group": "repository:Expensify/App",
+      "condition": "C",
+      "cases": 32,
+      "first_complete": 32,
+      "eventual_complete": 32,
+      "reported_tokens": 872523
+    },
+    {
+      "source_group": "repository:H-uru/Plasma",
+      "condition": "A",
+      "cases": 46,
+      "first_complete": 42,
+      "eventual_complete": 46,
+      "reported_tokens": 840663
+    },
+    {
+      "source_group": "repository:H-uru/Plasma",
+      "condition": "B",
+      "cases": 46,
+      "first_complete": 46,
+      "eventual_complete": 46,
+      "reported_tokens": 808618
+    },
+    {
+      "source_group": "repository:H-uru/Plasma",
+      "condition": "C",
+      "cases": 46,
+      "first_complete": 46,
+      "eventual_complete": 46,
+      "reported_tokens": 688193
+    },
+    {
+      "source_group": "repository:Ivy-Apps/ivy-wallet",
+      "condition": "A",
+      "cases": 1,
+      "first_complete": 1,
+      "eventual_complete": 1,
+      "reported_tokens": 30166
+    },
+    {
+      "source_group": "repository:Ivy-Apps/ivy-wallet",
+      "condition": "B",
+      "cases": 1,
+      "first_complete": 1,
+      "eventual_complete": 1,
+      "reported_tokens": 31328
+    },
+    {
+      "source_group": "repository:Ivy-Apps/ivy-wallet",
+      "condition": "C",
+      "cases": 1,
+      "first_complete": 1,
+      "eventual_complete": 1,
+      "reported_tokens": 27063
+    },
+    {
+      "source_group": "repository:OWASP/ASVS",
+      "condition": "A",
+      "cases": 1,
+      "first_complete": 1,
+      "eventual_complete": 1,
+      "reported_tokens": 16829
+    },
+    {
+      "source_group": "repository:OWASP/ASVS",
+      "condition": "B",
+      "cases": 1,
+      "first_complete": 1,
+      "eventual_complete": 1,
+      "reported_tokens": 16317
+    },
+    {
+      "source_group": "repository:OWASP/ASVS",
+      "condition": "C",
+      "cases": 1,
+      "first_complete": 1,
+      "eventual_complete": 1,
+      "reported_tokens": 14038
+    },
+    {
+      "source_group": "repository:WordPress/gutenberg",
+      "condition": "A",
+      "cases": 7,
+      "first_complete": 5,
+      "eventual_complete": 7,
+      "reported_tokens": 146214
+    },
+    {
+      "source_group": "repository:WordPress/gutenberg",
+      "condition": "B",
+      "cases": 7,
+      "first_complete": 7,
+      "eventual_complete": 7,
+      "reported_tokens": 124480
+    },
+    {
+      "source_group": "repository:WordPress/gutenberg",
+      "condition": "C",
+      "cases": 7,
+      "first_complete": 7,
+      "eventual_complete": 7,
+      "reported_tokens": 110007
+    },
+    {
+      "source_group": "repository:amannn/next-intl",
+      "condition": "A",
+      "cases": 7,
+      "first_complete": 7,
+      "eventual_complete": 7,
+      "reported_tokens": 127624
+    },
+    {
+      "source_group": "repository:amannn/next-intl",
+      "condition": "B",
+      "cases": 7,
+      "first_complete": 7,
+      "eventual_complete": 7,
+      "reported_tokens": 126597
+    },
+    {
+      "source_group": "repository:amannn/next-intl",
+      "condition": "C",
+      "cases": 7,
+      "first_complete": 7,
+      "eventual_complete": 7,
+      "reported_tokens": 108463
+    },
+    {
+      "source_group": "repository:apache/airflow",
+      "condition": "A",
+      "cases": 2,
+      "first_complete": 2,
+      "eventual_complete": 2,
+      "reported_tokens": 50745
+    },
+    {
+      "source_group": "repository:apache/airflow",
+      "condition": "B",
+      "cases": 2,
+      "first_complete": 2,
+      "eventual_complete": 2,
+      "reported_tokens": 50567
+    },
+    {
+      "source_group": "repository:apache/airflow",
+      "condition": "C",
+      "cases": 2,
+      "first_complete": 2,
+      "eventual_complete": 2,
+      "reported_tokens": 44624
+    },
+    {
+      "source_group": "repository:apache/apisix",
+      "condition": "A",
+      "cases": 2,
+      "first_complete": 2,
+      "eventual_complete": 2,
+      "reported_tokens": 56150
+    },
+    {
+      "source_group": "repository:apache/apisix",
+      "condition": "B",
+      "cases": 2,
+      "first_complete": 2,
+      "eventual_complete": 2,
+      "reported_tokens": 56014
+    },
+    {
+      "source_group": "repository:apache/apisix",
+      "condition": "C",
+      "cases": 2,
+      "first_complete": 2,
+      "eventual_complete": 2,
+      "reported_tokens": 51796
+    },
+    {
+      "source_group": "repository:apache/datafusion",
+      "condition": "A",
+      "cases": 3,
+      "first_complete": 3,
+      "eventual_complete": 3,
+      "reported_tokens": 52057
+    },
+    {
+      "source_group": "repository:apache/datafusion",
+      "condition": "B",
+      "cases": 3,
+      "first_complete": 3,
+      "eventual_complete": 3,
+      "reported_tokens": 52134
+    },
+    {
+      "source_group": "repository:apache/datafusion",
+      "condition": "C",
+      "cases": 3,
+      "first_complete": 3,
+      "eventual_complete": 3,
+      "reported_tokens": 43165
+    },
+    {
+      "source_group": "repository:ch4mpy/spring-addons",
+      "condition": "A",
+      "cases": 3,
+      "first_complete": 3,
+      "eventual_complete": 3,
+      "reported_tokens": 59825
+    },
+    {
+      "source_group": "repository:ch4mpy/spring-addons",
+      "condition": "B",
+      "cases": 3,
+      "first_complete": 3,
+      "eventual_complete": 3,
+      "reported_tokens": 59328
+    },
+    {
+      "source_group": "repository:ch4mpy/spring-addons",
+      "condition": "C",
+      "cases": 3,
+      "first_complete": 3,
+      "eventual_complete": 3,
+      "reported_tokens": 50549
+    },
+    {
+      "source_group": "repository:dbt-labs/dbt",
+      "condition": "A",
+      "cases": 2,
+      "first_complete": 1,
+      "eventual_complete": 2,
+      "reported_tokens": 90545
+    },
+    {
+      "source_group": "repository:dbt-labs/dbt",
+      "condition": "B",
+      "cases": 2,
+      "first_complete": 2,
+      "eventual_complete": 2,
+      "reported_tokens": 66207
+    },
+    {
+      "source_group": "repository:dbt-labs/dbt",
+      "condition": "C",
+      "cases": 2,
+      "first_complete": 2,
+      "eventual_complete": 2,
+      "reported_tokens": 59791
+    },
+    {
+      "source_group": "repository:dotnet/wpf",
+      "condition": "A",
+      "cases": 2,
+      "first_complete": 1,
+      "eventual_complete": 2,
+      "reported_tokens": 48492
+    },
+    {
+      "source_group": "repository:dotnet/wpf",
+      "condition": "B",
+      "cases": 2,
+      "first_complete": 2,
+      "eventual_complete": 2,
+      "reported_tokens": 42362
+    },
+    {
+      "source_group": "repository:dotnet/wpf",
+      "condition": "C",
+      "cases": 2,
+      "first_complete": 2,
+      "eventual_complete": 2,
+      "reported_tokens": 37119
+    },
+    {
+      "source_group": "repository:flutter/flutter",
+      "condition": "A",
+      "cases": 1,
+      "first_complete": 1,
+      "eventual_complete": 1,
+      "reported_tokens": 30074
+    },
+    {
+      "source_group": "repository:flutter/flutter",
+      "condition": "B",
+      "cases": 1,
+      "first_complete": 1,
+      "eventual_complete": 1,
+      "reported_tokens": 28863
+    },
+    {
+      "source_group": "repository:flutter/flutter",
+      "condition": "C",
+      "cases": 1,
+      "first_complete": 1,
+      "eventual_complete": 1,
+      "reported_tokens": 26829
+    },
+    {
+      "source_group": "repository:grpc/grpc-dotnet",
+      "condition": "A",
+      "cases": 1,
+      "first_complete": 1,
+      "eventual_complete": 1,
+      "reported_tokens": 14042
+    },
+    {
+      "source_group": "repository:grpc/grpc-dotnet",
+      "condition": "B",
+      "cases": 1,
+      "first_complete": 1,
+      "eventual_complete": 1,
+      "reported_tokens": 13207
+    },
+    {
+      "source_group": "repository:grpc/grpc-dotnet",
+      "condition": "C",
+      "cases": 1,
+      "first_complete": 1,
+      "eventual_complete": 1,
+      "reported_tokens": 11674
+    },
+    {
+      "source_group": "repository:k2-fsa/icefall",
+      "condition": "A",
+      "cases": 1,
+      "first_complete": 1,
+      "eventual_complete": 1,
+      "reported_tokens": 5846
+    },
+    {
+      "source_group": "repository:k2-fsa/icefall",
+      "condition": "B",
+      "cases": 1,
+      "first_complete": 1,
+      "eventual_complete": 1,
+      "reported_tokens": 5616
+    },
+    {
+      "source_group": "repository:k2-fsa/icefall",
+      "condition": "C",
+      "cases": 1,
+      "first_complete": 1,
+      "eventual_complete": 1,
+      "reported_tokens": 4113
+    },
+    {
+      "source_group": "repository:keycloak/keycloak",
+      "condition": "A",
+      "cases": 4,
+      "first_complete": 4,
+      "eventual_complete": 4,
+      "reported_tokens": 77654
+    },
+    {
+      "source_group": "repository:keycloak/keycloak",
+      "condition": "B",
+      "cases": 4,
+      "first_complete": 4,
+      "eventual_complete": 4,
+      "reported_tokens": 78038
+    },
+    {
+      "source_group": "repository:keycloak/keycloak",
+      "condition": "C",
+      "cases": 4,
+      "first_complete": 4,
+      "eventual_complete": 4,
+      "reported_tokens": 66755
+    },
+    {
+      "source_group": "repository:nank1ro/flutter-shadcn-ui",
+      "condition": "A",
+      "cases": 1,
+      "first_complete": 1,
+      "eventual_complete": 1,
+      "reported_tokens": 34750
+    },
+    {
+      "source_group": "repository:nank1ro/flutter-shadcn-ui",
+      "condition": "B",
+      "cases": 1,
+      "first_complete": 1,
+      "eventual_complete": 1,
+      "reported_tokens": 34628
+    },
+    {
+      "source_group": "repository:nank1ro/flutter-shadcn-ui",
+      "condition": "C",
+      "cases": 1,
+      "first_complete": 0,
+      "eventual_complete": 1,
+      "reported_tokens": 31931
+    },
+    {
+      "source_group": "repository:openbao/openbao",
+      "condition": "A",
+      "cases": 1,
+      "first_complete": 1,
+      "eventual_complete": 1,
+      "reported_tokens": 20977
+    },
+    {
+      "source_group": "repository:openbao/openbao",
+      "condition": "B",
+      "cases": 1,
+      "first_complete": 1,
+      "eventual_complete": 1,
+      "reported_tokens": 20782
+    },
+    {
+      "source_group": "repository:openbao/openbao",
+      "condition": "C",
+      "cases": 1,
+      "first_complete": 1,
+      "eventual_complete": 1,
+      "reported_tokens": 18361
+    },
+    {
+      "source_group": "repository:pocketbase/pocketbase",
+      "condition": "A",
+      "cases": 1,
+      "first_complete": 1,
+      "eventual_complete": 1,
+      "reported_tokens": 21512
+    },
+    {
+      "source_group": "repository:pocketbase/pocketbase",
+      "condition": "B",
+      "cases": 1,
+      "first_complete": 1,
+      "eventual_complete": 1,
+      "reported_tokens": 20485
+    },
+    {
+      "source_group": "repository:pocketbase/pocketbase",
+      "condition": "C",
+      "cases": 1,
+      "first_complete": 1,
+      "eventual_complete": 1,
+      "reported_tokens": 18209
+    },
+    {
+      "source_group": "repository:pointfreeco/swift-composable-architecture",
+      "condition": "A",
+      "cases": 2,
+      "first_complete": 2,
+      "eventual_complete": 2,
+      "reported_tokens": 35984
+    },
+    {
+      "source_group": "repository:pointfreeco/swift-composable-architecture",
+      "condition": "B",
+      "cases": 2,
+      "first_complete": 2,
+      "eventual_complete": 2,
+      "reported_tokens": 35537
+    },
+    {
+      "source_group": "repository:pointfreeco/swift-composable-architecture",
+      "condition": "C",
+      "cases": 2,
+      "first_complete": 2,
+      "eventual_complete": 2,
+      "reported_tokens": 31204
+    },
+    {
+      "source_group": "repository:prisma/orm",
+      "condition": "A",
+      "cases": 2,
+      "first_complete": 2,
+      "eventual_complete": 2,
+      "reported_tokens": 62197
+    },
+    {
+      "source_group": "repository:prisma/orm",
+      "condition": "B",
+      "cases": 2,
+      "first_complete": 2,
+      "eventual_complete": 2,
+      "reported_tokens": 62339
+    },
+    {
+      "source_group": "repository:prisma/orm",
+      "condition": "C",
+      "cases": 2,
+      "first_complete": 2,
+      "eventual_complete": 2,
+      "reported_tokens": 57468
+    },
+    {
+      "source_group": "repository:pulumi/pulumi-kubernetes-operator",
+      "condition": "A",
+      "cases": 1,
+      "first_complete": 1,
+      "eventual_complete": 1,
+      "reported_tokens": 11218
+    },
+    {
+      "source_group": "repository:pulumi/pulumi-kubernetes-operator",
+      "condition": "B",
+      "cases": 1,
+      "first_complete": 1,
+      "eventual_complete": 1,
+      "reported_tokens": 11134
+    },
+    {
+      "source_group": "repository:pulumi/pulumi-kubernetes-operator",
+      "condition": "C",
+      "cases": 1,
+      "first_complete": 1,
+      "eventual_complete": 1,
+      "reported_tokens": 9044
+    },
+    {
+      "source_group": "repository:rails/rails",
+      "condition": "A",
+      "cases": 5,
+      "first_complete": 3,
+      "eventual_complete": 3,
+      "reported_tokens": 127273
+    },
+    {
+      "source_group": "repository:rails/rails",
+      "condition": "B",
+      "cases": 5,
+      "first_complete": 5,
+      "eventual_complete": 5,
+      "reported_tokens": 98035
+    },
+    {
+      "source_group": "repository:rails/rails",
+      "condition": "C",
+      "cases": 5,
+      "first_complete": 5,
+      "eventual_complete": 5,
+      "reported_tokens": 86537
+    },
+    {
+      "source_group": "repository:razshare/sveltekit-sse",
+      "condition": "A",
+      "cases": 1,
+      "first_complete": 1,
+      "eventual_complete": 1,
+      "reported_tokens": 21598
+    },
+    {
+      "source_group": "repository:razshare/sveltekit-sse",
+      "condition": "B",
+      "cases": 1,
+      "first_complete": 1,
+      "eventual_complete": 1,
+      "reported_tokens": 21148
+    },
+    {
+      "source_group": "repository:razshare/sveltekit-sse",
+      "condition": "C",
+      "cases": 1,
+      "first_complete": 1,
+      "eventual_complete": 1,
+      "reported_tokens": 18797
+    },
+    {
+      "source_group": "repository:reactwg/react-native-new-architecture",
+      "condition": "A",
+      "cases": 2,
+      "first_complete": 2,
+      "eventual_complete": 2,
+      "reported_tokens": 34867
+    },
+    {
+      "source_group": "repository:reactwg/react-native-new-architecture",
+      "condition": "B",
+      "cases": 2,
+      "first_complete": 2,
+      "eventual_complete": 2,
+      "reported_tokens": 34996
+    },
+    {
+      "source_group": "repository:reactwg/react-native-new-architecture",
+      "condition": "C",
+      "cases": 2,
+      "first_complete": 2,
+      "eventual_complete": 2,
+      "reported_tokens": 32494
+    },
+    {
+      "source_group": "repository:streetcomplete/StreetComplete",
+      "condition": "A",
+      "cases": 3,
+      "first_complete": 3,
+      "eventual_complete": 3,
+      "reported_tokens": 37946
+    },
+    {
+      "source_group": "repository:streetcomplete/StreetComplete",
+      "condition": "B",
+      "cases": 3,
+      "first_complete": 3,
+      "eventual_complete": 3,
+      "reported_tokens": 38139
+    },
+    {
+      "source_group": "repository:streetcomplete/StreetComplete",
+      "condition": "C",
+      "cases": 3,
+      "first_complete": 3,
+      "eventual_complete": 3,
+      "reported_tokens": 30959
+    },
+    {
+      "source_group": "repository:symfony/symfony",
+      "condition": "A",
+      "cases": 2,
+      "first_complete": 2,
+      "eventual_complete": 2,
+      "reported_tokens": 30346
+    },
+    {
+      "source_group": "repository:symfony/symfony",
+      "condition": "B",
+      "cases": 2,
+      "first_complete": 2,
+      "eventual_complete": 2,
+      "reported_tokens": 30908
+    },
+    {
+      "source_group": "repository:symfony/symfony",
+      "condition": "C",
+      "cases": 2,
+      "first_complete": 2,
+      "eventual_complete": 2,
+      "reported_tokens": 24786
+    },
+    {
+      "source_group": "repository:tauri-apps/tauri",
+      "condition": "A",
+      "cases": 1,
+      "first_complete": 1,
+      "eventual_complete": 1,
+      "reported_tokens": 34332
+    },
+    {
+      "source_group": "repository:tauri-apps/tauri",
+      "condition": "B",
+      "cases": 1,
+      "first_complete": 1,
+      "eventual_complete": 1,
+      "reported_tokens": 35220
+    },
+    {
+      "source_group": "repository:tauri-apps/tauri",
+      "condition": "C",
+      "cases": 1,
+      "first_complete": 1,
+      "eventual_complete": 1,
+      "reported_tokens": 32041
+    },
+    {
+      "source_group": "repository:thanos-io/thanos",
+      "condition": "A",
+      "cases": 1,
+      "first_complete": 1,
+      "eventual_complete": 1,
+      "reported_tokens": 17710
+    },
+    {
+      "source_group": "repository:thanos-io/thanos",
+      "condition": "B",
+      "cases": 1,
+      "first_complete": 1,
+      "eventual_complete": 1,
+      "reported_tokens": 17234
+    },
+    {
+      "source_group": "repository:thanos-io/thanos",
+      "condition": "C",
+      "cases": 1,
+      "first_complete": 1,
+      "eventual_complete": 1,
+      "reported_tokens": 13484
+    },
+    {
+      "source_group": "repository:tokio-rs/tokio",
+      "condition": "A",
+      "cases": 1,
+      "first_complete": 1,
+      "eventual_complete": 1,
+      "reported_tokens": 6607
+    },
+    {
+      "source_group": "repository:tokio-rs/tokio",
+      "condition": "B",
+      "cases": 1,
+      "first_complete": 1,
+      "eventual_complete": 1,
+      "reported_tokens": 6278
+    },
+    {
+      "source_group": "repository:tokio-rs/tokio",
+      "condition": "C",
+      "cases": 1,
+      "first_complete": 1,
+      "eventual_complete": 1,
+      "reported_tokens": 4844
+    },
+    {
+      "source_group": "repository:valkey-io/valkey",
+      "condition": "A",
+      "cases": 2,
+      "first_complete": 1,
+      "eventual_complete": 2,
+      "reported_tokens": 27705
+    },
+    {
+      "source_group": "repository:valkey-io/valkey",
+      "condition": "B",
+      "cases": 2,
+      "first_complete": 2,
+      "eventual_complete": 2,
+      "reported_tokens": 22883
+    },
+    {
+      "source_group": "repository:valkey-io/valkey",
+      "condition": "C",
+      "cases": 2,
+      "first_complete": 2,
+      "eventual_complete": 2,
+      "reported_tokens": 16983
+    },
+    {
+      "source_group": "repository:w3c/activitystreams",
+      "condition": "A",
+      "cases": 1,
+      "first_complete": 1,
+      "eventual_complete": 1,
+      "reported_tokens": 6167
+    },
+    {
+      "source_group": "repository:w3c/activitystreams",
+      "condition": "B",
+      "cases": 1,
+      "first_complete": 1,
+      "eventual_complete": 1,
+      "reported_tokens": 6329
+    },
+    {
+      "source_group": "repository:w3c/activitystreams",
+      "condition": "C",
+      "cases": 1,
+      "first_complete": 1,
+      "eventual_complete": 1,
+      "reported_tokens": 4618
+    },
+    {
+      "source_group": "repository:xmolecules/jmolecules",
+      "condition": "A",
+      "cases": 2,
+      "first_complete": 1,
+      "eventual_complete": 2,
+      "reported_tokens": 53231
+    },
+    {
+      "source_group": "repository:xmolecules/jmolecules",
+      "condition": "B",
+      "cases": 2,
+      "first_complete": 2,
+      "eventual_complete": 2,
+      "reported_tokens": 47412
+    },
+    {
+      "source_group": "repository:xmolecules/jmolecules",
+      "condition": "C",
+      "cases": 2,
+      "first_complete": 2,
+      "eventual_complete": 2,
+      "reported_tokens": 41166
+    }
+  ],
+  "allowed_conclusions": [
+    "Operational availability, recorded token consumption and deterministic structural defects.",
+    "Source-only pilot records and literal quote validity.",
+    "Retain the earlier 60-case comparative human study separately with its original limitations."
+  ],
+  "not_established": [
+    "Human semantic comparison of newly generated A/B/C outputs.",
+    "Equal realized computation across A/B/C.",
+    "Causal semantic correctness or usefulness improvement from gates or inventory.",
+    "Human inter-rater agreement from counts of differently segmented concern lists."
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "status": "ENGLISH_TEXT_AND_RECURSIVE_ARCHIVE_LANGUAGE_SCAN_PASSED",
+  "scope": "All regular readable UTF-8 files and recursively readable UTF-8 archive members, including Excel Office XML, document properties, and comments. Original data packages inspected without mutation. Unicode BOM U+FEFF is excluded from Arabic-script ranges.",
+  "script_ranges_checked": [
+    "U+0600-U+06FF",
+    "U+0750-U+077F",
+    "U+08A0-U+08FF",
+    "U+FB50-U+FDFF",
+    "U+FE70-U+FEFC"
+  ],
+  "counts": {
+    "regular_files_checked": 2161,
+    "regular_utf8_files_checked": 1946,
+    "zip_containers_including_office_checked": 79,
+    "zip_members_checked": 3365,
+    "zip_utf8_members_checked": 3331,
+    "persian_arabic_script_matches": [],
+    "python_members_parsed": 1637,
+    "unicode_fixture_members_preserved": 22,
+    "historical_attestation_members_byte_unchanged": 147
+  },
+  "limits": "This checks script characters in readable UTF-8 text. Binary media and text encoded in other character sets do not receive a language certification. Historical checksum filenames and paths may retain FA suffixes as original provenance strings; they contain no Persian text."
+}

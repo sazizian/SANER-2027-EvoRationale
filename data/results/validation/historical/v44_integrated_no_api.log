@@ -1,0 +1,78 @@
+SYNTHETIC FIXTURES ONLY; NO HOSTED ACCURACY RESULT
+v4.4 local tests and preparation only; no provider call will be made.
+........................................................................ [ 19%]
+........................................................................ [ 39%]
+........................................................................ [ 59%]
+........................................................................ [ 79%]
+........................................................................ [ 99%]
+...                                                                      [100%]
+363 passed in 9.39s
+{
+  "status": "READY_FOR_V44_DEVELOPMENT_ONLY_NO_API_CALLED",
+  "same_runtime_s0": true,
+  "same_53_artifacts": true,
+  "gold_labels_in_agent_inputs": false,
+  "investigation_profile": "event-complete",
+  "comparison_note": "Descriptive development comparison: identical source inputs and nominal budgets; investigation profile, provider-call pattern, and token accounting differ.",
+  "v41_code_sha256": "fixture-parent41-hash",
+  "v44_code_sha256": "9c7fc66afd6d315c5f02a7b4d88a10ca91c7ad43360fadba9d01cd3e71f91e3e",
+  "output": "/workspace/scratch/05efca32e040/tmp/v44_integrated_nyg43yhc/evaluation44"
+}
+{
+  "status": "DRY_RUN_NO_API_CALLED",
+  "model": {
+    "judge": "fixture-reused-judge",
+    "linker": "fixture-reused-linker"
+  },
+  "budgets": {
+    "max_input_tokens": 100000,
+    "max_queries": 12,
+    "max_reads": 36,
+    "max_rounds": 6
+  },
+  "investigation_profile": "event-complete",
+  "comparison_note": "Descriptive development comparison: identical source inputs and nominal budgets; investigation profile, provider-call pattern, and token accounting differ.",
+  "inputs_hash_match": true,
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-m",
+    "evorationale",
+    "run",
+    "--decision",
+    "/workspace/scratch/05efca32e040/tmp/v44_integrated_nyg43yhc/evaluation44/inputs/S0_RETROSPECTIVE_RUNTIME.json",
+    "--history",
+    "/workspace/scratch/05efca32e040/tmp/v44_integrated_nyg43yhc/evaluation44/inputs/POST_S0_EVIDENCE_RETROSPECTIVE_53.jsonl",
+    "--output",
+    "/workspace/scratch/05efca32e040/tmp/v44_integrated_nyg43yhc/evaluation44/run",
+    "--mode",
+    "api",
+    "--allow-repository-text-to-api",
+    "--model",
+    "fixture-reused-linker",
+    "--judge-model",
+    "fixture-reused-judge",
+    "--backend",
+    "local",
+    "--memory",
+    "file",
+    "--memory-dir",
+    "/workspace/scratch/05efca32e040/tmp/v44_integrated_nyg43yhc/evaluation44/checkpoints",
+    "--investigation-profile",
+    "event-complete",
+    "--max-rounds",
+    "6",
+    "--max-queries",
+    "12",
+    "--max-reads",
+    "36",
+    "--max-input-tokens",
+    "100000"
+  ]
+}
+{
+  "status": "V44_TESTS_AND_DRY_RUN_COMPLETED_NO_API_CALLED",
+  "code_root": "/workspace/scratch/05efca32e040/er_v44_build/EvoRationale_v44_DEV_EN",
+  "evaluation": "/workspace/scratch/05efca32e040/tmp/v44_integrated_nyg43yhc/evaluation44",
+  "investigation_profile": "event-complete",
+  "comparison_note": "Descriptive development comparison: identical source inputs and nominal budgets; investigation profile, provider-call pattern, and token accounting differ."
+}

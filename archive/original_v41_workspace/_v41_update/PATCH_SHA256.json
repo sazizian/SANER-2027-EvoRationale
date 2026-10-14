@@ -1,0 +1,12 @@
+{
+  "V41_README_FA.md": "83156f6abec489eec5f7b065e5b56d00d17bb2ed7c8a7ac43c2570a4d7548ae4",
+  "docs/V41_TEST_REPORT.md": "10929055a00ca828e83e8942a07002d1f0b17bf8f7062f34eabc0196f0f6bd6f",
+  "evorationale/agent.py": "88c951d5f57f9e90fa16241eaeefcda1de52428daa72f124010255e695269ce1",
+  "evorationale/linking.py": "b20e0b5ee529c25b39fd3106fd45ca47dbf7a684bd5d7543410ea81daef11e9b",
+  "evorationale/patch_facts.py": "dbc3494b8136488467976a7c09807fa26692a9cced2e1581f706cfc8627dca8e",
+  "evorationale/verification.py": "93dfddfc79edcb075827dc0000556c179b7b2d9a9c3d4f1a8c1f255a703af6ab",
+  "pyproject.toml": "9512b3d4d48ed577be87df9b0546e86428d20fb6ec316970bd34fe1a6a4d1fed",
+  "scripts/enrich_azure_pr_diffs.py": "29a2a60021200bac71e9a291a62724800359dc4f909b725ccf76202a3448b0eb",
+  "tests/test_atomic_memory_v3.py": "d226534ff9b8c662358a806413b6a29f7bcf017cb1d0216aba3de3de74da202b",
+  "tests/test_diff_capture_v41.py": "b99514dff1448fec00b64f5f45e9cd06cd83a87f12fa0fb0f8524fd6de2cca19"
+}

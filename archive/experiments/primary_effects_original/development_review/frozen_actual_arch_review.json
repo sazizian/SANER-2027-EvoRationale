@@ -1,0 +1,297 @@
+{
+  "acknowledged_secondary_relation_not_in_formal_triplets": {
+    "artifact_id": "964260d9c2da-F01-H14",
+    "element_id": "R1",
+    "formal_hunk_relation": "WEAKENS",
+    "formal_related_ids": "I1",
+    "frozen_review_note": " Open point: the R1 convention. Same relation. The alternatives show that the 2023 field (v1.ResourceList, requests only; L204-205) cannot carry allocated limits, and they record API-evolution costs, which weakens I1's field as specified. All three options keep a distinct allocated state (Option 1 names desired, allocated and actual), so for R1 this hunk is supportive rather than weakening, and R1 is not linked to WEAKENS.",
+    "predicted_by_actual_run": {
+      "scope_recheck": false,
+      "v46": true,
+      "v48": true,
+      "v49": false
+    },
+    "relation": "supports"
+  },
+  "all_seven_frozen_files_hash_verified": true,
+  "event_id_listing_convention": " Open point: the ID-listing convention. Same relation. Proposed convention: the IDs column lists only the elements the stated relation applies to, and other affected elements are recorded here with their own relation. SUPERSEDES applies to I2 only, and only to interim text: H02 changes the interim rule introduced by d774b5c ('mutable, but must have an entry for every resizable resource type') to 'append-only'. The 2023 text (L230-255) is silent on mutability, so 2023 I2 is not contradicted. Other affected elements: C2a via H03/H04/H05 (QoS class kept fixed; H03/H04 IMPLEMENTATION_ONLY; H05's explicit-QoS sketch is consistent); C2b via H03 (terminology only; the narrowing was made by d774b5c); G2 and C1 via H05 (SUPPORTS through a non-binding workload-resize sketch). Removal of the 2023 future item 'Allow resource limits to be updated (VPA feature)' (L694) is UNKNOWN. No change challenges the 2023 rationale.",
+  "formal_positive_triple_count": 19,
+  "freeze_manifest_sha256": "2cfce69a76edea3b950394bd570d07a6cc3a1736481d1603ce4efd21344ee53c",
+  "hunk_count": 30,
+  "hunk_csv_sha256": "8448a4efeca142d4410ea902b0e9f9e85958af52d745b8582a0757feb802f9ac",
+  "hunk_label_distribution": {
+    "IMPLEMENTATION_ONLY": 7,
+    "SUPERSEDES": 10,
+    "SUPPORTS": 4,
+    "UNRELATED": 8,
+    "WEAKENS": 1
+  },
+  "interim_target_relations": [
+    {
+      "frozen_review_note": "Agreed. Interim only: 'mutable, but must have an entry for every resizable resource type' (introduced by d774b5c) -> 'append-only'. 2023 I2 is silent on mutability.",
+      "hunk_id": "079aa5fb9ab1-F01-H02",
+      "ids": "I2",
+      "relation": "SUPERSEDES",
+      "temporal_basis": "INTERIM_2024"
+    },
+    {
+      "frozen_review_note": "Agreed. Interim reversal append-only -> mutable; 2023 I2 unaffected.",
+      "hunk_id": "04de3dac4669-F01-H01",
+      "ids": "I2",
+      "relation": "SUPERSEDES",
+      "temporal_basis": "INTERIM_2024"
+    }
+  ],
+  "limitations": [
+    "All numerical scores remain unchanged and valid under the frozen exact-triple definition.",
+    "A prose-acknowledged secondary relation is not silently added to the frozen positive set.",
+    "Architecture/projection changes require prospective task definition and independent validation; no F1 threshold is guaranteed."
+  ],
+  "positive_target_distribution": {
+    "C1": 1,
+    "C2a": 1,
+    "G2": 1,
+    "I1": 10,
+    "I2": 2,
+    "I3": 1,
+    "R1": 2,
+    "R2": 1
+  },
+  "rescores": {
+    "scope_recheck": {
+      "all": {
+        "exact_error_rows_match": true,
+        "recomputed": {
+          "evaluated_hunks": 30,
+          "f1": 0.604651,
+          "fn": 6,
+          "fp": 11,
+          "fp_on_unrelated_or_implementation_only_hunks": 3,
+          "gold_positive_exact_triples": 19,
+          "limitations": [
+            "curated single-repository pilot",
+            "not a certified 2024 historical replay",
+            "no gold architecture-outcome labels",
+            "offline mode is a deterministic extractive baseline"
+          ],
+          "precision": 0.541667,
+          "predicted_exact_triples": 24,
+          "predicted_hunk_coverage": {
+            "count": 16,
+            "of": 30
+          },
+          "recall": 0.684211,
+          "scope": "all",
+          "tp": 13,
+          "unscored_prediction_links_outside_hunk_universe": 0
+        },
+        "stored_counts_and_rates_match": true
+      },
+      "baseline": {
+        "exact_error_rows_match": true,
+        "recomputed": {
+          "evaluated_hunks": 24,
+          "f1": 0.666667,
+          "fn": 2,
+          "fp": 10,
+          "fp_on_unrelated_or_implementation_only_hunks": 2,
+          "gold_positive_exact_triples": 14,
+          "limitations": [
+            "curated single-repository pilot",
+            "not a certified 2024 historical replay",
+            "no gold architecture-outcome labels",
+            "offline mode is a deterministic extractive baseline"
+          ],
+          "precision": 0.545455,
+          "predicted_exact_triples": 22,
+          "predicted_hunk_coverage": {
+            "count": 14,
+            "of": 24
+          },
+          "recall": 0.857143,
+          "scope": "baseline",
+          "tp": 12,
+          "unscored_prediction_links_outside_hunk_universe": 2
+        },
+        "stored_counts_and_rates_match": true
+      }
+    },
+    "v46": {
+      "all": {
+        "exact_error_rows_match": true,
+        "recomputed": {
+          "evaluated_hunks": 30,
+          "f1": 0.631579,
+          "fn": 7,
+          "fp": 7,
+          "fp_on_unrelated_or_implementation_only_hunks": 4,
+          "gold_positive_exact_triples": 19,
+          "limitations": [
+            "curated single-repository pilot",
+            "not a certified 2024 historical replay",
+            "no gold architecture-outcome labels",
+            "offline mode is a deterministic extractive baseline"
+          ],
+          "precision": 0.631579,
+          "predicted_exact_triples": 19,
+          "predicted_hunk_coverage": {
+            "count": 16,
+            "of": 30
+          },
+          "recall": 0.631579,
+          "scope": "all",
+          "tp": 12,
+          "unscored_prediction_links_outside_hunk_universe": 0
+        },
+        "stored_counts_and_rates_match": true
+      },
+      "baseline": {
+        "exact_error_rows_match": true,
+        "recomputed": {
+          "evaluated_hunks": 24,
+          "f1": 0.689655,
+          "fn": 4,
+          "fp": 5,
+          "fp_on_unrelated_or_implementation_only_hunks": 2,
+          "gold_positive_exact_triples": 14,
+          "limitations": [
+            "curated single-repository pilot",
+            "not a certified 2024 historical replay",
+            "no gold architecture-outcome labels",
+            "offline mode is a deterministic extractive baseline"
+          ],
+          "precision": 0.666667,
+          "predicted_exact_triples": 15,
+          "predicted_hunk_coverage": {
+            "count": 13,
+            "of": 24
+          },
+          "recall": 0.714286,
+          "scope": "baseline",
+          "tp": 10,
+          "unscored_prediction_links_outside_hunk_universe": 4
+        },
+        "stored_counts_and_rates_match": true
+      }
+    },
+    "v48": {
+      "all": {
+        "exact_error_rows_match": true,
+        "recomputed": {
+          "evaluated_hunks": 30,
+          "f1": 0.6,
+          "fn": 7,
+          "fp": 9,
+          "fp_on_unrelated_or_implementation_only_hunks": 3,
+          "gold_positive_exact_triples": 19,
+          "limitations": [
+            "curated single-repository pilot",
+            "not a certified 2024 historical replay",
+            "no gold architecture-outcome labels",
+            "offline mode is a deterministic extractive baseline"
+          ],
+          "precision": 0.571429,
+          "predicted_exact_triples": 21,
+          "predicted_hunk_coverage": {
+            "count": 14,
+            "of": 30
+          },
+          "recall": 0.631579,
+          "scope": "all",
+          "tp": 12,
+          "unscored_prediction_links_outside_hunk_universe": 0
+        },
+        "stored_counts_and_rates_match": true
+      },
+      "baseline": {
+        "exact_error_rows_match": true,
+        "recomputed": {
+          "evaluated_hunks": 24,
+          "f1": 0.645161,
+          "fn": 4,
+          "fp": 7,
+          "fp_on_unrelated_or_implementation_only_hunks": 1,
+          "gold_positive_exact_triples": 14,
+          "limitations": [
+            "curated single-repository pilot",
+            "not a certified 2024 historical replay",
+            "no gold architecture-outcome labels",
+            "offline mode is a deterministic extractive baseline"
+          ],
+          "precision": 0.588235,
+          "predicted_exact_triples": 17,
+          "predicted_hunk_coverage": {
+            "count": 11,
+            "of": 24
+          },
+          "recall": 0.714286,
+          "scope": "baseline",
+          "tp": 10,
+          "unscored_prediction_links_outside_hunk_universe": 4
+        },
+        "stored_counts_and_rates_match": true
+      }
+    },
+    "v49": {
+      "all": {
+        "exact_error_rows_match": true,
+        "recomputed": {
+          "evaluated_hunks": 30,
+          "f1": 0.636364,
+          "fn": 5,
+          "fp": 11,
+          "fp_on_unrelated_or_implementation_only_hunks": 3,
+          "gold_positive_exact_triples": 19,
+          "limitations": [
+            "curated single-repository pilot",
+            "not a certified 2024 historical replay",
+            "no gold architecture-outcome labels",
+            "offline mode is a deterministic extractive baseline"
+          ],
+          "precision": 0.56,
+          "predicted_exact_triples": 25,
+          "predicted_hunk_coverage": {
+            "count": 16,
+            "of": 30
+          },
+          "recall": 0.736842,
+          "scope": "all",
+          "tp": 14,
+          "unscored_prediction_links_outside_hunk_universe": 0
+        },
+        "stored_counts_and_rates_match": true
+      },
+      "baseline": {
+        "exact_error_rows_match": true,
+        "recomputed": {
+          "evaluated_hunks": 24,
+          "f1": 0.666667,
+          "fn": 2,
+          "fp": 10,
+          "fp_on_unrelated_or_implementation_only_hunks": 2,
+          "gold_positive_exact_triples": 14,
+          "limitations": [
+            "curated single-repository pilot",
+            "not a certified 2024 historical replay",
+            "no gold architecture-outcome labels",
+            "offline mode is a deterministic extractive baseline"
+          ],
+          "precision": 0.545455,
+          "predicted_exact_triples": 22,
+          "predicted_hunk_coverage": {
+            "count": 14,
+            "of": 24
+          },
+          "recall": 0.857143,
+          "scope": "baseline",
+          "tp": 12,
+          "unscored_prediction_links_outside_hunk_universe": 3
+        },
+        "stored_counts_and_rates_match": true
+      }
+    }
+  },
+  "s0_sha256": "6557ea5d549fbc2bac280be4f46d948948dbb70673c0c1f53ff21c24c4fbde42",
+  "status": "ACTUAL_FROZEN_REFERENCE_RESCORE_AND_CONSTRUCT_AUDIT_NO_API",
+  "unchanged_score_core_sha256": "18553a3a195a490102348e199233ef4ae752efaf8b80e351e52ff354c6d88895"
+}

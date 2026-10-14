@@ -1,0 +1,2 @@
+{"demo_only":true,"drift_types":["assumption_drift","evidence_drift","dependency_drift"],"outcome":"REOPEN","evidence_links":[{"artifact_id":"inc-017","decision_element_id":"A1","relation":"contradicts"},{"artifact_id":"pr-088","decision_element_id":"C1","relation":"weakens"},{"artifact_id":"bench-042","decision_element_id":"E1","relation":"supersedes"}]}
+

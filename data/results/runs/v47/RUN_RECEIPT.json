@@ -1,0 +1,78 @@
+{
+  "checkpoint_relative_path": "checkpoints/a50dd556-729c-4840-a509-0fdd9222b81b.json",
+  "checkpoint_sha256": "760105ed945a962af31b5692b998a2115c9bbcd0f2130fc474c50a62287b8d3b",
+  "code_tree_sha256": "ef221a718301ba59167360c696b8b22d8e65b0747baf1c41f058aea54a942a23",
+  "command_without_credentials": [
+    "C:\\Users\\sazizian\\AppData\\Local\\er4venv\\Scripts\\python.exe",
+    "-m",
+    "evorationale",
+    "run",
+    "--decision",
+    "C:\\Users\\sazizian\\AppData\\Local\\ER1287Eval_v47Dev01\\inputs\\S0_RETROSPECTIVE_RUNTIME.json",
+    "--history",
+    "C:\\Users\\sazizian\\AppData\\Local\\ER1287Eval_v47Dev01\\inputs\\POST_S0_EVIDENCE_RETROSPECTIVE_53.jsonl",
+    "--output",
+    "C:\\Users\\sazizian\\AppData\\Local\\ER1287Eval_v47Dev01\\run",
+    "--mode",
+    "api",
+    "--allow-repository-text-to-api",
+    "--model",
+    "gpt-6.1-sol",
+    "--judge-model",
+    "gpt-6.1-sol",
+    "--backend",
+    "local",
+    "--memory",
+    "file",
+    "--memory-dir",
+    "C:\\Users\\sazizian\\AppData\\Local\\ER1287Eval_v47Dev01\\checkpoints",
+    "--investigation-profile",
+    "event-grounded",
+    "--delta-nomination",
+    "none",
+    "--max-rounds",
+    "6",
+    "--max-queries",
+    "12",
+    "--max-reads",
+    "36",
+    "--max-input-tokens",
+    "100000"
+  ],
+  "comparison_note": "Descriptive development comparison: identical source inputs, opaque model IDs and nominal budgets as v4.6; semantic policy, investigation profile and request/token accounting differ. Earlier versions also used different models and call patterns.",
+  "finish_utc": "2026-10-11T22:02:41.363757+00:00",
+  "investigation_profile": "event-grounded",
+  "mode": "api",
+  "model": {
+    "judge": "gpt-6.1-sol",
+    "linker": "gpt-6.1-sol"
+  },
+  "model_change_note": "Both linker and judge model IDs are copied exactly from the pinned completed v4.6 run; nomination remains none. Immutable provider model snapshots are not verified.",
+  "nominal_budgets": {
+    "max_input_tokens": 100000,
+    "max_queries": 12,
+    "max_reads": 36,
+    "max_rounds": 6
+  },
+  "nomination_mode": "none",
+  "parent_v44_models": {
+    "judge": "gpt-6-luna",
+    "linker": "gpt-6.1-sol"
+  },
+  "parent_v45_models": {
+    "judge": "gpt-6.1-sol",
+    "linker": "gpt-6.1-sol"
+  },
+  "parent_v46_models": {
+    "judge": "gpt-6.1-sol",
+    "linker": "gpt-6.1-sol"
+  },
+  "policy_change_note": "v4.7 requires a classified direct target contribution and exact local current predicate proof. Mere downstream use is insufficient; a substantively rebound predicate can provide qualified evidence. An adopted replacement can cite added current contract proof from the same exact artifact. Initial structured output allowance is increased within the existing ceiling; no provider phase is added. Fixed S0, frozen labels and the exact-triple scorer remain unchanged.",
+  "prep_sha256": "c88c64efac33ae2a2fdf0b51a13cd4defd49a735ea862586317de0fd09904b61",
+  "run_id": "a50dd556-729c-4840-a509-0fdd9222b81b",
+  "run_manifest_sha256": "7d72437c5732ec0e99f4dd211152d09f2bb8226de973713398b2686f55407ecf",
+  "run_report_sha256": "07dd9f8d34b8d4ef489389588f69eea149d2f5bc857c87951e9e72c502732574",
+  "start_utc": "2026-10-11T21:57:29.969638+00:00",
+  "status": "V47_DEV_HOSTED_RUN_COMPLETED_AND_HASHED",
+  "warning": "This is a development run; it is not independent held-out evaluation."
+}

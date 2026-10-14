@@ -1,0 +1,16 @@
+{
+  "purpose": "TECHNICAL_SMOKE_ONLY_NOT_PUBLISHED_MODEL_EVALUATION",
+  "evaluation_code": "EvoRationale v4.1 extracted reference release",
+  "history_artifacts": 53,
+  "validation": "PASS",
+  "outcome": "REVALIDATE",
+  "verification": "UNRESOLVED",
+  "links_recorded": 26,
+  "rounds": 6,
+  "estimated_tokens": 75155,
+  "historical_replay_certified": false,
+  "test_state_human_approved": "TEMPORARILY_ENABLED_ONLY_IN_ISOLATED_SCRATCH_FOR_TECHNICAL_VALIDATION",
+  "no_gold_labels_supplied_to_agent": true,
+  "gold_metrics_not_computed": true,
+  "note": "No publication claim; a developer smoke test with PI-attested but unsigned S0 candidate."
+}

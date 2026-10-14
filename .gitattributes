@@ -1,0 +1,2 @@
+# Preserve the raw bytes used by source, run and reference hash identities.
+* -text

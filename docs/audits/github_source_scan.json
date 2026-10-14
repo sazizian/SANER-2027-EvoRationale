@@ -1,0 +1,352 @@
+{
+  "zip_sha256": "92590eb21cfdaab33deefb06941ee9c3f9dd60d213311064b9858aa00c3851e5",
+  "scan_scope": "Project text and nested project archives/office XML; installed environments/caches/egg-info excluded. Pattern scan does not certify absence of all secrets.",
+  "stats": {
+    "project_files": 1882,
+    "project_bytes": 31537737,
+    "text_files_scanned": 1807,
+    "ignored_files": 7108,
+    "ignored_bytes": 232689977
+  },
+  "archive_count": 39,
+  "archives": [
+    {
+      "path": "EvoRationale_PaperAligned_v4.zip",
+      "depth": 0,
+      "file_count": 7283,
+      "crc_ok": true
+    },
+    {
+      "path": "EvoRationale_PaperAligned_v4.zip!EvoRationale_PaperAligned_v4/EvoRationale_v41_PATCH_TESTED.zip",
+      "depth": 1,
+      "file_count": 12,
+      "crc_ok": true
+    },
+    {
+      "path": "EvoRationale_PaperAligned_v4.zip!EvoRationale_PaperAligned_v4/research/EvoRationale_KEP1287_Adjudication_EN.zip",
+      "depth": 1,
+      "file_count": 26,
+      "crc_ok": true
+    },
+    {
+      "path": "EvoRationale_PaperAligned_v4.zip!EvoRationale_PaperAligned_v4/research/EvoRationale_KEP1287_Historical_S0_EN.zip",
+      "depth": 1,
+      "file_count": 9,
+      "crc_ok": true
+    },
+    {
+      "path": "EvoRationale_PaperAligned_v4.zip!EvoRationale_PaperAligned_v4/research/EvoRationale_PaperAligned_v4_FULL_TESTED.zip",
+      "depth": 1,
+      "file_count": 80,
+      "crc_ok": true
+    },
+    {
+      "path": "EvoRationale_PaperAligned_v4.zip!EvoRationale_PaperAligned_v4/research/EvoRationale_v42_Development_Pilot_EN.zip",
+      "depth": 1,
+      "file_count": 80,
+      "crc_ok": true
+    },
+    {
+      "path": "EvoRationale_PaperAligned_v4.zip!EvoRationale_PaperAligned_v4/research/EvoRationale_v43_DiffScope_Development_EN.zip",
+      "depth": 1,
+      "file_count": 92,
+      "crc_ok": true
+    },
+    {
+      "path": "EvoRationale_PaperAligned_v4.zip!EvoRationale_PaperAligned_v4/research/EvoRationale_v44_Diagnostics_20261011-130744-846.zip",
+      "depth": 1,
+      "file_count": 7,
+      "crc_ok": true
+    },
+    {
+      "path": "EvoRationale_PaperAligned_v4.zip!EvoRationale_PaperAligned_v4/research/EvoRationale_v44_EventCoverage_Reviewed_EN.zip",
+      "depth": 1,
+      "file_count": 117,
+      "crc_ok": true
+    },
+    {
+      "path": "EvoRationale_PaperAligned_v4.zip!EvoRationale_PaperAligned_v4/research/EvoRationale_v45_DeltaReview_Tested_EN.zip",
+      "depth": 1,
+      "file_count": 138,
+      "crc_ok": true
+    },
+    {
+      "path": "EvoRationale_PaperAligned_v4.zip!EvoRationale_PaperAligned_v4/research/EvoRationale_v45_Diagnostics_20261011-140009-585.zip",
+      "depth": 1,
+      "file_count": 10,
+      "crc_ok": true
+    },
+    {
+      "path": "EvoRationale_PaperAligned_v4.zip!EvoRationale_PaperAligned_v4/research/EvoRationale_v46_Diagnostics_20261011-153804-929.zip",
+      "depth": 1,
+      "file_count": 10,
+      "crc_ok": true
+    },
+    {
+      "path": "EvoRationale_PaperAligned_v4.zip!EvoRationale_PaperAligned_v4/research/EvoRationale_v46_EvidenceTrace_Tested_EN.zip",
+      "depth": 1,
+      "file_count": 166,
+      "crc_ok": true
+    },
+    {
+      "path": "EvoRationale_PaperAligned_v4.zip!EvoRationale_PaperAligned_v4/research/EvoRationale_v47_GroundedTrace_Tested_EN.zip",
+      "depth": 1,
+      "file_count": 186,
+      "crc_ok": true
+    },
+    {
+      "path": "EvoRationale_PaperAligned_v4.zip!EvoRationale_PaperAligned_v4/research/EvoRationale_v48_DiagnosticReview_EN.zip",
+      "depth": 1,
+      "file_count": 20,
+      "crc_ok": true
+    },
+    {
+      "path": "EvoRationale_PaperAligned_v4.zip!EvoRationale_PaperAligned_v4/research/EvoRationale_v48_V46PolicyRepair_Tested_EN (1).zip",
+      "depth": 1,
+      "file_count": 205,
+      "crc_ok": true
+    },
+    {
+      "path": "EvoRationale_PaperAligned_v4.zip!EvoRationale_PaperAligned_v4/research/EvoRationale_v49_PairReview_Experimental_Tested_EN.zip",
+      "depth": 1,
+      "file_count": 225,
+      "crc_ok": true
+    },
+    {
+      "path": "EvoRationale_PaperAligned_v4.zip!EvoRationale_PaperAligned_v4/research/KEP1287_API_Comparison_Tools_EN.zip",
+      "depth": 1,
+      "file_count": 5,
+      "crc_ok": true
+    },
+    {
+      "path": "EvoRationale_PaperAligned_v4.zip!EvoRationale_PaperAligned_v4/research/KEP1287_Consensus/KEP1287_A_B_Consensus_Reconciliation_B01-Result.xlsx",
+      "depth": 1,
+      "file_count": 14,
+      "crc_ok": true
+    },
+    {
+      "path": "EvoRationale_PaperAligned_v4.zip!EvoRationale_PaperAligned_v4/research/KEP1287_Consensus/KEP1287_Consensus_PI_Attested_20261010.xlsx",
+      "depth": 1,
+      "file_count": 14,
+      "crc_ok": true
+    },
+    {
+      "path": "EvoRationale_PaperAligned_v4.zip!EvoRationale_PaperAligned_v4/research/KEP1287_Consensus/KEP1287_PI_Attested_Consensus_Candidate_EN.zip",
+      "depth": 1,
+      "file_count": 38,
+      "crc_ok": true
+    },
+    {
+      "path": "EvoRationale_PaperAligned_v4.zip!EvoRationale_PaperAligned_v4/research/KEP1287_Consensus/KEP1287_PI_Attested_Consensus_Candidate_EN.zip!KEP1287_Gold_Candidate_EN/KEP1287_Candidate_Reference_Review.xlsx",
+      "depth": 2,
+      "file_count": 13,
+      "crc_ok": true
+    },
+    {
+      "path": "EvoRationale_PaperAligned_v4.zip!EvoRationale_PaperAligned_v4/research/KEP1287_Consensus/KEP1287_PI_Attested_Consensus_Candidate_EN.zip!KEP1287_Gold_Candidate_EN/audit/PI_Attested_Consensus_Workbook_AS_RECEIVED.xlsx",
+      "depth": 2,
+      "file_count": 14,
+      "crc_ok": true
+    },
+    {
+      "path": "EvoRationale_PaperAligned_v4.zip!EvoRationale_PaperAligned_v4/research/KEP1287_Consensus/KEP1287_PI_Attested_Consensus_Candidate_EN.zip!KEP1287_Gold_Candidate_EN/audit/Reviewer_A_Consensus_Workbook_AS_RECEIVED.xlsx",
+      "depth": 2,
+      "file_count": 15,
+      "crc_ok": true
+    },
+    {
+      "path": "EvoRationale_PaperAligned_v4.zip!EvoRationale_PaperAligned_v4/research/KEP1287_Consensus/KEP1287_PI_Attested_Consensus_Candidate_EN.zip!KEP1287_Gold_Candidate_EN/audit/Reviewer_B_Consensus_Workbook_AS_RECEIVED.xlsx",
+      "depth": 2,
+      "file_count": 15,
+      "crc_ok": true
+    },
+    {
+      "path": "EvoRationale_PaperAligned_v4.zip!EvoRationale_PaperAligned_v4/research/KEP1287_Consensus/KEP1287_Reviewer_Consensus_Workbook.xlsx",
+      "depth": 1,
+      "file_count": 14,
+      "crc_ok": true
+    },
+    {
+      "path": "EvoRationale_PaperAligned_v4.zip!EvoRationale_PaperAligned_v4/research/KEP1287_Frozen_Evaluation_Tools_EN.zip",
+      "depth": 1,
+      "file_count": 3,
+      "crc_ok": true
+    },
+    {
+      "path": "EvoRationale_PaperAligned_v4.zip!EvoRationale_PaperAligned_v4/research/KEP1287_Historical_S0/KEP1287_capture_2023_2024.zip",
+      "depth": 1,
+      "file_count": 9,
+      "crc_ok": true
+    },
+    {
+      "path": "EvoRationale_PaperAligned_v4.zip!EvoRationale_PaperAligned_v4/research/KEP1287_PI_Attested_Consensus_Candidate_EN.zip",
+      "depth": 1,
+      "file_count": 38,
+      "crc_ok": true
+    },
+    {
+      "path": "EvoRationale_PaperAligned_v4.zip!EvoRationale_PaperAligned_v4/research/KEP1287_PI_Attested_Consensus_Candidate_EN.zip!KEP1287_Gold_Candidate_EN/KEP1287_Candidate_Reference_Review.xlsx",
+      "depth": 2,
+      "file_count": 13,
+      "crc_ok": true
+    },
+    {
+      "path": "EvoRationale_PaperAligned_v4.zip!EvoRationale_PaperAligned_v4/research/KEP1287_PI_Attested_Consensus_Candidate_EN.zip!KEP1287_Gold_Candidate_EN/audit/PI_Attested_Consensus_Workbook_AS_RECEIVED.xlsx",
+      "depth": 2,
+      "file_count": 14,
+      "crc_ok": true
+    },
+    {
+      "path": "EvoRationale_PaperAligned_v4.zip!EvoRationale_PaperAligned_v4/research/KEP1287_PI_Attested_Consensus_Candidate_EN.zip!KEP1287_Gold_Candidate_EN/audit/Reviewer_A_Consensus_Workbook_AS_RECEIVED.xlsx",
+      "depth": 2,
+      "file_count": 15,
+      "crc_ok": true
+    },
+    {
+      "path": "EvoRationale_PaperAligned_v4.zip!EvoRationale_PaperAligned_v4/research/KEP1287_PI_Attested_Consensus_Candidate_EN.zip!KEP1287_Gold_Candidate_EN/audit/Reviewer_B_Consensus_Workbook_AS_RECEIVED.xlsx",
+      "depth": 2,
+      "file_count": 15,
+      "crc_ok": true
+    },
+    {
+      "path": "EvoRationale_PaperAligned_v4.zip!EvoRationale_PaperAligned_v4/research/KEP1287_Reviewer_A_Independent_EN.zip",
+      "depth": 1,
+      "file_count": 20,
+      "crc_ok": true
+    },
+    {
+      "path": "EvoRationale_PaperAligned_v4.zip!EvoRationale_PaperAligned_v4/research/KEP1287_Reviewer_B_Independent_EN.zip",
+      "depth": 1,
+      "file_count": 20,
+      "crc_ok": true
+    },
+    {
+      "path": "EvoRationale_PaperAligned_v4.zip!EvoRationale_PaperAligned_v4/research/KEP1287_Verifier_Gate_Diagnostic_EN.zip",
+      "depth": 1,
+      "file_count": 2,
+      "crc_ok": true
+    },
+    {
+      "path": "EvoRationale_PaperAligned_v4.zip!EvoRationale_PaperAligned_v4/research/RationalePath_ABC_Evidence_Checkpoint.zip",
+      "depth": 1,
+      "file_count": 9,
+      "crc_ok": true
+    },
+    {
+      "path": "EvoRationale_PaperAligned_v4.zip!EvoRationale_PaperAligned_v4/research/RationalePath_ABC_Evidence_Checkpoint.zip!RationalePath_ABC_Evidence_Checkpoint/originals_unchanged/reviewer_1_source_pilot_as_received.xlsx",
+      "depth": 2,
+      "file_count": 12,
+      "crc_ok": true
+    },
+    {
+      "path": "EvoRationale_PaperAligned_v4.zip!EvoRationale_PaperAligned_v4/research/RationalePath_ABC_Evidence_Checkpoint.zip!RationalePath_ABC_Evidence_Checkpoint/originals_unchanged/reviewer_2_source_pilot_as_received.xlsx",
+      "depth": 2,
+      "file_count": 12,
+      "crc_ok": true
+    }
+  ],
+  "unsafe_member_paths": [],
+  "archive_errors": [],
+  "credential_shape_candidates": [
+    {
+      "path": "EvoRationale_PaperAligned_v4.zip!EvoRationale_PaperAligned_v4/research/EvoRationale_PaperAligned_v4_FULL_TESTED.zip!EvoRationale_v42_DEV_EN/tests/test_integrations_offline.py",
+      "pattern": "github_token_shape",
+      "count": 1,
+      "lines": [
+        154
+      ],
+      "classification": "test_or_fixture",
+      "placeholder_markers": 0
+    },
+    {
+      "path": "EvoRationale_PaperAligned_v4.zip!EvoRationale_PaperAligned_v4/research/EvoRationale_v42_Development_Pilot_EN.zip!EvoRationale_v42_DEV_EN/tests/test_integrations_offline.py",
+      "pattern": "github_token_shape",
+      "count": 1,
+      "lines": [
+        154
+      ],
+      "classification": "test_or_fixture",
+      "placeholder_markers": 0
+    },
+    {
+      "path": "EvoRationale_PaperAligned_v4.zip!EvoRationale_PaperAligned_v4/research/EvoRationale_v43_DiffScope_Development_EN.zip!EvoRationale_v43_DEV_EN/tests/test_integrations_offline.py",
+      "pattern": "github_token_shape",
+      "count": 1,
+      "lines": [
+        154
+      ],
+      "classification": "test_or_fixture",
+      "placeholder_markers": 0
+    },
+    {
+      "path": "EvoRationale_PaperAligned_v4.zip!EvoRationale_PaperAligned_v4/research/EvoRationale_v44_EventCoverage_Reviewed_EN.zip!EvoRationale_v44_DEV_EN/tests/test_integrations_offline.py",
+      "pattern": "github_token_shape",
+      "count": 1,
+      "lines": [
+        154
+      ],
+      "classification": "test_or_fixture",
+      "placeholder_markers": 0
+    },
+    {
+      "path": "EvoRationale_PaperAligned_v4.zip!EvoRationale_PaperAligned_v4/research/EvoRationale_v45_DeltaReview_Tested_EN.zip!EvoRationale_v45_DEV_EN/tests/test_integrations_offline.py",
+      "pattern": "github_token_shape",
+      "count": 1,
+      "lines": [
+        154
+      ],
+      "classification": "test_or_fixture",
+      "placeholder_markers": 0
+    },
+    {
+      "path": "EvoRationale_PaperAligned_v4.zip!EvoRationale_PaperAligned_v4/research/EvoRationale_v46_EvidenceTrace_Tested_EN.zip!EvoRationale_v46_DEV_EN/tests/test_integrations_offline.py",
+      "pattern": "github_token_shape",
+      "count": 1,
+      "lines": [
+        154
+      ],
+      "classification": "test_or_fixture",
+      "placeholder_markers": 0
+    },
+    {
+      "path": "EvoRationale_PaperAligned_v4.zip!EvoRationale_PaperAligned_v4/research/EvoRationale_v47_GroundedTrace_Tested_EN.zip!EvoRationale_v47_DEV_EN/tests/test_integrations_offline.py",
+      "pattern": "github_token_shape",
+      "count": 1,
+      "lines": [
+        154
+      ],
+      "classification": "test_or_fixture",
+      "placeholder_markers": 0
+    },
+    {
+      "path": "EvoRationale_PaperAligned_v4.zip!EvoRationale_PaperAligned_v4/research/EvoRationale_v48_V46PolicyRepair_Tested_EN (1).zip!EvoRationale_v48_DEV_EN/tests/test_integrations_offline.py",
+      "pattern": "github_token_shape",
+      "count": 1,
+      "lines": [
+        154
+      ],
+      "classification": "test_or_fixture",
+      "placeholder_markers": 0
+    },
+    {
+      "path": "EvoRationale_PaperAligned_v4.zip!EvoRationale_PaperAligned_v4/research/EvoRationale_v49_PairReview_Experimental_Tested_EN.zip!EvoRationale_v49_DEV_EN/tests/test_integrations_offline.py",
+      "pattern": "github_token_shape",
+      "count": 1,
+      "lines": [
+        154
+      ],
+      "classification": "test_or_fixture",
+      "placeholder_markers": 0
+    },
+    {
+      "path": "EvoRationale_PaperAligned_v4.zip!EvoRationale_PaperAligned_v4/tests/test_integrations_offline.py",
+      "pattern": "github_token_shape",
+      "count": 1,
+      "lines": [
+        154
+      ],
+      "classification": "test_or_fixture",
+      "placeholder_markers": 0
+    }
+  ]
+}

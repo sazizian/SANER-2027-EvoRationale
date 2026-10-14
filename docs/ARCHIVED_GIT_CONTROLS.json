@@ -1,0 +1,50 @@
+{
+  "entries": [
+    {
+      "original_export_path": "archive/code/v42/.gitignore",
+      "preserved_export_path": "archive/code/v42/GITIGNORE.original",
+      "sha256": "042caaba071835c991a3d7948ac6962ccaf3ce307b70c18f1f521eb63059ee52"
+    },
+    {
+      "original_export_path": "archive/code/v43/.gitignore",
+      "preserved_export_path": "archive/code/v43/GITIGNORE.original",
+      "sha256": "042caaba071835c991a3d7948ac6962ccaf3ce307b70c18f1f521eb63059ee52"
+    },
+    {
+      "original_export_path": "archive/code/v44/.gitignore",
+      "preserved_export_path": "archive/code/v44/GITIGNORE.original",
+      "sha256": "042caaba071835c991a3d7948ac6962ccaf3ce307b70c18f1f521eb63059ee52"
+    },
+    {
+      "original_export_path": "archive/code/v45/.gitignore",
+      "preserved_export_path": "archive/code/v45/GITIGNORE.original",
+      "sha256": "042caaba071835c991a3d7948ac6962ccaf3ce307b70c18f1f521eb63059ee52"
+    },
+    {
+      "original_export_path": "archive/code/v46/.gitignore",
+      "preserved_export_path": "archive/code/v46/GITIGNORE.original",
+      "sha256": "042caaba071835c991a3d7948ac6962ccaf3ce307b70c18f1f521eb63059ee52"
+    },
+    {
+      "original_export_path": "archive/code/v47/.gitignore",
+      "preserved_export_path": "archive/code/v47/GITIGNORE.original",
+      "sha256": "042caaba071835c991a3d7948ac6962ccaf3ce307b70c18f1f521eb63059ee52"
+    },
+    {
+      "original_export_path": "archive/code/v48/.gitignore",
+      "preserved_export_path": "archive/code/v48/GITIGNORE.original",
+      "sha256": "042caaba071835c991a3d7948ac6962ccaf3ce307b70c18f1f521eb63059ee52"
+    },
+    {
+      "original_export_path": "archive/code/v49/.gitignore",
+      "preserved_export_path": "archive/code/v49/GITIGNORE.original",
+      "sha256": "042caaba071835c991a3d7948ac6962ccaf3ce307b70c18f1f521eb63059ee52"
+    },
+    {
+      "original_export_path": "archive/original_v41_workspace/.gitignore",
+      "preserved_export_path": "archive/original_v41_workspace/GITIGNORE.original",
+      "sha256": "042caaba071835c991a3d7948ac6962ccaf3ce307b70c18f1f521eb63059ee52"
+    }
+  ],
+  "reason": "Inactive archive Git controls are stored as data so they cannot hide curated logs or normalize pinned bytes in the active repository. Original release ZIPs retain their original filenames and bytes."
+}

@@ -1,0 +1,41 @@
+{
+  "version": "4.3.0.dev0",
+  "kind": "DEVELOPMENT_ONLY_DIFF_CONTEXT_AND_SCOPE",
+  "parent_v42_python_sha256": "ab892cc339348fc6db243ecbdb18cb6df3a4959d5636332d5f2cdb7945fbdd09",
+  "v43_python_sha256": "b53989d04604b68d76eddd92412db89b0b33025637e42649abda27714ee53d94",
+  "created_utc": "2026-10-11T15:28:34.051678+00:00",
+  "test_count": 163,
+  "inherited_tests": 140,
+  "new_generic_and_workflow_tests": 23,
+  "provider_calls_during_validation": 0,
+  "canonical_hunks_reconstructed": 30,
+  "exact_triple_scoring_core_unchanged": true,
+  "v42_source_unchanged": true,
+  "real_v43_hosted_f1": null,
+  "development_only_not_held_out": true,
+  "changed_or_added_paths": [
+    "MANIFEST_V43_DEV.json",
+    "README.md",
+    "README_V43_DEVELOPMENT.md",
+    "V43_TEST_REPORT.md",
+    "development_tools/prepare_v43.py",
+    "development_tools/run_v43.py",
+    "development_tools/score_v43.py",
+    "development_tools/start_v43_no_api.py",
+    "evorationale/__init__.py",
+    "evorationale/diff_context.py",
+    "evorationale/linking.py",
+    "evorationale/relation_contract.py",
+    "evorationale/verification.py",
+    "pyproject.toml",
+    "tests/test_v43_development_tools.py",
+    "tests/test_v43_diff_scope.py"
+  ],
+  "synthetic_no_api_cli_validation": {
+    "synthetic_cli_workflow_passed": true,
+    "previous_files_unchanged": true,
+    "no_run_or_checkpoints_created": true,
+    "provider_calls": 0,
+    "real_v43_hosted_f1": null
+  }
+}

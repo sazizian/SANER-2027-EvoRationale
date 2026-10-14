@@ -1,0 +1,10 @@
+{
+  "commit_created": false,
+  "core_autocrlf_tested": "true",
+  "gitattributes": "* -text",
+  "note": "Checked before adding this record and the final integrity manifest.",
+  "push_performed": false,
+  "remote_created": false,
+  "status": "GIT_STAGING_RAW_BYTES_VERIFIED",
+  "verified_files": 2019
+}

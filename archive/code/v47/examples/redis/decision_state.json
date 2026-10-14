@@ -1,0 +1,100 @@
+{
+  "episode_id": "demo-episode-001",
+  "decision_id": "DEMO-ADR-001",
+  "demo_only": true,
+  "human_approved": true,
+  "decision": "Introduce Redis caching for the profile API",
+  "accepted_at": "2024-01-10T12:00:00Z",
+  "cutoff_at": "2025-12-31T23:59:59Z",
+  "central_element_ids": [
+    "A1",
+    "E1"
+  ],
+  "goals": [
+    {
+      "id": "G1",
+      "text": "Meet the 150 ms peak-load latency target",
+      "source": "public-surrogate://adr/001",
+      "keywords": [
+        "latency",
+        "profile",
+        "benchmark"
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "id": "R1",
+      "text": "Profile reads must return current user data",
+      "source": "public-surrogate://adr/001",
+      "keywords": [
+        "profile",
+        "current",
+        "stale"
+      ]
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A1",
+      "text": "Profile updates are infrequent",
+      "source": "public-surrogate://adr/001",
+      "keywords": [
+        "profile",
+        "updates",
+        "stale",
+        "incident"
+      ]
+    }
+  ],
+  "original_evidence": [
+    {
+      "id": "E1",
+      "text": "Database access exceeded the latency target",
+      "source": "public-surrogate://benchmark/001",
+      "keywords": [
+        "database",
+        "latency",
+        "benchmark",
+        "optimization"
+      ]
+    }
+  ],
+  "quality_attributes": [
+    {
+      "id": "Q1",
+      "text": "Prioritize latency while preserving consistency",
+      "source": "public-surrogate://adr/001",
+      "keywords": [
+        "latency",
+        "consistency"
+      ]
+    }
+  ],
+  "constraints_dependencies": [
+    {
+      "id": "C1",
+      "text": "Redis invalidation remains manageable",
+      "source": "public-surrogate://adr/001",
+      "keywords": [
+        "redis",
+        "invalidation",
+        "distributed",
+        "cost"
+      ]
+    }
+  ],
+  "implementation_scope": [
+    {
+      "id": "I1",
+      "text": "Profile API cache layer",
+      "source": "public-surrogate://adr/001",
+      "keywords": [
+        "profile",
+        "cache",
+        "redis"
+      ]
+    }
+  ],
+  "repository": "public-surrogate/profile-service"
+}

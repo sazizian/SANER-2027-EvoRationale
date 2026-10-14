@@ -1,0 +1,319 @@
+{
+  "budget_usage": {
+    "accounting": "REQUEST_ENVELOPE_ESTIMATE_INCLUDING_RETRIES_NOT_BILLING",
+    "estimated_input_tokens": 183030,
+    "max_output_tokens_per_request": 16384,
+    "max_provider_requests": 36,
+    "provider_reported_input_tokens": 137676,
+    "provider_reported_output_tokens": 57835,
+    "provider_requests_reserved": 15,
+    "provider_responses_received": 15,
+    "queries": 6,
+    "requests": [
+      {
+        "estimated_input_tokens": 16034,
+        "max_output_tokens": 12000,
+        "model": "gpt-6.1-sol",
+        "provider_input_tokens": 12159,
+        "provider_output_tokens": 3553,
+        "provider_total_tokens": 15712,
+        "request_schema_name": "independent_fixed_s0_pair_review",
+        "response_received": true
+      },
+      {
+        "estimated_input_tokens": 16034,
+        "max_output_tokens": 12000,
+        "model": "gpt-6.1-sol",
+        "provider_input_tokens": 12159,
+        "provider_output_tokens": 8303,
+        "provider_total_tokens": 20462,
+        "request_schema_name": "independent_fixed_s0_pair_review",
+        "response_received": true
+      },
+      {
+        "estimated_input_tokens": 16034,
+        "max_output_tokens": 12000,
+        "model": "gpt-6.1-sol",
+        "provider_input_tokens": 12159,
+        "provider_output_tokens": 5221,
+        "provider_total_tokens": 17380,
+        "request_schema_name": "independent_fixed_s0_pair_review",
+        "response_received": true
+      },
+      {
+        "estimated_input_tokens": 16034,
+        "max_output_tokens": 12000,
+        "model": "gpt-6.1-sol",
+        "provider_input_tokens": 12159,
+        "provider_output_tokens": 4997,
+        "provider_total_tokens": 17156,
+        "request_schema_name": "independent_fixed_s0_pair_review",
+        "response_received": true
+      },
+      {
+        "estimated_input_tokens": 16028,
+        "max_output_tokens": 12000,
+        "model": "gpt-6.1-sol",
+        "provider_input_tokens": 12150,
+        "provider_output_tokens": 4867,
+        "provider_total_tokens": 17017,
+        "request_schema_name": "independent_fixed_s0_pair_review",
+        "response_received": true
+      },
+      {
+        "estimated_input_tokens": 16718,
+        "max_output_tokens": 12000,
+        "model": "gpt-6.1-sol",
+        "provider_input_tokens": 14140,
+        "provider_output_tokens": 3213,
+        "provider_total_tokens": 17353,
+        "request_schema_name": "independent_fixed_s0_pair_candidate_check",
+        "response_received": true
+      },
+      {
+        "estimated_input_tokens": 12440,
+        "max_output_tokens": 12000,
+        "model": "gpt-6.1-sol",
+        "provider_input_tokens": 9342,
+        "provider_output_tokens": 4182,
+        "provider_total_tokens": 13524,
+        "request_schema_name": "independent_fixed_s0_pair_review",
+        "response_received": true
+      },
+      {
+        "estimated_input_tokens": 12440,
+        "max_output_tokens": 12000,
+        "model": "gpt-6.1-sol",
+        "provider_input_tokens": 9342,
+        "provider_output_tokens": 5814,
+        "provider_total_tokens": 15156,
+        "request_schema_name": "independent_fixed_s0_pair_review",
+        "response_received": true
+      },
+      {
+        "estimated_input_tokens": 10108,
+        "max_output_tokens": 12000,
+        "model": "gpt-6.1-sol",
+        "provider_input_tokens": 8293,
+        "provider_output_tokens": 1023,
+        "provider_total_tokens": 9316,
+        "request_schema_name": "independent_fixed_s0_pair_candidate_check",
+        "response_received": true
+      },
+      {
+        "estimated_input_tokens": 10615,
+        "max_output_tokens": 12000,
+        "model": "gpt-6.1-sol",
+        "provider_input_tokens": 7714,
+        "provider_output_tokens": 4890,
+        "provider_total_tokens": 12604,
+        "request_schema_name": "independent_fixed_s0_pair_review",
+        "response_received": true
+      },
+      {
+        "estimated_input_tokens": 10609,
+        "max_output_tokens": 12000,
+        "model": "gpt-6.1-sol",
+        "provider_input_tokens": 7705,
+        "provider_output_tokens": 4610,
+        "provider_total_tokens": 12315,
+        "request_schema_name": "independent_fixed_s0_pair_review",
+        "response_received": true
+      },
+      {
+        "estimated_input_tokens": 8378,
+        "max_output_tokens": 12000,
+        "model": "gpt-6.1-sol",
+        "provider_input_tokens": 6850,
+        "provider_output_tokens": 1359,
+        "provider_total_tokens": 8209,
+        "request_schema_name": "independent_fixed_s0_pair_candidate_check",
+        "response_received": true
+      },
+      {
+        "estimated_input_tokens": 7037,
+        "max_output_tokens": 12000,
+        "model": "gpt-6.1-sol",
+        "provider_input_tokens": 4294,
+        "provider_output_tokens": 1600,
+        "provider_total_tokens": 5894,
+        "request_schema_name": "independent_fixed_s0_pair_review",
+        "response_received": true
+      },
+      {
+        "estimated_input_tokens": 7250,
+        "max_output_tokens": 12000,
+        "model": "gpt-6.1-sol",
+        "provider_input_tokens": 4588,
+        "provider_output_tokens": 2012,
+        "provider_total_tokens": 6600,
+        "request_schema_name": "independent_fixed_s0_pair_review",
+        "response_received": true
+      },
+      {
+        "estimated_input_tokens": 7271,
+        "max_output_tokens": 12000,
+        "model": "gpt-6.1-sol",
+        "provider_input_tokens": 4622,
+        "provider_output_tokens": 2191,
+        "provider_total_tokens": 6813,
+        "request_schema_name": "independent_fixed_s0_pair_review",
+        "response_received": true
+      }
+    ],
+    "responses_with_reported_usage": 15,
+    "rounds": 6,
+    "unique_artifact_reads": 30
+  },
+  "comparison": {
+    "all": {
+      "api_v41_f1": 0.0,
+      "api_v43_dev_f1": 0.095238,
+      "api_v44_dev_f1": 0.3,
+      "api_v45_dev_f1": 0.347826,
+      "api_v46_dev_f1": 0.631579,
+      "api_v47_dev_f1": 0.333333,
+      "api_v48_dev_f1": 0.6,
+      "api_v49_dev_f1": 0.636364,
+      "delta_v49_minus_api_v41": 0.636364,
+      "delta_v49_minus_v43": 0.541126,
+      "delta_v49_minus_v44": 0.336364,
+      "delta_v49_minus_v45": 0.288538,
+      "delta_v49_minus_v46": 0.004785,
+      "delta_v49_minus_v47": 0.303031,
+      "delta_v49_minus_v48": 0.036364,
+      "note": "Descriptive development comparison: identical fixed S0, all 53 source artifacts and opaque model IDs as v4.6/v4.8; explicit pair classification and independent candidate verification change the architecture, call pattern and token accounting. The input budget is increased from 100000 to 400000 and provider requests are capped at 36. This is not an equal-compute comparison.",
+      "offline_v41_f1": 0.142857
+    },
+    "baseline": {
+      "api_v41_f1": 0.0,
+      "api_v43_dev_f1": 0.133333,
+      "api_v44_dev_f1": 0.214286,
+      "api_v45_dev_f1": 0.444444,
+      "api_v46_dev_f1": 0.689655,
+      "api_v47_dev_f1": 0.181818,
+      "api_v48_dev_f1": 0.645161,
+      "api_v49_dev_f1": 0.666667,
+      "delta_v49_minus_api_v41": 0.666667,
+      "delta_v49_minus_v43": 0.533334,
+      "delta_v49_minus_v44": 0.452381,
+      "delta_v49_minus_v45": 0.222223,
+      "delta_v49_minus_v46": -0.022988,
+      "delta_v49_minus_v47": 0.484849,
+      "delta_v49_minus_v48": 0.021506,
+      "note": "Descriptive development comparison: identical fixed S0, all 53 source artifacts and opaque model IDs as v4.6/v4.8; explicit pair classification and independent candidate verification change the architecture, call pattern and token accounting. The input budget is increased from 100000 to 400000 and provider requests are capped at 36. This is not an equal-compute comparison.",
+      "offline_v41_f1": 0.0625
+    }
+  },
+  "comparison_note": "Descriptive development comparison: identical fixed S0, all 53 source artifacts and opaque model IDs as v4.6/v4.8; explicit pair classification and independent candidate verification change the architecture, call pattern and token accounting. The input budget is increased from 100000 to 400000 and provider requests are capped at 36. This is not an equal-compute comparison.",
+  "frozen_s0_sha256": "6557ea5d549fbc2bac280be4f46d948948dbb70673c0c1f53ff21c24c4fbde42",
+  "investigation_profile": "event-pair-reviewed",
+  "model_change_note": "Linker and judge model IDs are copied exactly from the strongest measured v4.6 development run and match v4.8. Nomination remains none; immutable provider model snapshots are not verified.",
+  "models": {
+    "judge": "gpt-6.1-sol",
+    "linker": "gpt-6.1-sol"
+  },
+  "nominal_budgets": {
+    "max_input_tokens": 400000,
+    "max_provider_requests": 36,
+    "max_queries": 12,
+    "max_reads": 36,
+    "max_rounds": 6
+  },
+  "nomination_mode": "none",
+  "parent_v44_models": {
+    "judge": "gpt-6-luna",
+    "linker": "gpt-6.1-sol"
+  },
+  "parent_v45_models": {
+    "judge": "gpt-6.1-sol",
+    "linker": "gpt-6.1-sol"
+  },
+  "parent_v46_models": {
+    "judge": "gpt-6.1-sol",
+    "linker": "gpt-6.1-sol"
+  },
+  "parent_v47_models": {
+    "judge": "gpt-6.1-sol",
+    "linker": "gpt-6.1-sol"
+  },
+  "parent_v48_models": {
+    "judge": "gpt-6.1-sol",
+    "linker": "gpt-6.1-sol"
+  },
+  "policy_change_note": "v4.9 explicitly classifies every artifact/atomic-S0 pair in focused groups of at most three artifacts, with full captured same-event context, and independently verifies proposed candidate effects. Classification and checking are separate provider phases; neither receives frozen Gold labels. Fixed S0, all 53 unlabeled input artifacts, frozen labels and the exact-triple scorer remain unchanged. No measured v4.9 accuracy is claimed by preparation or local tests.",
+  "results": {
+    "all": {
+      "evaluated_hunks": 30,
+      "f1": 0.636364,
+      "fn": 5,
+      "fp": 11,
+      "fp_on_unrelated_or_implementation_only_hunks": 3,
+      "gold_positive_exact_triples": 19,
+      "limitations": [
+        "curated single-repository pilot",
+        "not a certified 2024 historical replay",
+        "no gold architecture-outcome labels",
+        "v4.9 development examples, not independent held-out evaluation",
+        "different profile and provider-call/token accounting"
+      ],
+      "precision": 0.56,
+      "predicted_exact_triples": 25,
+      "predicted_hunk_coverage": {
+        "count": 16,
+        "of": 30
+      },
+      "recall": 0.736842,
+      "scope": "all",
+      "tp": 14,
+      "unscored_prediction_links_outside_hunk_universe": 0
+    },
+    "baseline": {
+      "evaluated_hunks": 24,
+      "f1": 0.666667,
+      "fn": 2,
+      "fp": 10,
+      "fp_on_unrelated_or_implementation_only_hunks": 2,
+      "gold_positive_exact_triples": 14,
+      "limitations": [
+        "curated single-repository pilot",
+        "not a certified 2024 historical replay",
+        "no gold architecture-outcome labels",
+        "v4.9 development examples, not independent held-out evaluation",
+        "different profile and provider-call/token accounting"
+      ],
+      "precision": 0.545455,
+      "predicted_exact_triples": 22,
+      "predicted_hunk_coverage": {
+        "count": 14,
+        "of": 24
+      },
+      "recall": 0.857143,
+      "scope": "baseline",
+      "tp": 12,
+      "unscored_prediction_links_outside_hunk_universe": 3
+    }
+  },
+  "semantic_phase_config": {
+    "candidate_verification": "independent",
+    "classification": "explicit_all_pairs",
+    "focused_artifacts_per_request": 3,
+    "initial_output_tokens": 12000,
+    "max_attempts_per_phase": 2,
+    "max_candidates_per_event": 64,
+    "retry_output_tokens": 16384
+  },
+  "status": "V49_DEVELOPMENT_ONLY_POST_RUN_REFERENCE_COMPARISON",
+  "v49_code_sha256": "a0e1b1c0156e48d6a4bdae27a02fdfd9e0bedfbdd05bac79c2db812468937b22",
+  "v49_run_report_sha256": "c59940bac54f4d7a66ed774443a6cc15bb5a5c43af52f91e3359a1aefb58a3bc",
+  "verification_status": "UNRESOLVED",
+  "verified_evidence_links": 25,
+  "warnings": [
+    "NOT held-out: the reference was examined during development.",
+    "Descriptive development comparison: identical fixed S0, all 53 source artifacts and opaque model IDs as v4.6/v4.8; explicit pair classification and independent candidate verification change the architecture, call pattern and token accounting. The input budget is increased from 100000 to 400000 and provider requests are capped at 36. This is not an equal-compute comparison.",
+    "Linker and judge model IDs are copied exactly from the strongest measured v4.6 development run and match v4.8. Nomination remains none; immutable provider model snapshots are not verified.",
+    "v4.9 explicitly classifies every artifact/atomic-S0 pair in focused groups of at most three artifacts, with full captured same-event context, and independently verifies proposed candidate effects. Classification and checking are separate provider phases; neither receives frozen Gold labels. Fixed S0, all 53 unlabeled input artifacts, frozen labels and the exact-triple scorer remain unchanged. No measured v4.9 accuracy is claimed by preparation or local tests.",
+    "The exact-triple scorer is unchanged; no architecture-outcome gold is available.",
+    "Historical replay remains uncertified; model snapshots are not verified."
+  ]
+}

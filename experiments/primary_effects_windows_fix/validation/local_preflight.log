@@ -1,0 +1,31 @@
+Local tests and primary-effect forecast only; no API will be called.
+.................................................................. [ 67%]
+...............................s                                         [100%]
+97 passed, 1 skipped, 6 subtests passed in 2.67s
+{
+  "status": "PRIMARY_EFFECT_DRY_RUN_NO_API_CALLED",
+  "experiment_kind": "PRIMARY_HUNK_EFFECT_EXPERIMENT",
+  "mock_primary_requests": 12,
+  "independent_critic_requests": 0,
+  "forecast_complete": true,
+  "forecast_input_estimate": 269494,
+  "forecast_within_input_ceiling": true,
+  "max_input_tokens": 400000,
+  "max_provider_requests": 24,
+  "coverage": {
+    "planned_event_count": 6,
+    "planned_artifact_count": 30,
+    "reviewed_artifact_count": 30,
+    "planned_review_complete": true,
+    "all_history_artifact_count": 53,
+    "selected_artifact_count": 36,
+    "all_history_model_reported_reviewed": false,
+    "coverage_note": "Validated review-row coverage does not certify semantic correctness."
+  },
+  "baseline_selected_line_count": 147,
+  "toolkit_sha256": "e9c479cb8386f9afe0b86c94b3648c365d3f5ebb5daaf6f1c13520ec36972cb1",
+  "technical_failures": [],
+  "output_created": false,
+  "hosted_accuracy_available": false,
+  "note": "Local all-negative fixtures forecast request envelopes, not F1."
+}

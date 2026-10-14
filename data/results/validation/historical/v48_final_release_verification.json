@@ -1,0 +1,13 @@
+{
+  "all_member_checksums_and_archive_crc_passed": true,
+  "archive_bytes": 982377,
+  "archive_members": 205,
+  "archive_sha256": "8b866fb029b356681e25c954975ce06723526b2ee8bdbbf0c44e10959dea2e54",
+  "automated_tests_passed": 712,
+  "core_sha256": "ab82ceb7019d8534515dd5e6ead0153b3d92bed545c6e251bc64e97d2a816853",
+  "hosted_v48_accuracy_result_available": false,
+  "provider_calls": 0,
+  "semantic_instructions_and_schema_match_v46": true,
+  "shipped_python_and_project_metadata_match_tested_extraction": true,
+  "status": "V48_FINAL_RELEASE_VERIFIED_NO_API_CALLED"
+}

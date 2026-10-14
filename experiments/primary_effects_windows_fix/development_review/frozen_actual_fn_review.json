@@ -1,0 +1,263 @@
+{
+  "status": "ACTUAL_FROZEN_REFERENCE_FN_CRITERIA_REVIEW_COMPLETE_NO_API",
+  "provider_calls": 0,
+  "gold_annotations_added_to_model_inputs": false,
+  "historical_inputs_code_reference_or_scorer_changed": false,
+  "scope_false_negatives_reviewed": 6,
+  "v49_false_negatives_reviewed": 5,
+  "reference_file_sha256": {
+    "HUNK_RELATIONS_CANDIDATE.csv": "8448a4efeca142d4410ea902b0e9f9e85958af52d745b8582a0757feb802f9ac",
+    "COMMIT_SCREENING_CANDIDATE.csv": "5e165c10233b02794810eed81986f2ec795a4514d2a938f2fa25f3ca7a3c9304",
+    "S0_ATOMIC_CANDIDATE.csv": "5255d9efd256f8c39004a3a476740f4d89d7a5f24d6e2907ed5fc3c1a4afdd5e",
+    "EVENT_RELATIONS_CANDIDATE.csv": "e1f9b33899dd5b0977a97d912cf528aefbf3ecd8468423c8abe38c676a8c3fe6"
+  },
+  "cases": [
+    {
+      "artifact_id": "079aa5fb9ab1-F01-H05",
+      "element_id": "G2",
+      "reference_relation": "supports",
+      "temporal_basis": "INTERIM_2024",
+      "fixed_runtime_s0_text": "Allow actors (e.g., users, VPA, StatefulSet, JobController) to decide how to proceed when an in-place resource resize is not possible.",
+      "source_content": "@@ -819,9 +824,66 @@ time, irrespective of scrape interval.\n 1. Extend controllers (Job, Deployment, etc) to propagate Template resources\n    update to running Pods.\n 1. Allow resizing local ephemeral storage.\n-1. Allow resource limits to be updated (VPA feature).\n 1. Handle pod-scoped resources (https://github.com/kubernetes/enhancements/pull/1592)\n \n+#### Design Sketch: Workload resource resize\n+\n+The following [workload resources](https://kubernetes.io/docs/concepts/workloads/) are considered\n+for in-place resize support:\n+\n+* Deployment\n+* ReplicaSet\n+* StatefulSet\n+* DaemonSet\n+* Job\n+* CronJob\n+\n+Each of these resources will have a new `ResizePolicy` field added to the spec. In the case of\n+Deployments or Cronjobs, the child (ReplicaSet/Job) will inherit the policy. The resize policy is\n+set to one of: `InPlace` or `Recreate` (default). If the policy is set to recreate, the behavior is\n+unchanged, and generally induces a rolling update.\n+\n+If the policy is set to in-place, the controller will *attempt* to issue an in-place resize to all\n+the child pods. If the resize is not a legal in-place resize, such as changing from guaranteed to\n+burstable, the replicas will be recreated.\n+\n+Open Questions:\n+* Will resizes be issued through a new `/resize` subresource? If so, what happens if a resize is\n+  made that doesn't go through the subresource?\n+* Does ResizePolicy need to be per-resource type (similar to the resize restart policy on pods)?\n+* Can you do a rolling-in-place-resize, or are all child pod resizes issued more or less\n+  simultaneously?\n+\n+#### Design Sketch: Explicit QOS Class\n+\n+Workload resource resize presents a problem for QOS handling. For example:\n+\n+1. ReplicaSet created with a burstable pod shape\n+2. Initial burstable replicas created\n+3. Resize to a guaranteed shape\n+4. Initial replicas are still burstable, but with a guaranteed shape\n+5. Horizontally scale the RS to add additional replicas\n+6. New replicas are created with the guaranteed resource shape, and assigned the guaranteed QOS class\n+7. Resize back to a burstable shape (undoing step 3)\n+\n+After step 6, there are a mix of burstable & guaranteed replicas. In step 7, the burstable pods can\n+be resized in-place, but the guaranteed pods will need to be recreated.\n+\n+To mitigate this, we can introduce an explicit QOSClass field to the pod spec. If set, it must be\n+less than or equal to the QOS shape. In other words, you can set a guaranteed resource shape but an\n+explicit QOSClass of burstable, but not the other way around. If set, the status QOSClass is synced\n+to the explicit QOSClass, and the rest of the behavior is unchanged from the\n+[QOS Class Proposal](#qos-class).\n+\n+Going back to the earlier example, if the original ReplicaSet set an explicit Burstable QOSClass,\n+then the heterogeneity in step 6 is avoided. Alternatively, if there was a real desire to switch to\n+guaranteed in step 3, then the explicit QOSClass can be changed, triggering a recreation of all\n+replicas.\n+\n+#### Design Sktech: Pod-level Limits\n+\n+TODO\n+\n ### Test Plan\n \n <!--",
+      "frozen_hunk_annotation": {
+        "hunk_id": "079aa5fb9ab1-F01-H05",
+        "commit_sha": "079aa5fb9ab1a66f09f1d0c841025f7451474265",
+        "source_file": "keps/sig-node/1287-in-place-update-pod-resources/README.md",
+        "hunk_sha256": "94bd2b842e6f68d4c95e8da19f2b29d018f388a2ba6ed8d66825c027b7eb4cac",
+        "relation_candidate": "SUPPORTS",
+        "related_atomic_s0_ids": "G2;C1;C2a",
+        "temporal_basis_inherited_from_event": "INTERIM_2024",
+        "source_url": "https://github.com/kubernetes/enhancements/commit/079aa5fb9ab1a66f09f1d0c841025f7451474265",
+        "signoff_record": "PI_REPORTED_DUAL_HUMAN_CONSENSUS; UNSIGNED_WORKBOOK",
+        "annotation_granularity_warning": "HUNK_RELATION_MAY_NOT_IMPLY_BASELINE_RATIONALE_INVALIDATION",
+        "review_note": " Open point: C2a. Same relation. Non-binding sketch: workload controllers attempt an in-place resize and recreate replicas when it is not legal (G2, C1; 2023 Future Enhancement L691-692). The explicit-QOSClass sketch keeps QoS class changes tied to recreation ('can be changed, triggering a recreation of all replicas'), which matches C2a. The removal of 'Allow resource limits to be updated (VPA feature)' (L694) is UNKNOWN and is not linked."
+      },
+      "frozen_event_annotation": {
+        "commit_sha": "079aa5fb9ab1a66f09f1d0c841025f7451474265",
+        "event_summary": "Update from offline design discussions",
+        "relation_candidate": "SUPERSEDES",
+        "related_atomic_s0_ids": "I2",
+        "temporal_basis": "INTERIM_2024",
+        "baseline_rationale_invalidated_gold": "NOT_ADJUDICATED",
+        "source_url": "https://github.com/kubernetes/enhancements/commit/079aa5fb9ab1a66f09f1d0c841025f7451474265",
+        "researcher_warning": "RELATION_TO_INTERIM_2024_NOT_AUTOMATICALLY_BASELINE_DRIFT",
+        "signoff_record": "PI_REPORTED_DUAL_HUMAN_CONSENSUS; UNSIGNED_WORKBOOK",
+        "note": " Open point: the ID-listing convention. Same relation. Proposed convention: the IDs column lists only the elements the stated relation applies to, and other affected elements are recorded here with their own relation. SUPERSEDES applies to I2 only, and only to interim text: H02 changes the interim rule introduced by d774b5c ('mutable, but must have an entry for every resizable resource type') to 'append-only'. The 2023 text (L230-255) is silent on mutability, so 2023 I2 is not contradicted. Other affected elements: C2a via H03/H04/H05 (QoS class kept fixed; H03/H04 IMPLEMENTATION_ONLY; H05's explicit-QoS sketch is consistent); C2b via H03 (terminology only; the narrowing was made by d774b5c); G2 and C1 via H05 (SUPPORTS through a non-binding workload-resize sketch). Removal of the 2023 future item 'Allow resource limits to be updated (VPA feature)' (L694) is UNKNOWN. No change challenges the 2023 rationale."
+      },
+      "support_or_change_basis": "goal_realization_sketch",
+      "interpretation": "The frozen note expressly accepts a non-binding controller sketch as support: controllers attempt resizing and recreate replicas when illegal. It does not require an explicit because-style argument. A proposed policy choice and fallback instantiate a limited actor-choice goal; adoption and full actor-wide fulfillment remain unproved. The new scope critic imposed a narrower argument-only route, explaining the lost TP."
+    },
+    {
+      "artifact_id": "079aa5fb9ab1-F01-H05",
+      "element_id": "C1",
+      "reference_relation": "supports",
+      "temporal_basis": "INTERIM_2024",
+      "fixed_runtime_s0_text": "Explicit non-goal: controlling the full lifecycle of a Pod whose in-place resize failed; this is left to the actors that initiated the resize.",
+      "source_content": "@@ -819,9 +824,66 @@ time, irrespective of scrape interval.\n 1. Extend controllers (Job, Deployment, etc) to propagate Template resources\n    update to running Pods.\n 1. Allow resizing local ephemeral storage.\n-1. Allow resource limits to be updated (VPA feature).\n 1. Handle pod-scoped resources (https://github.com/kubernetes/enhancements/pull/1592)\n \n+#### Design Sketch: Workload resource resize\n+\n+The following [workload resources](https://kubernetes.io/docs/concepts/workloads/) are considered\n+for in-place resize support:\n+\n+* Deployment\n+* ReplicaSet\n+* StatefulSet\n+* DaemonSet\n+* Job\n+* CronJob\n+\n+Each of these resources will have a new `ResizePolicy` field added to the spec. In the case of\n+Deployments or Cronjobs, the child (ReplicaSet/Job) will inherit the policy. The resize policy is\n+set to one of: `InPlace` or `Recreate` (default). If the policy is set to recreate, the behavior is\n+unchanged, and generally induces a rolling update.\n+\n+If the policy is set to in-place, the controller will *attempt* to issue an in-place resize to all\n+the child pods. If the resize is not a legal in-place resize, such as changing from guaranteed to\n+burstable, the replicas will be recreated.\n+\n+Open Questions:\n+* Will resizes be issued through a new `/resize` subresource? If so, what happens if a resize is\n+  made that doesn't go through the subresource?\n+* Does ResizePolicy need to be per-resource type (similar to the resize restart policy on pods)?\n+* Can you do a rolling-in-place-resize, or are all child pod resizes issued more or less\n+  simultaneously?\n+\n+#### Design Sketch: Explicit QOS Class\n+\n+Workload resource resize presents a problem for QOS handling. For example:\n+\n+1. ReplicaSet created with a burstable pod shape\n+2. Initial burstable replicas created\n+3. Resize to a guaranteed shape\n+4. Initial replicas are still burstable, but with a guaranteed shape\n+5. Horizontally scale the RS to add additional replicas\n+6. New replicas are created with the guaranteed resource shape, and assigned the guaranteed QOS class\n+7. Resize back to a burstable shape (undoing step 3)\n+\n+After step 6, there are a mix of burstable & guaranteed replicas. In step 7, the burstable pods can\n+be resized in-place, but the guaranteed pods will need to be recreated.\n+\n+To mitigate this, we can introduce an explicit QOSClass field to the pod spec. If set, it must be\n+less than or equal to the QOS shape. In other words, you can set a guaranteed resource shape but an\n+explicit QOSClass of burstable, but not the other way around. If set, the status QOSClass is synced\n+to the explicit QOSClass, and the rest of the behavior is unchanged from the\n+[QOS Class Proposal](#qos-class).\n+\n+Going back to the earlier example, if the original ReplicaSet set an explicit Burstable QOSClass,\n+then the heterogeneity in step 6 is avoided. Alternatively, if there was a real desire to switch to\n+guaranteed in step 3, then the explicit QOSClass can be changed, triggering a recreation of all\n+replicas.\n+\n+#### Design Sktech: Pod-level Limits\n+\n+TODO\n+\n ### Test Plan\n \n <!--",
+      "frozen_hunk_annotation": {
+        "hunk_id": "079aa5fb9ab1-F01-H05",
+        "commit_sha": "079aa5fb9ab1a66f09f1d0c841025f7451474265",
+        "source_file": "keps/sig-node/1287-in-place-update-pod-resources/README.md",
+        "hunk_sha256": "94bd2b842e6f68d4c95e8da19f2b29d018f388a2ba6ed8d66825c027b7eb4cac",
+        "relation_candidate": "SUPPORTS",
+        "related_atomic_s0_ids": "G2;C1;C2a",
+        "temporal_basis_inherited_from_event": "INTERIM_2024",
+        "source_url": "https://github.com/kubernetes/enhancements/commit/079aa5fb9ab1a66f09f1d0c841025f7451474265",
+        "signoff_record": "PI_REPORTED_DUAL_HUMAN_CONSENSUS; UNSIGNED_WORKBOOK",
+        "annotation_granularity_warning": "HUNK_RELATION_MAY_NOT_IMPLY_BASELINE_RATIONALE_INVALIDATION",
+        "review_note": " Open point: C2a. Same relation. Non-binding sketch: workload controllers attempt an in-place resize and recreate replicas when it is not legal (G2, C1; 2023 Future Enhancement L691-692). The explicit-QOSClass sketch keeps QoS class changes tied to recreation ('can be changed, triggering a recreation of all replicas'), which matches C2a. The removal of 'Allow resource limits to be updated (VPA feature)' (L694) is UNKNOWN and is not linked."
+      },
+      "frozen_event_annotation": {
+        "commit_sha": "079aa5fb9ab1a66f09f1d0c841025f7451474265",
+        "event_summary": "Update from offline design discussions",
+        "relation_candidate": "SUPERSEDES",
+        "related_atomic_s0_ids": "I2",
+        "temporal_basis": "INTERIM_2024",
+        "baseline_rationale_invalidated_gold": "NOT_ADJUDICATED",
+        "source_url": "https://github.com/kubernetes/enhancements/commit/079aa5fb9ab1a66f09f1d0c841025f7451474265",
+        "researcher_warning": "RELATION_TO_INTERIM_2024_NOT_AUTOMATICALLY_BASELINE_DRIFT",
+        "signoff_record": "PI_REPORTED_DUAL_HUMAN_CONSENSUS; UNSIGNED_WORKBOOK",
+        "note": " Open point: the ID-listing convention. Same relation. Proposed convention: the IDs column lists only the elements the stated relation applies to, and other affected elements are recorded here with their own relation. SUPERSEDES applies to I2 only, and only to interim text: H02 changes the interim rule introduced by d774b5c ('mutable, but must have an entry for every resizable resource type') to 'append-only'. The 2023 text (L230-255) is silent on mutability, so 2023 I2 is not contradicted. Other affected elements: C2a via H03/H04/H05 (QoS class kept fixed; H03/H04 IMPLEMENTATION_ONLY; H05's explicit-QoS sketch is consistent); C2b via H03 (terminology only; the narrowing was made by d774b5c); G2 and C1 via H05 (SUPPORTS through a non-binding workload-resize sketch). Removal of the 2023 future item 'Allow resource limits to be updated (VPA feature)' (L694) is UNKNOWN. No change challenges the 2023 rationale."
+      },
+      "support_or_change_basis": "qualified_boundary_realization",
+      "interpretation": "The same frozen note expressly maps controller-owned illegal-resize recreation to C1. It permits qualified evidence of the initiating actor's fallback responsibility, without proof of every lifecycle operation or adopted controller behavior. The source does not literally restate the full non-goal, but the reference accepts the concrete delegation sketch as partial support. A semantic policy requiring an explicit argument for the entire exclusion is stricter than this criterion."
+    },
+    {
+      "artifact_id": "079aa5fb9ab1-F01-H02",
+      "element_id": "I2",
+      "reference_relation": "supersedes",
+      "temporal_basis": "INTERIM_2024",
+      "fixed_runtime_s0_text": "Offer per-resource restart-policy choices to control how container resizes are attempted.",
+      "source_content": "@@ -277,8 +277,8 @@ If a pod's RestartPolicy is `Never`, the ResizePolicy fields must be set to\n in the container being stopped *and not restarted*, if the system can not\n perform the resize in place.\n \n-The `ResizePolicy` field is **mutable**, but must have an entry for every resizable resource type\n-with a request or limit on the container.\n+The `ResizePolicy` field is append-only. Appending the policy is allowed to accommodate a resize\n+adding a request or a limit for a resource that wasn't previously present.\n \n #### Resize Status\n \n",
+      "frozen_hunk_annotation": {
+        "hunk_id": "079aa5fb9ab1-F01-H02",
+        "commit_sha": "079aa5fb9ab1a66f09f1d0c841025f7451474265",
+        "source_file": "keps/sig-node/1287-in-place-update-pod-resources/README.md",
+        "hunk_sha256": "37cf72e72e35558c1ebd16d776037b75c6469931856f2f70b5190b2ba8544f3a",
+        "relation_candidate": "SUPERSEDES",
+        "related_atomic_s0_ids": "I2",
+        "temporal_basis_inherited_from_event": "INTERIM_2024",
+        "source_url": "https://github.com/kubernetes/enhancements/commit/079aa5fb9ab1a66f09f1d0c841025f7451474265",
+        "signoff_record": "PI_REPORTED_DUAL_HUMAN_CONSENSUS; UNSIGNED_WORKBOOK",
+        "annotation_granularity_warning": "HUNK_RELATION_MAY_NOT_IMPLY_BASELINE_RATIONALE_INVALIDATION",
+        "review_note": "Agreed. Interim only: 'mutable, but must have an entry for every resizable resource type' (introduced by d774b5c) -> 'append-only'. 2023 I2 is silent on mutability."
+      },
+      "frozen_event_annotation": {
+        "commit_sha": "079aa5fb9ab1a66f09f1d0c841025f7451474265",
+        "event_summary": "Update from offline design discussions",
+        "relation_candidate": "SUPERSEDES",
+        "related_atomic_s0_ids": "I2",
+        "temporal_basis": "INTERIM_2024",
+        "baseline_rationale_invalidated_gold": "NOT_ADJUDICATED",
+        "source_url": "https://github.com/kubernetes/enhancements/commit/079aa5fb9ab1a66f09f1d0c841025f7451474265",
+        "researcher_warning": "RELATION_TO_INTERIM_2024_NOT_AUTOMATICALLY_BASELINE_DRIFT",
+        "signoff_record": "PI_REPORTED_DUAL_HUMAN_CONSENSUS; UNSIGNED_WORKBOOK",
+        "note": " Open point: the ID-listing convention. Same relation. Proposed convention: the IDs column lists only the elements the stated relation applies to, and other affected elements are recorded here with their own relation. SUPERSEDES applies to I2 only, and only to interim text: H02 changes the interim rule introduced by d774b5c ('mutable, but must have an entry for every resizable resource type') to 'append-only'. The 2023 text (L230-255) is silent on mutability, so 2023 I2 is not contradicted. Other affected elements: C2a via H03/H04/H05 (QoS class kept fixed; H03/H04 IMPLEMENTATION_ONLY; H05's explicit-QoS sketch is consistent); C2b via H03 (terminology only; the narrowing was made by d774b5c); G2 and C1 via H05 (SUPPORTS through a non-binding workload-resize sketch). Removal of the 2023 future item 'Allow resource limits to be updated (VPA feature)' (L694) is UNKNOWN. No change challenges the 2023 rationale."
+      },
+      "support_or_change_basis": "interim_target_version_mismatch",
+      "interpretation": "The note explicitly says the mutable-entry rule was introduced by d774b5c, changed to append-only here, and 2023 I2 is silent on mutability. This supersedes an interim2024 contract mapped to I2, not the immutable2023 I2 proposition. Event annotations give this same interpretation and warn against automatically treating interim changes as baseline drift. A fixed2023 predicate checker's abstention is semantically consistent with its stated task."
+    },
+    {
+      "artifact_id": "04de3dac4669-F01-H01",
+      "element_id": "I2",
+      "reference_relation": "supersedes",
+      "temporal_basis": "INTERIM_2024",
+      "fixed_runtime_s0_text": "Offer per-resource restart-policy choices to control how container resizes are attempted.",
+      "source_content": "@@ -299,8 +299,9 @@ If a pod's RestartPolicy is `Never`, the ResizePolicy fields must be set to\n in the container being stopped *and not restarted*, if the system can not\n perform the resize in place.\n \n-The `ResizePolicy` field is append-only. Appending the policy is allowed to accommodate a resize\n-adding a request or a limit for a resource that wasn't previously present.\n+The `ResizePolicy` field is mutable. Only append is strictly required to support in-place resize\n+(for new resource requirements), and we may reevaluate full mutability if additional edge cases are\n+discovered in implementation.\n \n #### Resize Status\n ",
+      "frozen_hunk_annotation": {
+        "hunk_id": "04de3dac4669-F01-H01",
+        "commit_sha": "04de3dac4669f4b2f792c17488c680ce4b144679",
+        "source_file": "keps/sig-node/1287-in-place-update-pod-resources/README.md",
+        "hunk_sha256": "3beea174cdc998c2b373eb3e286840678efd3ded829b6c475ee59c7b55cacf27",
+        "relation_candidate": "SUPERSEDES",
+        "related_atomic_s0_ids": "I2",
+        "temporal_basis_inherited_from_event": "INTERIM_2024",
+        "source_url": "https://github.com/kubernetes/enhancements/commit/04de3dac4669f4b2f792c17488c680ce4b144679",
+        "signoff_record": "PI_REPORTED_DUAL_HUMAN_CONSENSUS; UNSIGNED_WORKBOOK",
+        "annotation_granularity_warning": "HUNK_RELATION_MAY_NOT_IMPLY_BASELINE_RATIONALE_INVALIDATION",
+        "review_note": "Agreed. Interim reversal append-only -> mutable; 2023 I2 unaffected."
+      },
+      "frozen_event_annotation": {
+        "commit_sha": "04de3dac4669f4b2f792c17488c680ce4b144679",
+        "event_summary": "Make ResizePolicy mutable",
+        "relation_candidate": "SUPERSEDES",
+        "related_atomic_s0_ids": "I2",
+        "temporal_basis": "INTERIM_2024",
+        "baseline_rationale_invalidated_gold": "NOT_ADJUDICATED",
+        "source_url": "https://github.com/kubernetes/enhancements/commit/04de3dac4669f4b2f792c17488c680ce4b144679",
+        "researcher_warning": "RELATION_TO_INTERIM_2024_NOT_AUTOMATICALLY_BASELINE_DRIFT",
+        "signoff_record": "PI_REPORTED_DUAL_HUMAN_CONSENSUS; UNSIGNED_WORKBOOK",
+        "note": "Same relation and IDs (agreed). Reverses 079aa5f's interim 'append-only' rule back to 'mutable', provisionally ('we may reevaluate full mutability ...'). Full interim sequence, confirmed from the d774b5c diff: 2023 silent (L230-255) -> d774b5c 'mutable, but must have an entry for every resizable resource type' (2024-09-07) -> 079aa5f 'append-only' (2024-09-17) -> 04de3da 'mutable' (2024-10-10). This oscillation happens within 2024; it leaves 2023 I2 unaffected and is consistent with I2's purpose of 'fine-grained user control' (L232)."
+      },
+      "support_or_change_basis": "interim_target_version_mismatch",
+      "interpretation": "The note explicitly calls this an interim append-only-to-mutable reversal and says 2023 I2 is unaffected. The event note records the2024 sequence: silent2023 -> mutable September7 -> append-only September17 -> provisionally mutable October10. A versioned claim target is required to report honest interim supersession while preserving the2023 baseline."
+    },
+    {
+      "artifact_id": "68952e4476e4-F01-H01",
+      "element_id": "R2",
+      "reference_relation": "supports",
+      "temporal_basis": "BASELINE_2023",
+      "fixed_runtime_s0_text": "Expose, for each resized container resource, why the desired and actual resources differ: whether a proposed resize has not yet been accepted or rejected by the kubelet, has been accepted and is being actuated, is deferred, or has been rejected as infeasible; supplemented by Pod Events at key steps.",
+      "source_content": "@@ -676,6 +676,26 @@ Other components:\n * check how the change of meaning of resource requests influence other\n   Kubernetes components.\n \n+### Instrumentation\n+\n+The following new metric will be added to track total resize requests, counted at the pod level. In\n+otherwords, a single pod update changing multiple containers and/or resources will count as a single\n+resize request.\n+\n+`kubelet_container_resize_requests_total` - Total number of resize requests observed by the Kubelet.\n+\n+Label: `state` - Count resize request state transitions. This closely tracks the [Resize status](#resize-status) state transitions, omitting `InProgress`. Possible values:\n+  - `proposed` - Initial request state\n+  - `infeasible` - Resize request cannot be completed.\n+  - `deferred` - Resize request cannot initially be completed, but will retry\n+  - `completed` - Resize operation completed successfully (`spec.Resources == status.Allocated == status.Resources`)\n+  - `canceled` - Pod was terminated before resize was completed, or a new resize request was started.\n+\n+In steady state, `proposed` should equal `infeasible + completed + canceled`.\n+\n+The metric is recorded as a counter instead of a gauge to ensure that usage can be tracked over\n+time, irrespective of scrape interval.\n+\n ### Future Enhancements\n \n 1. Kubelet (or Scheduler) evicts lower priority Pods from Node to make room for\n",
+      "frozen_hunk_annotation": {
+        "hunk_id": "68952e4476e4-F01-H01",
+        "commit_sha": "68952e4476e47eb71321a2c7f92844e602d38d22",
+        "source_file": "keps/sig-node/1287-in-place-update-pod-resources/README.md",
+        "hunk_sha256": "632f75c8fa8306353c921dca944d31b259da19c74944929ea2c688e0e0d0e639",
+        "relation_candidate": "SUPPORTS",
+        "related_atomic_s0_ids": "R2;I3;R1",
+        "temporal_basis_inherited_from_event": "BASELINE_2023",
+        "source_url": "https://github.com/kubernetes/enhancements/commit/68952e4476e47eb71321a2c7f92844e602d38d22",
+        "signoff_record": "PI_REPORTED_DUAL_HUMAN_CONSENSUS; UNSIGNED_WORKBOOK",
+        "annotation_granularity_warning": "HUNK_RELATION_MAY_NOT_IMPLY_BASELINE_RATIONALE_INVALIDATION",
+        "review_note": " Open point: R1. Same relation. Metric states mirror Status.Resize (I3, R2). The 'completed' condition spec.Resources == status.Allocated == status.Resources uses the three-state distinction (R1). Both reviewers linked the same definition, as later edited, to R1 in 964260d9c2da-F01-H13, so R1 is proposed here for consistency."
+      },
+      "frozen_event_annotation": {
+        "commit_sha": "68952e4476e47eb71321a2c7f92844e602d38d22",
+        "event_summary": "InPlacePodVerticalScaling BETA update",
+        "relation_candidate": "SUPPORTS",
+        "related_atomic_s0_ids": "I3;R2;I1;R1",
+        "temporal_basis": "BASELINE_2023",
+        "baseline_rationale_invalidated_gold": "NOT_ADJUDICATED",
+        "source_url": "https://github.com/kubernetes/enhancements/commit/68952e4476e47eb71321a2c7f92844e602d38d22",
+        "researcher_warning": "SUPPORTING_IMPLEMENTATION_NOT_PROOF_OF_OPTIMALITY",
+        "signoff_record": "PI_REPORTED_DUAL_HUMAN_CONSENSUS; UNSIGNED_WORKBOOK",
+        "note": " Open point: R1. Same relation. All README hunks edit text unchanged since 2023, so the comparison is against the 2023 baseline. The commit keeps and operationalises the 2023 elements; it is not evidence that the original reasons were correct. H01: metric states mirror Status.Resize (I3, R2). H04: the kubelet sets AllocatedResources and Resources (I1). R1 is proposed for consistency with the agreed R1 link on 964260d9c2da-F01-H13, the same 'completed' definition, which originates here. H05 is operational (IMPLEMENTATION_ONLY; see the hunk consensus). The kep.yaml pre-image shows a milestone change after 2023-10-26 that is missing from the timeline."
+      },
+      "support_or_change_basis": "partial_operational_correspondence",
+      "interpretation": "The note justifies R2 because metric states mirror Status.Resize. It accepts state-model operational correspondence as qualified supporting implementation. It does not assert that an aggregate Pod-level metric exposes each container/resource discrepancy or generates required Events. The event note explicitly says operationalisation is not evidence that the original reasons were correct. This is a broader partial-support criterion than full compound-R2 entailment."
+    },
+    {
+      "artifact_id": "964260d9c2da-F01-H14",
+      "element_id": "I1",
+      "reference_relation": "weakens",
+      "temporal_basis": "BOTH",
+      "fixed_runtime_s0_text": "Represent desired resources through mutable PodSpec fields and report allocated/applied resources through PodStatus.",
+      "source_content": "@@ -1394,3 +1394,61 @@ information to express the idea and why it was not acceptable.\n \n We considered having scheduler approve the resize. We also considered PodSpec as\n the location to checkpoint allocated resources.\n+\n+### Allocated Resources\n+\n+If we need allocated resources & limits in the pod status API, the following options have been\n+considered:\n+\n+**Option 1: New field \"AcceptedResources\"**\n+\n+We can't change the type of the existing field, so instead we\n+introduce a new field `ContainerStatus.AcceptedResources` of type `ResourceRequirements`, to track both\n+allocated requests & limits, and remove the old `AllocatedResources` field. For consistency, we also\n+add `AcceptedResourcesStatus` and remove `AllocatedResourcesStatus`.\n+\n+Pros:\n+- Consistent type across PodSpec.Container.Resources (desired), ContainerStatus.AcceptedResources (allocated), and ContainerStatus.Resources (actual)\n+- If/when we implement in-place resize for DRA resources, Claims are already included in the API.\n+- No need for local checkpointing, if the Kubelet can read back from the status API.\n+\n+Cons:\n+- No path to beta without waiting a release (new fields need to start in alpha)\n+- Extra code churn to migrate to the new fields\n+- Inconsistent with PVC API (which has AllocatedResources), and the Node Allocatable resources.\n+- The Claims field is currently unnecessary, and needs its behavior defined.\n+\n+Variations:\n+- Use an alternative type that is a subset of the ResourceRequirements type without Claims, adding back Claims only when needed.\n+- Field name ContainerStatus.Allocated, as a struct holding both the allocated resources and and the allocated resource status\n+\n+**Option 2: New field \"AllocatedResourceLimits\"**\n+\n+Rather than changing the type with a new field, we could use a flattened API structure and just add\n+`ContainerStatus.AllocatedResourceLimits` alongside `AllocatedResources` (requests).\n+\n+Pros:\n+- Preserves the \"Allocated\" name\n+- Less churn to implement\n+- Does not prematurely import Claims into the problem space\n+\n+Cons:\n+- Uglier API: unnested fields adds noise to the documentation and makes it harder for humans to read the status.\n+- Inconsistent types between Allocated* and Resources\n+- We will want to mirror the same structure in the PodStatus for pod-level resources, and may eventually want to add AllocatedResourceClaims for DRA resource resize\n+\n+**Option 3: Pod-level \"AllocatedResources\", drop container-level API**\n+\n+If we assume that outside the node, controllers and people only care about pod-level allocated\n+resources, then we could drop the container-level allocated resources, and just add a\n+`PodStatus.AllocatedResources` field of type `ResourceRequirements`. The Kubelet still needs to track\n+container-level allocation, and would use a checkpoint to do so.\n+\n+Pros:\n+- Minimalist API, without unnecessary or redundant information\n+- Preserve the \"Allocated\" name while still getting the advantages of type consistency\n+- Similar path to beta as Option 2\n+\n+Cons:\n+- Requires long-term checkpointing to track container allocation\n+- Extra risk in assuming nothing outside the node ever needs to know container-level allocated resources.",
+      "frozen_hunk_annotation": {
+        "hunk_id": "964260d9c2da-F01-H14",
+        "commit_sha": "964260d9c2da8f75423771fffd9989077d4d92aa",
+        "source_file": "keps/sig-node/1287-in-place-update-pod-resources/README.md",
+        "hunk_sha256": "bae066e42e4c75868bb9582c9daf94b93e82f1f4618f2c72aab5ca6ef4bbbf38",
+        "relation_candidate": "WEAKENS",
+        "related_atomic_s0_ids": "I1",
+        "temporal_basis_inherited_from_event": "BOTH",
+        "source_url": "https://github.com/kubernetes/enhancements/commit/964260d9c2da8f75423771fffd9989077d4d92aa",
+        "signoff_record": "PI_REPORTED_DUAL_HUMAN_CONSENSUS; UNSIGNED_WORKBOOK",
+        "annotation_granularity_warning": "HUNK_RELATION_MAY_NOT_IMPLY_BASELINE_RATIONALE_INVALIDATION",
+        "review_note": " Open point: the R1 convention. Same relation. The alternatives show that the 2023 field (v1.ResourceList, requests only; L204-205) cannot carry allocated limits, and they record API-evolution costs, which weakens I1's field as specified. All three options keep a distinct allocated state (Option 1 names desired, allocated and actual), so for R1 this hunk is supportive rather than weakening, and R1 is not linked to WEAKENS."
+      },
+      "frozen_event_annotation": {
+        "commit_sha": "964260d9c2da8f75423771fffd9989077d4d92aa",
+        "event_summary": "Drop AllocatedResources from beta scope, with new feature gate",
+        "relation_candidate": "SUPERSEDES",
+        "related_atomic_s0_ids": "I1",
+        "temporal_basis": "BOTH",
+        "baseline_rationale_invalidated_gold": "NOT_ADJUDICATED",
+        "source_url": "https://github.com/kubernetes/enhancements/commit/964260d9c2da8f75423771fffd9989077d4d92aa",
+        "researcher_warning": "BASELINE_AND_INTERIM_TIMELINES_MUST_BE_DISAGGREGATED",
+        "signoff_record": "PI_REPORTED_DUAL_HUMAN_CONSENSUS; UNSIGNED_WORKBOOK",
+        "note": " Open point: depends on the R1 wording (S0 row R1). Same relation. This is one decision spread over many hunks, so count it once. SUPERSEDES applies to I1: for beta, the 2023 commitment to report allocated resources in PodStatus (Summary L103-106; L198, L204-206) is replaced by a kubelet checkpoint. The AllocatedResources field stays alpha behind InPlacePodVerticalScalingAllocatedStatus and is a 'candidate for future removal'. Scheduler/quota accounting moves from AllocatedResources to Status.Resources (2023 L215-217, L426-432, L634-636 edited), while the stated reason ('avoid races and possible gamification') is kept. BOTH: H03/H05/H07/H08/H09/H12 edit 2023 text, and H04/H06/H10/H11 edit interim text. With field-agnostic wording, R1 is not superseded: the three states remain distinct inside the node (H04 checkpoint, H07, H13) and every H14 option keeps them; only R1's API visibility narrows. This is a beta-scope deferral with an open alternatives analysis (H14), not a rejection of the 2023 motivation."
+      },
+      "support_or_change_basis": "baseline_mechanism_cost_binding",
+      "interpretation": "The note specifically weakens the2023 allocated-status field as specified: requests-only v1.ResourceList cannot carry allocated limits and options record API-evolution costs. This differs from the checker-selected Option3 consumer-visibility risk, which can instead favor allocation reporting. A qualified weakening argument must bind costs to the actual baseline field implementation, while leaving the abstract three-state R1 distinction intact. S0 I1 abstracts away the type and requests-only detail; original_evidence is empty. Current H04 states alphaAllocatedResources included onlyrequests, but its removed2024 type is ResourceRequirements, so cross-version details must be distinguished."
+    }
+  ],
+  "criteria_conclusions": [
+    "G2 and C1 are accepted via a concrete non-binding design sketch; the annotation does not require an explicit argumentative justification or adopted implementation. Preserve qualified goal/boundary realization separately from full fulfillment or proof of optimality.",
+    "R2 support is partial correspondence to a progress-state reporting mechanism. The reference does not claim full per-resource explanations or Events from the aggregate metric. Partial support requires identifying that exact state subpredicate while retaining missing parts.",
+    "Both I2 supersessions deliberately target interim2024 restrictions absent from2023 S0. The all-scope score combines those temporal targets under one atomicID, although the runtime task checks fixed2023 predicates. Do not invent these restrictions in S0 or count baseline invalidation.",
+    "H14 weakens a specific requests-only baseline field and its API-evolution path, not every generic allocated-resource-reporting proposition. Costs of distinct alternatives must be grounded to the actual selected baseline mechanism rather than inferred from a supportive Option3-consumer-risk argument."
+  ],
+  "generic_repair_design": [
+    {
+      "repair": "Separate evidence routes for qualified realization, explicit rationale, observed validation, and fulfillment.",
+      "implementation": "For a goal or delegation boundary, permit a concrete proposed operation/policy that instantiates its exact limited predicate to provide discussion-level partial support. An explicit because-argument is optional for this route. Keep source_role=proposal_or_alternative and no runtime/adoption certification.",
+      "generic_counterexamples": [
+        "A fallback decision policy can support actor choice without proving all actor choices or deployed behavior.",
+        "A controller that merely consumes an existing status field does not establish a publication obligation.",
+        "A new QoS condition not tied to changing class may remain implementation-only despite sharing terms."
+      ],
+      "limit": "Post-run development repair, not held-out proof or an assured F1 increase."
+    },
+    {
+      "repair": "Represent target versions and temporal relation scope explicitly.",
+      "implementation": "Keep fixed S0 immutable. Independently ground S(t_prior)/S(t_after) from source-owned old/current contracts and classify interim supersession against that version; expose baseline_relation separately from interim_relation. Current d774 input is commit-title-only, so fetch/capture pinned missing intermediate content in a separately versioned future dataset if full timeline reconstruction is needed.",
+      "generic_counterexamples": [
+        "Changing a policy property absent from baseline can supersede a later explicit contract while baseline remains unaffected.",
+        "A mere commit title cannot establish a semantic interim restriction."
+      ],
+      "limit": "Do not silently reinterpret interim supersession as superseding the2023 fixed clause just to match the existing all-scope score."
+    },
+    {
+      "repair": "Bind implementation costs to pinned baseline mechanisms.",
+      "implementation": "Attach independently captured baseline source/context to a claim's mechanism mapping rather than reviewer notes. Distinguish selected-field type/limits, conceptual requirement and later replacements. A cost can weaken a selected mechanism while preserving its requirement, but candidate-specific costs do not automatically transfer.",
+      "generic_counterexamples": [
+        "A proposed alternative's cost does not weaken the selected design without a source-established tie.",
+        "A risk of removing visibility can favor visibility even when another part of the same alternatives hunk weakens the selected field."
+      ],
+      "limit": "Changing or expanding source context creates a distinct experiment; preserve original53 inputs and frozen scoring results."
+    }
+  ],
+  "recommendation": "These annotations support a generic qualified-realization/partial-operational-support policy and a versioned temporal-target architecture. They do not justify hardcoded case filters, relaxing full reporting/Events obligations, adding private reviewer notes to hosted prompts, or altering frozen Gold/S0/scorer. Establish and freeze a coherent target relation contract before another paid experiment; use generic counterexamples and later untouched episodes for validation."
+}

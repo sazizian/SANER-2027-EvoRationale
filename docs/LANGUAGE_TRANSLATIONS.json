@@ -1,0 +1,449 @@
+{
+  "format_version": 1,
+  "status": "ENGLISH_READABLE_COPIES_WITH_PROTECTED_DATA_PRESERVED",
+  "scope": "Historical Markdown translations and Unicode test path fixture replacements in the GitHub export. Current quick-start translation is tracked separately.",
+  "raw_archive_policy": "Original release ZIP bytes remain in the previous reviewed source package outside this English export. Persian documents and test path fixture words in archive ZIP copies are adapted, as recorded in ARCHIVE_LANGUAGE_ADAPTATIONS.json. Diagnostic/capture/frozen-data archive bytes are unchanged. Historical checksum files remain original attestations; ARTIFACT_MANIFEST.json records current export bytes.",
+  "semantic_policy": "No production runtime, fixed S0, captured history, frozen labels, exact-triple scorer, or measured result was changed.",
+  "entries": [
+    {
+      "kind": "historical_document_translation",
+      "original_relative_path": "archive/code/v42/docs/V4_CHANGELOG_FA.md",
+      "english_relative_path": "archive/code/v42/docs/V4_CHANGELOG_EN.md",
+      "original_language": "Persian",
+      "output_language": "English",
+      "original_sha256": "04ebdf8271bfeae79c3e10a0ba442cdda6a401cd9a352a73b6ddd70da5c747ee",
+      "english_sha256": "cae5e6cd7f5642f153e2e612516bfc9217dc278bfc3134219166a356129ae71a",
+      "preservation_note": "Historical meaning, code examples, and research limitations preserved. Original release bytes are available in the previous reviewed source package; this export contains adapted English archive copies."
+    },
+    {
+      "kind": "historical_document_translation",
+      "original_relative_path": "archive/code/v43/docs/V4_CHANGELOG_FA.md",
+      "english_relative_path": "archive/code/v43/docs/V4_CHANGELOG_EN.md",
+      "original_language": "Persian",
+      "output_language": "English",
+      "original_sha256": "04ebdf8271bfeae79c3e10a0ba442cdda6a401cd9a352a73b6ddd70da5c747ee",
+      "english_sha256": "cae5e6cd7f5642f153e2e612516bfc9217dc278bfc3134219166a356129ae71a",
+      "preservation_note": "Historical meaning, code examples, and research limitations preserved. Original release bytes are available in the previous reviewed source package; this export contains adapted English archive copies."
+    },
+    {
+      "kind": "historical_document_translation",
+      "original_relative_path": "archive/code/v44/docs/V4_CHANGELOG_FA.md",
+      "english_relative_path": "archive/code/v44/docs/V4_CHANGELOG_EN.md",
+      "original_language": "Persian",
+      "output_language": "English",
+      "original_sha256": "04ebdf8271bfeae79c3e10a0ba442cdda6a401cd9a352a73b6ddd70da5c747ee",
+      "english_sha256": "cae5e6cd7f5642f153e2e612516bfc9217dc278bfc3134219166a356129ae71a",
+      "preservation_note": "Historical meaning, code examples, and research limitations preserved. Original release bytes are available in the previous reviewed source package; this export contains adapted English archive copies."
+    },
+    {
+      "kind": "historical_document_translation",
+      "original_relative_path": "archive/code/v45/docs/V4_CHANGELOG_FA.md",
+      "english_relative_path": "archive/code/v45/docs/V4_CHANGELOG_EN.md",
+      "original_language": "Persian",
+      "output_language": "English",
+      "original_sha256": "04ebdf8271bfeae79c3e10a0ba442cdda6a401cd9a352a73b6ddd70da5c747ee",
+      "english_sha256": "cae5e6cd7f5642f153e2e612516bfc9217dc278bfc3134219166a356129ae71a",
+      "preservation_note": "Historical meaning, code examples, and research limitations preserved. Original release bytes are available in the previous reviewed source package; this export contains adapted English archive copies."
+    },
+    {
+      "kind": "historical_document_translation",
+      "original_relative_path": "archive/code/v46/docs/V4_CHANGELOG_FA.md",
+      "english_relative_path": "archive/code/v46/docs/V4_CHANGELOG_EN.md",
+      "original_language": "Persian",
+      "output_language": "English",
+      "original_sha256": "04ebdf8271bfeae79c3e10a0ba442cdda6a401cd9a352a73b6ddd70da5c747ee",
+      "english_sha256": "cae5e6cd7f5642f153e2e612516bfc9217dc278bfc3134219166a356129ae71a",
+      "preservation_note": "Historical meaning, code examples, and research limitations preserved. Original release bytes are available in the previous reviewed source package; this export contains adapted English archive copies."
+    },
+    {
+      "kind": "historical_document_translation",
+      "original_relative_path": "archive/code/v47/docs/V4_CHANGELOG_FA.md",
+      "english_relative_path": "archive/code/v47/docs/V4_CHANGELOG_EN.md",
+      "original_language": "Persian",
+      "output_language": "English",
+      "original_sha256": "04ebdf8271bfeae79c3e10a0ba442cdda6a401cd9a352a73b6ddd70da5c747ee",
+      "english_sha256": "cae5e6cd7f5642f153e2e612516bfc9217dc278bfc3134219166a356129ae71a",
+      "preservation_note": "Historical meaning, code examples, and research limitations preserved. Original release bytes are available in the previous reviewed source package; this export contains adapted English archive copies."
+    },
+    {
+      "kind": "historical_document_translation",
+      "original_relative_path": "archive/code/v48/docs/V4_CHANGELOG_FA.md",
+      "english_relative_path": "archive/code/v48/docs/V4_CHANGELOG_EN.md",
+      "original_language": "Persian",
+      "output_language": "English",
+      "original_sha256": "04ebdf8271bfeae79c3e10a0ba442cdda6a401cd9a352a73b6ddd70da5c747ee",
+      "english_sha256": "cae5e6cd7f5642f153e2e612516bfc9217dc278bfc3134219166a356129ae71a",
+      "preservation_note": "Historical meaning, code examples, and research limitations preserved. Original release bytes are available in the previous reviewed source package; this export contains adapted English archive copies."
+    },
+    {
+      "kind": "historical_document_translation",
+      "original_relative_path": "archive/code/v49/docs/V4_CHANGELOG_FA.md",
+      "english_relative_path": "archive/code/v49/docs/V4_CHANGELOG_EN.md",
+      "original_language": "Persian",
+      "output_language": "English",
+      "original_sha256": "04ebdf8271bfeae79c3e10a0ba442cdda6a401cd9a352a73b6ddd70da5c747ee",
+      "english_sha256": "cae5e6cd7f5642f153e2e612516bfc9217dc278bfc3134219166a356129ae71a",
+      "preservation_note": "Historical meaning, code examples, and research limitations preserved. Original release bytes are available in the previous reviewed source package; this export contains adapted English archive copies."
+    },
+    {
+      "kind": "historical_document_translation",
+      "original_relative_path": "archive/original_v41_workspace/docs/V4_CHANGELOG_FA.md",
+      "english_relative_path": "archive/original_v41_workspace/docs/V4_CHANGELOG_EN.md",
+      "original_language": "Persian",
+      "output_language": "English",
+      "original_sha256": "04ebdf8271bfeae79c3e10a0ba442cdda6a401cd9a352a73b6ddd70da5c747ee",
+      "english_sha256": "cae5e6cd7f5642f153e2e612516bfc9217dc278bfc3134219166a356129ae71a",
+      "preservation_note": "Historical meaning, code examples, and research limitations preserved. Original release bytes are available in the previous reviewed source package; this export contains adapted English archive copies."
+    },
+    {
+      "kind": "historical_document_translation",
+      "original_relative_path": "docs/V4_CHANGELOG_FA.md",
+      "english_relative_path": "docs/V4_CHANGELOG_EN.md",
+      "original_language": "Persian",
+      "output_language": "English",
+      "original_sha256": "04ebdf8271bfeae79c3e10a0ba442cdda6a401cd9a352a73b6ddd70da5c747ee",
+      "english_sha256": "cae5e6cd7f5642f153e2e612516bfc9217dc278bfc3134219166a356129ae71a",
+      "preservation_note": "Historical meaning, code examples, and research limitations preserved. Original release bytes are available in the previous reviewed source package; this export contains adapted English archive copies."
+    },
+    {
+      "kind": "historical_document_translation",
+      "original_relative_path": "archive/code/v42/V41_README_FA.md",
+      "english_relative_path": "archive/code/v42/V41_README_EN.md",
+      "original_language": "Persian",
+      "output_language": "English",
+      "original_sha256": "83156f6abec489eec5f7b065e5b56d00d17bb2ed7c8a7ac43c2570a4d7548ae4",
+      "english_sha256": "85b394854a0a853efa76f7479f0d538b513e5dd2199eae68ec5414f054b0565e",
+      "preservation_note": "Historical meaning, code examples, and research limitations preserved. Original release bytes are available in the previous reviewed source package; this export contains adapted English archive copies."
+    },
+    {
+      "kind": "historical_document_translation",
+      "original_relative_path": "archive/code/v43/V41_README_FA.md",
+      "english_relative_path": "archive/code/v43/V41_README_EN.md",
+      "original_language": "Persian",
+      "output_language": "English",
+      "original_sha256": "83156f6abec489eec5f7b065e5b56d00d17bb2ed7c8a7ac43c2570a4d7548ae4",
+      "english_sha256": "85b394854a0a853efa76f7479f0d538b513e5dd2199eae68ec5414f054b0565e",
+      "preservation_note": "Historical meaning, code examples, and research limitations preserved. Original release bytes are available in the previous reviewed source package; this export contains adapted English archive copies."
+    },
+    {
+      "kind": "historical_document_translation",
+      "original_relative_path": "archive/code/v44/V41_README_FA.md",
+      "english_relative_path": "archive/code/v44/V41_README_EN.md",
+      "original_language": "Persian",
+      "output_language": "English",
+      "original_sha256": "83156f6abec489eec5f7b065e5b56d00d17bb2ed7c8a7ac43c2570a4d7548ae4",
+      "english_sha256": "85b394854a0a853efa76f7479f0d538b513e5dd2199eae68ec5414f054b0565e",
+      "preservation_note": "Historical meaning, code examples, and research limitations preserved. Original release bytes are available in the previous reviewed source package; this export contains adapted English archive copies."
+    },
+    {
+      "kind": "historical_document_translation",
+      "original_relative_path": "archive/code/v45/V41_README_FA.md",
+      "english_relative_path": "archive/code/v45/V41_README_EN.md",
+      "original_language": "Persian",
+      "output_language": "English",
+      "original_sha256": "83156f6abec489eec5f7b065e5b56d00d17bb2ed7c8a7ac43c2570a4d7548ae4",
+      "english_sha256": "85b394854a0a853efa76f7479f0d538b513e5dd2199eae68ec5414f054b0565e",
+      "preservation_note": "Historical meaning, code examples, and research limitations preserved. Original release bytes are available in the previous reviewed source package; this export contains adapted English archive copies."
+    },
+    {
+      "kind": "historical_document_translation",
+      "original_relative_path": "archive/code/v46/V41_README_FA.md",
+      "english_relative_path": "archive/code/v46/V41_README_EN.md",
+      "original_language": "Persian",
+      "output_language": "English",
+      "original_sha256": "83156f6abec489eec5f7b065e5b56d00d17bb2ed7c8a7ac43c2570a4d7548ae4",
+      "english_sha256": "85b394854a0a853efa76f7479f0d538b513e5dd2199eae68ec5414f054b0565e",
+      "preservation_note": "Historical meaning, code examples, and research limitations preserved. Original release bytes are available in the previous reviewed source package; this export contains adapted English archive copies."
+    },
+    {
+      "kind": "historical_document_translation",
+      "original_relative_path": "archive/code/v47/V41_README_FA.md",
+      "english_relative_path": "archive/code/v47/V41_README_EN.md",
+      "original_language": "Persian",
+      "output_language": "English",
+      "original_sha256": "83156f6abec489eec5f7b065e5b56d00d17bb2ed7c8a7ac43c2570a4d7548ae4",
+      "english_sha256": "85b394854a0a853efa76f7479f0d538b513e5dd2199eae68ec5414f054b0565e",
+      "preservation_note": "Historical meaning, code examples, and research limitations preserved. Original release bytes are available in the previous reviewed source package; this export contains adapted English archive copies."
+    },
+    {
+      "kind": "historical_document_translation",
+      "original_relative_path": "archive/code/v48/V41_README_FA.md",
+      "english_relative_path": "archive/code/v48/V41_README_EN.md",
+      "original_language": "Persian",
+      "output_language": "English",
+      "original_sha256": "83156f6abec489eec5f7b065e5b56d00d17bb2ed7c8a7ac43c2570a4d7548ae4",
+      "english_sha256": "85b394854a0a853efa76f7479f0d538b513e5dd2199eae68ec5414f054b0565e",
+      "preservation_note": "Historical meaning, code examples, and research limitations preserved. Original release bytes are available in the previous reviewed source package; this export contains adapted English archive copies."
+    },
+    {
+      "kind": "historical_document_translation",
+      "original_relative_path": "archive/code/v49/V41_README_FA.md",
+      "english_relative_path": "archive/code/v49/V41_README_EN.md",
+      "original_language": "Persian",
+      "output_language": "English",
+      "original_sha256": "83156f6abec489eec5f7b065e5b56d00d17bb2ed7c8a7ac43c2570a4d7548ae4",
+      "english_sha256": "85b394854a0a853efa76f7479f0d538b513e5dd2199eae68ec5414f054b0565e",
+      "preservation_note": "Historical meaning, code examples, and research limitations preserved. Original release bytes are available in the previous reviewed source package; this export contains adapted English archive copies."
+    },
+    {
+      "kind": "historical_document_translation",
+      "original_relative_path": "archive/original_v41_workspace/V41_README_FA.md",
+      "english_relative_path": "archive/original_v41_workspace/V41_README_EN.md",
+      "original_language": "Persian",
+      "output_language": "English",
+      "original_sha256": "83156f6abec489eec5f7b065e5b56d00d17bb2ed7c8a7ac43c2570a4d7548ae4",
+      "english_sha256": "85b394854a0a853efa76f7479f0d538b513e5dd2199eae68ec5414f054b0565e",
+      "preservation_note": "Historical meaning, code examples, and research limitations preserved. Original release bytes are available in the previous reviewed source package; this export contains adapted English archive copies."
+    },
+    {
+      "kind": "historical_document_translation",
+      "original_relative_path": "archive/original_v41_workspace/_v41_update/V41_README_FA.md",
+      "english_relative_path": "archive/original_v41_workspace/_v41_update/V41_README_EN.md",
+      "original_language": "Persian",
+      "output_language": "English",
+      "original_sha256": "83156f6abec489eec5f7b065e5b56d00d17bb2ed7c8a7ac43c2570a4d7548ae4",
+      "english_sha256": "85b394854a0a853efa76f7479f0d538b513e5dd2199eae68ec5414f054b0565e",
+      "preservation_note": "Historical meaning, code examples, and research limitations preserved. Original release bytes are available in the previous reviewed source package; this export contains adapted English archive copies."
+    },
+    {
+      "kind": "historical_document_translation",
+      "original_relative_path": "archive/original_v41_workspace/backup_before_v41_20261010T190857Z/V41_README_FA.md",
+      "english_relative_path": "archive/original_v41_workspace/backup_before_v41_20261010T190857Z/V41_README_EN.md",
+      "original_language": "Persian",
+      "output_language": "English",
+      "original_sha256": "83156f6abec489eec5f7b065e5b56d00d17bb2ed7c8a7ac43c2570a4d7548ae4",
+      "english_sha256": "85b394854a0a853efa76f7479f0d538b513e5dd2199eae68ec5414f054b0565e",
+      "preservation_note": "Historical meaning, code examples, and research limitations preserved. Original release bytes are available in the previous reviewed source package; this export contains adapted English archive copies."
+    },
+    {
+      "kind": "historical_document_translation",
+      "original_relative_path": "archive/original_v41_workspace/backup_before_v41_20261010T191139Z/V41_README_FA.md",
+      "english_relative_path": "archive/original_v41_workspace/backup_before_v41_20261010T191139Z/V41_README_EN.md",
+      "original_language": "Persian",
+      "output_language": "English",
+      "original_sha256": "83156f6abec489eec5f7b065e5b56d00d17bb2ed7c8a7ac43c2570a4d7548ae4",
+      "english_sha256": "85b394854a0a853efa76f7479f0d538b513e5dd2199eae68ec5414f054b0565e",
+      "preservation_note": "Historical meaning, code examples, and research limitations preserved. Original release bytes are available in the previous reviewed source package; this export contains adapted English archive copies."
+    },
+    {
+      "kind": "historical_document_translation",
+      "original_relative_path": "archive/release_time_docs/v49/V41_README_FA.md",
+      "english_relative_path": "archive/release_time_docs/v49/V41_README_EN.md",
+      "original_language": "Persian",
+      "output_language": "English",
+      "original_sha256": "83156f6abec489eec5f7b065e5b56d00d17bb2ed7c8a7ac43c2570a4d7548ae4",
+      "english_sha256": "85b394854a0a853efa76f7479f0d538b513e5dd2199eae68ec5414f054b0565e",
+      "preservation_note": "Historical meaning, code examples, and research limitations preserved. Original release bytes are available in the previous reviewed source package; this export contains adapted English archive copies."
+    },
+    {
+      "kind": "historical_document_translation",
+      "original_relative_path": "archive/original_v41_workspace/README_FA.md",
+      "english_relative_path": "archive/original_v41_workspace/README_EN.md",
+      "original_language": "Persian",
+      "output_language": "English",
+      "original_sha256": "b4f0e61dd0cece82a3f517bf2849afb13c847fe0cc676ffaa5e38adb04f0fe9d",
+      "english_sha256": "7c0aecd6adff38c13c9d6a1b297ec35ac429e3b8408f50b4da0de0257ae17e1e",
+      "preservation_note": "Historical meaning, code examples, and research limitations preserved. Original release bytes are available in the previous reviewed source package; this export contains adapted English archive copies."
+    },
+    {
+      "kind": "unicode_path_fixture_english_source",
+      "original_relative_path": "archive/code/v44/tests/test_review_launchers.py",
+      "english_relative_path": "archive/code/v44/tests/test_review_launchers.py",
+      "original_language": "English with Persian directory fixture words",
+      "output_language": "English source with explicit Unicode escapes",
+      "original_sha256": "fc2a95967905a51fabf61d066e1e86607896702998e0f178b757d46d1d3bf359",
+      "english_sha256": "0b0e0020f910d09f554908dfd27d7dd694dccb1e88e8d8099b1d83005493de3a",
+      "preservation_note": "Three path names still contain spaces and non-ASCII code points at runtime; no production code or test assertions changed."
+    },
+    {
+      "kind": "unicode_path_fixture_english_source",
+      "original_relative_path": "archive/code/v45/tests/test_review_launchers.py",
+      "english_relative_path": "archive/code/v45/tests/test_review_launchers.py",
+      "original_language": "English with Persian directory fixture words",
+      "output_language": "English source with explicit Unicode escapes",
+      "original_sha256": "fc2a95967905a51fabf61d066e1e86607896702998e0f178b757d46d1d3bf359",
+      "english_sha256": "0b0e0020f910d09f554908dfd27d7dd694dccb1e88e8d8099b1d83005493de3a",
+      "preservation_note": "Three path names still contain spaces and non-ASCII code points at runtime; no production code or test assertions changed."
+    },
+    {
+      "kind": "unicode_path_fixture_english_source",
+      "original_relative_path": "archive/code/v46/tests/test_review_launchers.py",
+      "english_relative_path": "archive/code/v46/tests/test_review_launchers.py",
+      "original_language": "English with Persian directory fixture words",
+      "output_language": "English source with explicit Unicode escapes",
+      "original_sha256": "fc2a95967905a51fabf61d066e1e86607896702998e0f178b757d46d1d3bf359",
+      "english_sha256": "0b0e0020f910d09f554908dfd27d7dd694dccb1e88e8d8099b1d83005493de3a",
+      "preservation_note": "Three path names still contain spaces and non-ASCII code points at runtime; no production code or test assertions changed."
+    },
+    {
+      "kind": "unicode_path_fixture_english_source",
+      "original_relative_path": "archive/code/v47/tests/test_review_launchers.py",
+      "english_relative_path": "archive/code/v47/tests/test_review_launchers.py",
+      "original_language": "English with Persian directory fixture words",
+      "output_language": "English source with explicit Unicode escapes",
+      "original_sha256": "fc2a95967905a51fabf61d066e1e86607896702998e0f178b757d46d1d3bf359",
+      "english_sha256": "0b0e0020f910d09f554908dfd27d7dd694dccb1e88e8d8099b1d83005493de3a",
+      "preservation_note": "Three path names still contain spaces and non-ASCII code points at runtime; no production code or test assertions changed."
+    },
+    {
+      "kind": "unicode_path_fixture_english_source",
+      "original_relative_path": "archive/code/v48/tests/test_review_launchers.py",
+      "english_relative_path": "archive/code/v48/tests/test_review_launchers.py",
+      "original_language": "English with Persian directory fixture words",
+      "output_language": "English source with explicit Unicode escapes",
+      "original_sha256": "fc2a95967905a51fabf61d066e1e86607896702998e0f178b757d46d1d3bf359",
+      "english_sha256": "0b0e0020f910d09f554908dfd27d7dd694dccb1e88e8d8099b1d83005493de3a",
+      "preservation_note": "Three path names still contain spaces and non-ASCII code points at runtime; no production code or test assertions changed."
+    },
+    {
+      "kind": "unicode_path_fixture_english_source",
+      "original_relative_path": "archive/code/v49/tests/test_review_launchers.py",
+      "english_relative_path": "archive/code/v49/tests/test_review_launchers.py",
+      "original_language": "English with Persian directory fixture words",
+      "output_language": "English source with explicit Unicode escapes",
+      "original_sha256": "fc2a95967905a51fabf61d066e1e86607896702998e0f178b757d46d1d3bf359",
+      "english_sha256": "0b0e0020f910d09f554908dfd27d7dd694dccb1e88e8d8099b1d83005493de3a",
+      "preservation_note": "Three path names still contain spaces and non-ASCII code points at runtime; no production code or test assertions changed."
+    },
+    {
+      "kind": "unicode_path_fixture_english_source",
+      "original_relative_path": "tests/test_review_launchers.py",
+      "english_relative_path": "tests/test_review_launchers.py",
+      "original_language": "English with Persian directory fixture words",
+      "output_language": "English source with explicit Unicode escapes",
+      "original_sha256": "fc2a95967905a51fabf61d066e1e86607896702998e0f178b757d46d1d3bf359",
+      "english_sha256": "0b0e0020f910d09f554908dfd27d7dd694dccb1e88e8d8099b1d83005493de3a",
+      "preservation_note": "Three path names still contain spaces and non-ASCII code points at runtime; no production code or test assertions changed."
+    },
+    {
+      "kind": "unicode_path_fixture_english_source",
+      "original_relative_path": "archive/code/v45/tests/test_v45_development_tools.py",
+      "english_relative_path": "archive/code/v45/tests/test_v45_development_tools.py",
+      "original_language": "English with Persian directory fixture words",
+      "output_language": "English source with explicit Unicode escapes",
+      "original_sha256": "8d535df457a3a4dcd4f0769cf7313fa0c72eb6b22f5ef478f747a089025a4e0d",
+      "english_sha256": "e22432473860367e66bd3dbb6755aca271c28c299172cf867fa0d30ea4b9c351",
+      "preservation_note": "Three path names still contain spaces and non-ASCII code points at runtime; no production code or test assertions changed."
+    },
+    {
+      "kind": "unicode_path_fixture_english_source",
+      "original_relative_path": "archive/code/v46/tests/test_v45_development_tools.py",
+      "english_relative_path": "archive/code/v46/tests/test_v45_development_tools.py",
+      "original_language": "English with Persian directory fixture words",
+      "output_language": "English source with explicit Unicode escapes",
+      "original_sha256": "8d535df457a3a4dcd4f0769cf7313fa0c72eb6b22f5ef478f747a089025a4e0d",
+      "english_sha256": "e22432473860367e66bd3dbb6755aca271c28c299172cf867fa0d30ea4b9c351",
+      "preservation_note": "Three path names still contain spaces and non-ASCII code points at runtime; no production code or test assertions changed."
+    },
+    {
+      "kind": "unicode_path_fixture_english_source",
+      "original_relative_path": "archive/code/v47/tests/test_v45_development_tools.py",
+      "english_relative_path": "archive/code/v47/tests/test_v45_development_tools.py",
+      "original_language": "English with Persian directory fixture words",
+      "output_language": "English source with explicit Unicode escapes",
+      "original_sha256": "8d535df457a3a4dcd4f0769cf7313fa0c72eb6b22f5ef478f747a089025a4e0d",
+      "english_sha256": "e22432473860367e66bd3dbb6755aca271c28c299172cf867fa0d30ea4b9c351",
+      "preservation_note": "Three path names still contain spaces and non-ASCII code points at runtime; no production code or test assertions changed."
+    },
+    {
+      "kind": "unicode_path_fixture_english_source",
+      "original_relative_path": "archive/code/v48/tests/test_v45_development_tools.py",
+      "english_relative_path": "archive/code/v48/tests/test_v45_development_tools.py",
+      "original_language": "English with Persian directory fixture words",
+      "output_language": "English source with explicit Unicode escapes",
+      "original_sha256": "8d535df457a3a4dcd4f0769cf7313fa0c72eb6b22f5ef478f747a089025a4e0d",
+      "english_sha256": "e22432473860367e66bd3dbb6755aca271c28c299172cf867fa0d30ea4b9c351",
+      "preservation_note": "Three path names still contain spaces and non-ASCII code points at runtime; no production code or test assertions changed."
+    },
+    {
+      "kind": "unicode_path_fixture_english_source",
+      "original_relative_path": "archive/code/v49/tests/test_v45_development_tools.py",
+      "english_relative_path": "archive/code/v49/tests/test_v45_development_tools.py",
+      "original_language": "English with Persian directory fixture words",
+      "output_language": "English source with explicit Unicode escapes",
+      "original_sha256": "8d535df457a3a4dcd4f0769cf7313fa0c72eb6b22f5ef478f747a089025a4e0d",
+      "english_sha256": "e22432473860367e66bd3dbb6755aca271c28c299172cf867fa0d30ea4b9c351",
+      "preservation_note": "Three path names still contain spaces and non-ASCII code points at runtime; no production code or test assertions changed."
+    },
+    {
+      "kind": "unicode_path_fixture_english_source",
+      "original_relative_path": "tests/test_v45_development_tools.py",
+      "english_relative_path": "tests/test_v45_development_tools.py",
+      "original_language": "English with Persian directory fixture words",
+      "output_language": "English source with explicit Unicode escapes",
+      "original_sha256": "8d535df457a3a4dcd4f0769cf7313fa0c72eb6b22f5ef478f747a089025a4e0d",
+      "english_sha256": "e22432473860367e66bd3dbb6755aca271c28c299172cf867fa0d30ea4b9c351",
+      "preservation_note": "Three path names still contain spaces and non-ASCII code points at runtime; no production code or test assertions changed."
+    },
+    {
+      "kind": "historical_document_link_update",
+      "original_relative_path": "archive/code/v42/README.md",
+      "english_relative_path": "archive/code/v42/README.md",
+      "original_language": "English",
+      "output_language": "English",
+      "original_sha256": "2ffd4abcb938a2d524dd62ab5f025e2f37b404b40ec807e22f5e68333c75d21e",
+      "english_sha256": "b104763a0940dabda2ce73c102ec812be63478a9322ca9507be0f2a4982af7f5",
+      "preservation_note": "Updated references to translated document filenames only."
+    },
+    {
+      "kind": "historical_document_link_update",
+      "original_relative_path": "archive/code/v43/README.md",
+      "english_relative_path": "archive/code/v43/README.md",
+      "original_language": "English",
+      "output_language": "English",
+      "original_sha256": "1c3f48efdc38619c9eac3f9f36b620f047dbc1c93440c4b861d56791d4859cf3",
+      "english_sha256": "71f12a7ab4c4090b302cb7253da3a385b87b3c6524acbfcc76c817a68f4158d1",
+      "preservation_note": "Updated references to translated document filenames only."
+    },
+    {
+      "kind": "historical_document_link_update",
+      "original_relative_path": "archive/code/v44/README.md",
+      "english_relative_path": "archive/code/v44/README.md",
+      "original_language": "English",
+      "output_language": "English",
+      "original_sha256": "0ff75d2ad368fcc404a0690b0d434ec8bfdad5a9921299678855de4a24162165",
+      "english_sha256": "2adcec4830a4276f390aa282290a005cafef94585d307617668cdd3e74d79d38",
+      "preservation_note": "Updated references to translated document filenames only."
+    },
+    {
+      "kind": "historical_document_link_update",
+      "original_relative_path": "archive/code/v45/README.md",
+      "english_relative_path": "archive/code/v45/README.md",
+      "original_language": "English",
+      "output_language": "English",
+      "original_sha256": "4298a8b0cf313b7ab8b0b059e82effec4414fbbc1d5e7ddcb23802a4c9ec0f4a",
+      "english_sha256": "25d8b4d2649e5c8d9c758a1383615abc53c1e024f5a748c6957e79f28ab57a98",
+      "preservation_note": "Updated references to translated document filenames only."
+    },
+    {
+      "kind": "historical_document_link_update",
+      "original_relative_path": "archive/code/v46/README.md",
+      "english_relative_path": "archive/code/v46/README.md",
+      "original_language": "English",
+      "output_language": "English",
+      "original_sha256": "16227a3ac48e2a4e07f4dbf54966d1bfffe16c3a7147453ab2861ccca1b3ef2c",
+      "english_sha256": "b471c45413808fcf35e933205eea93341af40473b3e7f1405f51946fa67edaaa",
+      "preservation_note": "Updated references to translated document filenames only."
+    },
+    {
+      "kind": "historical_document_link_update",
+      "original_relative_path": "archive/code/v47/README.md",
+      "english_relative_path": "archive/code/v47/README.md",
+      "original_language": "English",
+      "output_language": "English",
+      "original_sha256": "d56bb41589865c5622aac596641a5023c138b1395556f58f722a149386fc66c2",
+      "english_sha256": "c8b86af96233dd5c2ad8f6837a142768aaafed3a38173cce792cb51f714df5db",
+      "preservation_note": "Updated references to translated document filenames only."
+    },
+    {
+      "kind": "historical_document_link_update",
+      "original_relative_path": "archive/code/v48/README.md",
+      "english_relative_path": "archive/code/v48/README.md",
+      "original_language": "English",
+      "output_language": "English",
+      "original_sha256": "3411136f428af914921e7d1febfc9bb280bb1c36d3844dfb063169cc122ee3a4",
+      "english_sha256": "906621a2e0ab24db23fc550707b0d1d0f029ff3f76ce8dbde35c22bb7e307276",
+      "preservation_note": "Updated references to translated document filenames only."
+    }
+  ]
+}

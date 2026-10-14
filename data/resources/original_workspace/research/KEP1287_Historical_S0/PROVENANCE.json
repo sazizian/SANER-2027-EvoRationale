@@ -1,0 +1,23 @@
+{
+  "repository": "kubernetes/enhancements",
+  "readme_path": "keps/sig-node/1287-in-place-update-pod-resources/README.md",
+  "baseline_commit": "5950905de89aab2be202d28b823701276cbefea0",
+  "baseline_commit_date": "2023-10-26T15:17:39Z",
+  "baseline_commit_url": "https://github.com/kubernetes/enhancements/commit/5950905de89aab2be202d28b823701276cbefea0",
+  "baseline_readme_url": "https://github.com/kubernetes/enhancements/blob/5950905de89aab2be202d28b823701276cbefea0/keps/sig-node/1287-in-place-update-pod-resources/README.md",
+  "baseline_kep_yaml_url": "https://github.com/kubernetes/enhancements/blob/5950905de89aab2be202d28b823701276cbefea0/keps/sig-node/1287-in-place-update-pod-resources/kep.yaml",
+  "baseline_readme_blob_sha1": "ce5124cf7975a7d4ce6a122b2cb4006b4bc0ea2d",
+  "baseline_kep_yaml_blob_sha1": "fd75bc9a121275a09debf7fd55304b483405bd36",
+  "baseline_kep_status": "implementable",
+  "baseline_kep_stage": "alpha",
+  "analysis_window_start_exclusive": "2023-10-26T15:17:39Z",
+  "analysis_window_end_exclusive": "2024-10-11T00:00:00Z",
+  "initial_approval_date_confirmed": false,
+  "source_snapshot_downloaded_in_this_package": false,
+  "immutable_commit_sha_verified_against_github": true,
+  "research_status": "CANDIDATE_SCREENING_ONLY",
+  "gold_label": false,
+  "human_approved": false,
+  "historical_replay_certified": false,
+  "note": "Baseline blob hashes verified from GitHub. Full primary-source files are fetched directly by the included script when run by the researcher. No live current-master text is used for S0."
+}

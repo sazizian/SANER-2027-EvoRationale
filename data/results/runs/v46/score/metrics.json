@@ -1,0 +1,197 @@
+{
+  "budget_usage": {
+    "accounting": "REQUEST_ENVELOPE_ESTIMATE_INCLUDING_RETRIES_NOT_BILLING",
+    "estimated_input_tokens": 62911,
+    "max_output_tokens_per_request": 16384,
+    "provider_reported_input_tokens": 45800,
+    "provider_reported_output_tokens": 26646,
+    "provider_requests_reserved": 7,
+    "provider_responses_received": 7,
+    "queries": 6,
+    "requests": [
+      {
+        "estimated_input_tokens": 14865,
+        "max_output_tokens": 10200,
+        "model": "gpt-6.1-sol",
+        "provider_input_tokens": 11528,
+        "provider_output_tokens": 8806,
+        "provider_total_tokens": 20334,
+        "response_received": true
+      },
+      {
+        "estimated_input_tokens": 11246,
+        "max_output_tokens": 5400,
+        "model": "gpt-6.1-sol",
+        "provider_input_tokens": 8679,
+        "provider_output_tokens": 5160,
+        "provider_total_tokens": 13839,
+        "response_received": true
+      },
+      {
+        "estimated_input_tokens": 9418,
+        "max_output_tokens": 4800,
+        "model": "gpt-6.1-sol",
+        "provider_input_tokens": 7047,
+        "provider_output_tokens": 4800,
+        "provider_total_tokens": 11847,
+        "response_received": true
+      },
+      {
+        "estimated_input_tokens": 9418,
+        "max_output_tokens": 9600,
+        "model": "gpt-6.1-sol",
+        "provider_input_tokens": 7047,
+        "provider_output_tokens": 5876,
+        "provider_total_tokens": 12923,
+        "response_received": true
+      },
+      {
+        "estimated_input_tokens": 5841,
+        "max_output_tokens": 4096,
+        "model": "gpt-6.1-sol",
+        "provider_input_tokens": 3629,
+        "provider_output_tokens": 670,
+        "provider_total_tokens": 4299,
+        "response_received": true
+      },
+      {
+        "estimated_input_tokens": 6051,
+        "max_output_tokens": 4096,
+        "model": "gpt-6.1-sol",
+        "provider_input_tokens": 3918,
+        "provider_output_tokens": 771,
+        "provider_total_tokens": 4689,
+        "response_received": true
+      },
+      {
+        "estimated_input_tokens": 6072,
+        "max_output_tokens": 4096,
+        "model": "gpt-6.1-sol",
+        "provider_input_tokens": 3952,
+        "provider_output_tokens": 563,
+        "provider_total_tokens": 4515,
+        "response_received": true
+      }
+    ],
+    "responses_with_reported_usage": 7,
+    "rounds": 6,
+    "unique_artifact_reads": 30
+  },
+  "comparison": {
+    "all": {
+      "api_v41_f1": 0.0,
+      "api_v43_dev_f1": 0.095238,
+      "api_v44_dev_f1": 0.3,
+      "api_v45_dev_f1": 0.347826,
+      "api_v46_dev_f1": 0.631579,
+      "delta_v46_minus_api_v41": 0.631579,
+      "delta_v46_minus_v43": 0.536341,
+      "delta_v46_minus_v44": 0.331579,
+      "delta_v46_minus_v45": 0.283753,
+      "note": "Descriptive development comparison: identical source inputs, opaque model IDs and nominal budgets as v4.5; semantic policy, investigation profile and request/token accounting differ. Earlier versions also used different models and call patterns.",
+      "offline_v41_f1": 0.142857
+    },
+    "baseline": {
+      "api_v41_f1": 0.0,
+      "api_v43_dev_f1": 0.133333,
+      "api_v44_dev_f1": 0.214286,
+      "api_v45_dev_f1": 0.444444,
+      "api_v46_dev_f1": 0.689655,
+      "delta_v46_minus_api_v41": 0.689655,
+      "delta_v46_minus_v43": 0.556322,
+      "delta_v46_minus_v44": 0.475369,
+      "delta_v46_minus_v45": 0.245211,
+      "note": "Descriptive development comparison: identical source inputs, opaque model IDs and nominal budgets as v4.5; semantic policy, investigation profile and request/token accounting differ. Earlier versions also used different models and call patterns.",
+      "offline_v41_f1": 0.0625
+    }
+  },
+  "comparison_note": "Descriptive development comparison: identical source inputs, opaque model IDs and nominal budgets as v4.5; semantic policy, investigation profile and request/token accounting differ. Earlier versions also used different models and call patterns.",
+  "frozen_s0_sha256": "6557ea5d549fbc2bac280be4f46d948948dbb70673c0c1f53ff21c24c4fbde42",
+  "investigation_profile": "event-evidence",
+  "model_change_note": "Both linker and judge model IDs are copied exactly from the pinned completed v4.5 run; nomination remains none. Immutable provider model snapshots are not verified.",
+  "models": {
+    "judge": "gpt-6.1-sol",
+    "linker": "gpt-6.1-sol"
+  },
+  "nominal_budgets": {
+    "max_input_tokens": 100000,
+    "max_queries": 12,
+    "max_reads": 36,
+    "max_rounds": 6
+  },
+  "nomination_mode": "none",
+  "parent_v44_models": {
+    "judge": "gpt-6-luna",
+    "linker": "gpt-6.1-sol"
+  },
+  "parent_v45_models": {
+    "judge": "gpt-6.1-sol",
+    "linker": "gpt-6.1-sol"
+  },
+  "policy_change_note": "v4.6 separately assesses post-S0 evidence support and target-local change. Unchanged context is not fresh evidence, and specific adopted implementation changes can trace to a fixed-S0 mechanism through explicit same-event evidence. Fixed S0, frozen labels and the exact-triple scorer remain unchanged.",
+  "results": {
+    "all": {
+      "evaluated_hunks": 30,
+      "f1": 0.631579,
+      "fn": 7,
+      "fp": 7,
+      "fp_on_unrelated_or_implementation_only_hunks": 4,
+      "gold_positive_exact_triples": 19,
+      "limitations": [
+        "curated single-repository pilot",
+        "not a certified 2024 historical replay",
+        "no gold architecture-outcome labels",
+        "v4.6 development examples, not independent held-out evaluation",
+        "different profile and provider-call/token accounting"
+      ],
+      "precision": 0.631579,
+      "predicted_exact_triples": 19,
+      "predicted_hunk_coverage": {
+        "count": 16,
+        "of": 30
+      },
+      "recall": 0.631579,
+      "scope": "all",
+      "tp": 12,
+      "unscored_prediction_links_outside_hunk_universe": 0
+    },
+    "baseline": {
+      "evaluated_hunks": 24,
+      "f1": 0.689655,
+      "fn": 4,
+      "fp": 5,
+      "fp_on_unrelated_or_implementation_only_hunks": 2,
+      "gold_positive_exact_triples": 14,
+      "limitations": [
+        "curated single-repository pilot",
+        "not a certified 2024 historical replay",
+        "no gold architecture-outcome labels",
+        "v4.6 development examples, not independent held-out evaluation",
+        "different profile and provider-call/token accounting"
+      ],
+      "precision": 0.666667,
+      "predicted_exact_triples": 15,
+      "predicted_hunk_coverage": {
+        "count": 13,
+        "of": 24
+      },
+      "recall": 0.714286,
+      "scope": "baseline",
+      "tp": 10,
+      "unscored_prediction_links_outside_hunk_universe": 4
+    }
+  },
+  "status": "V46_DEVELOPMENT_ONLY_POST_RUN_REFERENCE_COMPARISON",
+  "v46_code_sha256": "a01d6dd7e5016c9224c0184053981eddd6621dcd3c6963edf3b391396d420d1b",
+  "v46_run_report_sha256": "4bbb2e304acb8b9f0f6ff3b89c2374c4e6e717a7f196b1b3a489dd088a49c79e",
+  "verification_status": "UNRESOLVED",
+  "verified_evidence_links": 19,
+  "warnings": [
+    "NOT held-out: the reference was examined during development.",
+    "Descriptive development comparison: identical source inputs, opaque model IDs and nominal budgets as v4.5; semantic policy, investigation profile and request/token accounting differ. Earlier versions also used different models and call patterns.",
+    "Both linker and judge model IDs are copied exactly from the pinned completed v4.5 run; nomination remains none. Immutable provider model snapshots are not verified.",
+    "v4.6 separately assesses post-S0 evidence support and target-local change. Unchanged context is not fresh evidence, and specific adopted implementation changes can trace to a fixed-S0 mechanism through explicit same-event evidence. Fixed S0, frozen labels and the exact-triple scorer remain unchanged.",
+    "The exact-triple scorer is unchanged; no architecture-outcome gold is available.",
+    "Historical replay remains uncertified; model snapshots are not verified."
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "status": "LOCAL_REPETITIVE_SOURCE_BENCHMARK_NO_API",
+  "method": "Exact normalized old assertion search with merged current intervals and a 200000 occurrence cap",
+  "samples": [
+    {
+      "normalized_assertion_characters": 1000,
+      "seconds": 0.001393
+    },
+    {
+      "normalized_assertion_characters": 3000,
+      "seconds": 0.00166
+    },
+    {
+      "normalized_assertion_characters": 6000,
+      "seconds": 0.003135
+    },
+    {
+      "normalized_assertion_characters": 24000,
+      "seconds": 0.011547
+    }
+  ],
+  "note": "Synthetic helper stress; lines above650 are not reviewable passage inputs. No semantic accuracy measured."
+}

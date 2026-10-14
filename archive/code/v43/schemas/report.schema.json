@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Evidence-grounded revalidation report requiring human review",
+  "type": "object",
+  "required": ["episode_id", "decision_id", "recommended_outcome", "confidence",
+    "outcome_probabilities", "drift_types", "verified_evidence", "material_claims",
+    "unresolved_questions", "evidence_grounded_rationale", "next_action", "verification", "human_review_required"],
+  "properties": {
+    "episode_id": {"type": "string"},
+    "decision_id": {"type": "string"},
+    "recommended_outcome": {"enum": ["KEEP", "REVALIDATE", "REVISE", "REOPEN"]},
+    "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+    "outcome_probabilities": {"type": "object", "required": ["KEEP", "REVALIDATE", "REVISE", "REOPEN"],
+      "properties": {"KEEP": {"type": "number"}, "REVALIDATE": {"type": "number"},
+        "REVISE": {"type": "number"}, "REOPEN": {"type": "number"}}},
+    "verified_evidence": {"type": "array", "items": {"type": "object"}},
+    "material_claims": {"type": "array", "items": {"type": "object"}},
+    "unresolved_questions": {"type": "array", "items": {"type": "string"}},
+    "evidence_grounded_rationale": {"type": "array", "items": {"type": "object"}},
+    "drift_types": {"type": "array", "items": {"enum": ["assumption_drift", "evidence_drift", "requirement_drift",
+      "implementation_drift", "quality_attribute_drift", "dependency_drift"]}},
+    "next_action": {"type": "string"},
+    "verification": {"type": "object"},
+    "human_review_required": {"const": true}
+  }
+}

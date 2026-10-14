@@ -1,0 +1,150 @@
+{
+  "batch_scenarios": [
+    {
+      "accepted_stored_effects": 11,
+      "artifacts": 14,
+      "checker_calls": 1,
+      "explicit_pair_rows": 252,
+      "primary_calls": 5,
+      "rejected_stored_effects": 1,
+      "stored_candidates": 12
+    },
+    {
+      "accepted_stored_effects": 5,
+      "artifacts": 6,
+      "checker_calls": 1,
+      "explicit_pair_rows": 108,
+      "primary_calls": 2,
+      "rejected_stored_effects": 0,
+      "stored_candidates": 5
+    },
+    {
+      "accepted_stored_effects": 4,
+      "artifacts": 5,
+      "checker_calls": 1,
+      "explicit_pair_rows": 90,
+      "primary_calls": 2,
+      "rejected_stored_effects": 2,
+      "stored_candidates": 6
+    },
+    {
+      "accepted_stored_effects": 0,
+      "artifacts": 1,
+      "checker_calls": 0,
+      "explicit_pair_rows": 18,
+      "primary_calls": 1,
+      "rejected_stored_effects": 0,
+      "stored_candidates": 0
+    },
+    {
+      "accepted_stored_effects": 0,
+      "artifacts": 2,
+      "checker_calls": 0,
+      "explicit_pair_rows": 36,
+      "primary_calls": 1,
+      "rejected_stored_effects": 0,
+      "stored_candidates": 0
+    },
+    {
+      "accepted_stored_effects": 0,
+      "artifacts": 2,
+      "checker_calls": 0,
+      "explicit_pair_rows": 36,
+      "primary_calls": 1,
+      "rejected_stored_effects": 0,
+      "stored_candidates": 0
+    }
+  ],
+  "estimated_input_tokens": 181785,
+  "gold_labels_read": false,
+  "limitations": [
+    "Fake confirmation intentionally preserves prior false positives as well as prior true positives.",
+    "This verifies request accounting and unchanged proof guards, not classifier or critic accuracy.",
+    "No v49 F1, precision or recall is available.",
+    "The dense synthetic checker capacity scenario can exceed the configured input ceiling; the runtime then stops before extra calls."
+  ],
+  "mock_confirmed_all_candidate_interpretations": true,
+  "mock_requests": 15,
+  "new_guard_accepted_stored_effects": 20,
+  "new_guard_rejected_stored_effects": 3,
+  "newly_admitted_stored_effects": [
+    [
+      "964260d9c2da-F01-H04",
+      "I1",
+      "supersedes"
+    ]
+  ],
+  "old_accepted_effects_preserved": 19,
+  "real_provider_calls": 0,
+  "requests": [
+    {
+      "estimate": 16034,
+      "name": "independent_fixed_s0_pair_review"
+    },
+    {
+      "estimate": 16034,
+      "name": "independent_fixed_s0_pair_review"
+    },
+    {
+      "estimate": 16034,
+      "name": "independent_fixed_s0_pair_review"
+    },
+    {
+      "estimate": 16034,
+      "name": "independent_fixed_s0_pair_review"
+    },
+    {
+      "estimate": 16028,
+      "name": "independent_fixed_s0_pair_review"
+    },
+    {
+      "estimate": 15354,
+      "name": "independent_fixed_s0_pair_candidate_check"
+    },
+    {
+      "estimate": 12440,
+      "name": "independent_fixed_s0_pair_review"
+    },
+    {
+      "estimate": 12440,
+      "name": "independent_fixed_s0_pair_review"
+    },
+    {
+      "estimate": 10144,
+      "name": "independent_fixed_s0_pair_candidate_check"
+    },
+    {
+      "estimate": 10615,
+      "name": "independent_fixed_s0_pair_review"
+    },
+    {
+      "estimate": 10609,
+      "name": "independent_fixed_s0_pair_review"
+    },
+    {
+      "estimate": 8461,
+      "name": "independent_fixed_s0_pair_candidate_check"
+    },
+    {
+      "estimate": 7037,
+      "name": "independent_fixed_s0_pair_review"
+    },
+    {
+      "estimate": 7250,
+      "name": "independent_fixed_s0_pair_review"
+    },
+    {
+      "estimate": 7271,
+      "name": "independent_fixed_s0_pair_review"
+    }
+  ],
+  "semantic_accuracy_measured": false,
+  "source_sha256": {
+    "history": "30f89a8dae945eb588898134b23c1a5276f94dd257ef0ae3f71b9befd670a058",
+    "runtime_s0": "a852f931aa41c2f67b1522651665feb67fad9d92116413553405fb3d9c3ba784"
+  },
+  "status": "V49_STORED_V46_EFFECT_REPLAY_NO_API_NO_GOLD",
+  "stored_v46_effects": 23,
+  "within_input_ceiling": true,
+  "within_provider_request_ceiling": true
+}

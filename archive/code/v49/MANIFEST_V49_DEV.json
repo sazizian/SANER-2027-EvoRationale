@@ -1,0 +1,30 @@
+{
+  "comparison": "Descriptive development only; increased compute; not held-out",
+  "gold_labels_in_agent_inputs": false,
+  "historical_code_preserved": true,
+  "hosted_accuracy_measured": false,
+  "investigation_profile": "event-pair-reviewed",
+  "local_tests_passed": 782,
+  "max_input_tokens": 400000,
+  "max_provider_requests": 36,
+  "new_real_provider_calls": 0,
+  "new_tests": 70,
+  "pilot_target_all_scope_f1": 0.8,
+  "runtime_core_sha256": "a0e1b1c0156e48d6a4bdae27a02fdfd9e0bedfbdd05bac79c2db812468937b22",
+  "source_preflight": {
+    "dense_checker_capacity_within_input_budget": false,
+    "explicit_selected_diff_pairs": 540,
+    "primary_requests": 12,
+    "stored_effect_replay_input_estimate": 181785,
+    "stored_effect_replay_requests": 15
+  },
+  "status": "EXPERIMENTAL_V49_LOCAL_TESTS_AND_WORKFLOWS_PASSED_NO_HOSTED_ACCURACY",
+  "stretch_target_all_scope_f1": 0.85,
+  "unchanged_scoring_contract_files": [
+    "evorationale/evidence_trace_verification.py",
+    "evorationale/evidence_repair_verification.py",
+    "evorationale/relation_contract.py",
+    "development_tools/_score_core.py"
+  ],
+  "version": "4.9.0.dev0"
+}

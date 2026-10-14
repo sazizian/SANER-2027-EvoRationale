@@ -1,0 +1,27 @@
+{
+  "actual_no_api_helper_integration": "PASS_WITH_SYNTHETIC_HASHED_FIXTURES",
+  "archive_extract_no_api_helper": "PASS_363_TESTS_WITH_SYNTHETIC_FIXTURES",
+  "automated_tests_passed": 363,
+  "build": "FINAL_REVIEWED_V44",
+  "core_python_tree_sha256": "9c7fc66afd6d315c5f02a7b4d88a10ca91c7ad43360fadba9d01cd3e71f91e3e",
+  "development_only": true,
+  "exact_triple_scorer_unchanged": true,
+  "gold_labels_in_agent_inputs": false,
+  "hosted_provider_calls_during_construction": 0,
+  "hosted_v44_accuracy_result_available": false,
+  "notes": [
+    "Previously inspected development examples; not held-out.",
+    "Identical inputs and nominal budgets; call pattern, accounting and partial-support scope differ.",
+    "Canonical quote/provenance checks are deterministic; semantic relations remain model assessments.",
+    "Historical manifests and reports describe their original package versions."
+  ],
+  "offline_redis_demo": "PASS_REOPEN",
+  "parent_v43_core_sha256": "b53989d04604b68d76eddd92412db89b0b33025637e42649abda27714ee53d94",
+  "profile": "event-complete",
+  "source_approval_changed": false,
+  "structural_source_diff_hunks": 30,
+  "synthetic_scenario_estimated_input_tokens": 83955,
+  "test_seconds": 9.39,
+  "version": "4.4.0.dev0",
+  "windows_execution_confirmed": false
+}

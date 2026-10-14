@@ -1,0 +1,1738 @@
+{
+  "kind": "READ_ONLY_SCOPE_CONTRACT_AUDIT_NO_API",
+  "run_id": "8096127b-4cbd-4e77-a9c4-a9c2c5dc0c03",
+  "summary": {
+    "accepted": 25,
+    "accepted_false_positives": 11,
+    "accepted_material_subclaim": 22,
+    "accepted_material_subclaim_with_full_target_anchor": 13,
+    "candidate_decisions": 28,
+    "critic_confirms": 26,
+    "critic_rejects": 2
+  },
+  "finding": "Candidate hypotheses do not specify the exact claimed material subclause or its qualification. Critic decisions cannot return independently validated target/proof selections or qualification, and acceptance checks only verdict confirm plus inherited primary source/semantic fields. Stored FP reasons mostly restate the primary limitation; no observed scope disagreement establishes causality.",
+  "records": [
+    {
+      "key": [
+        "964260d9c2da-F01-H03",
+        "I1",
+        "supersedes"
+      ],
+      "reference_verdict": "TP",
+      "claim_scope": "material_subclaim",
+      "anchor_is_complete_target_text": false,
+      "candidate_hypothesis_reconstructed_before_outbound_screening": {
+        "element_id": "I1",
+        "passage_handle": "A0003:P0001",
+        "before_line_handles": [
+          "A0003:L0004",
+          "A0003:L0005",
+          "A0003:L0006"
+        ],
+        "after_line_handles": [
+          "A0003:L0004",
+          "A0003:L0007"
+        ],
+        "context_line_handles": [
+          "A0004:L0036",
+          "A0004:L0037",
+          "A0004:L0038",
+          "A0004:L0040",
+          "A0004:L0041",
+          "A0004:L0042",
+          "A0004:L0043",
+          "A0004:L0044"
+        ],
+        "claim_scope": "material_subclaim",
+        "s0_claim_quote": "report allocated/applied resources through PodStatus.",
+        "candidate_id": "C0001",
+        "artifact_handle": "A0003",
+        "relation": "supersedes"
+      },
+      "withheld_primary_fields": {
+        "qualification": "Only the allocated/applied reporting portion is affected; mutable desired-resource PodSpec representation is not replaced. Applied-resource reporting survives. Allocated-status reporting is retained as a separately gated alpha path, not universally retired.",
+        "after_claim": "The ordinary core-design contract reports actual applied resources through PodStatus, while allocated requests and limits are cached and checkpointed locally. AllocatedResources status remains an alpha, separately gated path reporting allocated requests.",
+        "before_claim": "The core-design contract extends PodStatus to reflect allocated resources and provide actual applied-resource information.",
+        "effect_basis": "direct_delta",
+        "evidence_basis": "adopted_design_statement",
+        "source_role": "adopted_design",
+        "current_claim_entailed": false,
+        "whole_element_supported": false
+      },
+      "critic_decision": {
+        "authority_reason": "Pinned same-event KEP proposal and API changes provide design authority. Confirmation is MODEL_ASSESSED, not implementation or deployment validation.",
+        "candidate_id": "C0001",
+        "contribution_reason": "A0003 removes allocated-resource reporting from the core contract; A0004 supplies its replacement and expressly preserves gated alpha reporting.",
+        "predicate_reason": "I1's allocated-through-PodStatus clause is replaced by kubelet-local allocation checkpoints. Applied resources remain in PodStatus; allocated requests remain reportable under the separate alpha gate.",
+        "reason": "The adopted contract substantively supersedes general allocated-status reporting, without eliminating the optional legacy path.",
+        "verdict": "confirm"
+      },
+      "exact_local_after_source_lines": [
+        " Resources, denoting **desired** resources. Additionally, PodStatus is extended to",
+        "+provide information about **actual** resources applied to the Pod and its Containers."
+      ],
+      "exact_context_source_lines": [
+        "+When the Kubelet admits a pod initially or admits a resize, all resource requirements from the spec",
+        "+are cached and checkpointed locally. When a container is (re)started, these are the requests and",
+        "+limits used.",
+        "+The alpha implementation of In-Place Pod Vertical Scaling included `AllocatedResources` in the",
+        "+container status, but only included requests. This field will remain in alpha, guarded by the",
+        "+separate `InPlacePodVerticalScalingAllocatedStatus` feature gate, and is a candidate for future",
+        "+removal. With the allocated status feature gate enabled, Kubelet will continue to populate the field",
+        "+with the allocated requests from the checkpoint."
+      ]
+    },
+    {
+      "key": [
+        "964260d9c2da-F01-H04",
+        "R1",
+        "supports"
+      ],
+      "reference_verdict": "FP",
+      "claim_scope": "whole_element",
+      "anchor_is_complete_target_text": true,
+      "candidate_hypothesis_reconstructed_before_outbound_screening": {
+        "element_id": "R1",
+        "passage_handle": "A0004:P0004",
+        "before_line_handles": [
+          "A0004:L0011",
+          "A0004:L0012",
+          "A0004:L0013",
+          "A0004:L0014",
+          "A0004:L0015",
+          "A0004:L0016",
+          "A0004:L0017",
+          "A0004:L0018"
+        ],
+        "after_line_handles": [
+          "A0004:L0036",
+          "A0004:L0037",
+          "A0004:L0038",
+          "A0004:L0040",
+          "A0004:L0041",
+          "A0004:L0042",
+          "A0004:L0043"
+        ],
+        "context_line_handles": [
+          "A0004:L0011",
+          "A0004:L0012",
+          "A0004:L0016",
+          "A0004:L0017",
+          "A0004:L0018",
+          "A0004:L0025",
+          "A0004:L0026",
+          "A0004:L0044"
+        ],
+        "claim_scope": "whole_element",
+        "s0_claim_quote": "Distinguish the desired resources declared in the Pod spec from the resources allocated to the Pod on the node and from the actual resources applied to its containers.",
+        "candidate_id": "C0004",
+        "artifact_handle": "A0004",
+        "relation": "supports"
+      },
+      "withheld_primary_fields": {
+        "qualification": "This is adopted source-design evidence, not runtime validation. Changing the allocation representation does not retire the distinction requirement.",
+        "after_claim": "Desired resources are declared in the spec, admitted allocations are cached and checkpointed locally, and actual resources are represented separately in container status.",
+        "before_claim": "Desired, allocated, and actual resources were distinguished using spec resources and two container-status fields.",
+        "effect_basis": "current_design_statement",
+        "evidence_basis": "adopted_design_statement",
+        "source_role": "adopted_design",
+        "current_claim_entailed": true,
+        "whole_element_supported": true
+      },
+      "critic_decision": {
+        "authority_reason": "The pinned current API design establishes field meanings and local allocation handling. Confirmation concerns that design, not implementation correctness.",
+        "candidate_id": "C0004",
+        "contribution_reason": "The added checkpoint contract substantively relocates allocation while retaining separate desired and actual representations, supporting the complete three-way distinction.",
+        "predicate_reason": "R1 distinguishes PodSpec desired resources, kubelet-admitted requests/limits cached on the node, and actual container resources in PodStatus. Allocation need not be generally published to remain distinct.",
+        "reason": "The source supports all three resource meanings despite replacing their former common status representation.",
+        "verdict": "confirm"
+      },
+      "exact_local_after_source_lines": [
+        "+When the Kubelet admits a pod initially or admits a resize, all resource requirements from the spec",
+        "+are cached and checkpointed locally. When a container is (re)started, these are the requests and",
+        "+limits used.",
+        "+The alpha implementation of In-Place Pod Vertical Scaling included `AllocatedResources` in the",
+        "+container status, but only included requests. This field will remain in alpha, guarded by the",
+        "+separate `InPlacePodVerticalScalingAllocatedStatus` feature gate, and is a candidate for future",
+        "+removal. With the allocated status feature gate enabled, Kubelet will continue to populate the field"
+      ],
+      "exact_context_source_lines": [
+        " * Pod.Spec.Containers[i].Resources becomes purely a declaration, denoting the",
+        "   **desired** state of Pod resources",
+        " * Pod.Status.ContainerStatuses[i].Resources (new field, type",
+        "   v1.ResourceRequirements) shows the **actual** resources held by the Pod and",
+        "   its Containers.",
+        "+The actual resources are reported by the container runtime in some cases, and for all other",
+        "+resources are copied from the latest snapshot of allocated resources. Currently, the resources",
+        "+with the allocated requests from the checkpoint."
+      ]
+    },
+    {
+      "key": [
+        "964260d9c2da-F01-H04",
+        "I1",
+        "supersedes"
+      ],
+      "reference_verdict": "TP",
+      "claim_scope": "material_subclaim",
+      "anchor_is_complete_target_text": true,
+      "candidate_hypothesis_reconstructed_before_outbound_screening": {
+        "element_id": "I1",
+        "passage_handle": "A0004:P0004",
+        "before_line_handles": [
+          "A0004:L0006",
+          "A0004:L0013",
+          "A0004:L0014",
+          "A0004:L0015",
+          "A0004:L0022",
+          "A0004:L0023"
+        ],
+        "after_line_handles": [
+          "A0004:L0036",
+          "A0004:L0037",
+          "A0004:L0038",
+          "A0004:L0040",
+          "A0004:L0041",
+          "A0004:L0042",
+          "A0004:L0043"
+        ],
+        "context_line_handles": [
+          "A0004:L0008",
+          "A0004:L0044"
+        ],
+        "claim_scope": "material_subclaim",
+        "s0_claim_quote": "Represent desired resources through mutable PodSpec fields and report allocated/applied resources through PodStatus.",
+        "candidate_id": "C0002",
+        "artifact_handle": "A0004",
+        "relation": "supersedes"
+      },
+      "withheld_primary_fields": {
+        "qualification": "Only the ordinary allocated-resource reporting mechanism is superseded. Mutable desired fields and applied-resource status reporting survive; the alpha allocated-status path is explicitly retained, not retired.",
+        "after_claim": "Allocated requests and limits are cached and checkpointed locally; allocated-request status reporting remains an alpha option behind a separate feature gate. Applied resources remain reported through PodStatus.",
+        "before_claim": "Allocated resources were ordinarily represented in ContainerStatuses.AllocatedResources alongside actual resources in ContainerStatuses.Resources.",
+        "effect_basis": "direct_delta",
+        "evidence_basis": "adopted_design_statement",
+        "source_role": "adopted_design",
+        "current_claim_entailed": false,
+        "whole_element_supported": false
+      },
+      "critic_decision": {
+        "authority_reason": "A0004 is the pinned KEP's adopted API design, rather than an alternatives sketch. Assessment does not establish deployed behavior.",
+        "candidate_id": "C0002",
+        "contribution_reason": "The new allocation section directly replaces the deleted status field contract with caching, checkpointing, restart use, and an explicitly gated compatibility path.",
+        "predicate_reason": "For I1, kubelet must cache admitted requests and limits locally rather than generally report allocation through PodStatus. Applied status remains; alpha allocated requests are populated only with the separate gate enabled.",
+        "reason": "The replacement mechanism and its qualifications are explicit, supporting supersession of the allocated-reporting subclaim.",
+        "verdict": "confirm"
+      },
+      "exact_local_after_source_lines": [
+        "+When the Kubelet admits a pod initially or admits a resize, all resource requirements from the spec",
+        "+are cached and checkpointed locally. When a container is (re)started, these are the requests and",
+        "+limits used.",
+        "+The alpha implementation of In-Place Pod Vertical Scaling included `AllocatedResources` in the",
+        "+container status, but only included requests. This field will remain in alpha, guarded by the",
+        "+separate `InPlacePodVerticalScalingAllocatedStatus` feature gate, and is a candidate for future",
+        "+removal. With the allocated status feature gate enabled, Kubelet will continue to populate the field"
+      ],
+      "exact_context_source_lines": [
+        "+PodStatus is extended to show the resources applied to the Pod and its Containers.",
+        "+with the allocated requests from the checkpoint."
+      ]
+    },
+    {
+      "key": [
+        "964260d9c2da-F01-H04",
+        "I1",
+        "supports"
+      ],
+      "reference_verdict": "FP",
+      "claim_scope": "material_subclaim",
+      "anchor_is_complete_target_text": true,
+      "candidate_hypothesis_reconstructed_before_outbound_screening": {
+        "element_id": "I1",
+        "passage_handle": "A0004:P0003",
+        "before_line_handles": [
+          "A0004:L0023",
+          "A0004:L0024",
+          "A0004:L0027",
+          "A0004:L0028"
+        ],
+        "after_line_handles": [
+          "A0004:L0025",
+          "A0004:L0026",
+          "A0004:L0027",
+          "A0004:L0028"
+        ],
+        "context_line_handles": [
+          "A0004:L0008",
+          "A0004:L0016",
+          "A0004:L0017",
+          "A0004:L0018"
+        ],
+        "claim_scope": "material_subclaim",
+        "s0_claim_quote": "Represent desired resources through mutable PodSpec fields and report allocated/applied resources through PodStatus.",
+        "candidate_id": "C0003",
+        "artifact_handle": "A0004",
+        "relation": "supports"
+      },
+      "withheld_primary_fields": {
+        "qualification": "Supports only the applied-resource reporting part of the compound element. It does not certify ordinary allocated-resource status reporting or deployed operation.",
+        "after_claim": "Actual resources reported through status are obtained from the runtime for specified resources and otherwise copied from the latest allocated-resource snapshot.",
+        "before_claim": "Actual resources were obtained from the runtime in some cases and otherwise copied from AllocatedResources.",
+        "effect_basis": "operational_witness",
+        "evidence_basis": "adopted_design_statement",
+        "source_role": "adopted_design",
+        "current_claim_entailed": true,
+        "whole_element_supported": false
+      },
+      "critic_decision": {
+        "authority_reason": "The pinned API Changes section states the current reporting contract and identifies runtime-reported resource values; this is design authority, not runtime verification.",
+        "candidate_id": "C0003",
+        "contribution_reason": "The changed fallback explicitly connects actual-resource reporting to the latest allocated snapshot instead of the removed AllocatedResources status field.",
+        "predicate_reason": "I1's applied-resource reporting clause is supported: PodStatus.Resources shows actual resources, obtained from runtime reports for specified CPU/memory values and otherwise copied from the latest allocation snapshot.",
+        "reason": "This is a reporting-source rule under an explicit PodStatus contract, not merely consumption of an existing status value.",
+        "verdict": "confirm"
+      },
+      "exact_local_after_source_lines": [
+        "+The actual resources are reported by the container runtime in some cases, and for all other",
+        "+resources are copied from the latest snapshot of allocated resources. Currently, the resources",
+        " reported by the runtime are CPU Limit (translated from quota & period), CPU Request (translated from",
+        " shares), and Memory Limit."
+      ],
+      "exact_context_source_lines": [
+        "+PodStatus is extended to show the resources applied to the Pod and its Containers.",
+        " * Pod.Status.ContainerStatuses[i].Resources (new field, type",
+        "   v1.ResourceRequirements) shows the **actual** resources held by the Pod and",
+        "   its Containers."
+      ]
+    },
+    {
+      "key": [
+        "964260d9c2da-F01-H05",
+        "R1",
+        "supports"
+      ],
+      "reference_verdict": "FP",
+      "claim_scope": "material_subclaim",
+      "anchor_is_complete_target_text": true,
+      "candidate_hypothesis_reconstructed_before_outbound_screening": {
+        "element_id": "R1",
+        "passage_handle": "A0005:P0001",
+        "before_line_handles": [
+          "A0005:L0004",
+          "A0005:L0005",
+          "A0005:L0006",
+          "A0005:L0009",
+          "A0005:L0010"
+        ],
+        "after_line_handles": [
+          "A0005:L0004",
+          "A0005:L0007",
+          "A0005:L0008",
+          "A0005:L0009",
+          "A0005:L0011"
+        ],
+        "context_line_handles": [
+          "A0005:L0012",
+          "A0005:L0013"
+        ],
+        "claim_scope": "material_subclaim",
+        "s0_claim_quote": "Distinguish the desired resources declared in the Pod spec from the resources allocated to the Pod on the node and from the actual resources applied to its containers.",
+        "candidate_id": "C0007",
+        "artifact_handle": "A0005",
+        "relation": "supports"
+      },
+      "withheld_primary_fields": {
+        "qualification": "Supports desired-versus-actual distinction only. The local current statement does not establish the separate allocated-resource part.",
+        "after_claim": "PodSpec resources represent desired state, while ContainerStatuses.Resources tracks actual configurations; spec readers can consequently see values differing from actual configuration.",
+        "before_claim": "PodSpec resources represented desired state, while AllocatedResources tracked true allocations; spec readers could see values differing from allocations.",
+        "effect_basis": "current_design_statement",
+        "evidence_basis": "adopted_design_statement",
+        "source_role": "adopted_design",
+        "current_claim_entailed": true,
+        "whole_element_supported": false
+      },
+      "critic_decision": {
+        "authority_reason": "The pinned compatibility rationale is authoritative design discussion about the changed API meanings, not evidence of deployed client behavior.",
+        "candidate_id": "C0007",
+        "contribution_reason": "The changed warning explicitly contrasts desired specification values with actual configurations, rather than merely mentioning either representation.",
+        "predicate_reason": "R1's desired-versus-actual subclaim is supported: applications reading desired PodSpec resources may not observe actual configurations tracked in PodStatus.Resources.",
+        "reason": "The comparison supports the qualified material subclaim; this passage alone does not establish the complete allocation distinction.",
+        "verdict": "confirm"
+      },
+      "exact_local_after_source_lines": [
+        " 1. Backward compatibility: When Pod.Spec.Containers[i].Resources becomes",
+        "+   representative of desired state, and Pod's actual resource configurations are",
+        "+   tracked in Pod.Status.ContainerStatuses[i].Resources, applications",
+        "    that query PodSpec and rely on Resources in PodSpec to determine resource",
+        "+   configurations will see values that may not represent actual configurations. As a"
+      ],
+      "exact_context_source_lines": [
+        "    mitigation, this change needs to be documented and highlighted in the",
+        "    release notes, and in top-level Kubernetes documents."
+      ]
+    },
+    {
+      "key": [
+        "964260d9c2da-F01-H05",
+        "I1",
+        "supports"
+      ],
+      "reference_verdict": "FP",
+      "claim_scope": "material_subclaim",
+      "anchor_is_complete_target_text": true,
+      "candidate_hypothesis_reconstructed_before_outbound_screening": {
+        "element_id": "I1",
+        "passage_handle": "A0005:P0001",
+        "before_line_handles": [
+          "A0005:L0005",
+          "A0005:L0006"
+        ],
+        "after_line_handles": [
+          "A0005:L0007",
+          "A0005:L0008"
+        ],
+        "context_line_handles": [
+          "A0005:L0009",
+          "A0005:L0011",
+          "A0005:L0012",
+          "A0005:L0013"
+        ],
+        "claim_scope": "material_subclaim",
+        "s0_claim_quote": "Represent desired resources through mutable PodSpec fields and report allocated/applied resources through PodStatus.",
+        "candidate_id": "C0006",
+        "artifact_handle": "A0005",
+        "relation": "supports"
+      },
+      "withheld_primary_fields": {
+        "qualification": "Supports the actual/applied-status reporting branch only, not the mutable-spec mechanism or ordinary allocated-resource reporting.",
+        "after_claim": "Actual resource configurations are tracked in Pod.Status.ContainerStatuses[i].Resources.",
+        "before_claim": "True resource allocations were tracked in Pod.Status.ContainerStatuses[i].AllocatedResources.",
+        "effect_basis": "current_design_statement",
+        "evidence_basis": "adopted_design_statement",
+        "source_role": "adopted_design",
+        "current_claim_entailed": true,
+        "whole_element_supported": false
+      },
+      "critic_decision": {
+        "authority_reason": "The pinned Risks and Mitigations section explicitly adopts actual configurations tracked in PodStatus.Resources and requires documentation of that meaning.",
+        "candidate_id": "C0006",
+        "contribution_reason": "The new wording directly identifies the actual-status representation and explains why reading desired PodSpec resources can mislead applications.",
+        "predicate_reason": "For I1's applied-reporting subclaim, actual Pod/container configurations are tracked in PodStatus.ContainerStatuses[i].Resources, distinct from desired PodSpec values. It does not restore unconditional allocation reporting.",
+        "reason": "An explicit adopted tracking contract supports the applied-resource portion of I1.",
+        "verdict": "confirm"
+      },
+      "exact_local_after_source_lines": [
+        "+   representative of desired state, and Pod's actual resource configurations are",
+        "+   tracked in Pod.Status.ContainerStatuses[i].Resources, applications"
+      ],
+      "exact_context_source_lines": [
+        "    that query PodSpec and rely on Resources in PodSpec to determine resource",
+        "+   configurations will see values that may not represent actual configurations. As a",
+        "    mitigation, this change needs to be documented and highlighted in the",
+        "    release notes, and in top-level Kubernetes documents."
+      ]
+    },
+    {
+      "key": [
+        "964260d9c2da-F01-H05",
+        "I1",
+        "supersedes"
+      ],
+      "reference_verdict": "TP",
+      "claim_scope": "material_subclaim",
+      "anchor_is_complete_target_text": true,
+      "candidate_hypothesis_reconstructed_before_outbound_screening": {
+        "element_id": "I1",
+        "passage_handle": "A0005:P0001",
+        "before_line_handles": [
+          "A0005:L0005",
+          "A0005:L0006",
+          "A0005:L0010"
+        ],
+        "after_line_handles": [
+          "A0005:L0007",
+          "A0005:L0008",
+          "A0005:L0011"
+        ],
+        "context_line_handles": [
+          "A0004:L0036",
+          "A0004:L0037",
+          "A0004:L0038",
+          "A0004:L0040",
+          "A0004:L0041",
+          "A0004:L0042",
+          "A0004:L0043",
+          "A0004:L0044"
+        ],
+        "claim_scope": "material_subclaim",
+        "s0_claim_quote": "Represent desired resources through mutable PodSpec fields and report allocated/applied resources through PodStatus.",
+        "candidate_id": "C0005",
+        "artifact_handle": "A0005",
+        "relation": "supersedes"
+      },
+      "withheld_primary_fields": {
+        "qualification": "This replaces the ordinary reporting contract, not all allocated reporting. A0004 explicitly retains allocated requests behind a separate alpha feature gate.",
+        "after_claim": "The compatibility contract directs readers to actual configurations in Resources rather than describing allocated status as the ordinary allocation representation.",
+        "before_claim": "The compatibility contract described true allocations as tracked in AllocatedResources.",
+        "effect_basis": "direct_delta",
+        "evidence_basis": "adopted_design_statement",
+        "source_role": "adopted_design",
+        "current_claim_entailed": false,
+        "whole_element_supported": false
+      },
+      "critic_decision": {
+        "authority_reason": "The pinned compatibility discussion adopts the current field meaning; the same-event API section supplies the authoritative replacement contract.",
+        "candidate_id": "C0005",
+        "contribution_reason": "The risk explanation replaces AllocatedResources with Resources as the status reference applications should understand, corroborating the adopted allocation/reporting change.",
+        "predicate_reason": "I1's general allocated-status mechanism is superseded: applications are directed toward actual configurations in Resources, while allocation moves to local checkpoints with separately gated alpha request reporting.",
+        "reason": "This changed compatibility guidance is substantive evidence of the same-event replacement, not an isolated terminology edit.",
+        "verdict": "confirm"
+      },
+      "exact_local_after_source_lines": [
+        "+   representative of desired state, and Pod's actual resource configurations are",
+        "+   tracked in Pod.Status.ContainerStatuses[i].Resources, applications",
+        "+   configurations will see values that may not represent actual configurations. As a"
+      ],
+      "exact_context_source_lines": [
+        "+When the Kubelet admits a pod initially or admits a resize, all resource requirements from the spec",
+        "+are cached and checkpointed locally. When a container is (re)started, these are the requests and",
+        "+limits used.",
+        "+The alpha implementation of In-Place Pod Vertical Scaling included `AllocatedResources` in the",
+        "+container status, but only included requests. This field will remain in alpha, guarded by the",
+        "+separate `InPlacePodVerticalScalingAllocatedStatus` feature gate, and is a candidate for future",
+        "+removal. With the allocated status feature gate enabled, Kubelet will continue to populate the field",
+        "+with the allocated requests from the checkpoint."
+      ]
+    },
+    {
+      "key": [
+        "964260d9c2da-F01-H06",
+        "I1",
+        "supersedes"
+      ],
+      "reference_verdict": "TP",
+      "claim_scope": "material_subclaim",
+      "anchor_is_complete_target_text": true,
+      "candidate_hypothesis_reconstructed_before_outbound_screening": {
+        "element_id": "I1",
+        "passage_handle": "A0006:P0001",
+        "before_line_handles": [
+          "A0006:L0004",
+          "A0006:L0005",
+          "A0006:L0006"
+        ],
+        "after_line_handles": [
+          "A0006:L0004",
+          "A0006:L0007"
+        ],
+        "context_line_handles": [
+          "A0004:L0036",
+          "A0004:L0037",
+          "A0004:L0038",
+          "A0004:L0040",
+          "A0004:L0041",
+          "A0004:L0042",
+          "A0004:L0043",
+          "A0004:L0044"
+        ],
+        "claim_scope": "material_subclaim",
+        "s0_claim_quote": "Represent desired resources through mutable PodSpec fields and report allocated/applied resources through PodStatus.",
+        "candidate_id": "C0008",
+        "artifact_handle": "A0006",
+        "relation": "supersedes"
+      },
+      "withheld_primary_fields": {
+        "qualification": "The local admission sequence follows an adopted checkpoint contract. Allocated-status reporting remains available behind the separate alpha gate; applied-status reporting is not retired.",
+        "after_claim": "Initial admission records admitted requests and limits in the internal allocated-resource checkpoint without the former ordinary admitted-request status write.",
+        "before_claim": "Initial admission records admitted requests and limits in an internal checkpoint and writes admitted requests to AllocatedResources in container status.",
+        "effect_basis": "dependent_migration",
+        "evidence_basis": "adopted_design_statement",
+        "source_role": "adopted_design",
+        "current_claim_entailed": false,
+        "whole_element_supported": false
+      },
+      "critic_decision": {
+        "authority_reason": "The pinned Design Details and current API contract describe adopted kubelet behavior. This is MODEL_ASSESSED design evidence, not execution proof.",
+        "candidate_id": "C0008",
+        "contribution_reason": "Initial admission no longer includes an unconditional status write. Its replacement retains local checkpointing and explicitly places legacy writes behind a separate gate.",
+        "predicate_reason": "I1's allocated-reporting mechanism is superseded for kubelet admission: admitted requests/limits are checkpointed locally; allocated requests are still written to status when the alpha allocated-status gate is enabled.",
+        "reason": "The deletion and explicit same-event replacement justify supersession with the gated exception preserved.",
+        "verdict": "confirm"
+      },
+      "exact_local_after_source_lines": [
+        " scheduled to a node. When Kubelet admits a Pod, it will record the admitted",
+        "+requests & limits to its internal allocated resources checkpoint."
+      ],
+      "exact_context_source_lines": [
+        "+When the Kubelet admits a pod initially or admits a resize, all resource requirements from the spec",
+        "+are cached and checkpointed locally. When a container is (re)started, these are the requests and",
+        "+limits used.",
+        "+The alpha implementation of In-Place Pod Vertical Scaling included `AllocatedResources` in the",
+        "+container status, but only included requests. This field will remain in alpha, guarded by the",
+        "+separate `InPlacePodVerticalScalingAllocatedStatus` feature gate, and is a candidate for future",
+        "+removal. With the allocated status feature gate enabled, Kubelet will continue to populate the field",
+        "+with the allocated requests from the checkpoint."
+      ]
+    },
+    {
+      "key": [
+        "964260d9c2da-F01-H06",
+        "R1",
+        "supports"
+      ],
+      "reference_verdict": "FP",
+      "claim_scope": "whole_element",
+      "anchor_is_complete_target_text": true,
+      "candidate_hypothesis_reconstructed_before_outbound_screening": {
+        "element_id": "R1",
+        "passage_handle": "A0006:P0003",
+        "before_line_handles": [
+          "A0006:L0013",
+          "A0006:L0014",
+          "A0006:L0015",
+          "A0006:L0016",
+          "A0006:L0025",
+          "A0006:L0026",
+          "A0006:L0027"
+        ],
+        "after_line_handles": [
+          "A0006:L0019",
+          "A0006:L0020",
+          "A0006:L0021",
+          "A0006:L0023",
+          "A0006:L0024",
+          "A0006:L0025",
+          "A0006:L0026",
+          "A0006:L0027"
+        ],
+        "context_line_handles": [
+          "A0006:L0004",
+          "A0006:L0007"
+        ],
+        "claim_scope": "whole_element",
+        "s0_claim_quote": "Distinguish the desired resources declared in the Pod spec from the resources allocated to the Pod on the node and from the actual resources applied to its containers.",
+        "candidate_id": "C0009",
+        "artifact_handle": "A0006",
+        "relation": "supports"
+      },
+      "withheld_primary_fields": {
+        "qualification": "The representation changes, but the three-way distinction survives. This describes the adopted sequence, not completed runtime validation.",
+        "after_claim": "Kubelet uses desired spec requests for the fit calculation, updates allocated resources upon acceptance, and updates actual status resources after successful container updates.",
+        "before_claim": "Kubelet used desired requests for fitting, updated Status.AllocatedResources upon acceptance, and updated Status.Resources after successful container updates.",
+        "effect_basis": "current_design_statement",
+        "evidence_basis": "adopted_design_statement",
+        "source_role": "adopted_design",
+        "current_claim_entailed": true,
+        "whole_element_supported": true
+      },
+      "critic_decision": {
+        "authority_reason": "The pinned kubelet resize design specifies admission, allocation, CRI actuation, and actual-status updates; it does not validate implementation.",
+        "candidate_id": "C0009",
+        "contribution_reason": "The changed acceptance operation updates allocation without the removed status-field dependency, while the surrounding sequence independently identifies desired requests and actual resource reporting.",
+        "predicate_reason": "For R1, kubelet tests desired Spec requests against node allocation, updates admitted allocation on acceptance, then actuates containers and updates Status.Resources after successful updates.",
+        "reason": "The operational sequence distinguishes all three resource meanings and substantively adopts allocation independent of its former status field.",
+        "verdict": "confirm"
+      },
+      "exact_local_after_source_lines": [
+        "+allocated for all Pods in the Node, except the Pod being resized. For the Pod",
+        "+being resized, it adds the new desired resources (i.e",
+        "+Spec.Containers[i].Resources.Requests) to the sum.",
+        "+* If new desired resources fit, Kubelet accepts the resize, updates",
+        "+  the allocated resourcesa, and sets Status.Resize to",
+        "   \"InProgress\".  It then invokes the UpdateContainerResources CRI API to update",
+        "   Container resource limits.  Once all Containers are successfully updated, it",
+        "   updates Status...Resources to reflect new resource values and unsets"
+      ],
+      "exact_context_source_lines": [
+        " scheduled to a node. When Kubelet admits a Pod, it will record the admitted",
+        "+requests & limits to its internal allocated resources checkpoint."
+      ]
+    },
+    {
+      "key": [
+        "964260d9c2da-F01-H07",
+        "I1",
+        "supersedes"
+      ],
+      "reference_verdict": "FP",
+      "claim_scope": "material_subclaim",
+      "anchor_is_complete_target_text": false,
+      "candidate_hypothesis_reconstructed_before_outbound_screening": {
+        "element_id": "I1",
+        "passage_handle": "A0007:P0001",
+        "before_line_handles": [
+          "A0007:L0004",
+          "A0007:L0005",
+          "A0007:L0006",
+          "A0007:L0007"
+        ],
+        "after_line_handles": [
+          "A0007:L0008",
+          "A0007:L0009",
+          "A0007:L0010"
+        ],
+        "context_line_handles": [
+          "A0004:L0008",
+          "A0004:L0016",
+          "A0004:L0017",
+          "A0004:L0018",
+          "A0004:L0036",
+          "A0004:L0037",
+          "A0004:L0038",
+          "A0004:L0040",
+          "A0004:L0041",
+          "A0004:L0042",
+          "A0004:L0043",
+          "A0004:L0044"
+        ],
+        "claim_scope": "material_subclaim",
+        "s0_claim_quote": "report allocated/applied resources through PodStatus.",
+        "candidate_id": "C0010",
+        "artifact_handle": "A0007",
+        "relation": "supersedes"
+      },
+      "withheld_primary_fields": {
+        "qualification": "Replaces the ordinary allocated-status dependency, not all PodStatus reporting. The separately gated alpha AllocatedResources path remains; mutable desired resources and applied-resource reporting are not retired.",
+        "after_claim": "Ordinary allocated-resource state is checkpointed locally and restored for re-admission; applied resources remain in PodStatus. Allocated requests may still be published through the separately gated alpha status field.",
+        "before_claim": "Allocated resources are reported through PodStatus, whose AllocatedResources values are used to re-admit Pods after a kubelet restart.",
+        "effect_basis": "dependent_migration",
+        "evidence_basis": "adopted_design_statement",
+        "source_role": "adopted_design",
+        "current_claim_entailed": false,
+        "whole_element_supported": false
+      },
+      "critic_decision": {
+        "authority_reason": "The pinned restart-tolerance design and same-event API contract jointly establish the adopted dependency replacement, not workload-restart behavior.",
+        "candidate_id": "C0010",
+        "contribution_reason": "Re-admission replaces reading Status.AllocatedResources with restoring the local checkpoint, directly depending on the new allocation contract.",
+        "predicate_reason": "I1's allocated-status mechanism is superseded for kubelet restart recovery: existing Pods are re-admitted from checkpointed allocation before pending resizes. Applied reporting and gated alpha allocation reporting remain.",
+        "reason": "The downstream recovery dependency substantiates replacement of the reporting-backed mechanism; it does not imply Pod or container restart.",
+        "verdict": "confirm"
+      },
+      "exact_local_after_source_lines": [
+        "+Pods are re-admitted based on their current allocated resources (restored from",
+        "+ checkpoint). Pending resizes are handled after all existing Pods have been",
+        "+added. This ensures that resizes don't affect previously admitted existing Pods."
+      ],
+      "exact_context_source_lines": [
+        "+PodStatus is extended to show the resources applied to the Pod and its Containers.",
+        " * Pod.Status.ContainerStatuses[i].Resources (new field, type",
+        "   v1.ResourceRequirements) shows the **actual** resources held by the Pod and",
+        "   its Containers.",
+        "+When the Kubelet admits a pod initially or admits a resize, all resource requirements from the spec",
+        "+are cached and checkpointed locally. When a container is (re)started, these are the requests and",
+        "+limits used.",
+        "+The alpha implementation of In-Place Pod Vertical Scaling included `AllocatedResources` in the",
+        "+container status, but only included requests. This field will remain in alpha, guarded by the",
+        "+separate `InPlacePodVerticalScalingAllocatedStatus` feature gate, and is a candidate for future",
+        "+removal. With the allocated status feature gate enabled, Kubelet will continue to populate the field",
+        "+with the allocated requests from the checkpoint."
+      ]
+    },
+    {
+      "key": [
+        "964260d9c2da-F01-H08",
+        "I1",
+        "supersedes"
+      ],
+      "reference_verdict": "TP",
+      "claim_scope": "material_subclaim",
+      "anchor_is_complete_target_text": false,
+      "candidate_hypothesis_reconstructed_before_outbound_screening": {
+        "element_id": "I1",
+        "passage_handle": "A0008:P0001",
+        "before_line_handles": [
+          "A0008:L0005",
+          "A0008:L0006"
+        ],
+        "after_line_handles": [
+          "A0008:L0007",
+          "A0008:L0008"
+        ],
+        "context_line_handles": [
+          "A0004:L0008",
+          "A0004:L0016",
+          "A0004:L0017",
+          "A0004:L0018",
+          "A0004:L0036",
+          "A0004:L0037",
+          "A0004:L0038",
+          "A0004:L0040",
+          "A0004:L0041",
+          "A0004:L0042",
+          "A0004:L0043",
+          "A0004:L0044"
+        ],
+        "claim_scope": "material_subclaim",
+        "s0_claim_quote": "report allocated/applied resources through PodStatus.",
+        "candidate_id": "C0011",
+        "artifact_handle": "A0008",
+        "relation": "supersedes"
+      },
+      "withheld_primary_fields": {
+        "qualification": "The exact local migration is the Infeasible accounting branch. InProgress moves to pessimistic accounting rather than simply using actual resources. Applied-resource status survives, and allocated-request status remains optionally available under its separate alpha gate.",
+        "after_claim": "Ordinary allocated-resource state is locally checkpointed rather than ordinarily published through the allocated-status field; the scheduler uses applied-resource status for infeasible resizes. Separately gated alpha allocated-request reporting remains.",
+        "before_claim": "The allocated-resource PodStatus representation supplies scheduler accounting for containers with InProgress or Infeasible resizes.",
+        "effect_basis": "dependent_migration",
+        "evidence_basis": "adopted_design_statement",
+        "source_role": "adopted_design",
+        "current_claim_entailed": false,
+        "whole_element_supported": false
+      },
+      "critic_decision": {
+        "authority_reason": "The pinned scheduler interaction design is read with the same-event adopted API contract. Confirmation concerns design replacement, not scheduler deployment.",
+        "candidate_id": "C0011",
+        "contribution_reason": "The scheduler loses its AllocatedResources dependency and uses actual Resources, corroborating the explicit relocation of allocation into kubelet-local storage.",
+        "predicate_reason": "For I1's allocated-reporting mechanism, infeasible resizes now use actual status. Proposed and in-progress resizes instead use the larger desired/actual requests; legacy allocation reporting remains separately gated.",
+        "reason": "The changed consumer dependency supports qualified supersession, without treating status consumption itself as a new reporting obligation.",
+        "verdict": "confirm"
+      },
+      "exact_local_after_source_lines": [
+        "+For containers which have `Status.Resize = \"Infeasible\"`, it can",
+        "+simply use `Status.ContainerStatus[i].Resources`."
+      ],
+      "exact_context_source_lines": [
+        "+PodStatus is extended to show the resources applied to the Pod and its Containers.",
+        " * Pod.Status.ContainerStatuses[i].Resources (new field, type",
+        "   v1.ResourceRequirements) shows the **actual** resources held by the Pod and",
+        "   its Containers.",
+        "+When the Kubelet admits a pod initially or admits a resize, all resource requirements from the spec",
+        "+are cached and checkpointed locally. When a container is (re)started, these are the requests and",
+        "+limits used.",
+        "+The alpha implementation of In-Place Pod Vertical Scaling included `AllocatedResources` in the",
+        "+container status, but only included requests. This field will remain in alpha, guarded by the",
+        "+separate `InPlacePodVerticalScalingAllocatedStatus` feature gate, and is a candidate for future",
+        "+removal. With the allocated status feature gate enabled, Kubelet will continue to populate the field",
+        "+with the allocated requests from the checkpoint."
+      ]
+    },
+    {
+      "key": [
+        "964260d9c2da-F01-H09",
+        "I1",
+        "supersedes"
+      ],
+      "reference_verdict": "TP",
+      "claim_scope": "material_subclaim",
+      "anchor_is_complete_target_text": false,
+      "candidate_hypothesis_reconstructed_before_outbound_screening": {
+        "element_id": "I1",
+        "passage_handle": "A0009:P0001",
+        "before_line_handles": [
+          "A0009:L0004",
+          "A0009:L0005",
+          "A0009:L0007"
+        ],
+        "after_line_handles": [
+          "A0009:L0004",
+          "A0009:L0006",
+          "A0009:L0007"
+        ],
+        "context_line_handles": [
+          "A0004:L0008",
+          "A0004:L0016",
+          "A0004:L0017",
+          "A0004:L0018",
+          "A0004:L0036",
+          "A0004:L0037",
+          "A0004:L0038",
+          "A0004:L0040",
+          "A0004:L0041",
+          "A0004:L0042",
+          "A0004:L0043",
+          "A0004:L0044"
+        ],
+        "claim_scope": "material_subclaim",
+        "s0_claim_quote": "report allocated/applied resources through PodStatus.",
+        "candidate_id": "C0012",
+        "artifact_handle": "A0009",
+        "relation": "supersedes"
+      },
+      "withheld_primary_fields": {
+        "qualification": "The allocation-reporting component of I1 is replaced on the ordinary path; applied-resource reporting survives. The separate alpha allocated-request status path is retained, not affirmatively retired.",
+        "after_claim": "Components compute resources used by Pods from applied-resource PodStatus.Resources. Allocations are ordinarily checkpointed locally, with allocated-request status retained only through its separate alpha gate.",
+        "before_claim": "All components compute resources used by Pods from the allocated-resource PodStatus field.",
+        "effect_basis": "dependent_migration",
+        "evidence_basis": "adopted_design_statement",
+        "source_role": "adopted_design",
+        "current_claim_entailed": false,
+        "whole_element_supported": false
+      },
+      "critic_decision": {
+        "authority_reason": "The pinned component-accounting rule and current API allocation section provide adopted design authority, limited to the captured event.",
+        "candidate_id": "C0012",
+        "contribution_reason": "The explicit all-components dependency changes from AllocatedResources to Resources, aligning accounting with the replacement status/local-storage contract.",
+        "predicate_reason": "I1's general allocated-status mechanism is superseded in component accounting: components use actual PodStatus.Resources, while kubelet allocation is checkpointed and alpha allocation reporting remains gated.",
+        "reason": "The removed-old/added-new dependency corroborates the same-event reporting replacement, rather than independently creating a reporting duty.",
+        "verdict": "confirm"
+      },
+      "exact_local_after_source_lines": [
+        " * To avoid races and possible gamification, all components will use Pod's",
+        "+  Status.ContainerStatuses[i].Resources when computing resources used",
+        "   by Pods."
+      ],
+      "exact_context_source_lines": [
+        "+PodStatus is extended to show the resources applied to the Pod and its Containers.",
+        " * Pod.Status.ContainerStatuses[i].Resources (new field, type",
+        "   v1.ResourceRequirements) shows the **actual** resources held by the Pod and",
+        "   its Containers.",
+        "+When the Kubelet admits a pod initially or admits a resize, all resource requirements from the spec",
+        "+are cached and checkpointed locally. When a container is (re)started, these are the requests and",
+        "+limits used.",
+        "+The alpha implementation of In-Place Pod Vertical Scaling included `AllocatedResources` in the",
+        "+container status, but only included requests. This field will remain in alpha, guarded by the",
+        "+separate `InPlacePodVerticalScalingAllocatedStatus` feature gate, and is a candidate for future",
+        "+removal. With the allocated status feature gate enabled, Kubelet will continue to populate the field",
+        "+with the allocated requests from the checkpoint."
+      ]
+    },
+    {
+      "key": [
+        "964260d9c2da-F01-H11",
+        "I1",
+        "supersedes"
+      ],
+      "reference_verdict": "TP",
+      "claim_scope": "material_subclaim",
+      "anchor_is_complete_target_text": false,
+      "candidate_hypothesis_reconstructed_before_outbound_screening": {
+        "element_id": "I1",
+        "passage_handle": "A0011:P0001",
+        "before_line_handles": [
+          "A0011:L0003",
+          "A0011:L0004",
+          "A0011:L0005",
+          "A0011:L0006",
+          "A0011:L0007",
+          "A0011:L0008"
+        ],
+        "after_line_handles": [
+          "A0011:L0003",
+          "A0011:L0004",
+          "A0011:L0009",
+          "A0011:L0010"
+        ],
+        "context_line_handles": [
+          "A0004:L0036",
+          "A0004:L0037",
+          "A0004:L0038",
+          "A0004:L0040",
+          "A0004:L0041",
+          "A0004:L0042",
+          "A0004:L0043",
+          "A0004:L0044"
+        ],
+        "claim_scope": "material_subclaim",
+        "s0_claim_quote": "report allocated/applied resources through PodStatus.",
+        "candidate_id": "C0013",
+        "artifact_handle": "A0011",
+        "relation": "supersedes"
+      },
+      "withheld_primary_fields": {
+        "qualification": "This affects the allocated-resource reporting dependency, not mutable desired PodSpec fields or continued applied-resource reporting. Allocated status is not universally removed: the separate alpha feature gate preserves allocated-request publication.",
+        "after_claim": "Ordinary ResourceQuota accounting consumes actual PodStatus resources rather than allocated-status requests; allocated status remains an optional, separately gated alpha reporting path.",
+        "before_claim": "ResourceQuota consumes PodStatus allocatedResources for effective requests, alongside its separate actual-status comparison for limits.",
+        "effect_basis": "dependent_migration",
+        "evidence_basis": "adopted_design_statement",
+        "source_role": "adopted_design",
+        "current_claim_entailed": false,
+        "whole_element_supported": false
+      },
+      "critic_decision": {
+        "authority_reason": "The pinned quota design specifies the adopted gated consumer behavior; the API section explicitly establishes its replacement data contract.",
+        "candidate_id": "C0013",
+        "contribution_reason": "Quota's effective-request calculation and update triggers stop depending on allocated status, substantively adopting Resources as the status-side input.",
+        "predicate_reason": "With InPlacePodVerticalScaling enabled, I1's allocated-status dependency is superseded for quota: desired requests are compared with actual status, while allocation is local and legacy allocated-request reporting separately gated.",
+        "reason": "The quota dependency replacement supports the claimed material supersession within its feature-enabled scope.",
+        "verdict": "confirm"
+      },
+      "exact_local_after_source_lines": [
+        " With InPlacePodVerticalScaling enabled, resource quota needs to consider pending resizes. Similarly",
+        " to how this is handled by scheduling, resource quota will use the maximum of",
+        "+`.spec.container[*].resources.requests` and `.status.containerStatuses[*].resources` to",
+        "+determine the effective request values."
+      ],
+      "exact_context_source_lines": [
+        "+When the Kubelet admits a pod initially or admits a resize, all resource requirements from the spec",
+        "+are cached and checkpointed locally. When a container is (re)started, these are the requests and",
+        "+limits used.",
+        "+The alpha implementation of In-Place Pod Vertical Scaling included `AllocatedResources` in the",
+        "+container status, but only included requests. This field will remain in alpha, guarded by the",
+        "+separate `InPlacePodVerticalScalingAllocatedStatus` feature gate, and is a candidate for future",
+        "+removal. With the allocated status feature gate enabled, Kubelet will continue to populate the field",
+        "+with the allocated requests from the checkpoint."
+      ]
+    },
+    {
+      "key": [
+        "964260d9c2da-F01-H11",
+        "R1",
+        "supports"
+      ],
+      "reference_verdict": "FP",
+      "claim_scope": "material_subclaim",
+      "anchor_is_complete_target_text": true,
+      "candidate_hypothesis_reconstructed_before_outbound_screening": {
+        "element_id": "R1",
+        "passage_handle": "A0011:P0001",
+        "before_line_handles": [
+          "A0011:L0003",
+          "A0011:L0004",
+          "A0011:L0005",
+          "A0011:L0006",
+          "A0011:L0007",
+          "A0011:L0008"
+        ],
+        "after_line_handles": [
+          "A0011:L0003",
+          "A0011:L0004",
+          "A0011:L0009",
+          "A0011:L0010"
+        ],
+        "context_line_handles": [
+          "A0004:L0011",
+          "A0004:L0012",
+          "A0004:L0016",
+          "A0004:L0017",
+          "A0004:L0018"
+        ],
+        "claim_scope": "material_subclaim",
+        "s0_claim_quote": "Distinguish the desired resources declared in the Pod spec from the resources allocated to the Pod on the node and from the actual resources applied to its containers.",
+        "candidate_id": "C0014",
+        "artifact_handle": "A0011",
+        "relation": "supports"
+      },
+      "withheld_primary_fields": {
+        "qualification": "Partial evidence for distinguishing desired from actual requests only. It does not certify the separate node-allocated representation or the whole three-way requirement. This is a source-defined operation, not observed runtime validation.",
+        "after_claim": "ResourceQuota distinguishes desired spec requests from actual status resources by comparing them to determine effective requests during pending resize.",
+        "before_claim": "ResourceQuota compares desired requests with allocated-status requests; a separate limits calculation already compares desired and actual limits.",
+        "effect_basis": "operational_witness",
+        "evidence_basis": "adopted_design_statement",
+        "source_role": "adopted_design",
+        "current_claim_entailed": true,
+        "whole_element_supported": false
+      },
+      "critic_decision": {
+        "authority_reason": "The pinned quota design and API field meanings establish a normative calculation for the feature-enabled path, not observed controller execution.",
+        "candidate_id": "C0014",
+        "contribution_reason": "The new maximum calculation directly compares desired requests against actual status instead of allocated status, substantively corroborating their different meanings.",
+        "predicate_reason": "R1's desired-versus-actual distinction is supported: enabled quota accounting uses the maximum of PodSpec requests and PodStatus.Resources to account for pending resizes.",
+        "reason": "This new comparison supports the material distinction subclaim; it need not independently establish all three representations.",
+        "verdict": "confirm"
+      },
+      "exact_local_after_source_lines": [
+        " With InPlacePodVerticalScaling enabled, resource quota needs to consider pending resizes. Similarly",
+        " to how this is handled by scheduling, resource quota will use the maximum of",
+        "+`.spec.container[*].resources.requests` and `.status.containerStatuses[*].resources` to",
+        "+determine the effective request values."
+      ],
+      "exact_context_source_lines": [
+        " * Pod.Spec.Containers[i].Resources becomes purely a declaration, denoting the",
+        "   **desired** state of Pod resources",
+        " * Pod.Status.ContainerStatuses[i].Resources (new field, type",
+        "   v1.ResourceRequirements) shows the **actual** resources held by the Pod and",
+        "   its Containers."
+      ]
+    },
+    {
+      "key": [
+        "964260d9c2da-F01-H12",
+        "I1",
+        "supersedes"
+      ],
+      "reference_verdict": "TP",
+      "claim_scope": "material_subclaim",
+      "anchor_is_complete_target_text": false,
+      "candidate_hypothesis_reconstructed_before_outbound_screening": {
+        "element_id": "I1",
+        "passage_handle": "A0012:P0001",
+        "before_line_handles": [
+          "A0012:L0004",
+          "A0012:L0005"
+        ],
+        "after_line_handles": [
+          "A0012:L0004",
+          "A0012:L0006"
+        ],
+        "context_line_handles": [
+          "A0004:L0036",
+          "A0004:L0037",
+          "A0004:L0038",
+          "A0004:L0040",
+          "A0004:L0041",
+          "A0004:L0042",
+          "A0004:L0043",
+          "A0004:L0044"
+        ],
+        "claim_scope": "material_subclaim",
+        "s0_claim_quote": "report allocated/applied resources through PodStatus.",
+        "candidate_id": "C0015",
+        "artifact_handle": "A0012",
+        "relation": "supersedes"
+      },
+      "withheld_primary_fields": {
+        "qualification": "Only the ordinary allocated-status reporting dependency is affected. Desired PodSpec representation and actual PodStatus reporting survive. The separately gated alpha allocated-request status field remains; its future removal is merely a candidacy.",
+        "after_claim": "The scheduler computes allocations using actual Status resources rather than depending on allocated-resource status; allocated-request status publication remains available under its separate alpha gate.",
+        "before_claim": "The scheduler computes resource allocations using AllocatedResources.",
+        "effect_basis": "dependent_migration",
+        "evidence_basis": "adopted_design_statement",
+        "source_role": "adopted_design",
+        "current_claim_entailed": false,
+        "whole_element_supported": false
+      },
+      "critic_decision": {
+        "authority_reason": "The pinned Affected Components entry is an adopted scheduler design requirement, interpreted with the explicit current API allocation contract.",
+        "candidate_id": "C0015",
+        "contribution_reason": "The scheduler's named accounting source changes from AllocatedResources to actual Status.Resources, evidencing a replaced dependency rather than simple retained context.",
+        "predicate_reason": "I1's allocated-through-status mechanism is superseded for scheduler accounting by actual status and local kubelet allocation. Detailed scheduling rules retain pessimistic handling of proposed/in-progress resizes and gated legacy reporting.",
+        "reason": "The consumer replacement corroborates the adopted reporting change without asserting that every scheduler calculation uses actual values alone.",
+        "verdict": "confirm"
+      },
+      "exact_local_after_source_lines": [
+        " Scheduler:",
+        "+* compute resource allocations using actual Status...Resources."
+      ],
+      "exact_context_source_lines": [
+        "+When the Kubelet admits a pod initially or admits a resize, all resource requirements from the spec",
+        "+are cached and checkpointed locally. When a container is (re)started, these are the requests and",
+        "+limits used.",
+        "+The alpha implementation of In-Place Pod Vertical Scaling included `AllocatedResources` in the",
+        "+container status, but only included requests. This field will remain in alpha, guarded by the",
+        "+separate `InPlacePodVerticalScalingAllocatedStatus` feature gate, and is a candidate for future",
+        "+removal. With the allocated status feature gate enabled, Kubelet will continue to populate the field",
+        "+with the allocated requests from the checkpoint."
+      ]
+    },
+    {
+      "key": [
+        "964260d9c2da-F01-H13",
+        "I1",
+        "supersedes"
+      ],
+      "reference_verdict": "FP",
+      "claim_scope": "material_subclaim",
+      "anchor_is_complete_target_text": false,
+      "candidate_hypothesis_reconstructed_before_outbound_screening": {
+        "element_id": "I1",
+        "passage_handle": "A0013:P0001",
+        "before_line_handles": [
+          "A0013:L0005"
+        ],
+        "after_line_handles": [
+          "A0013:L0006"
+        ],
+        "context_line_handles": [
+          "A0004:L0036",
+          "A0004:L0037",
+          "A0004:L0038",
+          "A0004:L0040",
+          "A0004:L0041",
+          "A0004:L0042",
+          "A0004:L0043",
+          "A0004:L0044"
+        ],
+        "claim_scope": "material_subclaim",
+        "s0_claim_quote": "report allocated/applied resources through PodStatus.",
+        "candidate_id": "C0016",
+        "artifact_handle": "A0013",
+        "relation": "supersedes"
+      },
+      "withheld_primary_fields": {
+        "qualification": "Supersedes the ordinary allocated-status dependency, not desired-resource mutability or applied-resource reporting. The separately gated alpha allocated-request status path survives.",
+        "after_claim": "The completion metric compares spec.Resources and status.Resources with allocated resources maintained locally; allocated requests remain optionally exposed through the separately gated alpha status field.",
+        "before_claim": "The completion metric requires spec.Resources, status.Allocated and status.Resources to be equal, explicitly depending on status-exposed allocation.",
+        "effect_basis": "dependent_migration",
+        "evidence_basis": "adopted_design_statement",
+        "source_role": "adopted_design",
+        "current_claim_entailed": false,
+        "whole_element_supported": false
+      },
+      "critic_decision": {
+        "authority_reason": "The pinned instrumentation definition and API allocation contract specify current design semantics; confirmation does not validate emitted metrics.",
+        "candidate_id": "C0016",
+        "contribution_reason": "The completion predicate drops its status.Allocated dependency and instead compares against allocated resources, matching the newly adopted local checkpoint contract.",
+        "predicate_reason": "For I1's allocated-status mechanism, resize completion no longer requires allocation represented in status: desired, locally allocated, and actual status values must agree. Gated alpha allocation reporting remains available.",
+        "reason": "This dependent predicate replacement corroborates supersession of the status-backed allocation mechanism, without inventing a new reporting operation.",
+        "verdict": "confirm"
+      },
+      "exact_local_after_source_lines": [
+        "+  - `completed` - Resize operation completed successfully (`spec.Resources == allocated resources == status.Resources`)"
+      ],
+      "exact_context_source_lines": [
+        "+When the Kubelet admits a pod initially or admits a resize, all resource requirements from the spec",
+        "+are cached and checkpointed locally. When a container is (re)started, these are the requests and",
+        "+limits used.",
+        "+The alpha implementation of In-Place Pod Vertical Scaling included `AllocatedResources` in the",
+        "+container status, but only included requests. This field will remain in alpha, guarded by the",
+        "+separate `InPlacePodVerticalScalingAllocatedStatus` feature gate, and is a candidate for future",
+        "+removal. With the allocated status feature gate enabled, Kubelet will continue to populate the field",
+        "+with the allocated requests from the checkpoint."
+      ]
+    },
+    {
+      "key": [
+        "964260d9c2da-F01-H13",
+        "R1",
+        "supports"
+      ],
+      "reference_verdict": "TP",
+      "claim_scope": "material_subclaim",
+      "anchor_is_complete_target_text": true,
+      "candidate_hypothesis_reconstructed_before_outbound_screening": {
+        "element_id": "R1",
+        "passage_handle": "A0013:P0001",
+        "before_line_handles": [
+          "A0013:L0005"
+        ],
+        "after_line_handles": [
+          "A0013:L0006"
+        ],
+        "context_line_handles": [
+          "A0004:L0011",
+          "A0004:L0012",
+          "A0004:L0016",
+          "A0004:L0017",
+          "A0004:L0018",
+          "A0004:L0036",
+          "A0004:L0037",
+          "A0004:L0038"
+        ],
+        "claim_scope": "material_subclaim",
+        "s0_claim_quote": "Distinguish the desired resources declared in the Pod spec from the resources allocated to the Pod on the node and from the actual resources applied to its containers.",
+        "candidate_id": "C0017",
+        "artifact_handle": "A0013",
+        "relation": "supports"
+      },
+      "withheld_primary_fields": {
+        "qualification": "Qualified corroboration of the three-way distinction, not a newly invented distinction or certification of every allocation/reporting behavior. The changed operand makes allocation independent of the public allocated-status representation.",
+        "after_claim": "Successful completion compares desired spec resources, allocated resources and actual status resources as separately represented quantities.",
+        "before_claim": "Successful completion already compared desired, allocated and actual resources, with allocation represented by status.Allocated.",
+        "effect_basis": "current_design_statement",
+        "evidence_basis": "adopted_design_statement",
+        "source_role": "adopted_design",
+        "current_claim_entailed": true,
+        "whole_element_supported": false
+      },
+      "critic_decision": {
+        "authority_reason": "The pinned metric-state definition and current resource representation contract provide design authority, not independent instrumentation validation.",
+        "candidate_id": "C0017",
+        "contribution_reason": "The changed completion comparison re-grounds allocation in the adopted local representation while separately retaining specification and actual-status operands.",
+        "predicate_reason": "R1's distinction is corroborated by the completion predicate: desired Spec resources, allocated resources, and actual Status.Resources are separately compared and must converge for successful completion.",
+        "reason": "This is a substantive representation-dependent comparison, not merely a spelling change or passive consumption of a state label.",
+        "verdict": "confirm"
+      },
+      "exact_local_after_source_lines": [
+        "+  - `completed` - Resize operation completed successfully (`spec.Resources == allocated resources == status.Resources`)"
+      ],
+      "exact_context_source_lines": [
+        " * Pod.Spec.Containers[i].Resources becomes purely a declaration, denoting the",
+        "   **desired** state of Pod resources",
+        " * Pod.Status.ContainerStatuses[i].Resources (new field, type",
+        "   v1.ResourceRequirements) shows the **actual** resources held by the Pod and",
+        "   its Containers.",
+        "+When the Kubelet admits a pod initially or admits a resize, all resource requirements from the spec",
+        "+are cached and checkpointed locally. When a container is (re)started, these are the requests and",
+        "+limits used."
+      ]
+    },
+    {
+      "key": [
+        "964260d9c2da-F01-H14",
+        "I1",
+        "supports"
+      ],
+      "reference_verdict": "FP",
+      "claim_scope": "material_subclaim",
+      "anchor_is_complete_target_text": false,
+      "candidate_hypothesis_reconstructed_before_outbound_screening": {
+        "element_id": "I1",
+        "passage_handle": "A0014:P0006",
+        "before_line_handles": [],
+        "after_line_handles": [
+          "A0014:L0062"
+        ],
+        "context_line_handles": [
+          "A0014:L0048",
+          "A0014:L0050",
+          "A0014:L0051",
+          "A0014:L0052",
+          "A0014:L0053"
+        ],
+        "claim_scope": "material_subclaim",
+        "s0_claim_quote": "report allocated/applied resources through PodStatus.",
+        "candidate_id": "C0018",
+        "artifact_handle": "A0014",
+        "relation": "supports"
+      },
+      "withheld_primary_fields": {
+        "qualification": "Discussion-level support for the allocated-reporting part only. It neither adopts an alternative nor independently supports applied-resource reporting or mutable PodSpec fields.",
+        "after_claim": "Assuming no external consumer needs container-level allocated resources is explicitly identified as risky, providing a reason to preserve externally visible allocation information.",
+        "before_claim": "This passage contains no corresponding argument about the risk of withholding container-level allocation information.",
+        "effect_basis": "direct_rationale_argument",
+        "evidence_basis": "direct_rationale_argument",
+        "source_role": "proposal_or_alternative",
+        "current_claim_entailed": true,
+        "whole_element_supported": false
+      },
+      "critic_decision": {
+        "authority_reason": "The pinned Alternatives section supplies conditional discussion-level rationale only. It is not an adopted requirement to retain unconditional container allocation reporting.",
+        "candidate_id": "C0018",
+        "contribution_reason": "Option 3 explicitly identifies the risk of dropping container-level allocation visibility, directly addressing the allocation-reporting boundary rather than offering generic API consistency benefits.",
+        "predicate_reason": "For I1's allocated-reporting subclaim, the premise is that outsiders need only Pod-level allocation. The stated risk challenges that premise because outsiders may need container-level allocation exposed through the status API.",
+        "reason": "The explicit risk supports container-level allocated-resource reporting at discussion level, without establishing an unconditional adopted reporting obligation.",
+        "verdict": "confirm"
+      },
+      "exact_local_after_source_lines": [
+        "+- Extra risk in assuming nothing outside the node ever needs to know container-level allocated resources."
+      ],
+      "exact_context_source_lines": [
+        "+**Option 3: Pod-level \"AllocatedResources\", drop container-level API**",
+        "+If we assume that outside the node, controllers and people only care about pod-level allocated",
+        "+resources, then we could drop the container-level allocated resources, and just add a",
+        "+`PodStatus.AllocatedResources` field of type `ResourceRequirements`. The Kubelet still needs to track",
+        "+container-level allocation, and would use a checkpoint to do so."
+      ]
+    },
+    {
+      "key": [
+        "68952e4476e4-F01-H01",
+        "R1",
+        "supports"
+      ],
+      "reference_verdict": "TP",
+      "claim_scope": "whole_element",
+      "anchor_is_complete_target_text": true,
+      "candidate_hypothesis_reconstructed_before_outbound_screening": {
+        "element_id": "R1",
+        "passage_handle": "A0001:P0002",
+        "before_line_handles": [],
+        "after_line_handles": [
+          "A0001:L0017"
+        ],
+        "context_line_handles": [
+          "A0001:L0007",
+          "A0001:L0008",
+          "A0001:L0009",
+          "A0001:L0011"
+        ],
+        "claim_scope": "whole_element",
+        "s0_claim_quote": "Distinguish the desired resources declared in the Pod spec from the resources allocated to the Pod on the node and from the actual resources applied to its containers.",
+        "candidate_id": "C0002",
+        "artifact_handle": "A0001",
+        "relation": "supports"
+      },
+      "withheld_primary_fields": {
+        "qualification": "This is an adopted instrumentation definition, not evidence of deployment or successful runtime validation. Comparing the representations does not establish a reporting obligation.",
+        "after_claim": "Resize completion is determined by equality among desired spec resources, allocated status resources and applied status resources, treating them as distinct representations.",
+        "before_claim": "The local before text provides no completion comparison among these three resource representations.",
+        "effect_basis": "operational_witness",
+        "evidence_basis": "adopted_design_statement",
+        "source_role": "adopted_design",
+        "current_claim_entailed": true,
+        "whole_element_supported": true
+      },
+      "critic_decision": {
+        "authority_reason": "The comparison appears in the pinned KEP's newly adopted instrumentation contract. Its authority is architectural documentation, not independent runtime validation.",
+        "candidate_id": "C0002",
+        "contribution_reason": "A0001:L0017 newly compares all three representations to determine completion. That comparison substantively corroborates their distinction rather than merely renaming existing fields.",
+        "predicate_reason": "R1 requires distinguishing desired Pod-spec resources, node allocation and applied container resources. The kubelet metric's completion condition separately compares spec.Resources, status.Allocated and status.Resources.",
+        "reason": "Confirm as MODEL_ASSESSED support: successful completion requires equality among three separately represented resource values, corroborating the whole distinction requirement.",
+        "verdict": "confirm"
+      },
+      "exact_local_after_source_lines": [
+        "+  - `completed` - Resize operation completed successfully (`spec.Resources == status.Allocated == status.Resources`)"
+      ],
+      "exact_context_source_lines": [
+        "+The following new metric will be added to track total resize requests, counted at the pod level. In",
+        "+otherwords, a single pod update changing multiple containers and/or resources will count as a single",
+        "+resize request.",
+        "+`kubelet_container_resize_requests_total` - Total number of resize requests observed by the Kubelet."
+      ]
+    },
+    {
+      "key": [
+        "68952e4476e4-F01-H01",
+        "I3",
+        "supports"
+      ],
+      "reference_verdict": "TP",
+      "claim_scope": "material_subclaim",
+      "anchor_is_complete_target_text": true,
+      "candidate_hypothesis_reconstructed_before_outbound_screening": {
+        "element_id": "I3",
+        "passage_handle": "A0001:P0002",
+        "before_line_handles": [],
+        "after_line_handles": [
+          "A0001:L0015",
+          "A0001:L0016",
+          "A0001:L0017",
+          "A0001:L0018",
+          "A0001:L0020"
+        ],
+        "context_line_handles": [
+          "A0001:L0007",
+          "A0001:L0008",
+          "A0001:L0009",
+          "A0001:L0011",
+          "A0001:L0013",
+          "A0001:L0014"
+        ],
+        "claim_scope": "material_subclaim",
+        "s0_claim_quote": "Model resize operation progress through states such as proposed, in progress, deferred and infeasible.",
+        "candidate_id": "C0001",
+        "artifact_handle": "A0001",
+        "relation": "supports"
+      },
+      "withheld_primary_fields": {
+        "qualification": "Partial support for progress modeling only. The metric omits InProgress and counts at Pod level; it does not certify all states or provide individual resource explanations.",
+        "after_claim": "Resize-progress instrumentation defines infeasible and deferred outcomes, retry semantics, successful completion and cancellation, and counts transitions while explicitly omitting InProgress.",
+        "before_claim": "The local before text contains no resize-progress instrumentation or definitions of its counted outcomes.",
+        "effect_basis": "operational_witness",
+        "evidence_basis": "adopted_design_statement",
+        "source_role": "adopted_design",
+        "current_claim_entailed": true,
+        "whole_element_supported": false
+      },
+      "critic_decision": {
+        "authority_reason": "The pinned KEP diff provides authoritative design-level evidence for this feature, not proof that the metric is implemented or deployed.",
+        "candidate_id": "C0001",
+        "contribution_reason": "A0001 adds a pod-level counter with defined progress outcomes and a steady-state accounting invariant; this is new progress instrumentation, not merely consumption of existing status.",
+        "predicate_reason": "For I3's material subclaim, kubelet instrumentation models resize-request transitions through proposed, deferred, infeasible and terminal states. It explicitly omits InProgress, so support is partial.",
+        "reason": "Confirm as MODEL_ASSESSED partial support: the added instrumentation expressly tracks resize progress while preserving pod-level counting and the InProgress exclusion.",
+        "verdict": "confirm"
+      },
+      "exact_local_after_source_lines": [
+        "+  - `infeasible` - Resize request cannot be completed.",
+        "+  - `deferred` - Resize request cannot initially be completed, but will retry",
+        "+  - `completed` - Resize operation completed successfully (`spec.Resources == status.Allocated == status.Resources`)",
+        "+  - `canceled` - Pod was terminated before resize was completed, or a new resize request was started.",
+        "+In steady state, `proposed` should equal `infeasible + completed + canceled`."
+      ],
+      "exact_context_source_lines": [
+        "+The following new metric will be added to track total resize requests, counted at the pod level. In",
+        "+otherwords, a single pod update changing multiple containers and/or resources will count as a single",
+        "+resize request.",
+        "+`kubelet_container_resize_requests_total` - Total number of resize requests observed by the Kubelet.",
+        "+Label: `state` - Count resize request state transitions. This closely tracks the [Resize status](#resize-status) state transitions, omitting `InProgress`. Possible values:",
+        "+  - `proposed` - Initial request state"
+      ]
+    },
+    {
+      "key": [
+        "68952e4476e4-F01-H04",
+        "I1",
+        "supports"
+      ],
+      "reference_verdict": "TP",
+      "claim_scope": "material_subclaim",
+      "anchor_is_complete_target_text": false,
+      "candidate_hypothesis_reconstructed_before_outbound_screening": {
+        "element_id": "I1",
+        "passage_handle": "A0004:P0002",
+        "before_line_handles": [
+          "A0004:L0015",
+          "A0004:L0027"
+        ],
+        "after_line_handles": [
+          "A0004:L0018",
+          "A0004:L0027"
+        ],
+        "context_line_handles": [],
+        "claim_scope": "material_subclaim",
+        "s0_claim_quote": "report allocated/applied resources through PodStatus.",
+        "candidate_id": "C0003",
+        "artifact_handle": "A0004",
+        "relation": "supports"
+      },
+      "withheld_primary_fields": {
+        "qualification": "Supports allocated/applied reporting through PodStatus, not the separate mutable-PodSpec obligation. This is design-statement evidence, not deployed validation.",
+        "after_claim": "With the feature enabled, the kubelet sets PodStatus AllocatedResources and Resources fields; applied resources are reflected in ContainerStatuses.",
+        "before_claim": "The local default-behavior answer said enabling the feature changed no default behavior; unchanged reenablement text already said applied resources were reflected in ContainerStatuses.",
+        "effect_basis": "current_design_statement",
+        "evidence_basis": "adopted_design_statement",
+        "source_role": "adopted_design",
+        "current_claim_entailed": true,
+        "whole_element_supported": false
+      },
+      "critic_decision": {
+        "authority_reason": "The pinned KEP's feature-enable/disable section explicitly describes kubelet behavior under the feature gate. This is a documented contract, not deployment evidence.",
+        "candidate_id": "C0003",
+        "contribution_reason": "A0004 replaces the prior default-behavior answer with an explicit status-writing operation. The retained applied-resource statement corroborates meaning but is not itself fresh evidence.",
+        "predicate_reason": "For I1's reporting subclaim, the feature-enabled kubelet sets Pod status fields AllocatedResources and Resources; retained context identifies ContainerStatuses as reflecting actual applied resources.",
+        "reason": "Confirm as MODEL_ASSESSED support: the new text expressly assigns kubelet status writes for allocated/applied resources, rather than merely reading those values.",
+        "verdict": "confirm"
+      },
+      "exact_local_after_source_lines": [
+        "+  - Kubelet sets several pod status fields: `AllocatedResources`, `Resources`",
+        "   - Actual resources applied will be reflected in in Pod's ContainerStatuses."
+      ],
+      "exact_context_source_lines": []
+    },
+    {
+      "key": [
+        "68952e4476e4-F01-H05",
+        "I3",
+        "supports"
+      ],
+      "reference_verdict": "FP",
+      "claim_scope": "material_subclaim",
+      "anchor_is_complete_target_text": true,
+      "candidate_hypothesis_reconstructed_before_outbound_screening": {
+        "element_id": "I3",
+        "passage_handle": "A0005:P0007",
+        "before_line_handles": [
+          "A0005:L0079",
+          "A0005:L0080",
+          "A0005:L0081",
+          "A0005:L0082",
+          "A0005:L0083",
+          "A0005:L0084",
+          "A0005:L0085"
+        ],
+        "after_line_handles": [
+          "A0005:L0087",
+          "A0005:L0088"
+        ],
+        "context_line_handles": [],
+        "claim_scope": "material_subclaim",
+        "s0_claim_quote": "Model resize operation progress through states such as proposed, in progress, deferred and infeasible.",
+        "candidate_id": "C0004",
+        "artifact_handle": "A0005",
+        "relation": "supports"
+      },
+      "withheld_primary_fields": {
+        "qualification": "Supports state-based progress accounting, specifically proposed requests and terminal outcomes. It does not establish the full in-progress/deferred state model or per-resource reporting. The SLO is specified, not observed validation.",
+        "after_claim": "Resize progress is operationally accounted for by comparing proposed requests against completed, infeasible, and canceled request counts in steady state.",
+        "before_claim": "The local SLO answer contained generic example objectives rather than resize-state request accounting.",
+        "effect_basis": "operational_witness",
+        "evidence_basis": "adopted_design_statement",
+        "source_role": "adopted_design",
+        "current_claim_entailed": true,
+        "whole_element_supported": false
+      },
+      "critic_decision": {
+        "authority_reason": "The pinned KEP adopts this progress-accounting SLO alongside the same-event metric contract. It establishes design intent, not measured SLO compliance.",
+        "candidate_id": "C0004",
+        "contribution_reason": "Generic SLO examples are replaced by resize-specific progress accounting. The adopted A0001 contract defines the consumed transition counters, making this a substantive dependent contribution.",
+        "predicate_reason": "For I3's material subclaim, operators should assess aggregate resize progress by comparing completed, infeasible and canceled counts against proposed counts in steady state. Individual InProgress tracking is not asserted.",
+        "reason": "Confirm as MODEL_ASSESSED partial support: the new SLO operationalizes the same-event progress model through terminal-versus-proposed accounting, without independently redefining every state.",
+        "verdict": "confirm"
+      },
+      "exact_local_after_source_lines": [
+        "+  - Using `kubelet_container_resize_requests_total`, `completed + infeasible + canceled` request count",
+        "+  should approach `proposed` request count in steady state."
+      ],
+      "exact_context_source_lines": []
+    },
+    {
+      "key": [
+        "079aa5fb9ab1-F01-H03",
+        "C2a",
+        "supports"
+      ],
+      "reference_verdict": "FP",
+      "claim_scope": "material_subclaim",
+      "anchor_is_complete_target_text": true,
+      "candidate_hypothesis_reconstructed_before_outbound_screening": {
+        "element_id": "C2a",
+        "passage_handle": "A0003:P0003",
+        "before_line_handles": [
+          "A0003:L0025",
+          "A0003:L0026",
+          "A0003:L0030"
+        ],
+        "after_line_handles": [
+          "A0003:L0027",
+          "A0003:L0028",
+          "A0003:L0031"
+        ],
+        "context_line_handles": [
+          "A0003:L0012",
+          "A0003:L0020",
+          "A0003:L0021",
+          "A0003:L0022",
+          "A0003:L0023"
+        ],
+        "claim_scope": "material_subclaim",
+        "s0_claim_quote": "Changing a Pod's QoS class without a restart is a non-goal.",
+        "candidate_id": "C0001",
+        "artifact_handle": "A0003",
+        "relation": "supports"
+      },
+      "withheld_primary_fields": {
+        "qualification": "Partial evidence restricted to the Guaranteed-Pod case. This is a source-defined resize constraint, not proof of implemented validation or deployment. The general no-change assertion survives before and after.",
+        "after_claim": "For Guaranteed Pods, resize constraints retain requests equal to limits and additionally require both CPU and memory to be set, concretely preserving the Guaranteed classification while the started Pod's QoS class remains fixed.",
+        "before_claim": "For Guaranteed Pods, requests had to equal limits, and the started Pod's QoS class remained fixed; the local rule did not explicitly require both CPU and memory to be set.",
+        "effect_basis": "operational_witness",
+        "evidence_basis": "adopted_design_statement",
+        "source_role": "adopted_design",
+        "current_claim_entailed": true,
+        "whole_element_supported": false
+      },
+      "critic_decision": {
+        "authority_reason": "The pinned KEP diff supplies a current design constraint, not implementation or deployment validation. Assessment is limited to the captured event.",
+        "candidate_id": "C0001",
+        "contribution_reason": "A0003:L0031 adds the substantive requirement that Guaranteed Pods retain both CPU and memory settings, beyond the earlier requests-equal-limits condition.",
+        "predicate_reason": "For running Guaranteed Pods, resize validation must preserve their original QoS class. Requiring equal requests and limits for both CPU and memory directly constrains transitions that would lower that class.",
+        "reason": "Confirm: the added Guaranteed-Pod constraint substantively supports C2a's prohibition on changing QoS class in place; the terminology changes alone would not.",
+        "verdict": "confirm"
+      },
+      "exact_local_after_source_lines": [
+        "+On creation, the QOS Class is equal to the QOS Shape. After a resize, the QOS Shape must be greater",
+        "+than or equal to the original QOS Class:",
+        "+* Guaranteed pods: must maintain `requests == limits`, and must be set for both CPU & memory"
+      ],
+      "exact_context_source_lines": [
+        "+A pod's QOS class **cannot be changed** once the pod is started, independent of any resizes.",
+        "+* \"QOS Class\" - The QOS class that was computed based on the original resource requests & limits",
+        "+  when the pod was first created.",
+        "+* \"QOS Shape\" - The QOS class that _would_ be computed based on the current resource requests &",
+        "+  limits."
+      ]
+    },
+    {
+      "key": [
+        "079aa5fb9ab1-F01-H05",
+        "G2",
+        "supports"
+      ],
+      "reference_verdict": "TP",
+      "claim_scope": "material_subclaim",
+      "anchor_is_complete_target_text": true,
+      "candidate_hypothesis_reconstructed_before_outbound_screening": {
+        "element_id": "G2",
+        "passage_handle": "A0005:P0004",
+        "before_line_handles": [
+          "A0005:L0002",
+          "A0005:L0003"
+        ],
+        "after_line_handles": [
+          "A0005:L0021",
+          "A0005:L0022",
+          "A0005:L0023",
+          "A0005:L0025",
+          "A0005:L0026",
+          "A0005:L0027"
+        ],
+        "context_line_handles": [
+          "A0005:L0008",
+          "A0005:L0020"
+        ],
+        "claim_scope": "material_subclaim",
+        "s0_claim_quote": "Allow actors (e.g., users, VPA, StatefulSet, JobController) to decide how to proceed when an in-place resource resize is not possible.",
+        "candidate_id": "C0005",
+        "artifact_handle": "A0005",
+        "relation": "supports"
+      },
+      "withheld_primary_fields": {
+        "qualification": "Future-enhancement sketch, not adopted behavior. Evidence covers controller-mediated choice and the illegal-resize case, not every initiating actor or every failure mode.",
+        "after_claim": "In the proposed workload extension, controllers use an InPlace or Recreate policy; InPlace attempts resize, while an illegal resize causes replica recreation.",
+        "before_claim": "The local text only listed extending controllers to propagate template resource updates; it did not specify the policy choice or fallback.",
+        "effect_basis": "direct_rationale_argument",
+        "evidence_basis": "direct_rationale_argument",
+        "source_role": "proposal_or_alternative",
+        "current_claim_entailed": true,
+        "whole_element_supported": false
+      },
+      "critic_decision": {
+        "authority_reason": "The pinned KEP provides a conditional future controller design, supporting discussion-level intent rather than implemented actor capabilities.",
+        "candidate_id": "C0005",
+        "contribution_reason": "The sketch adds selectable InPlace/Recreate policies and an explicit controller recreation fallback for illegal in-place resizes, beyond the earlier generic controller-extension item.",
+        "predicate_reason": "G2 allows initiating actors to determine what happens when in-place resize is impossible. Under the proposed InPlace policy, workload controllers attempt resizing and recreate replicas when the resize is illegal.",
+        "reason": "Confirm as a controller-scoped proposal: it specifies actor-owned strategy and failure handling. It does not establish arbitrary fallback choices for every actor or an adopted implementation.",
+        "verdict": "confirm"
+      },
+      "exact_local_after_source_lines": [
+        "+Deployments or Cronjobs, the child (ReplicaSet/Job) will inherit the policy. The resize policy is",
+        "+set to one of: `InPlace` or `Recreate` (default). If the policy is set to recreate, the behavior is",
+        "+unchanged, and generally induces a rolling update.",
+        "+If the policy is set to in-place, the controller will *attempt* to issue an in-place resize to all",
+        "+the child pods. If the resize is not a legal in-place resize, such as changing from guaranteed to",
+        "+burstable, the replicas will be recreated."
+      ],
+      "exact_context_source_lines": [
+        "+#### Design Sketch: Workload resource resize",
+        "+Each of these resources will have a new `ResizePolicy` field added to the spec. In the case of"
+      ]
+    },
+    {
+      "key": [
+        "079aa5fb9ab1-F01-H05",
+        "C2a",
+        "supports"
+      ],
+      "reference_verdict": "TP",
+      "claim_scope": "material_subclaim",
+      "anchor_is_complete_target_text": true,
+      "candidate_hypothesis_reconstructed_before_outbound_screening": {
+        "element_id": "C2a",
+        "passage_handle": "A0005:P0008",
+        "before_line_handles": [],
+        "after_line_handles": [
+          "A0005:L0058",
+          "A0005:L0059",
+          "A0005:L0060"
+        ],
+        "context_line_handles": [
+          "A0005:L0036",
+          "A0005:L0051",
+          "A0005:L0052",
+          "A0005:L0053",
+          "A0005:L0054",
+          "A0005:L0055",
+          "A0005:L0057"
+        ],
+        "claim_scope": "material_subclaim",
+        "s0_claim_quote": "Changing a Pod's QoS class without a restart is a non-goal.",
+        "candidate_id": "C0003",
+        "artifact_handle": "A0005",
+        "relation": "supports"
+      },
+      "withheld_primary_fields": {
+        "qualification": "Conditional future design sketch. It corroborates the restart boundary for intentional QoS changes in this workload example, not adoption of an explicit QoS field or all QoS-change cases.",
+        "after_claim": "In the explicit-QoS proposal, deliberately changing the ReplicaSet's explicit QoS class triggers recreation of all replicas.",
+        "before_claim": "No local explicit-QoS sketch or QoS-change recreation rule appeared in this hunk.",
+        "effect_basis": "direct_rationale_argument",
+        "evidence_basis": "direct_rationale_argument",
+        "source_role": "proposal_or_alternative",
+        "current_claim_entailed": true,
+        "whole_element_supported": false
+      },
+      "critic_decision": {
+        "authority_reason": "The KEP labels this a possible future enhancement. It supplies discussion-level support only, not an adopted explicit-QoSClass API.",
+        "candidate_id": "C0003",
+        "contribution_reason": "A0005:L0059-L0060 newly and explicitly ties an intended QoS-class switch to recreation of all replicas, rather than merely preserving an existing status value.",
+        "predicate_reason": "If a ReplicaSet genuinely intends to switch its replicas to Guaranteed QoS, the proposed explicit-QoSClass change triggers recreation. This conditional mechanism preserves C2a's no-in-place-class-change boundary.",
+        "reason": "Confirm at proposal scope: the premise is an intended class switch; the stated consequence is replica recreation. That directly supports the chosen QoS boundary.",
+        "verdict": "confirm"
+      },
+      "exact_local_after_source_lines": [
+        "+then the heterogeneity in step 6 is avoided. Alternatively, if there was a real desire to switch to",
+        "+guaranteed in step 3, then the explicit QOSClass can be changed, triggering a recreation of all",
+        "+replicas."
+      ],
+      "exact_context_source_lines": [
+        "+#### Design Sketch: Explicit QOS Class",
+        "+To mitigate this, we can introduce an explicit QOSClass field to the pod spec. If set, it must be",
+        "+less than or equal to the QOS shape. In other words, you can set a guaranteed resource shape but an",
+        "+explicit QOSClass of burstable, but not the other way around. If set, the status QOSClass is synced",
+        "+to the explicit QOSClass, and the rest of the behavior is unchanged from the",
+        "+[QOS Class Proposal](#qos-class).",
+        "+Going back to the earlier example, if the original ReplicaSet set an explicit Burstable QOSClass,"
+      ]
+    }
+  ],
+  "recommended_generic_contract": {
+    "input": "Include a source-anchored alleged_target_clause and alleged_qualification as untrusted hypotheses while continuing to omit classifier reasons/confidence and semantic boolean conclusions.",
+    "output": "Require independently selected exact target clause, exact original-source proof handles, independent qualification and source-authority class, with explicit exact_claim_confirmed outcome.",
+    "validation": "Deterministically validate target substring/source handles/roles/event identity and reject structural inconsistency. Retain all original model assessments and distinguish agreement/uncertainty; do not describe validation as semantic truth.",
+    "commit": "Accepted material claim must use the independently checked scope/qualification, or remain unresolved when the checker instead supports a different clause. Do not silently attach a narrower checker interpretation to a broader primary claim."
+  },
+  "risks": [
+    "Passing alleged qualification can anchor critic; preserve independent rederivation and withhold persuasive primary prose.",
+    "Strict minimal substring requirements can strip necessary surrounding qualifications; retain full target text and separate quote span/qualification.",
+    "A structured checker can still agree on the same semantic false positive; no F1 improvement is established.",
+    "Additional output/request tokens and schema retry rates must be budgeted and measured.",
+    "Compound targets legitimately admit different relations on different clauses; do not blanket-reject partial supports or supports-plus-supersedes."
+  ]
+}

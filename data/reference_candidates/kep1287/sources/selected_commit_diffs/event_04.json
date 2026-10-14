@@ -1,0 +1,16 @@
+{
+  "annotation_status": "NOT_ADJUDICATED",
+  "candidate_research_topic": "ResizePolicy mutability revision",
+  "commit_sha": "04de3dac4669f4b2f792c17488c680ce4b144679",
+  "committer_date": "2024-10-10T00:07:16Z",
+  "files": [
+    {
+      "patch": "@@ -299,8 +299,9 @@ If a pod's RestartPolicy is `Never`, the ResizePolicy fields must be set to\n in the container being stopped *and not restarted*, if the system can not\n perform the resize in place.\n \n-The `ResizePolicy` field is append-only. Appending the policy is allowed to accommodate a resize\n-adding a request or a limit for a resource that wasn't previously present.\n+The `ResizePolicy` field is mutable. Only append is strictly required to support in-place resize\n+(for new resource requirements), and we may reevaluate full mutability if additional edge cases are\n+discovered in implementation.\n \n #### Resize Status\n ",
+      "patch_available": true,
+      "path": "keps/sig-node/1287-in-place-update-pod-resources/README.md",
+      "status": "modified"
+    }
+  ],
+  "replay_certification": "NOT_CERTIFIED",
+  "source_url": "https://github.com/kubernetes/enhancements/commit/04de3dac4669f4b2f792c17488c680ce4b144679"
+}

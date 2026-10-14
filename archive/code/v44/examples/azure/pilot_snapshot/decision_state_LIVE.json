@@ -1,0 +1,64 @@
+{
+  "accepted_at": "2025-01-10T05:46:36Z",
+  "accepted_at_basis": "GitHub merged_at; developer merge confirms integration, but a human must review the extracted S0 rationale",
+  "assumptions": [],
+  "candidate_source": "https://github.com/Azure/Enterprise-Scale/pull/1803",
+  "central_element_ids": [
+    "G1",
+    "I1"
+  ],
+  "constraints_dependencies": [
+    {
+      "id": "C1",
+      "keywords": [
+        "AVNM",
+        "conditions",
+        "dependencies",
+        "deployment"
+      ],
+      "source": "https://github.com/Azure/Enterprise-Scale/pull/1803",
+      "text": "Update deployment conditions and dependencies to include AVNM."
+    }
+  ],
+  "cutoff_at": "2026-10-10T06:46:50.967433Z",
+  "decision": "Introduce optional Azure Virtual Network Manager deployment in Azure Enterprise-Scale landing-zone ARM/portal templates",
+  "decision_id": "GitHub-PR-1803",
+  "episode_id": "pilot-azure-eslz-avnm-1803-live-github-pilot",
+  "goals": [
+    {
+      "id": "G1",
+      "keywords": [
+        "AVNM",
+        "Virtual Network Manager",
+        "deployment",
+        "templates",
+        "support"
+      ],
+      "source": "https://github.com/Azure/Enterprise-Scale/pull/1803",
+      "text": "Add support for deploying Azure Virtual Network Manager (AVNM) in the ESLZ deployment templates."
+    }
+  ],
+  "human_approved": true,
+  "human_review_required": true,
+  "implementation_scope": [
+    {
+      "id": "I1",
+      "keywords": [
+        "AVNM",
+        "eslzArm",
+        "eslz-portal",
+        "checkbox",
+        "parameter",
+        "deployment"
+      ],
+      "source": "https://github.com/Azure/Enterprise-Scale/pull/1803",
+      "text": "Include deployAVNM in eslzArm.json and eslz-portal.json with portal checkbox and deployment conditions."
+    }
+  ],
+  "original_evidence": [],
+  "quality_attributes": [],
+  "repository": "Azure/Enterprise-Scale",
+  "requirements": [],
+  "research_label": "LIVE_PUBLIC_SNAPSHOT_PILOT_NOT_GOLD",
+  "snapshot_note": "Current captured source bodies cannot be used for historical cutoff replay"
+}

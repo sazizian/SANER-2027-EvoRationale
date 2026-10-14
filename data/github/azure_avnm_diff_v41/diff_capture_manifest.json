@@ -1,0 +1,129 @@
+{
+  "capture_completed_at": "2026-10-10T23:00:42.429499Z",
+  "capture_gaps": [
+    {
+      "file": "eslzArm/subscriptionTemplates/avnmConfiguration.json",
+      "limit": 24,
+      "pr": 1880,
+      "reason": "EXCERPT_SAMPLING_CAP_REACHED"
+    },
+    {
+      "file": "eslzArm/subscriptionTemplates/avnmPolicy.json",
+      "limit": 24,
+      "pr": 1880,
+      "reason": "EXCERPT_SAMPLING_CAP_REACHED"
+    },
+    {
+      "file": "eslzArm/eslz-portal.json",
+      "pr": 2083,
+      "reason": "PATCH_MISSING_FROM_GITHUB_API"
+    },
+    {
+      "file": "eslzArm/eslzArm.json",
+      "pr": 2083,
+      "reason": "PATCH_MISSING_FROM_GITHUB_API"
+    },
+    {
+      "file": "eslzArm/subscriptionTemplates/avnmConfiguration.json",
+      "limit": 24,
+      "pr": 2083,
+      "reason": "EXCERPT_SAMPLING_CAP_REACHED"
+    },
+    {
+      "file": "eslzArm/subscriptionTemplates/avnmPolicy.json",
+      "pr": 2083,
+      "reason": "PATCH_MISSING_FROM_GITHUB_API"
+    }
+  ],
+  "capture_started_at": "2026-10-10T23:00:39.105373Z",
+  "diff_source_files": [
+    {
+      "excerpts": 2,
+      "file": "eslzArm/eslz-portal.json",
+      "file_status": "modified",
+      "patch_sha256": "1880b592d71e13555ad9ee17e9f79e54b48d98733e8f751589fffeaaec7089e5",
+      "pr": 1880
+    },
+    {
+      "excerpts": 19,
+      "file": "eslzArm/eslzArm.json",
+      "file_status": "modified",
+      "patch_sha256": "aa4368c62cfbe3a84b010a851a8a4cc44e357886cbea5f6d52856c752347e5c5",
+      "pr": 1880
+    },
+    {
+      "excerpts": 24,
+      "file": "eslzArm/subscriptionTemplates/avnmConfiguration.json",
+      "file_status": "added",
+      "patch_sha256": "3cb00f8b3c8dc6c234c1640696b26ce6dcf521c9fc3419da23df6a8c818c92ab",
+      "pr": 1880
+    },
+    {
+      "excerpts": 24,
+      "file": "eslzArm/subscriptionTemplates/avnmPolicy.json",
+      "file_status": "added",
+      "patch_sha256": "209ae2fe4e7057a59fda1dd5167a94fff849aa0a3f9e04b3fc2e40b4fd09aba2",
+      "pr": 1880
+    },
+    {
+      "excerpts": 10,
+      "file": "eslzArm/eslzArm.json",
+      "file_status": "modified",
+      "patch_sha256": "6d8d3fb596bb6e6f4e2c9a9c152188df53e668950f2fbf038c07ac25ecaca39d",
+      "pr": 1896
+    },
+    {
+      "excerpts": 0,
+      "file": "eslzArm/subscriptionTemplates/avnmPolicy.json",
+      "file_status": "modified",
+      "patch_sha256": "460f7138b837234ee5ee9c88ec18f4d0493e09bf8672c58ee71848ac0b8a5152",
+      "pr": 1896
+    },
+    {
+      "excerpts": 0,
+      "file": "eslzArm/eslz-portal.json",
+      "file_status": "modified",
+      "patch_sha256": "38b2c264aa3c36104ccb5d0796059e764df3a00d7b1a644507da20420bb94fca",
+      "pr": 1946
+    },
+    {
+      "excerpts": 0,
+      "file": "eslzArm/eslzArm.json",
+      "file_status": "modified",
+      "patch_sha256": "87c5564ff27c29e2d1dd0b07880c6d63567f207f8a383ffdd80d9b32846ddc1a",
+      "pr": 1946
+    },
+    {
+      "excerpts": 24,
+      "file": "eslzArm/subscriptionTemplates/avnmConfiguration.json",
+      "file_status": "modified",
+      "patch_sha256": "af4fc384c25e351e4ed9f0a0045abb360215ecd42aa11e787df49914677a784e",
+      "pr": 2083
+    }
+  ],
+  "enriched_history_sha256": "354c8d8d1523760e18c22b3ee9fa0361aaa7e4b76ec5c6132db304e0a33cbbac",
+  "historical_replay_certified": false,
+  "independently_adjudicated_ground_truth_available": false,
+  "mode": "CURRENT_DIFF_CAPTURE_EXPLORATORY",
+  "new_diff_excerpt_versions": 103,
+  "note": "A patch line shows an implementation change in the captured diff; it is not proof the design rationale remained optimal. No S0 was auto-approved.",
+  "old_artifact_versions": 22,
+  "old_decision_sha256": "ba324d5ffb2ca5fe4c9cdcc6e476cb490e7c59f4fa5c04e0dab76ddc862ffd51",
+  "old_history_sha256": "cda8af27d99647d941efc3b1e5aa1aa7c02f8710ae6faa440e2e8b91d2254ca0",
+  "pages_per_pr": {
+    "1880": 2,
+    "1896": 1,
+    "1946": 1,
+    "2083": 1
+  },
+  "proposed_cutoff": "2026-10-10T23:00:44.429499Z",
+  "selected_pr_numbers": [
+    1880,
+    1896,
+    1946,
+    2083
+  ],
+  "selected_pr_policy": "ALL original manifest PR numbers; only eslzArm.json, eslz-portal.json and filename-containing-avnm templates",
+  "source_repository": "Azure/Enterprise-Scale",
+  "total_artifact_versions": 125
+}

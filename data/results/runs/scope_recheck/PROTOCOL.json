@@ -1,0 +1,40 @@
+{
+  "experiment_kind": "CACHED_V49_PRIMARY_SCOPE_RECHECK",
+  "frozen_manifest_sha256": "2cfce69a76edea3b950394bd570d07a6cc3a1736481d1603ce4efd21344ee53c",
+  "frozen_s0_sha256": "6557ea5d549fbc2bac280be4f46d948948dbb70673c0c1f53ff21c24c4fbde42",
+  "gold_labels_in_agent_inputs": false,
+  "history_sha256": "30f89a8dae945eb588898134b23c1a5276f94dd257ef0ae3f71b9befd670a058",
+  "mode": "api",
+  "model": "gpt-6.1-sol",
+  "new_budget": {
+    "max_input_tokens": 100000,
+    "max_provider_requests": 6
+  },
+  "new_primary_api_requests": 0,
+  "note": "Cached-primary ablation; include original classification cost in full-pipeline comparisons.",
+  "original_budget": {
+    "max_input_tokens": 400000,
+    "max_provider_requests": 36,
+    "max_queries": 12,
+    "max_reads": 36,
+    "max_rounds": 6
+  },
+  "runtime_s0_sha256": "a852f931aa41c2f67b1522651665feb67fad9d92116413553405fb3d9c3ba784",
+  "source_checkpoint_sha256": "6e08b33edb44ea38e7d1a6d396ee0debd4fbcebab41d4ef935c2b523f7846ace",
+  "source_core_sha256": "a0e1b1c0156e48d6a4bdae27a02fdfd9e0bedfbdd05bac79c2db812468937b22",
+  "source_evaluation": "C:\\Users\\sazizian\\AppData\\Local\\ER1287Eval_v49Dev01",
+  "source_member_sha256": {
+    "DEV_PREP_MANIFEST.json": "bf7a32de98a2cff61fe9c831ad97d5aa70c6fadd1ba8906bcec1e80ae72172c9",
+    "RUN_RECEIPT.json": "cb3270a6d2f195bedaf632546fc3e39c67610d9bbca1e92247cf7a97aff3af38",
+    "checkpoints/8096127b-4cbd-4e77-a9c4-a9c2c5dc0c03.json": "6e08b33edb44ea38e7d1a6d396ee0debd4fbcebab41d4ef935c2b523f7846ace",
+    "inputs/POST_S0_EVIDENCE_RETROSPECTIVE_53.jsonl": "30f89a8dae945eb588898134b23c1a5276f94dd257ef0ae3f71b9befd670a058",
+    "inputs/S0_RETROSPECTIVE_RUNTIME.json": "a852f931aa41c2f67b1522651665feb67fad9d92116413553405fb3d9c3ba784",
+    "run/manifest.json": "ab945fea8ca8f1d450b0e485d00c6725a99734a1f35c8a45cf3cb6dea56cff64",
+    "run/report.json": "c59940bac54f4d7a66ed774443a6cc15bb5a5c43af52f91e3359a1aefb58a3bc",
+    "score/SCORE_RECEIPT.json": "efce06d41aaaa8a497e210c5a461599573291177b1aff6c7553e3cab3c1e9bd8",
+    "score/link_errors.csv": "6e91c70d4b77bb4ac02898ff69b61ff7815ed17d5888c0a3b394cc85b795dbe7",
+    "score/metrics.json": "c1ca19c93c09f310b434fff70bc5cbaaa724294df9baab2d73f52ad41b1e7646"
+  },
+  "source_run_id": "8096127b-4cbd-4e77-a9c4-a9c2c5dc0c03",
+  "toolkit_sha256": "8a5e1f81d0fdadcf2e337a3c232ccafa73dea418482853d660ccef2d19f172ae"
+}

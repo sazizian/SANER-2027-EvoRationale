@@ -1,0 +1,1439 @@
+{
+  "actual_metrics": {
+    "f1": 0.6363636363636364,
+    "false_negatives": [
+      {
+        "artifact_id": "04de3dac4669-F01-H01",
+        "element_id": "I2",
+        "relation": "supersedes"
+      },
+      {
+        "artifact_id": "079aa5fb9ab1-F01-H02",
+        "element_id": "I2",
+        "relation": "supersedes"
+      },
+      {
+        "artifact_id": "079aa5fb9ab1-F01-H05",
+        "element_id": "C1",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "68952e4476e4-F01-H01",
+        "element_id": "R2",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H14",
+        "element_id": "I1",
+        "relation": "weakens"
+      }
+    ],
+    "false_positives": [
+      {
+        "artifact_id": "079aa5fb9ab1-F01-H03",
+        "element_id": "C2a",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "68952e4476e4-F01-H05",
+        "element_id": "I3",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H04",
+        "element_id": "I1",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H04",
+        "element_id": "R1",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H05",
+        "element_id": "I1",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H05",
+        "element_id": "R1",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H06",
+        "element_id": "R1",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H07",
+        "element_id": "I1",
+        "relation": "supersedes"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H11",
+        "element_id": "R1",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H13",
+        "element_id": "I1",
+        "relation": "supersedes"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H14",
+        "element_id": "I1",
+        "relation": "supports"
+      }
+    ],
+    "fn": 5,
+    "fp": 11,
+    "precision": 0.56,
+    "recall": 0.7368421052631579,
+    "tp": 14,
+    "true_positives": [
+      {
+        "artifact_id": "079aa5fb9ab1-F01-H05",
+        "element_id": "C2a",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "079aa5fb9ab1-F01-H05",
+        "element_id": "G2",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "68952e4476e4-F01-H01",
+        "element_id": "I3",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "68952e4476e4-F01-H01",
+        "element_id": "R1",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "68952e4476e4-F01-H04",
+        "element_id": "I1",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H03",
+        "element_id": "I1",
+        "relation": "supersedes"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H04",
+        "element_id": "I1",
+        "relation": "supersedes"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H05",
+        "element_id": "I1",
+        "relation": "supersedes"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H06",
+        "element_id": "I1",
+        "relation": "supersedes"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H08",
+        "element_id": "I1",
+        "relation": "supersedes"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H09",
+        "element_id": "I1",
+        "relation": "supersedes"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H11",
+        "element_id": "I1",
+        "relation": "supersedes"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H12",
+        "element_id": "I1",
+        "relation": "supersedes"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H13",
+        "element_id": "R1",
+        "relation": "supports"
+      }
+    ]
+  },
+  "baseline_actual_metrics": {
+    "f1": 0.6666666666666666,
+    "false_negatives": [
+      {
+        "artifact_id": "68952e4476e4-F01-H01",
+        "element_id": "R2",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H14",
+        "element_id": "I1",
+        "relation": "weakens"
+      }
+    ],
+    "false_positives": [
+      {
+        "artifact_id": "68952e4476e4-F01-H05",
+        "element_id": "I3",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H04",
+        "element_id": "I1",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H04",
+        "element_id": "R1",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H05",
+        "element_id": "I1",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H05",
+        "element_id": "R1",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H06",
+        "element_id": "R1",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H07",
+        "element_id": "I1",
+        "relation": "supersedes"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H11",
+        "element_id": "R1",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H13",
+        "element_id": "I1",
+        "relation": "supersedes"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H14",
+        "element_id": "I1",
+        "relation": "supports"
+      }
+    ],
+    "fn": 2,
+    "fp": 10,
+    "precision": 0.5454545454545454,
+    "recall": 0.8571428571428571,
+    "tp": 12,
+    "true_positives": [
+      {
+        "artifact_id": "68952e4476e4-F01-H01",
+        "element_id": "I3",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "68952e4476e4-F01-H01",
+        "element_id": "R1",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "68952e4476e4-F01-H04",
+        "element_id": "I1",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H03",
+        "element_id": "I1",
+        "relation": "supersedes"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H04",
+        "element_id": "I1",
+        "relation": "supersedes"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H05",
+        "element_id": "I1",
+        "relation": "supersedes"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H06",
+        "element_id": "I1",
+        "relation": "supersedes"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H08",
+        "element_id": "I1",
+        "relation": "supersedes"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H09",
+        "element_id": "I1",
+        "relation": "supersedes"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H11",
+        "element_id": "I1",
+        "relation": "supersedes"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H12",
+        "element_id": "I1",
+        "relation": "supersedes"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H13",
+        "element_id": "R1",
+        "relation": "supports"
+      }
+    ]
+  },
+  "baseline_first_stage_with_unchanged_shared_guards": {
+    "f1": 0.6666666666666666,
+    "false_negatives": [
+      {
+        "artifact_id": "68952e4476e4-F01-H01",
+        "element_id": "R2",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H14",
+        "element_id": "I1",
+        "relation": "weakens"
+      }
+    ],
+    "false_positives": [
+      {
+        "artifact_id": "68952e4476e4-F01-H05",
+        "element_id": "I3",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H04",
+        "element_id": "I1",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H04",
+        "element_id": "R1",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H05",
+        "element_id": "I1",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H05",
+        "element_id": "R1",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H06",
+        "element_id": "R1",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H07",
+        "element_id": "I1",
+        "relation": "supersedes"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H11",
+        "element_id": "R1",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H13",
+        "element_id": "I1",
+        "relation": "supersedes"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H14",
+        "element_id": "I1",
+        "relation": "supports"
+      }
+    ],
+    "fn": 2,
+    "fp": 10,
+    "precision": 0.5454545454545454,
+    "recall": 0.8571428571428571,
+    "tp": 12,
+    "true_positives": [
+      {
+        "artifact_id": "68952e4476e4-F01-H01",
+        "element_id": "I3",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "68952e4476e4-F01-H01",
+        "element_id": "R1",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "68952e4476e4-F01-H04",
+        "element_id": "I1",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H03",
+        "element_id": "I1",
+        "relation": "supersedes"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H04",
+        "element_id": "I1",
+        "relation": "supersedes"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H05",
+        "element_id": "I1",
+        "relation": "supersedes"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H06",
+        "element_id": "I1",
+        "relation": "supersedes"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H08",
+        "element_id": "I1",
+        "relation": "supersedes"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H09",
+        "element_id": "I1",
+        "relation": "supersedes"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H11",
+        "element_id": "I1",
+        "relation": "supersedes"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H12",
+        "element_id": "I1",
+        "relation": "supersedes"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H13",
+        "element_id": "R1",
+        "relation": "supports"
+      }
+    ]
+  },
+  "candidate_decisions": [
+    {
+      "decision": {
+        "authority_reason": "Pinned same-event KEP proposal and API changes provide design authority. Confirmation is MODEL_ASSESSED, not implementation or deployment validation.",
+        "candidate_id": "C0001",
+        "contribution_reason": "A0003 removes allocated-resource reporting from the core contract; A0004 supplies its replacement and expressly preserves gated alpha reporting.",
+        "predicate_reason": "I1's allocated-through-PodStatus clause is replaced by kubelet-local allocation checkpoints. Applied resources remain in PodStatus; allocated requests remain reportable under the separate alpha gate.",
+        "reason": "The adopted contract substantively supersedes general allocated-status reporting, without eliminating the optional legacy path.",
+        "verdict": "confirm"
+      },
+      "primary_evidence_basis": "adopted_design_statement",
+      "primary_qualification": "Only the allocated/applied reporting portion is affected; mutable desired-resource PodSpec representation is not replaced. Applied-resource reporting survives. Allocated-status reporting is retained as a separately gated alpha path, not universally retired.",
+      "primary_scope": "material_subclaim",
+      "primary_source_role": "adopted_design",
+      "round": 1,
+      "triple": {
+        "artifact_id": "964260d9c2da-F01-H03",
+        "element_id": "I1",
+        "relation": "supersedes"
+      }
+    },
+    {
+      "decision": {
+        "authority_reason": "A0004 is the pinned KEP's adopted API design, rather than an alternatives sketch. Assessment does not establish deployed behavior.",
+        "candidate_id": "C0002",
+        "contribution_reason": "The new allocation section directly replaces the deleted status field contract with caching, checkpointing, restart use, and an explicitly gated compatibility path.",
+        "predicate_reason": "For I1, kubelet must cache admitted requests and limits locally rather than generally report allocation through PodStatus. Applied status remains; alpha allocated requests are populated only with the separate gate enabled.",
+        "reason": "The replacement mechanism and its qualifications are explicit, supporting supersession of the allocated-reporting subclaim.",
+        "verdict": "confirm"
+      },
+      "primary_evidence_basis": "adopted_design_statement",
+      "primary_qualification": "Only the ordinary allocated-resource reporting mechanism is superseded. Mutable desired fields and applied-resource status reporting survive; the alpha allocated-status path is explicitly retained, not retired.",
+      "primary_scope": "material_subclaim",
+      "primary_source_role": "adopted_design",
+      "round": 1,
+      "triple": {
+        "artifact_id": "964260d9c2da-F01-H04",
+        "element_id": "I1",
+        "relation": "supersedes"
+      }
+    },
+    {
+      "decision": {
+        "authority_reason": "The pinned API Changes section states the current reporting contract and identifies runtime-reported resource values; this is design authority, not runtime verification.",
+        "candidate_id": "C0003",
+        "contribution_reason": "The changed fallback explicitly connects actual-resource reporting to the latest allocated snapshot instead of the removed AllocatedResources status field.",
+        "predicate_reason": "I1's applied-resource reporting clause is supported: PodStatus.Resources shows actual resources, obtained from runtime reports for specified CPU/memory values and otherwise copied from the latest allocation snapshot.",
+        "reason": "This is a reporting-source rule under an explicit PodStatus contract, not merely consumption of an existing status value.",
+        "verdict": "confirm"
+      },
+      "primary_evidence_basis": "adopted_design_statement",
+      "primary_qualification": "Supports only the applied-resource reporting part of the compound element. It does not certify ordinary allocated-resource status reporting or deployed operation.",
+      "primary_scope": "material_subclaim",
+      "primary_source_role": "adopted_design",
+      "round": 1,
+      "triple": {
+        "artifact_id": "964260d9c2da-F01-H04",
+        "element_id": "I1",
+        "relation": "supports"
+      }
+    },
+    {
+      "decision": {
+        "authority_reason": "The pinned current API design establishes field meanings and local allocation handling. Confirmation concerns that design, not implementation correctness.",
+        "candidate_id": "C0004",
+        "contribution_reason": "The added checkpoint contract substantively relocates allocation while retaining separate desired and actual representations, supporting the complete three-way distinction.",
+        "predicate_reason": "R1 distinguishes PodSpec desired resources, kubelet-admitted requests/limits cached on the node, and actual container resources in PodStatus. Allocation need not be generally published to remain distinct.",
+        "reason": "The source supports all three resource meanings despite replacing their former common status representation.",
+        "verdict": "confirm"
+      },
+      "primary_evidence_basis": "adopted_design_statement",
+      "primary_qualification": "This is adopted source-design evidence, not runtime validation. Changing the allocation representation does not retire the distinction requirement.",
+      "primary_scope": "whole_element",
+      "primary_source_role": "adopted_design",
+      "round": 1,
+      "triple": {
+        "artifact_id": "964260d9c2da-F01-H04",
+        "element_id": "R1",
+        "relation": "supports"
+      }
+    },
+    {
+      "decision": {
+        "authority_reason": "The pinned compatibility discussion adopts the current field meaning; the same-event API section supplies the authoritative replacement contract.",
+        "candidate_id": "C0005",
+        "contribution_reason": "The risk explanation replaces AllocatedResources with Resources as the status reference applications should understand, corroborating the adopted allocation/reporting change.",
+        "predicate_reason": "I1's general allocated-status mechanism is superseded: applications are directed toward actual configurations in Resources, while allocation moves to local checkpoints with separately gated alpha request reporting.",
+        "reason": "This changed compatibility guidance is substantive evidence of the same-event replacement, not an isolated terminology edit.",
+        "verdict": "confirm"
+      },
+      "primary_evidence_basis": "adopted_design_statement",
+      "primary_qualification": "This replaces the ordinary reporting contract, not all allocated reporting. A0004 explicitly retains allocated requests behind a separate alpha feature gate.",
+      "primary_scope": "material_subclaim",
+      "primary_source_role": "adopted_design",
+      "round": 1,
+      "triple": {
+        "artifact_id": "964260d9c2da-F01-H05",
+        "element_id": "I1",
+        "relation": "supersedes"
+      }
+    },
+    {
+      "decision": {
+        "authority_reason": "The pinned Risks and Mitigations section explicitly adopts actual configurations tracked in PodStatus.Resources and requires documentation of that meaning.",
+        "candidate_id": "C0006",
+        "contribution_reason": "The new wording directly identifies the actual-status representation and explains why reading desired PodSpec resources can mislead applications.",
+        "predicate_reason": "For I1's applied-reporting subclaim, actual Pod/container configurations are tracked in PodStatus.ContainerStatuses[i].Resources, distinct from desired PodSpec values. It does not restore unconditional allocation reporting.",
+        "reason": "An explicit adopted tracking contract supports the applied-resource portion of I1.",
+        "verdict": "confirm"
+      },
+      "primary_evidence_basis": "adopted_design_statement",
+      "primary_qualification": "Supports the actual/applied-status reporting branch only, not the mutable-spec mechanism or ordinary allocated-resource reporting.",
+      "primary_scope": "material_subclaim",
+      "primary_source_role": "adopted_design",
+      "round": 1,
+      "triple": {
+        "artifact_id": "964260d9c2da-F01-H05",
+        "element_id": "I1",
+        "relation": "supports"
+      }
+    },
+    {
+      "decision": {
+        "authority_reason": "The pinned compatibility rationale is authoritative design discussion about the changed API meanings, not evidence of deployed client behavior.",
+        "candidate_id": "C0007",
+        "contribution_reason": "The changed warning explicitly contrasts desired specification values with actual configurations, rather than merely mentioning either representation.",
+        "predicate_reason": "R1's desired-versus-actual subclaim is supported: applications reading desired PodSpec resources may not observe actual configurations tracked in PodStatus.Resources.",
+        "reason": "The comparison supports the qualified material subclaim; this passage alone does not establish the complete allocation distinction.",
+        "verdict": "confirm"
+      },
+      "primary_evidence_basis": "adopted_design_statement",
+      "primary_qualification": "Supports desired-versus-actual distinction only. The local current statement does not establish the separate allocated-resource part.",
+      "primary_scope": "material_subclaim",
+      "primary_source_role": "adopted_design",
+      "round": 1,
+      "triple": {
+        "artifact_id": "964260d9c2da-F01-H05",
+        "element_id": "R1",
+        "relation": "supports"
+      }
+    },
+    {
+      "decision": {
+        "authority_reason": "The pinned Design Details and current API contract describe adopted kubelet behavior. This is MODEL_ASSESSED design evidence, not execution proof.",
+        "candidate_id": "C0008",
+        "contribution_reason": "Initial admission no longer includes an unconditional status write. Its replacement retains local checkpointing and explicitly places legacy writes behind a separate gate.",
+        "predicate_reason": "I1's allocated-reporting mechanism is superseded for kubelet admission: admitted requests/limits are checkpointed locally; allocated requests are still written to status when the alpha allocated-status gate is enabled.",
+        "reason": "The deletion and explicit same-event replacement justify supersession with the gated exception preserved.",
+        "verdict": "confirm"
+      },
+      "primary_evidence_basis": "adopted_design_statement",
+      "primary_qualification": "The local admission sequence follows an adopted checkpoint contract. Allocated-status reporting remains available behind the separate alpha gate; applied-status reporting is not retired.",
+      "primary_scope": "material_subclaim",
+      "primary_source_role": "adopted_design",
+      "round": 1,
+      "triple": {
+        "artifact_id": "964260d9c2da-F01-H06",
+        "element_id": "I1",
+        "relation": "supersedes"
+      }
+    },
+    {
+      "decision": {
+        "authority_reason": "The pinned kubelet resize design specifies admission, allocation, CRI actuation, and actual-status updates; it does not validate implementation.",
+        "candidate_id": "C0009",
+        "contribution_reason": "The changed acceptance operation updates allocation without the removed status-field dependency, while the surrounding sequence independently identifies desired requests and actual resource reporting.",
+        "predicate_reason": "For R1, kubelet tests desired Spec requests against node allocation, updates admitted allocation on acceptance, then actuates containers and updates Status.Resources after successful updates.",
+        "reason": "The operational sequence distinguishes all three resource meanings and substantively adopts allocation independent of its former status field.",
+        "verdict": "confirm"
+      },
+      "primary_evidence_basis": "adopted_design_statement",
+      "primary_qualification": "The representation changes, but the three-way distinction survives. This describes the adopted sequence, not completed runtime validation.",
+      "primary_scope": "whole_element",
+      "primary_source_role": "adopted_design",
+      "round": 1,
+      "triple": {
+        "artifact_id": "964260d9c2da-F01-H06",
+        "element_id": "R1",
+        "relation": "supports"
+      }
+    },
+    {
+      "decision": {
+        "authority_reason": "The pinned restart-tolerance design and same-event API contract jointly establish the adopted dependency replacement, not workload-restart behavior.",
+        "candidate_id": "C0010",
+        "contribution_reason": "Re-admission replaces reading Status.AllocatedResources with restoring the local checkpoint, directly depending on the new allocation contract.",
+        "predicate_reason": "I1's allocated-status mechanism is superseded for kubelet restart recovery: existing Pods are re-admitted from checkpointed allocation before pending resizes. Applied reporting and gated alpha allocation reporting remain.",
+        "reason": "The downstream recovery dependency substantiates replacement of the reporting-backed mechanism; it does not imply Pod or container restart.",
+        "verdict": "confirm"
+      },
+      "primary_evidence_basis": "adopted_design_statement",
+      "primary_qualification": "Replaces the ordinary allocated-status dependency, not all PodStatus reporting. The separately gated alpha AllocatedResources path remains; mutable desired resources and applied-resource reporting are not retired.",
+      "primary_scope": "material_subclaim",
+      "primary_source_role": "adopted_design",
+      "round": 1,
+      "triple": {
+        "artifact_id": "964260d9c2da-F01-H07",
+        "element_id": "I1",
+        "relation": "supersedes"
+      }
+    },
+    {
+      "decision": {
+        "authority_reason": "The pinned scheduler interaction design is read with the same-event adopted API contract. Confirmation concerns design replacement, not scheduler deployment.",
+        "candidate_id": "C0011",
+        "contribution_reason": "The scheduler loses its AllocatedResources dependency and uses actual Resources, corroborating the explicit relocation of allocation into kubelet-local storage.",
+        "predicate_reason": "For I1's allocated-reporting mechanism, infeasible resizes now use actual status. Proposed and in-progress resizes instead use the larger desired/actual requests; legacy allocation reporting remains separately gated.",
+        "reason": "The changed consumer dependency supports qualified supersession, without treating status consumption itself as a new reporting obligation.",
+        "verdict": "confirm"
+      },
+      "primary_evidence_basis": "adopted_design_statement",
+      "primary_qualification": "The exact local migration is the Infeasible accounting branch. InProgress moves to pessimistic accounting rather than simply using actual resources. Applied-resource status survives, and allocated-request status remains optionally available under its separate alpha gate.",
+      "primary_scope": "material_subclaim",
+      "primary_source_role": "adopted_design",
+      "round": 1,
+      "triple": {
+        "artifact_id": "964260d9c2da-F01-H08",
+        "element_id": "I1",
+        "relation": "supersedes"
+      }
+    },
+    {
+      "decision": {
+        "authority_reason": "The pinned component-accounting rule and current API allocation section provide adopted design authority, limited to the captured event.",
+        "candidate_id": "C0012",
+        "contribution_reason": "The explicit all-components dependency changes from AllocatedResources to Resources, aligning accounting with the replacement status/local-storage contract.",
+        "predicate_reason": "I1's general allocated-status mechanism is superseded in component accounting: components use actual PodStatus.Resources, while kubelet allocation is checkpointed and alpha allocation reporting remains gated.",
+        "reason": "The removed-old/added-new dependency corroborates the same-event reporting replacement, rather than independently creating a reporting duty.",
+        "verdict": "confirm"
+      },
+      "primary_evidence_basis": "adopted_design_statement",
+      "primary_qualification": "The allocation-reporting component of I1 is replaced on the ordinary path; applied-resource reporting survives. The separate alpha allocated-request status path is retained, not affirmatively retired.",
+      "primary_scope": "material_subclaim",
+      "primary_source_role": "adopted_design",
+      "round": 1,
+      "triple": {
+        "artifact_id": "964260d9c2da-F01-H09",
+        "element_id": "I1",
+        "relation": "supersedes"
+      }
+    },
+    {
+      "decision": {
+        "authority_reason": "The pinned quota design specifies the adopted gated consumer behavior; the API section explicitly establishes its replacement data contract.",
+        "candidate_id": "C0013",
+        "contribution_reason": "Quota's effective-request calculation and update triggers stop depending on allocated status, substantively adopting Resources as the status-side input.",
+        "predicate_reason": "With InPlacePodVerticalScaling enabled, I1's allocated-status dependency is superseded for quota: desired requests are compared with actual status, while allocation is local and legacy allocated-request reporting separately gated.",
+        "reason": "The quota dependency replacement supports the claimed material supersession within its feature-enabled scope.",
+        "verdict": "confirm"
+      },
+      "primary_evidence_basis": "adopted_design_statement",
+      "primary_qualification": "This affects the allocated-resource reporting dependency, not mutable desired PodSpec fields or continued applied-resource reporting. Allocated status is not universally removed: the separate alpha feature gate preserves allocated-request publication.",
+      "primary_scope": "material_subclaim",
+      "primary_source_role": "adopted_design",
+      "round": 1,
+      "triple": {
+        "artifact_id": "964260d9c2da-F01-H11",
+        "element_id": "I1",
+        "relation": "supersedes"
+      }
+    },
+    {
+      "decision": {
+        "authority_reason": "The pinned quota design and API field meanings establish a normative calculation for the feature-enabled path, not observed controller execution.",
+        "candidate_id": "C0014",
+        "contribution_reason": "The new maximum calculation directly compares desired requests against actual status instead of allocated status, substantively corroborating their different meanings.",
+        "predicate_reason": "R1's desired-versus-actual distinction is supported: enabled quota accounting uses the maximum of PodSpec requests and PodStatus.Resources to account for pending resizes.",
+        "reason": "This new comparison supports the material distinction subclaim; it need not independently establish all three representations.",
+        "verdict": "confirm"
+      },
+      "primary_evidence_basis": "adopted_design_statement",
+      "primary_qualification": "Partial evidence for distinguishing desired from actual requests only. It does not certify the separate node-allocated representation or the whole three-way requirement. This is a source-defined operation, not observed runtime validation.",
+      "primary_scope": "material_subclaim",
+      "primary_source_role": "adopted_design",
+      "round": 1,
+      "triple": {
+        "artifact_id": "964260d9c2da-F01-H11",
+        "element_id": "R1",
+        "relation": "supports"
+      }
+    },
+    {
+      "decision": {
+        "authority_reason": "The pinned Affected Components entry is an adopted scheduler design requirement, interpreted with the explicit current API allocation contract.",
+        "candidate_id": "C0015",
+        "contribution_reason": "The scheduler's named accounting source changes from AllocatedResources to actual Status.Resources, evidencing a replaced dependency rather than simple retained context.",
+        "predicate_reason": "I1's allocated-through-status mechanism is superseded for scheduler accounting by actual status and local kubelet allocation. Detailed scheduling rules retain pessimistic handling of proposed/in-progress resizes and gated legacy reporting.",
+        "reason": "The consumer replacement corroborates the adopted reporting change without asserting that every scheduler calculation uses actual values alone.",
+        "verdict": "confirm"
+      },
+      "primary_evidence_basis": "adopted_design_statement",
+      "primary_qualification": "Only the ordinary allocated-status reporting dependency is affected. Desired PodSpec representation and actual PodStatus reporting survive. The separately gated alpha allocated-request status field remains; its future removal is merely a candidacy.",
+      "primary_scope": "material_subclaim",
+      "primary_source_role": "adopted_design",
+      "round": 1,
+      "triple": {
+        "artifact_id": "964260d9c2da-F01-H12",
+        "element_id": "I1",
+        "relation": "supersedes"
+      }
+    },
+    {
+      "decision": {
+        "authority_reason": "The pinned instrumentation definition and API allocation contract specify current design semantics; confirmation does not validate emitted metrics.",
+        "candidate_id": "C0016",
+        "contribution_reason": "The completion predicate drops its status.Allocated dependency and instead compares against allocated resources, matching the newly adopted local checkpoint contract.",
+        "predicate_reason": "For I1's allocated-status mechanism, resize completion no longer requires allocation represented in status: desired, locally allocated, and actual status values must agree. Gated alpha allocation reporting remains available.",
+        "reason": "This dependent predicate replacement corroborates supersession of the status-backed allocation mechanism, without inventing a new reporting operation.",
+        "verdict": "confirm"
+      },
+      "primary_evidence_basis": "adopted_design_statement",
+      "primary_qualification": "Supersedes the ordinary allocated-status dependency, not desired-resource mutability or applied-resource reporting. The separately gated alpha allocated-request status path survives.",
+      "primary_scope": "material_subclaim",
+      "primary_source_role": "adopted_design",
+      "round": 1,
+      "triple": {
+        "artifact_id": "964260d9c2da-F01-H13",
+        "element_id": "I1",
+        "relation": "supersedes"
+      }
+    },
+    {
+      "decision": {
+        "authority_reason": "The pinned metric-state definition and current resource representation contract provide design authority, not independent instrumentation validation.",
+        "candidate_id": "C0017",
+        "contribution_reason": "The changed completion comparison re-grounds allocation in the adopted local representation while separately retaining specification and actual-status operands.",
+        "predicate_reason": "R1's distinction is corroborated by the completion predicate: desired Spec resources, allocated resources, and actual Status.Resources are separately compared and must converge for successful completion.",
+        "reason": "This is a substantive representation-dependent comparison, not merely a spelling change or passive consumption of a state label.",
+        "verdict": "confirm"
+      },
+      "primary_evidence_basis": "adopted_design_statement",
+      "primary_qualification": "Qualified corroboration of the three-way distinction, not a newly invented distinction or certification of every allocation/reporting behavior. The changed operand makes allocation independent of the public allocated-status representation.",
+      "primary_scope": "material_subclaim",
+      "primary_source_role": "adopted_design",
+      "round": 1,
+      "triple": {
+        "artifact_id": "964260d9c2da-F01-H13",
+        "element_id": "R1",
+        "relation": "supports"
+      }
+    },
+    {
+      "decision": {
+        "authority_reason": "The pinned Alternatives section supplies conditional discussion-level rationale only. It is not an adopted requirement to retain unconditional container allocation reporting.",
+        "candidate_id": "C0018",
+        "contribution_reason": "Option 3 explicitly identifies the risk of dropping container-level allocation visibility, directly addressing the allocation-reporting boundary rather than offering generic API consistency benefits.",
+        "predicate_reason": "For I1's allocated-reporting subclaim, the premise is that outsiders need only Pod-level allocation. The stated risk challenges that premise because outsiders may need container-level allocation exposed through the status API.",
+        "reason": "The explicit risk supports container-level allocated-resource reporting at discussion level, without establishing an unconditional adopted reporting obligation.",
+        "verdict": "confirm"
+      },
+      "primary_evidence_basis": "direct_rationale_argument",
+      "primary_qualification": "Discussion-level support for the allocated-reporting part only. It neither adopts an alternative nor independently supports applied-resource reporting or mutable PodSpec fields.",
+      "primary_scope": "material_subclaim",
+      "primary_source_role": "proposal_or_alternative",
+      "round": 1,
+      "triple": {
+        "artifact_id": "964260d9c2da-F01-H14",
+        "element_id": "I1",
+        "relation": "supports"
+      }
+    },
+    {
+      "decision": {
+        "authority_reason": "The pinned KEP diff provides authoritative design-level evidence for this feature, not proof that the metric is implemented or deployed.",
+        "candidate_id": "C0001",
+        "contribution_reason": "A0001 adds a pod-level counter with defined progress outcomes and a steady-state accounting invariant; this is new progress instrumentation, not merely consumption of existing status.",
+        "predicate_reason": "For I3's material subclaim, kubelet instrumentation models resize-request transitions through proposed, deferred, infeasible and terminal states. It explicitly omits InProgress, so support is partial.",
+        "reason": "Confirm as MODEL_ASSESSED partial support: the added instrumentation expressly tracks resize progress while preserving pod-level counting and the InProgress exclusion.",
+        "verdict": "confirm"
+      },
+      "primary_evidence_basis": "adopted_design_statement",
+      "primary_qualification": "Partial support for progress modeling only. The metric omits InProgress and counts at Pod level; it does not certify all states or provide individual resource explanations.",
+      "primary_scope": "material_subclaim",
+      "primary_source_role": "adopted_design",
+      "round": 2,
+      "triple": {
+        "artifact_id": "68952e4476e4-F01-H01",
+        "element_id": "I3",
+        "relation": "supports"
+      }
+    },
+    {
+      "decision": {
+        "authority_reason": "The comparison appears in the pinned KEP's newly adopted instrumentation contract. Its authority is architectural documentation, not independent runtime validation.",
+        "candidate_id": "C0002",
+        "contribution_reason": "A0001:L0017 newly compares all three representations to determine completion. That comparison substantively corroborates their distinction rather than merely renaming existing fields.",
+        "predicate_reason": "R1 requires distinguishing desired Pod-spec resources, node allocation and applied container resources. The kubelet metric's completion condition separately compares spec.Resources, status.Allocated and status.Resources.",
+        "reason": "Confirm as MODEL_ASSESSED support: successful completion requires equality among three separately represented resource values, corroborating the whole distinction requirement.",
+        "verdict": "confirm"
+      },
+      "primary_evidence_basis": "adopted_design_statement",
+      "primary_qualification": "This is an adopted instrumentation definition, not evidence of deployment or successful runtime validation. Comparing the representations does not establish a reporting obligation.",
+      "primary_scope": "whole_element",
+      "primary_source_role": "adopted_design",
+      "round": 2,
+      "triple": {
+        "artifact_id": "68952e4476e4-F01-H01",
+        "element_id": "R1",
+        "relation": "supports"
+      }
+    },
+    {
+      "decision": {
+        "authority_reason": "The pinned KEP's feature-enable/disable section explicitly describes kubelet behavior under the feature gate. This is a documented contract, not deployment evidence.",
+        "candidate_id": "C0003",
+        "contribution_reason": "A0004 replaces the prior default-behavior answer with an explicit status-writing operation. The retained applied-resource statement corroborates meaning but is not itself fresh evidence.",
+        "predicate_reason": "For I1's reporting subclaim, the feature-enabled kubelet sets Pod status fields AllocatedResources and Resources; retained context identifies ContainerStatuses as reflecting actual applied resources.",
+        "reason": "Confirm as MODEL_ASSESSED support: the new text expressly assigns kubelet status writes for allocated/applied resources, rather than merely reading those values.",
+        "verdict": "confirm"
+      },
+      "primary_evidence_basis": "adopted_design_statement",
+      "primary_qualification": "Supports allocated/applied reporting through PodStatus, not the separate mutable-PodSpec obligation. This is design-statement evidence, not deployed validation.",
+      "primary_scope": "material_subclaim",
+      "primary_source_role": "adopted_design",
+      "round": 2,
+      "triple": {
+        "artifact_id": "68952e4476e4-F01-H04",
+        "element_id": "I1",
+        "relation": "supports"
+      }
+    },
+    {
+      "decision": {
+        "authority_reason": "The pinned KEP adopts this progress-accounting SLO alongside the same-event metric contract. It establishes design intent, not measured SLO compliance.",
+        "candidate_id": "C0004",
+        "contribution_reason": "Generic SLO examples are replaced by resize-specific progress accounting. The adopted A0001 contract defines the consumed transition counters, making this a substantive dependent contribution.",
+        "predicate_reason": "For I3's material subclaim, operators should assess aggregate resize progress by comparing completed, infeasible and canceled counts against proposed counts in steady state. Individual InProgress tracking is not asserted.",
+        "reason": "Confirm as MODEL_ASSESSED partial support: the new SLO operationalizes the same-event progress model through terminal-versus-proposed accounting, without independently redefining every state.",
+        "verdict": "confirm"
+      },
+      "primary_evidence_basis": "adopted_design_statement",
+      "primary_qualification": "Supports state-based progress accounting, specifically proposed requests and terminal outcomes. It does not establish the full in-progress/deferred state model or per-resource reporting. The SLO is specified, not observed validation.",
+      "primary_scope": "material_subclaim",
+      "primary_source_role": "adopted_design",
+      "round": 2,
+      "triple": {
+        "artifact_id": "68952e4476e4-F01-H05",
+        "element_id": "I3",
+        "relation": "supports"
+      }
+    },
+    {
+      "decision": {
+        "authority_reason": "The pinned KEP's new API-unavailability guidance states expected feature behavior. It supports a qualified design claim, not independently verified failure handling.",
+        "candidate_id": "C0005",
+        "contribution_reason": "A0006:L0006 newly specifies when a request remains pending and what ends that waiting phase. This supplies progress semantics rather than merely retrieving an existing status value.",
+        "predicate_reason": "For I3's material subclaim, a submitted resize remains pending if the API becomes unavailable before kubelet observation, until the kubelet sees it. This models a qualified pre-observation progress phase.",
+        "reason": "Confirm as MODEL_ASSESSED partial support: the added failure-path rule defines pending progress and its endpoint, but does not establish the complete resize-state model or a published status field.",
+        "verdict": "confirm"
+      },
+      "primary_evidence_basis": "operational_caveat",
+      "primary_qualification": "Supports only a conditional pre-observation progress phase. It does not define the complete formal status enumeration, acceptance outcome, deferred/infeasible behavior, or status publication.",
+      "primary_scope": "material_subclaim",
+      "primary_source_role": "adopted_design",
+      "round": 2,
+      "triple": {
+        "artifact_id": "68952e4476e4-F01-H06",
+        "element_id": "I3",
+        "relation": "supports"
+      }
+    },
+    {
+      "decision": {
+        "authority_reason": "The pinned KEP diff supplies a current design constraint, not implementation or deployment validation. Assessment is limited to the captured event.",
+        "candidate_id": "C0001",
+        "contribution_reason": "A0003:L0031 adds the substantive requirement that Guaranteed Pods retain both CPU and memory settings, beyond the earlier requests-equal-limits condition.",
+        "predicate_reason": "For running Guaranteed Pods, resize validation must preserve their original QoS class. Requiring equal requests and limits for both CPU and memory directly constrains transitions that would lower that class.",
+        "reason": "Confirm: the added Guaranteed-Pod constraint substantively supports C2a's prohibition on changing QoS class in place; the terminology changes alone would not.",
+        "verdict": "confirm"
+      },
+      "primary_evidence_basis": "adopted_design_statement",
+      "primary_qualification": "Partial evidence restricted to the Guaranteed-Pod case. This is a source-defined resize constraint, not proof of implemented validation or deployment. The general no-change assertion survives before and after.",
+      "primary_scope": "material_subclaim",
+      "primary_source_role": "adopted_design",
+      "round": 3,
+      "triple": {
+        "artifact_id": "079aa5fb9ab1-F01-H03",
+        "element_id": "C2a",
+        "relation": "supports"
+      }
+    },
+    {
+      "decision": {
+        "authority_reason": "A0005 is authoritative evidence of a future design sketch, not an adopted lifecycle-management contract.",
+        "candidate_id": "C0002",
+        "contribution_reason": "The new controller fallback is substantive, but it does not explicitly establish the claimed exclusion of full failed-resize lifecycle management or its delegation boundary.",
+        "predicate_reason": "C1 excludes full lifecycle control after failed in-place resize and leaves it to initiating actors. The sketch says controllers attempt resizing and recreate replicas after an illegal resize, without asserting that exclusion.",
+        "reason": "Reject: controller-managed recreation is compatible with C1, but compatibility does not establish the exact non-goal. The sketch does not argue for that boundary.",
+        "verdict": "reject"
+      },
+      "primary_evidence_basis": "direct_rationale_argument",
+      "primary_qualification": "Supports only the actor-owned fallback side of the boundary, for illegal resizes in a proposal. It does not independently state the full non-goal or cover all failed-resize lifecycle operations.",
+      "primary_scope": "material_subclaim",
+      "primary_source_role": "proposal_or_alternative",
+      "round": 3,
+      "triple": {
+        "artifact_id": "079aa5fb9ab1-F01-H05",
+        "element_id": "C1",
+        "relation": "supports"
+      }
+    },
+    {
+      "decision": {
+        "authority_reason": "The KEP labels this a possible future enhancement. It supplies discussion-level support only, not an adopted explicit-QoSClass API.",
+        "candidate_id": "C0003",
+        "contribution_reason": "A0005:L0059-L0060 newly and explicitly ties an intended QoS-class switch to recreation of all replicas, rather than merely preserving an existing status value.",
+        "predicate_reason": "If a ReplicaSet genuinely intends to switch its replicas to Guaranteed QoS, the proposed explicit-QoSClass change triggers recreation. This conditional mechanism preserves C2a's no-in-place-class-change boundary.",
+        "reason": "Confirm at proposal scope: the premise is an intended class switch; the stated consequence is replica recreation. That directly supports the chosen QoS boundary.",
+        "verdict": "confirm"
+      },
+      "primary_evidence_basis": "direct_rationale_argument",
+      "primary_qualification": "Conditional future design sketch. It corroborates the restart boundary for intentional QoS changes in this workload example, not adoption of an explicit QoS field or all QoS-change cases.",
+      "primary_scope": "material_subclaim",
+      "primary_source_role": "proposal_or_alternative",
+      "round": 3,
+      "triple": {
+        "artifact_id": "079aa5fb9ab1-F01-H05",
+        "element_id": "C2a",
+        "relation": "supports"
+      }
+    },
+    {
+      "decision": {
+        "authority_reason": "The future-enhancement discussion documents a QoS-handling problem and example; it does not adopt permission to change a running Pod's QoS class.",
+        "candidate_id": "C0004",
+        "contribution_reason": "The new example exposes heterogeneous replicas and recreation costs, but adds no exception to C2a or explicit argument against its prohibition.",
+        "predicate_reason": "C2a prohibits QoS-class changes without restart. The example keeps existing replicas Burstable and requires Guaranteed replicas to be recreated when returning to a Burstable shape, preserving that boundary.",
+        "reason": "Reject: the example identifies operational friction, but its literal behavior respects C2a. It does not justify the proposed weakening relation to that exact non-goal.",
+        "verdict": "reject"
+      },
+      "primary_evidence_basis": "direct_rationale_argument",
+      "primary_qualification": "A conditional workload scenario, not observed validation. It documents a cost of the existing QoS boundary; it neither contradicts that boundary nor adopts its replacement.",
+      "primary_scope": "material_subclaim",
+      "primary_source_role": "proposal_or_alternative",
+      "round": 3,
+      "triple": {
+        "artifact_id": "079aa5fb9ab1-F01-H05",
+        "element_id": "C2a",
+        "relation": "weakens"
+      }
+    },
+    {
+      "decision": {
+        "authority_reason": "The pinned KEP provides a conditional future controller design, supporting discussion-level intent rather than implemented actor capabilities.",
+        "candidate_id": "C0005",
+        "contribution_reason": "The sketch adds selectable InPlace/Recreate policies and an explicit controller recreation fallback for illegal in-place resizes, beyond the earlier generic controller-extension item.",
+        "predicate_reason": "G2 allows initiating actors to determine what happens when in-place resize is impossible. Under the proposed InPlace policy, workload controllers attempt resizing and recreate replicas when the resize is illegal.",
+        "reason": "Confirm as a controller-scoped proposal: it specifies actor-owned strategy and failure handling. It does not establish arbitrary fallback choices for every actor or an adopted implementation.",
+        "verdict": "confirm"
+      },
+      "primary_evidence_basis": "direct_rationale_argument",
+      "primary_qualification": "Future-enhancement sketch, not adopted behavior. Evidence covers controller-mediated choice and the illegal-resize case, not every initiating actor or every failure mode.",
+      "primary_scope": "material_subclaim",
+      "primary_source_role": "proposal_or_alternative",
+      "round": 3,
+      "triple": {
+        "artifact_id": "079aa5fb9ab1-F01-H05",
+        "element_id": "G2",
+        "relation": "supports"
+      }
+    }
+  ],
+  "checker_removed_otherwise_accepted_false_positives": [],
+  "checker_removed_otherwise_accepted_true_positives": [
+    {
+      "artifact_id": "079aa5fb9ab1-F01-H05",
+      "element_id": "C1",
+      "relation": "supports"
+    }
+  ],
+  "checker_votes": {
+    "confirm": 26,
+    "reject": 2
+  },
+  "events": [
+    {
+      "critic_votes": {
+        "confirm": 18
+      },
+      "primary_candidates": 18,
+      "round": 1,
+      "shared_gate_accepts_without_critic": 18,
+      "shared_gate_rejections_without_critic": 0
+    },
+    {
+      "critic_votes": {
+        "confirm": 5
+      },
+      "primary_candidates": 5,
+      "round": 2,
+      "shared_gate_accepts_without_critic": 4,
+      "shared_gate_rejections_without_critic": 1
+    },
+    {
+      "critic_votes": {
+        "confirm": 3,
+        "reject": 2
+      },
+      "primary_candidates": 5,
+      "round": 3,
+      "shared_gate_accepts_without_critic": 4,
+      "shared_gate_rejections_without_critic": 1
+    },
+    {
+      "critic_votes": {},
+      "primary_candidates": 0,
+      "round": 4,
+      "shared_gate_accepts_without_critic": 0,
+      "shared_gate_rejections_without_critic": 0
+    },
+    {
+      "critic_votes": {},
+      "primary_candidates": 0,
+      "round": 5,
+      "shared_gate_accepts_without_critic": 0,
+      "shared_gate_rejections_without_critic": 0
+    },
+    {
+      "critic_votes": {},
+      "primary_candidates": 0,
+      "round": 6,
+      "shared_gate_accepts_without_critic": 0,
+      "shared_gate_rejections_without_critic": 0
+    }
+  ],
+  "first_stage_with_unchanged_shared_guards": {
+    "f1": 0.6666666666666666,
+    "false_negatives": [
+      {
+        "artifact_id": "04de3dac4669-F01-H01",
+        "element_id": "I2",
+        "relation": "supersedes"
+      },
+      {
+        "artifact_id": "079aa5fb9ab1-F01-H02",
+        "element_id": "I2",
+        "relation": "supersedes"
+      },
+      {
+        "artifact_id": "68952e4476e4-F01-H01",
+        "element_id": "R2",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H14",
+        "element_id": "I1",
+        "relation": "weakens"
+      }
+    ],
+    "false_positives": [
+      {
+        "artifact_id": "079aa5fb9ab1-F01-H03",
+        "element_id": "C2a",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "68952e4476e4-F01-H05",
+        "element_id": "I3",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H04",
+        "element_id": "I1",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H04",
+        "element_id": "R1",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H05",
+        "element_id": "I1",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H05",
+        "element_id": "R1",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H06",
+        "element_id": "R1",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H07",
+        "element_id": "I1",
+        "relation": "supersedes"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H11",
+        "element_id": "R1",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H13",
+        "element_id": "I1",
+        "relation": "supersedes"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H14",
+        "element_id": "I1",
+        "relation": "supports"
+      }
+    ],
+    "fn": 4,
+    "fp": 11,
+    "precision": 0.5769230769230769,
+    "recall": 0.7894736842105263,
+    "tp": 15,
+    "true_positives": [
+      {
+        "artifact_id": "079aa5fb9ab1-F01-H05",
+        "element_id": "C1",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "079aa5fb9ab1-F01-H05",
+        "element_id": "C2a",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "079aa5fb9ab1-F01-H05",
+        "element_id": "G2",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "68952e4476e4-F01-H01",
+        "element_id": "I3",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "68952e4476e4-F01-H01",
+        "element_id": "R1",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "68952e4476e4-F01-H04",
+        "element_id": "I1",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H03",
+        "element_id": "I1",
+        "relation": "supersedes"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H04",
+        "element_id": "I1",
+        "relation": "supersedes"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H05",
+        "element_id": "I1",
+        "relation": "supersedes"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H06",
+        "element_id": "I1",
+        "relation": "supersedes"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H08",
+        "element_id": "I1",
+        "relation": "supersedes"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H09",
+        "element_id": "I1",
+        "relation": "supersedes"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H11",
+        "element_id": "I1",
+        "relation": "supersedes"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H12",
+        "element_id": "I1",
+        "relation": "supersedes"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H13",
+        "element_id": "R1",
+        "relation": "supports"
+      }
+    ]
+  },
+  "limitations": [
+    "Counterfactual replay of stored model outputs, not a new hosted run or held-out accuracy estimate.",
+    "Gold reconstructed post-run from exact score error rows; no labels were supplied to runtime/classifier/critic.",
+    "The synthetic confirm marker bypasses only critic rejection in offline replay; it is not semantic confirmation.",
+    "Semantics, authority, materiality and partial scope remain model-assessed."
+  ],
+  "raw_first_stage_hypotheses": {
+    "f1": 0.6382978723404256,
+    "false_negatives": [
+      {
+        "artifact_id": "04de3dac4669-F01-H01",
+        "element_id": "I2",
+        "relation": "supersedes"
+      },
+      {
+        "artifact_id": "079aa5fb9ab1-F01-H02",
+        "element_id": "I2",
+        "relation": "supersedes"
+      },
+      {
+        "artifact_id": "68952e4476e4-F01-H01",
+        "element_id": "R2",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H14",
+        "element_id": "I1",
+        "relation": "weakens"
+      }
+    ],
+    "false_positives": [
+      {
+        "artifact_id": "079aa5fb9ab1-F01-H03",
+        "element_id": "C2a",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "079aa5fb9ab1-F01-H05",
+        "element_id": "C2a",
+        "relation": "weakens"
+      },
+      {
+        "artifact_id": "68952e4476e4-F01-H05",
+        "element_id": "I3",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "68952e4476e4-F01-H06",
+        "element_id": "I3",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H04",
+        "element_id": "I1",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H04",
+        "element_id": "R1",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H05",
+        "element_id": "I1",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H05",
+        "element_id": "R1",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H06",
+        "element_id": "R1",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H07",
+        "element_id": "I1",
+        "relation": "supersedes"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H11",
+        "element_id": "R1",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H13",
+        "element_id": "I1",
+        "relation": "supersedes"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H14",
+        "element_id": "I1",
+        "relation": "supports"
+      }
+    ],
+    "fn": 4,
+    "fp": 13,
+    "precision": 0.5357142857142857,
+    "recall": 0.7894736842105263,
+    "tp": 15,
+    "true_positives": [
+      {
+        "artifact_id": "079aa5fb9ab1-F01-H05",
+        "element_id": "C1",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "079aa5fb9ab1-F01-H05",
+        "element_id": "C2a",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "079aa5fb9ab1-F01-H05",
+        "element_id": "G2",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "68952e4476e4-F01-H01",
+        "element_id": "I3",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "68952e4476e4-F01-H01",
+        "element_id": "R1",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "68952e4476e4-F01-H04",
+        "element_id": "I1",
+        "relation": "supports"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H03",
+        "element_id": "I1",
+        "relation": "supersedes"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H04",
+        "element_id": "I1",
+        "relation": "supersedes"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H05",
+        "element_id": "I1",
+        "relation": "supersedes"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H06",
+        "element_id": "I1",
+        "relation": "supersedes"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H08",
+        "element_id": "I1",
+        "relation": "supersedes"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H09",
+        "element_id": "I1",
+        "relation": "supersedes"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H11",
+        "element_id": "I1",
+        "relation": "supersedes"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H12",
+        "element_id": "I1",
+        "relation": "supersedes"
+      },
+      {
+        "artifact_id": "964260d9c2da-F01-H13",
+        "element_id": "R1",
+        "relation": "supports"
+      }
+    ]
+  },
+  "resources": {
+    "critic": {
+      "estimated_input_tokens": 35204,
+      "provider_input_tokens": 29283,
+      "provider_output_tokens": 5595,
+      "requests": 3
+    },
+    "primary": {
+      "estimated_input_tokens": 147826,
+      "provider_input_tokens": 108393,
+      "provider_output_tokens": 52240,
+      "requests": 12
+    }
+  },
+  "run_id": "8096127b-4cbd-4e77-a9c4-a9c2c5dc0c03",
+  "scope": "all",
+  "shared_guard_rejections_without_critic": [
+    {
+      "artifact_id": "68952e4476e4-F01-H06",
+      "element_id": "I3",
+      "reasons": [
+        "MODEL_ASSESSED:evidence_basis_does_not_corroborate_target",
+        "MODEL_ASSESSED:evidence_trace_current_design_basis_not_established"
+      ],
+      "relation": "supports"
+    },
+    {
+      "artifact_id": "079aa5fb9ab1-F01-H05",
+      "element_id": "C2a",
+      "reasons": [
+        "MODEL_ASSESSED:no_material_target_delta"
+      ],
+      "relation": "weakens"
+    }
+  ],
+  "status": "OFFLINE_POST_RUN_CACHED_FIRST_STAGE_ABLATION_NO_API"
+}

@@ -1,0 +1,16 @@
+{
+  "checkpoint_relative_path": "checkpoints/fbb1c892-88e4-4e49-80cb-0a433eaaa87a.json",
+  "checkpoint_sha256": "9e09e64f546c9b7ae685019f2132e6a251623575768b0a3d871fc1f20e1d80c7",
+  "experiment_kind": "CACHED_V49_PRIMARY_SCOPE_RECHECK",
+  "finish_utc": "2026-10-12T01:52:22.169594+00:00",
+  "mode": "api",
+  "model": "gpt-6.1-sol",
+  "protocol_sha256": "5ff74fbc421134e47ba501916261cd55e058e9af4b11ba02e9504378d806190d",
+  "run_id": "fbb1c892-88e4-4e49-80cb-0a433eaaa87a",
+  "run_manifest_sha256": "5a4f11efd2b0af0133422e285790404809d7b605abd105090fbe9e8952e2f4ea",
+  "run_report_sha256": "425164a40e192fab94752f87c42a8a992d48bcd842fe75a2c21a3181744dc17f",
+  "source_run_id": "8096127b-4cbd-4e77-a9c4-a9c2c5dc0c03",
+  "start_utc": "2026-10-12T01:50:27.203953+00:00",
+  "status": "CACHED_V49_PRIMARY_SCOPE_RECHECK_COMPLETED_AND_HASHED",
+  "toolkit_sha256": "8a5e1f81d0fdadcf2e337a3c232ccafa73dea418482853d660ccef2d19f172ae"
+}

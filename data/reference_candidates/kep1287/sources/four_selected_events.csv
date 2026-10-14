@@ -1,0 +1,5 @@
+commit_sha,committer_date,message,candidate_research_topic,source_url,reviewer_relation,rationale_relevance
+68952e4476e47eb71321a2c7f92844e602d38d22,2024-06-07T07:07:54Z,InPlacePodVerticalScaling BETA update,Beta planning and lifecycle requirements,https://github.com/kubernetes/enhancements/commit/68952e4476e47eb71321a2c7f92844e602d38d22,UNDECIDED,UNDECIDED
+079aa5fb9ab1a66f09f1d0c841025f7451474265,2024-09-17T00:06:36Z,Update from offline design discussions,Revisions after offline design discussions,https://github.com/kubernetes/enhancements/commit/079aa5fb9ab1a66f09f1d0c841025f7451474265,UNDECIDED,UNDECIDED
+964260d9c2da8f75423771fffd9989077d4d92aa,2024-09-30T23:54:56Z,"Drop AllocatedResources from beta scope, with new feature gate",AllocatedResources moves outside core beta scope,https://github.com/kubernetes/enhancements/commit/964260d9c2da8f75423771fffd9989077d4d92aa,UNDECIDED,UNDECIDED
+04de3dac4669f4b2f792c17488c680ce4b144679,2024-10-10T00:07:16Z,Make ResizePolicy mutable,ResizePolicy mutability revision,https://github.com/kubernetes/enhancements/commit/04de3dac4669f4b2f792c17488c680ce4b144679,UNDECIDED,UNDECIDED

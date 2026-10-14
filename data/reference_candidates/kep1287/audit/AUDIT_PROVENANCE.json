@@ -1,0 +1,21 @@
+{
+  "PI_reported_d7_I1_inclusion": true,
+  "PI_reported_final_review_without_AI": true,
+  "PI_reported_reviewers_human": true,
+  "baseline_approval_event_verified": false,
+  "baseline_commit": "5950905de89aab2be202d28b823701276cbefea0",
+  "capture_observed_at": "2026-10-11T00:48:50.661480Z",
+  "historical_replay_certified": false,
+  "human_adjudicated_ground_truth_publication_ready": false,
+  "model_proposal_content_visible_in_source_workbooks": true,
+  "noted_open_evidence": "a093b5b... full diff not included among curated four; remain NEEDS_DIFF",
+  "original_sources_sha256": {
+    "a": "b0043dcba0b9e1b48098cf5be584af4a4bacdc3b255c9ca756c7ea4f4ec35c28",
+    "b": "a52a053dac3dbaa935c47050be6d320a5a09f28c119f70c758a3b3f2c8168d62",
+    "pi": "93190e194efc35e651efc1a1ff4fc2c107d9a117c1dff8eda56ab7ba367d188e"
+  },
+  "signatures_stored_in_input_workbooks": false,
+  "snapshot_date_proxy": "2023-10-26T15:17:39Z",
+  "status": "PI_REPORTED_DUAL_HUMAN_REVIEW_WITH_UNRESOLVED_SOURCE_WORKBOOK_ANNOTATIONS",
+  "study_event_window_end": "2024-10-11T00:00:00Z"
+}

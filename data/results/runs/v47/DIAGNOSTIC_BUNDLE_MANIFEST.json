@@ -1,0 +1,18 @@
+{
+  "status": "V47_DIAGNOSTICS_VERIFIED_NO_API_CALLED",
+  "run_id": "a50dd556-729c-4840-a509-0fdd9222b81b",
+  "created_utc": "2026-10-11T22:28:09.456552+00:00",
+  "member_sha256": {
+    "RUN_RECEIPT.json": "0158eeb1ae1fcf4865de61f6546f013a2ff8309c39cbd28ed72bf1dc52d4cd54",
+    "DEV_PREP_MANIFEST.json": "c88c64efac33ae2a2fdf0b51a13cd4defd49a735ea862586317de0fd09904b61",
+    "run/manifest.json": "7d72437c5732ec0e99f4dd211152d09f2bb8226de973713398b2686f55407ecf",
+    "run/report.json": "07dd9f8d34b8d4ef489389588f69eea149d2f5bc857c87951e9e72c502732574",
+    "inputs/S0_RETROSPECTIVE_RUNTIME.json": "a852f931aa41c2f67b1522651665feb67fad9d92116413553405fb3d9c3ba784",
+    "inputs/POST_S0_EVIDENCE_RETROSPECTIVE_53.jsonl": "30f89a8dae945eb588898134b23c1a5276f94dd257ef0ae3f71b9befd670a058",
+    "checkpoints/a50dd556-729c-4840-a509-0fdd9222b81b.json": "760105ed945a962af31b5692b998a2115c9bbcd0f2130fc474c50a62287b8d3b",
+    "score/metrics.json": "b032bec1f9acbfa6037986052bf650a48b461ea07a694db41dcbe9538a6ec61a",
+    "score/link_errors.csv": "3ca3ef7ed935054f9ccd0345761b947efff4b8520e38a62bb2b6d763dc04ced9",
+    "score/SCORE_RECEIPT.json": "a26c9778f498b881f413978726eea8f64ce563ad3cef3686aeba55dbfbb4ceb5"
+  },
+  "note": "This bundle snapshots a development run; it does not certify held-out performance."
+}

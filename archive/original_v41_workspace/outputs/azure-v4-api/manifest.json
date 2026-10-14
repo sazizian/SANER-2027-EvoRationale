@@ -1,0 +1,12 @@
+{
+  "data_audit_sha256": "f5aa9141ba5dd2ac9ba547ce0acccb53aaa1b132e755ca6ce9ab1c8c532cd91a",
+  "decision_sha256": "ba324d5ffb2ca5fe4c9cdcc6e476cb490e7c59f4fa5c04e0dab76ddc862ffd51",
+  "disclosure": "MODEL-ASSISTED OUTPUT REQUIRES HUMAN AUDIT",
+  "historical_replay_certified": false,
+  "history_sha256": "cda8af27d99647d941efc3b1e5aa1aa7c02f8710ae6faa440e2e8b91d2254ca0",
+  "mode": "api",
+  "report_sha256": "483073ff4a523a406b8a18f5b4822f5ceb987284365e3736ff912beb8bf05373",
+  "retrieval_backend": "local",
+  "run_id": "202d3315-b91a-47db-a003-c5f5e02c58f6",
+  "status": "AWAITING_HUMAN_REVIEW"
+}

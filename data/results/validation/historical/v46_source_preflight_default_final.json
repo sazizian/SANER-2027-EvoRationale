@@ -1,0 +1,590 @@
+{
+  "approval_mode": "APPROVED_RUNTIME_INPUT_REQUIRED",
+  "batches": [
+    {
+      "all_outbound_citation_coverage_complete": true,
+      "all_s0_elements_considered_by_both_mock_stages": false,
+      "all_s0_elements_considered_by_mock_judge": true,
+      "all_source_artifacts_visible": true,
+      "artifact_ids": [
+        "964260d9c2da-F01-H01",
+        "964260d9c2da-F01-H02",
+        "964260d9c2da-F01-H03",
+        "964260d9c2da-F01-H04",
+        "964260d9c2da-F01-H05",
+        "964260d9c2da-F01-H06",
+        "964260d9c2da-F01-H07",
+        "964260d9c2da-F01-H08",
+        "964260d9c2da-F01-H09",
+        "964260d9c2da-F01-H10",
+        "964260d9c2da-F01-H11",
+        "964260d9c2da-F01-H12",
+        "964260d9c2da-F01-H13",
+        "964260d9c2da-F01-H14"
+      ],
+      "artifact_versions": 14,
+      "batch": 1,
+      "changed_line_coverage": [
+        {
+          "artifact_id": "964260d9c2da-F01-H01",
+          "artifact_key": "kubernetes/enhancements::964260d9c2da-F01-H01::2026-10-11T00:48:50.661480Z-cb471a1478f27f59",
+          "changed_source_lines": 1,
+          "covered_safe_changed_source_lines": 1,
+          "safe_changed_line_handles_checked": 1,
+          "safe_changed_source_lines": 1,
+          "unquotable_changed_source_lines": 0
+        },
+        {
+          "artifact_id": "964260d9c2da-F01-H02",
+          "artifact_key": "kubernetes/enhancements::964260d9c2da-F01-H02::2026-10-11T00:48:50.661480Z-a219b7f92d4dd3b1",
+          "changed_source_lines": 1,
+          "covered_safe_changed_source_lines": 1,
+          "safe_changed_line_handles_checked": 1,
+          "safe_changed_source_lines": 1,
+          "unquotable_changed_source_lines": 0
+        },
+        {
+          "artifact_id": "964260d9c2da-F01-H03",
+          "artifact_key": "kubernetes/enhancements::964260d9c2da-F01-H03::2026-10-11T00:48:50.661480Z-d04e626b7d2a1ef5",
+          "changed_source_lines": 3,
+          "covered_safe_changed_source_lines": 3,
+          "safe_changed_line_handles_checked": 3,
+          "safe_changed_source_lines": 3,
+          "unquotable_changed_source_lines": 0
+        },
+        {
+          "artifact_id": "964260d9c2da-F01-H04",
+          "artifact_key": "kubernetes/enhancements::964260d9c2da-F01-H04::2026-10-11T00:48:50.661480Z-394078663bdb2031",
+          "changed_source_lines": 27,
+          "covered_safe_changed_source_lines": 27,
+          "safe_changed_line_handles_checked": 27,
+          "safe_changed_source_lines": 27,
+          "unquotable_changed_source_lines": 0
+        },
+        {
+          "artifact_id": "964260d9c2da-F01-H05",
+          "artifact_key": "kubernetes/enhancements::964260d9c2da-F01-H05::2026-10-11T00:48:50.661480Z-1012627d4cc98389",
+          "changed_source_lines": 10,
+          "covered_safe_changed_source_lines": 10,
+          "safe_changed_line_handles_checked": 10,
+          "safe_changed_source_lines": 10,
+          "unquotable_changed_source_lines": 0
+        },
+        {
+          "artifact_id": "964260d9c2da-F01-H06",
+          "artifact_key": "kubernetes/enhancements::964260d9c2da-F01-H06::2026-10-11T00:48:50.661480Z-d2b867c5200ab2ae",
+          "changed_source_lines": 18,
+          "covered_safe_changed_source_lines": 18,
+          "safe_changed_line_handles_checked": 18,
+          "safe_changed_source_lines": 18,
+          "unquotable_changed_source_lines": 0
+        },
+        {
+          "artifact_id": "964260d9c2da-F01-H07",
+          "artifact_key": "kubernetes/enhancements::964260d9c2da-F01-H07::2026-10-11T00:48:50.661480Z-256d330b314c8fca",
+          "changed_source_lines": 6,
+          "covered_safe_changed_source_lines": 6,
+          "safe_changed_line_handles_checked": 6,
+          "safe_changed_source_lines": 6,
+          "unquotable_changed_source_lines": 0
+        },
+        {
+          "artifact_id": "964260d9c2da-F01-H08",
+          "artifact_key": "kubernetes/enhancements::964260d9c2da-F01-H08::2026-10-11T00:48:50.661480Z-603a4cdce37ec551",
+          "changed_source_lines": 10,
+          "covered_safe_changed_source_lines": 10,
+          "safe_changed_line_handles_checked": 10,
+          "safe_changed_source_lines": 10,
+          "unquotable_changed_source_lines": 0
+        },
+        {
+          "artifact_id": "964260d9c2da-F01-H09",
+          "artifact_key": "kubernetes/enhancements::964260d9c2da-F01-H09::2026-10-11T00:48:50.661480Z-3957c6818891c4ea",
+          "changed_source_lines": 2,
+          "covered_safe_changed_source_lines": 2,
+          "safe_changed_line_handles_checked": 2,
+          "safe_changed_source_lines": 2,
+          "unquotable_changed_source_lines": 0
+        },
+        {
+          "artifact_id": "964260d9c2da-F01-H10",
+          "artifact_key": "kubernetes/enhancements::964260d9c2da-F01-H10::2026-10-11T00:48:50.661480Z-580402fddf5832c0",
+          "changed_source_lines": 3,
+          "covered_safe_changed_source_lines": 3,
+          "safe_changed_line_handles_checked": 3,
+          "safe_changed_source_lines": 3,
+          "unquotable_changed_source_lines": 0
+        },
+        {
+          "artifact_id": "964260d9c2da-F01-H11",
+          "artifact_key": "kubernetes/enhancements::964260d9c2da-F01-H11::2026-10-11T00:48:50.661480Z-8ea88d59a054d67f",
+          "changed_source_lines": 9,
+          "covered_safe_changed_source_lines": 9,
+          "safe_changed_line_handles_checked": 9,
+          "safe_changed_source_lines": 9,
+          "unquotable_changed_source_lines": 0
+        },
+        {
+          "artifact_id": "964260d9c2da-F01-H12",
+          "artifact_key": "kubernetes/enhancements::964260d9c2da-F01-H12::2026-10-11T00:48:50.661480Z-789fbcfa8d6e1427",
+          "changed_source_lines": 2,
+          "covered_safe_changed_source_lines": 2,
+          "safe_changed_line_handles_checked": 2,
+          "safe_changed_source_lines": 2,
+          "unquotable_changed_source_lines": 0
+        },
+        {
+          "artifact_id": "964260d9c2da-F01-H13",
+          "artifact_key": "kubernetes/enhancements::964260d9c2da-F01-H13::2026-10-11T00:48:50.661480Z-955351821b7c87e0",
+          "changed_source_lines": 2,
+          "covered_safe_changed_source_lines": 2,
+          "safe_changed_line_handles_checked": 2,
+          "safe_changed_source_lines": 2,
+          "unquotable_changed_source_lines": 0
+        },
+        {
+          "artifact_id": "964260d9c2da-F01-H14",
+          "artifact_key": "kubernetes/enhancements::964260d9c2da-F01-H14::2026-10-11T00:48:50.661480Z-c634056ffda6515a",
+          "changed_source_lines": 58,
+          "covered_safe_changed_source_lines": 58,
+          "safe_changed_line_handles_checked": 58,
+          "safe_changed_source_lines": 58,
+          "unquotable_changed_source_lines": 0
+        }
+      ],
+      "event_context_complete": true,
+      "exact_line_handles_and_roles_checked": 268,
+      "exact_passage_handles_checked": 28,
+      "incomplete_outbound_citation_artifact_ids": [],
+      "independent_judge_called_with_empty_nominations": true,
+      "nomination_model_review_performed": false,
+      "numbered_source_reconstructions_checked": 14,
+      "request_envelope_estimates": {
+        "judge": 14865
+      },
+      "source_bytes": 15664,
+      "synthetic_nominations": 0
+    },
+    {
+      "all_outbound_citation_coverage_complete": false,
+      "all_s0_elements_considered_by_both_mock_stages": false,
+      "all_s0_elements_considered_by_mock_judge": true,
+      "all_source_artifacts_visible": true,
+      "artifact_ids": [
+        "68952e4476e4-F01-H01",
+        "68952e4476e4-F01-H02",
+        "68952e4476e4-F01-H03",
+        "68952e4476e4-F01-H04",
+        "68952e4476e4-F01-H05",
+        "68952e4476e4-F01-H06"
+      ],
+      "artifact_versions": 6,
+      "batch": 2,
+      "changed_line_coverage": [
+        {
+          "artifact_id": "68952e4476e4-F01-H01",
+          "artifact_key": "kubernetes/enhancements::68952e4476e4-F01-H01::2026-10-11T00:48:50.661480Z-bea1e2d06cadbcb8",
+          "changed_source_lines": 20,
+          "covered_safe_changed_source_lines": 20,
+          "safe_changed_line_handles_checked": 20,
+          "safe_changed_source_lines": 20,
+          "unquotable_changed_source_lines": 0
+        },
+        {
+          "artifact_id": "68952e4476e4-F01-H02",
+          "artifact_key": "kubernetes/enhancements::68952e4476e4-F01-H02::2026-10-11T00:48:50.661480Z-5fc9a871bbab9b59",
+          "changed_source_lines": 4,
+          "covered_safe_changed_source_lines": 4,
+          "safe_changed_line_handles_checked": 4,
+          "safe_changed_source_lines": 4,
+          "unquotable_changed_source_lines": 0
+        },
+        {
+          "artifact_id": "68952e4476e4-F01-H03",
+          "artifact_key": "kubernetes/enhancements::68952e4476e4-F01-H03::2026-10-11T00:48:50.661480Z-28e02b31526ff2b3",
+          "changed_source_lines": 2,
+          "covered_safe_changed_source_lines": 2,
+          "safe_changed_line_handles_checked": 2,
+          "safe_changed_source_lines": 2,
+          "unquotable_changed_source_lines": 0
+        },
+        {
+          "artifact_id": "68952e4476e4-F01-H04",
+          "artifact_key": "kubernetes/enhancements::68952e4476e4-F01-H04::2026-10-11T00:48:50.661480Z-f35dcac5f773e4dd",
+          "changed_source_lines": 14,
+          "covered_safe_changed_source_lines": 14,
+          "safe_changed_line_handles_checked": 14,
+          "safe_changed_source_lines": 14,
+          "unquotable_changed_source_lines": 0
+        },
+        {
+          "artifact_id": "68952e4476e4-F01-H05",
+          "artifact_key": "kubernetes/enhancements::68952e4476e4-F01-H05::2026-10-11T00:48:50.661480Z-0c13e110080c6918",
+          "changed_source_lines": 87,
+          "covered_safe_changed_source_lines": 86,
+          "safe_changed_line_handles_checked": 86,
+          "safe_changed_source_lines": 86,
+          "unquotable_changed_source_lines": 1
+        },
+        {
+          "artifact_id": "68952e4476e4-F01-H06",
+          "artifact_key": "kubernetes/enhancements::68952e4476e4-F01-H06::2026-10-11T00:48:50.661480Z-8d311c2359bef6ac",
+          "changed_source_lines": 19,
+          "covered_safe_changed_source_lines": 19,
+          "safe_changed_line_handles_checked": 19,
+          "safe_changed_source_lines": 19,
+          "unquotable_changed_source_lines": 0
+        }
+      ],
+      "event_context_complete": true,
+      "exact_line_handles_and_roles_checked": 216,
+      "exact_passage_handles_checked": 20,
+      "incomplete_outbound_citation_artifact_ids": [
+        "68952e4476e4-F01-H05"
+      ],
+      "independent_judge_called_with_empty_nominations": true,
+      "nomination_model_review_performed": false,
+      "numbered_source_reconstructions_checked": 6,
+      "request_envelope_estimates": {
+        "judge": 11246
+      },
+      "source_bytes": 11027,
+      "synthetic_nominations": 0
+    },
+    {
+      "all_outbound_citation_coverage_complete": false,
+      "all_s0_elements_considered_by_both_mock_stages": false,
+      "all_s0_elements_considered_by_mock_judge": true,
+      "all_source_artifacts_visible": true,
+      "artifact_ids": [
+        "079aa5fb9ab1-F01-H01",
+        "079aa5fb9ab1-F01-H02",
+        "079aa5fb9ab1-F01-H03",
+        "079aa5fb9ab1-F01-H04",
+        "079aa5fb9ab1-F01-H05"
+      ],
+      "artifact_versions": 5,
+      "batch": 3,
+      "changed_line_coverage": [
+        {
+          "artifact_id": "079aa5fb9ab1-F01-H01",
+          "artifact_key": "kubernetes/enhancements::079aa5fb9ab1-F01-H01::2026-10-11T00:48:50.661480Z-20fe4a3b4e5b6514",
+          "changed_source_lines": 4,
+          "covered_safe_changed_source_lines": 4,
+          "safe_changed_line_handles_checked": 4,
+          "safe_changed_source_lines": 4,
+          "unquotable_changed_source_lines": 0
+        },
+        {
+          "artifact_id": "079aa5fb9ab1-F01-H02",
+          "artifact_key": "kubernetes/enhancements::079aa5fb9ab1-F01-H02::2026-10-11T00:48:50.661480Z-3a36bcfddeceebe9",
+          "changed_source_lines": 4,
+          "covered_safe_changed_source_lines": 4,
+          "safe_changed_line_handles_checked": 4,
+          "safe_changed_source_lines": 4,
+          "unquotable_changed_source_lines": 0
+        },
+        {
+          "artifact_id": "079aa5fb9ab1-F01-H03",
+          "artifact_key": "kubernetes/enhancements::079aa5fb9ab1-F01-H03::2026-10-11T00:48:50.661480Z-a3f3d5b52342ab6e",
+          "changed_source_lines": 20,
+          "covered_safe_changed_source_lines": 20,
+          "safe_changed_line_handles_checked": 20,
+          "safe_changed_source_lines": 20,
+          "unquotable_changed_source_lines": 0
+        },
+        {
+          "artifact_id": "079aa5fb9ab1-F01-H04",
+          "artifact_key": "kubernetes/enhancements::079aa5fb9ab1-F01-H04::2026-10-11T00:48:50.661480Z-a9a7f3e057d16114",
+          "changed_source_lines": 7,
+          "covered_safe_changed_source_lines": 7,
+          "safe_changed_line_handles_checked": 7,
+          "safe_changed_source_lines": 7,
+          "unquotable_changed_source_lines": 0
+        },
+        {
+          "artifact_id": "079aa5fb9ab1-F01-H05",
+          "artifact_key": "kubernetes/enhancements::079aa5fb9ab1-F01-H05::2026-10-11T00:48:50.661480Z-e1e140be6d087c93",
+          "changed_source_lines": 59,
+          "covered_safe_changed_source_lines": 58,
+          "safe_changed_line_handles_checked": 58,
+          "safe_changed_source_lines": 58,
+          "unquotable_changed_source_lines": 1
+        }
+      ],
+      "event_context_complete": true,
+      "exact_line_handles_and_roles_checked": 137,
+      "exact_passage_handles_checked": 15,
+      "incomplete_outbound_citation_artifact_ids": [
+        "079aa5fb9ab1-F01-H05"
+      ],
+      "independent_judge_called_with_empty_nominations": true,
+      "nomination_model_review_performed": false,
+      "numbered_source_reconstructions_checked": 5,
+      "request_envelope_estimates": {
+        "judge": 9418
+      },
+      "source_bytes": 7075,
+      "synthetic_nominations": 0
+    },
+    {
+      "all_outbound_citation_coverage_complete": true,
+      "all_s0_elements_considered_by_both_mock_stages": false,
+      "all_s0_elements_considered_by_mock_judge": true,
+      "all_source_artifacts_visible": true,
+      "artifact_ids": [
+        "04de3dac4669-F01-H01"
+      ],
+      "artifact_versions": 1,
+      "batch": 4,
+      "changed_line_coverage": [
+        {
+          "artifact_id": "04de3dac4669-F01-H01",
+          "artifact_key": "kubernetes/enhancements::04de3dac4669-F01-H01::2026-10-11T00:48:50.661480Z-db675dc4f35c6ffd",
+          "changed_source_lines": 5,
+          "covered_safe_changed_source_lines": 5,
+          "safe_changed_line_handles_checked": 5,
+          "safe_changed_source_lines": 5,
+          "unquotable_changed_source_lines": 0
+        }
+      ],
+      "event_context_complete": true,
+      "exact_line_handles_and_roles_checked": 11,
+      "exact_passage_handles_checked": 1,
+      "incomplete_outbound_citation_artifact_ids": [],
+      "independent_judge_called_with_empty_nominations": true,
+      "nomination_model_review_performed": false,
+      "numbered_source_reconstructions_checked": 1,
+      "request_envelope_estimates": {
+        "judge": 5841
+      },
+      "source_bytes": 630,
+      "synthetic_nominations": 0
+    },
+    {
+      "all_outbound_citation_coverage_complete": true,
+      "all_s0_elements_considered_by_both_mock_stages": false,
+      "all_s0_elements_considered_by_mock_judge": true,
+      "all_source_artifacts_visible": true,
+      "artifact_ids": [
+        "964260d9c2da-F02-H01",
+        "964260d9c2da-F02-H02"
+      ],
+      "artifact_versions": 2,
+      "batch": 5,
+      "changed_line_coverage": [
+        {
+          "artifact_id": "964260d9c2da-F02-H01",
+          "artifact_key": "kubernetes/enhancements::964260d9c2da-F02-H01::2026-10-11T00:48:50.661480Z-2188a1b869429cec",
+          "changed_source_lines": 4,
+          "covered_safe_changed_source_lines": 4,
+          "safe_changed_line_handles_checked": 4,
+          "safe_changed_source_lines": 4,
+          "unquotable_changed_source_lines": 0
+        },
+        {
+          "artifact_id": "964260d9c2da-F02-H02",
+          "artifact_key": "kubernetes/enhancements::964260d9c2da-F02-H02::2026-10-11T00:48:50.661480Z-65904de7c1426cfb",
+          "changed_source_lines": 4,
+          "covered_safe_changed_source_lines": 4,
+          "safe_changed_line_handles_checked": 4,
+          "safe_changed_source_lines": 4,
+          "unquotable_changed_source_lines": 0
+        }
+      ],
+      "event_context_complete": true,
+      "exact_line_handles_and_roles_checked": 21,
+      "exact_passage_handles_checked": 2,
+      "incomplete_outbound_citation_artifact_ids": [],
+      "independent_judge_called_with_empty_nominations": true,
+      "nomination_model_review_performed": false,
+      "numbered_source_reconstructions_checked": 2,
+      "request_envelope_estimates": {
+        "judge": 6051
+      },
+      "source_bytes": 436,
+      "synthetic_nominations": 0
+    },
+    {
+      "all_outbound_citation_coverage_complete": true,
+      "all_s0_elements_considered_by_both_mock_stages": false,
+      "all_s0_elements_considered_by_mock_judge": true,
+      "all_source_artifacts_visible": true,
+      "artifact_ids": [
+        "68952e4476e4-F02-H01",
+        "68952e4476e4-F02-H02"
+      ],
+      "artifact_versions": 2,
+      "batch": 6,
+      "changed_line_coverage": [
+        {
+          "artifact_id": "68952e4476e4-F02-H01",
+          "artifact_key": "kubernetes/enhancements::68952e4476e4-F02-H01::2026-10-11T00:48:50.661480Z-c868932ef376a363",
+          "changed_source_lines": 1,
+          "covered_safe_changed_source_lines": 1,
+          "safe_changed_line_handles_checked": 1,
+          "safe_changed_source_lines": 1,
+          "unquotable_changed_source_lines": 0
+        },
+        {
+          "artifact_id": "68952e4476e4-F02-H02",
+          "artifact_key": "kubernetes/enhancements::68952e4476e4-F02-H02::2026-10-11T00:48:50.661480Z-3fa96382ef6caf11",
+          "changed_source_lines": 6,
+          "covered_safe_changed_source_lines": 6,
+          "safe_changed_line_handles_checked": 6,
+          "safe_changed_source_lines": 6,
+          "unquotable_changed_source_lines": 0
+        }
+      ],
+      "event_context_complete": true,
+      "exact_line_handles_and_roles_checked": 24,
+      "exact_passage_handles_checked": 2,
+      "incomplete_outbound_citation_artifact_ids": [],
+      "independent_judge_called_with_empty_nominations": true,
+      "nomination_model_review_performed": false,
+      "numbered_source_reconstructions_checked": 2,
+      "request_envelope_estimates": {
+        "judge": 6072
+      },
+      "source_bytes": 436,
+      "synthetic_nominations": 0
+    }
+  ],
+  "budget_estimator": "FULL_REQUEST_ENVELOPE_UTF8_ESTIMATE_NOT_PROVIDER_TOKENIZER_OR_PRICE",
+  "eligible_artifact_versions": 53,
+  "first_unaffordable_envelope_in_scenario": null,
+  "gold_labels_read": false,
+  "input_human_approved": true,
+  "input_sha256": {
+    "history": "30f89a8dae945eb588898134b23c1a5276f94dd257ef0ae3f71b9befd670a058",
+    "runtime_s0": "a852f931aa41c2f67b1522651665feb67fad9d92116413553405fb3d9c3ba784"
+  },
+  "investigation_profile": "event-evidence",
+  "limitations": [
+    "Local transport fixtures do not assess architectural relations or measure F1.",
+    "Real outputs, provider tokenization and retries may differ from this no-retry scenario.",
+    "Input estimates below a configured limit do not guarantee hosted completion or price.",
+    "Negative fake replies do not exercise positive-link output size or semantic validation.",
+    "Protected source text has no citation handles; URLs and emails can also be screened."
+  ],
+  "max_output_tokens_per_request": 16384,
+  "mock_independent_classifier_requests": 6,
+  "mock_nomination_requests": 0,
+  "mock_transport_calls": 6,
+  "models": {
+    "judge": "gpt-6.1-sol",
+    "linker": "gpt-6.1-sol"
+  },
+  "nominal_budgets": {
+    "max_input_tokens": 100000,
+    "max_output_tokens": 16384,
+    "max_queries": 12,
+    "max_reads": 36,
+    "max_rounds": 6
+  },
+  "nomination_mode": "none",
+  "outside_round_query_read_selection_ids": [
+    "kep1287-commit-04de3dac4669f4b2f792c17488c680ce4b144679",
+    "kep1287-commit-079aa5fb9ab1a66f09f1d0c841025f7451474265",
+    "kep1287-commit-1a4fefb34f1b420342acaef12fa53493ef66d03c",
+    "kep1287-commit-453b7fe01b591860fb8ab5f1effad8a1d67932c6",
+    "kep1287-commit-5388d74bfe6bd321ddb0584d2d993c2f82a8795d",
+    "kep1287-commit-59e0e46649aa623160ad2cdc00e221794e51d1e8",
+    "kep1287-commit-60c5d7995204cb5d5f4fb957fe0770a6e0e2dfdd",
+    "kep1287-commit-68952e4476e47eb71321a2c7f92844e602d38d22",
+    "kep1287-commit-7aee63a5e6f2a79499f4ba74bc032c0ae95a79ad",
+    "kep1287-commit-8a67b0703ea080a051a2569f577bccc3641b7954",
+    "kep1287-commit-8e48db13e95c5d174de95dd864f8c5d1beec3fc5",
+    "kep1287-commit-964260d9c2da8f75423771fffd9989077d4d92aa",
+    "kep1287-commit-9c2404dcfe491c7ce9917124a34a4ae5fd346969",
+    "kep1287-commit-a093b5b260a5016a5c6feb4407728fa1d1ee7dfd",
+    "kep1287-commit-a505a5a279973f011e02292fa858162097b69f51",
+    "kep1287-commit-ad13b95eae3dd61b2b82788d36fe392e039621be",
+    "kep1287-commit-ad43d22c5b32b2f85ac47ab4a9f04ef6690f2f02",
+    "kep1287-commit-be6445f8b7a20792aeb9da1f10f8bdb2c79e8194",
+    "kep1287-commit-d774b5cf414b6a13fd53064d157f2b535f25e430",
+    "kep1287-commit-d7b996fdccf555de7d5f951ee536041dd0d20305",
+    "kep1287-commit-da2e849176023b48579bca748ebc4124385e6b05",
+    "kep1287-commit-e53dcc52b8f0de6988e1dc34e2d6063be053e695",
+    "kep1287-commit-ff92a6e55373625ff15d5a46f3f163a3b1a493f4"
+  ],
+  "provider_calls": 0,
+  "request_envelopes": [
+    {
+      "batch": 1,
+      "cumulative_estimated_input_tokens": 14865,
+      "estimated_input_tokens": 14865,
+      "includes_full_schema_and_instructions": true,
+      "max_output_tokens": 10200,
+      "mock_response_received": true,
+      "model": "gpt-6.1-sol",
+      "request_sha256": "1c61f92a2616d9db68f2529dd2f4dbaf9244c6e189df2904467704eee3bae7f1",
+      "stage": "judge"
+    },
+    {
+      "batch": 2,
+      "cumulative_estimated_input_tokens": 26111,
+      "estimated_input_tokens": 11246,
+      "includes_full_schema_and_instructions": true,
+      "max_output_tokens": 5400,
+      "mock_response_received": true,
+      "model": "gpt-6.1-sol",
+      "request_sha256": "1261e48723fbf4be61551f1b5b2d85d1cc6ea6195c79de53da2d5340ec90af91",
+      "stage": "judge"
+    },
+    {
+      "batch": 3,
+      "cumulative_estimated_input_tokens": 35529,
+      "estimated_input_tokens": 9418,
+      "includes_full_schema_and_instructions": true,
+      "max_output_tokens": 4800,
+      "mock_response_received": true,
+      "model": "gpt-6.1-sol",
+      "request_sha256": "46ba87d34ff2587eea0cf982e45c8a02202fabe08efbd12edad2dbf59d992ec3",
+      "stage": "judge"
+    },
+    {
+      "batch": 4,
+      "cumulative_estimated_input_tokens": 41370,
+      "estimated_input_tokens": 5841,
+      "includes_full_schema_and_instructions": true,
+      "max_output_tokens": 4096,
+      "mock_response_received": true,
+      "model": "gpt-6.1-sol",
+      "request_sha256": "6104f5d814638caaab7cd7147a634ed09893fdb6e7de3572bccae13803982d98",
+      "stage": "judge"
+    },
+    {
+      "batch": 5,
+      "cumulative_estimated_input_tokens": 47421,
+      "estimated_input_tokens": 6051,
+      "includes_full_schema_and_instructions": true,
+      "max_output_tokens": 4096,
+      "mock_response_received": true,
+      "model": "gpt-6.1-sol",
+      "request_sha256": "662799be7afd4138f6a1a0113b72b27835421a46043e0ab5b98422e0687e8fe8",
+      "stage": "judge"
+    },
+    {
+      "batch": 6,
+      "cumulative_estimated_input_tokens": 53493,
+      "estimated_input_tokens": 6072,
+      "includes_full_schema_and_instructions": true,
+      "max_output_tokens": 4096,
+      "mock_response_received": true,
+      "model": "gpt-6.1-sol",
+      "request_sha256": "080c6a45f646729de01551c06c39a893d7299d77b85a9e6299f5f876534c7e14",
+      "stage": "judge"
+    }
+  ],
+  "round_and_query_bounded_batches": 6,
+  "scenario": "COMPLETE_NEGATIVE_MOCK_INDEPENDENT_REVIEWS_NO_NOMINATION_REQUESTS_NO_RETRIES",
+  "scenario_estimated_input_tokens": 53493,
+  "scenario_within_nominal_estimate_budget": true,
+  "selected_batches": 12,
+  "semantic_result_available": false,
+  "state_approval_changed": false,
+  "status": "V46_SOURCE_ONLY_SYNTHETIC_PREFLIGHT_COMPLETED_NO_API_CALLED",
+  "structurally_reviewable_artifact_versions": 30,
+  "structurally_reviewable_diff_versions": 30
+}

@@ -1,0 +1,14 @@
+{
+  "artifact_versions": 22,
+  "complete_repository_history_established": false,
+  "current_snapshot_bodies": 10,
+  "historical_replay_certified": false,
+  "independently_adjudicated_ground_truth_available": false,
+  "source_version_categories": {
+    "explicitly_historical_safe": 0,
+    "explicitly_unsafe": 22,
+    "unknown": 0
+  },
+  "truncated_source_records": 1,
+  "warning": "This input is a bounded snapshot; a valid current source hash does not establish historical body availability or decision correctness."
+}

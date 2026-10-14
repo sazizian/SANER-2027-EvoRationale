@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Exact version of a source artifact",
+  "type": "object",
+  "required": ["artifact_id", "repository", "source_type", "timestamp", "title", "content", "source_location"],
+  "properties": {
+    "artifact_id": {"type": "string", "minLength": 1},
+    "repository": {"type": "string", "minLength": 1},
+    "source_type": {"type": "string", "minLength": 1},
+    "timestamp": {"type": "string", "format": "date-time"},
+    "first_auditable_at": {"type": "string", "format": "date-time"},
+    "version_id": {"type": "string", "minLength": 1},
+    "content_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "title": {"type": "string", "minLength": 1},
+    "content": {"type": "string"},
+    "source_location": {"type": "string", "minLength": 1},
+    "tags": {"type": "array", "items": {"type": "string"}}
+  }
+}

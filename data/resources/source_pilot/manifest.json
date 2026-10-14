@@ -1,0 +1,10 @@
+{
+  "README_FA.txt": "f64081ec3896f6d73c0a59bd2469701bde9d943eab6342c8f41facd1e07c8307",
+  "actual_abc_results_insert.tex": "7393591678c93515d366c67c7ca47550867b5e4160f55a056965291dcac37928",
+  "build_abc_evidence_checkpoint.py": "4ab3aa967849524f01269f594e001646e9bcbbc8310a66888eafe391aff85bde",
+  "evidence_checkpoint.json": "f8f0dde3bf043e92c700ad9e2854c00c8529b6f8e529ccee71fb6e0febefa27f",
+  "originals_unchanged/reviewer_1_source_pilot_as_received.xlsx": "9f866f06e3bb6431eb6ba990cd8c9772b2c641fe523b89d95c7caeeb199023eb",
+  "originals_unchanged/reviewer_2_source_pilot_as_received.xlsx": "6df89efbea38ff98ea0d20ec083cb1a1d4ba0a3e8993ac32c2800858e1bdd930",
+  "rejected_attempts_taxonomy.csv": "ca468dc6b7fdc89f1ae767fae478c512222ea675c34f0c5340258f7b052ac0e7",
+  "verified_abc_execution.json": "76ef174eba9ce71dff88c9d7fd0011fb6c04cddea423714c50fd158443421d8d"
+}

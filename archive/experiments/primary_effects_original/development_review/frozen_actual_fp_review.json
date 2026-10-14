@@ -1,0 +1,741 @@
+{
+  "kind": "OFFLINE_READ_ONLY_REVIEW_USING_ACTUAL_CONFIRMED_REFERENCE_NOTES_NO_API",
+  "freeze_root": "/workspace/scratch/05efca32e040/diagnostics/frozen_reference_211411/KEP1287_Reviewer_Confirmed_Freeze",
+  "scope_run_id": "fbb1c892-88e4-4e49-80cb-0a433eaaa87a",
+  "parent_run_id": "8096127b-4cbd-4e77-a9c4-a9c2c5dc0c03",
+  "integrity_checks": {
+    "COMMIT_SCREENING_CANDIDATE.csv": true,
+    "EVENT_RELATIONS_CANDIDATE.csv": true,
+    "HUNK_RELATIONS_CANDIDATE.csv": true,
+    "S0_ATOMIC_CANDIDATE.csv": true,
+    "S0_ATOMIC_REVIEWER_CONFIRMED.json": true,
+    "REVIEWER_CONFIRMATIONS.csv": true
+  },
+  "raw_patch_integrity": {
+    "079aa5fb9ab1-F01-H03": {
+      "raw_patch_sha256": "cc89f654cd380e8f671b77713b615f6730b709b33448d66c0231eca603fec315",
+      "matches_frozen_hunk_sha256": true
+    },
+    "68952e4476e4-F01-H05": {
+      "raw_patch_sha256": "cf1a6d956dcd660c3fcc6d34013d222eca67023a020175b28b04e1b4db1b0899",
+      "matches_frozen_hunk_sha256": true
+    },
+    "964260d9c2da-F01-H04": {
+      "raw_patch_sha256": "b22c5ce64cbe2057f090ec11552d03a50ced6aab82e23b4d0518fb292a3e8f6d",
+      "matches_frozen_hunk_sha256": true
+    },
+    "964260d9c2da-F01-H05": {
+      "raw_patch_sha256": "a3a700494950dcfd206dd6cb22a713b495b36fe027eb17ffc07f8092b6472528",
+      "matches_frozen_hunk_sha256": true
+    },
+    "964260d9c2da-F01-H06": {
+      "raw_patch_sha256": "a6d5493452d138160f67588e92a2a61b860540a2dd13d4dd39c905547a700cd3",
+      "matches_frozen_hunk_sha256": true
+    },
+    "964260d9c2da-F01-H07": {
+      "raw_patch_sha256": "b6e27060e472b7a63cb9a91557cf177b1ac9385b5ecf1fadab37f68c1ff73b87",
+      "matches_frozen_hunk_sha256": true
+    },
+    "964260d9c2da-F01-H11": {
+      "raw_patch_sha256": "98f0c05a0b86f0a65118a85787ba0ba4133f35dae6a92fc6ea546340869d90ce",
+      "matches_frozen_hunk_sha256": true
+    },
+    "964260d9c2da-F01-H13": {
+      "raw_patch_sha256": "c8a8c010bad5cbc309b38fe88a18e0cff5e6972941b2039dbbc85af16a054957",
+      "matches_frozen_hunk_sha256": true
+    },
+    "964260d9c2da-F01-H14": {
+      "raw_patch_sha256": "bae066e42e4c75868bb9582c9daf94b93e82f1f4618f2c72aab5ca6ef4bbbf38",
+      "matches_frozen_hunk_sha256": true
+    }
+  },
+  "fixed_target_text_matches_confirmed_s0_for_all_cases": true,
+  "metrics_context": {
+    "v49_all": {
+      "tp": 14,
+      "fp": 11,
+      "fn": 5,
+      "f1": 0.636364
+    },
+    "scope_all": {
+      "tp": 13,
+      "fp": 11,
+      "fn": 6,
+      "f1": 0.604651
+    },
+    "all_fp_confirmed": 11,
+    "all_fp_alignment_flags_true": 55
+  },
+  "findings": [
+    "Actual notes substantiate a narrower local contribution boundary for validation refinements, operational metric use and internal recovery migration. This is a semantic policy problem rather than a failing file verifier or malformed model response.",
+    "The five mixed hunks carry seven extra FPs. Several extra supports literally entail qualified current-source propositions; the reference annotates the principal architectural change. An omitted relation is not necessarily a demonstrated false source entailment.",
+    "The actual EVENT convention lists only IDs for its stated relation and records other relations in notes. H14 explicitly says R1 is supportive while its single scored row is WEAKENS I1. The reference cannot be treated as an exhaustive independent multi-relation semantic inventory without a clarified projection policy.",
+    "Event one-decision accounting does not establish a one-relation-per-hunk rule. H13 correctly supports R1 while H04/H05/H06/H11 supersede I1. H01 and the workload sketch contain multiple correct target IDs.",
+    "No static filter on change_kind, proposals, consumers, metrics, retained predicates, or partial scope can safely reproduce these notes. Real public accounting consumer migrations and non-binding boundary sketches are reference positives.",
+    "The latest typed scope checker confirms all eleven FPs with all flags true. The only removed accepted link is a G2 TP whose non-binding sketch is explicitly accepted in the actual notes. Scope flags do not resolve this policy mismatch."
+  ],
+  "policy_evidence": [
+    {
+      "file": "er_v49_build/EvoRationale_v49_DEV_EN/evorationale/evidence_trace_verification.py",
+      "symbol": "EVIDENCE_TRACE_INSTRUCTIONS",
+      "quote": "lack of novel design drift does not imply lack of current source evidence.",
+      "implication": "Support is deliberately broader than architectural drift."
+    },
+    {
+      "file": "er_v49_build/EvoRationale_v49_DEV_EN/evorationale/evidence_trace_verification.py",
+      "symbol": "EVIDENCE_TRACE_INSTRUCTIONS",
+      "quote": "Reusing an existing concept within a new operational witness can corroborate it; merely mentioning its name cannot.",
+      "implication": "Operational witness breadth permits the QoS refinement and SLO interpretations; the actual reference draws a narrower contribution boundary."
+    },
+    {
+      "file": "er_v49_build/EvoRationale_v49_DEV_EN/evorationale/evidence_trace_verification.py",
+      "symbol": "EVIDENCE_TRACE_INSTRUCTIONS",
+      "quote": "dependent_replacement is a target-local migration of a consumer's dependency that evidences an explicitly documented same-event architectural replacement",
+      "implication": "H07 is policy-compatible and H13 is a weaker local bridge; neither is a raw parsing/source-hash failure."
+    },
+    {
+      "file": "er_v49_build/EvoRationale_v49_DEV_EN/evorationale/evidence_trace_verification.py",
+      "symbol": "EVIDENCE_TRACE_INSTRUCTIONS",
+      "quote": "Do not let a primary effect suppress independent evidence for other exact elements.",
+      "implication": "A universal dominant-relation filter conflicts with current policy."
+    },
+    {
+      "file": "er_v49_build/EvoRationale_v49_DEV_EN/evorationale/pair_review_verification.py",
+      "symbol": "PREDICATE_INSTRUCTIONS",
+      "quote": "A new comparison among representations can corroborate a distinction predicate; consuming a status value alone does not establish a publish/write/report obligation.",
+      "implication": "The R1 partial-comparison extras are expected under current policy; local consumption is insufficient for reporting support but genuine changed dependency remains eligible."
+    },
+    {
+      "file": "er_v49_build/EvoRationale_v49_DEV_EN/evorationale/evidence_trace_verification.py",
+      "symbol": "EVIDENCE_TRACE_INSTRUCTIONS",
+      "quote": "direct_rationale is an explicit argument, policy or concrete design sketch corroborating an exact stated goal or non-goal",
+      "implication": "Actual non-binding controller sketch support agrees with this broader wording."
+    },
+    {
+      "file": "er_v49_build/EvoRationale_v49_DEV_EN/evorationale/pair_review_verification.py",
+      "symbol": "PREDICATE_INSTRUCTIONS",
+      "quote": "a candidate sketch or generic type-consistency benefit alone does not argue for the chosen target.",
+      "implication": "Stricter argument wording contributed to rejecting G2 support even though actual reference accepts the sketch; scope kit appends this existing v49 instruction."
+    }
+  ],
+  "cases": [
+    {
+      "triple": [
+        "079aa5fb9ab1-F01-H03",
+        "C2a",
+        "supports"
+      ],
+      "scored_verdict": "FP",
+      "reference_relation": "IMPLEMENTATION_ONLY",
+      "reference_target_ids": [
+        "C2a"
+      ],
+      "temporal_basis": "INTERIM_2024",
+      "fixed_target": "Changing a Pod's QoS class without a restart is a non-goal.",
+      "s0_consensus_verdict": "REWRITE_SPLIT",
+      "reference_hunk_note": "RESOLVED: B01 adopts Reviewer A's label; A's C2 is renamed C2a;C2b under the agreed split. The hunk's own changes are terminology and emphasis ('QOS Class' vs 'QOS Shape'; bold 'cannot be changed'), a validation detail (Guaranteed pods must set both CPU and memory), and 'resizeable' -> 'restartable' for sidecars. The QoS invariant was already in the pre-image, and the substantive edit to the 2023 non-goals was made by d774b5c, so this hunk adds no rationale evidence.",
+      "reference_event_note": " Open point: the ID-listing convention. Same relation. Proposed convention: the IDs column lists only the elements the stated relation applies to, and other affected elements are recorded here with their own relation. SUPERSEDES applies to I2 only, and only to interim text: H02 changes the interim rule introduced by d774b5c ('mutable, but must have an entry for every resizable resource type') to 'append-only'. The 2023 text (L230-255) is silent on mutability, so 2023 I2 is not contradicted. Other affected elements: C2a via H03/H04/H05 (QoS class kept fixed; H03/H04 IMPLEMENTATION_ONLY; H05's explicit-QoS sketch is consistent); C2b via H03 (terminology only; the narrowing was made by d774b5c); G2 and C1 via H05 (SUPPORTS through a non-binding workload-resize sketch). Removal of the 2023 future item 'Allow resource limits to be updated (VPA feature)' (L694) is UNKNOWN. No change challenges the 2023 rationale.",
+      "primary_target_anchor": "Changing a Pod's QoS class without a restart is a non-goal.",
+      "primary_qualification": "Partial evidence restricted to the Guaranteed-Pod case. This is a source-defined resize constraint, not proof of implemented validation or deployment. The general no-change assertion survives before and after.",
+      "critic": {
+        "authority_aligned": true,
+        "authority_reason": "A0003 states a current design constraint. That authority fits the claimed source-defined Guaranteed-Pod rule, without establishing implementation or deployment.",
+        "candidate_id": "C0001",
+        "contribution_reason": "A0003:L0031 newly requires both CPU and memory to be set, beyond the retained requests-equal-limits condition. This is substantive, unlike the surrounding terminology changes.",
+        "fresh_contribution": true,
+        "predicate_aligned": true,
+        "predicate_reason": "For Guaranteed Pods, the resize rule requires equal requests and limits for both CPU and memory. Together with the fixed original QoS class, this concretely constrains resizing to preserve Guaranteed classification.",
+        "qualification_preserved": true,
+        "reason": "Confirm the qualified Guaranteed-Pod witness for C2a. The added constraint preserves that classification; it neither proves runtime validation nor establishes every QoS boundary case.",
+        "scope_aligned": true,
+        "verdict": "confirm"
+      },
+      "old_critic": {
+        "authority_reason": "The pinned KEP diff supplies a current design constraint, not implementation or deployment validation. Assessment is limited to the captured event.",
+        "candidate_id": "C0001",
+        "contribution_reason": "A0003:L0031 adds the substantive requirement that Guaranteed Pods retain both CPU and memory settings, beyond the earlier requests-equal-limits condition.",
+        "predicate_reason": "For running Guaranteed Pods, resize validation must preserve their original QoS class. Requiring equal requests and limits for both CPU and memory directly constrains transitions that would lower that class.",
+        "reason": "Confirm: the added Guaranteed-Pod constraint substantively supports C2a's prohibition on changing QoS class in place; the terminology changes alone would not.",
+        "verdict": "confirm"
+      },
+      "category": "UNCHANGED_TARGET_INVARIANT_PROMOTED_BY_VALIDATION_DETAIL",
+      "source_quotes": [
+        "-A pod's QOS class cannot be changed once the pod is started, independent of any resizes.",
+        "+A pod's QOS class **cannot be changed** once the pod is started, independent of any resizes.",
+        "-* Guaranteed pods: must maintain `requests == limits`",
+        "+* Guaranteed pods: must maintain `requests == limits`, and must be set for both CPU & memory",
+        "+* \"QOS Class\" - The QOS class that was computed based on the original resource requests & limits",
+        "+* \"QOS Shape\" - The QOS class that _would_ be computed based on the current resource requests &",
+        " * `.status.qosClass` always reports the original QOS class"
+      ],
+      "finding": "The new Guaranteed configuration validation detail is real, but the source explicitly separates the original QOS Class from the current-resource QOS Shape. The CPU/memory rule constrains the shape; the stored class is already fixed independently in the pre-image and current text. The added rule does not introduce or newly reject a class-changing transition. The critic promotes shape preservation to fresh support for the class-change prohibition, and the human note expressly excludes this refinement from rationale evidence.",
+      "status": "TARGET_OBJECT_AND_FRESH_CONTRIBUTION_CONFUSION; NOT_A_FABRICATED_SOURCE_FACT",
+      "repair": "Keep stored classification and recomputed resource shape as distinct objects. Require a substantive change that directly establishes, rejects, or argues for the exact prohibited transition; a shape-validation detail does not newly enforce an already immutable class.",
+      "risk": "Do not require an explanatory why argument for every support: actual reference accepts direct boundary-instantiating sketches and state definitions."
+    },
+    {
+      "triple": [
+        "68952e4476e4-F01-H05",
+        "I3",
+        "supports"
+      ],
+      "scored_verdict": "FP",
+      "reference_relation": "IMPLEMENTATION_ONLY",
+      "reference_target_ids": [
+        "R2",
+        "I3"
+      ],
+      "temporal_basis": "BASELINE_2023",
+      "fixed_target": "Model resize operation progress through states such as proposed, in progress, deferred and infeasible.",
+      "s0_consensus_verdict": "ACCEPT",
+      "reference_hunk_note": "RESOLVED: B01 adopts Reviewer A's label and IDs. The PRR rollout/monitoring/dependency answers (rollback metrics, test plan, SLIs/SLOs built on the resize-request metric) describe operations. They use the resize-state model but say nothing about why R2 was required. The metric definition itself (H01) is the hunk that operationalises I3/R2.",
+      "reference_event_note": " Open point: R1. Same relation. All README hunks edit text unchanged since 2023, so the comparison is against the 2023 baseline. The commit keeps and operationalises the 2023 elements; it is not evidence that the original reasons were correct. H01: metric states mirror Status.Resize (I3, R2). H04: the kubelet sets AllocatedResources and Resources (I1). R1 is proposed for consistency with the agreed R1 link on 964260d9c2da-F01-H13, the same 'completed' definition, which originates here. H05 is operational (IMPLEMENTATION_ONLY; see the hunk consensus). The kep.yaml pre-image shows a milestone change after 2023-10-26 that is missing from the timeline.",
+      "primary_target_anchor": "Model resize operation progress through states such as proposed, in progress, deferred and infeasible.",
+      "primary_qualification": "Supports state-based progress accounting, specifically proposed requests and terminal outcomes. It does not establish the full in-progress/deferred state model or per-resource reporting. The SLO is specified, not observed validation.",
+      "critic": {
+        "authority_aligned": true,
+        "authority_reason": "The adopted SLO specifies steady-state accounting using the kubelet's newly defined same-event transition counter. It establishes a design objective, not an observed result.",
+        "candidate_id": "C0004",
+        "contribution_reason": "Generic SLO examples are replaced by resize-specific proposed-versus-terminal accounting. The same event introduces the counter and outcome definitions, making this more than consumption of preexisting status values.",
+        "fresh_contribution": true,
+        "predicate_aligned": true,
+        "predicate_reason": "The exact I3 subclaim is state-based progress accounting: kubelet request counts for completed, infeasible and canceled outcomes should approach proposed counts in steady state.",
+        "qualification_preserved": true,
+        "reason": "Confirm qualified support for proposed and terminal-outcome accounting, without extending it to the full InProgress/deferred model or per-resource reporting.",
+        "scope_aligned": true,
+        "verdict": "confirm"
+      },
+      "old_critic": {
+        "authority_reason": "The pinned KEP adopts this progress-accounting SLO alongside the same-event metric contract. It establishes design intent, not measured SLO compliance.",
+        "candidate_id": "C0004",
+        "contribution_reason": "Generic SLO examples are replaced by resize-specific progress accounting. The adopted A0001 contract defines the consumed transition counters, making this a substantive dependent contribution.",
+        "predicate_reason": "For I3's material subclaim, operators should assess aggregate resize progress by comparing completed, infeasible and canceled counts against proposed counts in steady state. Individual InProgress tracking is not asserted.",
+        "reason": "Confirm as MODEL_ASSESSED partial support: the new SLO operationalizes the same-event progress model through terminal-versus-proposed accounting, without independently redefining every state.",
+        "verdict": "confirm"
+      },
+      "category": "METRIC_USE_PROMOTED_TO_STATE_MODEL_EVIDENCE",
+      "source_quotes": [
+        "+  - Using `kubelet_container_resize_requests_total`, `completed + infeasible + canceled` request count",
+        "+  should approach `proposed` request count in steady state."
+      ],
+      "finding": "The added SLO uses existing same-event counter states. It does not locally define state meaning, transition, or production. The human note explicitly assigns model operationalisation to H01 and classifies H05 as operational use. The critic imports H01 freshness into H05 and rephrases the target as state-based progress accounting.",
+      "status": "REFERENCE_SUPPORTED_LOCAL_CONTRIBUTION_ERROR; NO_DETERMINISTIC_PARSE_FAILURE",
+      "repair": "Separate defining or newly binding a target state predicate from monitoring or aggregating the model. Context can explain the metric but must not relocate another artifact's model-defining contribution.",
+      "risk": "A metric definition that explicitly binds target states or three-way completion can legitimately support I3/R1; no global metric ban."
+    },
+    {
+      "triple": [
+        "964260d9c2da-F01-H04",
+        "I1",
+        "supports"
+      ],
+      "scored_verdict": "FP",
+      "reference_relation": "SUPERSEDES",
+      "reference_target_ids": [
+        "I1"
+      ],
+      "temporal_basis": "BOTH",
+      "fixed_target": "Represent desired resources through mutable PodSpec fields and report allocated/applied resources through PodStatus.",
+      "s0_consensus_verdict": "ACCEPT",
+      "reference_hunk_note": " Open point: the R1 convention. Same relation. Core decision: the kubelet checkpoints the allocated state, and the AllocatedResources field stays alpha behind a separate gate as a 'candidate for future removal'. This supersedes I1's 'allocated via PodStatus' for beta. R1 is retained inside the node ('cached and checkpointed locally').",
+      "reference_event_note": " Open point: depends on the R1 wording (S0 row R1). Same relation. This is one decision spread over many hunks, so count it once. SUPERSEDES applies to I1: for beta, the 2023 commitment to report allocated resources in PodStatus (Summary L103-106; L198, L204-206) is replaced by a kubelet checkpoint. The AllocatedResources field stays alpha behind InPlacePodVerticalScalingAllocatedStatus and is a 'candidate for future removal'. Scheduler/quota accounting moves from AllocatedResources to Status.Resources (2023 L215-217, L426-432, L634-636 edited), while the stated reason ('avoid races and possible gamification') is kept. BOTH: H03/H05/H07/H08/H09/H12 edit 2023 text, and H04/H06/H10/H11 edit interim text. With field-agnostic wording, R1 is not superseded: the three states remain distinct inside the node (H04 checkpoint, H07, H13) and every H14 option keeps them; only R1's API visibility narrows. This is a beta-scope deferral with an open alternatives analysis (H14), not a rejection of the 2023 motivation.",
+      "primary_target_anchor": "Represent desired resources through mutable PodSpec fields and report allocated/applied resources through PodStatus.",
+      "primary_qualification": "Supports only the applied-resource reporting part of the compound element. It does not certify ordinary allocated-resource status reporting or deployed operation.",
+      "critic": {
+        "authority_aligned": true,
+        "authority_reason": "A0004 explicitly defines actual-resource reporting in the adopted API design, without claiming runtime validation.",
+        "candidate_id": "C0003",
+        "contribution_reason": "The reporting fallback changes from the public AllocatedResources field to the latest allocated-resource snapshot, giving a fresh source-defined reporting mechanism.",
+        "fresh_contribution": true,
+        "predicate_aligned": true,
+        "predicate_reason": "I1's applied-resource reporting branch obtains specified values from the runtime and other actual values from the allocation snapshot for PodStatus.Resources.",
+        "qualification_preserved": true,
+        "reason": "This is an explicit reporting operation, not merely consumption of status. Support is limited to applied-resource reporting.",
+        "scope_aligned": true,
+        "verdict": "confirm"
+      },
+      "old_critic": {
+        "authority_reason": "The pinned API Changes section states the current reporting contract and identifies runtime-reported resource values; this is design authority, not runtime verification.",
+        "candidate_id": "C0003",
+        "contribution_reason": "The changed fallback explicitly connects actual-resource reporting to the latest allocated snapshot instead of the removed AllocatedResources status field.",
+        "predicate_reason": "I1's applied-resource reporting clause is supported: PodStatus.Resources shows actual resources, obtained from runtime reports for specified CPU/memory values and otherwise copied from the latest allocation snapshot.",
+        "reason": "This is a reporting-source rule under an explicit PodStatus contract, not merely consumption of an existing status value.",
+        "verdict": "confirm"
+      },
+      "category": "COMPOUND_TARGET_SURVIVING_BRANCH_PLUS_REPLACEMENT",
+      "source_quotes": [
+        "-PodStatus is extended to show the resources allocated for and applied to the Pod and its Containers.",
+        "+PodStatus is extended to show the resources applied to the Pod and its Containers.",
+        "+The actual resources are reported by the container runtime in some cases, and for all other",
+        "+resources are copied from the latest snapshot of allocated resources."
+      ],
+      "finding": "The applied-reporting branch is literally preserved and its fallback representation changes. The same artifact replaces ordinary allocated-status reporting. The human reference chooses I1 supersession, whereas the broad runtime policy explicitly permits a qualified independently affected material subclaim. This is a compound-target projection disagreement, not evidence that the reporting proposition is false.",
+      "status": "PRINCIPAL_CHANGE_VS_QUALIFIED_PARTIAL_SUPPORT_GAP",
+      "repair": "Record clause effects separately, then explicitly distinguish a surviving contextual branch from a new target contribution. Any target-level projection that suppresses an extra support must be a documented case-neutral policy, not a claim of failed source entailment.",
+      "risk": "A universal SUPERSEDES-over-SUPPORTS rule fails H13 and independent local contributions."
+    },
+    {
+      "triple": [
+        "964260d9c2da-F01-H04",
+        "R1",
+        "supports"
+      ],
+      "scored_verdict": "FP",
+      "reference_relation": "SUPERSEDES",
+      "reference_target_ids": [
+        "I1"
+      ],
+      "temporal_basis": "BOTH",
+      "fixed_target": "Distinguish the desired resources declared in the Pod spec from the resources allocated to the Pod on the node and from the actual resources applied to its containers.",
+      "s0_consensus_verdict": "REWRITE",
+      "reference_hunk_note": " Open point: the R1 convention. Same relation. Core decision: the kubelet checkpoints the allocated state, and the AllocatedResources field stays alpha behind a separate gate as a 'candidate for future removal'. This supersedes I1's 'allocated via PodStatus' for beta. R1 is retained inside the node ('cached and checkpointed locally').",
+      "reference_event_note": " Open point: depends on the R1 wording (S0 row R1). Same relation. This is one decision spread over many hunks, so count it once. SUPERSEDES applies to I1: for beta, the 2023 commitment to report allocated resources in PodStatus (Summary L103-106; L198, L204-206) is replaced by a kubelet checkpoint. The AllocatedResources field stays alpha behind InPlacePodVerticalScalingAllocatedStatus and is a 'candidate for future removal'. Scheduler/quota accounting moves from AllocatedResources to Status.Resources (2023 L215-217, L426-432, L634-636 edited), while the stated reason ('avoid races and possible gamification') is kept. BOTH: H03/H05/H07/H08/H09/H12 edit 2023 text, and H04/H06/H10/H11 edit interim text. With field-agnostic wording, R1 is not superseded: the three states remain distinct inside the node (H04 checkpoint, H07, H13) and every H14 option keeps them; only R1's API visibility narrows. This is a beta-scope deferral with an open alternatives analysis (H14), not a rejection of the 2023 motivation.",
+      "primary_target_anchor": "Distinguish the desired resources declared in the Pod spec from the resources allocated to the Pod on the node and from the actual resources applied to its containers.",
+      "primary_qualification": "This is adopted source-design evidence, not runtime validation. Changing the allocation representation does not retire the distinction requirement.",
+      "critic": {
+        "authority_aligned": true,
+        "authority_reason": "The current API design establishes the three representations as an adopted contract, not an implementation test result.",
+        "candidate_id": "C0004",
+        "contribution_reason": "New local allocation caching/checkpointing makes the allocated representation independent of ordinary public status, alongside explicit desired and actual representations.",
+        "fresh_contribution": true,
+        "predicate_aligned": true,
+        "predicate_reason": "R1 requires distinguishing desired PodSpec resources, node-admitted allocations, and actual container resources. A0004 establishes all three, with allocation stored locally.",
+        "qualification_preserved": true,
+        "reason": "The whole distinction requirement is supported; it does not require all three quantities to remain publicly reported.",
+        "scope_aligned": true,
+        "verdict": "confirm"
+      },
+      "old_critic": {
+        "authority_reason": "The pinned current API design establishes field meanings and local allocation handling. Confirmation concerns that design, not implementation correctness.",
+        "candidate_id": "C0004",
+        "contribution_reason": "The added checkpoint contract substantively relocates allocation while retaining separate desired and actual representations, supporting the complete three-way distinction.",
+        "predicate_reason": "R1 distinguishes PodSpec desired resources, kubelet-admitted requests/limits cached on the node, and actual container resources in PodStatus. Allocation need not be generally published to remain distinct.",
+        "reason": "The source supports all three resource meanings despite replacing their former common status representation.",
+        "verdict": "confirm"
+      },
+      "category": "RETAINED_ABSTRACT_DISTINCTION_UNDER_NEW_REPRESENTATION",
+      "source_quotes": [
+        "+When the Kubelet admits a pod initially or admits a resize, all resource requirements from the spec",
+        "+are cached and checkpointed locally. When a container is (re)started, these are the requests and",
+        "+limits used."
+      ],
+      "finding": "The source and human note both preserve desired/allocated/actual distinctions. The new allocation storage is a fresh implementation of the retained distinction. Human notes annotate the principal I1 storage/reporting replacement, but do not explicitly deny a qualified R1 entailment. H13 is annotated SUPPORTS precisely because the same R1 concept survives.",
+      "status": "SOURCE_ENTAILMENT_DEFENSIBLE; CONTRIBUTION_PROJECTION_UNDERDETERMINED",
+      "repair": "Require the classifier to distinguish a target-predicate definition from a representation change preserving the predicate, and retain the latter in contextual evidence unless an independent target contribution is shown.",
+      "risk": "Blanket retained-predicate rejection contradicts the reference R1 support on H13."
+    },
+    {
+      "triple": [
+        "964260d9c2da-F01-H05",
+        "I1",
+        "supports"
+      ],
+      "scored_verdict": "FP",
+      "reference_relation": "SUPERSEDES",
+      "reference_target_ids": [
+        "I1"
+      ],
+      "temporal_basis": "BOTH",
+      "fixed_target": "Represent desired resources through mutable PodSpec fields and report allocated/applied resources through PodStatus.",
+      "s0_consensus_verdict": "ACCEPT",
+      "reference_hunk_note": "Agreed. Edits the 2023 Risks text (L352-365); consequence of H04.",
+      "reference_event_note": " Open point: depends on the R1 wording (S0 row R1). Same relation. This is one decision spread over many hunks, so count it once. SUPERSEDES applies to I1: for beta, the 2023 commitment to report allocated resources in PodStatus (Summary L103-106; L198, L204-206) is replaced by a kubelet checkpoint. The AllocatedResources field stays alpha behind InPlacePodVerticalScalingAllocatedStatus and is a 'candidate for future removal'. Scheduler/quota accounting moves from AllocatedResources to Status.Resources (2023 L215-217, L426-432, L634-636 edited), while the stated reason ('avoid races and possible gamification') is kept. BOTH: H03/H05/H07/H08/H09/H12 edit 2023 text, and H04/H06/H10/H11 edit interim text. With field-agnostic wording, R1 is not superseded: the three states remain distinct inside the node (H04 checkpoint, H07, H13) and every H14 option keeps them; only R1's API visibility narrows. This is a beta-scope deferral with an open alternatives analysis (H14), not a rejection of the 2023 motivation.",
+      "primary_target_anchor": "Represent desired resources through mutable PodSpec fields and report allocated/applied resources through PodStatus.",
+      "primary_qualification": "Supports the actual/applied-status reporting branch only, not the mutable-spec mechanism or ordinary allocated-resource reporting.",
+      "critic": {
+        "authority_aligned": true,
+        "authority_reason": "A0005 directly states the adopted status-tracking contract, rather than merely showing a consumer reading an existing value.",
+        "candidate_id": "C0006",
+        "contribution_reason": "The compatibility statement substantively changes its tracked object from true allocations in AllocatedResources to actual configurations in Resources.",
+        "fresh_contribution": true,
+        "predicate_aligned": true,
+        "predicate_reason": "I1's applied-reporting branch is supported by the explicit assertion that actual container resource configurations are tracked in Pod.Status.ContainerStatuses[i].Resources.",
+        "qualification_preserved": true,
+        "reason": "Confirm only actual/applied-status reporting; this passage does not certify desired-field mutability or ordinary allocation reporting.",
+        "scope_aligned": true,
+        "verdict": "confirm"
+      },
+      "old_critic": {
+        "authority_reason": "The pinned Risks and Mitigations section explicitly adopts actual configurations tracked in PodStatus.Resources and requires documentation of that meaning.",
+        "candidate_id": "C0006",
+        "contribution_reason": "The new wording directly identifies the actual-status representation and explains why reading desired PodSpec resources can mislead applications.",
+        "predicate_reason": "For I1's applied-reporting subclaim, actual Pod/container configurations are tracked in PodStatus.ContainerStatuses[i].Resources, distinct from desired PodSpec values. It does not restore unconditional allocation reporting.",
+        "reason": "An explicit adopted tracking contract supports the applied-resource portion of I1.",
+        "verdict": "confirm"
+      },
+      "category": "COMPOUND_TARGET_CURRENT_STATUS_STATEMENT_IN_REPLACEMENT_CONSEQUENCE",
+      "source_quotes": [
+        "-   tracked in Pod.Status.ContainerStatuses[i].AllocatedResources, applications",
+        "+   tracked in Pod.Status.ContainerStatuses[i].Resources, applications"
+      ],
+      "finding": "The new risk text directly asserts actual-status tracking, so qualified applied-reporting entailment is defensible. Human notes classify the hunk as a consequence of the I1 allocation-reporting replacement. A standalone semantic alignment checker following broad current-evidence policy will confirm this extra relation.",
+      "status": "POLICY_COMPATIBLE_PARTIAL_ENTAILMENT; REFERENCE_PROJECTION_GAP",
+      "repair": "Separate changed contract effect from a surviving reporting branch; aggregate compound-target relations with a documented contribution policy.",
+      "risk": "Rejecting all current reporting assertions would lose legitimate source-defined support."
+    },
+    {
+      "triple": [
+        "964260d9c2da-F01-H05",
+        "R1",
+        "supports"
+      ],
+      "scored_verdict": "FP",
+      "reference_relation": "SUPERSEDES",
+      "reference_target_ids": [
+        "I1"
+      ],
+      "temporal_basis": "BOTH",
+      "fixed_target": "Distinguish the desired resources declared in the Pod spec from the resources allocated to the Pod on the node and from the actual resources applied to its containers.",
+      "s0_consensus_verdict": "REWRITE",
+      "reference_hunk_note": "Agreed. Edits the 2023 Risks text (L352-365); consequence of H04.",
+      "reference_event_note": " Open point: depends on the R1 wording (S0 row R1). Same relation. This is one decision spread over many hunks, so count it once. SUPERSEDES applies to I1: for beta, the 2023 commitment to report allocated resources in PodStatus (Summary L103-106; L198, L204-206) is replaced by a kubelet checkpoint. The AllocatedResources field stays alpha behind InPlacePodVerticalScalingAllocatedStatus and is a 'candidate for future removal'. Scheduler/quota accounting moves from AllocatedResources to Status.Resources (2023 L215-217, L426-432, L634-636 edited), while the stated reason ('avoid races and possible gamification') is kept. BOTH: H03/H05/H07/H08/H09/H12 edit 2023 text, and H04/H06/H10/H11 edit interim text. With field-agnostic wording, R1 is not superseded: the three states remain distinct inside the node (H04 checkpoint, H07, H13) and every H14 option keeps them; only R1's API visibility narrows. This is a beta-scope deferral with an open alternatives analysis (H14), not a rejection of the 2023 motivation.",
+      "primary_target_anchor": "Distinguish the desired resources declared in the Pod spec from the resources allocated to the Pod on the node and from the actual resources applied to its containers.",
+      "primary_qualification": "Supports desired-versus-actual distinction only. The local current statement does not establish the separate allocated-resource part.",
+      "critic": {
+        "authority_aligned": true,
+        "authority_reason": "The compatibility warning is an explicit adopted-design account of what spec and status values mean.",
+        "candidate_id": "C0007",
+        "contribution_reason": "The warning newly contrasts desired spec values with actual configurations, replacing its previous desired-versus-allocation contrast.",
+        "fresh_contribution": true,
+        "predicate_aligned": true,
+        "predicate_reason": "R1's desired-versus-actual subclaim is established: applications reading desired PodSpec resources may see values differing from actual configurations recorded in container status.",
+        "qualification_preserved": true,
+        "reason": "The exact two-way distinction is supported without claiming that this local passage establishes the separate allocated quantity.",
+        "scope_aligned": true,
+        "verdict": "confirm"
+      },
+      "old_critic": {
+        "authority_reason": "The pinned compatibility rationale is authoritative design discussion about the changed API meanings, not evidence of deployed client behavior.",
+        "candidate_id": "C0007",
+        "contribution_reason": "The changed warning explicitly contrasts desired specification values with actual configurations, rather than merely mentioning either representation.",
+        "predicate_reason": "R1's desired-versus-actual subclaim is supported: applications reading desired PodSpec resources may not observe actual configurations tracked in PodStatus.Resources.",
+        "reason": "The comparison supports the qualified material subclaim; this passage alone does not establish the complete allocation distinction.",
+        "verdict": "confirm"
+      },
+      "category": "NEW_WARNING_ENTAILS_PARTIAL_DISTINCTION_ALREADY_GOVERNED_BY_REPLACEMENT",
+      "source_quotes": [
+        "+   representative of desired state, and Pod's actual resource configurations are",
+        "+   tracked in Pod.Status.ContainerStatuses[i].Resources, applications",
+        "+   configurations will see values that may not represent actual configurations. As a"
+      ],
+      "finding": "The current warning literally compares desired spec and actual status, but does not establish the complete three-way distinction. The hypothesis is qualified accordingly. Human note only records the I1 consequence. No false whole-element certification or fabricated third state occurred; disagreement concerns whether the revised warning is an independent R1 contribution.",
+      "status": "QUALIFIED_PARTIAL_ENTAILMENT_DEFENSIBLE; CONTRIBUTION_BOUNDARY_GAP",
+      "repair": "Identify the changed local contract and keep incidental surviving distinctions separate unless the distinction itself receives a new predicate definition or argument.",
+      "risk": "New comparisons can be material support under existing PREDICATE instructions; narrowing this is a changed semantic policy."
+    },
+    {
+      "triple": [
+        "964260d9c2da-F01-H06",
+        "R1",
+        "supports"
+      ],
+      "scored_verdict": "FP",
+      "reference_relation": "SUPERSEDES",
+      "reference_target_ids": [
+        "I1"
+      ],
+      "temporal_basis": "BOTH",
+      "fixed_target": "Distinguish the desired resources declared in the Pod spec from the resources allocated to the Pod on the node and from the actual resources applied to its containers.",
+      "s0_consensus_verdict": "REWRITE",
+      "reference_hunk_note": "Agreed. The kubelet no longer writes the AllocatedResources status field; consequence of H04.",
+      "reference_event_note": " Open point: depends on the R1 wording (S0 row R1). Same relation. This is one decision spread over many hunks, so count it once. SUPERSEDES applies to I1: for beta, the 2023 commitment to report allocated resources in PodStatus (Summary L103-106; L198, L204-206) is replaced by a kubelet checkpoint. The AllocatedResources field stays alpha behind InPlacePodVerticalScalingAllocatedStatus and is a 'candidate for future removal'. Scheduler/quota accounting moves from AllocatedResources to Status.Resources (2023 L215-217, L426-432, L634-636 edited), while the stated reason ('avoid races and possible gamification') is kept. BOTH: H03/H05/H07/H08/H09/H12 edit 2023 text, and H04/H06/H10/H11 edit interim text. With field-agnostic wording, R1 is not superseded: the three states remain distinct inside the node (H04 checkpoint, H07, H13) and every H14 option keeps them; only R1's API visibility narrows. This is a beta-scope deferral with an open alternatives analysis (H14), not a rejection of the 2023 motivation.",
+      "primary_target_anchor": "Distinguish the desired resources declared in the Pod spec from the resources allocated to the Pod on the node and from the actual resources applied to its containers.",
+      "primary_qualification": "The representation changes, but the three-way distinction survives. This describes the adopted sequence, not completed runtime validation.",
+      "critic": {
+        "authority_aligned": true,
+        "authority_reason": "A0006 defines the adopted kubelet resize sequence, not observed completion of a resize.",
+        "candidate_id": "C0009",
+        "contribution_reason": "The revised sequence removes the allocation-status dependency while retaining separate allocation acceptance and subsequent actual-status update steps.",
+        "fresh_contribution": true,
+        "predicate_aligned": true,
+        "predicate_reason": "R1's three-way distinction is instantiated: kubelet fits desired spec requests, updates allocation upon acceptance, and updates actual status after successful container resource updates.",
+        "qualification_preserved": true,
+        "reason": "All three quantities remain distinguishable in the current sequence despite allocation's representation change.",
+        "scope_aligned": true,
+        "verdict": "confirm"
+      },
+      "old_critic": {
+        "authority_reason": "The pinned kubelet resize design specifies admission, allocation, CRI actuation, and actual-status updates; it does not validate implementation.",
+        "candidate_id": "C0009",
+        "contribution_reason": "The changed acceptance operation updates allocation without the removed status-field dependency, while the surrounding sequence independently identifies desired requests and actual resource reporting.",
+        "predicate_reason": "For R1, kubelet tests desired Spec requests against node allocation, updates admitted allocation on acceptance, then actuates containers and updates Status.Resources after successful updates.",
+        "reason": "The operational sequence distinguishes all three resource meanings and substantively adopts allocation independent of its former status field.",
+        "verdict": "confirm"
+      },
+      "category": "UNCHANGED_SEQUENCE_PROMOTED_BY_REMOVAL_OF_ALLOCATION_WRITE",
+      "source_quotes": [
+        "-requests & limits to its internal allocated resources checkpoint, and write the",
+        "-admitted requests to the `AllocatedResources` field in the container status.",
+        "+requests & limits to its internal allocated resources checkpoint.",
+        "-  Status...AllocatedResources field and setting Status.Resize to",
+        "+  the allocated resourcesa, and sets Status.Resize to"
+      ],
+      "finding": "The new contribution removes allocation-status publication. Desired fit, allocation acceptance, and later actual-status update exist before and after. The checker explicitly confirms that all three remain distinguishable; it does not show a newly introduced three-way sequencing invariant.",
+      "status": "REFERENCE_SUPPORTED_TARGET_FRESHNESS_OVERREACH",
+      "repair": "Compare normalized before/current target predicate independent of changed field names. A revised storage reference must not alone establish a new abstract distinction relation.",
+      "risk": "Fresh definition of a preserved concept can still legitimately support it; mere absence of architectural drift is not sufficient to reject support."
+    },
+    {
+      "triple": [
+        "964260d9c2da-F01-H07",
+        "I1",
+        "supersedes"
+      ],
+      "scored_verdict": "FP",
+      "reference_relation": "IMPLEMENTATION_ONLY",
+      "reference_target_ids": [
+        "I1"
+      ],
+      "temporal_basis": "BOTH",
+      "fixed_target": "Represent desired resources through mutable PodSpec fields and report allocated/applied resources through PodStatus.",
+      "s0_consensus_verdict": "ACCEPT",
+      "reference_hunk_note": "Agreed. Restart tolerance now reads the checkpoint; the 2023 reason is kept verbatim.",
+      "reference_event_note": " Open point: depends on the R1 wording (S0 row R1). Same relation. This is one decision spread over many hunks, so count it once. SUPERSEDES applies to I1: for beta, the 2023 commitment to report allocated resources in PodStatus (Summary L103-106; L198, L204-206) is replaced by a kubelet checkpoint. The AllocatedResources field stays alpha behind InPlacePodVerticalScalingAllocatedStatus and is a 'candidate for future removal'. Scheduler/quota accounting moves from AllocatedResources to Status.Resources (2023 L215-217, L426-432, L634-636 edited), while the stated reason ('avoid races and possible gamification') is kept. BOTH: H03/H05/H07/H08/H09/H12 edit 2023 text, and H04/H06/H10/H11 edit interim text. With field-agnostic wording, R1 is not superseded: the three states remain distinct inside the node (H04 checkpoint, H07, H13) and every H14 option keeps them; only R1's API visibility narrows. This is a beta-scope deferral with an open alternatives analysis (H14), not a rejection of the 2023 motivation.",
+      "primary_target_anchor": "report allocated/applied resources through PodStatus.",
+      "primary_qualification": "Replaces the ordinary allocated-status dependency, not all PodStatus reporting. The separately gated alpha AllocatedResources path remains; mutable desired resources and applied-resource reporting are not retired.",
+      "critic": {
+        "authority_aligned": true,
+        "authority_reason": "The restart-tolerance sequence and explicit same-event allocation contract establish an adopted dependency replacement.",
+        "candidate_id": "C0010",
+        "contribution_reason": "Re-admission changes from Status.AllocatedResources to allocation restored from checkpoint, concretely migrating an existing consumer dependency.",
+        "fresh_contribution": true,
+        "predicate_aligned": true,
+        "predicate_reason": "I1's ordinary allocated-status mechanism is superseded for kubelet restart recovery: kubelet must re-admit existing Pods from checkpointed allocation before handling pending resizes.",
+        "qualification_preserved": true,
+        "reason": "Confirm the allocated-status dependency replacement, preserving gated alpha publication. Kubelet restart is not a required Pod or container restart.",
+        "scope_aligned": true,
+        "verdict": "confirm"
+      },
+      "old_critic": {
+        "authority_reason": "The pinned restart-tolerance design and same-event API contract jointly establish the adopted dependency replacement, not workload-restart behavior.",
+        "candidate_id": "C0010",
+        "contribution_reason": "Re-admission replaces reading Status.AllocatedResources with restoring the local checkpoint, directly depending on the new allocation contract.",
+        "predicate_reason": "I1's allocated-status mechanism is superseded for kubelet restart recovery: existing Pods are re-admitted from checkpointed allocation before pending resizes. Applied reporting and gated alpha allocation reporting remain.",
+        "reason": "The downstream recovery dependency substantiates replacement of the reporting-backed mechanism; it does not imply Pod or container restart.",
+        "verdict": "confirm"
+      },
+      "category": "INTERNAL_RECOVERY_DEPENDENCY_PROPAGATION",
+      "source_quotes": [
+        "-Pods are admitted at their current Status...AllocatedResources",
+        "+Pods are re-admitted based on their current allocated resources (restored from",
+        "+ checkpoint). Pending resizes are handled after all existing Pods have been",
+        "+added. This ensures that resizes don't affect previously admitted existing Pods."
+      ],
+      "finding": "There is a real local old-status to checkpoint dependency change, and adopted H04 contract context. The inherited runtime dependent_replacement policy permits this. Human note nevertheless classes recovery migration as IMPLEMENTATION_ONLY, keeping its reason verbatim. Thus it is not a missing-proof bug; it is over-broad dependency contribution relative to the reference.",
+      "status": "GENERIC_DEPENDENCY_POLICY_MISMATCH; NOT_FALSE_SOURCE_MIGRATION",
+      "repair": "For target publication/reporting replacement, require a local public contract producer or explicitly specified cross-boundary accounting dependency. Owner-internal recovery of an unchanged allocation quantity should stay an implementation consequence unless it independently changes a target obligation.",
+      "risk": "Scheduler/quota changes remain valid supersession TPs even with unchanged rationale. No blanket consumer, recovery-word, or unchanged-reason filter."
+    },
+    {
+      "triple": [
+        "964260d9c2da-F01-H11",
+        "R1",
+        "supports"
+      ],
+      "scored_verdict": "FP",
+      "reference_relation": "SUPERSEDES",
+      "reference_target_ids": [
+        "I1"
+      ],
+      "temporal_basis": "BOTH",
+      "fixed_target": "Distinguish the desired resources declared in the Pod spec from the resources allocated to the Pod on the node and from the actual resources applied to its containers.",
+      "s0_consensus_verdict": "REWRITE",
+      "reference_hunk_note": "Agreed. Quota uses status resources; removes 2023 L655.",
+      "reference_event_note": " Open point: depends on the R1 wording (S0 row R1). Same relation. This is one decision spread over many hunks, so count it once. SUPERSEDES applies to I1: for beta, the 2023 commitment to report allocated resources in PodStatus (Summary L103-106; L198, L204-206) is replaced by a kubelet checkpoint. The AllocatedResources field stays alpha behind InPlacePodVerticalScalingAllocatedStatus and is a 'candidate for future removal'. Scheduler/quota accounting moves from AllocatedResources to Status.Resources (2023 L215-217, L426-432, L634-636 edited), while the stated reason ('avoid races and possible gamification') is kept. BOTH: H03/H05/H07/H08/H09/H12 edit 2023 text, and H04/H06/H10/H11 edit interim text. With field-agnostic wording, R1 is not superseded: the three states remain distinct inside the node (H04 checkpoint, H07, H13) and every H14 option keeps them; only R1's API visibility narrows. This is a beta-scope deferral with an open alternatives analysis (H14), not a rejection of the 2023 motivation.",
+      "primary_target_anchor": "Distinguish the desired resources declared in the Pod spec from the resources allocated to the Pod on the node and from the actual resources applied to its containers.",
+      "primary_qualification": "Partial evidence for distinguishing desired from actual requests only. It does not certify the separate node-allocated representation or the whole three-way requirement. This is a source-defined operation, not observed runtime validation.",
+      "critic": {
+        "authority_aligned": true,
+        "authority_reason": "A0011 explicitly defines ResourceQuota's comparison operation in the adopted, feature-enabled design.",
+        "candidate_id": "C0014",
+        "contribution_reason": "The request comparison newly uses actual status rather than allocated status. This is substantive evidence beyond the pre-existing desired/actual limits comparison.",
+        "fresh_contribution": true,
+        "predicate_aligned": true,
+        "predicate_reason": "R1's desired-versus-actual requests distinction is operationally corroborated when ResourceQuota takes the maximum of desired spec requests and actual status resources during pending resize.",
+        "qualification_preserved": true,
+        "reason": "A new comparison can support this distinction without establishing allocation representation, reporting duties, or observed runtime behavior.",
+        "scope_aligned": true,
+        "verdict": "confirm"
+      },
+      "old_critic": {
+        "authority_reason": "The pinned quota design and API field meanings establish a normative calculation for the feature-enabled path, not observed controller execution.",
+        "candidate_id": "C0014",
+        "contribution_reason": "The new maximum calculation directly compares desired requests against actual status instead of allocated status, substantively corroborating their different meanings.",
+        "predicate_reason": "R1's desired-versus-actual distinction is supported: enabled quota accounting uses the maximum of PodSpec requests and PodStatus.Resources to account for pending resizes.",
+        "reason": "This new comparison supports the material distinction subclaim; it need not independently establish all three representations.",
+        "verdict": "confirm"
+      },
+      "category": "PUBLIC_CONSUMER_MIGRATION_WITH_EXTRA_PARTIAL_COMPARISON",
+      "source_quotes": [
+        "-`.spec.container[*].resources.requests` and `.status.containerStatuses[*].allocatedResources` to",
+        "+`.spec.container[*].resources.requests` and `.status.containerStatuses[*].resources` to",
+        "-pod updates where either `.status...allocatedResources` or `.status...resources` changed.",
+        "+pod updates where `.status...resources` changed."
+      ],
+      "finding": "The local public consumer read/update-trigger migration substantiates the correct I1 supersession. The new desired/actual maximum literally instantiates a partial R1 comparison, which existing PREDICATE instructions explicitly allow. Human note prioritizes the dependency change without separately labelling that comparison.",
+      "status": "POLICY_COMPATIBLE_PARTIAL_ENTAILMENT; PRINCIPAL_CHANGE_PROJECTION_GAP",
+      "repair": "Preserve the consumer contract replacement, while deciding explicitly whether the target distinction is newly contributed or only contextual to the migrated rule.",
+      "risk": "Global downstream-consumer rejection would discard multiple correct I1 supersession triples."
+    },
+    {
+      "triple": [
+        "964260d9c2da-F01-H13",
+        "I1",
+        "supersedes"
+      ],
+      "scored_verdict": "FP",
+      "reference_relation": "SUPPORTS",
+      "reference_target_ids": [
+        "R1"
+      ],
+      "temporal_basis": "BOTH",
+      "fixed_target": "Represent desired resources through mutable PodSpec fields and report allocated/applied resources through PodStatus.",
+      "s0_consensus_verdict": "ACCEPT",
+      "reference_hunk_note": "Agreed. 'Completed' still means spec == allocated == actual, so R1's concept survives.",
+      "reference_event_note": " Open point: depends on the R1 wording (S0 row R1). Same relation. This is one decision spread over many hunks, so count it once. SUPERSEDES applies to I1: for beta, the 2023 commitment to report allocated resources in PodStatus (Summary L103-106; L198, L204-206) is replaced by a kubelet checkpoint. The AllocatedResources field stays alpha behind InPlacePodVerticalScalingAllocatedStatus and is a 'candidate for future removal'. Scheduler/quota accounting moves from AllocatedResources to Status.Resources (2023 L215-217, L426-432, L634-636 edited), while the stated reason ('avoid races and possible gamification') is kept. BOTH: H03/H05/H07/H08/H09/H12 edit 2023 text, and H04/H06/H10/H11 edit interim text. With field-agnostic wording, R1 is not superseded: the three states remain distinct inside the node (H04 checkpoint, H07, H13) and every H14 option keeps them; only R1's API visibility narrows. This is a beta-scope deferral with an open alternatives analysis (H14), not a rejection of the 2023 motivation.",
+      "primary_target_anchor": "report allocated/applied resources through PodStatus.",
+      "primary_qualification": "Supersedes the ordinary allocated-status dependency, not desired-resource mutability or applied-resource reporting. The separately gated alpha allocated-request status path survives.",
+      "critic": {
+        "authority_aligned": true,
+        "authority_reason": "The completion-metric contract and A0004's allocation-storage contract are adopted design statements.",
+        "candidate_id": "C0016",
+        "contribution_reason": "The completion operand changes from public status.Allocated to allocated resources. Same-event context establishes local allocation storage, making this more than an isolated rename.",
+        "fresh_contribution": true,
+        "predicate_aligned": true,
+        "predicate_reason": "I1's ordinary allocated-status dependency is replaced in successful-completion accounting: desired spec and actual status are compared with locally maintained allocation.",
+        "qualification_preserved": true,
+        "reason": "Confirm the qualified metric dependency replacement; applied status survives and allocated requests remain publishable under the separate alpha gate.",
+        "scope_aligned": true,
+        "verdict": "confirm"
+      },
+      "old_critic": {
+        "authority_reason": "The pinned instrumentation definition and API allocation contract specify current design semantics; confirmation does not validate emitted metrics.",
+        "candidate_id": "C0016",
+        "contribution_reason": "The completion predicate drops its status.Allocated dependency and instead compares against allocated resources, matching the newly adopted local checkpoint contract.",
+        "predicate_reason": "For I1's allocated-status mechanism, resize completion no longer requires allocation represented in status: desired, locally allocated, and actual status values must agree. Gated alpha allocation reporting remains available.",
+        "reason": "This dependent predicate replacement corroborates supersession of the status-backed allocation mechanism, without inventing a new reporting operation.",
+        "verdict": "confirm"
+      },
+      "category": "ABSTRACT_METRIC_OPERAND_IMPORTS_EXTERNAL_REPORTING_CONTRACT",
+      "source_quotes": [
+        "-  - `completed` - Resize operation completed successfully (`spec.Resources == status.Allocated == status.Resources`)",
+        "+  - `completed` - Resize operation completed successfully (`spec.Resources == allocated resources == status.Resources`)"
+      ],
+      "finding": "The local metric changes an abstract completion operand name, while preserving the exact desired/allocated/actual equality. No local allocation read, reporting write, checkpoint retrieval, or external consumer contract is specified. The checker imports H04 storage context to infer a reporting-dependency replacement. Human note intentionally assigns R1 support to the preserved completion predicate.",
+      "status": "STRONGEST_UNSUPPORTED_TARGET_LOCAL_BRIDGE; POLICY_ALLOWS_OVERPROPAGATION",
+      "repair": "An external replacement contract can explain a local changed operation, but cannot supply the local reporting operation or cross-boundary dependency itself. Require the exact local operation to be source-defined; keep direct metric predicate evidence for R1.",
+      "risk": "Do not blanket-reject contextual migration or treat all operand changes as inconsequential: source-explicit consumer contracts can still migrate."
+    },
+    {
+      "triple": [
+        "964260d9c2da-F01-H14",
+        "I1",
+        "supports"
+      ],
+      "scored_verdict": "FP",
+      "reference_relation": "WEAKENS",
+      "reference_target_ids": [
+        "I1"
+      ],
+      "temporal_basis": "BOTH",
+      "fixed_target": "Represent desired resources through mutable PodSpec fields and report allocated/applied resources through PodStatus.",
+      "s0_consensus_verdict": "ACCEPT",
+      "reference_hunk_note": " Open point: the R1 convention. Same relation. The alternatives show that the 2023 field (v1.ResourceList, requests only; L204-205) cannot carry allocated limits, and they record API-evolution costs, which weakens I1's field as specified. All three options keep a distinct allocated state (Option 1 names desired, allocated and actual), so for R1 this hunk is supportive rather than weakening, and R1 is not linked to WEAKENS.",
+      "reference_event_note": " Open point: depends on the R1 wording (S0 row R1). Same relation. This is one decision spread over many hunks, so count it once. SUPERSEDES applies to I1: for beta, the 2023 commitment to report allocated resources in PodStatus (Summary L103-106; L198, L204-206) is replaced by a kubelet checkpoint. The AllocatedResources field stays alpha behind InPlacePodVerticalScalingAllocatedStatus and is a 'candidate for future removal'. Scheduler/quota accounting moves from AllocatedResources to Status.Resources (2023 L215-217, L426-432, L634-636 edited), while the stated reason ('avoid races and possible gamification') is kept. BOTH: H03/H05/H07/H08/H09/H12 edit 2023 text, and H04/H06/H10/H11 edit interim text. With field-agnostic wording, R1 is not superseded: the three states remain distinct inside the node (H04 checkpoint, H07, H13) and every H14 option keeps them; only R1's API visibility narrows. This is a beta-scope deferral with an open alternatives analysis (H14), not a rejection of the 2023 motivation.",
+      "primary_target_anchor": "report allocated/applied resources through PodStatus.",
+      "primary_qualification": "Discussion-level support for the allocated-reporting part only. It neither adopts an alternative nor independently supports applied-resource reporting or mutable PodSpec fields.",
+      "critic": {
+        "authority_aligned": true,
+        "authority_reason": "A0014 is an alternative discussion. Its explicit risk argument supports discussion-level rationale, not adoption of any alternative.",
+        "candidate_id": "C0018",
+        "contribution_reason": "The newly added con directly identifies the risk of assuming external consumers never need container-level allocation information.",
+        "fresh_contribution": true,
+        "predicate_aligned": true,
+        "predicate_reason": "For I1's allocated-reporting branch, the premise is dropping container-level status because outsiders supposedly need only Pod-level allocation; the stated risk argues for retaining external container-level visibility.",
+        "qualification_preserved": true,
+        "reason": "Confirm the exact qualified reporting rationale. It neither adopts container-level reporting nor supports applied reporting or mutable desired fields independently.",
+        "scope_aligned": true,
+        "verdict": "confirm"
+      },
+      "old_critic": {
+        "authority_reason": "The pinned Alternatives section supplies conditional discussion-level rationale only. It is not an adopted requirement to retain unconditional container allocation reporting.",
+        "candidate_id": "C0018",
+        "contribution_reason": "Option 3 explicitly identifies the risk of dropping container-level allocation visibility, directly addressing the allocation-reporting boundary rather than offering generic API consistency benefits.",
+        "predicate_reason": "For I1's allocated-reporting subclaim, the premise is that outsiders need only Pod-level allocation. The stated risk challenges that premise because outsiders may need container-level allocation exposed through the status API.",
+        "reason": "The explicit risk supports container-level allocated-resource reporting at discussion level, without establishing an unconditional adopted reporting obligation.",
+        "verdict": "confirm"
+      },
+      "category": "CONDITIONAL_VISIBILITY_ARGUMENT_VS_CHOSEN_FIELD_COST",
+      "source_quotes": [
+        "+If we need allocated resources & limits in the pod status API, the following options have been",
+        "+We can't change the type of the existing field, so instead we",
+        "+`ContainerStatus.AllocatedResourceLimits` alongside `AllocatedResources` (requests).",
+        "+- Extra risk in assuming nothing outside the node ever needs to know container-level allocated resources."
+      ],
+      "finding": "The selected option-3 con is a genuine conditional argument for retaining external container-level allocation visibility. Human reference instead weakens I1's specific existing request-only field because it cannot carry limits and incurs API-evolution costs. The fixed I1 paraphrase does not explicitly state the existing field type or request-only limitation, so exact chosen-mechanism binding must come from source context, not from a stronger invented target. The note also expressly acknowledges R1 supportive evidence absent from the row's WEAKENS ID list.",
+      "status": "OPPOSITE_ARGUMENT_SELECTION_PLUS_CHOSEN_MECHANISM_GRANULARITY_GAP",
+      "repair": "Extract premises/conclusions separately for the chosen baseline mechanism and each conditional alternative. Compare field-specific costs with the selected contract and keep alternative visibility arguments distinct from the hunk's principal changed mechanism effect.",
+      "risk": "The risk sentence remains a defensible qualified support argument. A proposal ban would remove actual G2/C1/C2a supporting sketches; suppressing it is task projection, not deterministic entailment repair."
+    }
+  ],
+  "concrete_case_neutral_repair": {
+    "architecture": "Add a source-first local contribution assessment separate from literal current-evidence entailment. This is an experimental semantic policy mode; keep broad contextual traces diagnostic and keep official S0/reference/scorer fixed.",
+    "local_proof_fields": [
+      "exact local changed operation/predicate and before/current line handles",
+      "operation role: contract definition, cross-boundary contract consumer, owner-internal realization/recovery, monitoring use, chosen-mechanism argument, conditional-alternative argument",
+      "exact fixed target clause with its preserved modality and scope",
+      "normalized before/current target predicate independent of renamed representation",
+      "argument or dependency bridge established locally versus supplied only by event context"
+    ],
+    "decision_rules": [
+      "New operational use is not a new target contract or state definition merely because it aggregates values that embody the target. Context cannot relocate another artifact's contribution.",
+      "A changed configuration validation detail does not establish fresh rationale for a non-goal when the prohibited transition and its enforcement predicate were already unchanged.",
+      "Reporting replacement propagation requires an explicit changed public contract producer or specified cross-boundary accounting dependency. Internal owner recovery and abstract instrumentation operand changes remain implementation consequences absent another source-defined target obligation.",
+      "Preserve direct independent predicate definitions, including equality of desired/allocated/actual and conditional actor-owned boundary sketches. Do not require an explicit why sentence for every valid source-defined support.",
+      "Keep chosen-mechanism tradeoffs separate from each conditional alternative's premises/conclusions; bind the chosen field and scope using source proof rather than strengthening the fixed paraphrase.",
+      "Any target-level choice between a principal change and independent qualified supports needs an explicit documented contribution projection. Do not impose a single relation or priority by default."
+    ],
+    "synthetic_contrasts": [
+      {
+        "negative": "Stable stored service tier remains unchanged; a new validator constrains the current computed capacity category.",
+        "positive": "A new admission rule explicitly rejects a requested change of the stored service tier while running.",
+        "distinction": "stored classification predicate versus calculated profile"
+      },
+      {
+        "negative": "A new monitoring SLO balances counts from an already defined operation-state metric.",
+        "positive": "A newly specified transition metric defines exact operation states and a completion predicate.",
+        "distinction": "using a state model versus locally defining/binding it"
+      },
+      {
+        "negative": "Internal owner recovery now restores an unchanged quantity from local checkpoint instead of a mirrored status copy.",
+        "positive": "A separately specified external accounting consumer changes a public status read and update trigger under an explicit adopted replacement contract.",
+        "distinction": "internal recovery consequence versus cross-boundary dependency contract"
+      },
+      {
+        "negative": "An abstract equality operand is renamed; context elsewhere changes storage.",
+        "positive": "The local source explicitly changes the read/write operation used by the target-governed consumer.",
+        "distinction": "context supplies storage explanation versus context manufactures the missing local operation"
+      },
+      {
+        "negative": "One unchosen alternative has a benefit or risk concerning generic visibility.",
+        "positive": "The source ties a cost to the exact current chosen field and records why its required data cannot fit.",
+        "distinction": "alternative argument versus chosen-mechanism tradeoff"
+      }
+    ],
+    "validation": "Use contrasting synthetic fixtures for these roles and held-out source episodes after policy is fixed. A cached critic-only experiment cannot repair absent primary candidates and did not establish a gain. No 80–85% F1 forecast follows from these audit distinctions.",
+    "risks": [
+      "The newly proposed contribution-role categories are semantic model judgments; deterministic source handles only ensure citation identity.",
+      "Some reference omissions remain underdetermined without a case-neutral annotation policy, so suppressing every extra scored relation would be post-hoc benchmark fitting.",
+      "Narrowing support can remove correct weak/manual documentary support, completion predicates and controller sketches; broad replacement propagation can preserve recovery/instrumentation FPs."
+    ]
+  },
+  "independent_subreview_files": [
+    "tmp/frozen_scope_contract_review.md",
+    "tmp/frozen_scope_contract_review.json"
+  ],
+  "limits": [
+    "The confirmation manifest authenticates stored declarations and source hashes, not reviewer identity or label validity.",
+    "The reference is a single curated repository pilot, not held-out performance evidence or a certified historical replay.",
+    "No frozen labels/notes were passed to a provider; no API calls, released-code edits, Gold changes, scorer changes or case-ID filters were made."
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "artifact_id": "964260d9c2da-F01-H04",
+  "controlled_local_transport_calls": 2,
+  "gold_labels_read": false,
+  "history_sha256": "30f89a8dae945eb588898134b23c1a5276f94dd257ef0ae3f71b9befd670a058",
+  "hosted_v47_accuracy_result_available": false,
+  "legacy_semantic_rejection": [
+    "MODEL_ASSESSED:replacement_lacks_both_source_sides"
+  ],
+  "limitation": "Controlled metadata on one existing interpretation checks guards, not linguistic correctness, retrieval recall or F1.",
+  "new_model_predictions": false,
+  "new_source_guard_accepted": true,
+  "provider_calls": 0,
+  "relation": "supersedes",
+  "replacement_current_proof_origin": "SAME_ARTIFACT_ADDED_CONTEXT",
+  "runtime_s0_sha256": "a852f931aa41c2f67b1522651665feb67fad9d92116413553405fb3d9c3ba784",
+  "source_input_bytes_changed": false,
+  "status": "V47_EXISTING_INTERPRETATION_PROOF_ROUTING_REPLAY_PASSED_NO_API",
+  "target_id": "I1"
+}

@@ -1,0 +1,148 @@
+{
+  "episode_id": "kep1287-alpha-snapshot-20231026-exploratory",
+  "decision_id": "Kubernetes-KEP-1287",
+  "decision": "Support changing CPU and memory resources for running Pods without mandatory Pod or container recreation.",
+  "repository": "kubernetes/enhancements",
+  "accepted_at": "2023-10-26T15:17:39Z",
+  "accepted_at_basis": "IMMUTABLE_SNAPSHOT_COMMIT_DATE_PROXY; the original proposal acceptance date is not established",
+  "cutoff_at": "2024-10-11T00:00:00Z",
+  "central_element_ids": [
+    "G1",
+    "A1",
+    "Q1",
+    "R1",
+    "I1",
+    "I2"
+  ],
+  "human_approved": false,
+  "human_review_required": true,
+  "builder_status": "HISTORICAL_S0_DRAFT_REQUIRES_REVIEW",
+  "research_label": "EXPLORATORY_BASELINE_NOT_GOLD_NOT_HISTORICAL_REPLAY_CERTIFIED",
+  "rationale_time_note": "The pinned 2023 snapshot predates the selected 2024 commit window; the original KEP approval is not proven by the snapshot time.",
+  "baseline_git_commit": "5950905de89aab2be202d28b823701276cbefea0",
+  "baseline_readme_git_blob_sha1": "ce5124cf7975a7d4ce6a122b2cb4006b4bc0ea2d",
+  "baseline_kep_yaml_git_blob_sha1": "fd75bc9a121275a09debf7fd55304b483405bd36",
+  "baseline_kep_yaml_source": "https://github.com/kubernetes/enhancements/blob/5950905de89aab2be202d28b823701276cbefea0/keps/sig-node/1287-in-place-update-pod-resources/kep.yaml",
+  "original_evidence": [],
+  "goals": [
+    {
+      "id": "G1",
+      "text": "Permit CPU and memory resource requests/limits to change in place, without requiring a Pod or container restart.",
+      "keywords": [],
+      "source": "https://github.com/kubernetes/enhancements/blob/5950905de89aab2be202d28b823701276cbefea0/keps/sig-node/1287-in-place-update-pod-resources/README.md#L98",
+      "source_section": "Summary; Goals",
+      "candidate_status": "SCREENED_PARAPHRASE_NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "G2",
+      "text": "Let the initiating actor choose how to handle a resource-resize request that cannot be completed in place.",
+      "keywords": [],
+      "source": "https://github.com/kubernetes/enhancements/blob/5950905de89aab2be202d28b823701276cbefea0/keps/sig-node/1287-in-place-update-pod-resources/README.md#L156",
+      "source_section": "Goals",
+      "candidate_status": "SCREENED_PARAPHRASE_NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "G3",
+      "text": "Make container-resource update and inspection through the CRI usable across Windows and other runtimes.",
+      "keywords": [],
+      "source": "https://github.com/kubernetes/enhancements/blob/5950905de89aab2be202d28b823701276cbefea0/keps/sig-node/1287-in-place-update-pod-resources/README.md#L140",
+      "source_section": "Motivation; Goals",
+      "candidate_status": "SCREENED_PARAPHRASE_NEEDS_HUMAN_REVIEW"
+    }
+  ],
+  "requirements": [
+    {
+      "id": "R1",
+      "text": "Distinguish requested resource settings from allocated and actually applied resource states.",
+      "keywords": [],
+      "source": "https://github.com/kubernetes/enhancements/blob/5950905de89aab2be202d28b823701276cbefea0/keps/sig-node/1287-in-place-update-pod-resources/README.md#L193",
+      "source_section": "Proposal; API Changes",
+      "candidate_status": "SCREENED_PARAPHRASE_NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "R2",
+      "text": "Expose progress and failure states for proposed resource-resize operations.",
+      "keywords": [],
+      "source": "https://github.com/kubernetes/enhancements/blob/5950905de89aab2be202d28b823701276cbefea0/keps/sig-node/1287-in-place-update-pod-resources/README.md#L257",
+      "source_section": "Resize Status",
+      "candidate_status": "SCREENED_PARAPHRASE_NEEDS_HUMAN_REVIEW"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A1",
+      "text": "At the snapshot date, immutable Pod resource settings ordinarily require Pod recreation to change allocations.",
+      "keywords": [],
+      "source": "https://github.com/kubernetes/enhancements/blob/5950905de89aab2be202d28b823701276cbefea0/keps/sig-node/1287-in-place-update-pod-resources/README.md#L123",
+      "source_section": "Motivation",
+      "candidate_status": "SCREENED_PARAPHRASE_NEEDS_HUMAN_REVIEW"
+    }
+  ],
+  "quality_attributes": [
+    {
+      "id": "Q1",
+      "text": "Avoid service disruption for stateful, batch, and low-replica workloads; availability and cost are stated concerns.",
+      "keywords": [],
+      "source": "https://github.com/kubernetes/enhancements/blob/5950905de89aab2be202d28b823701276cbefea0/keps/sig-node/1287-in-place-update-pod-resources/README.md#L123",
+      "source_section": "Motivation",
+      "candidate_status": "SCREENED_PARAPHRASE_NEEDS_HUMAN_REVIEW"
+    }
+  ],
+  "constraints_dependencies": [
+    {
+      "id": "C1",
+      "text": "Delegate recovery and lifecycle handling after an unsuccessful resize to the actor that initiated it.",
+      "keywords": [],
+      "source": "https://github.com/kubernetes/enhancements/blob/5950905de89aab2be202d28b823701276cbefea0/keps/sig-node/1287-in-place-update-pod-resources/README.md#L174",
+      "source_section": "Non-Goals",
+      "candidate_status": "SCREENED_PARAPHRASE_NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "C2",
+      "text": "Keep the proposal focused on CPU and memory, excluding QoS-class changes and several other resource or eviction cases.",
+      "keywords": [],
+      "source": "https://github.com/kubernetes/enhancements/blob/5950905de89aab2be202d28b823701276cbefea0/keps/sig-node/1287-in-place-update-pod-resources/README.md#L174",
+      "source_section": "Non-Goals",
+      "candidate_status": "SCREENED_PARAPHRASE_NEEDS_HUMAN_REVIEW"
+    }
+  ],
+  "implementation_scope": [
+    {
+      "id": "I1",
+      "text": "Represent desired resources through mutable PodSpec fields and report allocated/applied resources through PodStatus.",
+      "keywords": [],
+      "source": "https://github.com/kubernetes/enhancements/blob/5950905de89aab2be202d28b823701276cbefea0/keps/sig-node/1287-in-place-update-pod-resources/README.md#L193",
+      "source_section": "API Changes",
+      "candidate_status": "SCREENED_PARAPHRASE_NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "I2",
+      "text": "Offer per-resource restart-policy choices to control how container resizes are attempted.",
+      "keywords": [],
+      "source": "https://github.com/kubernetes/enhancements/blob/5950905de89aab2be202d28b823701276cbefea0/keps/sig-node/1287-in-place-update-pod-resources/README.md#L230",
+      "source_section": "Container Resize Policy",
+      "candidate_status": "SCREENED_PARAPHRASE_NEEDS_HUMAN_REVIEW"
+    },
+    {
+      "id": "I3",
+      "text": "Model resize operation progress through states such as proposed, in progress, deferred and infeasible.",
+      "keywords": [],
+      "source": "https://github.com/kubernetes/enhancements/blob/5950905de89aab2be202d28b823701276cbefea0/keps/sig-node/1287-in-place-update-pod-resources/README.md#L257",
+      "source_section": "Resize Status",
+      "candidate_status": "SCREENED_PARAPHRASE_NEEDS_HUMAN_REVIEW"
+    }
+  ],
+  "original_alternatives_not_encoded_as_outcome": [
+    {
+      "description": "Scheduler approval of resize was considered; rationale for rejecting it is not documented in this short section.",
+      "source_section": "Alternatives",
+      "source": "https://github.com/kubernetes/enhancements/blob/5950905de89aab2be202d28b823701276cbefea0/keps/sig-node/1287-in-place-update-pod-resources/README.md#L1172"
+    },
+    {
+      "description": "Checkpointing allocated resources in PodSpec was considered; rationale for rejecting it is not documented in this short section.",
+      "source_section": "Alternatives",
+      "source": "https://github.com/kubernetes/enhancements/blob/5950905de89aab2be202d28b823701276cbefea0/keps/sig-node/1287-in-place-update-pod-resources/README.md#L1172"
+    }
+  ],
+  "review_instructions": "Verify all paraphrased statements against the pinned snapshot, confirm chronology and actual acceptance separately, remove conjecture, and only then explicitly approve a revision for controlled experiments."
+}

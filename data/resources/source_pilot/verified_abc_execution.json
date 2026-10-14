@@ -1,0 +1,979 @@
+{
+  "status": "offline_integrity_verified_descriptive_only",
+  "experiment_id": "f24cd3fa446c",
+  "api_calls_by_this_analysis": 0,
+  "protocol": {
+    "experiment_id": "f24cd3fa446c",
+    "created_utc": "2026-10-10T17:47:03.122833+00:00",
+    "config": {
+      "version": "rationalepath_controlled_abc_v1",
+      "plan_sha256": "39cd786e53dfdb1c7de141d1f1964887d31082ffb19d46dc33be2c2828946cec",
+      "inputs_sha256": "febb2c479d0bb06c7a9bb4d2010a13606d0e704a5cd6058f7bc21398469e45ed",
+      "model": "gpt-6-sol",
+      "effort": "low",
+      "max_output_tokens": 8000,
+      "max_attempts_per_stage": 3,
+      "code_hashes": {
+        "controlled_abc.py": "785073a599786def573ecbdeb913ba62915921ed679da4f242bcfe41a4ed22c6",
+        "vendor/v41.py": "afdf2242ab94ab3788d047a406e5df31360f8e3c5569240f83c37410b3f8a961"
+      },
+      "conditions": [
+        "A",
+        "B",
+        "C"
+      ],
+      "common_verified_context_filter": true,
+      "retry_policy": "Explicit bounded retry; no automatic retries; preserve every attempt",
+      "primary_availability": "First attempt; eventual completion reported separately"
+    }
+  },
+  "integrity": {
+    "unmodified_runner_audit_exactly_matches_uploaded_audit": true,
+    "runner_replayed_attempts": 2733,
+    "errors": [],
+    "attempt_sequence_and_bound_checks": "passed",
+    "completed_stage_not_retried": "passed",
+    "frozen_inputs_and_human_sample_match": "passed",
+    "code_hashes_match_frozen_protocol": true,
+    "scope_limitation": "Frozen input bytes, requests, records, parsed API content and deterministic gates verified. Upstream raw evidence packet files were not in this uploaded run and are not independently re-hashed here."
+  },
+  "cases": 298,
+  "cohort_by_kind": {
+    "Discussion": 116,
+    "Issue": 90,
+    "Pull request": 92
+  },
+  "cohort_source_group_counts": {
+    "organization:tauri-apps": 1,
+    "repository:Alexhuszagh/rust-lexical": 42,
+    "repository:Azure/Enterprise-Scale": 20,
+    "repository:DioxusLabs/dioxus": 91,
+    "repository:Expensify/App": 32,
+    "repository:H-uru/Plasma": 46,
+    "repository:Ivy-Apps/ivy-wallet": 1,
+    "repository:OWASP/ASVS": 1,
+    "repository:WordPress/gutenberg": 7,
+    "repository:amannn/next-intl": 7,
+    "repository:apache/airflow": 2,
+    "repository:apache/apisix": 2,
+    "repository:apache/datafusion": 3,
+    "repository:ch4mpy/spring-addons": 3,
+    "repository:dbt-labs/dbt": 2,
+    "repository:dotnet/wpf": 2,
+    "repository:flutter/flutter": 1,
+    "repository:grpc/grpc-dotnet": 1,
+    "repository:k2-fsa/icefall": 1,
+    "repository:keycloak/keycloak": 4,
+    "repository:nank1ro/flutter-shadcn-ui": 1,
+    "repository:openbao/openbao": 1,
+    "repository:pocketbase/pocketbase": 1,
+    "repository:pointfreeco/swift-composable-architecture": 2,
+    "repository:prisma/orm": 2,
+    "repository:pulumi/pulumi-kubernetes-operator": 1,
+    "repository:rails/rails": 5,
+    "repository:razshare/sveltekit-sse": 1,
+    "repository:reactwg/react-native-new-architecture": 2,
+    "repository:streetcomplete/StreetComplete": 3,
+    "repository:symfony/symfony": 2,
+    "repository:tauri-apps/tauri": 1,
+    "repository:thanos-io/thanos": 1,
+    "repository:tokio-rs/tokio": 1,
+    "repository:valkey-io/valkey": 2,
+    "repository:w3c/activitystreams": 1,
+    "repository:xmolecules/jmolecules": 2
+  },
+  "cohort_repository_groups": 36,
+  "cohort_organization_groups": 1,
+  "availability": {
+    "A": {
+      "first_attempt_complete_cases": 259,
+      "eventual_complete_cases": 293,
+      "failed_or_pending_cases": 5
+    },
+    "B": {
+      "first_attempt_complete_cases": 298,
+      "eventual_complete_cases": 298,
+      "failed_or_pending_cases": 0
+    },
+    "C": {
+      "first_attempt_complete_cases": 297,
+      "eventual_complete_cases": 298,
+      "failed_or_pending_cases": 0
+    }
+  },
+  "all_attempts_usage": {
+    "A": {
+      "recorded_requests": 944,
+      "input_tokens": 5159949,
+      "output_tokens": 950539,
+      "total_tokens": 6110488
+    },
+    "B": {
+      "recorded_requests": 894,
+      "input_tokens": 4813379,
+      "output_tokens": 892252,
+      "total_tokens": 5705631
+    },
+    "C": {
+      "recorded_requests": 895,
+      "input_tokens": 4340097,
+      "output_tokens": 630641,
+      "total_tokens": 4970738,
+      "attempts_without_usage": 1
+    }
+  },
+  "all_attempts_statuses": {
+    "completed": 2677,
+    "rejected": 55,
+    "error": 1
+  },
+  "all_recorded_requests": 2733,
+  "all_recorded_tokens": 16786857,
+  "token_total_scope": "Sum of available reported usage; one C HTTP error has no usage, so this is a recorded lower bound, not certified complete billable consumption.",
+  "response_model_counts": {
+    "gpt-6-sol": 2732,
+    "not_recorded": 1
+  },
+  "reported_cost_denominators": {
+    "A": {
+      "all_recorded_tokens_per_planned_case": 20504.993288590606,
+      "all_recorded_tokens_per_eventually_completed_case": 20854.907849829353,
+      "scope": "All recorded attempts, including rejected outputs and successful stages of unfinished chains. Missing usage is unknown."
+    },
+    "B": {
+      "all_recorded_tokens_per_planned_case": 19146.412751677854,
+      "all_recorded_tokens_per_eventually_completed_case": 19146.412751677854,
+      "scope": "All recorded attempts, including rejected outputs and successful stages of unfinished chains. Missing usage is unknown."
+    },
+    "C": {
+      "all_recorded_tokens_per_planned_case": 16680.328859060402,
+      "all_recorded_tokens_per_eventually_completed_case": 16680.328859060402,
+      "scope": "All recorded attempts, including rejected outputs and successful stages of unfinished chains. Missing usage is unknown."
+    }
+  },
+  "epochs": [
+    {
+      "epoch": "first_pass",
+      "cutoff_utc": "2026-10-11T00:42:01.675837+00:00",
+      "requests_including_probe": 2652,
+      "record_statuses": {
+        "completed": 2612,
+        "rejected": 39,
+        "error": 1
+      },
+      "availability": {
+        "A": {
+          "first_attempt_complete_cases": 259,
+          "eventual_complete_cases": 259,
+          "failed_or_pending_cases": 39
+        },
+        "B": {
+          "first_attempt_complete_cases": 298,
+          "eventual_complete_cases": 298,
+          "failed_or_pending_cases": 0
+        },
+        "C": {
+          "first_attempt_complete_cases": 297,
+          "eventual_complete_cases": 297,
+          "failed_or_pending_cases": 1
+        }
+      },
+      "all_attempts_usage": {
+        "A": {
+          "recorded_requests": 864,
+          "input_tokens": 4607642,
+          "output_tokens": 878343,
+          "total_tokens": 5485985
+        },
+        "B": {
+          "recorded_requests": 894,
+          "input_tokens": 4813379,
+          "output_tokens": 892252,
+          "total_tokens": 5705631
+        },
+        "C": {
+          "recorded_requests": 894,
+          "input_tokens": 4329385,
+          "output_tokens": 630271,
+          "total_tokens": 4959656,
+          "attempts_without_usage": 1
+        }
+      },
+      "snapshot_exactly_reproduced": {
+        "availability": true,
+        "all_attempts_usage": true,
+        "rows": true
+      },
+      "run_summary_requests_this_run": 2643
+    },
+    {
+      "epoch": "retry_1",
+      "cutoff_utc": "2026-10-11T01:06:25.562715+00:00",
+      "requests_including_probe": 68,
+      "record_statuses": {
+        "rejected": 11,
+        "completed": 57
+      },
+      "availability": {
+        "A": {
+          "first_attempt_complete_cases": 259,
+          "eventual_complete_cases": 287,
+          "failed_or_pending_cases": 11
+        },
+        "B": {
+          "first_attempt_complete_cases": 298,
+          "eventual_complete_cases": 298,
+          "failed_or_pending_cases": 0
+        },
+        "C": {
+          "first_attempt_complete_cases": 297,
+          "eventual_complete_cases": 298,
+          "failed_or_pending_cases": 0
+        }
+      },
+      "all_attempts_usage": {
+        "A": {
+          "recorded_requests": 931,
+          "input_tokens": 5068693,
+          "output_tokens": 941872,
+          "total_tokens": 6010565
+        },
+        "B": {
+          "recorded_requests": 894,
+          "input_tokens": 4813379,
+          "output_tokens": 892252,
+          "total_tokens": 5705631
+        },
+        "C": {
+          "recorded_requests": 895,
+          "input_tokens": 4340097,
+          "output_tokens": 630641,
+          "total_tokens": 4970738,
+          "attempts_without_usage": 1
+        }
+      },
+      "snapshot_exactly_reproduced": {
+        "availability": true,
+        "all_attempts_usage": true,
+        "rows": true
+      },
+      "run_summary_requests_this_run": 68
+    },
+    {
+      "epoch": "final",
+      "cutoff_utc": "2026-10-11T01:13:14.920016+00:00",
+      "requests_including_probe": 13,
+      "record_statuses": {
+        "rejected": 5,
+        "completed": 8
+      },
+      "availability": {
+        "A": {
+          "first_attempt_complete_cases": 259,
+          "eventual_complete_cases": 293,
+          "failed_or_pending_cases": 5
+        },
+        "B": {
+          "first_attempt_complete_cases": 298,
+          "eventual_complete_cases": 298,
+          "failed_or_pending_cases": 0
+        },
+        "C": {
+          "first_attempt_complete_cases": 297,
+          "eventual_complete_cases": 298,
+          "failed_or_pending_cases": 0
+        }
+      },
+      "all_attempts_usage": {
+        "A": {
+          "recorded_requests": 944,
+          "input_tokens": 5159949,
+          "output_tokens": 950539,
+          "total_tokens": 6110488
+        },
+        "B": {
+          "recorded_requests": 894,
+          "input_tokens": 4813379,
+          "output_tokens": 892252,
+          "total_tokens": 5705631
+        },
+        "C": {
+          "recorded_requests": 895,
+          "input_tokens": 4340097,
+          "output_tokens": 630641,
+          "total_tokens": 4970738,
+          "attempts_without_usage": 1
+        }
+      },
+      "snapshot_exactly_reproduced": {
+        "availability": true,
+        "all_attempts_usage": true,
+        "rows": true
+      },
+      "run_summary_requests_this_run": 13
+    }
+  ],
+  "rejected_attempt_taxonomy": {
+    "rejected_attempts": 55,
+    "by_stage": {
+      "designbridge_stage3": 39,
+      "designbridge_stage1": 16
+    },
+    "overlapping_gate_reasons": {
+      "stage3_trace": 39,
+      "stage3_coverage": 23,
+      "stage1_provenance": 14,
+      "stage1_inventory": 15
+    },
+    "mutually_exclusive_reason_combinations": {
+      "stage3_trace": 16,
+      "stage3_coverage|stage3_trace": 23,
+      "stage1_inventory|stage1_provenance": 13,
+      "stage1_inventory": 2,
+      "stage1_provenance": 1
+    },
+    "issue_occurrences": {
+      "recommendations_not_structurally_traceable": 52,
+      "recommendation_missing_inventory_claim_reference": 49,
+      "stage3_missing_required_inventory_items": 36,
+      "nonmatching_claim_quotes": 16,
+      "inventory_items_not_source_linked": 20,
+      "inventory_references_nonverified_or_unknown_claim": 20,
+      "recommendation_unknown_evidence_id": 3,
+      "recommendation_missing_cited_claim_source_id": 3,
+      "claim_unknown_evidence_id": 1,
+      "claim_empty_quote": 1
+    },
+    "definition": "Gate reasons count attempts. Issue occurrences count individual claims, inventory items, recommendations or coverage entries; multiple reasons can overlap within one attempt. These are mechanical defects, not human semantic judgments."
+  },
+  "latest_structural_diagnostic_prevalence": {
+    "A": {
+      "latest_by_stage": {
+        "designbridge_stage1": {
+          "recorded_stages": 298,
+          "completed_stages": 298,
+          "diagnosed_stages": 298,
+          "structural_pass_stages": 298,
+          "structural_fail_stages": 0
+        },
+        "designbridge_stage2": {
+          "recorded_stages": 298,
+          "completed_stages": 298,
+          "diagnosed_stages": 298,
+          "structural_pass_stages": 298,
+          "structural_fail_stages": 0
+        },
+        "designbridge_stage3": {
+          "recorded_stages": 298,
+          "completed_stages": 293,
+          "diagnosed_stages": 298,
+          "structural_pass_stages": 293,
+          "structural_fail_stages": 5,
+          "reason_stage3_trace": 5,
+          "reason_stage3_coverage": 3
+        }
+      },
+      "latest_by_chain": {
+        "first_complete": 259,
+        "eventual_complete": 293,
+        "latest_all_applicable_diagnostics_pass": 293,
+        "latest_any_applicable_diagnostic_failure": 5
+      },
+      "scope": "Applicable structural diagnostics only. C has no inventory or coverage diagnostic; its Stage 2 pass is vacuous."
+    },
+    "B": {
+      "latest_by_stage": {
+        "designbridge_stage1": {
+          "recorded_stages": 298,
+          "completed_stages": 298,
+          "diagnosed_stages": 298,
+          "structural_pass_stages": 280,
+          "structural_fail_stages": 18,
+          "reason_stage1_provenance": 17,
+          "reason_stage1_inventory": 18
+        },
+        "designbridge_stage2": {
+          "recorded_stages": 298,
+          "completed_stages": 298,
+          "diagnosed_stages": 298,
+          "structural_pass_stages": 298,
+          "structural_fail_stages": 0
+        },
+        "designbridge_stage3": {
+          "recorded_stages": 298,
+          "completed_stages": 298,
+          "diagnosed_stages": 298,
+          "structural_pass_stages": 275,
+          "structural_fail_stages": 23,
+          "reason_stage3_trace": 23,
+          "reason_stage3_coverage": 12
+        }
+      },
+      "latest_by_chain": {
+        "first_complete": 298,
+        "eventual_complete": 298,
+        "latest_all_applicable_diagnostics_pass": 257,
+        "latest_any_applicable_diagnostic_failure": 41
+      },
+      "scope": "Applicable structural diagnostics only. C has no inventory or coverage diagnostic; its Stage 2 pass is vacuous."
+    },
+    "C": {
+      "latest_by_stage": {
+        "designbridge_stage1": {
+          "recorded_stages": 298,
+          "completed_stages": 298,
+          "diagnosed_stages": 298,
+          "structural_pass_stages": 287,
+          "structural_fail_stages": 11,
+          "reason_stage1_provenance": 11
+        },
+        "designbridge_stage2": {
+          "recorded_stages": 298,
+          "completed_stages": 298,
+          "diagnosed_stages": 298,
+          "structural_pass_stages": 298,
+          "structural_fail_stages": 0
+        },
+        "designbridge_stage3": {
+          "recorded_stages": 298,
+          "completed_stages": 298,
+          "diagnosed_stages": 298,
+          "structural_pass_stages": 298,
+          "structural_fail_stages": 0
+        }
+      },
+      "latest_by_chain": {
+        "first_complete": 297,
+        "eventual_complete": 298,
+        "latest_all_applicable_diagnostics_pass": 287,
+        "latest_any_applicable_diagnostic_failure": 11
+      },
+      "scope": "Applicable structural diagnostics only. C has no inventory or coverage diagnostic; its Stage 2 pass is vacuous."
+    }
+  },
+  "latest_content_counts": {
+    "A": {
+      "counts": {
+        "claims_in_latest_stage1": 3492,
+        "matching_claim_quotes_in_latest_stage1": 3492,
+        "exact_quote_matches_in_latest_stage1": 3492,
+        "newline_normalized_quote_matches_in_latest_stage1": 0,
+        "inventory_items_in_latest_stage1": 2374,
+        "source_linked_inventory_items_in_latest_stage1": 2374,
+        "recommendations_in_latest_stage3": 1364,
+        "structurally_traceable_recommendations_in_latest_stage3": 1357,
+        "accepted_final_recommendations": 1341,
+        "structurally_traceable_accepted_final_recommendations": 1341,
+        "latest_stage3_blank_recommendation_texts": 0,
+        "rejected_latest_final_recommendations": 23
+      },
+      "scope": "Mechanical occurrence counts across latest saved stage outputs. Quote matching is not semantic entailment. C has no inventory. Latest A rejected final outputs are separated from accepted finals."
+    },
+    "B": {
+      "counts": {
+        "claims_in_latest_stage1": 3485,
+        "matching_claim_quotes_in_latest_stage1": 3465,
+        "exact_quote_matches_in_latest_stage1": 3465,
+        "newline_normalized_quote_matches_in_latest_stage1": 0,
+        "inventory_items_in_latest_stage1": 2344,
+        "source_linked_inventory_items_in_latest_stage1": 2315,
+        "recommendations_in_latest_stage3": 1376,
+        "structurally_traceable_recommendations_in_latest_stage3": 1350,
+        "accepted_final_recommendations": 1376,
+        "structurally_traceable_accepted_final_recommendations": 1350,
+        "latest_stage3_blank_recommendation_texts": 0
+      },
+      "scope": "Mechanical occurrence counts across latest saved stage outputs. Quote matching is not semantic entailment. C has no inventory. Latest A rejected final outputs are separated from accepted finals."
+    },
+    "C": {
+      "counts": {
+        "claims_in_latest_stage1": 2932,
+        "matching_claim_quotes_in_latest_stage1": 2920,
+        "exact_quote_matches_in_latest_stage1": 2920,
+        "newline_normalized_quote_matches_in_latest_stage1": 0,
+        "inventory_items_in_latest_stage1": 0,
+        "source_linked_inventory_items_in_latest_stage1": 0,
+        "recommendations_in_latest_stage3": 1316,
+        "structurally_traceable_recommendations_in_latest_stage3": 1316,
+        "accepted_final_recommendations": 1316,
+        "structurally_traceable_accepted_final_recommendations": 1316,
+        "latest_stage3_blank_recommendation_texts": 0
+      },
+      "scope": "Mechanical occurrence counts across latest saved stage outputs. Quote matching is not semantic entailment. C has no inventory. Latest A rejected final outputs are separated from accepted finals."
+    }
+  },
+  "remaining_unavailable_stages": [
+    {
+      "case_id": "DB_14008fc3220e2b063c1f3345",
+      "url": "https://github.com/DioxusLabs/dioxus/discussions/5031",
+      "kind": "Discussion",
+      "source_group": "repository:DioxusLabs/dioxus",
+      "condition": "A",
+      "arm": "designbridge_stage3",
+      "status": "rejected",
+      "attempts": 3,
+      "frozen_max_attempts": 3,
+      "attempt_cap_exhausted": true,
+      "gate_reasons": [
+        "stage3_trace"
+      ],
+      "diagnostics": {
+        "verification_decisions": [
+          {
+            "recommendation_index": 0,
+            "structural_trace_status": "traceable",
+            "note": "Checks identifiers and exact citations only; no semantic correctness claim."
+          },
+          {
+            "recommendation_index": 1,
+            "structural_trace_status": "traceable",
+            "note": "Checks identifiers and exact citations only; no semantic correctness claim."
+          },
+          {
+            "recommendation_index": 2,
+            "structural_trace_status": "traceable",
+            "note": "Checks identifiers and exact citations only; no semantic correctness claim."
+          },
+          {
+            "recommendation_index": 3,
+            "structural_trace_status": "traceable",
+            "note": "Checks identifiers and exact citations only; no semantic correctness claim."
+          },
+          {
+            "recommendation_index": 4,
+            "structural_trace_status": "needs_validation",
+            "note": "Checks identifiers and exact citations only; no semantic correctness claim."
+          }
+        ],
+        "coverage_checks": {
+          "status": "accounted_for",
+          "required_indexes": [
+            0,
+            4,
+            6,
+            7
+          ],
+          "addressed_indexes": [
+            0,
+            4,
+            6,
+            7
+          ],
+          "deferred_indexes": [],
+          "missing_indexes": [],
+          "invalid_deferred_positions": [],
+          "note": "Mechanical accounting is not semantic completeness or action quality."
+        },
+        "structural_pass": false,
+        "gate_reasons": [
+          "stage3_trace"
+        ],
+        "enforced": true,
+        "inventory_checks_applicable": true
+      },
+      "latest_relative_path": "records/DB_14008fc3220e2b063c1f3345/A/designbridge_stage3/attempt_0003.json"
+    },
+    {
+      "case_id": "DB_942b7241dd3a41014db9c08b",
+      "url": "https://github.com/DioxusLabs/dioxus/issues/5722",
+      "kind": "Issue",
+      "source_group": "repository:DioxusLabs/dioxus",
+      "condition": "A",
+      "arm": "designbridge_stage3",
+      "status": "rejected",
+      "attempts": 3,
+      "frozen_max_attempts": 3,
+      "attempt_cap_exhausted": true,
+      "gate_reasons": [
+        "stage3_trace",
+        "stage3_coverage"
+      ],
+      "diagnostics": {
+        "verification_decisions": [
+          {
+            "recommendation_index": 0,
+            "structural_trace_status": "traceable",
+            "note": "Checks identifiers and exact citations only; no semantic correctness claim."
+          },
+          {
+            "recommendation_index": 1,
+            "structural_trace_status": "traceable",
+            "note": "Checks identifiers and exact citations only; no semantic correctness claim."
+          },
+          {
+            "recommendation_index": 2,
+            "structural_trace_status": "traceable",
+            "note": "Checks identifiers and exact citations only; no semantic correctness claim."
+          },
+          {
+            "recommendation_index": 3,
+            "structural_trace_status": "needs_validation",
+            "note": "Checks identifiers and exact citations only; no semantic correctness claim."
+          }
+        ],
+        "coverage_checks": {
+          "status": "coverage_gap",
+          "required_indexes": [
+            0,
+            4,
+            6,
+            7
+          ],
+          "addressed_indexes": [
+            0,
+            4,
+            6
+          ],
+          "deferred_indexes": [],
+          "missing_indexes": [
+            7
+          ],
+          "invalid_deferred_positions": [],
+          "note": "Mechanical accounting is not semantic completeness or action quality."
+        },
+        "structural_pass": false,
+        "gate_reasons": [
+          "stage3_trace",
+          "stage3_coverage"
+        ],
+        "enforced": true,
+        "inventory_checks_applicable": true
+      },
+      "latest_relative_path": "records/DB_942b7241dd3a41014db9c08b/A/designbridge_stage3/attempt_0003.json"
+    },
+    {
+      "case_id": "DB_55635d152a448b45f45de589",
+      "url": "https://github.com/rails/rails/pull/58798",
+      "kind": "Pull request",
+      "source_group": "repository:rails/rails",
+      "condition": "A",
+      "arm": "designbridge_stage3",
+      "status": "rejected",
+      "attempts": 3,
+      "frozen_max_attempts": 3,
+      "attempt_cap_exhausted": true,
+      "gate_reasons": [
+        "stage3_trace",
+        "stage3_coverage"
+      ],
+      "diagnostics": {
+        "verification_decisions": [
+          {
+            "recommendation_index": 0,
+            "structural_trace_status": "traceable",
+            "note": "Checks identifiers and exact citations only; no semantic correctness claim."
+          },
+          {
+            "recommendation_index": 1,
+            "structural_trace_status": "traceable",
+            "note": "Checks identifiers and exact citations only; no semantic correctness claim."
+          },
+          {
+            "recommendation_index": 2,
+            "structural_trace_status": "traceable",
+            "note": "Checks identifiers and exact citations only; no semantic correctness claim."
+          },
+          {
+            "recommendation_index": 3,
+            "structural_trace_status": "needs_validation",
+            "note": "Checks identifiers and exact citations only; no semantic correctness claim."
+          },
+          {
+            "recommendation_index": 4,
+            "structural_trace_status": "traceable",
+            "note": "Checks identifiers and exact citations only; no semantic correctness claim."
+          }
+        ],
+        "coverage_checks": {
+          "status": "coverage_gap",
+          "required_indexes": [
+            0,
+            2,
+            3,
+            4,
+            7
+          ],
+          "addressed_indexes": [
+            0,
+            2,
+            3,
+            7
+          ],
+          "deferred_indexes": [],
+          "missing_indexes": [
+            4
+          ],
+          "invalid_deferred_positions": [],
+          "note": "Mechanical accounting is not semantic completeness or action quality."
+        },
+        "structural_pass": false,
+        "gate_reasons": [
+          "stage3_trace",
+          "stage3_coverage"
+        ],
+        "enforced": true,
+        "inventory_checks_applicable": true
+      },
+      "latest_relative_path": "records/DB_55635d152a448b45f45de589/A/designbridge_stage3/attempt_0003.json"
+    },
+    {
+      "case_id": "DB_5e4f162eb985156828029046",
+      "url": "https://github.com/rails/rails/discussions/52809",
+      "kind": "Discussion",
+      "source_group": "repository:rails/rails",
+      "condition": "A",
+      "arm": "designbridge_stage3",
+      "status": "rejected",
+      "attempts": 3,
+      "frozen_max_attempts": 3,
+      "attempt_cap_exhausted": true,
+      "gate_reasons": [
+        "stage3_trace"
+      ],
+      "diagnostics": {
+        "verification_decisions": [
+          {
+            "recommendation_index": 0,
+            "structural_trace_status": "traceable",
+            "note": "Checks identifiers and exact citations only; no semantic correctness claim."
+          },
+          {
+            "recommendation_index": 1,
+            "structural_trace_status": "traceable",
+            "note": "Checks identifiers and exact citations only; no semantic correctness claim."
+          },
+          {
+            "recommendation_index": 2,
+            "structural_trace_status": "needs_validation",
+            "note": "Checks identifiers and exact citations only; no semantic correctness claim."
+          },
+          {
+            "recommendation_index": 3,
+            "structural_trace_status": "needs_validation",
+            "note": "Checks identifiers and exact citations only; no semantic correctness claim."
+          }
+        ],
+        "coverage_checks": {
+          "status": "accounted_for",
+          "required_indexes": [
+            0,
+            1,
+            3
+          ],
+          "addressed_indexes": [
+            0,
+            1,
+            3
+          ],
+          "deferred_indexes": [],
+          "missing_indexes": [],
+          "invalid_deferred_positions": [],
+          "note": "Mechanical accounting is not semantic completeness or action quality."
+        },
+        "structural_pass": false,
+        "gate_reasons": [
+          "stage3_trace"
+        ],
+        "enforced": true,
+        "inventory_checks_applicable": true
+      },
+      "latest_relative_path": "records/DB_5e4f162eb985156828029046/A/designbridge_stage3/attempt_0003.json"
+    },
+    {
+      "case_id": "DB_0076718796dc548b3ab51a25",
+      "url": "https://github.com/Expensify/App/pull/102022",
+      "kind": "Pull request",
+      "source_group": "repository:Expensify/App",
+      "condition": "A",
+      "arm": "designbridge_stage3",
+      "status": "rejected",
+      "attempts": 3,
+      "frozen_max_attempts": 3,
+      "attempt_cap_exhausted": true,
+      "gate_reasons": [
+        "stage3_trace",
+        "stage3_coverage"
+      ],
+      "diagnostics": {
+        "verification_decisions": [
+          {
+            "recommendation_index": 0,
+            "structural_trace_status": "needs_validation",
+            "note": "Checks identifiers and exact citations only; no semantic correctness claim."
+          },
+          {
+            "recommendation_index": 1,
+            "structural_trace_status": "traceable",
+            "note": "Checks identifiers and exact citations only; no semantic correctness claim."
+          },
+          {
+            "recommendation_index": 2,
+            "structural_trace_status": "traceable",
+            "note": "Checks identifiers and exact citations only; no semantic correctness claim."
+          },
+          {
+            "recommendation_index": 3,
+            "structural_trace_status": "needs_validation",
+            "note": "Checks identifiers and exact citations only; no semantic correctness claim."
+          },
+          {
+            "recommendation_index": 4,
+            "structural_trace_status": "traceable",
+            "note": "Checks identifiers and exact citations only; no semantic correctness claim."
+          }
+        ],
+        "coverage_checks": {
+          "status": "coverage_gap",
+          "required_indexes": [
+            1,
+            2,
+            3
+          ],
+          "addressed_indexes": [
+            1,
+            2
+          ],
+          "deferred_indexes": [],
+          "missing_indexes": [
+            3
+          ],
+          "invalid_deferred_positions": [],
+          "note": "Mechanical accounting is not semantic completeness or action quality."
+        },
+        "structural_pass": false,
+        "gate_reasons": [
+          "stage3_trace",
+          "stage3_coverage"
+        ],
+        "enforced": true,
+        "inventory_checks_applicable": true
+      },
+      "latest_relative_path": "records/DB_0076718796dc548b3ab51a25/A/designbridge_stage3/attempt_0003.json"
+    }
+  ],
+  "human_sample": {
+    "pilot": {
+      "cases": 6,
+      "by_kind": {
+        "Issue": 2,
+        "Pull request": 2,
+        "Discussion": 2
+      },
+      "source_groups": 6,
+      "repository_groups": 6,
+      "organization_groups": 0,
+      "source_group_case_counts": {
+        "repository:Alexhuszagh/rust-lexical": 1,
+        "repository:Azure/Enterprise-Scale": 1,
+        "repository:DioxusLabs/dioxus": 1,
+        "repository:Expensify/App": 1,
+        "repository:H-uru/Plasma": 1,
+        "repository:keycloak/keycloak": 1
+      },
+      "availability": {
+        "A": {
+          "first_attempt_complete_cases": 5,
+          "eventual_complete_cases": 6,
+          "failed_or_pending_cases": 0
+        },
+        "B": {
+          "first_attempt_complete_cases": 6,
+          "eventual_complete_cases": 6,
+          "failed_or_pending_cases": 0
+        },
+        "C": {
+          "first_attempt_complete_cases": 6,
+          "eventual_complete_cases": 6,
+          "failed_or_pending_cases": 0
+        }
+      }
+    },
+    "main": {
+      "cases": 60,
+      "by_kind": {
+        "Issue": 20,
+        "Pull request": 20,
+        "Discussion": 20
+      },
+      "source_groups": 37,
+      "repository_groups": 36,
+      "organization_groups": 1,
+      "source_group_case_counts": {
+        "organization:tauri-apps": 1,
+        "repository:Alexhuszagh/rust-lexical": 2,
+        "repository:Azure/Enterprise-Scale": 2,
+        "repository:DioxusLabs/dioxus": 2,
+        "repository:Expensify/App": 2,
+        "repository:H-uru/Plasma": 2,
+        "repository:Ivy-Apps/ivy-wallet": 1,
+        "repository:OWASP/ASVS": 1,
+        "repository:WordPress/gutenberg": 2,
+        "repository:amannn/next-intl": 3,
+        "repository:apache/airflow": 2,
+        "repository:apache/apisix": 2,
+        "repository:apache/datafusion": 2,
+        "repository:ch4mpy/spring-addons": 2,
+        "repository:dbt-labs/dbt": 2,
+        "repository:dotnet/wpf": 2,
+        "repository:flutter/flutter": 1,
+        "repository:grpc/grpc-dotnet": 1,
+        "repository:k2-fsa/icefall": 1,
+        "repository:keycloak/keycloak": 1,
+        "repository:nank1ro/flutter-shadcn-ui": 1,
+        "repository:openbao/openbao": 1,
+        "repository:pocketbase/pocketbase": 1,
+        "repository:pointfreeco/swift-composable-architecture": 2,
+        "repository:prisma/orm": 2,
+        "repository:pulumi/pulumi-kubernetes-operator": 1,
+        "repository:rails/rails": 2,
+        "repository:razshare/sveltekit-sse": 1,
+        "repository:reactwg/react-native-new-architecture": 2,
+        "repository:streetcomplete/StreetComplete": 3,
+        "repository:symfony/symfony": 2,
+        "repository:tauri-apps/tauri": 1,
+        "repository:thanos-io/thanos": 1,
+        "repository:tokio-rs/tokio": 1,
+        "repository:valkey-io/valkey": 2,
+        "repository:w3c/activitystreams": 1,
+        "repository:xmolecules/jmolecules": 2
+      },
+      "availability": {
+        "A": {
+          "first_attempt_complete_cases": 55,
+          "eventual_complete_cases": 60,
+          "failed_or_pending_cases": 0
+        },
+        "B": {
+          "first_attempt_complete_cases": 60,
+          "eventual_complete_cases": 60,
+          "failed_or_pending_cases": 0
+        },
+        "C": {
+          "first_attempt_complete_cases": 59,
+          "eventual_complete_cases": 60,
+          "failed_or_pending_cases": 0
+        }
+      }
+    }
+  },
+  "fixed_content_B_policy_replay": {
+    "status": "mechanical_fixed_content_policy_replay_only",
+    "condition": "B",
+    "cases": 298,
+    "accepted_if_every_A_predicate_required_on_the_existing_B_chain": 257,
+    "rejected_if_any_A_predicate_failed_on_the_existing_B_chain": 41,
+    "note": "This reuses the diagnostics of fixed B outputs. It neither reruns B with enforcement nor estimates semantic quality or counterfactual generation after rejection."
+  },
+  "condition_contrast_limits": [
+    "A and B share prompt templates and schemas, but generated contexts and later requests differ across stochastic trajectories. Both filter invalid quotes and inventory links before propagation. A versus B isolates rejection policy and its downstream blocking/retry consequences, not all validation.",
+    "B versus C changes inventory representation, coverage instructions and recommendation references as a bundle; it is not a one-field-only ablation.",
+    "Same model, source inputs, output limits and three-stage schedule do not imply equal realized tokens. A retries and gate blocking change realized compute.",
+    "No independent human semantic annotations for these new outputs are included in this archive. No superiority claim is supported by this audit."
+  ],
+  "file_hashes": {
+    "uploaded_protocol_sha256": "5722f8fa45bfcd36b348310f96231e3b07cfc3bba08ec3b3d88471260db3d810",
+    "uploaded_inputs_sha256": "2db73bbef45967650848b38e26e367d22d298135cc0c2c6eb6f46e3ab971282f",
+    "uploaded_human_sample_sha256": "68160eb2c6ac4c03ffdb2e3080c9298abb2b394bc6150f69eb204a301bf8b445",
+    "analysis_script_sha256": "c307ef1ac867d63f309561af3e09c4e56c5398dd775464f7d3b074af64002b93"
+  }
+}

@@ -1,0 +1,942 @@
+{
+  "format_version": 1,
+  "status": "ENGLISH_ARCHIVE_COPIES_WITH_PROTECTED_DATA_UNCHANGED",
+  "original_source_package": {
+    "filename": "EvoRationale_GitHub_Reviewed_EN.zip",
+    "sha256": "fd7edc4e745266890a9825cccff23f1ccff8104a2a7ca9f8b127be54a6177c2f",
+    "policy": "The original release ZIP bytes are preserved in the previous reviewed source package, outside this English export. Adapted archives in this export are not byte-identical original releases."
+  },
+  "adaptation_policy": "Translate Persian Markdown/TXT documents, rename their filenames with EN suffixes, update direct human-readable links, replace Persian path fixture words with explicit Unicode escapes, and translate one generated README literal. All other members are byte unchanged. Original historical checksum files remain dated attestations of original releases, not hashes of these adapted copies. Current export bytes are recorded in ARTIFACT_MANIFEST.json.",
+  "unchanged_data_policy": "All fixed-S0 inputs, JSON/JSONL captures and results, CSV/TSV labels and logs, Excel submissions, source XML, PDF files, production runtime modules, and exact-triple scorer bytes are unchanged. No new inference, API requests, semantic evaluation, or experiment was performed.",
+  "changed_top_level_archive_paths": [
+    "archive/original_v41_workspace/EvoRationale_v41_PATCH_TESTED.zip",
+    "archive/original_v41_workspace/research/EvoRationale_PaperAligned_v4_FULL_TESTED.zip",
+    "archive/original_v41_workspace/research/EvoRationale_v42_Development_Pilot_EN.zip",
+    "archive/original_v41_workspace/research/EvoRationale_v43_DiffScope_Development_EN.zip",
+    "archive/original_v41_workspace/research/EvoRationale_v44_EventCoverage_Reviewed_EN.zip",
+    "archive/original_v41_workspace/research/EvoRationale_v45_DeltaReview_Tested_EN.zip",
+    "archive/original_v41_workspace/research/EvoRationale_v46_EvidenceTrace_Tested_EN.zip",
+    "archive/original_v41_workspace/research/EvoRationale_v47_GroundedTrace_Tested_EN.zip",
+    "archive/original_v41_workspace/research/EvoRationale_v48_V46PolicyRepair_Tested_EN (1).zip",
+    "archive/original_v41_workspace/research/EvoRationale_v49_PairReview_Experimental_Tested_EN.zip",
+    "archive/original_v41_workspace/research/RationalePath_ABC_Evidence_Checkpoint.zip",
+    "archive/release_packages/EvoRationale_v42_Development_Pilot_EN.zip",
+    "archive/release_packages/EvoRationale_v43_DiffScope_Development_EN.zip",
+    "archive/release_packages/EvoRationale_v44_EventCoverage_Reviewed_EN.zip",
+    "archive/release_packages/EvoRationale_v45_DeltaReview_Tested_EN.zip",
+    "archive/release_packages/EvoRationale_v46_EvidenceTrace_Tested_EN.zip",
+    "archive/release_packages/EvoRationale_v47_GroundedTrace_Tested_EN.zip",
+    "archive/release_packages/EvoRationale_v48_V46PolicyRepair_Tested_EN.zip",
+    "archive/release_packages/EvoRationale_v49_PairReview_Experimental_Tested_EN.zip"
+  ],
+  "unchanged_top_level_archive_paths": [
+    "archive/diagnostic_packages/EvoRationale_ScopeRecheck_Diagnostics_20261011-205639-194.zip",
+    "archive/diagnostic_packages/EvoRationale_v44_Diagnostics_20261011-130744-846.zip",
+    "archive/diagnostic_packages/EvoRationale_v45_Diagnostics_20261011-140009-585.zip",
+    "archive/diagnostic_packages/EvoRationale_v46_Diagnostics_20261011-155343-966.zip",
+    "archive/diagnostic_packages/EvoRationale_v47_Diagnostics_20261011-172809-314.zip",
+    "archive/diagnostic_packages/EvoRationale_v48_Diagnostics_20261011-181147-645.zip",
+    "archive/diagnostic_packages/EvoRationale_v49_Diagnostics_20261011-194323-093.zip",
+    "archive/original_v41_workspace/research/EvoRationale_KEP1287_Adjudication_EN.zip",
+    "archive/original_v41_workspace/research/EvoRationale_KEP1287_Historical_S0_EN.zip",
+    "archive/original_v41_workspace/research/EvoRationale_v44_Diagnostics_20261011-130744-846.zip",
+    "archive/original_v41_workspace/research/EvoRationale_v45_Diagnostics_20261011-140009-585.zip",
+    "archive/original_v41_workspace/research/EvoRationale_v46_Diagnostics_20261011-153804-929.zip",
+    "archive/original_v41_workspace/research/EvoRationale_v48_DiagnosticReview_EN.zip",
+    "archive/original_v41_workspace/research/KEP1287_API_Comparison_Tools_EN.zip",
+    "archive/original_v41_workspace/research/KEP1287_Consensus/KEP1287_PI_Attested_Consensus_Candidate_EN.zip",
+    "archive/original_v41_workspace/research/KEP1287_Frozen_Evaluation_Tools_EN.zip",
+    "archive/original_v41_workspace/research/KEP1287_Historical_S0/KEP1287_capture_2023_2024.zip",
+    "archive/original_v41_workspace/research/KEP1287_PI_Attested_Consensus_Candidate_EN.zip",
+    "archive/original_v41_workspace/research/KEP1287_Reviewer_A_Independent_EN.zip",
+    "archive/original_v41_workspace/research/KEP1287_Reviewer_B_Independent_EN.zip",
+    "archive/original_v41_workspace/research/KEP1287_Verifier_Gate_Diagnostic_EN.zip",
+    "archive/release_packages/EvoRationale_PrimaryEffects_Experimental_Tested_EN.zip",
+    "archive/release_packages/EvoRationale_PrimaryEffects_WindowsFix_Tested_EN.zip",
+    "archive/release_packages/EvoRationale_ScopeRecheck_Experiment_Tested_EN.zip"
+  ],
+  "archives": [
+    {
+      "archive_chain": [
+        "archive/original_v41_workspace/EvoRationale_v41_PATCH_TESTED.zip"
+      ],
+      "original_zip_sha256": "a6afd7b3bf24007c7bfe5f2c908996006312de28635b4cbd1d728d7620649ec0",
+      "english_zip_sha256": "2cbe157d17783f7b515f3f9795e2b3fb9efb672464343ff29651366074f4261a",
+      "member_count": 12,
+      "unchanged_member_count": 11,
+      "protected_data_members_byte_unchanged": 1,
+      "changed_members": [
+        {
+          "original_member_path": "V41_README_FA.md",
+          "english_member_path": "V41_README_EN.md",
+          "original_sha256": "83156f6abec489eec5f7b065e5b56d00d17bb2ed7c8a7ac43c2570a4d7548ae4",
+          "english_sha256": "85b394854a0a853efa76f7479f0d538b513e5dd2199eae68ec5414f054b0565e",
+          "kind": "historical_document_translation"
+        }
+      ]
+    },
+    {
+      "archive_chain": [
+        "archive/original_v41_workspace/research/EvoRationale_PaperAligned_v4_FULL_TESTED.zip"
+      ],
+      "original_zip_sha256": "c9ed36f5788f323570ecf163594e8903f51252776065106f077b6ff9578c6a23",
+      "english_zip_sha256": "e6f62c544043c04fdd10a2cf8da543e023e1a6955b12d35c458ce40bdc97be19",
+      "member_count": 80,
+      "unchanged_member_count": 77,
+      "protected_data_members_byte_unchanged": 14,
+      "changed_members": [
+        {
+          "original_member_path": "EvoRationale_v42_DEV_EN/V41_README_FA.md",
+          "english_member_path": "EvoRationale_v42_DEV_EN/V41_README_EN.md",
+          "original_sha256": "83156f6abec489eec5f7b065e5b56d00d17bb2ed7c8a7ac43c2570a4d7548ae4",
+          "english_sha256": "85b394854a0a853efa76f7479f0d538b513e5dd2199eae68ec5414f054b0565e",
+          "kind": "historical_document_translation"
+        },
+        {
+          "original_member_path": "EvoRationale_v42_DEV_EN/docs/V4_CHANGELOG_FA.md",
+          "english_member_path": "EvoRationale_v42_DEV_EN/docs/V4_CHANGELOG_EN.md",
+          "original_sha256": "04ebdf8271bfeae79c3e10a0ba442cdda6a401cd9a352a73b6ddd70da5c747ee",
+          "english_sha256": "cae5e6cd7f5642f153e2e612516bfc9217dc278bfc3134219166a356129ae71a",
+          "kind": "historical_document_translation"
+        },
+        {
+          "original_member_path": "EvoRationale_v42_DEV_EN/README.md",
+          "english_member_path": "EvoRationale_v42_DEV_EN/README.md",
+          "original_sha256": "2ffd4abcb938a2d524dd62ab5f025e2f37b404b40ec807e22f5e68333c75d21e",
+          "english_sha256": "b104763a0940dabda2ce73c102ec812be63478a9322ca9507be0f2a4982af7f5",
+          "kind": "historical_document_link_update"
+        }
+      ]
+    },
+    {
+      "archive_chain": [
+        "archive/original_v41_workspace/research/EvoRationale_v42_Development_Pilot_EN.zip"
+      ],
+      "original_zip_sha256": "c9ed36f5788f323570ecf163594e8903f51252776065106f077b6ff9578c6a23",
+      "english_zip_sha256": "e6f62c544043c04fdd10a2cf8da543e023e1a6955b12d35c458ce40bdc97be19",
+      "member_count": 80,
+      "unchanged_member_count": 77,
+      "protected_data_members_byte_unchanged": 14,
+      "changed_members": [
+        {
+          "original_member_path": "EvoRationale_v42_DEV_EN/V41_README_FA.md",
+          "english_member_path": "EvoRationale_v42_DEV_EN/V41_README_EN.md",
+          "original_sha256": "83156f6abec489eec5f7b065e5b56d00d17bb2ed7c8a7ac43c2570a4d7548ae4",
+          "english_sha256": "85b394854a0a853efa76f7479f0d538b513e5dd2199eae68ec5414f054b0565e",
+          "kind": "historical_document_translation"
+        },
+        {
+          "original_member_path": "EvoRationale_v42_DEV_EN/docs/V4_CHANGELOG_FA.md",
+          "english_member_path": "EvoRationale_v42_DEV_EN/docs/V4_CHANGELOG_EN.md",
+          "original_sha256": "04ebdf8271bfeae79c3e10a0ba442cdda6a401cd9a352a73b6ddd70da5c747ee",
+          "english_sha256": "cae5e6cd7f5642f153e2e612516bfc9217dc278bfc3134219166a356129ae71a",
+          "kind": "historical_document_translation"
+        },
+        {
+          "original_member_path": "EvoRationale_v42_DEV_EN/README.md",
+          "english_member_path": "EvoRationale_v42_DEV_EN/README.md",
+          "original_sha256": "2ffd4abcb938a2d524dd62ab5f025e2f37b404b40ec807e22f5e68333c75d21e",
+          "english_sha256": "b104763a0940dabda2ce73c102ec812be63478a9322ca9507be0f2a4982af7f5",
+          "kind": "historical_document_link_update"
+        }
+      ]
+    },
+    {
+      "archive_chain": [
+        "archive/original_v41_workspace/research/EvoRationale_v43_DiffScope_Development_EN.zip"
+      ],
+      "original_zip_sha256": "5fe3fd1c2f8b5c51f71aeac0b4b3bef7faac3e49fad6a1da1292de97e8ceb88f",
+      "english_zip_sha256": "bb5e5b580c0f4045e725633e0fc7137b05e551447fa506d61ccaa414dfc485ec",
+      "member_count": 92,
+      "unchanged_member_count": 89,
+      "protected_data_members_byte_unchanged": 16,
+      "changed_members": [
+        {
+          "original_member_path": "EvoRationale_v43_DEV_EN/V41_README_FA.md",
+          "english_member_path": "EvoRationale_v43_DEV_EN/V41_README_EN.md",
+          "original_sha256": "83156f6abec489eec5f7b065e5b56d00d17bb2ed7c8a7ac43c2570a4d7548ae4",
+          "english_sha256": "85b394854a0a853efa76f7479f0d538b513e5dd2199eae68ec5414f054b0565e",
+          "kind": "historical_document_translation"
+        },
+        {
+          "original_member_path": "EvoRationale_v43_DEV_EN/docs/V4_CHANGELOG_FA.md",
+          "english_member_path": "EvoRationale_v43_DEV_EN/docs/V4_CHANGELOG_EN.md",
+          "original_sha256": "04ebdf8271bfeae79c3e10a0ba442cdda6a401cd9a352a73b6ddd70da5c747ee",
+          "english_sha256": "cae5e6cd7f5642f153e2e612516bfc9217dc278bfc3134219166a356129ae71a",
+          "kind": "historical_document_translation"
+        },
+        {
+          "original_member_path": "EvoRationale_v43_DEV_EN/README.md",
+          "english_member_path": "EvoRationale_v43_DEV_EN/README.md",
+          "original_sha256": "1c3f48efdc38619c9eac3f9f36b620f047dbc1c93440c4b861d56791d4859cf3",
+          "english_sha256": "71f12a7ab4c4090b302cb7253da3a385b87b3c6524acbfcc76c817a68f4158d1",
+          "kind": "historical_document_link_update"
+        }
+      ]
+    },
+    {
+      "archive_chain": [
+        "archive/original_v41_workspace/research/EvoRationale_v44_EventCoverage_Reviewed_EN.zip"
+      ],
+      "original_zip_sha256": "89aee5fc83c762cc1b2c222bf168ac2d9d8e88b01971fde6c4146cb708032728",
+      "english_zip_sha256": "8ce38fe1c3be4be2fa56fa4e2319cc27f42573e94781cf03b11a0759c37f2ac1",
+      "member_count": 117,
+      "unchanged_member_count": 113,
+      "protected_data_members_byte_unchanged": 19,
+      "changed_members": [
+        {
+          "original_member_path": "EvoRationale_v44_DEV_EN/V41_README_FA.md",
+          "english_member_path": "EvoRationale_v44_DEV_EN/V41_README_EN.md",
+          "original_sha256": "83156f6abec489eec5f7b065e5b56d00d17bb2ed7c8a7ac43c2570a4d7548ae4",
+          "english_sha256": "85b394854a0a853efa76f7479f0d538b513e5dd2199eae68ec5414f054b0565e",
+          "kind": "historical_document_translation"
+        },
+        {
+          "original_member_path": "EvoRationale_v44_DEV_EN/docs/V4_CHANGELOG_FA.md",
+          "english_member_path": "EvoRationale_v44_DEV_EN/docs/V4_CHANGELOG_EN.md",
+          "original_sha256": "04ebdf8271bfeae79c3e10a0ba442cdda6a401cd9a352a73b6ddd70da5c747ee",
+          "english_sha256": "cae5e6cd7f5642f153e2e612516bfc9217dc278bfc3134219166a356129ae71a",
+          "kind": "historical_document_translation"
+        },
+        {
+          "original_member_path": "EvoRationale_v44_DEV_EN/tests/test_review_launchers.py",
+          "english_member_path": "EvoRationale_v44_DEV_EN/tests/test_review_launchers.py",
+          "original_sha256": "fc2a95967905a51fabf61d066e1e86607896702998e0f178b757d46d1d3bf359",
+          "english_sha256": "0b0e0020f910d09f554908dfd27d7dd694dccb1e88e8d8099b1d83005493de3a",
+          "kind": "english_unicode_path_fixture_source"
+        },
+        {
+          "original_member_path": "EvoRationale_v44_DEV_EN/README.md",
+          "english_member_path": "EvoRationale_v44_DEV_EN/README.md",
+          "original_sha256": "0ff75d2ad368fcc404a0690b0d434ec8bfdad5a9921299678855de4a24162165",
+          "english_sha256": "2adcec4830a4276f390aa282290a005cafef94585d307617668cdd3e74d79d38",
+          "kind": "historical_document_link_update"
+        }
+      ]
+    },
+    {
+      "archive_chain": [
+        "archive/original_v41_workspace/research/EvoRationale_v45_DeltaReview_Tested_EN.zip"
+      ],
+      "original_zip_sha256": "bbc7d511c851e4c35712861e6e3c819a5e8948a7aef8dc7887e10020d9fb7764",
+      "english_zip_sha256": "8957210523611bc83eebcf8a8af3af085f2e6f4b9ec14632e2b0cfdaae059aeb",
+      "member_count": 138,
+      "unchanged_member_count": 133,
+      "protected_data_members_byte_unchanged": 23,
+      "changed_members": [
+        {
+          "original_member_path": "EvoRationale_v45_DEV_EN/V41_README_FA.md",
+          "english_member_path": "EvoRationale_v45_DEV_EN/V41_README_EN.md",
+          "original_sha256": "83156f6abec489eec5f7b065e5b56d00d17bb2ed7c8a7ac43c2570a4d7548ae4",
+          "english_sha256": "85b394854a0a853efa76f7479f0d538b513e5dd2199eae68ec5414f054b0565e",
+          "kind": "historical_document_translation"
+        },
+        {
+          "original_member_path": "EvoRationale_v45_DEV_EN/docs/V4_CHANGELOG_FA.md",
+          "english_member_path": "EvoRationale_v45_DEV_EN/docs/V4_CHANGELOG_EN.md",
+          "original_sha256": "04ebdf8271bfeae79c3e10a0ba442cdda6a401cd9a352a73b6ddd70da5c747ee",
+          "english_sha256": "cae5e6cd7f5642f153e2e612516bfc9217dc278bfc3134219166a356129ae71a",
+          "kind": "historical_document_translation"
+        },
+        {
+          "original_member_path": "EvoRationale_v45_DEV_EN/tests/test_review_launchers.py",
+          "english_member_path": "EvoRationale_v45_DEV_EN/tests/test_review_launchers.py",
+          "original_sha256": "fc2a95967905a51fabf61d066e1e86607896702998e0f178b757d46d1d3bf359",
+          "english_sha256": "0b0e0020f910d09f554908dfd27d7dd694dccb1e88e8d8099b1d83005493de3a",
+          "kind": "english_unicode_path_fixture_source"
+        },
+        {
+          "original_member_path": "EvoRationale_v45_DEV_EN/tests/test_v45_development_tools.py",
+          "english_member_path": "EvoRationale_v45_DEV_EN/tests/test_v45_development_tools.py",
+          "original_sha256": "8d535df457a3a4dcd4f0769cf7313fa0c72eb6b22f5ef478f747a089025a4e0d",
+          "english_sha256": "e22432473860367e66bd3dbb6755aca271c28c299172cf867fa0d30ea4b9c351",
+          "kind": "english_unicode_path_fixture_source"
+        },
+        {
+          "original_member_path": "EvoRationale_v45_DEV_EN/README.md",
+          "english_member_path": "EvoRationale_v45_DEV_EN/README.md",
+          "original_sha256": "4298a8b0cf313b7ab8b0b059e82effec4414fbbc1d5e7ddcb23802a4c9ec0f4a",
+          "english_sha256": "25d8b4d2649e5c8d9c758a1383615abc53c1e024f5a748c6957e79f28ab57a98",
+          "kind": "historical_document_link_update"
+        }
+      ]
+    },
+    {
+      "archive_chain": [
+        "archive/original_v41_workspace/research/EvoRationale_v46_EvidenceTrace_Tested_EN.zip"
+      ],
+      "original_zip_sha256": "00b25c0f2c44aa7ec5eb879cfec3aacf57369c531a1061ba623356b06d3926be",
+      "english_zip_sha256": "39c595f6a358b43785582f562dbee5a4f0a115948fbbd5bf2c3a30b31f158705",
+      "member_count": 166,
+      "unchanged_member_count": 161,
+      "protected_data_members_byte_unchanged": 31,
+      "changed_members": [
+        {
+          "original_member_path": "EvoRationale_v46_DEV_EN/V41_README_FA.md",
+          "english_member_path": "EvoRationale_v46_DEV_EN/V41_README_EN.md",
+          "original_sha256": "83156f6abec489eec5f7b065e5b56d00d17bb2ed7c8a7ac43c2570a4d7548ae4",
+          "english_sha256": "85b394854a0a853efa76f7479f0d538b513e5dd2199eae68ec5414f054b0565e",
+          "kind": "historical_document_translation"
+        },
+        {
+          "original_member_path": "EvoRationale_v46_DEV_EN/docs/V4_CHANGELOG_FA.md",
+          "english_member_path": "EvoRationale_v46_DEV_EN/docs/V4_CHANGELOG_EN.md",
+          "original_sha256": "04ebdf8271bfeae79c3e10a0ba442cdda6a401cd9a352a73b6ddd70da5c747ee",
+          "english_sha256": "cae5e6cd7f5642f153e2e612516bfc9217dc278bfc3134219166a356129ae71a",
+          "kind": "historical_document_translation"
+        },
+        {
+          "original_member_path": "EvoRationale_v46_DEV_EN/tests/test_review_launchers.py",
+          "english_member_path": "EvoRationale_v46_DEV_EN/tests/test_review_launchers.py",
+          "original_sha256": "fc2a95967905a51fabf61d066e1e86607896702998e0f178b757d46d1d3bf359",
+          "english_sha256": "0b0e0020f910d09f554908dfd27d7dd694dccb1e88e8d8099b1d83005493de3a",
+          "kind": "english_unicode_path_fixture_source"
+        },
+        {
+          "original_member_path": "EvoRationale_v46_DEV_EN/tests/test_v45_development_tools.py",
+          "english_member_path": "EvoRationale_v46_DEV_EN/tests/test_v45_development_tools.py",
+          "original_sha256": "8d535df457a3a4dcd4f0769cf7313fa0c72eb6b22f5ef478f747a089025a4e0d",
+          "english_sha256": "e22432473860367e66bd3dbb6755aca271c28c299172cf867fa0d30ea4b9c351",
+          "kind": "english_unicode_path_fixture_source"
+        },
+        {
+          "original_member_path": "EvoRationale_v46_DEV_EN/README.md",
+          "english_member_path": "EvoRationale_v46_DEV_EN/README.md",
+          "original_sha256": "16227a3ac48e2a4e07f4dbf54966d1bfffe16c3a7147453ab2861ccca1b3ef2c",
+          "english_sha256": "b471c45413808fcf35e933205eea93341af40473b3e7f1405f51946fa67edaaa",
+          "kind": "historical_document_link_update"
+        }
+      ]
+    },
+    {
+      "archive_chain": [
+        "archive/original_v41_workspace/research/EvoRationale_v47_GroundedTrace_Tested_EN.zip"
+      ],
+      "original_zip_sha256": "3ef1eaffc22b983ac63124756e39672383c330bc402f319e2c2b9e3fb6a63cff",
+      "english_zip_sha256": "01560a2514138d1a42e7e1385863c7e5dfb87a5389e6216729e19802e890f3cd",
+      "member_count": 186,
+      "unchanged_member_count": 181,
+      "protected_data_members_byte_unchanged": 36,
+      "changed_members": [
+        {
+          "original_member_path": "EvoRationale_v47_DEV_EN/V41_README_FA.md",
+          "english_member_path": "EvoRationale_v47_DEV_EN/V41_README_EN.md",
+          "original_sha256": "83156f6abec489eec5f7b065e5b56d00d17bb2ed7c8a7ac43c2570a4d7548ae4",
+          "english_sha256": "85b394854a0a853efa76f7479f0d538b513e5dd2199eae68ec5414f054b0565e",
+          "kind": "historical_document_translation"
+        },
+        {
+          "original_member_path": "EvoRationale_v47_DEV_EN/docs/V4_CHANGELOG_FA.md",
+          "english_member_path": "EvoRationale_v47_DEV_EN/docs/V4_CHANGELOG_EN.md",
+          "original_sha256": "04ebdf8271bfeae79c3e10a0ba442cdda6a401cd9a352a73b6ddd70da5c747ee",
+          "english_sha256": "cae5e6cd7f5642f153e2e612516bfc9217dc278bfc3134219166a356129ae71a",
+          "kind": "historical_document_translation"
+        },
+        {
+          "original_member_path": "EvoRationale_v47_DEV_EN/tests/test_review_launchers.py",
+          "english_member_path": "EvoRationale_v47_DEV_EN/tests/test_review_launchers.py",
+          "original_sha256": "fc2a95967905a51fabf61d066e1e86607896702998e0f178b757d46d1d3bf359",
+          "english_sha256": "0b0e0020f910d09f554908dfd27d7dd694dccb1e88e8d8099b1d83005493de3a",
+          "kind": "english_unicode_path_fixture_source"
+        },
+        {
+          "original_member_path": "EvoRationale_v47_DEV_EN/tests/test_v45_development_tools.py",
+          "english_member_path": "EvoRationale_v47_DEV_EN/tests/test_v45_development_tools.py",
+          "original_sha256": "8d535df457a3a4dcd4f0769cf7313fa0c72eb6b22f5ef478f747a089025a4e0d",
+          "english_sha256": "e22432473860367e66bd3dbb6755aca271c28c299172cf867fa0d30ea4b9c351",
+          "kind": "english_unicode_path_fixture_source"
+        },
+        {
+          "original_member_path": "EvoRationale_v47_DEV_EN/README.md",
+          "english_member_path": "EvoRationale_v47_DEV_EN/README.md",
+          "original_sha256": "d56bb41589865c5622aac596641a5023c138b1395556f58f722a149386fc66c2",
+          "english_sha256": "c8b86af96233dd5c2ad8f6837a142768aaafed3a38173cce792cb51f714df5db",
+          "kind": "historical_document_link_update"
+        }
+      ]
+    },
+    {
+      "archive_chain": [
+        "archive/original_v41_workspace/research/EvoRationale_v48_V46PolicyRepair_Tested_EN (1).zip"
+      ],
+      "original_zip_sha256": "8b866fb029b356681e25c954975ce06723526b2ee8bdbbf0c44e10959dea2e54",
+      "english_zip_sha256": "c432679b303d3463bf0d6f9e32964286ec74057be27268830b847a9364472561",
+      "member_count": 205,
+      "unchanged_member_count": 200,
+      "protected_data_members_byte_unchanged": 41,
+      "changed_members": [
+        {
+          "original_member_path": "EvoRationale_v48_DEV_EN/V41_README_FA.md",
+          "english_member_path": "EvoRationale_v48_DEV_EN/V41_README_EN.md",
+          "original_sha256": "83156f6abec489eec5f7b065e5b56d00d17bb2ed7c8a7ac43c2570a4d7548ae4",
+          "english_sha256": "85b394854a0a853efa76f7479f0d538b513e5dd2199eae68ec5414f054b0565e",
+          "kind": "historical_document_translation"
+        },
+        {
+          "original_member_path": "EvoRationale_v48_DEV_EN/docs/V4_CHANGELOG_FA.md",
+          "english_member_path": "EvoRationale_v48_DEV_EN/docs/V4_CHANGELOG_EN.md",
+          "original_sha256": "04ebdf8271bfeae79c3e10a0ba442cdda6a401cd9a352a73b6ddd70da5c747ee",
+          "english_sha256": "cae5e6cd7f5642f153e2e612516bfc9217dc278bfc3134219166a356129ae71a",
+          "kind": "historical_document_translation"
+        },
+        {
+          "original_member_path": "EvoRationale_v48_DEV_EN/tests/test_review_launchers.py",
+          "english_member_path": "EvoRationale_v48_DEV_EN/tests/test_review_launchers.py",
+          "original_sha256": "fc2a95967905a51fabf61d066e1e86607896702998e0f178b757d46d1d3bf359",
+          "english_sha256": "0b0e0020f910d09f554908dfd27d7dd694dccb1e88e8d8099b1d83005493de3a",
+          "kind": "english_unicode_path_fixture_source"
+        },
+        {
+          "original_member_path": "EvoRationale_v48_DEV_EN/tests/test_v45_development_tools.py",
+          "english_member_path": "EvoRationale_v48_DEV_EN/tests/test_v45_development_tools.py",
+          "original_sha256": "8d535df457a3a4dcd4f0769cf7313fa0c72eb6b22f5ef478f747a089025a4e0d",
+          "english_sha256": "e22432473860367e66bd3dbb6755aca271c28c299172cf867fa0d30ea4b9c351",
+          "kind": "english_unicode_path_fixture_source"
+        },
+        {
+          "original_member_path": "EvoRationale_v48_DEV_EN/README.md",
+          "english_member_path": "EvoRationale_v48_DEV_EN/README.md",
+          "original_sha256": "3411136f428af914921e7d1febfc9bb280bb1c36d3844dfb063169cc122ee3a4",
+          "english_sha256": "906621a2e0ab24db23fc550707b0d1d0f029ff3f76ce8dbde35c22bb7e307276",
+          "kind": "historical_document_link_update"
+        }
+      ]
+    },
+    {
+      "archive_chain": [
+        "archive/original_v41_workspace/research/EvoRationale_v49_PairReview_Experimental_Tested_EN.zip"
+      ],
+      "original_zip_sha256": "7012422732f8eaa27c9ee73f0ae5831271d0523664cf1764ae1960d19bc71d74",
+      "english_zip_sha256": "27013a8ec89e88e22adaf6d5af559f5e037f0d433df87a204ba53180171f6375",
+      "member_count": 225,
+      "unchanged_member_count": 221,
+      "protected_data_members_byte_unchanged": 46,
+      "changed_members": [
+        {
+          "original_member_path": "EvoRationale_v49_DEV_EN/V41_README_FA.md",
+          "english_member_path": "EvoRationale_v49_DEV_EN/V41_README_EN.md",
+          "original_sha256": "83156f6abec489eec5f7b065e5b56d00d17bb2ed7c8a7ac43c2570a4d7548ae4",
+          "english_sha256": "85b394854a0a853efa76f7479f0d538b513e5dd2199eae68ec5414f054b0565e",
+          "kind": "historical_document_translation"
+        },
+        {
+          "original_member_path": "EvoRationale_v49_DEV_EN/docs/V4_CHANGELOG_FA.md",
+          "english_member_path": "EvoRationale_v49_DEV_EN/docs/V4_CHANGELOG_EN.md",
+          "original_sha256": "04ebdf8271bfeae79c3e10a0ba442cdda6a401cd9a352a73b6ddd70da5c747ee",
+          "english_sha256": "cae5e6cd7f5642f153e2e612516bfc9217dc278bfc3134219166a356129ae71a",
+          "kind": "historical_document_translation"
+        },
+        {
+          "original_member_path": "EvoRationale_v49_DEV_EN/tests/test_review_launchers.py",
+          "english_member_path": "EvoRationale_v49_DEV_EN/tests/test_review_launchers.py",
+          "original_sha256": "fc2a95967905a51fabf61d066e1e86607896702998e0f178b757d46d1d3bf359",
+          "english_sha256": "0b0e0020f910d09f554908dfd27d7dd694dccb1e88e8d8099b1d83005493de3a",
+          "kind": "english_unicode_path_fixture_source"
+        },
+        {
+          "original_member_path": "EvoRationale_v49_DEV_EN/tests/test_v45_development_tools.py",
+          "english_member_path": "EvoRationale_v49_DEV_EN/tests/test_v45_development_tools.py",
+          "original_sha256": "8d535df457a3a4dcd4f0769cf7313fa0c72eb6b22f5ef478f747a089025a4e0d",
+          "english_sha256": "e22432473860367e66bd3dbb6755aca271c28c299172cf867fa0d30ea4b9c351",
+          "kind": "english_unicode_path_fixture_source"
+        }
+      ]
+    },
+    {
+      "archive_chain": [
+        "archive/original_v41_workspace/research/RationalePath_ABC_Evidence_Checkpoint.zip"
+      ],
+      "original_zip_sha256": "deb532ed40b35a3ce91d3000c7571adc331f934cc628473acb95e058f2763a9a",
+      "english_zip_sha256": "65d928de02dcf341f196136985f56c713815623ec5510c60432206b1e1965f79",
+      "member_count": 9,
+      "unchanged_member_count": 7,
+      "protected_data_members_byte_unchanged": 6,
+      "changed_members": [
+        {
+          "original_member_path": "RationalePath_ABC_Evidence_Checkpoint/README_FA.txt",
+          "english_member_path": "RationalePath_ABC_Evidence_Checkpoint/README_EN.txt",
+          "original_sha256": "f64081ec3896f6d73c0a59bd2469701bde9d943eab6342c8f41facd1e07c8307",
+          "english_sha256": "453a5ae5fea350d86167d9fc5e1e0aec9a3c21d21029742daf85c08489475628",
+          "kind": "source_pilot_resource_document_translation"
+        },
+        {
+          "original_member_path": "RationalePath_ABC_Evidence_Checkpoint/build_abc_evidence_checkpoint.py",
+          "english_member_path": "RationalePath_ABC_Evidence_Checkpoint/build_abc_evidence_checkpoint.py",
+          "original_sha256": "4ab3aa967849524f01269f594e001646e9bcbbc8310a66888eafe391aff85bde",
+          "english_sha256": "e18768a1abc5d81599c3556fbf213802bc96e1141eda6d370bd7059c1c1cdf23",
+          "kind": "source_pilot_generated_document_translation"
+        }
+      ]
+    },
+    {
+      "archive_chain": [
+        "archive/release_packages/EvoRationale_v42_Development_Pilot_EN.zip"
+      ],
+      "original_zip_sha256": "c9ed36f5788f323570ecf163594e8903f51252776065106f077b6ff9578c6a23",
+      "english_zip_sha256": "e6f62c544043c04fdd10a2cf8da543e023e1a6955b12d35c458ce40bdc97be19",
+      "member_count": 80,
+      "unchanged_member_count": 77,
+      "protected_data_members_byte_unchanged": 14,
+      "changed_members": [
+        {
+          "original_member_path": "EvoRationale_v42_DEV_EN/V41_README_FA.md",
+          "english_member_path": "EvoRationale_v42_DEV_EN/V41_README_EN.md",
+          "original_sha256": "83156f6abec489eec5f7b065e5b56d00d17bb2ed7c8a7ac43c2570a4d7548ae4",
+          "english_sha256": "85b394854a0a853efa76f7479f0d538b513e5dd2199eae68ec5414f054b0565e",
+          "kind": "historical_document_translation"
+        },
+        {
+          "original_member_path": "EvoRationale_v42_DEV_EN/docs/V4_CHANGELOG_FA.md",
+          "english_member_path": "EvoRationale_v42_DEV_EN/docs/V4_CHANGELOG_EN.md",
+          "original_sha256": "04ebdf8271bfeae79c3e10a0ba442cdda6a401cd9a352a73b6ddd70da5c747ee",
+          "english_sha256": "cae5e6cd7f5642f153e2e612516bfc9217dc278bfc3134219166a356129ae71a",
+          "kind": "historical_document_translation"
+        },
+        {
+          "original_member_path": "EvoRationale_v42_DEV_EN/README.md",
+          "english_member_path": "EvoRationale_v42_DEV_EN/README.md",
+          "original_sha256": "2ffd4abcb938a2d524dd62ab5f025e2f37b404b40ec807e22f5e68333c75d21e",
+          "english_sha256": "b104763a0940dabda2ce73c102ec812be63478a9322ca9507be0f2a4982af7f5",
+          "kind": "historical_document_link_update"
+        }
+      ]
+    },
+    {
+      "archive_chain": [
+        "archive/release_packages/EvoRationale_v43_DiffScope_Development_EN.zip"
+      ],
+      "original_zip_sha256": "5fe3fd1c2f8b5c51f71aeac0b4b3bef7faac3e49fad6a1da1292de97e8ceb88f",
+      "english_zip_sha256": "bb5e5b580c0f4045e725633e0fc7137b05e551447fa506d61ccaa414dfc485ec",
+      "member_count": 92,
+      "unchanged_member_count": 89,
+      "protected_data_members_byte_unchanged": 16,
+      "changed_members": [
+        {
+          "original_member_path": "EvoRationale_v43_DEV_EN/V41_README_FA.md",
+          "english_member_path": "EvoRationale_v43_DEV_EN/V41_README_EN.md",
+          "original_sha256": "83156f6abec489eec5f7b065e5b56d00d17bb2ed7c8a7ac43c2570a4d7548ae4",
+          "english_sha256": "85b394854a0a853efa76f7479f0d538b513e5dd2199eae68ec5414f054b0565e",
+          "kind": "historical_document_translation"
+        },
+        {
+          "original_member_path": "EvoRationale_v43_DEV_EN/docs/V4_CHANGELOG_FA.md",
+          "english_member_path": "EvoRationale_v43_DEV_EN/docs/V4_CHANGELOG_EN.md",
+          "original_sha256": "04ebdf8271bfeae79c3e10a0ba442cdda6a401cd9a352a73b6ddd70da5c747ee",
+          "english_sha256": "cae5e6cd7f5642f153e2e612516bfc9217dc278bfc3134219166a356129ae71a",
+          "kind": "historical_document_translation"
+        },
+        {
+          "original_member_path": "EvoRationale_v43_DEV_EN/README.md",
+          "english_member_path": "EvoRationale_v43_DEV_EN/README.md",
+          "original_sha256": "1c3f48efdc38619c9eac3f9f36b620f047dbc1c93440c4b861d56791d4859cf3",
+          "english_sha256": "71f12a7ab4c4090b302cb7253da3a385b87b3c6524acbfcc76c817a68f4158d1",
+          "kind": "historical_document_link_update"
+        }
+      ]
+    },
+    {
+      "archive_chain": [
+        "archive/release_packages/EvoRationale_v44_EventCoverage_Reviewed_EN.zip"
+      ],
+      "original_zip_sha256": "89aee5fc83c762cc1b2c222bf168ac2d9d8e88b01971fde6c4146cb708032728",
+      "english_zip_sha256": "8ce38fe1c3be4be2fa56fa4e2319cc27f42573e94781cf03b11a0759c37f2ac1",
+      "member_count": 117,
+      "unchanged_member_count": 113,
+      "protected_data_members_byte_unchanged": 19,
+      "changed_members": [
+        {
+          "original_member_path": "EvoRationale_v44_DEV_EN/V41_README_FA.md",
+          "english_member_path": "EvoRationale_v44_DEV_EN/V41_README_EN.md",
+          "original_sha256": "83156f6abec489eec5f7b065e5b56d00d17bb2ed7c8a7ac43c2570a4d7548ae4",
+          "english_sha256": "85b394854a0a853efa76f7479f0d538b513e5dd2199eae68ec5414f054b0565e",
+          "kind": "historical_document_translation"
+        },
+        {
+          "original_member_path": "EvoRationale_v44_DEV_EN/docs/V4_CHANGELOG_FA.md",
+          "english_member_path": "EvoRationale_v44_DEV_EN/docs/V4_CHANGELOG_EN.md",
+          "original_sha256": "04ebdf8271bfeae79c3e10a0ba442cdda6a401cd9a352a73b6ddd70da5c747ee",
+          "english_sha256": "cae5e6cd7f5642f153e2e612516bfc9217dc278bfc3134219166a356129ae71a",
+          "kind": "historical_document_translation"
+        },
+        {
+          "original_member_path": "EvoRationale_v44_DEV_EN/tests/test_review_launchers.py",
+          "english_member_path": "EvoRationale_v44_DEV_EN/tests/test_review_launchers.py",
+          "original_sha256": "fc2a95967905a51fabf61d066e1e86607896702998e0f178b757d46d1d3bf359",
+          "english_sha256": "0b0e0020f910d09f554908dfd27d7dd694dccb1e88e8d8099b1d83005493de3a",
+          "kind": "english_unicode_path_fixture_source"
+        },
+        {
+          "original_member_path": "EvoRationale_v44_DEV_EN/README.md",
+          "english_member_path": "EvoRationale_v44_DEV_EN/README.md",
+          "original_sha256": "0ff75d2ad368fcc404a0690b0d434ec8bfdad5a9921299678855de4a24162165",
+          "english_sha256": "2adcec4830a4276f390aa282290a005cafef94585d307617668cdd3e74d79d38",
+          "kind": "historical_document_link_update"
+        }
+      ]
+    },
+    {
+      "archive_chain": [
+        "archive/release_packages/EvoRationale_v45_DeltaReview_Tested_EN.zip"
+      ],
+      "original_zip_sha256": "bbc7d511c851e4c35712861e6e3c819a5e8948a7aef8dc7887e10020d9fb7764",
+      "english_zip_sha256": "8957210523611bc83eebcf8a8af3af085f2e6f4b9ec14632e2b0cfdaae059aeb",
+      "member_count": 138,
+      "unchanged_member_count": 133,
+      "protected_data_members_byte_unchanged": 23,
+      "changed_members": [
+        {
+          "original_member_path": "EvoRationale_v45_DEV_EN/V41_README_FA.md",
+          "english_member_path": "EvoRationale_v45_DEV_EN/V41_README_EN.md",
+          "original_sha256": "83156f6abec489eec5f7b065e5b56d00d17bb2ed7c8a7ac43c2570a4d7548ae4",
+          "english_sha256": "85b394854a0a853efa76f7479f0d538b513e5dd2199eae68ec5414f054b0565e",
+          "kind": "historical_document_translation"
+        },
+        {
+          "original_member_path": "EvoRationale_v45_DEV_EN/docs/V4_CHANGELOG_FA.md",
+          "english_member_path": "EvoRationale_v45_DEV_EN/docs/V4_CHANGELOG_EN.md",
+          "original_sha256": "04ebdf8271bfeae79c3e10a0ba442cdda6a401cd9a352a73b6ddd70da5c747ee",
+          "english_sha256": "cae5e6cd7f5642f153e2e612516bfc9217dc278bfc3134219166a356129ae71a",
+          "kind": "historical_document_translation"
+        },
+        {
+          "original_member_path": "EvoRationale_v45_DEV_EN/tests/test_review_launchers.py",
+          "english_member_path": "EvoRationale_v45_DEV_EN/tests/test_review_launchers.py",
+          "original_sha256": "fc2a95967905a51fabf61d066e1e86607896702998e0f178b757d46d1d3bf359",
+          "english_sha256": "0b0e0020f910d09f554908dfd27d7dd694dccb1e88e8d8099b1d83005493de3a",
+          "kind": "english_unicode_path_fixture_source"
+        },
+        {
+          "original_member_path": "EvoRationale_v45_DEV_EN/tests/test_v45_development_tools.py",
+          "english_member_path": "EvoRationale_v45_DEV_EN/tests/test_v45_development_tools.py",
+          "original_sha256": "8d535df457a3a4dcd4f0769cf7313fa0c72eb6b22f5ef478f747a089025a4e0d",
+          "english_sha256": "e22432473860367e66bd3dbb6755aca271c28c299172cf867fa0d30ea4b9c351",
+          "kind": "english_unicode_path_fixture_source"
+        },
+        {
+          "original_member_path": "EvoRationale_v45_DEV_EN/README.md",
+          "english_member_path": "EvoRationale_v45_DEV_EN/README.md",
+          "original_sha256": "4298a8b0cf313b7ab8b0b059e82effec4414fbbc1d5e7ddcb23802a4c9ec0f4a",
+          "english_sha256": "25d8b4d2649e5c8d9c758a1383615abc53c1e024f5a748c6957e79f28ab57a98",
+          "kind": "historical_document_link_update"
+        }
+      ]
+    },
+    {
+      "archive_chain": [
+        "archive/release_packages/EvoRationale_v46_EvidenceTrace_Tested_EN.zip"
+      ],
+      "original_zip_sha256": "00b25c0f2c44aa7ec5eb879cfec3aacf57369c531a1061ba623356b06d3926be",
+      "english_zip_sha256": "39c595f6a358b43785582f562dbee5a4f0a115948fbbd5bf2c3a30b31f158705",
+      "member_count": 166,
+      "unchanged_member_count": 161,
+      "protected_data_members_byte_unchanged": 31,
+      "changed_members": [
+        {
+          "original_member_path": "EvoRationale_v46_DEV_EN/V41_README_FA.md",
+          "english_member_path": "EvoRationale_v46_DEV_EN/V41_README_EN.md",
+          "original_sha256": "83156f6abec489eec5f7b065e5b56d00d17bb2ed7c8a7ac43c2570a4d7548ae4",
+          "english_sha256": "85b394854a0a853efa76f7479f0d538b513e5dd2199eae68ec5414f054b0565e",
+          "kind": "historical_document_translation"
+        },
+        {
+          "original_member_path": "EvoRationale_v46_DEV_EN/docs/V4_CHANGELOG_FA.md",
+          "english_member_path": "EvoRationale_v46_DEV_EN/docs/V4_CHANGELOG_EN.md",
+          "original_sha256": "04ebdf8271bfeae79c3e10a0ba442cdda6a401cd9a352a73b6ddd70da5c747ee",
+          "english_sha256": "cae5e6cd7f5642f153e2e612516bfc9217dc278bfc3134219166a356129ae71a",
+          "kind": "historical_document_translation"
+        },
+        {
+          "original_member_path": "EvoRationale_v46_DEV_EN/tests/test_review_launchers.py",
+          "english_member_path": "EvoRationale_v46_DEV_EN/tests/test_review_launchers.py",
+          "original_sha256": "fc2a95967905a51fabf61d066e1e86607896702998e0f178b757d46d1d3bf359",
+          "english_sha256": "0b0e0020f910d09f554908dfd27d7dd694dccb1e88e8d8099b1d83005493de3a",
+          "kind": "english_unicode_path_fixture_source"
+        },
+        {
+          "original_member_path": "EvoRationale_v46_DEV_EN/tests/test_v45_development_tools.py",
+          "english_member_path": "EvoRationale_v46_DEV_EN/tests/test_v45_development_tools.py",
+          "original_sha256": "8d535df457a3a4dcd4f0769cf7313fa0c72eb6b22f5ef478f747a089025a4e0d",
+          "english_sha256": "e22432473860367e66bd3dbb6755aca271c28c299172cf867fa0d30ea4b9c351",
+          "kind": "english_unicode_path_fixture_source"
+        },
+        {
+          "original_member_path": "EvoRationale_v46_DEV_EN/README.md",
+          "english_member_path": "EvoRationale_v46_DEV_EN/README.md",
+          "original_sha256": "16227a3ac48e2a4e07f4dbf54966d1bfffe16c3a7147453ab2861ccca1b3ef2c",
+          "english_sha256": "b471c45413808fcf35e933205eea93341af40473b3e7f1405f51946fa67edaaa",
+          "kind": "historical_document_link_update"
+        }
+      ]
+    },
+    {
+      "archive_chain": [
+        "archive/release_packages/EvoRationale_v47_GroundedTrace_Tested_EN.zip"
+      ],
+      "original_zip_sha256": "3ef1eaffc22b983ac63124756e39672383c330bc402f319e2c2b9e3fb6a63cff",
+      "english_zip_sha256": "01560a2514138d1a42e7e1385863c7e5dfb87a5389e6216729e19802e890f3cd",
+      "member_count": 186,
+      "unchanged_member_count": 181,
+      "protected_data_members_byte_unchanged": 36,
+      "changed_members": [
+        {
+          "original_member_path": "EvoRationale_v47_DEV_EN/V41_README_FA.md",
+          "english_member_path": "EvoRationale_v47_DEV_EN/V41_README_EN.md",
+          "original_sha256": "83156f6abec489eec5f7b065e5b56d00d17bb2ed7c8a7ac43c2570a4d7548ae4",
+          "english_sha256": "85b394854a0a853efa76f7479f0d538b513e5dd2199eae68ec5414f054b0565e",
+          "kind": "historical_document_translation"
+        },
+        {
+          "original_member_path": "EvoRationale_v47_DEV_EN/docs/V4_CHANGELOG_FA.md",
+          "english_member_path": "EvoRationale_v47_DEV_EN/docs/V4_CHANGELOG_EN.md",
+          "original_sha256": "04ebdf8271bfeae79c3e10a0ba442cdda6a401cd9a352a73b6ddd70da5c747ee",
+          "english_sha256": "cae5e6cd7f5642f153e2e612516bfc9217dc278bfc3134219166a356129ae71a",
+          "kind": "historical_document_translation"
+        },
+        {
+          "original_member_path": "EvoRationale_v47_DEV_EN/tests/test_review_launchers.py",
+          "english_member_path": "EvoRationale_v47_DEV_EN/tests/test_review_launchers.py",
+          "original_sha256": "fc2a95967905a51fabf61d066e1e86607896702998e0f178b757d46d1d3bf359",
+          "english_sha256": "0b0e0020f910d09f554908dfd27d7dd694dccb1e88e8d8099b1d83005493de3a",
+          "kind": "english_unicode_path_fixture_source"
+        },
+        {
+          "original_member_path": "EvoRationale_v47_DEV_EN/tests/test_v45_development_tools.py",
+          "english_member_path": "EvoRationale_v47_DEV_EN/tests/test_v45_development_tools.py",
+          "original_sha256": "8d535df457a3a4dcd4f0769cf7313fa0c72eb6b22f5ef478f747a089025a4e0d",
+          "english_sha256": "e22432473860367e66bd3dbb6755aca271c28c299172cf867fa0d30ea4b9c351",
+          "kind": "english_unicode_path_fixture_source"
+        },
+        {
+          "original_member_path": "EvoRationale_v47_DEV_EN/README.md",
+          "english_member_path": "EvoRationale_v47_DEV_EN/README.md",
+          "original_sha256": "d56bb41589865c5622aac596641a5023c138b1395556f58f722a149386fc66c2",
+          "english_sha256": "c8b86af96233dd5c2ad8f6837a142768aaafed3a38173cce792cb51f714df5db",
+          "kind": "historical_document_link_update"
+        }
+      ]
+    },
+    {
+      "archive_chain": [
+        "archive/release_packages/EvoRationale_v48_V46PolicyRepair_Tested_EN.zip"
+      ],
+      "original_zip_sha256": "8b866fb029b356681e25c954975ce06723526b2ee8bdbbf0c44e10959dea2e54",
+      "english_zip_sha256": "c432679b303d3463bf0d6f9e32964286ec74057be27268830b847a9364472561",
+      "member_count": 205,
+      "unchanged_member_count": 200,
+      "protected_data_members_byte_unchanged": 41,
+      "changed_members": [
+        {
+          "original_member_path": "EvoRationale_v48_DEV_EN/V41_README_FA.md",
+          "english_member_path": "EvoRationale_v48_DEV_EN/V41_README_EN.md",
+          "original_sha256": "83156f6abec489eec5f7b065e5b56d00d17bb2ed7c8a7ac43c2570a4d7548ae4",
+          "english_sha256": "85b394854a0a853efa76f7479f0d538b513e5dd2199eae68ec5414f054b0565e",
+          "kind": "historical_document_translation"
+        },
+        {
+          "original_member_path": "EvoRationale_v48_DEV_EN/docs/V4_CHANGELOG_FA.md",
+          "english_member_path": "EvoRationale_v48_DEV_EN/docs/V4_CHANGELOG_EN.md",
+          "original_sha256": "04ebdf8271bfeae79c3e10a0ba442cdda6a401cd9a352a73b6ddd70da5c747ee",
+          "english_sha256": "cae5e6cd7f5642f153e2e612516bfc9217dc278bfc3134219166a356129ae71a",
+          "kind": "historical_document_translation"
+        },
+        {
+          "original_member_path": "EvoRationale_v48_DEV_EN/tests/test_review_launchers.py",
+          "english_member_path": "EvoRationale_v48_DEV_EN/tests/test_review_launchers.py",
+          "original_sha256": "fc2a95967905a51fabf61d066e1e86607896702998e0f178b757d46d1d3bf359",
+          "english_sha256": "0b0e0020f910d09f554908dfd27d7dd694dccb1e88e8d8099b1d83005493de3a",
+          "kind": "english_unicode_path_fixture_source"
+        },
+        {
+          "original_member_path": "EvoRationale_v48_DEV_EN/tests/test_v45_development_tools.py",
+          "english_member_path": "EvoRationale_v48_DEV_EN/tests/test_v45_development_tools.py",
+          "original_sha256": "8d535df457a3a4dcd4f0769cf7313fa0c72eb6b22f5ef478f747a089025a4e0d",
+          "english_sha256": "e22432473860367e66bd3dbb6755aca271c28c299172cf867fa0d30ea4b9c351",
+          "kind": "english_unicode_path_fixture_source"
+        },
+        {
+          "original_member_path": "EvoRationale_v48_DEV_EN/README.md",
+          "english_member_path": "EvoRationale_v48_DEV_EN/README.md",
+          "original_sha256": "3411136f428af914921e7d1febfc9bb280bb1c36d3844dfb063169cc122ee3a4",
+          "english_sha256": "906621a2e0ab24db23fc550707b0d1d0f029ff3f76ce8dbde35c22bb7e307276",
+          "kind": "historical_document_link_update"
+        }
+      ]
+    },
+    {
+      "archive_chain": [
+        "archive/release_packages/EvoRationale_v49_PairReview_Experimental_Tested_EN.zip"
+      ],
+      "original_zip_sha256": "7012422732f8eaa27c9ee73f0ae5831271d0523664cf1764ae1960d19bc71d74",
+      "english_zip_sha256": "27013a8ec89e88e22adaf6d5af559f5e037f0d433df87a204ba53180171f6375",
+      "member_count": 225,
+      "unchanged_member_count": 221,
+      "protected_data_members_byte_unchanged": 46,
+      "changed_members": [
+        {
+          "original_member_path": "EvoRationale_v49_DEV_EN/V41_README_FA.md",
+          "english_member_path": "EvoRationale_v49_DEV_EN/V41_README_EN.md",
+          "original_sha256": "83156f6abec489eec5f7b065e5b56d00d17bb2ed7c8a7ac43c2570a4d7548ae4",
+          "english_sha256": "85b394854a0a853efa76f7479f0d538b513e5dd2199eae68ec5414f054b0565e",
+          "kind": "historical_document_translation"
+        },
+        {
+          "original_member_path": "EvoRationale_v49_DEV_EN/docs/V4_CHANGELOG_FA.md",
+          "english_member_path": "EvoRationale_v49_DEV_EN/docs/V4_CHANGELOG_EN.md",
+          "original_sha256": "04ebdf8271bfeae79c3e10a0ba442cdda6a401cd9a352a73b6ddd70da5c747ee",
+          "english_sha256": "cae5e6cd7f5642f153e2e612516bfc9217dc278bfc3134219166a356129ae71a",
+          "kind": "historical_document_translation"
+        },
+        {
+          "original_member_path": "EvoRationale_v49_DEV_EN/tests/test_review_launchers.py",
+          "english_member_path": "EvoRationale_v49_DEV_EN/tests/test_review_launchers.py",
+          "original_sha256": "fc2a95967905a51fabf61d066e1e86607896702998e0f178b757d46d1d3bf359",
+          "english_sha256": "0b0e0020f910d09f554908dfd27d7dd694dccb1e88e8d8099b1d83005493de3a",
+          "kind": "english_unicode_path_fixture_source"
+        },
+        {
+          "original_member_path": "EvoRationale_v49_DEV_EN/tests/test_v45_development_tools.py",
+          "english_member_path": "EvoRationale_v49_DEV_EN/tests/test_v45_development_tools.py",
+          "original_sha256": "8d535df457a3a4dcd4f0769cf7313fa0c72eb6b22f5ef478f747a089025a4e0d",
+          "english_sha256": "e22432473860367e66bd3dbb6755aca271c28c299172cf867fa0d30ea4b9c351",
+          "kind": "english_unicode_path_fixture_source"
+        }
+      ],
+      "historical_attestations_byte_unchanged": true
+    }
+  ],
+  "physical_entries": [
+    {
+      "original_relative_path": "archive/original_v41_workspace/EvoRationale_v41_PATCH_TESTED.zip",
+      "english_relative_path": "archive/original_v41_workspace/EvoRationale_v41_PATCH_TESTED.zip",
+      "original_sha256": "a6afd7b3bf24007c7bfe5f2c908996006312de28635b4cbd1d728d7620649ec0",
+      "english_sha256": "2cbe157d17783f7b515f3f9795e2b3fb9efb672464343ff29651366074f4261a",
+      "kind": "archive_english_language_adaptation"
+    },
+    {
+      "original_relative_path": "archive/original_v41_workspace/research/EvoRationale_PaperAligned_v4_FULL_TESTED.zip",
+      "english_relative_path": "archive/original_v41_workspace/research/EvoRationale_PaperAligned_v4_FULL_TESTED.zip",
+      "original_sha256": "c9ed36f5788f323570ecf163594e8903f51252776065106f077b6ff9578c6a23",
+      "english_sha256": "e6f62c544043c04fdd10a2cf8da543e023e1a6955b12d35c458ce40bdc97be19",
+      "kind": "archive_english_language_adaptation"
+    },
+    {
+      "original_relative_path": "archive/original_v41_workspace/research/EvoRationale_v42_Development_Pilot_EN.zip",
+      "english_relative_path": "archive/original_v41_workspace/research/EvoRationale_v42_Development_Pilot_EN.zip",
+      "original_sha256": "c9ed36f5788f323570ecf163594e8903f51252776065106f077b6ff9578c6a23",
+      "english_sha256": "e6f62c544043c04fdd10a2cf8da543e023e1a6955b12d35c458ce40bdc97be19",
+      "kind": "archive_english_language_adaptation"
+    },
+    {
+      "original_relative_path": "archive/original_v41_workspace/research/EvoRationale_v43_DiffScope_Development_EN.zip",
+      "english_relative_path": "archive/original_v41_workspace/research/EvoRationale_v43_DiffScope_Development_EN.zip",
+      "original_sha256": "5fe3fd1c2f8b5c51f71aeac0b4b3bef7faac3e49fad6a1da1292de97e8ceb88f",
+      "english_sha256": "bb5e5b580c0f4045e725633e0fc7137b05e551447fa506d61ccaa414dfc485ec",
+      "kind": "archive_english_language_adaptation"
+    },
+    {
+      "original_relative_path": "archive/original_v41_workspace/research/EvoRationale_v44_EventCoverage_Reviewed_EN.zip",
+      "english_relative_path": "archive/original_v41_workspace/research/EvoRationale_v44_EventCoverage_Reviewed_EN.zip",
+      "original_sha256": "89aee5fc83c762cc1b2c222bf168ac2d9d8e88b01971fde6c4146cb708032728",
+      "english_sha256": "8ce38fe1c3be4be2fa56fa4e2319cc27f42573e94781cf03b11a0759c37f2ac1",
+      "kind": "archive_english_language_adaptation"
+    },
+    {
+      "original_relative_path": "archive/original_v41_workspace/research/EvoRationale_v45_DeltaReview_Tested_EN.zip",
+      "english_relative_path": "archive/original_v41_workspace/research/EvoRationale_v45_DeltaReview_Tested_EN.zip",
+      "original_sha256": "bbc7d511c851e4c35712861e6e3c819a5e8948a7aef8dc7887e10020d9fb7764",
+      "english_sha256": "8957210523611bc83eebcf8a8af3af085f2e6f4b9ec14632e2b0cfdaae059aeb",
+      "kind": "archive_english_language_adaptation"
+    },
+    {
+      "original_relative_path": "archive/original_v41_workspace/research/EvoRationale_v46_EvidenceTrace_Tested_EN.zip",
+      "english_relative_path": "archive/original_v41_workspace/research/EvoRationale_v46_EvidenceTrace_Tested_EN.zip",
+      "original_sha256": "00b25c0f2c44aa7ec5eb879cfec3aacf57369c531a1061ba623356b06d3926be",
+      "english_sha256": "39c595f6a358b43785582f562dbee5a4f0a115948fbbd5bf2c3a30b31f158705",
+      "kind": "archive_english_language_adaptation"
+    },
+    {
+      "original_relative_path": "archive/original_v41_workspace/research/EvoRationale_v47_GroundedTrace_Tested_EN.zip",
+      "english_relative_path": "archive/original_v41_workspace/research/EvoRationale_v47_GroundedTrace_Tested_EN.zip",
+      "original_sha256": "3ef1eaffc22b983ac63124756e39672383c330bc402f319e2c2b9e3fb6a63cff",
+      "english_sha256": "01560a2514138d1a42e7e1385863c7e5dfb87a5389e6216729e19802e890f3cd",
+      "kind": "archive_english_language_adaptation"
+    },
+    {
+      "original_relative_path": "archive/original_v41_workspace/research/EvoRationale_v48_V46PolicyRepair_Tested_EN (1).zip",
+      "english_relative_path": "archive/original_v41_workspace/research/EvoRationale_v48_V46PolicyRepair_Tested_EN (1).zip",
+      "original_sha256": "8b866fb029b356681e25c954975ce06723526b2ee8bdbbf0c44e10959dea2e54",
+      "english_sha256": "c432679b303d3463bf0d6f9e32964286ec74057be27268830b847a9364472561",
+      "kind": "archive_english_language_adaptation"
+    },
+    {
+      "original_relative_path": "archive/original_v41_workspace/research/EvoRationale_v49_PairReview_Experimental_Tested_EN.zip",
+      "english_relative_path": "archive/original_v41_workspace/research/EvoRationale_v49_PairReview_Experimental_Tested_EN.zip",
+      "original_sha256": "7012422732f8eaa27c9ee73f0ae5831271d0523664cf1764ae1960d19bc71d74",
+      "english_sha256": "27013a8ec89e88e22adaf6d5af559f5e037f0d433df87a204ba53180171f6375",
+      "kind": "archive_english_language_adaptation"
+    },
+    {
+      "original_relative_path": "archive/original_v41_workspace/research/RationalePath_ABC_Evidence_Checkpoint.zip",
+      "english_relative_path": "archive/original_v41_workspace/research/RationalePath_ABC_Evidence_Checkpoint.zip",
+      "original_sha256": "deb532ed40b35a3ce91d3000c7571adc331f934cc628473acb95e058f2763a9a",
+      "english_sha256": "65d928de02dcf341f196136985f56c713815623ec5510c60432206b1e1965f79",
+      "kind": "archive_english_language_adaptation"
+    },
+    {
+      "original_relative_path": "archive/release_packages/EvoRationale_v42_Development_Pilot_EN.zip",
+      "english_relative_path": "archive/release_packages/EvoRationale_v42_Development_Pilot_EN.zip",
+      "original_sha256": "c9ed36f5788f323570ecf163594e8903f51252776065106f077b6ff9578c6a23",
+      "english_sha256": "e6f62c544043c04fdd10a2cf8da543e023e1a6955b12d35c458ce40bdc97be19",
+      "kind": "archive_english_language_adaptation"
+    },
+    {
+      "original_relative_path": "archive/release_packages/EvoRationale_v43_DiffScope_Development_EN.zip",
+      "english_relative_path": "archive/release_packages/EvoRationale_v43_DiffScope_Development_EN.zip",
+      "original_sha256": "5fe3fd1c2f8b5c51f71aeac0b4b3bef7faac3e49fad6a1da1292de97e8ceb88f",
+      "english_sha256": "bb5e5b580c0f4045e725633e0fc7137b05e551447fa506d61ccaa414dfc485ec",
+      "kind": "archive_english_language_adaptation"
+    },
+    {
+      "original_relative_path": "archive/release_packages/EvoRationale_v44_EventCoverage_Reviewed_EN.zip",
+      "english_relative_path": "archive/release_packages/EvoRationale_v44_EventCoverage_Reviewed_EN.zip",
+      "original_sha256": "89aee5fc83c762cc1b2c222bf168ac2d9d8e88b01971fde6c4146cb708032728",
+      "english_sha256": "8ce38fe1c3be4be2fa56fa4e2319cc27f42573e94781cf03b11a0759c37f2ac1",
+      "kind": "archive_english_language_adaptation"
+    },
+    {
+      "original_relative_path": "archive/release_packages/EvoRationale_v45_DeltaReview_Tested_EN.zip",
+      "english_relative_path": "archive/release_packages/EvoRationale_v45_DeltaReview_Tested_EN.zip",
+      "original_sha256": "bbc7d511c851e4c35712861e6e3c819a5e8948a7aef8dc7887e10020d9fb7764",
+      "english_sha256": "8957210523611bc83eebcf8a8af3af085f2e6f4b9ec14632e2b0cfdaae059aeb",
+      "kind": "archive_english_language_adaptation"
+    },
+    {
+      "original_relative_path": "archive/release_packages/EvoRationale_v46_EvidenceTrace_Tested_EN.zip",
+      "english_relative_path": "archive/release_packages/EvoRationale_v46_EvidenceTrace_Tested_EN.zip",
+      "original_sha256": "00b25c0f2c44aa7ec5eb879cfec3aacf57369c531a1061ba623356b06d3926be",
+      "english_sha256": "39c595f6a358b43785582f562dbee5a4f0a115948fbbd5bf2c3a30b31f158705",
+      "kind": "archive_english_language_adaptation"
+    },
+    {
+      "original_relative_path": "archive/release_packages/EvoRationale_v47_GroundedTrace_Tested_EN.zip",
+      "english_relative_path": "archive/release_packages/EvoRationale_v47_GroundedTrace_Tested_EN.zip",
+      "original_sha256": "3ef1eaffc22b983ac63124756e39672383c330bc402f319e2c2b9e3fb6a63cff",
+      "english_sha256": "01560a2514138d1a42e7e1385863c7e5dfb87a5389e6216729e19802e890f3cd",
+      "kind": "archive_english_language_adaptation"
+    },
+    {
+      "original_relative_path": "archive/release_packages/EvoRationale_v48_V46PolicyRepair_Tested_EN.zip",
+      "english_relative_path": "archive/release_packages/EvoRationale_v48_V46PolicyRepair_Tested_EN.zip",
+      "original_sha256": "8b866fb029b356681e25c954975ce06723526b2ee8bdbbf0c44e10959dea2e54",
+      "english_sha256": "c432679b303d3463bf0d6f9e32964286ec74057be27268830b847a9364472561",
+      "kind": "archive_english_language_adaptation"
+    },
+    {
+      "original_relative_path": "archive/release_packages/EvoRationale_v49_PairReview_Experimental_Tested_EN.zip",
+      "english_relative_path": "archive/release_packages/EvoRationale_v49_PairReview_Experimental_Tested_EN.zip",
+      "original_sha256": "7012422732f8eaa27c9ee73f0ae5831271d0523664cf1764ae1960d19bc71d74",
+      "english_sha256": "27013a8ec89e88e22adaf6d5af559f5e037f0d433df87a204ba53180171f6375",
+      "kind": "archive_english_language_adaptation"
+    }
+  ]
+}

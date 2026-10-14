@@ -1,0 +1,869 @@
+{
+  "status": "V49_ACTUAL_FALSE_NEGATIVE_SOURCE_AUDIT_COMPLETE_NO_API",
+  "provider_calls": 0,
+  "runtime_historical_inputs_scorer_or_reference_changed": false,
+  "same_source_inputs_v46_v48_v49": true,
+  "input_sha256": {
+    "S0_RETROSPECTIVE_RUNTIME.json": "a852f931aa41c2f67b1522651665feb67fad9d92116413553405fb3d9c3ba784",
+    "POST_S0_EVIDENCE_RETROSPECTIVE_53.jsonl": "30f89a8dae945eb588898134b23c1a5276f94dd257ef0ae3f71b9befd670a058"
+  },
+  "false_negatives_reviewed": 5,
+  "desired_candidates_never_emitted": 4,
+  "desired_candidates_emitted_and_rejected_by_critic": 1,
+  "desired_candidates_rejected_for_technical_or_exact_source_failure": 0,
+  "all_scope_counts": {
+    "tp": 14,
+    "fp": 11,
+    "fn": 5,
+    "gold_positive_exact_triples": 19,
+    "f1": 0.6363636363636364
+  },
+  "true_positive_comparisons": {
+    "46": {
+      "retained_true_positives": [
+        {
+          "artifact_id": "079aa5fb9ab1-F01-H05",
+          "element_id": "G2",
+          "relation": "supports"
+        },
+        {
+          "artifact_id": "68952e4476e4-F01-H01",
+          "element_id": "I3",
+          "relation": "supports"
+        },
+        {
+          "artifact_id": "68952e4476e4-F01-H01",
+          "element_id": "R1",
+          "relation": "supports"
+        },
+        {
+          "artifact_id": "68952e4476e4-F01-H04",
+          "element_id": "I1",
+          "relation": "supports"
+        },
+        {
+          "artifact_id": "964260d9c2da-F01-H03",
+          "element_id": "I1",
+          "relation": "supersedes"
+        },
+        {
+          "artifact_id": "964260d9c2da-F01-H05",
+          "element_id": "I1",
+          "relation": "supersedes"
+        },
+        {
+          "artifact_id": "964260d9c2da-F01-H06",
+          "element_id": "I1",
+          "relation": "supersedes"
+        },
+        {
+          "artifact_id": "964260d9c2da-F01-H08",
+          "element_id": "I1",
+          "relation": "supersedes"
+        },
+        {
+          "artifact_id": "964260d9c2da-F01-H09",
+          "element_id": "I1",
+          "relation": "supersedes"
+        },
+        {
+          "artifact_id": "964260d9c2da-F01-H11",
+          "element_id": "I1",
+          "relation": "supersedes"
+        },
+        {
+          "artifact_id": "964260d9c2da-F01-H12",
+          "element_id": "I1",
+          "relation": "supersedes"
+        }
+      ],
+      "gained_true_positives": [
+        {
+          "artifact_id": "079aa5fb9ab1-F01-H05",
+          "element_id": "C2a",
+          "relation": "supports"
+        },
+        {
+          "artifact_id": "964260d9c2da-F01-H04",
+          "element_id": "I1",
+          "relation": "supersedes"
+        },
+        {
+          "artifact_id": "964260d9c2da-F01-H13",
+          "element_id": "R1",
+          "relation": "supports"
+        }
+      ],
+      "lost_true_positives": [
+        {
+          "artifact_id": "079aa5fb9ab1-F01-H05",
+          "element_id": "C1",
+          "relation": "supports"
+        }
+      ]
+    },
+    "48": {
+      "retained_true_positives": [
+        {
+          "artifact_id": "079aa5fb9ab1-F01-H05",
+          "element_id": "G2",
+          "relation": "supports"
+        },
+        {
+          "artifact_id": "68952e4476e4-F01-H01",
+          "element_id": "I3",
+          "relation": "supports"
+        },
+        {
+          "artifact_id": "68952e4476e4-F01-H01",
+          "element_id": "R1",
+          "relation": "supports"
+        },
+        {
+          "artifact_id": "68952e4476e4-F01-H04",
+          "element_id": "I1",
+          "relation": "supports"
+        },
+        {
+          "artifact_id": "964260d9c2da-F01-H04",
+          "element_id": "I1",
+          "relation": "supersedes"
+        },
+        {
+          "artifact_id": "964260d9c2da-F01-H06",
+          "element_id": "I1",
+          "relation": "supersedes"
+        },
+        {
+          "artifact_id": "964260d9c2da-F01-H08",
+          "element_id": "I1",
+          "relation": "supersedes"
+        },
+        {
+          "artifact_id": "964260d9c2da-F01-H09",
+          "element_id": "I1",
+          "relation": "supersedes"
+        },
+        {
+          "artifact_id": "964260d9c2da-F01-H11",
+          "element_id": "I1",
+          "relation": "supersedes"
+        },
+        {
+          "artifact_id": "964260d9c2da-F01-H12",
+          "element_id": "I1",
+          "relation": "supersedes"
+        },
+        {
+          "artifact_id": "964260d9c2da-F01-H13",
+          "element_id": "R1",
+          "relation": "supports"
+        }
+      ],
+      "gained_true_positives": [
+        {
+          "artifact_id": "079aa5fb9ab1-F01-H05",
+          "element_id": "C2a",
+          "relation": "supports"
+        },
+        {
+          "artifact_id": "964260d9c2da-F01-H03",
+          "element_id": "I1",
+          "relation": "supersedes"
+        },
+        {
+          "artifact_id": "964260d9c2da-F01-H05",
+          "element_id": "I1",
+          "relation": "supersedes"
+        }
+      ],
+      "lost_true_positives": [
+        {
+          "artifact_id": "079aa5fb9ab1-F01-H05",
+          "element_id": "C1",
+          "relation": "supports"
+        }
+      ]
+    }
+  },
+  "cases": [
+    {
+      "artifact_id": "04de3dac4669-F01-H01",
+      "element_id": "I2",
+      "expected_relation_for_postrun_comparison": "supersedes",
+      "fixed_s0_text": "Offer per-resource restart-policy choices to control how container resizes are attempted.",
+      "source_content": "@@ -299,8 +299,9 @@ If a pod's RestartPolicy is `Never`, the ResizePolicy fields must be set to\n in the container being stopped *and not restarted*, if the system can not\n perform the resize in place.\n \n-The `ResizePolicy` field is append-only. Appending the policy is allowed to accommodate a resize\n-adding a request or a limit for a resource that wasn't previously present.\n+The `ResizePolicy` field is mutable. Only append is strictly required to support in-place resize\n+(for new resource requirements), and we may reevaluate full mutability if additional edge cases are\n+discovered in implementation.\n \n #### Resize Status\n ",
+      "source_content_sha256": "db675dc4f35c6ffdd45b5bc92aad23f2d9ceb30e93f0e3ce73918343eb8b74b5",
+      "cause_category": "fixed_target_scope_tension",
+      "finding": "Primary no_relation. The hunk changes policy editability from append-only to qualified mutability. I2 promises per-resource restart-policy choices, not policy mutability. Explicit review states S0 has no append-only restriction to supersede. No desired candidate reached the critic or source guard.",
+      "desired_candidate_emitted": false,
+      "desired_candidate_rejected": [],
+      "versions": {
+        "46": {
+          "reviews": [
+            {
+              "status": "no_material_relation",
+              "reason": "The substantive change concerns ResizePolicy field mutability, a constraint not asserted by any fixed-S0 element. It neither establishes replacement of a fixed claim nor independently entails an exact target proposition.",
+              "support_reason": "The added lines provide substantive current source evidence about ResizePolicy mutability and explain why appending policies is required for new resource requirements. That evidence is distinct from architectural drift, but does not establish I2's compound proposition about per-resource restart-policy choices controlling resize attempts. Nor does it establish G1's CPU-and-memory, request-and-limit, no-restart scope or I1's PodSpec/PodStatus representation contract. The Resize Status heading supplies no substantive evidence for I3 or R2. No exact support relation is established for the remaining elements.",
+              "change_reason": "A0001:P0001 replaces the append-only rule in A0001:L0005–A0001:L0006 with a mutable-field rule in A0001:L0007–A0001:L0009, while retaining append as the strictly required capability and qualifying full mutability as subject to reevaluation. I2 requires per-resource restart-policy choices, but does not require those choices to be append-only or immutable. Removing this intervening restriction therefore does not replace or contradict I2. The hunk also does not establish a material change to any other fixed element."
+            }
+          ],
+          "explicit_pair_outcomes": [],
+          "candidate_decisions": [],
+          "effects_for_target": []
+        },
+        "48": {
+          "reviews": [
+            {
+              "status": "no_material_relation",
+              "reason": "The substantive change concerns ResizePolicy mutability, a restriction not asserted by any fixed-S0 element. It neither replaces a material fixed claim nor supplies sufficiently explicit new evidence for an exact fixed claim.",
+              "support_reason": "The added lines provide current source evidence about ResizePolicy mutability and appending policies for new resource requirements. They do not explicitly establish I2's per-resource restart choices or their control of resize attempts, nor I1's desired-resource and PodStatus representation. The reference to supporting in-place resize does not establish G1's qualified CPU/memory and no-required-restart proposition. The unchanged restart caveat in A0001:L0002–A0001:L0003 is not substantive new corroboration. No local changed statement establishes the other fixed goals, requirements, premise, quality attribute, non-goals, or progress-state model. Thus the absence of a material target change is assessed separately from the presence of current—but nonmatching—source evidence.",
+              "change_reason": "In A0001:P0001, A0001:L0005–A0001:L0006 restrict ResizePolicy to append-only updates; A0001:L0007–A0001:L0009 instead permit mutability, while stating that only append is strictly required and that full mutability may be reevaluated. This is a genuine policy-field design change, but I2 requires per-resource restart-policy choices, not append-only or immutable policies. I1 concerns mutable desired-resource fields and allocated/applied resource reporting, not policy-field mutability. Consequently, this change does not establish replacement, retirement, or incompatibility of either claim or any other fixed element."
+            }
+          ],
+          "explicit_pair_outcomes": [],
+          "candidate_decisions": [],
+          "effects_for_target": []
+        },
+        "49": {
+          "reviews": [
+            {
+              "status": "no_material_relation",
+              "reason": "The substantive change makes ResizePolicy mutable rather than append-only. No fixed element specifies that mutability restriction, and the changed passage does not independently establish an exact fixed-S0 claim.",
+              "support_reason": "A0001:L0007–L0009 provide substantive current design evidence about policy mutability, but not an exact S0 predicate. They do not specify per-resource restart choices or their control semantics. The unchanged restart behavior in A0001:L0002–L0003 is not newly contributed support.",
+              "change_reason": "A0001:L0005–L0006 restrict ResizePolicy to appending; A0001:L0007–L0009 permit full mutability while retaining append as the minimum requirement and allowing future reconsideration. This changes the policy-editing contract, but does not replace a material fixed-S0 claim: S0 never required append-only policies."
+            }
+          ],
+          "explicit_pair_outcomes": [
+            {
+              "element_id": "I2",
+              "outcome": "no_relation",
+              "reason": "The delta changes editability of an existing ResizePolicy field, not its per-resource restart choices or resize-control semantics. S0 contains no append-only restriction to supersede.",
+              "relations": []
+            }
+          ],
+          "candidate_decisions": [],
+          "effects_for_target": []
+        }
+      }
+    },
+    {
+      "artifact_id": "079aa5fb9ab1-F01-H02",
+      "element_id": "I2",
+      "expected_relation_for_postrun_comparison": "supersedes",
+      "fixed_s0_text": "Offer per-resource restart-policy choices to control how container resizes are attempted.",
+      "source_content": "@@ -277,8 +277,8 @@ If a pod's RestartPolicy is `Never`, the ResizePolicy fields must be set to\n in the container being stopped *and not restarted*, if the system can not\n perform the resize in place.\n \n-The `ResizePolicy` field is **mutable**, but must have an entry for every resizable resource type\n-with a request or limit on the container.\n+The `ResizePolicy` field is append-only. Appending the policy is allowed to accommodate a resize\n+adding a request or a limit for a resource that wasn't previously present.\n \n #### Resize Status\n \n",
+      "source_content_sha256": "3a36bcfddeceebe9cb94025b960d0f01096f51bf7ec9a24f7734b8bfeed12643",
+      "cause_category": "fixed_target_scope_tension",
+      "finding": "Primary insufficient_evidence. The hunk changes mutable policy updates to append-only extension, but does not replace the restart-policy choices asserted by I2. The fixed target never asserted mutable entries or the removed entry-coverage rule. No desired candidate reached the critic or source guard.",
+      "desired_candidate_emitted": false,
+      "desired_candidate_rejected": [],
+      "versions": {
+        "46": {
+          "reviews": [
+            {
+              "status": "no_material_relation",
+              "reason": "Reviewed against all fixed elements. The append-only ResizePolicy rule is substantive, but fixed S0 does not require policy mutability, and this passage does not itself establish the offered per-resource restart-policy choices.",
+              "support_reason": "The current passage supplies evidence about policy-field update validation. It does not specify the available restart-policy choices or their per-resource restart behavior. The retained fragment about stopping a container is insufficient to establish that compound target, and other fixed claims are not substantively addressed.",
+              "change_reason": "The artifact changes ResizePolicy updates from mutable to append-only, with appending permitted when a previously absent resource request or limit is introduced. That restriction does not replace or contradict I2's requirement to offer per-resource restart-policy choices."
+            }
+          ],
+          "explicit_pair_outcomes": [],
+          "candidate_decisions": [],
+          "effects_for_target": []
+        },
+        "48": {
+          "reviews": [
+            {
+              "status": "no_material_relation",
+              "reason": "Append-only ResizePolicy semantics are a substantive design change, but policy mutability is not a fixed-S0 requirement.",
+              "support_reason": "The new statement associates policy additions with individual resource types, but it does not specify restart-policy choices or how those choices control resize attempts. The unchanged stopped-and-not-restarted fragment cannot supply that missing contract. No other fixed element receives substantive local evidence.",
+              "change_reason": "The source replaces general ResizePolicy mutability with append-only updates for resources newly acquiring a request or limit. S0 does not promise that existing restart-policy choices remain editable, so this is not replacement or incompatibility with I2."
+            }
+          ],
+          "explicit_pair_outcomes": [],
+          "candidate_decisions": [],
+          "effects_for_target": []
+        },
+        "49": {
+          "reviews": [
+            {
+              "status": "insufficient_evidence",
+              "reason": "The append-only policy rule is substantive, but the local passage does not establish the restart-policy choices required by I2. No other exact target relation is supported.",
+              "support_reason": "The added text provides current evidence of resource-associated policy extension. However, it does not specify restart choices or sufficiently connect appending a policy to controlling restart behavior. The surviving stopping caveat does not supply that missing contract.",
+              "change_reason": "ResizePolicy changes from mutable with required resource coverage to append-only, with additions permitted for newly introduced requests or limits. S0 does not assert policy mutability or the removed coverage requirement, so this is not a demonstrated replacement of a fixed claim."
+            }
+          ],
+          "explicit_pair_outcomes": [
+            {
+              "element_id": "I2",
+              "outcome": "insufficient_evidence",
+              "reason": "Appending a resource-associated ResizePolicy is substantive, but the passage does not identify restart-policy choices or establish how those choices control resize attempts.",
+              "relations": []
+            }
+          ],
+          "candidate_decisions": [],
+          "effects_for_target": []
+        }
+      }
+    },
+    {
+      "artifact_id": "079aa5fb9ab1-F01-H05",
+      "element_id": "C1",
+      "expected_relation_for_postrun_comparison": "supports",
+      "fixed_s0_text": "Explicit non-goal: controlling the full lifecycle of a Pod whose in-place resize failed; this is left to the actors that initiated the resize.",
+      "source_content": "@@ -819,9 +824,66 @@ time, irrespective of scrape interval.\n 1. Extend controllers (Job, Deployment, etc) to propagate Template resources\n    update to running Pods.\n 1. Allow resizing local ephemeral storage.\n-1. Allow resource limits to be updated (VPA feature).\n 1. Handle pod-scoped resources (https://github.com/kubernetes/enhancements/pull/1592)\n \n+#### Design Sketch: Workload resource resize\n+\n+The following [workload resources](https://kubernetes.io/docs/concepts/workloads/) are considered\n+for in-place resize support:\n+\n+* Deployment\n+* ReplicaSet\n+* StatefulSet\n+* DaemonSet\n+* Job\n+* CronJob\n+\n+Each of these resources will have a new `ResizePolicy` field added to the spec. In the case of\n+Deployments or Cronjobs, the child (ReplicaSet/Job) will inherit the policy. The resize policy is\n+set to one of: `InPlace` or `Recreate` (default). If the policy is set to recreate, the behavior is\n+unchanged, and generally induces a rolling update.\n+\n+If the policy is set to in-place, the controller will *attempt* to issue an in-place resize to all\n+the child pods. If the resize is not a legal in-place resize, such as changing from guaranteed to\n+burstable, the replicas will be recreated.\n+\n+Open Questions:\n+* Will resizes be issued through a new `/resize` subresource? If so, what happens if a resize is\n+  made that doesn't go through the subresource?\n+* Does ResizePolicy need to be per-resource type (similar to the resize restart policy on pods)?\n+* Can you do a rolling-in-place-resize, or are all child pod resizes issued more or less\n+  simultaneously?\n+\n+#### Design Sketch: Explicit QOS Class\n+\n+Workload resource resize presents a problem for QOS handling. For example:\n+\n+1. ReplicaSet created with a burstable pod shape\n+2. Initial burstable replicas created\n+3. Resize to a guaranteed shape\n+4. Initial replicas are still burstable, but with a guaranteed shape\n+5. Horizontally scale the RS to add additional replicas\n+6. New replicas are created with the guaranteed resource shape, and assigned the guaranteed QOS class\n+7. Resize back to a burstable shape (undoing step 3)\n+\n+After step 6, there are a mix of burstable & guaranteed replicas. In step 7, the burstable pods can\n+be resized in-place, but the guaranteed pods will need to be recreated.\n+\n+To mitigate this, we can introduce an explicit QOSClass field to the pod spec. If set, it must be\n+less than or equal to the QOS shape. In other words, you can set a guaranteed resource shape but an\n+explicit QOSClass of burstable, but not the other way around. If set, the status QOSClass is synced\n+to the explicit QOSClass, and the rest of the behavior is unchanged from the\n+[QOS Class Proposal](#qos-class).\n+\n+Going back to the earlier example, if the original ReplicaSet set an explicit Burstable QOSClass,\n+then the heterogeneity in step 6 is avoided. Alternatively, if there was a real desire to switch to\n+guaranteed in step 3, then the explicit QOSClass can be changed, triggering a recreation of all\n+replicas.\n+\n+#### Design Sktech: Pod-level Limits\n+\n+TODO\n+\n ### Test Plan\n \n <!--",
+      "source_content_sha256": "e1e140be6d087c934079c3fd858e0d5193dff6d808730107a33e8348ce7e8426",
+      "cause_category": "independent_checker_scope_disagreement",
+      "finding": "Primary emits supports for material_subclaim actor-owned fallback, qualified as a future sketch for illegal resizes. The critic rejects because controller-managed recreation is merely compatible with the full lifecycle exclusion and does not explicitly argue that exclusion. Both v46 and v48 accepted this triple. The only rejection reason is candidate_review_rejected; no technical or exact-source failure is involved. The critic receives full fixed C1 quote plus material_subclaim flag, proof handles and relation; primary qualification specifying the intended partial scope is intentionally withheld. This is an inspectable scope-interface risk and fallible semantic disagreement, not demonstrated proof that admission should override the critic.",
+      "desired_candidate_emitted": true,
+      "desired_candidate_rejected": [
+        [
+          "MODEL_ASSESSED:candidate_review_rejected"
+        ]
+      ],
+      "versions": {
+        "46": {
+          "reviews": [
+            {
+              "status": "relation_found",
+              "reason": "Reviewed against all fixed elements. The new future-enhancement sketches provide qualified rationale for controller-owned resize fallback and document a cost of preserving original QoS classes. They do not establish adopted workload-controller behavior or retirement of an existing fixed requirement.",
+              "support_reason": "The controller sketch explicitly supports limited actor control and actor-owned fallback, independently of whether it is adopted. The QoS scenario supplies a concrete rationale-based cost tied to C2a. Bare workload names, open questions about policy granularity, and conditional benefits do not establish additional fixed claims; in particular, the sketch does not prove disruption avoidance, per-container status explanations, or required Events.",
+              "change_reason": "The additions are explicitly design sketches with open questions. They do not adopt controller-policy APIs or an explicit QoSClass replacement. Removing the future-enhancement bullet about resource-limit updates does not affirmatively retire a fixed claim. The mixed-QoS scenario documents a tradeoff without changing C2a."
+            }
+          ],
+          "explicit_pair_outcomes": [],
+          "candidate_decisions": [],
+          "effects_for_target": [
+            {
+              "status": "accepted",
+              "relation": "supports",
+              "reasons": [],
+              "assessment": {
+                "s0_claim_quote": "Explicit non-goal: controlling the full lifecycle of a Pod whose in-place resize failed; this is left to the actors that initiated the resize.",
+                "claim_scope": "material_subclaim",
+                "whole_element_supported": false,
+                "qualification": "The sketch supports the actor-owned lifecycle boundary for this particular illegal-resize fallback. It neither restates the entire full-lifecycle non-goal nor covers every failure mode, and it remains a proposal.",
+                "change_kind": "direct_rationale",
+                "effect_basis": "direct_rationale_argument",
+                "source_role": "proposal_or_alternative",
+                "evidence_basis": "direct_rationale_argument",
+                "current_claim_entailed": true,
+                "material_target_delta": false,
+                "replacement_is_explicit": false,
+                "context_establishes_replacement": false,
+                "before_claim": "The captured before passage does not describe this controller-owned fallback lifecycle.",
+                "after_claim": "The controller that attempts the proposed child-Pod resize also owns replica recreation when that resize is not legal.",
+                "before_line_handles": [],
+                "after_line_handles": [
+                  "A0005:L0025",
+                  "A0005:L0026",
+                  "A0005:L0027"
+                ],
+                "context_line_handles": [
+                  "A0005:L0008",
+                  "A0005:L0020",
+                  "A0005:L0021",
+                  "A0005:L0022",
+                  "A0005:L0023"
+                ],
+                "exact_before_source_lines": [],
+                "exact_after_source_lines": [
+                  "+If the policy is set to in-place, the controller will *attempt* to issue an in-place resize to all",
+                  "+the child pods. If the resize is not a legal in-place resize, such as changing from guaranteed to",
+                  "+burstable, the replicas will be recreated."
+                ],
+                "exact_context_source_lines": [
+                  "+#### Design Sketch: Workload resource resize",
+                  "+Each of these resources will have a new `ResizePolicy` field added to the spec. In the case of",
+                  "+Deployments or Cronjobs, the child (ReplicaSet/Job) will inherit the policy. The resize policy is",
+                  "+set to one of: `InPlace` or `Recreate` (default). If the policy is set to recreate, the behavior is",
+                  "+unchanged, and generally induces a rolling update."
+                ],
+                "reason": "The same workload controller is assigned both the resize attempt and the subsequent recreation decision. That is concrete rationale for leaving fallback lifecycle handling with the initiating actor rather than treating it as an adopted core resize obligation.",
+                "pair_review_confirmation": null
+              }
+            }
+          ]
+        },
+        "48": {
+          "reviews": [
+            {
+              "status": "relation_found",
+              "reason": "The future-design sketches provide qualified rationale for controller-owned resize decisions and document a concrete cost of preserving immutable QoS classes.",
+              "support_reason": "The policy and fallback sketch supplies partial direct rationale for G2 and C1, independently of whether it is adopted. The QoS example documents a target-specific tradeoff for C2a. It does not establish service-disruption outcomes, CPU/memory-only scope, per-resource restart choices, resize states, Events, CRI changes, or the complete desired/allocated/applied resource contract. The open per-resource-policy question is not an adopted requirement.",
+              "change_reason": "The additions are explicitly future design sketches, not adopted supersession. The proposed explicit QoS field still associates intentional class changes with replica recreation. Deleting the old future-enhancement bullet about limits does not affirmatively retire any fixed claim."
+            }
+          ],
+          "explicit_pair_outcomes": [],
+          "candidate_decisions": [],
+          "effects_for_target": [
+            {
+              "status": "accepted",
+              "relation": "supports",
+              "reasons": [],
+              "assessment": {
+                "s0_claim_quote": "Explicit non-goal: controlling the full lifecycle of a Pod whose in-place resize failed; this is left to the actors that initiated the resize.",
+                "claim_scope": "material_subclaim",
+                "whole_element_supported": false,
+                "qualification": "The proposal illustrates actor-owned fallback for illegal resizes only. It does not restate the full lifecycle non-goal or cover deferred and infeasible runtime outcomes.",
+                "change_kind": "direct_rationale",
+                "effect_basis": "direct_rationale_argument",
+                "source_role": "proposal_or_alternative",
+                "evidence_basis": "direct_rationale_argument",
+                "current_claim_entailed": true,
+                "material_target_delta": false,
+                "replacement_is_explicit": false,
+                "context_establishes_replacement": false,
+                "before_claim": "This passage had no concrete allocation of illegal-resize recreation to the initiating workload controller.",
+                "after_claim": "In the workload sketch, the controller that attempts child-Pod resizes also handles recreation when the requested resize is illegal.",
+                "before_line_handles": [],
+                "after_line_handles": [
+                  "A0005:L0025",
+                  "A0005:L0026",
+                  "A0005:L0027"
+                ],
+                "context_line_handles": [
+                  "A0005:L0008",
+                  "A0005:L0020",
+                  "A0005:L0021",
+                  "A0005:L0022",
+                  "A0005:L0023"
+                ],
+                "exact_before_source_lines": [],
+                "exact_after_source_lines": [
+                  "+If the policy is set to in-place, the controller will *attempt* to issue an in-place resize to all",
+                  "+the child pods. If the resize is not a legal in-place resize, such as changing from guaranteed to",
+                  "+burstable, the replicas will be recreated."
+                ],
+                "exact_context_source_lines": [
+                  "+#### Design Sketch: Workload resource resize",
+                  "+Each of these resources will have a new `ResizePolicy` field added to the spec. In the case of",
+                  "+Deployments or Cronjobs, the child (ReplicaSet/Job) will inherit the policy. The resize policy is",
+                  "+set to one of: `InPlace` or `Recreate` (default). If the policy is set to recreate, the behavior is",
+                  "+unchanged, and generally induces a rolling update."
+                ],
+                "reason": "Assigning both the attempt and recreation fallback to the workload controller concretely supports the actor-owned lifecycle boundary, without establishing adoption of the sketch.",
+                "pair_review_confirmation": null
+              }
+            }
+          ]
+        },
+        "49": {
+          "reviews": [
+            {
+              "status": "relation_found",
+              "reason": "The new future-enhancement sketches supply qualified discussion-level evidence for controller choice and actor-owned fallback, and both corroborate and expose a cost of the fixed QoS restart boundary. They do not establish adopted replacement or runtime fulfillment.",
+              "support_reason": "New substantive controller policy and fallback statements corroborate actor control and actor-owned lifecycle handling. The explicit-QoS sketch independently preserves recreation for a deliberate class switch. These are qualified discussion-level arguments, not evidence of deployment or completion of whole fixed elements.",
+              "change_reason": "The additions are future design sketches, not adopted architectural replacements. The removed resource-limits wishlist item has no affirmative retirement proof. The sketches document actor-owned fallback and a QoS-boundary tradeoff while retaining recreation for intentional QoS changes."
+            }
+          ],
+          "explicit_pair_outcomes": [
+            {
+              "element_id": "C1",
+              "outcome": "relation_found",
+              "reason": "The sketch gives the initiating workload controller ownership of recreation after an illegal resize, supporting the actor-owned fallback portion, not the entire lifecycle non-goal.",
+              "relations": [
+                "supports"
+              ]
+            }
+          ],
+          "candidate_decisions": [
+            {
+              "authority_reason": "A0005 is authoritative evidence of a future design sketch, not an adopted lifecycle-management contract.",
+              "candidate_id": "C0002",
+              "contribution_reason": "The new controller fallback is substantive, but it does not explicitly establish the claimed exclusion of full failed-resize lifecycle management or its delegation boundary.",
+              "element_id": "C1",
+              "predicate_reason": "C1 excludes full lifecycle control after failed in-place resize and leaves it to initiating actors. The sketch says controllers attempt resizing and recreate replicas after an illegal resize, without asserting that exclusion.",
+              "reason": "Reject: controller-managed recreation is compatible with C1, but compatibility does not establish the exact non-goal. The sketch does not argue for that boundary.",
+              "relation": "supports",
+              "verdict": "reject"
+            }
+          ],
+          "effects_for_target": [
+            {
+              "status": "rejected",
+              "relation": "supports",
+              "reasons": [
+                "MODEL_ASSESSED:candidate_review_rejected"
+              ],
+              "assessment": {
+                "s0_claim_quote": "Explicit non-goal: controlling the full lifecycle of a Pod whose in-place resize failed; this is left to the actors that initiated the resize.",
+                "claim_scope": "material_subclaim",
+                "whole_element_supported": false,
+                "qualification": "Supports only the actor-owned fallback side of the boundary, for illegal resizes in a proposal. It does not independently state the full non-goal or cover all failed-resize lifecycle operations.",
+                "change_kind": "direct_rationale",
+                "effect_basis": "direct_rationale_argument",
+                "source_role": "proposal_or_alternative",
+                "evidence_basis": "direct_rationale_argument",
+                "current_claim_entailed": true,
+                "material_target_delta": false,
+                "replacement_is_explicit": false,
+                "context_establishes_replacement": false,
+                "before_claim": "The local future-enhancement list mentioned controller propagation but did not assign failed-resize fallback behavior.",
+                "after_claim": "The proposed initiating workload controller attempts child-Pod resizing and handles an illegal resize by recreating replicas.",
+                "before_line_handles": [
+                  "A0005:L0002",
+                  "A0005:L0003"
+                ],
+                "after_line_handles": [
+                  "A0005:L0025",
+                  "A0005:L0026",
+                  "A0005:L0027"
+                ],
+                "context_line_handles": [
+                  "A0005:L0008",
+                  "A0005:L0020",
+                  "A0005:L0021",
+                  "A0005:L0022"
+                ],
+                "exact_before_source_lines": [
+                  " 1. Extend controllers (Job, Deployment, etc) to propagate Template resources",
+                  "    update to running Pods."
+                ],
+                "exact_after_source_lines": [
+                  "+If the policy is set to in-place, the controller will *attempt* to issue an in-place resize to all",
+                  "+the child pods. If the resize is not a legal in-place resize, such as changing from guaranteed to",
+                  "+burstable, the replicas will be recreated."
+                ],
+                "exact_context_source_lines": [
+                  "+#### Design Sketch: Workload resource resize",
+                  "+Each of these resources will have a new `ResizePolicy` field added to the spec. In the case of",
+                  "+Deployments or Cronjobs, the child (ReplicaSet/Job) will inherit the policy. The resize policy is",
+                  "+set to one of: `InPlace` or `Recreate` (default). If the policy is set to recreate, the behavior is"
+                ],
+                "reason": "The same controller that issues the attempted resize owns replica recreation when that resize is illegal. This is a concrete sketch of leaving fallback lifecycle action with the initiating actor.",
+                "pair_review_confirmation": {
+                  "authority_reason": "A0005 is authoritative evidence of a future design sketch, not an adopted lifecycle-management contract.",
+                  "candidate_id": "C0002",
+                  "contribution_reason": "The new controller fallback is substantive, but it does not explicitly establish the claimed exclusion of full failed-resize lifecycle management or its delegation boundary.",
+                  "predicate_reason": "C1 excludes full lifecycle control after failed in-place resize and leaves it to initiating actors. The sketch says controllers attempt resizing and recreate replicas after an illegal resize, without asserting that exclusion.",
+                  "reason": "Reject: controller-managed recreation is compatible with C1, but compatibility does not establish the exact non-goal. The sketch does not argue for that boundary.",
+                  "verdict": "reject"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_id": "68952e4476e4-F01-H01",
+      "element_id": "R2",
+      "expected_relation_for_postrun_comparison": "supports",
+      "fixed_s0_text": "Expose, for each resized container resource, why the desired and actual resources differ: whether a proposed resize has not yet been accepted or rejected by the kubelet, has been accepted and is being actuated, is deferred, or has been rejected as infeasible; supplemented by Pod Events at key steps.",
+      "source_content": "@@ -676,6 +676,26 @@ Other components:\n * check how the change of meaning of resource requests influence other\n   Kubernetes components.\n \n+### Instrumentation\n+\n+The following new metric will be added to track total resize requests, counted at the pod level. In\n+otherwords, a single pod update changing multiple containers and/or resources will count as a single\n+resize request.\n+\n+`kubelet_container_resize_requests_total` - Total number of resize requests observed by the Kubelet.\n+\n+Label: `state` - Count resize request state transitions. This closely tracks the [Resize status](#resize-status) state transitions, omitting `InProgress`. Possible values:\n+  - `proposed` - Initial request state\n+  - `infeasible` - Resize request cannot be completed.\n+  - `deferred` - Resize request cannot initially be completed, but will retry\n+  - `completed` - Resize operation completed successfully (`spec.Resources == status.Allocated == status.Resources`)\n+  - `canceled` - Pod was terminated before resize was completed, or a new resize request was started.\n+\n+In steady state, `proposed` should equal `infeasible + completed + canceled`.\n+\n+The metric is recorded as a counter instead of a gauge to ensure that usage can be tracked over\n+time, irrespective of scrape interval.\n+\n ### Future Enhancements\n \n 1. Kubelet (or Scheduler) evicts lower priority Pods from Node to make room for\n",
+      "source_content_sha256": "bea1e2d06cadbcb8e19c3b815ded01e90e034c536a20572a190a4ee4286e98a5",
+      "cause_category": "fixed_target_granularity_tension",
+      "finding": "Primary no_relation. Pod-level aggregate request state counters do not supply per-container/per-resource discrepancy explanations or required Events in R2. This explicit rationale agrees with v46/v48. No desired candidate reached the critic or source guard.",
+      "desired_candidate_emitted": false,
+      "desired_candidate_rejected": [],
+      "versions": {
+        "46": {
+          "reviews": [
+            {
+              "status": "relation_found",
+              "reason": "The added instrumentation concretely uses the three resource representations and operationalizes resize-progress states. Its Pod-level counters do not establish the per-container, per-resource explanations and Events required by R2.",
+              "support_reason": "R1 receives a concrete three-representation completion witness, and I3 receives qualified state-model evidence. R2 is not established because the metric aggregates at Pod level and supplies neither each resized resource's explanation nor required Events. The remaining elements receive no substantive exact local contribution.",
+              "change_reason": "The new metric supplies operational evidence for existing distinctions and progress modeling, not an architectural replacement. Omitting InProgress from a metric does not retire it from the resize-state model. The unchanged future-enhancement fragment does not establish a new C2c effect."
+            }
+          ],
+          "explicit_pair_outcomes": [],
+          "candidate_decisions": [],
+          "effects_for_target": []
+        },
+        "48": {
+          "reviews": [
+            {
+              "status": "relation_found",
+              "reason": "The added instrumentation concretely witnesses distinct resource representations and resize-progress modeling. Its aggregate counters do not establish per-container, per-resource explanations or Pod Events.",
+              "support_reason": "Current substantive evidence supports R1, the status-reporting portion of I1, and I3. No other fixed element is established: notably, aggregate pod-level state counts neither provide R2's per-resource explanations nor require Events.",
+              "change_reason": "The new counter and completion check add operational evidence, not an architectural replacement of the fixed resource representations or progress model. The retained future-enhancement fragment does not establish a new eviction-policy relation."
+            }
+          ],
+          "explicit_pair_outcomes": [],
+          "candidate_decisions": [],
+          "effects_for_target": []
+        },
+        "49": {
+          "reviews": [
+            {
+              "status": "relation_found",
+              "reason": "New instrumentation concretely compares desired, allocated and applied resources and tracks resize progress. It does not establish per-resource explanations, Events or a replacement architecture.",
+              "support_reason": "The new completion comparison supports R1, and outcome definitions and transition counting partially support I3. Pod-level aggregate counters do not establish R2's per-resource explanations and Events or I1's reporting contract.",
+              "change_reason": "The instrumentation is substantively new, but supplies operational witnesses for existing distinctions and progress modeling rather than changing or retiring those architectural claims."
+            }
+          ],
+          "explicit_pair_outcomes": [
+            {
+              "element_id": "R2",
+              "outcome": "no_relation",
+              "reason": "Pod-level aggregate state counters neither explain each resized container resource's discrepancy nor require Events at key steps.",
+              "relations": []
+            }
+          ],
+          "candidate_decisions": [],
+          "effects_for_target": []
+        }
+      }
+    },
+    {
+      "artifact_id": "964260d9c2da-F01-H14",
+      "element_id": "I1",
+      "expected_relation_for_postrun_comparison": "weakens",
+      "fixed_s0_text": "Represent desired resources through mutable PodSpec fields and report allocated/applied resources through PodStatus.",
+      "source_content": "@@ -1394,3 +1394,61 @@ information to express the idea and why it was not acceptable.\n \n We considered having scheduler approve the resize. We also considered PodSpec as\n the location to checkpoint allocated resources.\n+\n+### Allocated Resources\n+\n+If we need allocated resources & limits in the pod status API, the following options have been\n+considered:\n+\n+**Option 1: New field \"AcceptedResources\"**\n+\n+We can't change the type of the existing field, so instead we\n+introduce a new field `ContainerStatus.AcceptedResources` of type `ResourceRequirements`, to track both\n+allocated requests & limits, and remove the old `AllocatedResources` field. For consistency, we also\n+add `AcceptedResourcesStatus` and remove `AllocatedResourcesStatus`.\n+\n+Pros:\n+- Consistent type across PodSpec.Container.Resources (desired), ContainerStatus.AcceptedResources (allocated), and ContainerStatus.Resources (actual)\n+- If/when we implement in-place resize for DRA resources, Claims are already included in the API.\n+- No need for local checkpointing, if the Kubelet can read back from the status API.\n+\n+Cons:\n+- No path to beta without waiting a release (new fields need to start in alpha)\n+- Extra code churn to migrate to the new fields\n+- Inconsistent with PVC API (which has AllocatedResources), and the Node Allocatable resources.\n+- The Claims field is currently unnecessary, and needs its behavior defined.\n+\n+Variations:\n+- Use an alternative type that is a subset of the ResourceRequirements type without Claims, adding back Claims only when needed.\n+- Field name ContainerStatus.Allocated, as a struct holding both the allocated resources and and the allocated resource status\n+\n+**Option 2: New field \"AllocatedResourceLimits\"**\n+\n+Rather than changing the type with a new field, we could use a flattened API structure and just add\n+`ContainerStatus.AllocatedResourceLimits` alongside `AllocatedResources` (requests).\n+\n+Pros:\n+- Preserves the \"Allocated\" name\n+- Less churn to implement\n+- Does not prematurely import Claims into the problem space\n+\n+Cons:\n+- Uglier API: unnested fields adds noise to the documentation and makes it harder for humans to read the status.\n+- Inconsistent types between Allocated* and Resources\n+- We will want to mirror the same structure in the PodStatus for pod-level resources, and may eventually want to add AllocatedResourceClaims for DRA resource resize\n+\n+**Option 3: Pod-level \"AllocatedResources\", drop container-level API**\n+\n+If we assume that outside the node, controllers and people only care about pod-level allocated\n+resources, then we could drop the container-level allocated resources, and just add a\n+`PodStatus.AllocatedResources` field of type `ResourceRequirements`. The Kubelet still needs to track\n+container-level allocation, and would use a checkpoint to do so.\n+\n+Pros:\n+- Minimalist API, without unnecessary or redundant information\n+- Preserve the \"Allocated\" name while still getting the advantages of type consistency\n+- Similar path to beta as Option 2\n+\n+Cons:\n+- Requires long-term checkpointing to track container allocation\n+- Extra risk in assuming nothing outside the node ever needs to know container-level allocated resources.",
+      "source_content_sha256": "c634056ffda6515ad41f4c553451d0ee9337843d4ae209fd50ead28e57cdb2d5",
+      "cause_category": "alternative_argument_direction_tension",
+      "finding": "Primary and critic confirm supports, never weakens. Their new reading treats Option 3's stated risk of hiding container-level allocation from outside consumers as a discussion-level argument in favor of allocation reporting. Earlier v46/v48 supported different hypothetical API sketches. A cost of dropping allocation visibility is not automatically a cost of chosen allocation reporting; expected weakens remains sensitive to source attribution and fixed-target scope. Do not force all alternative costs into weakens or change Gold/S0.",
+      "desired_candidate_emitted": false,
+      "desired_candidate_rejected": [],
+      "versions": {
+        "46": {
+          "reviews": [
+            {
+              "status": "relation_found",
+              "reason": "The added alternatives supply qualified design-sketch evidence for resource-state separation and allocated-status reporting, without adopting any alternative.",
+              "support_reason": "The explicit sketches provide partial rationale evidence independently of design drift. Conditional DRA expansion does not retire C2d, and hypothetical benefits do not demonstrate fulfillment or runtime validation.",
+              "change_reason": "No alternative is adopted, so none establishes replacement or contradiction. Candidate-specific churn, beta timing, API aesthetics, and checkpoint risks are not automatically costs of the fixed chosen mechanism."
+            }
+          ],
+          "explicit_pair_outcomes": [],
+          "candidate_decisions": [],
+          "effects_for_target": [
+            {
+              "status": "rejected",
+              "relation": "supports",
+              "reasons": [
+                "MODEL_ASSESSED:current_fixed_claim_not_entailed"
+              ],
+              "assessment": {
+                "s0_claim_quote": "report allocated/applied resources through PodStatus.",
+                "claim_scope": "material_subclaim",
+                "whole_element_supported": false,
+                "qualification": "Evidence concerns only the allocated-reporting portion. Applied reporting and mutable desired fields are not established by this passage; the option depends on an explicit assumption and is not adopted.",
+                "change_kind": "direct_rationale",
+                "effect_basis": "direct_rationale_argument",
+                "source_role": "proposal_or_alternative",
+                "evidence_basis": "direct_rationale_argument",
+                "current_claim_entailed": false,
+                "material_target_delta": false,
+                "replacement_is_explicit": false,
+                "context_establishes_replacement": false,
+                "before_claim": "This passage did not contain the new pod-level allocated-status alternative.",
+                "after_claim": "A conditional alternative would expose pod-level allocated requests and limits in PodStatus while retaining container-level allocation in a checkpoint.",
+                "before_line_handles": [],
+                "after_line_handles": [
+                  "A0014:L0048",
+                  "A0014:L0050",
+                  "A0014:L0051",
+                  "A0014:L0052",
+                  "A0014:L0053"
+                ],
+                "context_line_handles": [
+                  "A0014:L0008",
+                  "A0014:L0009",
+                  "A0014:L0061",
+                  "A0014:L0062"
+                ],
+                "exact_before_source_lines": [],
+                "exact_after_source_lines": [
+                  "+**Option 3: Pod-level \"AllocatedResources\", drop container-level API**",
+                  "+If we assume that outside the node, controllers and people only care about pod-level allocated",
+                  "+resources, then we could drop the container-level allocated resources, and just add a",
+                  "+`PodStatus.AllocatedResources` field of type `ResourceRequirements`. The Kubelet still needs to track",
+                  "+container-level allocation, and would use a checkpoint to do so."
+                ],
+                "exact_context_source_lines": [
+                  "+If we need allocated resources & limits in the pod status API, the following options have been",
+                  "+considered:",
+                  "+- Requires long-term checkpointing to track container allocation",
+                  "+- Extra risk in assuming nothing outside the node ever needs to know container-level allocated resources."
+                ],
+                "reason": "The sketch concretely proposes a PodStatus.AllocatedResources API, supporting consideration of status-based allocation reporting without establishing supersession of the chosen design.",
+                "pair_review_confirmation": null
+              }
+            }
+          ]
+        },
+        "48": {
+          "reviews": [
+            {
+              "status": "relation_found",
+              "reason": "The new alternatives section provides a conditional concrete API sketch and an explicit consistency argument for separate desired, allocated, and actual resource representations. It is not an adopted replacement.",
+              "support_reason": "The concrete Option 1 sketch and explicit three-tier consistency argument provide qualified partial rationale for R1 and I1. Hypothetical checkpoint benefits and candidate-specific costs do not establish fulfillment or weaken the actual fixed mechanism without a direct tie.",
+              "change_reason": "None of the alternatives is adopted here. Proposed field removal, possible DRA extensions, and pod-level allocation reporting therefore do not establish replacement, retirement, or incompatibility with S0."
+            }
+          ],
+          "explicit_pair_outcomes": [],
+          "candidate_decisions": [],
+          "effects_for_target": [
+            {
+              "status": "accepted",
+              "relation": "supports",
+              "reasons": [],
+              "assessment": {
+                "s0_claim_quote": "report allocated/applied resources through PodStatus.",
+                "claim_scope": "material_subclaim",
+                "whole_element_supported": false,
+                "qualification": "Only the allocated/applied status-reporting portion is corroborated by this alternative. Mutable PodSpec fields are not established here, and the alternative is not the adopted ordinary API.",
+                "change_kind": "direct_rationale",
+                "effect_basis": "direct_rationale_argument",
+                "source_role": "proposal_or_alternative",
+                "evidence_basis": "direct_rationale_argument",
+                "current_claim_entailed": true,
+                "material_target_delta": false,
+                "replacement_is_explicit": false,
+                "context_establishes_replacement": false,
+                "before_claim": "The captured before text contains no local AcceptedResources status-reporting sketch.",
+                "after_claim": "Conditional Option 1 sketches allocated requests and limits in ContainerStatus.AcceptedResources alongside actual ContainerStatus.Resources.",
+                "before_line_handles": [],
+                "after_line_handles": [
+                  "A0014:L0013",
+                  "A0014:L0014",
+                  "A0014:L0015",
+                  "A0014:L0016",
+                  "A0014:L0019"
+                ],
+                "context_line_handles": [
+                  "A0014:L0008",
+                  "A0014:L0009",
+                  "A0014:L0011"
+                ],
+                "exact_before_source_lines": [],
+                "exact_after_source_lines": [
+                  "+We can't change the type of the existing field, so instead we",
+                  "+introduce a new field `ContainerStatus.AcceptedResources` of type `ResourceRequirements`, to track both",
+                  "+allocated requests & limits, and remove the old `AllocatedResources` field. For consistency, we also",
+                  "+add `AcceptedResourcesStatus` and remove `AllocatedResourcesStatus`.",
+                  "+- Consistent type across PodSpec.Container.Resources (desired), ContainerStatus.AcceptedResources (allocated), and ContainerStatus.Resources (actual)"
+                ],
+                "exact_context_source_lines": [
+                  "+If we need allocated resources & limits in the pod status API, the following options have been",
+                  "+considered:",
+                  "+**Option 1: New field \"AcceptedResources\"**"
+                ],
+                "reason": "The concrete alternative and its stated consistency advantage explicitly place both allocated and actual resource representations in container status.",
+                "pair_review_confirmation": null
+              }
+            }
+          ]
+        },
+        "49": {
+          "reviews": [
+            {
+              "status": "relation_found",
+              "reason": "The alternatives remain conditional proposals, but the explicit risk of hiding container-level allocations provides partial rationale for reporting allocation through PodStatus.",
+              "support_reason": "The external-consumer risk supplies qualified rationale for allocation reporting. Generic type consistency and candidate API shapes alone do not establish the complete three-way distinction or fulfill the compound PodSpec/PodStatus implementation element.",
+              "change_reason": "No adopted architectural replacement is established here. The new section records conditional alternatives and their tradeoffs; its proposed field removals cannot supersede the fixed design."
+            }
+          ],
+          "explicit_pair_outcomes": [
+            {
+              "element_id": "I1",
+              "outcome": "relation_found",
+              "reason": "The explicit risk of assuming external consumers never need container-level allocation provides partial rationale for allocated-resource reporting; alternatives remain unadopted.",
+              "relations": [
+                "supports"
+              ]
+            }
+          ],
+          "candidate_decisions": [
+            {
+              "authority_reason": "The pinned Alternatives section supplies conditional discussion-level rationale only. It is not an adopted requirement to retain unconditional container allocation reporting.",
+              "candidate_id": "C0018",
+              "contribution_reason": "Option 3 explicitly identifies the risk of dropping container-level allocation visibility, directly addressing the allocation-reporting boundary rather than offering generic API consistency benefits.",
+              "element_id": "I1",
+              "predicate_reason": "For I1's allocated-reporting subclaim, the premise is that outsiders need only Pod-level allocation. The stated risk challenges that premise because outsiders may need container-level allocation exposed through the status API.",
+              "reason": "The explicit risk supports container-level allocated-resource reporting at discussion level, without establishing an unconditional adopted reporting obligation.",
+              "relation": "supports",
+              "verdict": "confirm"
+            }
+          ],
+          "effects_for_target": [
+            {
+              "status": "accepted",
+              "relation": "supports",
+              "reasons": [],
+              "assessment": {
+                "s0_claim_quote": "report allocated/applied resources through PodStatus.",
+                "claim_scope": "material_subclaim",
+                "whole_element_supported": false,
+                "qualification": "Discussion-level support for the allocated-reporting part only. It neither adopts an alternative nor independently supports applied-resource reporting or mutable PodSpec fields.",
+                "change_kind": "direct_rationale",
+                "effect_basis": "direct_rationale_argument",
+                "source_role": "proposal_or_alternative",
+                "evidence_basis": "direct_rationale_argument",
+                "current_claim_entailed": true,
+                "material_target_delta": false,
+                "replacement_is_explicit": false,
+                "context_establishes_replacement": false,
+                "before_claim": "This passage contains no corresponding argument about the risk of withholding container-level allocation information.",
+                "after_claim": "Assuming no external consumer needs container-level allocated resources is explicitly identified as risky, providing a reason to preserve externally visible allocation information.",
+                "before_line_handles": [],
+                "after_line_handles": [
+                  "A0014:L0062"
+                ],
+                "context_line_handles": [
+                  "A0014:L0048",
+                  "A0014:L0050",
+                  "A0014:L0051",
+                  "A0014:L0052",
+                  "A0014:L0053"
+                ],
+                "exact_before_source_lines": [],
+                "exact_after_source_lines": [
+                  "+- Extra risk in assuming nothing outside the node ever needs to know container-level allocated resources."
+                ],
+                "exact_context_source_lines": [
+                  "+**Option 3: Pod-level \"AllocatedResources\", drop container-level API**",
+                  "+If we assume that outside the node, controllers and people only care about pod-level allocated",
+                  "+resources, then we could drop the container-level allocated resources, and just add a",
+                  "+`PodStatus.AllocatedResources` field of type `ResourceRequirements`. The Kubelet still needs to track",
+                  "+container-level allocation, and would use a checkpoint to do so."
+                ],
+                "reason": "Option 3 would replace container-level allocation reporting with a pod-level field and local tracking. Its explicit external-consumer risk argues against hiding container allocations, partially corroborating S0's reporting choice.",
+                "pair_review_confirmation": {
+                  "authority_reason": "The pinned Alternatives section supplies conditional discussion-level rationale only. It is not an adopted requirement to retain unconditional container allocation reporting.",
+                  "candidate_id": "C0018",
+                  "contribution_reason": "Option 3 explicitly identifies the risk of dropping container-level allocation visibility, directly addressing the allocation-reporting boundary rather than offering generic API consistency benefits.",
+                  "predicate_reason": "For I1's allocated-reporting subclaim, the premise is that outsiders need only Pod-level allocation. The stated risk challenges that premise because outsiders may need container-level allocation exposed through the status API.",
+                  "reason": "The explicit risk supports container-level allocated-resource reporting at discussion level, without establishing an unconditional adopted reporting obligation.",
+                  "verdict": "confirm"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "feasible_targets_without_population_changes": [
+    {
+      "tp": 14,
+      "fp": 2,
+      "fn": 5,
+      "f1": 0.8,
+      "necessary_change_from_current": "Remove nine false positives while preserving every current true positive."
+    },
+    {
+      "tp": 15,
+      "fp": 1,
+      "fn": 4,
+      "f1": 0.8571428571428571,
+      "necessary_change_from_current": "Recover one additional true positive and remove ten false positives."
+    }
+  ],
+  "scope_constraints": "The two I2 cases and R2 stay in the 19-positive denominator. Resolving these source/target disagreements is not a scoring correction. At TP16/FP2/FN3, F1 could reach32/37=0.864865 even if those three remain missed, but this is hypothetical.",
+  "generic_design_option": {
+    "description": "Before changing semantics, test whether independent candidate review consistently sees the intended partial target scope. It currently receives material_subclaim and a full compound S0 quote while withholding the explicit qualification. A future scope hypothesis could expose intended scope and retained qualifications as untrusted claims for independent checking, while still withholding confidence/reasons/contribution assertions. This requires generic compound-target counterexamples and full saved-effect replay; it is not grounds to auto-confirm rejected candidates.",
+    "counterexamples": [
+      "A source assigning one fallback step to an actor may corroborate that limited delegation without certifying the whole lifecycle exclusion.",
+      "A source supporting one surviving clause must not conceal replacement of another clause in the same compound target.",
+      "A partial status comparison must not be upgraded into a publication obligation or complete per-entity reporting contract.",
+      "A proposal's benefit/cost must retain the correct argument direction and attribution to chosen versus alternative mechanism."
+    ],
+    "limits": "No deterministic FN-side source guard defect is demonstrated. Passing a primary qualifier may introduce anchoring and can worsen precision. Generic transport tests prove information routing, not hosted semantic improvement."
+  },
+  "recommendation": "Keep v49 frozen; preserve all actual predictions. The main remaining F1 bottleneck is precision (11FP), while the explicit pair stage recovered omitted supersession/boundary links. Prioritize a generic, independently testable precision/scope defect identified by the FP audit; do not create another version solely to force these five reference triples. Any new hosted F1 claim needs a separately frozen experiment."
+}

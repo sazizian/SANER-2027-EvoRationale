@@ -1,0 +1,31 @@
+{
+  "all_old_accepted_effects_preserved": true,
+  "controlled_local_transport_calls": 12,
+  "gold_labels_read": false,
+  "input_sha256": {
+    "history": "30f89a8dae945eb588898134b23c1a5276f94dd257ef0ae3f71b9befd670a058",
+    "runtime_s0": "a852f931aa41c2f67b1522651665feb67fad9d92116413553405fb3d9c3ba784"
+  },
+  "limitations": [
+    "Repacked old fallible interpretations include previous false positives.",
+    "Preserving guards is not proof that a new hosted model run will reproduce earlier predictions.",
+    "No hosted v4.8 precision, recall or F1 has been measured."
+  ],
+  "new_model_predictions": false,
+  "old_accepted": 19,
+  "old_rejected": 4,
+  "provider_calls": 0,
+  "recovered_effects": [
+    {
+      "artifact_id": "964260d9c2da-F01-H04",
+      "element_id": "I1",
+      "relation": "supersedes"
+    }
+  ],
+  "repair_accepted": 20,
+  "repair_rejected": 3,
+  "semantic_instructions_and_response_schema_match_v46": true,
+  "source_input_bytes_changed": false,
+  "status": "V48_ALL_V46_STORED_EFFECTS_SOURCE_GUARD_REPLAY_PASSED_NO_API",
+  "stored_effects_checked": 23
+}

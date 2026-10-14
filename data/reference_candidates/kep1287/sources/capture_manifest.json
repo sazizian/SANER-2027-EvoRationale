@@ -1,0 +1,27 @@
+{
+  "baseline_approval_event_verified": false,
+  "baseline_commit": "5950905de89aab2be202d28b823701276cbefea0",
+  "baseline_commit_time": "2023-10-26T15:17:39Z",
+  "baseline_kep_yaml_git_blob_sha1": "fd75bc9a121275a09debf7fd55304b483405bd36",
+  "baseline_kep_yaml_sha256": "a48b0aa683a193ef097604d7404a187a43cc60deb847c67dde702e6a88d32620",
+  "baseline_metadata_stage": "alpha",
+  "baseline_metadata_status": "implementable",
+  "baseline_readme_git_blob_sha1": "ce5124cf7975a7d4ce6a122b2cb4006b4bc0ea2d",
+  "baseline_readme_sha256": "f42855e662d154268b3fca59ef816128f8b7e5359e56466a174a375a930b26fa",
+  "captured_at": "2026-10-11T00:48:50.661480Z",
+  "commit_rows_in_window": 23,
+  "curated_commits_verified": [
+    "68952e4476e47eb71321a2c7f92844e602d38d22",
+    "079aa5fb9ab1a66f09f1d0c841025f7451474265",
+    "964260d9c2da8f75423771fffd9989077d4d92aa",
+    "04de3dac4669f4b2f792c17488c680ce4b144679"
+  ],
+  "historical_replay_certified": false,
+  "human_adjudicated_ground_truth": false,
+  "repository": "kubernetes/enhancements",
+  "research_warning": "The baseline commit is a reproducible 2023 revision, not proof of first acceptance. Commits and patches are candidate change evidence, not drift labels.",
+  "source_kind": "Immutable git commit objects captured retrospectively",
+  "source_path": "keps/sig-node/1287-in-place-update-pod-resources/README.md",
+  "status": "CAPTURED_REQUIRES_HUMAN_ADJUDICATION",
+  "window_end_exclusive": "2024-10-11T00:00:00Z"
+}

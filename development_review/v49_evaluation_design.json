@@ -1,0 +1,108 @@
+{
+  "status": "V49_PREIMPLEMENTATION_EVALUATION_RECOMMENDATION_NO_API",
+  "provider_calls": 0,
+  "gold_positive_triples": 19,
+  "baseline_gold_positive_triples": 14,
+  "reference_population_changes_permitted": false,
+  "prior_best_all": {
+    "version": "v46",
+    "tp": 12,
+    "fp": 7,
+    "fn": 7,
+    "f1": 0.631578947368421
+  },
+  "formula": "F1=2TP/(TP+FP+19)",
+  "threshold_constraints": {
+    "0_80": "3TP >= 2FP + 38",
+    "0_85": "23TP >= 17FP + 323"
+  },
+  "feasible_rows": [
+    {
+      "tp": 12,
+      "fn": 7,
+      "maximum_fp_for_f1_ge_0_80": null,
+      "maximum_fp_for_f1_ge_0_85": null
+    },
+    {
+      "tp": 13,
+      "fn": 6,
+      "maximum_fp_for_f1_ge_0_80": 0,
+      "maximum_fp_for_f1_ge_0_85": null
+    },
+    {
+      "tp": 14,
+      "fn": 5,
+      "maximum_fp_for_f1_ge_0_80": 2,
+      "maximum_fp_for_f1_ge_0_85": null
+    },
+    {
+      "tp": 15,
+      "fn": 4,
+      "maximum_fp_for_f1_ge_0_80": 3,
+      "maximum_fp_for_f1_ge_0_85": 1
+    },
+    {
+      "tp": 16,
+      "fn": 3,
+      "maximum_fp_for_f1_ge_0_80": 5,
+      "maximum_fp_for_f1_ge_0_85": 2
+    },
+    {
+      "tp": 17,
+      "fn": 2,
+      "maximum_fp_for_f1_ge_0_80": 6,
+      "maximum_fp_for_f1_ge_0_85": 4
+    },
+    {
+      "tp": 18,
+      "fn": 1,
+      "maximum_fp_for_f1_ge_0_80": 8,
+      "maximum_fp_for_f1_ge_0_85": 5
+    },
+    {
+      "tp": 19,
+      "fn": 0,
+      "maximum_fp_for_f1_ge_0_80": 9,
+      "maximum_fp_for_f1_ge_0_85": 6
+    }
+  ],
+  "scope_tension_conservative_scenario": {
+    "persistent_missing_triples": 3,
+    "do_not_exclude_from_denominator": true,
+    "maximum_tp_without_recovering_those": 16,
+    "f1_at_tp16_fp2_fn3": 0.8648648648648649,
+    "f1_at_tp15_fp1_fn4": 0.8571428571428571
+  },
+  "predeclared_pilot_success": {
+    "primary_metric": "all exact-triple F1 >= 0.80",
+    "baseline_metric": "report baseline exact-triple F1 as a secondary metric; aim to preserve best measured 0.689655",
+    "fixed_population": "all19 gold triples, baseline14, all30 labeled hunks; no exclusions",
+    "complete_execution": "paired coverage mechanically complete for selected30hunks and18S0targets; no technical verifier failures or silent missing decision rows",
+    "budget_and_model_record": "record actual model IDs, per-phase calls, input/output usage, retry count, time, phase accounting and input/code/prompt/schema hashes",
+    "freshness": "freeze experimental source/schema/policy and success rule before one new hosted run; preserve every completed/failed result",
+    "claim_limit": "one developmental result meeting threshold is not robust or held-out performance; do not claim unit/mock coverage proves F1"
+  },
+  "replication_recommendation": "After the pilot, if robust performance is claimed, use a predeclared fixed number of repeated runs for both v46 and v49 under matched inputs/model aliases and account actual compute. Include every run; report mean/range and each count, not only the best. Separately evaluate untouched episodes/reference examples to establish generalization. No hosted run is performed by this audit.",
+  "meaningful_no_api_tests": [
+    "Complete Cartesian pair coverage rejected when a pair is absent, duplicated or unknown, even if top-level considered IDs contain all targets.",
+    "No accepted effect can contradict its pair decision; reject positive candidates attached to negative/uncertain pair verdicts.",
+    "Preserve exact local changed source proof and same-event context identity; prohibit unrelated artifact rescue and proposals-as-adopted replacement.",
+    "Generic scope/qualification fixtures: metrics cannot certify per-entity explanations or required events; interim policy mutability cannot supersede a fixed claim that lacks it.",
+    "Explicit non-goal evidence distinguishes enforcing an excluded action from a cost of retaining that exclusion; alternative costs require attribution to the chosen mechanism.",
+    "Independent checking receives source/candidate target data without first-classifier reasons or gold reference labels; its reject/uncertain status never yields an accepted triple.",
+    "Second-phase negative-only and positive-candidate request envelopes are separately exercised through local fake transport; incomplete/truncated output follows bounded technical retry handling.",
+    "Budget accounting includes both phases and retries; halt before a request exceeding real allowed budget.",
+    "Historical profiles produce unchanged schema/instruction/guard outcomes; runtime/frozen inputs and scorer bytes remain fixed.",
+    "Read-only completed-run reuse and score reuse preserve bytes; partial/tampered results fail closed and never trigger an automatic repeat provider call."
+  ],
+  "workflow_changes": [
+    "Add required completed --previous-v48 comparator, PARENT_V48_CODE_SHA256, validated V48 bundle and SCORE_RECEIPT pins; preserve previous43..47 ancestry checks.",
+    "Use new versioned KIND/PROFILE/status keys, V49_READY pointer, exclusive RUN_ATTEMPT and SCORE_ATTEMPT; do not mutate inherited wrappers or historical evaluation folders.",
+    "Pin the explicit classification/checking phase configuration and semantic policy in preparation, run manifest/receipt, checkpoint and scorer/bundler reuse checks.",
+    "Preserve models/budgets copied from v46 if that is actual policy; if per-phase accounting or output/request budgets change, disclose it rather than imply equal compute.",
+    "Scorer previous_metrics adds version48 bundle verification and hashes, while _score_core.py and gold-population validation remain byte-identical.",
+    "Audit v49 fake response must populate its new pair matrix; empty links+considered IDs no longer suffice as complete coverage.",
+    "Continue API-key check before exclusive fresh run claim and completed-run verification before key/approval; no secret in output or receipts.",
+    "Windows README uses returned V49_READY path after restart, direct venv python, Downloads fallback ZIP lookup, verified completed-run reuse, and fresh directory names."
+  ]
+}

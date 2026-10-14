@@ -1,0 +1,257 @@
+{
+  "accepted_at": "2025-01-10T05:46:36Z",
+  "artifact_count": 22,
+  "artifact_types": {
+    "commit": 12,
+    "pull_request": 4,
+    "review_comment": 6
+  },
+  "capture_started_at": "2026-10-10T06:46:35.786310Z",
+  "completeness": "BOUNDED SELECTIVE SEARCH. Not exhaustive history or independently adjudicated ground truth.",
+  "cutoff_at": "2026-10-10T06:46:50.967433Z",
+  "decision_sha256": "926d4f12efb793dbc1dd698b41fc857b673240a8ea2d79ecb18d0c91cd5bbf7e",
+  "disclosure": "LIVE CAPTURE OF CURRENT PUBLIC GITHUB RECORDS, NOT HISTORICAL REPLAY OR SANER STUDY RESULTS",
+  "history_sha256": "7cbc867639ec703df03d025e035cf96c30e2535415d597e6ece092f9768552e8",
+  "human_review": "REQUIRED BEFORE TREATING OUTCOME AS SCIENTIFIC RESULT",
+  "queries": [
+    "AVNM",
+    "\"Virtual Network Manager\""
+  ],
+  "query_and_sampling_warnings": [
+    {
+      "query": "repo:Azure/Enterprise-Scale is:pr AVNM",
+      "total_count": 4
+    },
+    {
+      "query": "repo:Azure/Enterprise-Scale is:pr \"Virtual Network Manager\"",
+      "total_count": 3
+    },
+    {
+      "found": 4,
+      "kept": 3,
+      "pr": 1880,
+      "warning": "COMMENTS_SAMPLED"
+    },
+    {
+      "found": 10,
+      "kept": 3,
+      "pr": 1880,
+      "warning": "COMMITS_SAMPLED"
+    },
+    {
+      "found": 6,
+      "kept": 3,
+      "pr": 1896,
+      "warning": "COMMITS_SAMPLED"
+    },
+    {
+      "found": 89,
+      "kept": 3,
+      "pr": 1946,
+      "warning": "COMMITS_SAMPLED"
+    },
+    {
+      "found": 15,
+      "kept": 3,
+      "pr": 2083,
+      "warning": "COMMENTS_SAMPLED"
+    },
+    {
+      "pr": 2083,
+      "warning": "COMMITS_PAGINATION_INCOMPLETE"
+    },
+    {
+      "found": 100,
+      "kept": 3,
+      "pr": 2083,
+      "warning": "COMMITS_SAMPLED"
+    }
+  ],
+  "raw_api_calls": 30,
+  "repository": "Azure/Enterprise-Scale",
+  "selected_pr_numbers": [
+    1880,
+    1896,
+    1946,
+    2083
+  ],
+  "source": "GitHub public REST API",
+  "source_artifacts": [
+    {
+      "artifact_id": "github-pull_request-1880",
+      "content_sha256": "a14e7e6f5ca6d066a3ed1ba27f7dd13fc8c29193a8ee33647e8b4e971666018d",
+      "excerpt_truncated": false,
+      "first_auditable_at": "2026-10-10T06:46:37.202355Z",
+      "original_timestamp": "2025-01-10T08:35:08Z",
+      "source_location": "https://github.com/Azure/Enterprise-Scale/pull/1880"
+    },
+    {
+      "artifact_id": "github-review_comment-1922337772",
+      "content_sha256": "487d28fa4025f08dfb2aa034aa7371d0ec052082e8d804e3e62644220ab587f7",
+      "excerpt_truncated": false,
+      "first_auditable_at": "2026-10-10T06:46:38.039054Z",
+      "original_timestamp": "2025-01-20T12:34:44Z",
+      "source_location": "https://github.com/Azure/Enterprise-Scale/pull/1880#discussion_r1922337772"
+    },
+    {
+      "artifact_id": "github-review_comment-1922341492",
+      "content_sha256": "26bd251304b257a863d4c9d503774d3f170d120a5e19cb91226d011053c46d1a",
+      "excerpt_truncated": false,
+      "first_auditable_at": "2026-10-10T06:46:38.039187Z",
+      "original_timestamp": "2025-01-20T12:37:38Z",
+      "source_location": "https://github.com/Azure/Enterprise-Scale/pull/1880#discussion_r1922341492"
+    },
+    {
+      "artifact_id": "github-review_comment-1925465234",
+      "content_sha256": "e17a3bbe5043e5457c34117a34f20aeb72a583e83126ccba3a104747fc2788dd",
+      "excerpt_truncated": false,
+      "first_auditable_at": "2026-10-10T06:46:38.039279Z",
+      "original_timestamp": "2025-01-22T14:55:54Z",
+      "source_location": "https://github.com/Azure/Enterprise-Scale/pull/1880#discussion_r1925465234"
+    },
+    {
+      "artifact_id": "github-commit-7ea9b3626a6ff2c6cd10cc05d73ca9588d256368",
+      "content_sha256": "347cd5b4d912009e0034499851cebb8efd640764f35dd93e45d00f15bff86b35",
+      "excerpt_truncated": false,
+      "first_auditable_at": "2026-10-10T06:46:39.096767Z",
+      "original_timestamp": "2025-01-23T14:17:16Z",
+      "source_location": "https://github.com/Azure/Enterprise-Scale/commit/7ea9b3626a6ff2c6cd10cc05d73ca9588d256368"
+    },
+    {
+      "artifact_id": "github-commit-ad1bbe43d271ce7067295a084e810481ddd95bd5",
+      "content_sha256": "3735975f11d7479e804b7b30d3eeb24a32a58a324701c4c22b1ce6752bd2b25f",
+      "excerpt_truncated": false,
+      "first_auditable_at": "2026-10-10T06:46:39.537021Z",
+      "original_timestamp": "2025-01-24T12:20:03Z",
+      "source_location": "https://github.com/Azure/Enterprise-Scale/commit/ad1bbe43d271ce7067295a084e810481ddd95bd5"
+    },
+    {
+      "artifact_id": "github-commit-5ba2d3af9118b155f118e33733d271e73e606b7d",
+      "content_sha256": "00c9c8fd71324103fa2de25c603f17edd1057d41c4d50d28043200bed01c4f16",
+      "excerpt_truncated": false,
+      "first_auditable_at": "2026-10-10T06:46:39.952611Z",
+      "original_timestamp": "2025-01-24T16:42:38Z",
+      "source_location": "https://github.com/Azure/Enterprise-Scale/commit/5ba2d3af9118b155f118e33733d271e73e606b7d"
+    },
+    {
+      "artifact_id": "github-pull_request-1896",
+      "content_sha256": "d0103ca4455cef27536025c04ad95ff8f1a355d3e7d2c4eeb28f746a6d2ee0ab",
+      "excerpt_truncated": false,
+      "first_auditable_at": "2026-10-10T06:46:40.355361Z",
+      "original_timestamp": "2025-01-24T08:27:07Z",
+      "source_location": "https://github.com/Azure/Enterprise-Scale/pull/1896"
+    },
+    {
+      "artifact_id": "github-commit-ff92f997d32c20d0a439b1d502f13c58f9f1d93f",
+      "content_sha256": "81009f789a6c2b1e736e4835c7a55e074a2d38ec2641275a4887a99911648259",
+      "excerpt_truncated": false,
+      "first_auditable_at": "2026-10-10T06:46:41.874276Z",
+      "original_timestamp": "2025-01-24T05:54:57Z",
+      "source_location": "https://github.com/Azure/Enterprise-Scale/commit/ff92f997d32c20d0a439b1d502f13c58f9f1d93f"
+    },
+    {
+      "artifact_id": "github-commit-71c525a7ce5adeeae57853f48601ea6cb3604ceb",
+      "content_sha256": "d13699148eab0ecb36f5bd2acb9f60113967ab6f7c645675b4cd774e40295a92",
+      "excerpt_truncated": false,
+      "first_auditable_at": "2026-10-10T06:46:42.258611Z",
+      "original_timestamp": "2025-01-24T06:29:59Z",
+      "source_location": "https://github.com/Azure/Enterprise-Scale/commit/71c525a7ce5adeeae57853f48601ea6cb3604ceb"
+    },
+    {
+      "artifact_id": "github-commit-cdd3430f26f003ae04acbc5e5271b447167d9447",
+      "content_sha256": "7081d56fc97971d6d411a9c8f570513c8a1300393ef3e913025dc9427888f065",
+      "excerpt_truncated": false,
+      "first_auditable_at": "2026-10-10T06:46:42.592240Z",
+      "original_timestamp": "2025-01-24T07:19:31Z",
+      "source_location": "https://github.com/Azure/Enterprise-Scale/commit/cdd3430f26f003ae04acbc5e5271b447167d9447"
+    },
+    {
+      "artifact_id": "github-pull_request-1946",
+      "content_sha256": "655f8bd93249b6e87c6051e3fd69364cab2fe39eeef9c7c8431bf31e9d7ce934",
+      "excerpt_truncated": false,
+      "first_auditable_at": "2026-10-10T06:46:42.972931Z",
+      "original_timestamp": "2025-03-12T14:47:35Z",
+      "source_location": "https://github.com/Azure/Enterprise-Scale/pull/1946"
+    },
+    {
+      "artifact_id": "github-commit-8afddb1d8d9f44007a5a82ff3dc06db6f3a791a9",
+      "content_sha256": "31f0d9214b8bcbd858ad20c1c82726b2c7199c7057703708e3fb848aef4fb71e",
+      "excerpt_truncated": false,
+      "first_auditable_at": "2026-10-10T06:46:44.745236Z",
+      "original_timestamp": "2025-03-12T14:53:50Z",
+      "source_location": "https://github.com/Azure/Enterprise-Scale/commit/8afddb1d8d9f44007a5a82ff3dc06db6f3a791a9"
+    },
+    {
+      "artifact_id": "github-commit-b8e7c7d27d709965cf823c93c996a60b3a6a0a17",
+      "content_sha256": "8747cf8139d4fbe8db4f30737fcc00bc1755a19cd45419fbe3ea3613e9d4ddfe",
+      "excerpt_truncated": false,
+      "first_auditable_at": "2026-10-10T06:46:45.253539Z",
+      "original_timestamp": "2025-03-12T14:56:26Z",
+      "source_location": "https://github.com/Azure/Enterprise-Scale/commit/b8e7c7d27d709965cf823c93c996a60b3a6a0a17"
+    },
+    {
+      "artifact_id": "github-commit-b8b6dab0b35e86bc9b66d9585d07371a689c1249",
+      "content_sha256": "5572601cccf05c48c6d5d8dd5f55ab063a6d32c9e7be2ac1479ef9f544530f71",
+      "excerpt_truncated": false,
+      "first_auditable_at": "2026-10-10T06:46:45.671019Z",
+      "original_timestamp": "2025-03-12T15:16:10Z",
+      "source_location": "https://github.com/Azure/Enterprise-Scale/commit/b8b6dab0b35e86bc9b66d9585d07371a689c1249"
+    },
+    {
+      "artifact_id": "github-pull_request-2083",
+      "content_sha256": "fae3a8eedd39472f357b33ddb4005de8f89f7c85d845ab9fafb41ff90838cf6d",
+      "excerpt_truncated": true,
+      "first_auditable_at": "2026-10-10T06:46:46.093661Z",
+      "original_timestamp": "2025-11-07T16:38:34Z",
+      "source_location": "https://github.com/Azure/Enterprise-Scale/pull/2083"
+    },
+    {
+      "artifact_id": "github-review_comment-2504566113",
+      "content_sha256": "fcce30ff631777639bd4fce1fb177a803885f39d678d029df796ad38cd090cc5",
+      "excerpt_truncated": false,
+      "first_auditable_at": "2026-10-10T06:46:47.026167Z",
+      "original_timestamp": "2025-11-07T16:52:12Z",
+      "source_location": "https://github.com/Azure/Enterprise-Scale/pull/2083#discussion_r2504566113"
+    },
+    {
+      "artifact_id": "github-review_comment-2568285025",
+      "content_sha256": "7c01e08ff84649d18fe937b87b392e7fb6723f123dd0a0ece4f505f219b1cef7",
+      "excerpt_truncated": false,
+      "first_auditable_at": "2026-10-10T06:46:47.026244Z",
+      "original_timestamp": "2025-11-27T11:50:50Z",
+      "source_location": "https://github.com/Azure/Enterprise-Scale/pull/2083#discussion_r2568285025"
+    },
+    {
+      "artifact_id": "github-review_comment-2568287083",
+      "content_sha256": "603529c479edea0a0789e2f1cf29928fd988688e1f561f9ee77366b49b89cf1a",
+      "excerpt_truncated": false,
+      "first_auditable_at": "2026-10-10T06:46:47.026273Z",
+      "original_timestamp": "2025-11-27T11:51:17Z",
+      "source_location": "https://github.com/Azure/Enterprise-Scale/pull/2083#discussion_r2568287083"
+    },
+    {
+      "artifact_id": "github-commit-408c6eeed904659ea4b133289fcd0d670afd4617",
+      "content_sha256": "080e5fc31d7e8133d80a980c12cb471aed49e3512652caf764cd9081b07ed300",
+      "excerpt_truncated": false,
+      "first_auditable_at": "2026-10-10T06:46:48.197202Z",
+      "original_timestamp": "2025-11-05T20:04:38Z",
+      "source_location": "https://github.com/Azure/Enterprise-Scale/commit/408c6eeed904659ea4b133289fcd0d670afd4617"
+    },
+    {
+      "artifact_id": "github-commit-b9c810880621982f07b3a5f4820a45715f16f927",
+      "content_sha256": "5e1de75ea4fca4355ed7e487bbc72c3e2fe5615f693b486cae38592ee882cff9",
+      "excerpt_truncated": false,
+      "first_auditable_at": "2026-10-10T06:46:48.596816Z",
+      "original_timestamp": "2025-11-05T22:02:17Z",
+      "source_location": "https://github.com/Azure/Enterprise-Scale/commit/b9c810880621982f07b3a5f4820a45715f16f927"
+    },
+    {
+      "artifact_id": "github-commit-9b3bbf2387233e70213769c3a15cd5d040a37aec",
+      "content_sha256": "997a14f4c3fa0392041f6aedc3b6c622129add8a4e7047e64aaa715f20a3b61c",
+      "excerpt_truncated": false,
+      "first_auditable_at": "2026-10-10T06:46:48.967303Z",
+      "original_timestamp": "2025-11-05T22:38:15Z",
+      "source_location": "https://github.com/Azure/Enterprise-Scale/commit/9b3bbf2387233e70213769c3a15cd5d040a37aec"
+    }
+  ]
+}

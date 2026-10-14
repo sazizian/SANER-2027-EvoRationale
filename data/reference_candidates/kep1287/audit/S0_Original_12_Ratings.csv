@@ -1,0 +1,13 @@
+id,reviewer_A_verdict,reviewer_B_verdict,original_candidate,independent_agreement
+G1,ACCEPT,ACCEPT,"Permit CPU and memory resource requests/limits to change in place, without requiring a Pod or container restart.",YES
+G2,REWRITE,REWRITE,Let the initiating actor choose how to handle a resource-resize request that cannot be completed in place.,YES
+G3,REWRITE,REWRITE,Make container-resource update and inspection through the CRI usable across Windows and other runtimes.,YES
+A1,REWRITE,REWRITE,"At the snapshot date, immutable Pod resource settings ordinarily require Pod recreation to change allocations.",YES
+Q1,ACCEPT,ACCEPT,"Avoid service disruption for stateful, batch, and low-replica workloads; availability and cost are stated concerns.",YES
+R1,REWRITE,REWRITE,Distinguish requested resource settings from allocated and actually applied resource states.,YES
+R2,REWRITE,REWRITE,Expose progress and failure states for proposed resource-resize operations.,YES
+C1,REWRITE,REWRITE,Delegate recovery and lifecycle handling after an unsuccessful resize to the actor that initiated it.,YES
+C2,REWRITE,REWRITE,"Keep the proposal focused on CPU and memory, excluding QoS-class changes and several other resource or eviction cases.",YES
+I1,ACCEPT,ACCEPT,Represent desired resources through mutable PodSpec fields and report allocated/applied resources through PodStatus.,YES
+I2,ACCEPT,ACCEPT,Offer per-resource restart-policy choices to control how container resizes are attempted.,YES
+I3,ACCEPT,ACCEPT,"Model resize operation progress through states such as proposed, in progress, deferred and infeasible.",YES

@@ -1,0 +1,9 @@
+{
+  "status": "LOCAL_SOURCE_SCREEN_BENCHMARK_NO_API",
+  "checked_safe_added_lines": 283,
+  "substantive_added_lines": 215,
+  "seconds": 0.3841,
+  "cache": "CacheInfo(hits=192, misses=27, maxsize=64, currsize=27)",
+  "semantic_accuracy_measured": false,
+  "gold_labels_read": false
+}

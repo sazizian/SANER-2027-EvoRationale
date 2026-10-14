@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "evorationale-paper-aligned"
+version = "4.7.0.dev0"
+description = "Bounded decision-centered architectural revalidation reference implementation"
+requires-python = ">=3.11"
+readme = "README.md"
+license = { text = "MIT" }
+
+[project.scripts]
+evorationale = "evorationale.cli:main"
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10", "scipy>=1.12"]
+openai = ["openai>=1.50,<3"]
+embeddings = ["sentence-transformers>=3,<6"]
+storage = ["pymongo>=4.8,<5", "elasticsearch>=8.15,<10"]
+api = ["fastapi>=0.115,<1", "uvicorn>=0.30,<1", "pydantic>=2.8,<3"]
+research = ["numpy>=1.26", "scipy>=1.12"]
+
+[tool.setuptools]
+packages = ["evorationale"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

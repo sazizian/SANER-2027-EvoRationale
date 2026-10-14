@@ -1,0 +1,71 @@
+% Verified actual results only. This is an insertion fragment, not a complete paper.
+% Keep earlier nine-method and 60-case human results as separate studies.
+\subsection{Controlled Structural-Policy Study}
+\label{sec:controlled-abc-actual}
+We executed three conditions on the same 298 frozen repository cases:
+A retained the decision inventory and enforced the structural contracts;
+B retained the inventory and recorded contract violations diagnostically;
+C used three stages without the inventory. All conditions used the same
+model, reasoning setting, stage count, and per-request output limit.
+A and B shared prompt templates, while C also changed the inter-stage
+representation and instructions. All conditions retained the common
+verified-context filter. Thus, B--C evaluates an inventory-and-representation
+bundle rather than removal of every source-validation mechanism.
+
+\begin{table}[t]
+\centering
+\caption{Actual ABC execution on 298 cases. Completion is operational;
+reported tokens include all recorded attempts.}
+\label{tab:abc-actual-execution}
+\begin{tabular}{lrrrr}
+\hline
+Condition & First & Eventual & Requests & Tokens \\
+\hline
+A & 259/298 & 293/298 & 944 & 6,110,488 \\
+B & 298/298 & 298/298 & 894 & 5,705,631 \\
+C & 297/298 & 298/298 & 895 & 4,970,738 \\
+\hline
+\end{tabular}
+\end{table}
+
+Condition A completed 259 cases on first attempts and 293 after bounded
+retries. B completed all 298 cases on first attempts; C completed 297,
+with one HTTP failure subsequently recovered. A's 55 rejected stage attempts
+comprised 16 Stage~1 and 39 Stage~3 rejections. Stage~3 trace failures occurred
+in 39 attempts, including 23 with coverage failures. Stage~1 provenance and
+inventory failures occurred in 14 and 15 attempts, respectively; these
+categories overlap. Five A cases remained unavailable after the retry limit.
+
+Enforcement limited release to outputs satisfying the implemented
+structural predicates. All 1,341 recommendations in A's accepted final
+outputs passed the structural trace check. This is a release-policy property,
+not a semantic-correctness assessment. Applying the A predicates to B's
+fixed archived chains would accept 257 and reject 41. This retrospective
+replay measures policy compliance of existing content; it does not recreate
+the generation that would follow an enforced rejection.
+
+The realized computation differed despite common request settings.
+A consumed 7.1\% more recorded tokens than B and 22.9\% more than C.
+One C error has no reported usage, so its token total covers available
+records rather than certified complete billable consumption. These results
+characterize structural compliance, availability, and operational cost;
+they do not establish a semantic advantage independent of computation.
+
+\subsection{Source-Only Human Pilot}
+\label{sec:abc-source-pilot}
+Two assessors returned source annotations for the six calibration cases,
+covering two discussions, two issues, and two pull requests. They submitted
+37 and 35 concern annotations, respectively. Offline checks found all 72
+quoted excerpts verbatim within the cited source-line spans. The counts
+describe annotations over the same six cases, not distinct cases or an
+adjudicated set of unique concerns. Literal quotation checks do not establish
+semantic entailment or completeness of the extracted concerns.
+
+Participation ended after source annotation. No comparative judgments of
+the new A/B/C outputs were collected, and the planned 60-case main ABC human
+study was not completed. The original submissions were retained unchanged.
+Assistance declarations were incomplete or ambiguous; the coordinator
+reported writing assistance for the first assessor, but the workbook wording
+did not cleanly separate writing assistance from substantive annotation.
+This pilot is consequently reported as limited source-annotation evidence,
+separately from the earlier comparative human study.

@@ -1,0 +1,234 @@
+{
+  "accepted_at": "2023-10-26T15:17:39Z",
+  "accepted_at_basis": "IMMUTABLE_SNAPSHOT_COMMIT_DATE_PROXY; the original proposal acceptance date is not established",
+  "assumptions": [
+    {
+      "id": "A1",
+      "keywords": [],
+      "reference_status": "PI_REPORTED_HUMAN_REVIEW__DOCUMENTARY_SIGNOFF_MISSING",
+      "source": "https://github.com/kubernetes/enhancements/blob/5950905de89aab2be202d28b823701276cbefea0/keps/sig-node/1287-in-place-update-pod-resources/README.md#L132-L133",
+      "source_section": "Motivation",
+      "text": "Motivating premise stated in the 2023 KEP text: because PodSpec container resources are immutable, changing a Pod's resource allocation requires recreating the Pod."
+    }
+  ],
+  "audit_capture_at": "2026-10-11T00:48:50.661480Z",
+  "baseline_git_commit": "5950905de89aab2be202d28b823701276cbefea0",
+  "baseline_kep_yaml_git_blob_sha1": "fd75bc9a121275a09debf7fd55304b483405bd36",
+  "baseline_kep_yaml_source": "https://github.com/kubernetes/enhancements/blob/5950905de89aab2be202d28b823701276cbefea0/keps/sig-node/1287-in-place-update-pod-resources/kep.yaml",
+  "baseline_readme_git_blob_sha1": "ce5124cf7975a7d4ce6a122b2cb4006b4bc0ea2d",
+  "builder_status": "AWAITING_DOCUMENTED_REVIEWER_SIGNOFF",
+  "central_element_ids": [
+    "G1",
+    "A1",
+    "Q1",
+    "R1",
+    "I1",
+    "I2"
+  ],
+  "composite_groups": [
+    {
+      "member_ids": [
+        "G3a",
+        "G3b",
+        "G3c"
+      ],
+      "original_id": "G3"
+    },
+    {
+      "member_ids": [
+        "C2a",
+        "C2b",
+        "C2c",
+        "C2d",
+        "C2e"
+      ],
+      "original_id": "C2"
+    }
+  ],
+  "consensus_provenance": {
+    "d7b996f_I1_relation": "PI_REPORTED_DUAL_HUMAN_AGREEMENT",
+    "final_consensus_personally_reviewed_without_ai": "PI_REPORTED",
+    "independent_human_reviews": "PI_REPORTED",
+    "reviewer_signatures_in_supplied_workbook": false,
+    "snapshot_not_original_acceptance_event": true,
+    "source_workbook_ai_proposal_notes_present": true
+  },
+  "constraints_dependencies": [
+    {
+      "id": "C1",
+      "keywords": [],
+      "reference_status": "PI_REPORTED_HUMAN_REVIEW__DOCUMENTARY_SIGNOFF_MISSING",
+      "source": "https://github.com/kubernetes/enhancements/blob/5950905de89aab2be202d28b823701276cbefea0/keps/sig-node/1287-in-place-update-pod-resources/README.md#L174-L178",
+      "source_section": "Non-Goals",
+      "text": "Explicit non-goal: controlling the full lifecycle of a Pod whose in-place resize failed; this is left to the actors that initiated the resize."
+    },
+    {
+      "decomposed_from_id": "C2",
+      "id": "C2a",
+      "keywords": [],
+      "reference_status": "PI_REPORTED_HUMAN_REVIEW__DOCUMENTARY_SIGNOFF_MISSING",
+      "source": "https://github.com/kubernetes/enhancements/blob/5950905de89aab2be202d28b823701276cbefea0/keps/sig-node/1287-in-place-update-pod-resources/README.md#L181-L181",
+      "source_section": "Non-Goals",
+      "text": "Changing a Pod's QoS class without a restart is a non-goal."
+    },
+    {
+      "decomposed_from_id": "C2",
+      "id": "C2b",
+      "keywords": [],
+      "reference_status": "PI_REPORTED_HUMAN_REVIEW__DOCUMENTARY_SIGNOFF_MISSING",
+      "source": "https://github.com/kubernetes/enhancements/blob/5950905de89aab2be202d28b823701276cbefea0/keps/sig-node/1287-in-place-update-pod-resources/README.md#L182-L182",
+      "source_section": "Non-Goals",
+      "text": "Changing Init Container resources without a restart is a non-goal."
+    },
+    {
+      "decomposed_from_id": "C2",
+      "id": "C2c",
+      "keywords": [],
+      "reference_status": "PI_REPORTED_HUMAN_REVIEW__DOCUMENTARY_SIGNOFF_MISSING",
+      "source": "https://github.com/kubernetes/enhancements/blob/5950905de89aab2be202d28b823701276cbefea0/keps/sig-node/1287-in-place-update-pod-resources/README.md#L183-L183",
+      "source_section": "Non-Goals",
+      "text": "Evicting lower-priority Pods to make room for a resize is a non-goal (noted as a possible future enhancement)."
+    },
+    {
+      "decomposed_from_id": "C2",
+      "id": "C2d",
+      "keywords": [],
+      "reference_status": "PI_REPORTED_HUMAN_REVIEW__DOCUMENTARY_SIGNOFF_MISSING",
+      "source": "https://github.com/kubernetes/enhancements/blob/5950905de89aab2be202d28b823701276cbefea0/keps/sig-node/1287-in-place-update-pod-resources/README.md#L184-L184",
+      "source_section": "Non-Goals",
+      "text": "In-place resize is restricted to CPU and memory; updating extended resources or any other resource type is a non-goal."
+    },
+    {
+      "decomposed_from_id": "C2",
+      "id": "C2e",
+      "keywords": [],
+      "reference_status": "PI_REPORTED_HUMAN_REVIEW__DOCUMENTARY_SIGNOFF_MISSING",
+      "source": "https://github.com/kubernetes/enhancements/blob/5950905de89aab2be202d28b823701276cbefea0/keps/sig-node/1287-in-place-update-pod-resources/README.md#L185-L185",
+      "source_section": "Non-Goals",
+      "text": "Supporting CPU/memory manager policies other than the default 'None' policy is a non-goal."
+    }
+  ],
+  "cutoff_at": "2026-10-11T00:48:52.661480Z",
+  "decision": "Support changing CPU and memory resources for running Pods without mandatory Pod or container recreation.",
+  "decision_id": "Kubernetes-KEP-1287",
+  "episode_id": "kep1287-20231026-retrospective-demo-candidate",
+  "event_window_end_exclusive": "2024-10-11T00:00:00Z",
+  "goals": [
+    {
+      "id": "G1",
+      "keywords": [],
+      "reference_status": "PI_REPORTED_HUMAN_REVIEW__DOCUMENTARY_SIGNOFF_MISSING",
+      "source": "https://github.com/kubernetes/enhancements/blob/5950905de89aab2be202d28b823701276cbefea0/keps/sig-node/1287-in-place-update-pod-resources/README.md#L100-L104",
+      "source_section": "Summary; Goals",
+      "text": "Permit CPU and memory resource requests/limits to change in place, without requiring a Pod or container restart."
+    },
+    {
+      "id": "G2",
+      "keywords": [],
+      "reference_status": "PI_REPORTED_HUMAN_REVIEW__DOCUMENTARY_SIGNOFF_MISSING",
+      "source": "https://github.com/kubernetes/enhancements/blob/5950905de89aab2be202d28b823701276cbefea0/keps/sig-node/1287-in-place-update-pod-resources/README.md#L160-L163",
+      "source_section": "Goals",
+      "text": "Allow actors (e.g., users, VPA, StatefulSet, JobController) to decide how to proceed when an in-place resource resize is not possible."
+    },
+    {
+      "decomposed_from_id": "G3",
+      "id": "G3a",
+      "keywords": [],
+      "reference_status": "PI_REPORTED_HUMAN_REVIEW__DOCUMENTARY_SIGNOFF_MISSING",
+      "source": "https://github.com/kubernetes/enhancements/blob/5950905de89aab2be202d28b823701276cbefea0/keps/sig-node/1287-in-place-update-pod-resources/README.md#L166-L167",
+      "source_section": "Motivation; Goals",
+      "text": "Change the UpdateContainerResources CRI API to take a platform-agnostic ContainerResources parameter so that it works for Windows containers and other non-Linux runtimes, not only Linux."
+    },
+    {
+      "decomposed_from_id": "G3",
+      "id": "G3b",
+      "keywords": [],
+      "reference_status": "PI_REPORTED_HUMAN_REVIEW__DOCUMENTARY_SIGNOFF_MISSING",
+      "source": "https://github.com/kubernetes/enhancements/blob/5950905de89aab2be202d28b823701276cbefea0/keps/sig-node/1287-in-place-update-pod-resources/README.md#L168-L169",
+      "source_section": "Motivation; Goals",
+      "text": "Extend the ContainerStatus CRI API so the kubelet can query the CPU and memory configuration currently applied to a container."
+    },
+    {
+      "decomposed_from_id": "G3",
+      "id": "G3c",
+      "keywords": [],
+      "reference_status": "PI_REPORTED_HUMAN_REVIEW__DOCUMENTARY_SIGNOFF_MISSING",
+      "source": "https://github.com/kubernetes/enhancements/blob/5950905de89aab2be202d28b823701276cbefea0/keps/sig-node/1287-in-place-update-pod-resources/README.md#L171-L172",
+      "source_section": "Motivation; Goals",
+      "text": "Define, as a high-level guide rather than a detailed implementation specification, the expected behavior of a container runtime when handling resource updates."
+    }
+  ],
+  "human_approved": false,
+  "human_review_required": true,
+  "implementation_scope": [
+    {
+      "id": "I1",
+      "keywords": [],
+      "reference_status": "PI_REPORTED_HUMAN_REVIEW__DOCUMENTARY_SIGNOFF_MISSING",
+      "source": "https://github.com/kubernetes/enhancements/blob/5950905de89aab2be202d28b823701276cbefea0/keps/sig-node/1287-in-place-update-pod-resources/README.md#L197-L217",
+      "source_section": "API Changes",
+      "text": "Represent desired resources through mutable PodSpec fields and report allocated/applied resources through PodStatus."
+    },
+    {
+      "id": "I2",
+      "keywords": [],
+      "reference_status": "PI_REPORTED_HUMAN_REVIEW__DOCUMENTARY_SIGNOFF_MISSING",
+      "source": "https://github.com/kubernetes/enhancements/blob/5950905de89aab2be202d28b823701276cbefea0/keps/sig-node/1287-in-place-update-pod-resources/README.md#L230-L250",
+      "source_section": "Container Resize Policy",
+      "text": "Offer per-resource restart-policy choices to control how container resizes are attempted."
+    },
+    {
+      "id": "I3",
+      "keywords": [],
+      "reference_status": "PI_REPORTED_HUMAN_REVIEW__DOCUMENTARY_SIGNOFF_MISSING",
+      "source": "https://github.com/kubernetes/enhancements/blob/5950905de89aab2be202d28b823701276cbefea0/keps/sig-node/1287-in-place-update-pod-resources/README.md#L257-L273",
+      "source_section": "Resize Status",
+      "text": "Model resize operation progress through states such as proposed, in progress, deferred and infeasible."
+    }
+  ],
+  "original_alternatives_not_encoded_as_outcome": [
+    {
+      "description": "Scheduler approval of resize was considered; rationale for rejecting it is not documented in this short section.",
+      "source": "https://github.com/kubernetes/enhancements/blob/5950905de89aab2be202d28b823701276cbefea0/keps/sig-node/1287-in-place-update-pod-resources/README.md#L1172",
+      "source_section": "Alternatives"
+    },
+    {
+      "description": "Checkpointing allocated resources in PodSpec was considered; rationale for rejecting it is not documented in this short section.",
+      "source": "https://github.com/kubernetes/enhancements/blob/5950905de89aab2be202d28b823701276cbefea0/keps/sig-node/1287-in-place-update-pod-resources/README.md#L1172",
+      "source_section": "Alternatives"
+    }
+  ],
+  "original_evidence": [],
+  "quality_attributes": [
+    {
+      "id": "Q1",
+      "keywords": [],
+      "reference_status": "PI_REPORTED_HUMAN_REVIEW__DOCUMENTARY_SIGNOFF_MISSING",
+      "source": "https://github.com/kubernetes/enhancements/blob/5950905de89aab2be202d28b823701276cbefea0/keps/sig-node/1287-in-place-update-pod-resources/README.md#L135-L142",
+      "source_section": "Motivation",
+      "text": "Avoid service disruption for stateful, batch, and low-replica workloads; availability and cost are stated concerns."
+    }
+  ],
+  "rationale_time_note": "The pinned 2023 snapshot predates the selected 2024 commit window; the original KEP approval is not proven by the snapshot time.",
+  "repository": "kubernetes/enhancements",
+  "requirements": [
+    {
+      "id": "R1",
+      "keywords": [],
+      "reference_status": "PI_REPORTED_HUMAN_REVIEW__DOCUMENTARY_SIGNOFF_MISSING",
+      "source": "https://github.com/kubernetes/enhancements/blob/5950905de89aab2be202d28b823701276cbefea0/keps/sig-node/1287-in-place-update-pod-resources/README.md#L197-L217",
+      "source_section": "Proposal; API Changes",
+      "text": "Distinguish the desired resources declared in the Pod spec from the resources allocated to the Pod on the node and from the actual resources applied to its containers."
+    },
+    {
+      "id": "R2",
+      "keywords": [],
+      "reference_status": "PI_REPORTED_HUMAN_REVIEW__DOCUMENTARY_SIGNOFF_MISSING",
+      "source": "https://github.com/kubernetes/enhancements/blob/5950905de89aab2be202d28b823701276cbefea0/keps/sig-node/1287-in-place-update-pod-resources/README.md#L257-L273",
+      "source_section": "Resize Status",
+      "text": "Expose, for each resized container resource, why the desired and actual resources differ: whether a proposed resize has not yet been accepted or rejected by the kubelet, has been accepted and is being actuated, is deferred, or has been rejected as infeasible; supplemented by Pod Events at key steps."
+    }
+  ],
+  "research_label": "RETROSPECTIVE_INPUTS_NOT_HISTORICAL_REPLAY_CERTIFIED",
+  "review_instructions": "Verify all paraphrased statements against the pinned snapshot, confirm chronology and actual acceptance separately, remove conjecture, and only then explicitly approve a revision for controlled experiments."
+}

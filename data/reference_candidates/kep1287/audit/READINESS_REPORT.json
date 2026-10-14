@@ -1,0 +1,34 @@
+{
+  "PI_reported_dual_human_review": true,
+  "baseline_rationale_drift_gold_available": false,
+  "benchmark_input_artifacts": 53,
+  "candidate_s0_atomic_elements": 18,
+  "commit_screening_units": 23,
+  "commits_with_full_patch_in_curated_sources": 4,
+  "dataset_id": "kep1287_20231026_pi_attested_candidate_v1",
+  "decompositions": {
+    "C2": [
+      "C2a",
+      "C2b",
+      "C2c",
+      "C2d",
+      "C2e"
+    ],
+    "G3": [
+      "G3a",
+      "G3b",
+      "G3c"
+    ]
+  },
+  "direct_documented_dual_signoff_available": false,
+  "historic_replay_certified": false,
+  "next_action": "Archive direct reviewer agreement on exact 18-element S0 and reference mappings, check scope and temporal basis, then freeze a candidate benchmark version.",
+  "original_s0_elements": 12,
+  "outcome_gold_available": false,
+  "patch_hunk_units": 30,
+  "publication_gold_ready": false,
+  "screening_needs_diff": 9,
+  "screening_uncertain": 4,
+  "selected_event_units": 4,
+  "source_reconciliation_contains_ai_proposal_notes": true
+}

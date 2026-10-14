@@ -1,0 +1,18 @@
+{
+  "status": "SCOPE_RECHECK_DIAGNOSTICS_VERIFIED_NO_API_CALLED",
+  "run_id": "fbb1c892-88e4-4e49-80cb-0a433eaaa87a",
+  "experiment_kind": "CACHED_V49_PRIMARY_SCOPE_RECHECK",
+  "member_sha256": {
+    "RUN_RECEIPT.json": "beff21479caf637718bc9625973d02da319090a0a510b65a7da239503a9e2cba",
+    "PROTOCOL.json": "5ff74fbc421134e47ba501916261cd55e058e9af4b11ba02e9504378d806190d",
+    "inputs/S0_RETROSPECTIVE_RUNTIME.json": "a852f931aa41c2f67b1522651665feb67fad9d92116413553405fb3d9c3ba784",
+    "inputs/POST_S0_EVIDENCE_RETROSPECTIVE_53.jsonl": "30f89a8dae945eb588898134b23c1a5276f94dd257ef0ae3f71b9befd670a058",
+    "inputs/V49_PRIMARY_CHECKPOINT.json": "6e08b33edb44ea38e7d1a6d396ee0debd4fbcebab41d4ef935c2b523f7846ace",
+    "run/report.json": "425164a40e192fab94752f87c42a8a992d48bcd842fe75a2c21a3181744dc17f",
+    "run/manifest.json": "5a4f11efd2b0af0133422e285790404809d7b605abd105090fbe9e8952e2f4ea",
+    "checkpoints/fbb1c892-88e4-4e49-80cb-0a433eaaa87a.json": "9e09e64f546c9b7ae685019f2132e6a251623575768b0a3d871fc1f20e1d80c7",
+    "score/SCORE_RECEIPT.json": "6720a6e2911fdb506d101393fd935599b54361ff4fad0f15d0a4f4db513044bd",
+    "score/metrics.json": "ee1d89492aff02efcde12a452123ce04b4f97028381b8960d4e5c32c6d182b0b",
+    "score/link_errors.csv": "130d7228a63d0eb8b02823ca492d7cee3a18d070b304425512df96cc33487ed5"
+  }
+}

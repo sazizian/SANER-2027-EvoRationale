@@ -1,0 +1,1559 @@
+{
+  "catalog_kind": "EVIDENCE_BACKED_GITHUB_RESULTS_EXPORT_AUDIT",
+  "created_utc": "2026-10-12",
+  "exported_frozen_reference_path": "data/references/frozen_reference",
+  "fixed_evaluation_population": {
+    "all_hunks": 30,
+    "all_positive_exact_triples": 19,
+    "atomic_targets": 18,
+    "baseline_definition": "Annotation subset excluding temporal_basis_inherited_from_event INTERIM_2024; does not determine runtime target temporal scope.",
+    "baseline_hunks": 24,
+    "baseline_positive_exact_triples": 14,
+    "reference_rows_are_post_run_scoring_only": true,
+    "unlabeled_history_artifacts": 53
+  },
+  "frozen_manifest_sha256": "2cfce69a76edea3b950394bd570d07a6cc3a1736481d1603ce4efd21344ee53c",
+  "frozen_reference_source_path": "diagnostics/frozen_reference_211411/KEP1287_Reviewer_Confirmed_Freeze",
+  "hosted_development_runs": [
+    {
+      "accuracy_source": "COMPLETED_USER_SUPPLIED_HOSTED_DEVELOPMENT_RUN",
+      "architecture_outcome_gold_available": false,
+      "budgets_source": "diagnostics/v44_472626dc/RUN_RECEIPT.json",
+      "checkpoint_source_path": "diagnostics/v44_472626dc/472626dc-dd7c-48c5-8a94-3420bb8c4ef4.json",
+      "comparison_note": "Descriptive development comparison: identical source inputs and nominal budgets; investigation profile, provider-call pattern, and token accounting differ.",
+      "coverage": {
+        "eligible_artifact_versions": 53,
+        "model_reported_reviewed_artifact_versions": 30,
+        "selected_artifact_versions": 36,
+        "source_versions_read": 30
+      },
+      "evidence_class": "UPLOADED_FLAT_DIAGNOSTIC_ZIP_RECEIPT_LINKED_PARTIAL_PROVENANCE",
+      "exported_checkpoint_path": "data/results/runs/v44/472626dc-dd7c-48c5-8a94-3420bb8c4ef4.json",
+      "exported_metrics_path": "data/results/runs/v44/metrics.json",
+      "exported_raw_zip_path": "data/packages/diagnostics/EvoRationale_v44_Diagnostics_20261011-130744-846.zip",
+      "exported_receipt_path": "data/results/runs/v44/RUN_RECEIPT.json",
+      "exported_report_path": "data/results/runs/v44/report.json",
+      "exported_run_path": "data/results/runs/v44",
+      "finish_utc": "2026-10-11T18:02:18.288774+00:00",
+      "held_out": false,
+      "historical_replay_certified": false,
+      "hosted_duration_seconds": 283.747,
+      "investigation_profile": "event-complete",
+      "label": "v4.4",
+      "metrics_source_path": "diagnostics/v44_472626dc/metrics.json",
+      "missing_original_provenance_files": [
+        "DEV_PREP_MANIFEST.json",
+        "run/manifest.json",
+        "score/SCORE_RECEIPT.json",
+        "DIAGNOSTIC_BUNDLE_MANIFEST.json"
+      ],
+      "mode": "api",
+      "models": {
+        "judge": "gpt-6-luna",
+        "linker": "gpt-6.1-sol"
+      },
+      "new_primary_api_requests": null,
+      "no_extra_analysis_files_are_declared_run_members": true,
+      "nominal_budgets": {
+        "max_input_tokens": 100000,
+        "max_queries": 12,
+        "max_reads": 36,
+        "max_rounds": 6
+      },
+      "original_cached_primary_cost_excluded_from_new_scope_request_counts": false,
+      "original_diagnostic_members": [
+        {
+          "exported_path": "data/results/runs/v44/report.json",
+          "member": "report.json",
+          "sha256": "40bd229ac4d2534f634b869cb68325aa794e2e2e8644bc1ad4b1c37a1f842f02",
+          "source_path": "diagnostics/v44_472626dc/report.json"
+        },
+        {
+          "exported_path": "data/results/runs/v44/metrics.json",
+          "member": "metrics.json",
+          "sha256": "d31bc68e0fe66b8144effe939cdb1302741c2f42832aa1eb375a1c89ac4e4067",
+          "source_path": "diagnostics/v44_472626dc/metrics.json"
+        },
+        {
+          "exported_path": "data/results/runs/v44/link_errors.csv",
+          "member": "link_errors.csv",
+          "sha256": "330428668be415b8a27ae619db72744eca36ec52602a134436fa93e1cc0ff71c",
+          "source_path": "diagnostics/v44_472626dc/link_errors.csv"
+        },
+        {
+          "exported_path": "data/results/runs/v44/RUN_RECEIPT.json",
+          "member": "RUN_RECEIPT.json",
+          "sha256": "2c07ee7ff440ab561c9f4c20e3330492b90a6714ba9f7b03484d97e419adfb79",
+          "source_path": "diagnostics/v44_472626dc/RUN_RECEIPT.json"
+        },
+        {
+          "exported_path": "data/results/runs/v44/S0_RETROSPECTIVE_RUNTIME.json",
+          "member": "S0_RETROSPECTIVE_RUNTIME.json",
+          "sha256": "a852f931aa41c2f67b1522651665feb67fad9d92116413553405fb3d9c3ba784",
+          "source_path": "diagnostics/v44_472626dc/S0_RETROSPECTIVE_RUNTIME.json"
+        },
+        {
+          "exported_path": "data/results/runs/v44/POST_S0_EVIDENCE_RETROSPECTIVE_53.jsonl",
+          "member": "POST_S0_EVIDENCE_RETROSPECTIVE_53.jsonl",
+          "sha256": "30f89a8dae945eb588898134b23c1a5276f94dd257ef0ae3f71b9befd670a058",
+          "source_path": "diagnostics/v44_472626dc/POST_S0_EVIDENCE_RETROSPECTIVE_53.jsonl"
+        },
+        {
+          "exported_path": "data/results/runs/v44/472626dc-dd7c-48c5-8a94-3420bb8c4ef4.json",
+          "member": "472626dc-dd7c-48c5-8a94-3420bb8c4ef4.json",
+          "sha256": "b2f896cdacb997e7683d9ae91193bd14344d6a0f0d0022c43cf4901bc93f6f8b",
+          "source_path": "diagnostics/v44_472626dc/472626dc-dd7c-48c5-8a94-3420bb8c4ef4.json"
+        }
+      ],
+      "raw_upload_zip_crc_ok": true,
+      "raw_upload_zip_sha256": "2e1a3c92870eaf4a8583184b2c368bdcde4d9f7f8bc864d0aeafd4ec747ec0e7",
+      "raw_upload_zip_source_path": "upload/EvoRationale_v44_Diagnostics_20261011-130744-846.zip",
+      "report_source_path": "diagnostics/v44_472626dc/report.json",
+      "reported_budget_usage": {
+        "accounting": "REQUEST_ENVELOPE_ESTIMATE_INCLUDING_RETRIES_NOT_BILLING",
+        "estimated_input_tokens": 79257,
+        "max_output_tokens_per_request": 16384,
+        "provider_reported_input_tokens": 59423,
+        "provider_reported_output_tokens": 23640,
+        "provider_requests_reserved": 10,
+        "provider_responses_received": 10,
+        "queries": 6,
+        "responses_with_reported_usage": 10,
+        "rounds": 6,
+        "unique_artifact_reads": 30
+      },
+      "request_schema_groups": {
+        "unspecified": {
+          "estimated_input_tokens": 79257,
+          "provider_input_tokens": 59423,
+          "provider_output_tokens": 23640,
+          "requests": 10
+        }
+      },
+      "results": {
+        "all": {
+          "evaluated_hunks": 30,
+          "f1": 0.3,
+          "fn": 13,
+          "fp": 15,
+          "fp_on_unrelated_or_implementation_only_hunks": 4,
+          "gold_positive_exact_triples": 19,
+          "precision": 0.285714,
+          "predicted_exact_triples": 21,
+          "predicted_hunk_coverage": {
+            "count": 13,
+            "of": 30
+          },
+          "recall": 0.315789,
+          "tp": 6,
+          "unscored_prediction_links_outside_hunk_universe": 0
+        },
+        "baseline": {
+          "evaluated_hunks": 24,
+          "f1": 0.214286,
+          "fn": 11,
+          "fp": 11,
+          "fp_on_unrelated_or_implementation_only_hunks": 3,
+          "gold_positive_exact_triples": 14,
+          "precision": 0.214286,
+          "predicted_exact_triples": 14,
+          "predicted_hunk_coverage": {
+            "count": 9,
+            "of": 24
+          },
+          "recall": 0.214286,
+          "tp": 3,
+          "unscored_prediction_links_outside_hunk_universe": 7
+        }
+      },
+      "run_id": "472626dc-dd7c-48c5-8a94-3420bb8c4ef4",
+      "run_receipt_source_path": "diagnostics/v44_472626dc/RUN_RECEIPT.json",
+      "runtime_source": {
+        "evorationale_python_tree_sha256": "9c7fc66afd6d315c5f02a7b4d88a10ca91c7ad43360fadba9d01cd3e71f91e3e",
+        "matches_run_receipt": true,
+        "source_path": "er_v44_build/EvoRationale_v44_DEV_EN"
+      },
+      "semantic_phase_config": null,
+      "source_run_id": null,
+      "start_utc": "2026-10-11T17:57:34.541580+00:00",
+      "verification": {
+        "all_error_rows_reproduced": true,
+        "member_hashes_ok": true,
+        "run_report_receipt_sha256_ok": true,
+        "scores_recomputed": {
+          "all": "ALL_COUNTS_METRICS_AND_COVERAGE_REPRODUCED_WITH_UNCHANGED_V49_SCORER",
+          "baseline": "ALL_COUNTS_METRICS_AND_COVERAGE_REPRODUCED_WITH_UNCHANGED_V49_SCORER"
+        }
+      }
+    },
+    {
+      "accuracy_source": "COMPLETED_USER_SUPPLIED_HOSTED_DEVELOPMENT_RUN",
+      "architecture_outcome_gold_available": false,
+      "budgets_source": "diagnostics/v45_e98cc3a9/RUN_RECEIPT.json",
+      "checkpoint_source_path": "diagnostics/v45_e98cc3a9/checkpoints/e98cc3a9-fe80-4db8-99d9-cc23a64c115f.json",
+      "comparison_note": "Descriptive development comparison: identical source inputs and nominal budgets; investigation profile, judge model, provider-call pattern, and token accounting differ.",
+      "coverage": {
+        "eligible_artifact_versions": 53,
+        "model_reported_reviewed_artifact_versions": 30,
+        "selected_artifact_versions": 36,
+        "source_versions_read": 30
+      },
+      "evidence_class": "COMPLETE_DECLARED_DIAGNOSTIC_MEMBERS_HASH_VERIFIED",
+      "exported_checkpoint_path": "data/results/runs/v45/checkpoints/e98cc3a9-fe80-4db8-99d9-cc23a64c115f.json",
+      "exported_metrics_path": "data/results/runs/v45/score/metrics.json",
+      "exported_raw_zip_path": "data/packages/diagnostics/EvoRationale_v45_Diagnostics_20261011-140009-585.zip",
+      "exported_receipt_path": "data/results/runs/v45/RUN_RECEIPT.json",
+      "exported_report_path": "data/results/runs/v45/run/report.json",
+      "exported_run_path": "data/results/runs/v45",
+      "finish_utc": "2026-10-11T18:58:48.075622+00:00",
+      "held_out": false,
+      "historical_replay_certified": false,
+      "hosted_duration_seconds": 159.974,
+      "investigation_profile": "event-delta",
+      "label": "v4.5",
+      "metrics_source_path": "diagnostics/v45_e98cc3a9/score/metrics.json",
+      "missing_original_provenance_files": [],
+      "mode": "api",
+      "models": {
+        "judge": "gpt-6.1-sol",
+        "linker": "gpt-6.1-sol"
+      },
+      "new_primary_api_requests": null,
+      "no_extra_analysis_files_are_declared_run_members": true,
+      "nominal_budgets": {
+        "max_input_tokens": 100000,
+        "max_queries": 12,
+        "max_reads": 36,
+        "max_rounds": 6
+      },
+      "original_cached_primary_cost_excluded_from_new_scope_request_counts": false,
+      "original_diagnostic_members": [
+        {
+          "exported_path": "data/results/runs/v45/RUN_RECEIPT.json",
+          "member": "RUN_RECEIPT.json",
+          "sha256": "05582928b0301b0b0452758289a39c73e6aa33368c5f86cfb8b75025a7bffc4c",
+          "source_path": "diagnostics/v45_e98cc3a9/RUN_RECEIPT.json"
+        },
+        {
+          "exported_path": "data/results/runs/v45/DEV_PREP_MANIFEST.json",
+          "member": "DEV_PREP_MANIFEST.json",
+          "sha256": "73393e10d8a37524950ef12a08397928def9f9795b932c9435a59c51a4b7abb4",
+          "source_path": "diagnostics/v45_e98cc3a9/DEV_PREP_MANIFEST.json"
+        },
+        {
+          "exported_path": "data/results/runs/v45/run/manifest.json",
+          "member": "run/manifest.json",
+          "sha256": "176c347ba4f6e2fd137cf40f26893351240e642d6f8d03d501cfd7d62ea2e4fb",
+          "source_path": "diagnostics/v45_e98cc3a9/run/manifest.json"
+        },
+        {
+          "exported_path": "data/results/runs/v45/run/report.json",
+          "member": "run/report.json",
+          "sha256": "696fdfa0e6ad4e960e3e4c60b0f44812caaa19e00688f58a80199858dcde0cc2",
+          "source_path": "diagnostics/v45_e98cc3a9/run/report.json"
+        },
+        {
+          "exported_path": "data/results/runs/v45/inputs/S0_RETROSPECTIVE_RUNTIME.json",
+          "member": "inputs/S0_RETROSPECTIVE_RUNTIME.json",
+          "sha256": "a852f931aa41c2f67b1522651665feb67fad9d92116413553405fb3d9c3ba784",
+          "source_path": "diagnostics/v45_e98cc3a9/inputs/S0_RETROSPECTIVE_RUNTIME.json"
+        },
+        {
+          "exported_path": "data/results/runs/v45/inputs/POST_S0_EVIDENCE_RETROSPECTIVE_53.jsonl",
+          "member": "inputs/POST_S0_EVIDENCE_RETROSPECTIVE_53.jsonl",
+          "sha256": "30f89a8dae945eb588898134b23c1a5276f94dd257ef0ae3f71b9befd670a058",
+          "source_path": "diagnostics/v45_e98cc3a9/inputs/POST_S0_EVIDENCE_RETROSPECTIVE_53.jsonl"
+        },
+        {
+          "exported_path": "data/results/runs/v45/checkpoints/e98cc3a9-fe80-4db8-99d9-cc23a64c115f.json",
+          "member": "checkpoints/e98cc3a9-fe80-4db8-99d9-cc23a64c115f.json",
+          "sha256": "146ae16f5ee8e1f4328236a030e3f66a0b3881a3e9f95c4dae6ca207f6a25739",
+          "source_path": "diagnostics/v45_e98cc3a9/checkpoints/e98cc3a9-fe80-4db8-99d9-cc23a64c115f.json"
+        },
+        {
+          "exported_path": "data/results/runs/v45/score/metrics.json",
+          "member": "score/metrics.json",
+          "sha256": "2d31971c625b4d4de3beee2cbbc3efd2965d52b688cbbf85323c5580ac18d314",
+          "source_path": "diagnostics/v45_e98cc3a9/score/metrics.json"
+        },
+        {
+          "exported_path": "data/results/runs/v45/score/link_errors.csv",
+          "member": "score/link_errors.csv",
+          "sha256": "e55bfc104b86077ffd0f2c229785afe08c91c13f76c768f2945a5af77e8d7e88",
+          "source_path": "diagnostics/v45_e98cc3a9/score/link_errors.csv"
+        },
+        {
+          "exported_path": "data/results/runs/v45/DIAGNOSTIC_BUNDLE_MANIFEST.json",
+          "member": "DIAGNOSTIC_BUNDLE_MANIFEST.json",
+          "role": "bundle member authority",
+          "sha256": "e152be4f4a0881bfcad7bfd5e855410c1e320f834413d2b7bfcd1fb8179551c3",
+          "source_path": "diagnostics/v45_e98cc3a9/DIAGNOSTIC_BUNDLE_MANIFEST.json"
+        }
+      ],
+      "raw_upload_zip_crc_ok": true,
+      "raw_upload_zip_sha256": "dc4f08eff1db1c634766adf73477aa21ac47aafd60e0da20dbc01fa68a86d119",
+      "raw_upload_zip_source_path": "upload/EvoRationale_v45_Diagnostics_20261011-140009-585.zip",
+      "report_source_path": "diagnostics/v45_e98cc3a9/run/report.json",
+      "reported_budget_usage": {
+        "accounting": "REQUEST_ENVELOPE_ESTIMATE_INCLUDING_RETRIES_NOT_BILLING",
+        "estimated_input_tokens": 49053,
+        "max_output_tokens_per_request": 16384,
+        "provider_reported_input_tokens": 36491,
+        "provider_reported_output_tokens": 8520,
+        "provider_requests_reserved": 6,
+        "provider_responses_received": 6,
+        "queries": 6,
+        "responses_with_reported_usage": 6,
+        "rounds": 6,
+        "unique_artifact_reads": 30
+      },
+      "request_schema_groups": {
+        "unspecified": {
+          "estimated_input_tokens": 49053,
+          "provider_input_tokens": 36491,
+          "provider_output_tokens": 8520,
+          "requests": 6
+        }
+      },
+      "results": {
+        "all": {
+          "evaluated_hunks": 30,
+          "f1": 0.347826,
+          "fn": 15,
+          "fp": 0,
+          "fp_on_unrelated_or_implementation_only_hunks": 0,
+          "gold_positive_exact_triples": 19,
+          "precision": 1.0,
+          "predicted_exact_triples": 4,
+          "predicted_hunk_coverage": {
+            "count": 4,
+            "of": 30
+          },
+          "recall": 0.210526,
+          "tp": 4,
+          "unscored_prediction_links_outside_hunk_universe": 0
+        },
+        "baseline": {
+          "evaluated_hunks": 24,
+          "f1": 0.444444,
+          "fn": 10,
+          "fp": 0,
+          "fp_on_unrelated_or_implementation_only_hunks": 0,
+          "gold_positive_exact_triples": 14,
+          "precision": 1.0,
+          "predicted_exact_triples": 4,
+          "predicted_hunk_coverage": {
+            "count": 4,
+            "of": 24
+          },
+          "recall": 0.285714,
+          "tp": 4,
+          "unscored_prediction_links_outside_hunk_universe": 0
+        }
+      },
+      "run_id": "e98cc3a9-fe80-4db8-99d9-cc23a64c115f",
+      "run_receipt_source_path": "diagnostics/v45_e98cc3a9/RUN_RECEIPT.json",
+      "runtime_source": {
+        "evorationale_python_tree_sha256": "e53412024165759b0dec7c6e45556f6857fca39674faf119acf1290f512f5afd",
+        "matches_run_receipt": true,
+        "source_path": "er_v45_build/EvoRationale_v45_DEV_EN"
+      },
+      "semantic_phase_config": null,
+      "source_run_id": null,
+      "start_utc": "2026-10-11T18:56:08.101727+00:00",
+      "verification": {
+        "all_error_rows_reproduced": true,
+        "member_hashes_ok": true,
+        "run_report_receipt_sha256_ok": true,
+        "scores_recomputed": {
+          "all": "ALL_COUNTS_METRICS_AND_COVERAGE_REPRODUCED_WITH_UNCHANGED_V49_SCORER",
+          "baseline": "ALL_COUNTS_METRICS_AND_COVERAGE_REPRODUCED_WITH_UNCHANGED_V49_SCORER"
+        }
+      }
+    },
+    {
+      "accuracy_source": "COMPLETED_USER_SUPPLIED_HOSTED_DEVELOPMENT_RUN",
+      "architecture_outcome_gold_available": false,
+      "budgets_source": "diagnostics/v46_188132b4/RUN_RECEIPT.json",
+      "checkpoint_source_path": "diagnostics/v46_188132b4/checkpoints/188132b4-7975-4ae9-8df4-0cbbc1cad9ad.json",
+      "comparison_note": "Descriptive development comparison: identical source inputs, opaque model IDs and nominal budgets as v4.5; semantic policy, investigation profile and request/token accounting differ. Earlier versions also used different models and call patterns.",
+      "coverage": {
+        "eligible_artifact_versions": 53,
+        "model_reported_reviewed_artifact_versions": 30,
+        "selected_artifact_versions": 36,
+        "source_versions_read": 30
+      },
+      "evidence_class": "COMPLETE_DECLARED_DIAGNOSTIC_MEMBERS_HASH_VERIFIED",
+      "exported_checkpoint_path": "data/results/runs/v46/checkpoints/188132b4-7975-4ae9-8df4-0cbbc1cad9ad.json",
+      "exported_metrics_path": "data/results/runs/v46/score/metrics.json",
+      "exported_raw_zip_path": "data/packages/diagnostics/EvoRationale_v46_Diagnostics_20261011-155343-966.zip",
+      "exported_receipt_path": "data/results/runs/v46/RUN_RECEIPT.json",
+      "exported_report_path": "data/results/runs/v46/run/report.json",
+      "exported_run_path": "data/results/runs/v46",
+      "finish_utc": "2026-10-11T20:28:26.065397+00:00",
+      "held_out": false,
+      "historical_replay_certified": false,
+      "hosted_duration_seconds": 440.507,
+      "investigation_profile": "event-evidence",
+      "label": "v4.6",
+      "metrics_source_path": "diagnostics/v46_188132b4/score/metrics.json",
+      "missing_original_provenance_files": [],
+      "mode": "api",
+      "models": {
+        "judge": "gpt-6.1-sol",
+        "linker": "gpt-6.1-sol"
+      },
+      "new_primary_api_requests": null,
+      "no_extra_analysis_files_are_declared_run_members": true,
+      "nominal_budgets": {
+        "max_input_tokens": 100000,
+        "max_queries": 12,
+        "max_reads": 36,
+        "max_rounds": 6
+      },
+      "original_cached_primary_cost_excluded_from_new_scope_request_counts": false,
+      "original_diagnostic_members": [
+        {
+          "exported_path": "data/results/runs/v46/RUN_RECEIPT.json",
+          "member": "RUN_RECEIPT.json",
+          "sha256": "6b459e39575d7fc39b602aa94703a8f20d5eb96c4829a1bf2aa871d237bbb607",
+          "source_path": "diagnostics/v46_188132b4/RUN_RECEIPT.json"
+        },
+        {
+          "exported_path": "data/results/runs/v46/DEV_PREP_MANIFEST.json",
+          "member": "DEV_PREP_MANIFEST.json",
+          "sha256": "11d014b9f1542020ecda500bf6b0eba46083c5dcba8cebc292e1c6cd35605d59",
+          "source_path": "diagnostics/v46_188132b4/DEV_PREP_MANIFEST.json"
+        },
+        {
+          "exported_path": "data/results/runs/v46/run/manifest.json",
+          "member": "run/manifest.json",
+          "sha256": "9b9151d34c37d4b7c92b76f6e67d745de057880faa0ac13312e4d0838b91a7f9",
+          "source_path": "diagnostics/v46_188132b4/run/manifest.json"
+        },
+        {
+          "exported_path": "data/results/runs/v46/run/report.json",
+          "member": "run/report.json",
+          "sha256": "4bbb2e304acb8b9f0f6ff3b89c2374c4e6e717a7f196b1b3a489dd088a49c79e",
+          "source_path": "diagnostics/v46_188132b4/run/report.json"
+        },
+        {
+          "exported_path": "data/results/runs/v46/inputs/S0_RETROSPECTIVE_RUNTIME.json",
+          "member": "inputs/S0_RETROSPECTIVE_RUNTIME.json",
+          "sha256": "a852f931aa41c2f67b1522651665feb67fad9d92116413553405fb3d9c3ba784",
+          "source_path": "diagnostics/v46_188132b4/inputs/S0_RETROSPECTIVE_RUNTIME.json"
+        },
+        {
+          "exported_path": "data/results/runs/v46/inputs/POST_S0_EVIDENCE_RETROSPECTIVE_53.jsonl",
+          "member": "inputs/POST_S0_EVIDENCE_RETROSPECTIVE_53.jsonl",
+          "sha256": "30f89a8dae945eb588898134b23c1a5276f94dd257ef0ae3f71b9befd670a058",
+          "source_path": "diagnostics/v46_188132b4/inputs/POST_S0_EVIDENCE_RETROSPECTIVE_53.jsonl"
+        },
+        {
+          "exported_path": "data/results/runs/v46/checkpoints/188132b4-7975-4ae9-8df4-0cbbc1cad9ad.json",
+          "member": "checkpoints/188132b4-7975-4ae9-8df4-0cbbc1cad9ad.json",
+          "sha256": "67ac00fc7159533a3c16ad13fe4aa51120a8bbdb22b5f4b5c0e9c2213fd18f36",
+          "source_path": "diagnostics/v46_188132b4/checkpoints/188132b4-7975-4ae9-8df4-0cbbc1cad9ad.json"
+        },
+        {
+          "exported_path": "data/results/runs/v46/score/metrics.json",
+          "member": "score/metrics.json",
+          "sha256": "b64f0d57677a8369401f64541e98d732956ba9dea157ad775491036f62536dee",
+          "source_path": "diagnostics/v46_188132b4/score/metrics.json"
+        },
+        {
+          "exported_path": "data/results/runs/v46/score/link_errors.csv",
+          "member": "score/link_errors.csv",
+          "sha256": "537742c4c5fac17b7ded797f71c2fa36baf2218a542b2fabf43f00aaa888b70f",
+          "source_path": "diagnostics/v46_188132b4/score/link_errors.csv"
+        },
+        {
+          "exported_path": "data/results/runs/v46/DIAGNOSTIC_BUNDLE_MANIFEST.json",
+          "member": "DIAGNOSTIC_BUNDLE_MANIFEST.json",
+          "role": "bundle member authority",
+          "sha256": "b833d97790f38d6b9149520c8c7aff5e833633b11334aa405a7be5bf64c4d64a",
+          "source_path": "diagnostics/v46_188132b4/DIAGNOSTIC_BUNDLE_MANIFEST.json"
+        }
+      ],
+      "raw_upload_zip_crc_ok": true,
+      "raw_upload_zip_sha256": "19e9c83a51460a94b7f843657aed1fc7f64cde40d320ea52a798ca7020fe4a79",
+      "raw_upload_zip_source_path": "upload/EvoRationale_v46_Diagnostics_20261011-155343-966.zip",
+      "report_source_path": "diagnostics/v46_188132b4/run/report.json",
+      "reported_budget_usage": {
+        "accounting": "REQUEST_ENVELOPE_ESTIMATE_INCLUDING_RETRIES_NOT_BILLING",
+        "estimated_input_tokens": 62911,
+        "max_output_tokens_per_request": 16384,
+        "provider_reported_input_tokens": 45800,
+        "provider_reported_output_tokens": 26646,
+        "provider_requests_reserved": 7,
+        "provider_responses_received": 7,
+        "queries": 6,
+        "responses_with_reported_usage": 7,
+        "rounds": 6,
+        "unique_artifact_reads": 30
+      },
+      "request_schema_groups": {
+        "unspecified": {
+          "estimated_input_tokens": 62911,
+          "provider_input_tokens": 45800,
+          "provider_output_tokens": 26646,
+          "requests": 7
+        }
+      },
+      "results": {
+        "all": {
+          "evaluated_hunks": 30,
+          "f1": 0.631579,
+          "fn": 7,
+          "fp": 7,
+          "fp_on_unrelated_or_implementation_only_hunks": 4,
+          "gold_positive_exact_triples": 19,
+          "precision": 0.631579,
+          "predicted_exact_triples": 19,
+          "predicted_hunk_coverage": {
+            "count": 16,
+            "of": 30
+          },
+          "recall": 0.631579,
+          "tp": 12,
+          "unscored_prediction_links_outside_hunk_universe": 0
+        },
+        "baseline": {
+          "evaluated_hunks": 24,
+          "f1": 0.689655,
+          "fn": 4,
+          "fp": 5,
+          "fp_on_unrelated_or_implementation_only_hunks": 2,
+          "gold_positive_exact_triples": 14,
+          "precision": 0.666667,
+          "predicted_exact_triples": 15,
+          "predicted_hunk_coverage": {
+            "count": 13,
+            "of": 24
+          },
+          "recall": 0.714286,
+          "tp": 10,
+          "unscored_prediction_links_outside_hunk_universe": 4
+        }
+      },
+      "run_id": "188132b4-7975-4ae9-8df4-0cbbc1cad9ad",
+      "run_receipt_source_path": "diagnostics/v46_188132b4/RUN_RECEIPT.json",
+      "runtime_source": {
+        "evorationale_python_tree_sha256": "a01d6dd7e5016c9224c0184053981eddd6621dcd3c6963edf3b391396d420d1b",
+        "matches_run_receipt": true,
+        "source_path": "er_v46_build/EvoRationale_v46_DEV_EN"
+      },
+      "semantic_phase_config": null,
+      "source_run_id": null,
+      "start_utc": "2026-10-11T20:21:05.558736+00:00",
+      "verification": {
+        "all_error_rows_reproduced": true,
+        "member_hashes_ok": true,
+        "run_report_receipt_sha256_ok": true,
+        "scores_recomputed": {
+          "all": "ALL_COUNTS_METRICS_AND_COVERAGE_REPRODUCED_WITH_UNCHANGED_V49_SCORER",
+          "baseline": "ALL_COUNTS_METRICS_AND_COVERAGE_REPRODUCED_WITH_UNCHANGED_V49_SCORER"
+        }
+      }
+    },
+    {
+      "accuracy_source": "COMPLETED_USER_SUPPLIED_HOSTED_DEVELOPMENT_RUN",
+      "architecture_outcome_gold_available": false,
+      "budgets_source": "diagnostics/v47_a50dd556/RUN_RECEIPT.json",
+      "checkpoint_source_path": "diagnostics/v47_a50dd556/checkpoints/a50dd556-729c-4840-a509-0fdd9222b81b.json",
+      "comparison_note": "Descriptive development comparison: identical source inputs, opaque model IDs and nominal budgets as v4.6; semantic policy, investigation profile and request/token accounting differ. Earlier versions also used different models and call patterns.",
+      "coverage": {
+        "eligible_artifact_versions": 53,
+        "model_reported_reviewed_artifact_versions": 30,
+        "selected_artifact_versions": 36,
+        "source_versions_read": 30
+      },
+      "evidence_class": "COMPLETE_DECLARED_DIAGNOSTIC_MEMBERS_HASH_VERIFIED",
+      "exported_checkpoint_path": "data/results/runs/v47/checkpoints/a50dd556-729c-4840-a509-0fdd9222b81b.json",
+      "exported_metrics_path": "data/results/runs/v47/score/metrics.json",
+      "exported_raw_zip_path": "data/packages/diagnostics/EvoRationale_v47_Diagnostics_20261011-172809-314.zip",
+      "exported_receipt_path": "data/results/runs/v47/RUN_RECEIPT.json",
+      "exported_report_path": "data/results/runs/v47/run/report.json",
+      "exported_run_path": "data/results/runs/v47",
+      "finish_utc": "2026-10-11T22:02:41.363757+00:00",
+      "held_out": false,
+      "historical_replay_certified": false,
+      "hosted_duration_seconds": 311.394,
+      "investigation_profile": "event-grounded",
+      "label": "v4.7",
+      "metrics_source_path": "diagnostics/v47_a50dd556/score/metrics.json",
+      "missing_original_provenance_files": [],
+      "mode": "api",
+      "models": {
+        "judge": "gpt-6.1-sol",
+        "linker": "gpt-6.1-sol"
+      },
+      "new_primary_api_requests": null,
+      "no_extra_analysis_files_are_declared_run_members": true,
+      "nominal_budgets": {
+        "max_input_tokens": 100000,
+        "max_queries": 12,
+        "max_reads": 36,
+        "max_rounds": 6
+      },
+      "original_cached_primary_cost_excluded_from_new_scope_request_counts": false,
+      "original_diagnostic_members": [
+        {
+          "exported_path": "data/results/runs/v47/RUN_RECEIPT.json",
+          "member": "RUN_RECEIPT.json",
+          "sha256": "0158eeb1ae1fcf4865de61f6546f013a2ff8309c39cbd28ed72bf1dc52d4cd54",
+          "source_path": "diagnostics/v47_a50dd556/RUN_RECEIPT.json"
+        },
+        {
+          "exported_path": "data/results/runs/v47/DEV_PREP_MANIFEST.json",
+          "member": "DEV_PREP_MANIFEST.json",
+          "sha256": "c88c64efac33ae2a2fdf0b51a13cd4defd49a735ea862586317de0fd09904b61",
+          "source_path": "diagnostics/v47_a50dd556/DEV_PREP_MANIFEST.json"
+        },
+        {
+          "exported_path": "data/results/runs/v47/run/manifest.json",
+          "member": "run/manifest.json",
+          "sha256": "7d72437c5732ec0e99f4dd211152d09f2bb8226de973713398b2686f55407ecf",
+          "source_path": "diagnostics/v47_a50dd556/run/manifest.json"
+        },
+        {
+          "exported_path": "data/results/runs/v47/run/report.json",
+          "member": "run/report.json",
+          "sha256": "07dd9f8d34b8d4ef489389588f69eea149d2f5bc857c87951e9e72c502732574",
+          "source_path": "diagnostics/v47_a50dd556/run/report.json"
+        },
+        {
+          "exported_path": "data/results/runs/v47/inputs/S0_RETROSPECTIVE_RUNTIME.json",
+          "member": "inputs/S0_RETROSPECTIVE_RUNTIME.json",
+          "sha256": "a852f931aa41c2f67b1522651665feb67fad9d92116413553405fb3d9c3ba784",
+          "source_path": "diagnostics/v47_a50dd556/inputs/S0_RETROSPECTIVE_RUNTIME.json"
+        },
+        {
+          "exported_path": "data/results/runs/v47/inputs/POST_S0_EVIDENCE_RETROSPECTIVE_53.jsonl",
+          "member": "inputs/POST_S0_EVIDENCE_RETROSPECTIVE_53.jsonl",
+          "sha256": "30f89a8dae945eb588898134b23c1a5276f94dd257ef0ae3f71b9befd670a058",
+          "source_path": "diagnostics/v47_a50dd556/inputs/POST_S0_EVIDENCE_RETROSPECTIVE_53.jsonl"
+        },
+        {
+          "exported_path": "data/results/runs/v47/checkpoints/a50dd556-729c-4840-a509-0fdd9222b81b.json",
+          "member": "checkpoints/a50dd556-729c-4840-a509-0fdd9222b81b.json",
+          "sha256": "760105ed945a962af31b5692b998a2115c9bbcd0f2130fc474c50a62287b8d3b",
+          "source_path": "diagnostics/v47_a50dd556/checkpoints/a50dd556-729c-4840-a509-0fdd9222b81b.json"
+        },
+        {
+          "exported_path": "data/results/runs/v47/score/metrics.json",
+          "member": "score/metrics.json",
+          "sha256": "b032bec1f9acbfa6037986052bf650a48b461ea07a694db41dcbe9538a6ec61a",
+          "source_path": "diagnostics/v47_a50dd556/score/metrics.json"
+        },
+        {
+          "exported_path": "data/results/runs/v47/score/link_errors.csv",
+          "member": "score/link_errors.csv",
+          "sha256": "3ca3ef7ed935054f9ccd0345761b947efff4b8520e38a62bb2b6d763dc04ced9",
+          "source_path": "diagnostics/v47_a50dd556/score/link_errors.csv"
+        },
+        {
+          "exported_path": "data/results/runs/v47/score/SCORE_RECEIPT.json",
+          "member": "score/SCORE_RECEIPT.json",
+          "sha256": "a26c9778f498b881f413978726eea8f64ce563ad3cef3686aeba55dbfbb4ceb5",
+          "source_path": "diagnostics/v47_a50dd556/score/SCORE_RECEIPT.json"
+        },
+        {
+          "exported_path": "data/results/runs/v47/DIAGNOSTIC_BUNDLE_MANIFEST.json",
+          "member": "DIAGNOSTIC_BUNDLE_MANIFEST.json",
+          "role": "bundle member authority",
+          "sha256": "8f65c0c973342e259582bd0b10c6db6b2fcab26bc4d84e746d248daf9b82c053",
+          "source_path": "diagnostics/v47_a50dd556/DIAGNOSTIC_BUNDLE_MANIFEST.json"
+        }
+      ],
+      "raw_upload_zip_crc_ok": true,
+      "raw_upload_zip_sha256": "2d1f02171b38b73fbb68aac87d98c25cef6deb453c5e27016ed710899def82a9",
+      "raw_upload_zip_source_path": "upload/EvoRationale_v47_Diagnostics_20261011-172809-314.zip",
+      "report_source_path": "diagnostics/v47_a50dd556/run/report.json",
+      "reported_budget_usage": {
+        "accounting": "REQUEST_ENVELOPE_ESTIMATE_INCLUDING_RETRIES_NOT_BILLING",
+        "estimated_input_tokens": 61175,
+        "max_output_tokens_per_request": 16384,
+        "provider_reported_input_tokens": 42755,
+        "provider_reported_output_tokens": 17515,
+        "provider_requests_reserved": 6,
+        "provider_responses_received": 6,
+        "queries": 6,
+        "responses_with_reported_usage": 6,
+        "rounds": 6,
+        "unique_artifact_reads": 30
+      },
+      "request_schema_groups": {
+        "unspecified": {
+          "estimated_input_tokens": 61175,
+          "provider_input_tokens": 42755,
+          "provider_output_tokens": 17515,
+          "requests": 6
+        }
+      },
+      "results": {
+        "all": {
+          "evaluated_hunks": 30,
+          "f1": 0.333333,
+          "fn": 14,
+          "fp": 6,
+          "fp_on_unrelated_or_implementation_only_hunks": 0,
+          "gold_positive_exact_triples": 19,
+          "precision": 0.454545,
+          "predicted_exact_triples": 11,
+          "predicted_hunk_coverage": {
+            "count": 7,
+            "of": 30
+          },
+          "recall": 0.263158,
+          "tp": 5,
+          "unscored_prediction_links_outside_hunk_universe": 0
+        },
+        "baseline": {
+          "evaluated_hunks": 24,
+          "f1": 0.181818,
+          "fn": 12,
+          "fp": 6,
+          "fp_on_unrelated_or_implementation_only_hunks": 0,
+          "gold_positive_exact_triples": 14,
+          "precision": 0.25,
+          "predicted_exact_triples": 8,
+          "predicted_hunk_coverage": {
+            "count": 6,
+            "of": 24
+          },
+          "recall": 0.142857,
+          "tp": 2,
+          "unscored_prediction_links_outside_hunk_universe": 3
+        }
+      },
+      "run_id": "a50dd556-729c-4840-a509-0fdd9222b81b",
+      "run_receipt_source_path": "diagnostics/v47_a50dd556/RUN_RECEIPT.json",
+      "runtime_source": {
+        "evorationale_python_tree_sha256": "ef221a718301ba59167360c696b8b22d8e65b0747baf1c41f058aea54a942a23",
+        "matches_run_receipt": true,
+        "source_path": "er_v47_build/EvoRationale_v47_DEV_EN"
+      },
+      "semantic_phase_config": null,
+      "source_run_id": null,
+      "start_utc": "2026-10-11T21:57:29.969638+00:00",
+      "verification": {
+        "all_error_rows_reproduced": true,
+        "member_hashes_ok": true,
+        "run_report_receipt_sha256_ok": true,
+        "scores_recomputed": {
+          "all": "ALL_COUNTS_METRICS_AND_COVERAGE_REPRODUCED_WITH_UNCHANGED_V49_SCORER",
+          "baseline": "ALL_COUNTS_METRICS_AND_COVERAGE_REPRODUCED_WITH_UNCHANGED_V49_SCORER"
+        }
+      }
+    },
+    {
+      "accuracy_source": "COMPLETED_USER_SUPPLIED_HOSTED_DEVELOPMENT_RUN",
+      "architecture_outcome_gold_available": false,
+      "budgets_source": "diagnostics/v48_201e1b3a/RUN_RECEIPT.json",
+      "checkpoint_source_path": "diagnostics/v48_201e1b3a/checkpoints/201e1b3a-2e27-431c-ba03-0c9a822af43f.json",
+      "comparison_note": "Descriptive development comparison: identical source inputs, opaque model IDs and nominal budgets as v4.6/v4.7; v4.6 semantic instructions/schema are restored with a narrow proof-routing repair and larger bounded initial output allowance. Provider-call/token accounting differs; earlier versions also used different models.",
+      "coverage": {
+        "eligible_artifact_versions": 53,
+        "model_reported_reviewed_artifact_versions": 30,
+        "selected_artifact_versions": 36,
+        "source_versions_read": 30
+      },
+      "evidence_class": "COMPLETE_DECLARED_DIAGNOSTIC_MEMBERS_HASH_VERIFIED",
+      "exported_checkpoint_path": "data/results/runs/v48/checkpoints/201e1b3a-2e27-431c-ba03-0c9a822af43f.json",
+      "exported_metrics_path": "data/results/runs/v48/score/metrics.json",
+      "exported_raw_zip_path": "data/packages/diagnostics/EvoRationale_v48_Diagnostics_20261011-181147-645.zip",
+      "exported_receipt_path": "data/results/runs/v48/RUN_RECEIPT.json",
+      "exported_report_path": "data/results/runs/v48/run/report.json",
+      "exported_run_path": "data/results/runs/v48",
+      "finish_utc": "2026-10-11T23:11:47.373963+00:00",
+      "held_out": false,
+      "historical_replay_certified": false,
+      "hosted_duration_seconds": 341.932,
+      "investigation_profile": "event-evidence-repair",
+      "label": "v4.8",
+      "metrics_source_path": "diagnostics/v48_201e1b3a/score/metrics.json",
+      "missing_original_provenance_files": [],
+      "mode": "api",
+      "models": {
+        "judge": "gpt-6.1-sol",
+        "linker": "gpt-6.1-sol"
+      },
+      "new_primary_api_requests": null,
+      "no_extra_analysis_files_are_declared_run_members": true,
+      "nominal_budgets": {
+        "max_input_tokens": 100000,
+        "max_queries": 12,
+        "max_reads": 36,
+        "max_rounds": 6
+      },
+      "original_cached_primary_cost_excluded_from_new_scope_request_counts": false,
+      "original_diagnostic_members": [
+        {
+          "exported_path": "data/results/runs/v48/RUN_RECEIPT.json",
+          "member": "RUN_RECEIPT.json",
+          "sha256": "256571578b5891d6539998f1a00611dffb87d39ba29ab4d415b7cc475321d6cc",
+          "source_path": "diagnostics/v48_201e1b3a/RUN_RECEIPT.json"
+        },
+        {
+          "exported_path": "data/results/runs/v48/DEV_PREP_MANIFEST.json",
+          "member": "DEV_PREP_MANIFEST.json",
+          "sha256": "19b77ca65c5c42c5713c0140b72de2ccc2d77d3e8e335e66319d047ab7196cae",
+          "source_path": "diagnostics/v48_201e1b3a/DEV_PREP_MANIFEST.json"
+        },
+        {
+          "exported_path": "data/results/runs/v48/run/manifest.json",
+          "member": "run/manifest.json",
+          "sha256": "f6637254b9d1a6e9fce267d4663443b8a0344a64d08bf56b3b5bc29e79048c35",
+          "source_path": "diagnostics/v48_201e1b3a/run/manifest.json"
+        },
+        {
+          "exported_path": "data/results/runs/v48/run/report.json",
+          "member": "run/report.json",
+          "sha256": "64bb93f460ed10f060ef440a4a27ba27f3a30b85e57e0c97b5337cefe7bcc619",
+          "source_path": "diagnostics/v48_201e1b3a/run/report.json"
+        },
+        {
+          "exported_path": "data/results/runs/v48/inputs/S0_RETROSPECTIVE_RUNTIME.json",
+          "member": "inputs/S0_RETROSPECTIVE_RUNTIME.json",
+          "sha256": "a852f931aa41c2f67b1522651665feb67fad9d92116413553405fb3d9c3ba784",
+          "source_path": "diagnostics/v48_201e1b3a/inputs/S0_RETROSPECTIVE_RUNTIME.json"
+        },
+        {
+          "exported_path": "data/results/runs/v48/inputs/POST_S0_EVIDENCE_RETROSPECTIVE_53.jsonl",
+          "member": "inputs/POST_S0_EVIDENCE_RETROSPECTIVE_53.jsonl",
+          "sha256": "30f89a8dae945eb588898134b23c1a5276f94dd257ef0ae3f71b9befd670a058",
+          "source_path": "diagnostics/v48_201e1b3a/inputs/POST_S0_EVIDENCE_RETROSPECTIVE_53.jsonl"
+        },
+        {
+          "exported_path": "data/results/runs/v48/checkpoints/201e1b3a-2e27-431c-ba03-0c9a822af43f.json",
+          "member": "checkpoints/201e1b3a-2e27-431c-ba03-0c9a822af43f.json",
+          "sha256": "172c352b361a48da48527a5bb8ea555bd4000238be6c21ec64816ba3ecc9db27",
+          "source_path": "diagnostics/v48_201e1b3a/checkpoints/201e1b3a-2e27-431c-ba03-0c9a822af43f.json"
+        },
+        {
+          "exported_path": "data/results/runs/v48/score/metrics.json",
+          "member": "score/metrics.json",
+          "sha256": "add2be3fedfaa74e4a997b04b74a28819d705aa3caad7f42c37387fa0ba010e1",
+          "source_path": "diagnostics/v48_201e1b3a/score/metrics.json"
+        },
+        {
+          "exported_path": "data/results/runs/v48/score/link_errors.csv",
+          "member": "score/link_errors.csv",
+          "sha256": "3840cdb6671c4b7dd3970c7eaff1668ae3c1b0222e2a17826b36f2a3559637dc",
+          "source_path": "diagnostics/v48_201e1b3a/score/link_errors.csv"
+        },
+        {
+          "exported_path": "data/results/runs/v48/score/SCORE_RECEIPT.json",
+          "member": "score/SCORE_RECEIPT.json",
+          "sha256": "d690553fe1eb248d0675df5bef43e364f5a092275ea011c6a2bf79f9753cc749",
+          "source_path": "diagnostics/v48_201e1b3a/score/SCORE_RECEIPT.json"
+        },
+        {
+          "exported_path": "data/results/runs/v48/DIAGNOSTIC_BUNDLE_MANIFEST.json",
+          "member": "DIAGNOSTIC_BUNDLE_MANIFEST.json",
+          "role": "bundle member authority",
+          "sha256": "ea37cc59d6359f9bd93d65acc0a1dd053d630df3049ba092a7740d698472968a",
+          "source_path": "diagnostics/v48_201e1b3a/DIAGNOSTIC_BUNDLE_MANIFEST.json"
+        }
+      ],
+      "raw_upload_zip_crc_ok": true,
+      "raw_upload_zip_sha256": "0190fd86c2f64bbbf8aa0398d8bbfc021512165bcce55d81a0d915eafcdf92b7",
+      "raw_upload_zip_source_path": "upload/EvoRationale_v48_Diagnostics_20261011-181147-645.zip",
+      "report_source_path": "diagnostics/v48_201e1b3a/run/report.json",
+      "reported_budget_usage": {
+        "accounting": "REQUEST_ENVELOPE_ESTIMATE_INCLUDING_RETRIES_NOT_BILLING",
+        "estimated_input_tokens": 53495,
+        "max_output_tokens_per_request": 16384,
+        "provider_reported_input_tokens": 38759,
+        "provider_reported_output_tokens": 21026,
+        "provider_requests_reserved": 6,
+        "provider_responses_received": 6,
+        "queries": 6,
+        "responses_with_reported_usage": 6,
+        "rounds": 6,
+        "unique_artifact_reads": 30
+      },
+      "request_schema_groups": {
+        "unspecified": {
+          "estimated_input_tokens": 53495,
+          "provider_input_tokens": 38759,
+          "provider_output_tokens": 21026,
+          "requests": 6
+        }
+      },
+      "results": {
+        "all": {
+          "evaluated_hunks": 30,
+          "f1": 0.6,
+          "fn": 7,
+          "fp": 9,
+          "fp_on_unrelated_or_implementation_only_hunks": 3,
+          "gold_positive_exact_triples": 19,
+          "precision": 0.571429,
+          "predicted_exact_triples": 21,
+          "predicted_hunk_coverage": {
+            "count": 14,
+            "of": 30
+          },
+          "recall": 0.631579,
+          "tp": 12,
+          "unscored_prediction_links_outside_hunk_universe": 0
+        },
+        "baseline": {
+          "evaluated_hunks": 24,
+          "f1": 0.645161,
+          "fn": 4,
+          "fp": 7,
+          "fp_on_unrelated_or_implementation_only_hunks": 1,
+          "gold_positive_exact_triples": 14,
+          "precision": 0.588235,
+          "predicted_exact_triples": 17,
+          "predicted_hunk_coverage": {
+            "count": 11,
+            "of": 24
+          },
+          "recall": 0.714286,
+          "tp": 10,
+          "unscored_prediction_links_outside_hunk_universe": 4
+        }
+      },
+      "run_id": "201e1b3a-2e27-431c-ba03-0c9a822af43f",
+      "run_receipt_source_path": "diagnostics/v48_201e1b3a/RUN_RECEIPT.json",
+      "runtime_source": {
+        "evorationale_python_tree_sha256": "ab82ceb7019d8534515dd5e6ead0153b3d92bed545c6e251bc64e97d2a816853",
+        "matches_run_receipt": true,
+        "source_path": "er_v48_build/EvoRationale_v48_DEV_EN"
+      },
+      "semantic_phase_config": null,
+      "source_run_id": null,
+      "start_utc": "2026-10-11T23:06:05.441608+00:00",
+      "verification": {
+        "all_error_rows_reproduced": true,
+        "member_hashes_ok": true,
+        "run_report_receipt_sha256_ok": true,
+        "scores_recomputed": {
+          "all": "ALL_COUNTS_METRICS_AND_COVERAGE_REPRODUCED_WITH_UNCHANGED_V49_SCORER",
+          "baseline": "ALL_COUNTS_METRICS_AND_COVERAGE_REPRODUCED_WITH_UNCHANGED_V49_SCORER"
+        }
+      }
+    },
+    {
+      "accuracy_source": "COMPLETED_USER_SUPPLIED_HOSTED_DEVELOPMENT_RUN",
+      "architecture_outcome_gold_available": false,
+      "budgets_source": "diagnostics/v49_8096127b/RUN_RECEIPT.json",
+      "checkpoint_source_path": "diagnostics/v49_8096127b/checkpoints/8096127b-4cbd-4e77-a9c4-a9c2c5dc0c03.json",
+      "comparison_note": "Descriptive development comparison: identical fixed S0, all 53 source artifacts and opaque model IDs as v4.6/v4.8; explicit pair classification and independent candidate verification change the architecture, call pattern and token accounting. The input budget is increased from 100000 to 400000 and provider requests are capped at 36. This is not an equal-compute comparison.",
+      "coverage": {
+        "eligible_artifact_versions": 53,
+        "model_reported_reviewed_artifact_versions": 30,
+        "selected_artifact_versions": 36,
+        "source_versions_read": 30
+      },
+      "evidence_class": "COMPLETE_DECLARED_DIAGNOSTIC_MEMBERS_HASH_VERIFIED",
+      "exported_checkpoint_path": "data/results/runs/v49/checkpoints/8096127b-4cbd-4e77-a9c4-a9c2c5dc0c03.json",
+      "exported_metrics_path": "data/results/runs/v49/score/metrics.json",
+      "exported_raw_zip_path": "data/packages/diagnostics/EvoRationale_v49_Diagnostics_20261011-194323-093.zip",
+      "exported_receipt_path": "data/results/runs/v49/RUN_RECEIPT.json",
+      "exported_report_path": "data/results/runs/v49/run/report.json",
+      "exported_run_path": "data/results/runs/v49",
+      "finish_utc": "2026-10-12T00:41:43.610978+00:00",
+      "held_out": false,
+      "historical_replay_certified": false,
+      "hosted_duration_seconds": 914.902,
+      "investigation_profile": "event-pair-reviewed",
+      "label": "v4.9",
+      "metrics_source_path": "diagnostics/v49_8096127b/score/metrics.json",
+      "missing_original_provenance_files": [],
+      "mode": "api",
+      "models": {
+        "judge": "gpt-6.1-sol",
+        "linker": "gpt-6.1-sol"
+      },
+      "new_primary_api_requests": null,
+      "no_extra_analysis_files_are_declared_run_members": true,
+      "nominal_budgets": {
+        "max_input_tokens": 400000,
+        "max_provider_requests": 36,
+        "max_queries": 12,
+        "max_reads": 36,
+        "max_rounds": 6
+      },
+      "original_cached_primary_cost_excluded_from_new_scope_request_counts": false,
+      "original_diagnostic_members": [
+        {
+          "exported_path": "data/results/runs/v49/RUN_RECEIPT.json",
+          "member": "RUN_RECEIPT.json",
+          "sha256": "cb3270a6d2f195bedaf632546fc3e39c67610d9bbca1e92247cf7a97aff3af38",
+          "source_path": "diagnostics/v49_8096127b/RUN_RECEIPT.json"
+        },
+        {
+          "exported_path": "data/results/runs/v49/DEV_PREP_MANIFEST.json",
+          "member": "DEV_PREP_MANIFEST.json",
+          "sha256": "bf7a32de98a2cff61fe9c831ad97d5aa70c6fadd1ba8906bcec1e80ae72172c9",
+          "source_path": "diagnostics/v49_8096127b/DEV_PREP_MANIFEST.json"
+        },
+        {
+          "exported_path": "data/results/runs/v49/run/manifest.json",
+          "member": "run/manifest.json",
+          "sha256": "ab945fea8ca8f1d450b0e485d00c6725a99734a1f35c8a45cf3cb6dea56cff64",
+          "source_path": "diagnostics/v49_8096127b/run/manifest.json"
+        },
+        {
+          "exported_path": "data/results/runs/v49/run/report.json",
+          "member": "run/report.json",
+          "sha256": "c59940bac54f4d7a66ed774443a6cc15bb5a5c43af52f91e3359a1aefb58a3bc",
+          "source_path": "diagnostics/v49_8096127b/run/report.json"
+        },
+        {
+          "exported_path": "data/results/runs/v49/inputs/S0_RETROSPECTIVE_RUNTIME.json",
+          "member": "inputs/S0_RETROSPECTIVE_RUNTIME.json",
+          "sha256": "a852f931aa41c2f67b1522651665feb67fad9d92116413553405fb3d9c3ba784",
+          "source_path": "diagnostics/v49_8096127b/inputs/S0_RETROSPECTIVE_RUNTIME.json"
+        },
+        {
+          "exported_path": "data/results/runs/v49/inputs/POST_S0_EVIDENCE_RETROSPECTIVE_53.jsonl",
+          "member": "inputs/POST_S0_EVIDENCE_RETROSPECTIVE_53.jsonl",
+          "sha256": "30f89a8dae945eb588898134b23c1a5276f94dd257ef0ae3f71b9befd670a058",
+          "source_path": "diagnostics/v49_8096127b/inputs/POST_S0_EVIDENCE_RETROSPECTIVE_53.jsonl"
+        },
+        {
+          "exported_path": "data/results/runs/v49/checkpoints/8096127b-4cbd-4e77-a9c4-a9c2c5dc0c03.json",
+          "member": "checkpoints/8096127b-4cbd-4e77-a9c4-a9c2c5dc0c03.json",
+          "sha256": "6e08b33edb44ea38e7d1a6d396ee0debd4fbcebab41d4ef935c2b523f7846ace",
+          "source_path": "diagnostics/v49_8096127b/checkpoints/8096127b-4cbd-4e77-a9c4-a9c2c5dc0c03.json"
+        },
+        {
+          "exported_path": "data/results/runs/v49/score/metrics.json",
+          "member": "score/metrics.json",
+          "sha256": "c1ca19c93c09f310b434fff70bc5cbaaa724294df9baab2d73f52ad41b1e7646",
+          "source_path": "diagnostics/v49_8096127b/score/metrics.json"
+        },
+        {
+          "exported_path": "data/results/runs/v49/score/link_errors.csv",
+          "member": "score/link_errors.csv",
+          "sha256": "6e91c70d4b77bb4ac02898ff69b61ff7815ed17d5888c0a3b394cc85b795dbe7",
+          "source_path": "diagnostics/v49_8096127b/score/link_errors.csv"
+        },
+        {
+          "exported_path": "data/results/runs/v49/score/SCORE_RECEIPT.json",
+          "member": "score/SCORE_RECEIPT.json",
+          "sha256": "efce06d41aaaa8a497e210c5a461599573291177b1aff6c7553e3cab3c1e9bd8",
+          "source_path": "diagnostics/v49_8096127b/score/SCORE_RECEIPT.json"
+        },
+        {
+          "exported_path": "data/results/runs/v49/DIAGNOSTIC_BUNDLE_MANIFEST.json",
+          "member": "DIAGNOSTIC_BUNDLE_MANIFEST.json",
+          "role": "bundle member authority",
+          "sha256": "d907a7fd07fb3f9851d350018f0bd773083c0bd3d630b60488f96c2e80d5860a",
+          "source_path": "diagnostics/v49_8096127b/DIAGNOSTIC_BUNDLE_MANIFEST.json"
+        }
+      ],
+      "raw_upload_zip_crc_ok": true,
+      "raw_upload_zip_sha256": "4c5a4a2ae98bac1cc1fe1df735008fe0a49ccfd648430274aa1edf7942f1003a",
+      "raw_upload_zip_source_path": "upload/EvoRationale_v49_Diagnostics_20261011-194323-093.zip",
+      "report_source_path": "diagnostics/v49_8096127b/run/report.json",
+      "reported_budget_usage": {
+        "accounting": "REQUEST_ENVELOPE_ESTIMATE_INCLUDING_RETRIES_NOT_BILLING",
+        "estimated_input_tokens": 183030,
+        "max_output_tokens_per_request": 16384,
+        "max_provider_requests": 36,
+        "provider_reported_input_tokens": 137676,
+        "provider_reported_output_tokens": 57835,
+        "provider_requests_reserved": 15,
+        "provider_responses_received": 15,
+        "queries": 6,
+        "responses_with_reported_usage": 15,
+        "rounds": 6,
+        "unique_artifact_reads": 30
+      },
+      "request_schema_groups": {
+        "independent_fixed_s0_pair_candidate_check": {
+          "estimated_input_tokens": 35204,
+          "provider_input_tokens": 29283,
+          "provider_output_tokens": 5595,
+          "requests": 3
+        },
+        "independent_fixed_s0_pair_review": {
+          "estimated_input_tokens": 147826,
+          "provider_input_tokens": 108393,
+          "provider_output_tokens": 52240,
+          "requests": 12
+        }
+      },
+      "results": {
+        "all": {
+          "evaluated_hunks": 30,
+          "f1": 0.636364,
+          "fn": 5,
+          "fp": 11,
+          "fp_on_unrelated_or_implementation_only_hunks": 3,
+          "gold_positive_exact_triples": 19,
+          "precision": 0.56,
+          "predicted_exact_triples": 25,
+          "predicted_hunk_coverage": {
+            "count": 16,
+            "of": 30
+          },
+          "recall": 0.736842,
+          "tp": 14,
+          "unscored_prediction_links_outside_hunk_universe": 0
+        },
+        "baseline": {
+          "evaluated_hunks": 24,
+          "f1": 0.666667,
+          "fn": 2,
+          "fp": 10,
+          "fp_on_unrelated_or_implementation_only_hunks": 2,
+          "gold_positive_exact_triples": 14,
+          "precision": 0.545455,
+          "predicted_exact_triples": 22,
+          "predicted_hunk_coverage": {
+            "count": 14,
+            "of": 24
+          },
+          "recall": 0.857143,
+          "tp": 12,
+          "unscored_prediction_links_outside_hunk_universe": 3
+        }
+      },
+      "run_id": "8096127b-4cbd-4e77-a9c4-a9c2c5dc0c03",
+      "run_receipt_source_path": "diagnostics/v49_8096127b/RUN_RECEIPT.json",
+      "runtime_source": {
+        "evorationale_python_tree_sha256": "a0e1b1c0156e48d6a4bdae27a02fdfd9e0bedfbdd05bac79c2db812468937b22",
+        "matches_run_receipt": true,
+        "source_path": "er_v49_build/EvoRationale_v49_DEV_EN"
+      },
+      "semantic_phase_config": {
+        "candidate_verification": "independent",
+        "classification": "explicit_all_pairs",
+        "focused_artifacts_per_request": 3,
+        "initial_output_tokens": 12000,
+        "max_attempts_per_phase": 2,
+        "max_candidates_per_event": 64,
+        "retry_output_tokens": 16384
+      },
+      "source_run_id": null,
+      "start_utc": "2026-10-12T00:26:28.708945+00:00",
+      "verification": {
+        "all_error_rows_reproduced": true,
+        "member_hashes_ok": true,
+        "run_report_receipt_sha256_ok": true,
+        "scores_recomputed": {
+          "all": "ALL_COUNTS_METRICS_AND_COVERAGE_REPRODUCED_WITH_UNCHANGED_V49_SCORER",
+          "baseline": "ALL_COUNTS_METRICS_AND_COVERAGE_REPRODUCED_WITH_UNCHANGED_V49_SCORER"
+        }
+      }
+    },
+    {
+      "accuracy_source": "COMPLETED_USER_SUPPLIED_HOSTED_DEVELOPMENT_RUN",
+      "architecture_outcome_gold_available": false,
+      "budgets_source": "diagnostics/scope_fbb1c892/PROTOCOL.json",
+      "checkpoint_source_path": "diagnostics/scope_fbb1c892/checkpoints/fbb1c892-88e4-4e49-80cb-0a433eaaa87a.json",
+      "comparison_note": "Cached-primary ablation; include original classification cost in full-pipeline comparisons.",
+      "coverage": {
+        "eligible_artifact_versions": 53,
+        "model_reported_reviewed_artifact_versions": 30,
+        "selected_artifact_versions": 36,
+        "source_versions_read": 30
+      },
+      "evidence_class": "COMPLETE_DECLARED_DIAGNOSTIC_MEMBERS_HASH_VERIFIED",
+      "exported_checkpoint_path": "data/results/runs/scope_recheck/checkpoints/fbb1c892-88e4-4e49-80cb-0a433eaaa87a.json",
+      "exported_metrics_path": "data/results/runs/scope_recheck/score/metrics.json",
+      "exported_raw_zip_path": "data/packages/diagnostics/EvoRationale_ScopeRecheck_Diagnostics_20261011-205639-194.zip",
+      "exported_receipt_path": "data/results/runs/scope_recheck/RUN_RECEIPT.json",
+      "exported_report_path": "data/results/runs/scope_recheck/run/report.json",
+      "exported_run_path": "data/results/runs/scope_recheck",
+      "finish_utc": "2026-10-12T01:52:22.169594+00:00",
+      "held_out": false,
+      "historical_replay_certified": false,
+      "hosted_duration_seconds": 114.966,
+      "investigation_profile": "cached-primary-scope-recheck",
+      "label": "cached scope recheck",
+      "metrics_source_path": "diagnostics/scope_fbb1c892/score/metrics.json",
+      "missing_original_provenance_files": [],
+      "mode": "api",
+      "models": "gpt-6.1-sol",
+      "new_primary_api_requests": 0,
+      "no_extra_analysis_files_are_declared_run_members": true,
+      "nominal_budgets": {
+        "max_input_tokens": 100000,
+        "max_provider_requests": 6,
+        "max_queries": 12,
+        "max_reads": 36,
+        "max_rounds": 6
+      },
+      "original_cached_primary_cost_excluded_from_new_scope_request_counts": true,
+      "original_diagnostic_members": [
+        {
+          "exported_path": "data/results/runs/scope_recheck/RUN_RECEIPT.json",
+          "member": "RUN_RECEIPT.json",
+          "sha256": "beff21479caf637718bc9625973d02da319090a0a510b65a7da239503a9e2cba",
+          "source_path": "diagnostics/scope_fbb1c892/RUN_RECEIPT.json"
+        },
+        {
+          "exported_path": "data/results/runs/scope_recheck/PROTOCOL.json",
+          "member": "PROTOCOL.json",
+          "sha256": "5ff74fbc421134e47ba501916261cd55e058e9af4b11ba02e9504378d806190d",
+          "source_path": "diagnostics/scope_fbb1c892/PROTOCOL.json"
+        },
+        {
+          "exported_path": "data/results/runs/scope_recheck/inputs/S0_RETROSPECTIVE_RUNTIME.json",
+          "member": "inputs/S0_RETROSPECTIVE_RUNTIME.json",
+          "sha256": "a852f931aa41c2f67b1522651665feb67fad9d92116413553405fb3d9c3ba784",
+          "source_path": "diagnostics/scope_fbb1c892/inputs/S0_RETROSPECTIVE_RUNTIME.json"
+        },
+        {
+          "exported_path": "data/results/runs/scope_recheck/inputs/POST_S0_EVIDENCE_RETROSPECTIVE_53.jsonl",
+          "member": "inputs/POST_S0_EVIDENCE_RETROSPECTIVE_53.jsonl",
+          "sha256": "30f89a8dae945eb588898134b23c1a5276f94dd257ef0ae3f71b9befd670a058",
+          "source_path": "diagnostics/scope_fbb1c892/inputs/POST_S0_EVIDENCE_RETROSPECTIVE_53.jsonl"
+        },
+        {
+          "exported_path": "data/results/runs/scope_recheck/inputs/V49_PRIMARY_CHECKPOINT.json",
+          "member": "inputs/V49_PRIMARY_CHECKPOINT.json",
+          "sha256": "6e08b33edb44ea38e7d1a6d396ee0debd4fbcebab41d4ef935c2b523f7846ace",
+          "source_path": "diagnostics/scope_fbb1c892/inputs/V49_PRIMARY_CHECKPOINT.json"
+        },
+        {
+          "exported_path": "data/results/runs/scope_recheck/run/report.json",
+          "member": "run/report.json",
+          "sha256": "425164a40e192fab94752f87c42a8a992d48bcd842fe75a2c21a3181744dc17f",
+          "source_path": "diagnostics/scope_fbb1c892/run/report.json"
+        },
+        {
+          "exported_path": "data/results/runs/scope_recheck/run/manifest.json",
+          "member": "run/manifest.json",
+          "sha256": "5a4f11efd2b0af0133422e285790404809d7b605abd105090fbe9e8952e2f4ea",
+          "source_path": "diagnostics/scope_fbb1c892/run/manifest.json"
+        },
+        {
+          "exported_path": "data/results/runs/scope_recheck/checkpoints/fbb1c892-88e4-4e49-80cb-0a433eaaa87a.json",
+          "member": "checkpoints/fbb1c892-88e4-4e49-80cb-0a433eaaa87a.json",
+          "sha256": "9e09e64f546c9b7ae685019f2132e6a251623575768b0a3d871fc1f20e1d80c7",
+          "source_path": "diagnostics/scope_fbb1c892/checkpoints/fbb1c892-88e4-4e49-80cb-0a433eaaa87a.json"
+        },
+        {
+          "exported_path": "data/results/runs/scope_recheck/score/SCORE_RECEIPT.json",
+          "member": "score/SCORE_RECEIPT.json",
+          "sha256": "6720a6e2911fdb506d101393fd935599b54361ff4fad0f15d0a4f4db513044bd",
+          "source_path": "diagnostics/scope_fbb1c892/score/SCORE_RECEIPT.json"
+        },
+        {
+          "exported_path": "data/results/runs/scope_recheck/score/metrics.json",
+          "member": "score/metrics.json",
+          "sha256": "ee1d89492aff02efcde12a452123ce04b4f97028381b8960d4e5c32c6d182b0b",
+          "source_path": "diagnostics/scope_fbb1c892/score/metrics.json"
+        },
+        {
+          "exported_path": "data/results/runs/scope_recheck/score/link_errors.csv",
+          "member": "score/link_errors.csv",
+          "sha256": "130d7228a63d0eb8b02823ca492d7cee3a18d070b304425512df96cc33487ed5",
+          "source_path": "diagnostics/scope_fbb1c892/score/link_errors.csv"
+        },
+        {
+          "exported_path": "data/results/runs/scope_recheck/DIAGNOSTIC_BUNDLE_MANIFEST.json",
+          "member": "DIAGNOSTIC_BUNDLE_MANIFEST.json",
+          "role": "bundle member authority",
+          "sha256": "651f08f52a885c9ef3d5ce6994a586918caa64572034ec70febdfc9e839a73c0",
+          "source_path": "diagnostics/scope_fbb1c892/DIAGNOSTIC_BUNDLE_MANIFEST.json"
+        }
+      ],
+      "raw_upload_zip_crc_ok": true,
+      "raw_upload_zip_sha256": "e2d03e807cc7f67a6daceb2a7215cd5157450b916b22dc7acf6eb5fce2b6b934",
+      "raw_upload_zip_source_path": "upload/EvoRationale_ScopeRecheck_Diagnostics_20261011-205639-194.zip",
+      "report_source_path": "diagnostics/scope_fbb1c892/run/report.json",
+      "reported_budget_usage": {
+        "accounting": "REQUEST_ENVELOPE_ESTIMATE_INCLUDING_RETRIES_NOT_BILLING",
+        "estimated_input_tokens": 45651,
+        "max_output_tokens_per_request": 16384,
+        "max_provider_requests": 6,
+        "provider_reported_input_tokens": 35281,
+        "provider_reported_output_tokens": 6628,
+        "provider_requests_reserved": 3,
+        "provider_responses_received": 3,
+        "queries": 6,
+        "responses_with_reported_usage": 3,
+        "rounds": 6,
+        "unique_artifact_reads": 30
+      },
+      "request_schema_groups": {
+        "cached_v49_primary_scope_recheck": {
+          "estimated_input_tokens": 45651,
+          "provider_input_tokens": 35281,
+          "provider_output_tokens": 6628,
+          "requests": 3
+        }
+      },
+      "results": {
+        "all": {
+          "evaluated_hunks": 30,
+          "f1": 0.604651,
+          "fn": 6,
+          "fp": 11,
+          "fp_on_unrelated_or_implementation_only_hunks": 3,
+          "gold_positive_exact_triples": 19,
+          "precision": 0.541667,
+          "predicted_exact_triples": 24,
+          "predicted_hunk_coverage": {
+            "count": 16,
+            "of": 30
+          },
+          "recall": 0.684211,
+          "tp": 13,
+          "unscored_prediction_links_outside_hunk_universe": 0
+        },
+        "baseline": {
+          "evaluated_hunks": 24,
+          "f1": 0.666667,
+          "fn": 2,
+          "fp": 10,
+          "fp_on_unrelated_or_implementation_only_hunks": 2,
+          "gold_positive_exact_triples": 14,
+          "precision": 0.545455,
+          "predicted_exact_triples": 22,
+          "predicted_hunk_coverage": {
+            "count": 14,
+            "of": 24
+          },
+          "recall": 0.857143,
+          "tp": 12,
+          "unscored_prediction_links_outside_hunk_universe": 2
+        }
+      },
+      "run_id": "fbb1c892-88e4-4e49-80cb-0a433eaaa87a",
+      "run_receipt_source_path": "diagnostics/scope_fbb1c892/RUN_RECEIPT.json",
+      "runtime_source": null,
+      "semantic_phase_config": null,
+      "source_run_id": "8096127b-4cbd-4e77-a9c4-a9c2c5dc0c03",
+      "start_utc": "2026-10-12T01:50:27.203953+00:00",
+      "verification": {
+        "all_error_rows_reproduced": true,
+        "member_hashes_ok": true,
+        "run_report_receipt_sha256_ok": true,
+        "scores_recomputed": {
+          "all": "ALL_COUNTS_METRICS_AND_COVERAGE_REPRODUCED_WITH_UNCHANGED_V49_SCORER",
+          "baseline": "ALL_COUNTS_METRICS_AND_COVERAGE_REPRODUCED_WITH_UNCHANGED_V49_SCORER"
+        }
+      }
+    }
+  ],
+  "latest_primary_effect_experiment": {
+    "evidence_class": "LOCAL_VALIDATION_ONLY_HOSTED_RUN_PENDING",
+    "f1": null,
+    "forecast": {
+      "baseline_selected_line_count": 147,
+      "coverage": {
+        "all_history_artifact_count": 53,
+        "all_history_model_reported_reviewed": false,
+        "coverage_note": "Validated review-row coverage does not certify semantic correctness.",
+        "planned_artifact_count": 30,
+        "planned_event_count": 6,
+        "planned_review_complete": true,
+        "reviewed_artifact_count": 30,
+        "selected_artifact_count": 36
+      },
+      "experiment_kind": "PRIMARY_HUNK_EFFECT_EXPERIMENT",
+      "forecast_complete": true,
+      "forecast_input_estimate": 269494,
+      "forecast_within_input_ceiling": true,
+      "hosted_accuracy_available": false,
+      "independent_critic_requests": 0,
+      "max_input_tokens": 400000,
+      "max_provider_requests": 24,
+      "mock_primary_requests": 12,
+      "note": "Local all-negative fixtures forecast request envelopes, not F1.",
+      "output_created": false,
+      "status": "PRIMARY_EFFECT_DRY_RUN_NO_API_CALLED",
+      "technical_failures": [],
+      "toolkit_sha256": "e9c479cb8386f9afe0b86c94b3648c365d3f5ebb5daaf6f1c13520ec36972cb1"
+    },
+    "hosted_accuracy_available": false,
+    "hosted_run_id": null,
+    "label": "PrimaryEffects WindowsFix",
+    "limits": [
+      "Mock all-negative responses forecast request envelopes; they do not measure F1.",
+      "28 source proof fixtures use explicitly synthetic semantic flags; source compatibility is not semantic accuracy.",
+      "147 selected public baseline lines change inference context while fixed S0 and all 53 history artifacts retain their bytes.",
+      "No completed primary API receipt/report/metrics has been supplied at catalog creation."
+    ],
+    "local_linux_log_source_path": "primary_effect_windows_kit/validation/local_preflight.log",
+    "local_linux_tests": {
+      "duration_seconds": 2.67,
+      "log_sha256": "9588bf5bd6c815a848ee71fce1e8bb0e002796e38bbc223769e297ca7e85676c",
+      "passed": 97,
+      "skipped_native_windows_tests": 1,
+      "subtests_passed": 6,
+      "transport": "SYNTHETIC_LOCAL_ONLY"
+    },
+    "toolkit_sha256": "e9c479cb8386f9afe0b86c94b3648c365d3f5ebb5daaf6f1c13520ec36972cb1",
+    "user_windows_console_observation": {
+      "duration_seconds": 54.19,
+      "native_windows_test_executed": true,
+      "provenance": "USER_PASTED_CONSOLE_ONLY_NOT_HASHED_DIAGNOSTIC_UPLOAD",
+      "subtests_passed": 6,
+      "tests_passed": 98,
+      "toolkit_sha256": "e9c479cb8386f9afe0b86c94b3648c365d3f5ebb5daaf6f1c13520ec36972cb1"
+    }
+  },
+  "legacy_comparison_only_values": {
+    "entries": [
+      {
+        "all_f1": 0.142857,
+        "baseline_f1": 0.0625,
+        "fn": null,
+        "fp": null,
+        "label": "offline v4.1",
+        "precision": null,
+        "raw_scoring_files_available": false,
+        "recall": null,
+        "reproduced_in_this_audit": false,
+        "run_id": null,
+        "tp": null
+      },
+      {
+        "all_f1": 0.0,
+        "baseline_f1": 0.0,
+        "fn": null,
+        "fp": null,
+        "label": "API v4.1",
+        "precision": null,
+        "raw_scoring_files_available": false,
+        "recall": null,
+        "reproduced_in_this_audit": false,
+        "run_id": null,
+        "tp": null
+      },
+      {
+        "all_f1": 0.095238,
+        "baseline_f1": 0.133333,
+        "fn": null,
+        "fp": null,
+        "label": "API v4.3",
+        "precision": null,
+        "raw_scoring_files_available": false,
+        "recall": null,
+        "reproduced_in_this_audit": false,
+        "run_id": "a4ed806a-93fc-4869-bd09-a8e3445a86c5",
+        "tp": null
+      }
+    ],
+    "evidence_class": "HISTORICAL_VALUES_QUOTED_BY_LATER_COMPARISONS_RAW_RUNS_NOT_AVAILABLE",
+    "provenance_source_path": "diagnostics/v49_8096127b/DEV_PREP_MANIFEST.json",
+    "source_path": "diagnostics/v49_8096127b/score/metrics.json"
+  },
+  "limitations": [
+    "Single curated KEP1287 repository case repeatedly inspected for development; no held-out performance established.",
+    "Different semantic profiles, inference context, judge models and request budgets prevent equal-compute causal claims.",
+    "Opaque model IDs are reused; immutable provider snapshots are unverified.",
+    "The strongest observed all-scope result is v4.9 0.636364; strongest baseline-subset result is v4.6 0.689655. No result above 0.80 is established.",
+    "All-hosted report outcomes are recommendations with unresolved human review, without outcome Gold; link F1 is not architecture-outcome accuracy.",
+    "Provider token fields are recorded usage, not monetary billing. Scope experiment adds 3 checker requests on reused v4.9 primary predictions; primary compute was not free.",
+    "Reported historical test reports are local construction validation and synthetic workflow checks, not hosted accuracy.",
+    "GitHub export can preserve provenance but does not independently authenticate reviewer declarations or external service responses."
+  ],
+  "local_synthetic_log_source_path": "er_v49_build/EvoRationale_v49_DEV_EN/development_review/v49_local_tests_and_preparation.log",
+  "local_test_report_files": [
+    "V43_TEST_REPORT.md",
+    "V44_TEST_REPORT.md",
+    "V45_TEST_REPORT.md",
+    "V46_TEST_REPORT.md",
+    "V47_TEST_REPORT.md",
+    "V48_TEST_REPORT.md",
+    "V49_TEST_REPORT.md"
+  ],
+  "local_test_reports_source_root": "er_v49_build/EvoRationale_v49_DEV_EN",
+  "no_provider_requests_made_for_catalog": true,
+  "other_project_outputs": [
+    {
+      "decision_id": "GitHub-PR-1803",
+      "episode_id": "pilot-azure-eslz-avnm-1803-live-github-pilot-atomic-exploratory",
+      "evidence_class": "SEPARATE_AZURE_EXPLORATORY_EXAMPLE_NOT_KEP1287_SCORING_BASELINE",
+      "f1": null,
+      "label": "azure-v4-api",
+      "metrics_available": false,
+      "raw_source_in_attached_zip_prefix": "EvoRationale_PaperAligned_v4/outputs/azure-v4-api/",
+      "run_id": "202d3315-b91a-47db-a003-c5f5e02c58f6",
+      "verified_evidence_link_count": 2
+    },
+    {
+      "decision_id": "GitHub-PR-1803",
+      "episode_id": "pilot-azure-eslz-avnm-1803-live-github-pilot-atomic-exploratory",
+      "evidence_class": "SEPARATE_AZURE_EXPLORATORY_EXAMPLE_NOT_KEP1287_SCORING_BASELINE",
+      "f1": null,
+      "label": "azure-v4-offline",
+      "metrics_available": false,
+      "raw_source_in_attached_zip_prefix": "EvoRationale_PaperAligned_v4/outputs/azure-v4-offline/",
+      "run_id": "4f35deb7-8812-4cae-b09c-0beb0f4169cf",
+      "verified_evidence_link_count": 4
+    },
+    {
+      "decision_id": "GitHub-PR-1803",
+      "episode_id": "pilot-azure-eslz-avnm-1803-live-github-pilot-atomic-exploratory-diff-enrichment-v41",
+      "evidence_class": "SEPARATE_AZURE_EXPLORATORY_EXAMPLE_NOT_KEP1287_SCORING_BASELINE",
+      "f1": null,
+      "label": "azure-v41-diff-offline",
+      "metrics_available": false,
+      "raw_source_in_attached_zip_prefix": "EvoRationale_PaperAligned_v4/outputs/azure-v41-diff-offline/",
+      "run_id": "397f8a44-ca11-49d3-9e84-a01bbc33fe59",
+      "verified_evidence_link_count": 14
+    }
+  ],
+  "required_export_inference_input_note": "Each run original_diagnostic_members already contains its exact unlabeled S0/history. Current PrimaryEffects also needs data/public_baseline_README.md from the WindowsFix kit, pinned by its module and release validation; extra baseline context changes inference inputs and has no hosted F1 yet.",
+  "required_export_members_policy": "Copy only original_diagnostic_members per record, preserving bytes. Extra FP/FN analyses and *_case.json files are development analysis, not committed hosted run members.",
+  "required_frozen_reference_export_member_count": 7,
+  "required_frozen_reference_export_members": [
+    {
+      "exported_path": "data/references/frozen_reference/FREEZE_MANIFEST.json",
+      "member": "FREEZE_MANIFEST.json",
+      "role": "POST_RUN_REFERENCE_ONLY_NOT_MODEL_INPUT",
+      "sha256": "2cfce69a76edea3b950394bd570d07a6cc3a1736481d1603ce4efd21344ee53c",
+      "source_path": "diagnostics/frozen_reference_211411/KEP1287_Reviewer_Confirmed_Freeze/FREEZE_MANIFEST.json"
+    },
+    {
+      "exported_path": "data/references/frozen_reference/REVIEWER_CONFIRMATIONS.csv",
+      "member": "REVIEWER_CONFIRMATIONS.csv",
+      "role": "POST_RUN_REFERENCE_ONLY_NOT_MODEL_INPUT",
+      "sha256": "e7be0e82eabbcbad3d1ebc5233ef1e9a4a097312f2fcbb40f942ead864652170",
+      "source_path": "diagnostics/frozen_reference_211411/KEP1287_Reviewer_Confirmed_Freeze/REVIEWER_CONFIRMATIONS.csv"
+    },
+    {
+      "exported_path": "data/references/frozen_reference/S0_ATOMIC_REVIEWER_CONFIRMED.json",
+      "member": "S0_ATOMIC_REVIEWER_CONFIRMED.json",
+      "role": "POST_RUN_REFERENCE_ONLY_NOT_MODEL_INPUT",
+      "sha256": "6557ea5d549fbc2bac280be4f46d948948dbb70673c0c1f53ff21c24c4fbde42",
+      "source_path": "diagnostics/frozen_reference_211411/KEP1287_Reviewer_Confirmed_Freeze/S0_ATOMIC_REVIEWER_CONFIRMED.json"
+    },
+    {
+      "exported_path": "data/references/frozen_reference/reference/COMMIT_SCREENING_CANDIDATE.csv",
+      "member": "reference/COMMIT_SCREENING_CANDIDATE.csv",
+      "role": "POST_RUN_REFERENCE_ONLY_NOT_MODEL_INPUT",
+      "sha256": "5e165c10233b02794810eed81986f2ec795a4514d2a938f2fa25f3ca7a3c9304",
+      "source_path": "diagnostics/frozen_reference_211411/KEP1287_Reviewer_Confirmed_Freeze/reference/COMMIT_SCREENING_CANDIDATE.csv"
+    },
+    {
+      "exported_path": "data/references/frozen_reference/reference/EVENT_RELATIONS_CANDIDATE.csv",
+      "member": "reference/EVENT_RELATIONS_CANDIDATE.csv",
+      "role": "POST_RUN_REFERENCE_ONLY_NOT_MODEL_INPUT",
+      "sha256": "e1f9b33899dd5b0977a97d912cf528aefbf3ecd8468423c8abe38c676a8c3fe6",
+      "source_path": "diagnostics/frozen_reference_211411/KEP1287_Reviewer_Confirmed_Freeze/reference/EVENT_RELATIONS_CANDIDATE.csv"
+    },
+    {
+      "exported_path": "data/references/frozen_reference/reference/HUNK_RELATIONS_CANDIDATE.csv",
+      "member": "reference/HUNK_RELATIONS_CANDIDATE.csv",
+      "role": "POST_RUN_REFERENCE_ONLY_NOT_MODEL_INPUT",
+      "sha256": "8448a4efeca142d4410ea902b0e9f9e85958af52d745b8582a0757feb802f9ac",
+      "source_path": "diagnostics/frozen_reference_211411/KEP1287_Reviewer_Confirmed_Freeze/reference/HUNK_RELATIONS_CANDIDATE.csv"
+    },
+    {
+      "exported_path": "data/references/frozen_reference/reference/S0_ATOMIC_CANDIDATE.csv",
+      "member": "reference/S0_ATOMIC_CANDIDATE.csv",
+      "role": "POST_RUN_REFERENCE_ONLY_NOT_MODEL_INPUT",
+      "sha256": "5255d9efd256f8c39004a3a476740f4d89d7a5f24d6e2907ed5fc3c1a4afdd5e",
+      "source_path": "diagnostics/frozen_reference_211411/KEP1287_Reviewer_Confirmed_Freeze/reference/S0_ATOMIC_CANDIDATE.csv"
+    }
+  ],
+  "unchanged_scorer_sha256": "18553a3a195a490102348e199233ef4ae752efaf8b80e351e52ff354c6d88895",
+  "unchanged_scorer_source_path": "er_v49_build/EvoRationale_v49_DEV_EN/development_tools/_score_core.py",
+  "verified_frozen_reference_member_hashes_against_manifest": true
+}

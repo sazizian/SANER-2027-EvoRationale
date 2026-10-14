@@ -1,0 +1,18 @@
+{
+  "confirmation_file_sha256": "e7be0e82eabbcbad3d1ebc5233ef1e9a4a097312f2fcbb40f942ead864652170",
+  "gold_decision_outcomes_available": false,
+  "historical_replay_certified": false,
+  "note": "The tool checks declarations and source integrity, not human identity, replay availability, or label validity.",
+  "reference_sha256": {
+    "COMMIT_SCREENING_CANDIDATE.csv": "5e165c10233b02794810eed81986f2ec795a4514d2a938f2fa25f3ca7a3c9304",
+    "EVENT_RELATIONS_CANDIDATE.csv": "e1f9b33899dd5b0977a97d912cf528aefbf3ecd8468423c8abe38c676a8c3fe6",
+    "HUNK_RELATIONS_CANDIDATE.csv": "8448a4efeca142d4410ea902b0e9f9e85958af52d745b8582a0757feb802f9ac",
+    "S0_ATOMIC_CANDIDATE.csv": "5255d9efd256f8c39004a3a476740f4d89d7a5f24d6e2907ed5fc3c1a4afdd5e"
+  },
+  "reviewer_ids": [
+    "Reviewer A",
+    "Reviewer B"
+  ],
+  "s0_sha256": "6557ea5d549fbc2bac280be4f46d948948dbb70673c0c1f53ff21c24c4fbde42",
+  "status": "DOCUMENTED_SIGNOFF_RECORDED_NOT_INDEPENDENTLY_AUTHENTICATED"
+}

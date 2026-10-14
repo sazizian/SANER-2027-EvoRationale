@@ -1,0 +1,204 @@
+{
+  "budget_usage": {
+    "accounting": "REQUEST_ENVELOPE_ESTIMATE_INCLUDING_RETRIES_NOT_BILLING",
+    "estimated_input_tokens": 53495,
+    "max_output_tokens_per_request": 16384,
+    "provider_reported_input_tokens": 38759,
+    "provider_reported_output_tokens": 21026,
+    "provider_requests_reserved": 6,
+    "provider_responses_received": 6,
+    "queries": 6,
+    "requests": [
+      {
+        "estimated_input_tokens": 14865,
+        "max_output_tokens": 16200,
+        "model": "gpt-6.1-sol",
+        "provider_input_tokens": 11529,
+        "provider_output_tokens": 10508,
+        "provider_total_tokens": 22037,
+        "response_received": true
+      },
+      {
+        "estimated_input_tokens": 11246,
+        "max_output_tokens": 8200,
+        "model": "gpt-6.1-sol",
+        "provider_input_tokens": 8680,
+        "provider_output_tokens": 3989,
+        "provider_total_tokens": 12669,
+        "response_received": true
+      },
+      {
+        "estimated_input_tokens": 9419,
+        "max_output_tokens": 7200,
+        "model": "gpt-6.1-sol",
+        "provider_input_tokens": 7048,
+        "provider_output_tokens": 4611,
+        "provider_total_tokens": 11659,
+        "response_received": true
+      },
+      {
+        "estimated_input_tokens": 5842,
+        "max_output_tokens": 6144,
+        "model": "gpt-6.1-sol",
+        "provider_input_tokens": 3630,
+        "provider_output_tokens": 804,
+        "provider_total_tokens": 4434,
+        "response_received": true
+      },
+      {
+        "estimated_input_tokens": 6051,
+        "max_output_tokens": 6144,
+        "model": "gpt-6.1-sol",
+        "provider_input_tokens": 3919,
+        "provider_output_tokens": 624,
+        "provider_total_tokens": 4543,
+        "response_received": true
+      },
+      {
+        "estimated_input_tokens": 6072,
+        "max_output_tokens": 6144,
+        "model": "gpt-6.1-sol",
+        "provider_input_tokens": 3953,
+        "provider_output_tokens": 490,
+        "provider_total_tokens": 4443,
+        "response_received": true
+      }
+    ],
+    "responses_with_reported_usage": 6,
+    "rounds": 6,
+    "unique_artifact_reads": 30
+  },
+  "comparison": {
+    "all": {
+      "api_v41_f1": 0.0,
+      "api_v43_dev_f1": 0.095238,
+      "api_v44_dev_f1": 0.3,
+      "api_v45_dev_f1": 0.347826,
+      "api_v46_dev_f1": 0.631579,
+      "api_v47_dev_f1": 0.333333,
+      "api_v48_dev_f1": 0.6,
+      "delta_v48_minus_api_v41": 0.6,
+      "delta_v48_minus_v43": 0.504762,
+      "delta_v48_minus_v44": 0.3,
+      "delta_v48_minus_v45": 0.252174,
+      "delta_v48_minus_v46": -0.031579,
+      "delta_v48_minus_v47": 0.266667,
+      "note": "Descriptive development comparison: identical source inputs, opaque model IDs and nominal budgets as v4.6/v4.7; v4.6 semantic instructions/schema are restored with a narrow proof-routing repair and larger bounded initial output allowance. Provider-call/token accounting differs; earlier versions also used different models.",
+      "offline_v41_f1": 0.142857
+    },
+    "baseline": {
+      "api_v41_f1": 0.0,
+      "api_v43_dev_f1": 0.133333,
+      "api_v44_dev_f1": 0.214286,
+      "api_v45_dev_f1": 0.444444,
+      "api_v46_dev_f1": 0.689655,
+      "api_v47_dev_f1": 0.181818,
+      "api_v48_dev_f1": 0.645161,
+      "delta_v48_minus_api_v41": 0.645161,
+      "delta_v48_minus_v43": 0.511828,
+      "delta_v48_minus_v44": 0.430875,
+      "delta_v48_minus_v45": 0.200717,
+      "delta_v48_minus_v46": -0.044494,
+      "delta_v48_minus_v47": 0.463343,
+      "note": "Descriptive development comparison: identical source inputs, opaque model IDs and nominal budgets as v4.6/v4.7; v4.6 semantic instructions/schema are restored with a narrow proof-routing repair and larger bounded initial output allowance. Provider-call/token accounting differs; earlier versions also used different models.",
+      "offline_v41_f1": 0.0625
+    }
+  },
+  "comparison_note": "Descriptive development comparison: identical source inputs, opaque model IDs and nominal budgets as v4.6/v4.7; v4.6 semantic instructions/schema are restored with a narrow proof-routing repair and larger bounded initial output allowance. Provider-call/token accounting differs; earlier versions also used different models.",
+  "frozen_s0_sha256": "6557ea5d549fbc2bac280be4f46d948948dbb70673c0c1f53ff21c24c4fbde42",
+  "investigation_profile": "event-evidence-repair",
+  "model_change_note": "Linker and judge model IDs and nominal budgets are copied from the strongest measured v4.6 development run; they match the supplied v4.7 run. Nomination remains none; immutable provider model snapshots are not verified.",
+  "models": {
+    "judge": "gpt-6.1-sol",
+    "linker": "gpt-6.1-sol"
+  },
+  "nominal_budgets": {
+    "max_input_tokens": 100000,
+    "max_queries": 12,
+    "max_reads": 36,
+    "max_rounds": 6
+  },
+  "nomination_mode": "none",
+  "parent_v44_models": {
+    "judge": "gpt-6-luna",
+    "linker": "gpt-6.1-sol"
+  },
+  "parent_v45_models": {
+    "judge": "gpt-6.1-sol",
+    "linker": "gpt-6.1-sol"
+  },
+  "parent_v46_models": {
+    "judge": "gpt-6.1-sol",
+    "linker": "gpt-6.1-sol"
+  },
+  "parent_v47_models": {
+    "judge": "gpt-6.1-sol",
+    "linker": "gpt-6.1-sol"
+  },
+  "policy_change_note": "v4.8 restores the v4.6 evidence-trace instructions and response schema verbatim. Only same-artifact adopted replacement proof routing is repaired; v4.7 contribution restrictions are not used in this profile. The larger bounded initial output allowance is retained. No provider phase is added. Fixed S0, frozen labels and the exact-triple scorer remain unchanged.",
+  "results": {
+    "all": {
+      "evaluated_hunks": 30,
+      "f1": 0.6,
+      "fn": 7,
+      "fp": 9,
+      "fp_on_unrelated_or_implementation_only_hunks": 3,
+      "gold_positive_exact_triples": 19,
+      "limitations": [
+        "curated single-repository pilot",
+        "not a certified 2024 historical replay",
+        "no gold architecture-outcome labels",
+        "v4.8 development examples, not independent held-out evaluation",
+        "different profile and provider-call/token accounting"
+      ],
+      "precision": 0.571429,
+      "predicted_exact_triples": 21,
+      "predicted_hunk_coverage": {
+        "count": 14,
+        "of": 30
+      },
+      "recall": 0.631579,
+      "scope": "all",
+      "tp": 12,
+      "unscored_prediction_links_outside_hunk_universe": 0
+    },
+    "baseline": {
+      "evaluated_hunks": 24,
+      "f1": 0.645161,
+      "fn": 4,
+      "fp": 7,
+      "fp_on_unrelated_or_implementation_only_hunks": 1,
+      "gold_positive_exact_triples": 14,
+      "limitations": [
+        "curated single-repository pilot",
+        "not a certified 2024 historical replay",
+        "no gold architecture-outcome labels",
+        "v4.8 development examples, not independent held-out evaluation",
+        "different profile and provider-call/token accounting"
+      ],
+      "precision": 0.588235,
+      "predicted_exact_triples": 17,
+      "predicted_hunk_coverage": {
+        "count": 11,
+        "of": 24
+      },
+      "recall": 0.714286,
+      "scope": "baseline",
+      "tp": 10,
+      "unscored_prediction_links_outside_hunk_universe": 4
+    }
+  },
+  "status": "V48_DEVELOPMENT_ONLY_POST_RUN_REFERENCE_COMPARISON",
+  "v48_code_sha256": "ab82ceb7019d8534515dd5e6ead0153b3d92bed545c6e251bc64e97d2a816853",
+  "v48_run_report_sha256": "64bb93f460ed10f060ef440a4a27ba27f3a30b85e57e0c97b5337cefe7bcc619",
+  "verification_status": "UNRESOLVED",
+  "verified_evidence_links": 21,
+  "warnings": [
+    "NOT held-out: the reference was examined during development.",
+    "Descriptive development comparison: identical source inputs, opaque model IDs and nominal budgets as v4.6/v4.7; v4.6 semantic instructions/schema are restored with a narrow proof-routing repair and larger bounded initial output allowance. Provider-call/token accounting differs; earlier versions also used different models.",
+    "Linker and judge model IDs and nominal budgets are copied from the strongest measured v4.6 development run; they match the supplied v4.7 run. Nomination remains none; immutable provider model snapshots are not verified.",
+    "v4.8 restores the v4.6 evidence-trace instructions and response schema verbatim. Only same-artifact adopted replacement proof routing is repaired; v4.7 contribution restrictions are not used in this profile. The larger bounded initial output allowance is retained. No provider phase is added. Fixed S0, frozen labels and the exact-triple scorer remain unchanged.",
+    "The exact-triple scorer is unchanged; no architecture-outcome gold is available.",
+    "Historical replay remains uncertified; model snapshots are not verified."
+  ]
+}

@@ -1,0 +1,646 @@
+{
+  "artifact_reads": [
+    "Azure/Enterprise-Scale::github-pull_request-1946::2026-10-10T06:46:42.972931Z-655f8bd93249b6e8",
+    "Azure/Enterprise-Scale::github-pull_request-1880::2026-10-10T06:46:37.202355Z-a14e7e6f5ca6d066",
+    "Azure/Enterprise-Scale::github-pull_request-1896::2026-10-10T06:46:40.355361Z-d0103ca4455cef27",
+    "Azure/Enterprise-Scale::github-commit-9b3bbf2387233e70213769c3a15cd5d040a37aec::2026-10-10T06:46:48.967303Z-997a14f4c3fa0392",
+    "Azure/Enterprise-Scale::github-commit-5ba2d3af9118b155f118e33733d271e73e606b7d::2026-10-10T06:46:39.952611Z-00c9c8fd71324103",
+    "Azure/Enterprise-Scale::github-commit-ad1bbe43d271ce7067295a084e810481ddd95bd5::2026-10-10T06:46:39.537021Z-3735975f11d7479e",
+    "Azure/Enterprise-Scale::github-pull_request-2083::2026-10-10T06:46:46.093661Z-fae3a8eedd39472f",
+    "Azure/Enterprise-Scale::github-review_comment-1922341492::2026-10-10T06:46:38.039187Z-26bd251304b257a8",
+    "Azure/Enterprise-Scale::github-review_comment-2504566113::2026-10-10T06:46:47.026167Z-fcce30ff63177763",
+    "Azure/Enterprise-Scale::github-review_comment-1922337772::2026-10-10T06:46:38.039054Z-487d28fa4025f08d",
+    "Azure/Enterprise-Scale::github-commit-b8e7c7d27d709965cf823c93c996a60b3a6a0a17::2026-10-10T06:46:45.253539Z-8747cf8139d4fbe8",
+    "Azure/Enterprise-Scale::github-commit-cdd3430f26f003ae04acbc5e5271b447167d9447::2026-10-10T06:46:42.592240Z-7081d56fc97971d6",
+    "Azure/Enterprise-Scale::github-commit-71c525a7ce5adeeae57853f48601ea6cb3604ceb::2026-10-10T06:46:42.258611Z-d13699148eab0ecb",
+    "Azure/Enterprise-Scale::github-commit-ff92f997d32c20d0a439b1d502f13c58f9f1d93f::2026-10-10T06:46:41.874276Z-81009f789a6c2b1e",
+    "Azure/Enterprise-Scale::github-commit-7ea9b3626a6ff2c6cd10cc05d73ca9588d256368::2026-10-10T06:46:39.096767Z-347cd5b4d912009e",
+    "Azure/Enterprise-Scale::github-commit-408c6eeed904659ea4b133289fcd0d670afd4617::2026-10-10T06:46:48.197202Z-080e5fc31d7e8133"
+  ],
+  "attempts": [
+    "global#1",
+    "need:G1#1",
+    "need:I1a#1"
+  ],
+  "human_reviews": [],
+  "initial_state": {
+    "accepted_at": "2025-01-10T05:46:36Z",
+    "accepted_at_basis": "GitHub merged_at; developer merge confirms integration, but a human must review the extracted S0 rationale",
+    "assumptions": [],
+    "builder_status": "EXPLORATORY_ATOMIC_DRAFT_HUMAN_APPROVAL_REQUIRED",
+    "candidate_source": "https://github.com/Azure/Enterprise-Scale/pull/1803",
+    "central_element_ids": [
+      "G1",
+      "I1a",
+      "I1b",
+      "I1c"
+    ],
+    "composite_groups": [
+      {
+        "member_ids": [
+          "I1a",
+          "I1b",
+          "I1c"
+        ],
+        "original_id": "I1"
+      },
+      {
+        "member_ids": [
+          "C1a",
+          "C1b"
+        ],
+        "original_id": "C1"
+      }
+    ],
+    "constraints_dependencies": [
+      {
+        "decomposed_from_id": "C1",
+        "id": "C1a",
+        "keywords": [
+          "AVNM",
+          "deployment",
+          "conditions"
+        ],
+        "source": "https://github.com/Azure/Enterprise-Scale/pull/1803",
+        "source_status": "DRAFT_CANDIDATE_REQUIRES_ANCHOR_REVIEW",
+        "text": "Update AVNM-related deployment conditions."
+      },
+      {
+        "decomposed_from_id": "C1",
+        "id": "C1b",
+        "keywords": [
+          "AVNM",
+          "deployment",
+          "dependencies"
+        ],
+        "source": "https://github.com/Azure/Enterprise-Scale/pull/1803",
+        "source_status": "DRAFT_CANDIDATE_REQUIRES_ANCHOR_REVIEW",
+        "text": "Update AVNM-related deployment dependencies."
+      }
+    ],
+    "cutoff_at": "2026-10-10T06:46:50.967433Z",
+    "decision": "Introduce optional Azure Virtual Network Manager deployment in Azure Enterprise-Scale landing-zone ARM/portal templates",
+    "decision_id": "GitHub-PR-1803",
+    "derived_from_approved_s0_sha256": "7e4be7e2216118cd0534b0c7c3f7891d97822cd6e3bba9f76c154736117e0700",
+    "episode_id": "pilot-azure-eslz-avnm-1803-live-github-pilot-atomic-exploratory",
+    "goals": [
+      {
+        "id": "G1",
+        "keywords": [
+          "AVNM",
+          "Virtual Network Manager",
+          "deployment",
+          "templates",
+          "support"
+        ],
+        "source": "https://github.com/Azure/Enterprise-Scale/pull/1803",
+        "text": "Add support for deploying Azure Virtual Network Manager (AVNM) in the ESLZ deployment templates."
+      }
+    ],
+    "human_approved": true,
+    "human_review_required": true,
+    "implementation_scope": [
+      {
+        "decomposed_from_id": "I1",
+        "id": "I1a",
+        "keywords": [
+          "deployAVNM",
+          "eslzArm.json",
+          "AVNM",
+          "parameter"
+        ],
+        "source": "https://github.com/Azure/Enterprise-Scale/pull/1803",
+        "source_status": "DRAFT_CANDIDATE_REQUIRES_ANCHOR_REVIEW",
+        "text": "Introduce deployAVNM as an ARM deployment parameter in eslzArm.json."
+      },
+      {
+        "decomposed_from_id": "I1",
+        "id": "I1b",
+        "keywords": [
+          "AVNM",
+          "checkbox",
+          "eslz-portal.json",
+          "deployAVNM"
+        ],
+        "source": "https://github.com/Azure/Enterprise-Scale/pull/1803",
+        "source_status": "DRAFT_CANDIDATE_REQUIRES_ANCHOR_REVIEW",
+        "text": "Expose an AVNM deployment checkbox in eslz-portal.json."
+      },
+      {
+        "decomposed_from_id": "I1",
+        "id": "I1c",
+        "keywords": [
+          "AVNM",
+          "deployment",
+          "conditions",
+          "eslzArm.json"
+        ],
+        "source": "https://github.com/Azure/Enterprise-Scale/pull/1803",
+        "source_status": "DRAFT_CANDIDATE_REQUIRES_ANCHOR_REVIEW",
+        "text": "Integrate AVNM deployment conditions in eslzArm.json."
+      }
+    ],
+    "original_composite_elements": [
+      {
+        "id": "I1",
+        "keywords": [
+          "AVNM",
+          "eslzArm",
+          "eslz-portal",
+          "checkbox",
+          "parameter",
+          "deployment"
+        ],
+        "source": "https://github.com/Azure/Enterprise-Scale/pull/1803",
+        "text": "Include deployAVNM in eslzArm.json and eslz-portal.json with portal checkbox and deployment conditions."
+      },
+      {
+        "id": "C1",
+        "keywords": [
+          "AVNM",
+          "conditions",
+          "dependencies",
+          "deployment"
+        ],
+        "source": "https://github.com/Azure/Enterprise-Scale/pull/1803",
+        "text": "Update deployment conditions and dependencies to include AVNM."
+      }
+    ],
+    "original_episode_id": "pilot-azure-eslz-avnm-1803-live-github-pilot",
+    "original_evidence": [],
+    "quality_attributes": [],
+    "repository": "Azure/Enterprise-Scale",
+    "requirements": [],
+    "research_label": "EXPLORATORY_S0_REVISION_NOT_ORIGINAL_GOLD",
+    "review_instructions": "Check every proposed atomic statement against the accepted PR #1803 at the decision time; remove unsupported clauses and document all corrections before explicit human approval. Do not present exploratory rerun as held-out evaluation.",
+    "snapshot_note": "Current captured source bodies cannot be used for historical cutoff replay"
+  },
+  "needs": [
+    {
+      "attempts": 1,
+      "element_id": null,
+      "id": "global",
+      "question": "Which post-decision artifacts affect the accepted decision?",
+      "required": false,
+      "status": "RESOLVED"
+    },
+    {
+      "attempts": 1,
+      "element_id": "G1",
+      "id": "need:G1",
+      "question": "Does post-decision evidence still support Add support for deploying Azure Virtual Network Manager (AVNM) in the ESLZ deployment templates.?",
+      "required": true,
+      "status": "RESOLVED"
+    },
+    {
+      "attempts": 0,
+      "element_id": "C1a",
+      "id": "need:C1a",
+      "question": "Does post-decision evidence still support Update AVNM-related deployment conditions.?",
+      "required": false,
+      "status": "OPEN"
+    },
+    {
+      "attempts": 0,
+      "element_id": "C1b",
+      "id": "need:C1b",
+      "question": "Does post-decision evidence still support Update AVNM-related deployment dependencies.?",
+      "required": false,
+      "status": "OPEN"
+    },
+    {
+      "attempts": 1,
+      "element_id": "I1a",
+      "id": "need:I1a",
+      "question": "Does post-decision evidence still support Introduce deployAVNM as an ARM deployment parameter in eslzArm.json.?",
+      "required": true,
+      "status": "OPEN"
+    },
+    {
+      "attempts": 0,
+      "element_id": "I1b",
+      "id": "need:I1b",
+      "question": "Does post-decision evidence still support Expose an AVNM deployment checkbox in eslz-portal.json.?",
+      "required": true,
+      "status": "RESOLVED"
+    },
+    {
+      "attempts": 0,
+      "element_id": "I1c",
+      "id": "need:I1c",
+      "question": "Does post-decision evidence still support Integrate AVNM deployment conditions in eslzArm.json.?",
+      "required": true,
+      "status": "OPEN"
+    }
+  ],
+  "query_count": 3,
+  "rejected_interpretations": [
+    {
+      "artifact_key": "Azure/Enterprise-Scale::github-pull_request-1880::2026-10-10T06:46:37.202355Z-a14e7e6f5ca6d066",
+      "element_id": "G1",
+      "question_id": "global",
+      "reasons": [
+        "insufficient_goal_or_rationale_specificity"
+      ]
+    },
+    {
+      "artifact_key": "Azure/Enterprise-Scale::github-pull_request-1946::2026-10-10T06:46:42.972931Z-655f8bd93249b6e8",
+      "element_id": "I1b",
+      "question_id": "need:G1",
+      "reasons": [
+        "missing_exact_file_anchor:eslz-portal.json"
+      ]
+    }
+  ],
+  "report": {
+    "budget_usage": {
+      "estimated_input_tokens": 24326,
+      "queries": 3,
+      "rounds": 3,
+      "unique_artifact_reads": 16
+    },
+    "composite_coverage": [
+      {
+        "adverse_or_conflicting_member_ids": [],
+        "all_members_supported": false,
+        "member_ids": [
+          "I1a",
+          "I1b",
+          "I1c"
+        ],
+        "missing_member_ids": [
+          "I1a",
+          "I1c"
+        ],
+        "note": "Diagnostic evidence coverage, not an independent architectural verdict",
+        "original_composite_id": "I1",
+        "supporting_member_ids": [
+          "I1b"
+        ]
+      },
+      {
+        "adverse_or_conflicting_member_ids": [],
+        "all_members_supported": false,
+        "member_ids": [
+          "C1a",
+          "C1b"
+        ],
+        "missing_member_ids": [
+          "C1a",
+          "C1b"
+        ],
+        "note": "Diagnostic evidence coverage, not an independent architectural verdict",
+        "original_composite_id": "C1",
+        "supporting_member_ids": []
+      }
+    ],
+    "confidence": 0.87,
+    "confidence_kind": "MODEL_PROPOSED_NOT_CALIBRATED",
+    "decision_id": "GitHub-PR-1803",
+    "drift_types": [],
+    "episode_id": "pilot-azure-eslz-avnm-1803-live-github-pilot-atomic-exploratory",
+    "evidence_grounded_rationale": [
+      {
+        "artifact_key": "Azure/Enterprise-Scale::github-pull_request-1880::2026-10-10T06:46:37.202355Z-a14e7e6f5ca6d066",
+        "decision_element_id": "I1b",
+        "relation": "supports",
+        "verbatim_quote": "* Introduced a new checkbox option in the `eslz-portal.json` file to deploy the Azure Virtual Network Manager (AVNM) in preview mode."
+      },
+      {
+        "artifact_key": "Azure/Enterprise-Scale::github-pull_request-1880::2026-10-10T06:46:37.202355Z-a14e7e6f5ca6d066",
+        "decision_element_id": "G1",
+        "relation": "supports",
+        "verbatim_quote": "* Introduced a new checkbox option in the `eslz-portal.json` file to deploy the Azure Virtual Network Manager (AVNM) in preview mode."
+      }
+    ],
+    "formal_evidence": [],
+    "human_review_required": true,
+    "human_review_status": "PENDING",
+    "material_claims": [
+      {
+        "citations": [
+          "Azure/Enterprise-Scale::github-pull_request-1880::2026-10-10T06:46:37.202355Z-a14e7e6f5ca6d066"
+        ],
+        "claim_id": "5a167fd7725a144a8ea5",
+        "decision_element_id": "I1b",
+        "material": true,
+        "quote": "* Introduced a new checkbox option in the `eslz-portal.json` file to deploy the Azure Virtual Network Manager (AVNM) in preview mode.",
+        "relation": "supports",
+        "text": "Artifact github-pull_request-1880 (version 2026-10-10T06:46:37.202355Z-a14e7e6f5ca6d066) states: * Introduced a new checkbox option in the `eslz-portal.json` file to deploy the Azure Virtual Network Manager (AVNM) in preview mode."
+      },
+      {
+        "citations": [
+          "Azure/Enterprise-Scale::github-pull_request-1880::2026-10-10T06:46:37.202355Z-a14e7e6f5ca6d066"
+        ],
+        "claim_id": "4dacb459b9db06b3d40f",
+        "decision_element_id": "G1",
+        "material": true,
+        "quote": "* Introduced a new checkbox option in the `eslz-portal.json` file to deploy the Azure Virtual Network Manager (AVNM) in preview mode.",
+        "relation": "supports",
+        "text": "Artifact github-pull_request-1880 (version 2026-10-10T06:46:37.202355Z-a14e7e6f5ca6d066) states: * Introduced a new checkbox option in the `eslz-portal.json` file to deploy the Azure Virtual Network Manager (AVNM) in preview mode."
+      }
+    ],
+    "model_reason_not_used_as_evidence": true,
+    "next_action": "Collect additional verified evidence; the agent did not establish complete revalidation.",
+    "outcome_probabilities": {
+      "KEEP": 0.08,
+      "REOPEN": 0.02,
+      "REVALIDATE": 0.87,
+      "REVISE": 0.03
+    },
+    "recommended_outcome": "REVALIDATE",
+    "stopping_reason": "round_limit_or_unresolved",
+    "unresolved_questions": [
+      "Does post-decision evidence still support Introduce deployAVNM as an ARM deployment parameter in eslzArm.json.?",
+      "Does post-decision evidence still support Integrate AVNM deployment conditions in eslzArm.json.?"
+    ],
+    "unsupported_claim_rate": 0.0,
+    "verification": {
+      "claim_count": 2,
+      "failures": [],
+      "grounding_kind": "EXTRACTIVE_AND_SEMANTICALLY_SCREENED",
+      "human_review_required": true,
+      "investigation_complete": false,
+      "status": "UNRESOLVED",
+      "unsupported_claim_rate": 0.0
+    },
+    "verified_evidence": [
+      {
+        "artifact_id": "github-pull_request-1880",
+        "artifact_key": "Azure/Enterprise-Scale::github-pull_request-1880::2026-10-10T06:46:37.202355Z-a14e7e6f5ca6d066",
+        "content_sha256": "a14e7e6f5ca6d066a3ed1ba27f7dd13fc8c29193a8ee33647e8b4e971666018d",
+        "decision_element_id": "I1b",
+        "decision_element_type": "implementation_scope",
+        "first_auditable_at": "2026-10-10T06:46:37.202355Z",
+        "question_id": "global",
+        "quote": "* Introduced a new checkbox option in the `eslz-portal.json` file to deploy the Azure Virtual Network Manager (AVNM) in preview mode.",
+        "relation": "supports",
+        "relation_confidence": 0.98,
+        "repository": "Azure/Enterprise-Scale",
+        "semantic_check": "MODEL_ASSESSED:The quote directly says a new checkbox option was introduced in `eslz-portal.json` to deploy Azure Virtual Network Manager (AVNM), which substantively supports exposing an AVNM deployment checkbox in that file.",
+        "source_location": "https://github.com/Azure/Enterprise-Scale/pull/1880",
+        "source_type": "pull_request",
+        "timestamp": "2025-01-10T08:35:08Z",
+        "verifier_status": "PASS",
+        "version_id": "2026-10-10T06:46:37.202355Z-a14e7e6f5ca6d066"
+      },
+      {
+        "artifact_id": "github-pull_request-1880",
+        "artifact_key": "Azure/Enterprise-Scale::github-pull_request-1880::2026-10-10T06:46:37.202355Z-a14e7e6f5ca6d066",
+        "content_sha256": "a14e7e6f5ca6d066a3ed1ba27f7dd13fc8c29193a8ee33647e8b4e971666018d",
+        "decision_element_id": "G1",
+        "decision_element_type": "goals",
+        "first_auditable_at": "2026-10-10T06:46:37.202355Z",
+        "question_id": "need:G1",
+        "quote": "* Introduced a new checkbox option in the `eslz-portal.json` file to deploy the Azure Virtual Network Manager (AVNM) in preview mode.",
+        "relation": "supports",
+        "relation_confidence": 0.92,
+        "repository": "Azure/Enterprise-Scale",
+        "semantic_check": "MODEL_ASSESSED:The quote directly says a new checkbox option was introduced in `eslz-portal.json` to deploy Azure Virtual Network Manager (AVNM), which is substantive evidence of adding AVNM deployment support in the ESLZ deployment templates. The mention of previe",
+        "source_location": "https://github.com/Azure/Enterprise-Scale/pull/1880",
+        "source_type": "pull_request",
+        "timestamp": "2025-01-10T08:35:08Z",
+        "verifier_status": "PASS",
+        "version_id": "2026-10-10T06:46:37.202355Z-a14e7e6f5ca6d066"
+      }
+    ],
+    "zero_claim_report": false
+  },
+  "reviewed_proposals": {
+    "1d70cb11ddcac5d3a87848392f9cc6ebf5f4fac25b2436eeff89af0ec80f722e": {
+      "accepted": false,
+      "feedback": [
+        {
+          "artifact_key": "Azure/Enterprise-Scale::github-pull_request-1880::2026-10-10T06:46:37.202355Z-a14e7e6f5ca6d066",
+          "element_id": "G1",
+          "question_id": "global",
+          "reasons": [
+            "insufficient_goal_or_rationale_specificity"
+          ]
+        }
+      ]
+    },
+    "3ccbf061b65f10e75a50aeba51360b5c61bee74277384621726c162ae0378217": {
+      "accepted": true,
+      "feedback": []
+    },
+    "867ff95a76c5384a3bc9319c4013190d0ab637c27b15e7fb7512b473df41d550": {
+      "accepted": true,
+      "feedback": []
+    },
+    "8e566b027125338f82e062fd8b76b5734bec3246d6314650064cc3d537b93d61": {
+      "accepted": false,
+      "feedback": [
+        {
+          "artifact_key": "Azure/Enterprise-Scale::github-pull_request-1946::2026-10-10T06:46:42.972931Z-655f8bd93249b6e8",
+          "element_id": "I1b",
+          "question_id": "need:G1",
+          "reasons": [
+            "missing_exact_file_anchor:eslz-portal.json"
+          ]
+        }
+      ]
+    }
+  },
+  "round_count": 3,
+  "run_id": "202d3315-b91a-47db-a003-c5f5e02c58f6",
+  "status": "AWAITING_HUMAN_REVIEW",
+  "technical_verification_failures": [],
+  "token_count": 24326,
+  "trace": [
+    {
+      "at": "2026-10-10T18:21:33.003369+00:00",
+      "cached_verifier_decisions": 0,
+      "elapsed_ms": 8979.97,
+      "new_artifact_keys": [
+        "Azure/Enterprise-Scale::github-pull_request-1946::2026-10-10T06:46:42.972931Z-655f8bd93249b6e8",
+        "Azure/Enterprise-Scale::github-pull_request-1880::2026-10-10T06:46:37.202355Z-a14e7e6f5ca6d066",
+        "Azure/Enterprise-Scale::github-pull_request-1896::2026-10-10T06:46:40.355361Z-d0103ca4455cef27",
+        "Azure/Enterprise-Scale::github-commit-9b3bbf2387233e70213769c3a15cd5d040a37aec::2026-10-10T06:46:48.967303Z-997a14f4c3fa0392",
+        "Azure/Enterprise-Scale::github-commit-5ba2d3af9118b155f118e33733d271e73e606b7d::2026-10-10T06:46:39.952611Z-00c9c8fd71324103",
+        "Azure/Enterprise-Scale::github-commit-ad1bbe43d271ce7067295a084e810481ddd95bd5::2026-10-10T06:46:39.537021Z-3735975f11d7479e"
+      ],
+      "question": {
+        "attempt": 1,
+        "element_id": null,
+        "id": "global",
+        "interval": [
+          "2025-01-10T05:46:36Z",
+          "2026-10-10T06:46:50.967433Z"
+        ],
+        "query": "(\"deployAVNM\" OR \"Virtual Network Manager\" OR AVNM) AND (\"eslzArm.json\" OR \"eslz-portal.json\") AND (condition OR dependsOn OR dependency OR parameter OR checkbox)",
+        "query_source": "LLM_REFORMULATION",
+        "repository": "Azure/Enterprise-Scale"
+      },
+      "retrieved_artifact_keys": [
+        "Azure/Enterprise-Scale::github-pull_request-1946::2026-10-10T06:46:42.972931Z-655f8bd93249b6e8",
+        "Azure/Enterprise-Scale::github-pull_request-1880::2026-10-10T06:46:37.202355Z-a14e7e6f5ca6d066",
+        "Azure/Enterprise-Scale::github-pull_request-1896::2026-10-10T06:46:40.355361Z-d0103ca4455cef27",
+        "Azure/Enterprise-Scale::github-commit-9b3bbf2387233e70213769c3a15cd5d040a37aec::2026-10-10T06:46:48.967303Z-997a14f4c3fa0392",
+        "Azure/Enterprise-Scale::github-commit-5ba2d3af9118b155f118e33733d271e73e606b7d::2026-10-10T06:46:39.952611Z-00c9c8fd71324103",
+        "Azure/Enterprise-Scale::github-commit-ad1bbe43d271ce7067295a084e810481ddd95bd5::2026-10-10T06:46:39.537021Z-3735975f11d7479e"
+      ],
+      "reused_artifact_keys": [],
+      "round": 1,
+      "skipped_due_to_token_budget": [],
+      "unresolved_required": [
+        "need:G1",
+        "need:I1a",
+        "need:I1c"
+      ],
+      "verification": "PASS",
+      "verified_links_added": 1,
+      "verifier_rejections": 1
+    },
+    {
+      "at": "2026-10-10T18:21:42.826375+00:00",
+      "cached_verifier_decisions": 1,
+      "elapsed_ms": 7001.21,
+      "new_artifact_keys": [
+        "Azure/Enterprise-Scale::github-pull_request-2083::2026-10-10T06:46:46.093661Z-fae3a8eedd39472f",
+        "Azure/Enterprise-Scale::github-review_comment-1922341492::2026-10-10T06:46:38.039187Z-26bd251304b257a8",
+        "Azure/Enterprise-Scale::github-review_comment-2504566113::2026-10-10T06:46:47.026167Z-fcce30ff63177763",
+        "Azure/Enterprise-Scale::github-review_comment-1922337772::2026-10-10T06:46:38.039054Z-487d28fa4025f08d",
+        "Azure/Enterprise-Scale::github-commit-b8e7c7d27d709965cf823c93c996a60b3a6a0a17::2026-10-10T06:46:45.253539Z-8747cf8139d4fbe8"
+      ],
+      "question": {
+        "attempt": 1,
+        "element_id": "G1",
+        "id": "need:G1",
+        "interval": [
+          "2025-01-10T05:46:36Z",
+          "2026-10-10T06:46:50.967433Z"
+        ],
+        "query": "Search for Azure Virtual Network Manager (AVNM) / Virtual Network Manager references in ESLZ deployment-template documentation, issues, PR discussions, and eslzArm.json or eslz-portal.json history that explain the goal or rationale for adding optional AVNM deployment support, including portal checkbox/user-selection requirements and intended deployment scenarios.",
+        "query_source": "LLM_REFORMULATION",
+        "repository": "Azure/Enterprise-Scale"
+      },
+      "retrieved_artifact_keys": [
+        "Azure/Enterprise-Scale::github-pull_request-2083::2026-10-10T06:46:46.093661Z-fae3a8eedd39472f",
+        "Azure/Enterprise-Scale::github-review_comment-1922341492::2026-10-10T06:46:38.039187Z-26bd251304b257a8",
+        "Azure/Enterprise-Scale::github-review_comment-2504566113::2026-10-10T06:46:47.026167Z-fcce30ff63177763",
+        "Azure/Enterprise-Scale::github-review_comment-1922337772::2026-10-10T06:46:38.039054Z-487d28fa4025f08d",
+        "Azure/Enterprise-Scale::github-commit-b8e7c7d27d709965cf823c93c996a60b3a6a0a17::2026-10-10T06:46:45.253539Z-8747cf8139d4fbe8",
+        "Azure/Enterprise-Scale::github-pull_request-1880::2026-10-10T06:46:37.202355Z-a14e7e6f5ca6d066",
+        "Azure/Enterprise-Scale::github-pull_request-1946::2026-10-10T06:46:42.972931Z-655f8bd93249b6e8"
+      ],
+      "reused_artifact_keys": [
+        "Azure/Enterprise-Scale::github-pull_request-1880::2026-10-10T06:46:37.202355Z-a14e7e6f5ca6d066",
+        "Azure/Enterprise-Scale::github-pull_request-1946::2026-10-10T06:46:42.972931Z-655f8bd93249b6e8"
+      ],
+      "round": 2,
+      "skipped_due_to_token_budget": [],
+      "unresolved_required": [
+        "need:I1a",
+        "need:I1c"
+      ],
+      "verification": "PASS",
+      "verified_links_added": 1,
+      "verifier_rejections": 1
+    },
+    {
+      "at": "2026-10-10T18:21:49.375679+00:00",
+      "cached_verifier_decisions": 0,
+      "elapsed_ms": 3905.55,
+      "new_artifact_keys": [
+        "Azure/Enterprise-Scale::github-commit-cdd3430f26f003ae04acbc5e5271b447167d9447::2026-10-10T06:46:42.592240Z-7081d56fc97971d6",
+        "Azure/Enterprise-Scale::github-commit-71c525a7ce5adeeae57853f48601ea6cb3604ceb::2026-10-10T06:46:42.258611Z-d13699148eab0ecb",
+        "Azure/Enterprise-Scale::github-commit-ff92f997d32c20d0a439b1d502f13c58f9f1d93f::2026-10-10T06:46:41.874276Z-81009f789a6c2b1e",
+        "Azure/Enterprise-Scale::github-commit-7ea9b3626a6ff2c6cd10cc05d73ca9588d256368::2026-10-10T06:46:39.096767Z-347cd5b4d912009e",
+        "Azure/Enterprise-Scale::github-commit-408c6eeed904659ea4b133289fcd0d670afd4617::2026-10-10T06:46:48.197202Z-080e5fc31d7e8133"
+      ],
+      "question": {
+        "attempt": 1,
+        "element_id": "I1a",
+        "id": "need:I1a",
+        "interval": [
+          "2025-01-10T05:46:36Z",
+          "2026-10-10T06:46:50.967433Z"
+        ],
+        "query": "eslzArm.json \"deployAVNM\" \"AVNM\" ARM template parameter deployment conditions dependencies",
+        "query_source": "LLM_REFORMULATION",
+        "repository": "Azure/Enterprise-Scale"
+      },
+      "retrieved_artifact_keys": [
+        "Azure/Enterprise-Scale::github-commit-cdd3430f26f003ae04acbc5e5271b447167d9447::2026-10-10T06:46:42.592240Z-7081d56fc97971d6",
+        "Azure/Enterprise-Scale::github-commit-71c525a7ce5adeeae57853f48601ea6cb3604ceb::2026-10-10T06:46:42.258611Z-d13699148eab0ecb",
+        "Azure/Enterprise-Scale::github-commit-ff92f997d32c20d0a439b1d502f13c58f9f1d93f::2026-10-10T06:46:41.874276Z-81009f789a6c2b1e",
+        "Azure/Enterprise-Scale::github-commit-7ea9b3626a6ff2c6cd10cc05d73ca9588d256368::2026-10-10T06:46:39.096767Z-347cd5b4d912009e",
+        "Azure/Enterprise-Scale::github-commit-408c6eeed904659ea4b133289fcd0d670afd4617::2026-10-10T06:46:48.197202Z-080e5fc31d7e8133",
+        "Azure/Enterprise-Scale::github-pull_request-1896::2026-10-10T06:46:40.355361Z-d0103ca4455cef27",
+        "Azure/Enterprise-Scale::github-pull_request-1946::2026-10-10T06:46:42.972931Z-655f8bd93249b6e8"
+      ],
+      "reused_artifact_keys": [
+        "Azure/Enterprise-Scale::github-pull_request-1896::2026-10-10T06:46:40.355361Z-d0103ca4455cef27",
+        "Azure/Enterprise-Scale::github-pull_request-1946::2026-10-10T06:46:42.972931Z-655f8bd93249b6e8"
+      ],
+      "round": 3,
+      "skipped_due_to_token_budget": [],
+      "unresolved_required": [
+        "need:I1a",
+        "need:I1c"
+      ],
+      "verification": "PASS",
+      "verified_links_added": 0,
+      "verifier_rejections": 0
+    }
+  ],
+  "verified_links": [
+    {
+      "artifact_id": "github-pull_request-1880",
+      "artifact_key": "Azure/Enterprise-Scale::github-pull_request-1880::2026-10-10T06:46:37.202355Z-a14e7e6f5ca6d066",
+      "content_sha256": "a14e7e6f5ca6d066a3ed1ba27f7dd13fc8c29193a8ee33647e8b4e971666018d",
+      "decision_element_id": "I1b",
+      "decision_element_type": "implementation_scope",
+      "first_auditable_at": "2026-10-10T06:46:37.202355Z",
+      "question_id": "global",
+      "quote": "* Introduced a new checkbox option in the `eslz-portal.json` file to deploy the Azure Virtual Network Manager (AVNM) in preview mode.",
+      "relation": "supports",
+      "relation_confidence": 0.98,
+      "repository": "Azure/Enterprise-Scale",
+      "semantic_check": "MODEL_ASSESSED:The quote directly says a new checkbox option was introduced in `eslz-portal.json` to deploy Azure Virtual Network Manager (AVNM), which substantively supports exposing an AVNM deployment checkbox in that file.",
+      "source_location": "https://github.com/Azure/Enterprise-Scale/pull/1880",
+      "source_type": "pull_request",
+      "timestamp": "2025-01-10T08:35:08Z",
+      "verifier_status": "PASS",
+      "version_id": "2026-10-10T06:46:37.202355Z-a14e7e6f5ca6d066"
+    },
+    {
+      "artifact_id": "github-pull_request-1880",
+      "artifact_key": "Azure/Enterprise-Scale::github-pull_request-1880::2026-10-10T06:46:37.202355Z-a14e7e6f5ca6d066",
+      "content_sha256": "a14e7e6f5ca6d066a3ed1ba27f7dd13fc8c29193a8ee33647e8b4e971666018d",
+      "decision_element_id": "G1",
+      "decision_element_type": "goals",
+      "first_auditable_at": "2026-10-10T06:46:37.202355Z",
+      "question_id": "need:G1",
+      "quote": "* Introduced a new checkbox option in the `eslz-portal.json` file to deploy the Azure Virtual Network Manager (AVNM) in preview mode.",
+      "relation": "supports",
+      "relation_confidence": 0.92,
+      "repository": "Azure/Enterprise-Scale",
+      "semantic_check": "MODEL_ASSESSED:The quote directly says a new checkbox option was introduced in `eslz-portal.json` to deploy Azure Virtual Network Manager (AVNM), which is substantive evidence of adding AVNM deployment support in the ESLZ deployment templates. The mention of previe",
+      "source_location": "https://github.com/Azure/Enterprise-Scale/pull/1880",
+      "source_type": "pull_request",
+      "timestamp": "2025-01-10T08:35:08Z",
+      "verifier_status": "PASS",
+      "version_id": "2026-10-10T06:46:37.202355Z-a14e7e6f5ca6d066"
+    }
+  ],
+  "verifier_feedback": [
+    {
+      "artifact_key": "Azure/Enterprise-Scale::github-pull_request-1880::2026-10-10T06:46:37.202355Z-a14e7e6f5ca6d066",
+      "element_id": "G1",
+      "question_id": "global",
+      "reasons": [
+        "insufficient_goal_or_rationale_specificity"
+      ]
+    },
+    {
+      "artifact_key": "Azure/Enterprise-Scale::github-pull_request-1946::2026-10-10T06:46:42.972931Z-655f8bd93249b6e8",
+      "element_id": "I1b",
+      "question_id": "need:G1",
+      "reasons": [
+        "missing_exact_file_anchor:eslz-portal.json"
+      ]
+    }
+  ]
+}

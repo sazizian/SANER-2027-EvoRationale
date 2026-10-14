@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Cite the final GitHub commit or tagged release and the run IDs used in your table. This archive contains development evidence."
+title: "EvoRationale: code, data and development evidence"
+type: software
+authors:
+  - name: "EvoRationale Authors"
+version: "4.9.0.dev0-evidence-export"
+license: MIT
+date-released: "2026-10-12"
+abstract: "Pinned v4.9 code, isolated primary-effects and scope experiments, indexed inputs and research resources, preserved Excel workbooks, historical sources, and reproducible single-case development measurements."

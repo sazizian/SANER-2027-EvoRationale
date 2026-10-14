@@ -1,0 +1,13 @@
+{
+  "all_member_checksums_and_archive_crc_passed": true,
+  "all_shipped_python_and_project_metadata_byte_identical_to_tested_extraction": true,
+  "archive_bytes": 896259,
+  "archive_members": 186,
+  "archive_sha256": "3ef1eaffc22b983ac63124756e39672383c330bc402f319e2c2b9e3fb6a63cff",
+  "automated_tests_passed": 671,
+  "core_sha256": "ef221a718301ba59167360c696b8b22d8e65b0747baf1c41f058aea54a942a23",
+  "final_extracted_helper_passed": true,
+  "hosted_v47_accuracy_result_available": false,
+  "provider_calls": 0,
+  "status": "V47_FINAL_RELEASE_VERIFIED_NO_API_CALLED"
+}

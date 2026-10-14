@@ -1,0 +1,98 @@
+{
+  "checkpoint_relative_path": "checkpoints/8096127b-4cbd-4e77-a9c4-a9c2c5dc0c03.json",
+  "checkpoint_sha256": "6e08b33edb44ea38e7d1a6d396ee0debd4fbcebab41d4ef935c2b523f7846ace",
+  "code_tree_sha256": "a0e1b1c0156e48d6a4bdae27a02fdfd9e0bedfbdd05bac79c2db812468937b22",
+  "command_without_credentials": [
+    "C:\\Users\\sazizian\\AppData\\Local\\er4venv\\Scripts\\python.exe",
+    "-m",
+    "evorationale",
+    "run",
+    "--decision",
+    "C:\\Users\\sazizian\\AppData\\Local\\ER1287Eval_v49Dev01\\inputs\\S0_RETROSPECTIVE_RUNTIME.json",
+    "--history",
+    "C:\\Users\\sazizian\\AppData\\Local\\ER1287Eval_v49Dev01\\inputs\\POST_S0_EVIDENCE_RETROSPECTIVE_53.jsonl",
+    "--output",
+    "C:\\Users\\sazizian\\AppData\\Local\\ER1287Eval_v49Dev01\\run",
+    "--mode",
+    "api",
+    "--allow-repository-text-to-api",
+    "--model",
+    "gpt-6.1-sol",
+    "--judge-model",
+    "gpt-6.1-sol",
+    "--backend",
+    "local",
+    "--memory",
+    "file",
+    "--memory-dir",
+    "C:\\Users\\sazizian\\AppData\\Local\\ER1287Eval_v49Dev01\\checkpoints",
+    "--investigation-profile",
+    "event-pair-reviewed",
+    "--delta-nomination",
+    "none",
+    "--max-rounds",
+    "6",
+    "--max-queries",
+    "12",
+    "--max-reads",
+    "36",
+    "--max-input-tokens",
+    "400000",
+    "--max-provider-requests",
+    "36"
+  ],
+  "comparison_note": "Descriptive development comparison: identical fixed S0, all 53 source artifacts and opaque model IDs as v4.6/v4.8; explicit pair classification and independent candidate verification change the architecture, call pattern and token accounting. The input budget is increased from 100000 to 400000 and provider requests are capped at 36. This is not an equal-compute comparison.",
+  "finish_utc": "2026-10-12T00:41:43.610978+00:00",
+  "investigation_profile": "event-pair-reviewed",
+  "mode": "api",
+  "model": {
+    "judge": "gpt-6.1-sol",
+    "linker": "gpt-6.1-sol"
+  },
+  "model_change_note": "Linker and judge model IDs are copied exactly from the strongest measured v4.6 development run and match v4.8. Nomination remains none; immutable provider model snapshots are not verified.",
+  "nominal_budgets": {
+    "max_input_tokens": 400000,
+    "max_provider_requests": 36,
+    "max_queries": 12,
+    "max_reads": 36,
+    "max_rounds": 6
+  },
+  "nomination_mode": "none",
+  "parent_v44_models": {
+    "judge": "gpt-6-luna",
+    "linker": "gpt-6.1-sol"
+  },
+  "parent_v45_models": {
+    "judge": "gpt-6.1-sol",
+    "linker": "gpt-6.1-sol"
+  },
+  "parent_v46_models": {
+    "judge": "gpt-6.1-sol",
+    "linker": "gpt-6.1-sol"
+  },
+  "parent_v47_models": {
+    "judge": "gpt-6.1-sol",
+    "linker": "gpt-6.1-sol"
+  },
+  "parent_v48_models": {
+    "judge": "gpt-6.1-sol",
+    "linker": "gpt-6.1-sol"
+  },
+  "policy_change_note": "v4.9 explicitly classifies every artifact/atomic-S0 pair in focused groups of at most three artifacts, with full captured same-event context, and independently verifies proposed candidate effects. Classification and checking are separate provider phases; neither receives frozen Gold labels. Fixed S0, all 53 unlabeled input artifacts, frozen labels and the exact-triple scorer remain unchanged. No measured v4.9 accuracy is claimed by preparation or local tests.",
+  "prep_sha256": "bf7a32de98a2cff61fe9c831ad97d5aa70c6fadd1ba8906bcec1e80ae72172c9",
+  "run_id": "8096127b-4cbd-4e77-a9c4-a9c2c5dc0c03",
+  "run_manifest_sha256": "ab945fea8ca8f1d450b0e485d00c6725a99734a1f35c8a45cf3cb6dea56cff64",
+  "run_report_sha256": "c59940bac54f4d7a66ed774443a6cc15bb5a5c43af52f91e3359a1aefb58a3bc",
+  "semantic_phase_config": {
+    "candidate_verification": "independent",
+    "classification": "explicit_all_pairs",
+    "focused_artifacts_per_request": 3,
+    "initial_output_tokens": 12000,
+    "max_attempts_per_phase": 2,
+    "max_candidates_per_event": 64,
+    "retry_output_tokens": 16384
+  },
+  "start_utc": "2026-10-12T00:26:28.708945+00:00",
+  "status": "V49_DEV_HOSTED_RUN_COMPLETED_AND_HASHED",
+  "warning": "This is a development run; it is not independent held-out evaluation."
+}

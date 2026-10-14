@@ -1,0 +1,14 @@
+{
+  "data_audit_sha256": "1343185bda6ccc55f20aa3e517846f2e7119f3a62b4b2f091e90958404685004",
+  "decision_sha256": "a852f931aa41c2f67b1522651665feb67fad9d92116413553405fb3d9c3ba784",
+  "disclosure": "MODEL-ASSISTED OUTPUT REQUIRES HUMAN AUDIT",
+  "historical_replay_certified": false,
+  "history_sha256": "30f89a8dae945eb588898134b23c1a5276f94dd257ef0ae3f71b9befd670a058",
+  "investigation_profile": "event-evidence",
+  "mode": "api",
+  "nomination_mode": "none",
+  "report_sha256": "4bbb2e304acb8b9f0f6ff3b89c2374c4e6e717a7f196b1b3a489dd088a49c79e",
+  "retrieval_backend": "local",
+  "run_id": "188132b4-7975-4ae9-8df4-0cbbc1cad9ad",
+  "status": "AWAITING_HUMAN_REVIEW"
+}

@@ -1,0 +1,25 @@
+{
+  "member_sha256": {
+    "README_START_HERE_EN.md": "6d65ee29b937829cc6414d06d54e49580153b34f7ecff415b7adfac90b1db18d",
+    "_kit_common.py": "fb89112deaa60beb2de71670f270fd942d02b5b594495dc4793c0dfd5a3d8e0b",
+    "diagnostic_review/v49_arch_review.json": "4ea7daee67f6ba20ef481e63cc45ddc61de9e9d760fa0c7428432b3e5406352b",
+    "diagnostic_review/v49_arch_review.md": "6a8e145630c3d6054c5912faf5d77eee27971b6f4cb2e45a0b6e1f444eb6edc3",
+    "diagnostic_review/v49_fn_audit.json": "fda9eea6eae1e08258a7a5eaa7e2376e3a780bcf725197db582ee72818f83c0e",
+    "diagnostic_review/v49_fn_audit.md": "2d748a9aac9e74cdd3304027f238f8ab53d979b030f25e648ac762f120380f90",
+    "diagnostic_review/v49_fp_audit.json": "5b7dedf8786a9674eb1ead919365a60a6b9bc0e97689874abfd2dd830f08c802",
+    "diagnostic_review/v49_fp_audit.md": "648f916e3518788aa53843b964b3093782f299d484a73b673411adff85b895ec",
+    "diagnostic_review/v49_scope_contract.json": "cb96f59fe8332baaeec4117e11f59e119a05fa3535221067965a248a4cfd92aa",
+    "diagnostic_review/v49_scope_contract.md": "ed2da4ea141cdbbd0c086864e8c905359efedf54d6946596e91d19aba29f63a0",
+    "run_scope_recheck.py": "b69493e5e0600988dd3f3e154fa1cabfd61786022ba5f3b52a8fedfc2398d559",
+    "scope_checker.py": "2b787d8294c2b35dc33e19037459e1ee17fb8f930bc56fbdb822c9c94d32c54e",
+    "score_scope_recheck.py": "be8ce58797407117613e963981a01785e74afb40e3118882ffeb32801f9a0dd6",
+    "start_scope_recheck_no_api.py": "34f6d2c22a53edfd18b59a0165f5833215d149e8aedc7fa30d03c3fa3af9b03a",
+    "test_scope_checker.py": "5071b4160fba8832c7f489fd68ed4d9a9bc5dd09b65bd5c195456a07c71edb0b",
+    "test_scope_workflows.py": "b798c309138d2551902266bccd5e8d73fbfdb976b22cb0af1957a836d8dc7d70",
+    "validation/local_preflight.log": "8fe22d567d2727508ac9d23b18c367052bf08237e6485513eca28baeda21923d",
+    "validation/original_cache_replay.json": "812ed3b7263004906829ee9c3c36b40e938d7cd9243654081dd33301bcd806f6",
+    "validation/release_validation.json": "559d604b21bc84f8e13443cf8c3c1119f3d3986e565985ee3e81b76c7f84d07e"
+  },
+  "status": "EXPERIMENTAL_KIT_NOT_A_MEASURED_ACCURACY_RELEASE",
+  "toolkit_sha256": "8a5e1f81d0fdadcf2e337a3c232ccafa73dea418482853d660ccef2d19f172ae"
+}

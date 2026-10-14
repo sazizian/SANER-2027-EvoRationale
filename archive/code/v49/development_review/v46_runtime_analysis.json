@@ -1,0 +1,262 @@
+{
+  "accepted_links": 19,
+  "budget_usage": {
+    "accounting": "REQUEST_ENVELOPE_ESTIMATE_INCLUDING_RETRIES_NOT_BILLING",
+    "estimated_input_tokens": 62911,
+    "max_output_tokens_per_request": 16384,
+    "provider_reported_input_tokens": 45800,
+    "provider_reported_output_tokens": 26646,
+    "provider_requests_reserved": 7,
+    "provider_responses_received": 7,
+    "queries": 6,
+    "requests": [
+      {
+        "estimated_input_tokens": 14865,
+        "max_output_tokens": 10200,
+        "model": "gpt-6.1-sol",
+        "provider_input_tokens": 11528,
+        "provider_output_tokens": 8806,
+        "provider_total_tokens": 20334,
+        "response_received": true
+      },
+      {
+        "estimated_input_tokens": 11246,
+        "max_output_tokens": 5400,
+        "model": "gpt-6.1-sol",
+        "provider_input_tokens": 8679,
+        "provider_output_tokens": 5160,
+        "provider_total_tokens": 13839,
+        "response_received": true
+      },
+      {
+        "estimated_input_tokens": 9418,
+        "max_output_tokens": 4800,
+        "model": "gpt-6.1-sol",
+        "provider_input_tokens": 7047,
+        "provider_output_tokens": 4800,
+        "provider_total_tokens": 11847,
+        "response_received": true
+      },
+      {
+        "estimated_input_tokens": 9418,
+        "max_output_tokens": 9600,
+        "model": "gpt-6.1-sol",
+        "provider_input_tokens": 7047,
+        "provider_output_tokens": 5876,
+        "provider_total_tokens": 12923,
+        "response_received": true
+      },
+      {
+        "estimated_input_tokens": 5841,
+        "max_output_tokens": 4096,
+        "model": "gpt-6.1-sol",
+        "provider_input_tokens": 3629,
+        "provider_output_tokens": 670,
+        "provider_total_tokens": 4299,
+        "response_received": true
+      },
+      {
+        "estimated_input_tokens": 6051,
+        "max_output_tokens": 4096,
+        "model": "gpt-6.1-sol",
+        "provider_input_tokens": 3918,
+        "provider_output_tokens": 771,
+        "provider_total_tokens": 4689,
+        "response_received": true
+      },
+      {
+        "estimated_input_tokens": 6072,
+        "max_output_tokens": 4096,
+        "model": "gpt-6.1-sol",
+        "provider_input_tokens": 3952,
+        "provider_output_tokens": 563,
+        "provider_total_tokens": 4515,
+        "response_received": true
+      }
+    ],
+    "responses_with_reported_usage": 7,
+    "rounds": 6,
+    "unique_artifact_reads": 30
+  },
+  "cases": [
+    {
+      "artifact_id": "079aa5fb9ab1-F01-H03",
+      "diagnosis": "Downstream implementation, not direct exclusion evidence",
+      "relation": "supports",
+      "source_reason": "Guaranteed-resource condition changed; the QoS prohibition itself is retained with emphasis. Implementing a condition does not establish the different normative prohibition.",
+      "target_id": "C2a",
+      "verdict": "FP"
+    },
+    {
+      "artifact_id": "079aa5fb9ab1-F01-H04",
+      "diagnosis": "Downstream recovery, not direct exclusion evidence",
+      "relation": "supports",
+      "source_reason": "The local change stores original QoS in status for restart recovery. That recovery dependency does not directly establish the prohibition on changing Pod QoS during in-place resize.",
+      "target_id": "C2a",
+      "verdict": "FP"
+    },
+    {
+      "artifact_id": "68952e4476e4-F01-H04",
+      "diagnosis": "Compound predicate overreach",
+      "relation": "supports",
+      "source_reason": "New field names and a retained status explanation were taken as fresh evidence for the desired/allocated/actual distinction. The same hunk has a true I1 support; that does not imply a separate R1 support.",
+      "target_id": "R1",
+      "verdict": "FP"
+    },
+    {
+      "artifact_id": "68952e4476e4-F01-H05",
+      "diagnosis": "Consumer of retained transition rule",
+      "relation": "supports",
+      "source_reason": "A new steady-state aggregate metric uses existing state names. Using the transition model is weaker than expressing or testing its target predicate. Reference scope is implementation-only.",
+      "target_id": "I3",
+      "verdict": "FP"
+    },
+    {
+      "artifact_id": "964260d9c2da-F01-H04",
+      "diagnosis": "Freshness and target-attribution ambiguity",
+      "relation": "supports",
+      "source_reason": "The source changes where actual-resource derivation obtains allocation data. This can appear to corroborate the distinction; the reference instead attributes this hunk to I1 supersession. Direct target-local predicate evidence must be explicit.",
+      "target_id": "R1",
+      "verdict": "FP"
+    },
+    {
+      "artifact_id": "964260d9c2da-F01-H07",
+      "diagnosis": "Reporting contract versus downstream recovery scope",
+      "relation": "supersedes",
+      "source_reason": "Restart recovery moves from status to a checkpoint under an explicit sibling contract. The reference treats this consumer migration as implementation-only. A dependency change must affect the exact fixed reporting claim itself.",
+      "target_id": "I1",
+      "verdict": "FP"
+    },
+    {
+      "artifact_id": "964260d9c2da-F01-H14",
+      "diagnosis": "Alternative-specific benefit versus adopted rationale",
+      "relation": "supports",
+      "source_reason": "A prospective alternative lists consistent types for desired/allocated/actual fields. A candidate-specific type benefit does not by itself justify the adopted semantic-role distinction.",
+      "target_id": "R1",
+      "verdict": "FP"
+    },
+    {
+      "artifact_id": "04de3dac4669-F01-H01",
+      "diagnosis": "Fixed-target/reference mismatch",
+      "relation": "supersedes",
+      "source_reason": "The label requires an interim mutability restriction absent from the fixed I2 restart-policy-choice claim. Runtime must not invent the missing restriction or silently alter S0.",
+      "target_id": "I2",
+      "verdict": "FN"
+    },
+    {
+      "artifact_id": "079aa5fb9ab1-F01-H02",
+      "diagnosis": "Fixed-target/reference mismatch",
+      "relation": "supersedes",
+      "source_reason": "The append-only/mutability requirement needed by the reference is absent from fixed I2. Correct fixed-target abstention is still scored as a miss under the unchanged reference.",
+      "target_id": "I2",
+      "verdict": "FN"
+    },
+    {
+      "artifact_id": "079aa5fb9ab1-F01-H05",
+      "diagnosis": "Boundary argument confused with cost of compliance",
+      "relation": "supports",
+      "source_reason": "The source states that Guaranteed-to-Burstable is illegal in-place and requires recreation. The model proposed weakens and the gate rejected no_material_target_delta. An explicit exclusion and its fallback can support the boundary even if compliance costs something.",
+      "target_id": "C2a",
+      "verdict": "FN"
+    },
+    {
+      "artifact_id": "68952e4476e4-F01-H01",
+      "diagnosis": "Observability granularity/reference tension",
+      "relation": "supports",
+      "source_reason": "The new aggregate Pod state metric omits the fixed each-container-resource explanations and Events. Do not manufacture these missing qualifications to obtain a full observability relation.",
+      "target_id": "R2",
+      "verdict": "FN"
+    },
+    {
+      "artifact_id": "964260d9c2da-F01-H04",
+      "diagnosis": "Confirmed proof-routing defect",
+      "relation": "supersedes",
+      "source_reason": "The model emitted the correct qualified replacement. Removed allocated-status proof is local; the affirmative checkpoint/optional-alpha replacement is added current context in the same exact hunk. The old gate looked only at after_line_handles and rejected replacement_lacks_both_source_sides.",
+      "target_id": "I1",
+      "verdict": "FN"
+    },
+    {
+      "artifact_id": "964260d9c2da-F01-H13",
+      "diagnosis": "Substantively rebound predicate evidence",
+      "relation": "supports",
+      "source_reason": "The equality check changes its allocation operand from a status field to the allocated snapshot while retaining the comparison purpose. A substantive rebind can provide qualified current evidence; identifier-only renaming and ordinary dependency use still cannot.",
+      "target_id": "R1",
+      "verdict": "FN"
+    },
+    {
+      "artifact_id": "964260d9c2da-F01-H14",
+      "diagnosis": "Cost applicability and authority ambiguity",
+      "relation": "weakens",
+      "source_reason": "Alternative API costs, delay, churn and checkpoint risks are discussed. Applicability to the chosen fixed I1 rather than a hypothetical candidate remains ambiguous; no adverse relation should be forced.",
+      "target_id": "I1",
+      "verdict": "FN"
+    }
+  ],
+  "diagnostics_zip_sha256": "19e9c83a51460a94b7f843657aed1fc7f64cde40d320ea52a798ca7020fe4a79",
+  "hosted_v47_result_available": false,
+  "needs_status_counts": {
+    "CONFLICTING_EVIDENCE": 1,
+    "OPEN": 12,
+    "PARTIAL_EVIDENCE": 4,
+    "RESOLVED": 1,
+    "REVIEWED": 1
+  },
+  "run_id": "188132b4-7975-4ae9-8df4-0cbbc1cad9ad",
+  "run_report_sha256": "4bbb2e304acb8b9f0f6ff3b89c2374c4e6e717a7f196b1b3a489dd088a49c79e",
+  "runtime_uses_reference_labels": false,
+  "score_results": {
+    "all": {
+      "evaluated_hunks": 30,
+      "f1": 0.631579,
+      "fn": 7,
+      "fp": 7,
+      "fp_on_unrelated_or_implementation_only_hunks": 4,
+      "gold_positive_exact_triples": 19,
+      "limitations": [
+        "curated single-repository pilot",
+        "not a certified 2024 historical replay",
+        "no gold architecture-outcome labels",
+        "v4.6 development examples, not independent held-out evaluation",
+        "different profile and provider-call/token accounting"
+      ],
+      "precision": 0.631579,
+      "predicted_exact_triples": 19,
+      "predicted_hunk_coverage": {
+        "count": 16,
+        "of": 30
+      },
+      "recall": 0.631579,
+      "scope": "all",
+      "tp": 12,
+      "unscored_prediction_links_outside_hunk_universe": 0
+    },
+    "baseline": {
+      "evaluated_hunks": 24,
+      "f1": 0.689655,
+      "fn": 4,
+      "fp": 5,
+      "fp_on_unrelated_or_implementation_only_hunks": 2,
+      "gold_positive_exact_triples": 14,
+      "limitations": [
+        "curated single-repository pilot",
+        "not a certified 2024 historical replay",
+        "no gold architecture-outcome labels",
+        "v4.6 development examples, not independent held-out evaluation",
+        "different profile and provider-call/token accounting"
+      ],
+      "precision": 0.666667,
+      "predicted_exact_triples": 15,
+      "predicted_hunk_coverage": {
+        "count": 13,
+        "of": 24
+      },
+      "recall": 0.714286,
+      "scope": "baseline",
+      "tp": 10,
+      "unscored_prediction_links_outside_hunk_universe": 4
+    }
+  },
+  "semantic_rejections": 4,
+  "status": "V46_POST_RUN_SOURCE_DIAGNOSIS_NOT_V47_PREDICTIONS",
+  "technical_failures": 0
+}

@@ -1,0 +1,12 @@
+{
+  "data_audit_sha256": "f5aa9141ba5dd2ac9ba547ce0acccb53aaa1b132e755ca6ce9ab1c8c532cd91a",
+  "decision_sha256": "ba324d5ffb2ca5fe4c9cdcc6e476cb490e7c59f4fa5c04e0dab76ddc862ffd51",
+  "disclosure": "DETERMINISTIC EXTRACTIVE DEMONSTRATOR, NOT SANER STUDY RESULTS",
+  "historical_replay_certified": false,
+  "history_sha256": "cda8af27d99647d941efc3b1e5aa1aa7c02f8710ae6faa440e2e8b91d2254ca0",
+  "mode": "offline",
+  "report_sha256": "5db9a50222a9cf8dc9ae82e8cf06be150d64737a996671ed121532bd675bad87",
+  "retrieval_backend": "local",
+  "run_id": "4f35deb7-8812-4cae-b09c-0beb0f4169cf",
+  "status": "AWAITING_HUMAN_REVIEW"
+}

@@ -1,0 +1,154 @@
+{
+  "budget_usage": {
+    "estimated_input_tokens": 24326,
+    "queries": 3,
+    "rounds": 3,
+    "unique_artifact_reads": 16
+  },
+  "composite_coverage": [
+    {
+      "adverse_or_conflicting_member_ids": [],
+      "all_members_supported": false,
+      "member_ids": [
+        "I1a",
+        "I1b",
+        "I1c"
+      ],
+      "missing_member_ids": [
+        "I1a",
+        "I1c"
+      ],
+      "note": "Diagnostic evidence coverage, not an independent architectural verdict",
+      "original_composite_id": "I1",
+      "supporting_member_ids": [
+        "I1b"
+      ]
+    },
+    {
+      "adverse_or_conflicting_member_ids": [],
+      "all_members_supported": false,
+      "member_ids": [
+        "C1a",
+        "C1b"
+      ],
+      "missing_member_ids": [
+        "C1a",
+        "C1b"
+      ],
+      "note": "Diagnostic evidence coverage, not an independent architectural verdict",
+      "original_composite_id": "C1",
+      "supporting_member_ids": []
+    }
+  ],
+  "confidence": 0.87,
+  "confidence_kind": "MODEL_PROPOSED_NOT_CALIBRATED",
+  "decision_id": "GitHub-PR-1803",
+  "drift_types": [],
+  "episode_id": "pilot-azure-eslz-avnm-1803-live-github-pilot-atomic-exploratory",
+  "evidence_grounded_rationale": [
+    {
+      "artifact_key": "Azure/Enterprise-Scale::github-pull_request-1880::2026-10-10T06:46:37.202355Z-a14e7e6f5ca6d066",
+      "decision_element_id": "I1b",
+      "relation": "supports",
+      "verbatim_quote": "* Introduced a new checkbox option in the `eslz-portal.json` file to deploy the Azure Virtual Network Manager (AVNM) in preview mode."
+    },
+    {
+      "artifact_key": "Azure/Enterprise-Scale::github-pull_request-1880::2026-10-10T06:46:37.202355Z-a14e7e6f5ca6d066",
+      "decision_element_id": "G1",
+      "relation": "supports",
+      "verbatim_quote": "* Introduced a new checkbox option in the `eslz-portal.json` file to deploy the Azure Virtual Network Manager (AVNM) in preview mode."
+    }
+  ],
+  "formal_evidence": [],
+  "human_review_required": true,
+  "human_review_status": "PENDING",
+  "material_claims": [
+    {
+      "citations": [
+        "Azure/Enterprise-Scale::github-pull_request-1880::2026-10-10T06:46:37.202355Z-a14e7e6f5ca6d066"
+      ],
+      "claim_id": "5a167fd7725a144a8ea5",
+      "decision_element_id": "I1b",
+      "material": true,
+      "quote": "* Introduced a new checkbox option in the `eslz-portal.json` file to deploy the Azure Virtual Network Manager (AVNM) in preview mode.",
+      "relation": "supports",
+      "text": "Artifact github-pull_request-1880 (version 2026-10-10T06:46:37.202355Z-a14e7e6f5ca6d066) states: * Introduced a new checkbox option in the `eslz-portal.json` file to deploy the Azure Virtual Network Manager (AVNM) in preview mode."
+    },
+    {
+      "citations": [
+        "Azure/Enterprise-Scale::github-pull_request-1880::2026-10-10T06:46:37.202355Z-a14e7e6f5ca6d066"
+      ],
+      "claim_id": "4dacb459b9db06b3d40f",
+      "decision_element_id": "G1",
+      "material": true,
+      "quote": "* Introduced a new checkbox option in the `eslz-portal.json` file to deploy the Azure Virtual Network Manager (AVNM) in preview mode.",
+      "relation": "supports",
+      "text": "Artifact github-pull_request-1880 (version 2026-10-10T06:46:37.202355Z-a14e7e6f5ca6d066) states: * Introduced a new checkbox option in the `eslz-portal.json` file to deploy the Azure Virtual Network Manager (AVNM) in preview mode."
+    }
+  ],
+  "model_reason_not_used_as_evidence": true,
+  "next_action": "Collect additional verified evidence; the agent did not establish complete revalidation.",
+  "outcome_probabilities": {
+    "KEEP": 0.08,
+    "REOPEN": 0.02,
+    "REVALIDATE": 0.87,
+    "REVISE": 0.03
+  },
+  "recommended_outcome": "REVALIDATE",
+  "stopping_reason": "round_limit_or_unresolved",
+  "unresolved_questions": [
+    "Does post-decision evidence still support Introduce deployAVNM as an ARM deployment parameter in eslzArm.json.?",
+    "Does post-decision evidence still support Integrate AVNM deployment conditions in eslzArm.json.?"
+  ],
+  "unsupported_claim_rate": 0.0,
+  "verification": {
+    "claim_count": 2,
+    "failures": [],
+    "grounding_kind": "EXTRACTIVE_AND_SEMANTICALLY_SCREENED",
+    "human_review_required": true,
+    "investigation_complete": false,
+    "status": "UNRESOLVED",
+    "unsupported_claim_rate": 0.0
+  },
+  "verified_evidence": [
+    {
+      "artifact_id": "github-pull_request-1880",
+      "artifact_key": "Azure/Enterprise-Scale::github-pull_request-1880::2026-10-10T06:46:37.202355Z-a14e7e6f5ca6d066",
+      "content_sha256": "a14e7e6f5ca6d066a3ed1ba27f7dd13fc8c29193a8ee33647e8b4e971666018d",
+      "decision_element_id": "I1b",
+      "decision_element_type": "implementation_scope",
+      "first_auditable_at": "2026-10-10T06:46:37.202355Z",
+      "question_id": "global",
+      "quote": "* Introduced a new checkbox option in the `eslz-portal.json` file to deploy the Azure Virtual Network Manager (AVNM) in preview mode.",
+      "relation": "supports",
+      "relation_confidence": 0.98,
+      "repository": "Azure/Enterprise-Scale",
+      "semantic_check": "MODEL_ASSESSED:The quote directly says a new checkbox option was introduced in `eslz-portal.json` to deploy Azure Virtual Network Manager (AVNM), which substantively supports exposing an AVNM deployment checkbox in that file.",
+      "source_location": "https://github.com/Azure/Enterprise-Scale/pull/1880",
+      "source_type": "pull_request",
+      "timestamp": "2025-01-10T08:35:08Z",
+      "verifier_status": "PASS",
+      "version_id": "2026-10-10T06:46:37.202355Z-a14e7e6f5ca6d066"
+    },
+    {
+      "artifact_id": "github-pull_request-1880",
+      "artifact_key": "Azure/Enterprise-Scale::github-pull_request-1880::2026-10-10T06:46:37.202355Z-a14e7e6f5ca6d066",
+      "content_sha256": "a14e7e6f5ca6d066a3ed1ba27f7dd13fc8c29193a8ee33647e8b4e971666018d",
+      "decision_element_id": "G1",
+      "decision_element_type": "goals",
+      "first_auditable_at": "2026-10-10T06:46:37.202355Z",
+      "question_id": "need:G1",
+      "quote": "* Introduced a new checkbox option in the `eslz-portal.json` file to deploy the Azure Virtual Network Manager (AVNM) in preview mode.",
+      "relation": "supports",
+      "relation_confidence": 0.92,
+      "repository": "Azure/Enterprise-Scale",
+      "semantic_check": "MODEL_ASSESSED:The quote directly says a new checkbox option was introduced in `eslz-portal.json` to deploy Azure Virtual Network Manager (AVNM), which is substantive evidence of adding AVNM deployment support in the ESLZ deployment templates. The mention of previe",
+      "source_location": "https://github.com/Azure/Enterprise-Scale/pull/1880",
+      "source_type": "pull_request",
+      "timestamp": "2025-01-10T08:35:08Z",
+      "verifier_status": "PASS",
+      "version_id": "2026-10-10T06:46:37.202355Z-a14e7e6f5ca6d066"
+    }
+  ],
+  "zero_claim_report": false
+}

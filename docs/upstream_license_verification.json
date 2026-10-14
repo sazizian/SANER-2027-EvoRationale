@@ -1,0 +1,17 @@
+{
+  "status": "EXACT_UPSTREAM_LICENSE_BYTES_VERIFIED",
+  "records": [
+    {
+      "file": "LICENSES/Azure-Enterprise-Scale-MIT.txt",
+      "git_blob_sha1": "9e841e7a26e4eb057b24511e7b92d42b257a80e5",
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "source_url": "https://github.com/Azure/Enterprise-Scale/blob/main/LICENSE"
+    },
+    {
+      "file": "LICENSES/Kubernetes-Enhancements-Apache-2.0.txt",
+      "git_blob_sha1": "8dada3edaf50dbc082c9a125058f25def75e625a",
+      "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+      "source_url": "https://github.com/kubernetes/enhancements/blob/5950905de89aab2be202d28b823701276cbefea0/LICENSE"
+    }
+  ]
+}

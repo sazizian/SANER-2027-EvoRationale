@@ -1,0 +1,299 @@
+{
+  "frozen_reference_members_verified": 7,
+  "hosted_runs_verified": 7,
+  "legacy_comparison_only_values_not_rescored": 3,
+  "note": "Artifact consistency and exact-triple rescoring; no held-out or outcome accuracy established.",
+  "original_diagnostic_members_verified": 72,
+  "primary_hosted_accuracy_available": false,
+  "provider_requests_made": 0,
+  "read_only_default": true,
+  "runs": [
+    {
+      "all_error_csv_rows_reproduced": true,
+      "evidence_class": "UPLOADED_FLAT_DIAGNOSTIC_ZIP_RECEIPT_LINKED_PARTIAL_PROVENANCE",
+      "historical_core_sha256": "9c7fc66afd6d315c5f02a7b4d88a10ca91c7ad43360fadba9d01cd3e71f91e3e",
+      "missing_original_provenance_files": [
+        "DEV_PREP_MANIFEST.json",
+        "run/manifest.json",
+        "score/SCORE_RECEIPT.json",
+        "DIAGNOSTIC_BUNDLE_MANIFEST.json"
+      ],
+      "original_members_verified": 7,
+      "run_id": "472626dc-dd7c-48c5-8a94-3420bb8c4ef4",
+      "run_label": "v4.4",
+      "scopes_reproduced": [
+        "baseline",
+        "all"
+      ],
+      "zip_crc_and_sha256_verified": true
+    },
+    {
+      "all_error_csv_rows_reproduced": true,
+      "evidence_class": "COMPLETE_DECLARED_DIAGNOSTIC_MEMBERS_HASH_VERIFIED",
+      "historical_core_sha256": "e53412024165759b0dec7c6e45556f6857fca39674faf119acf1290f512f5afd",
+      "missing_original_provenance_files": [],
+      "original_members_verified": 10,
+      "run_id": "e98cc3a9-fe80-4db8-99d9-cc23a64c115f",
+      "run_label": "v4.5",
+      "scopes_reproduced": [
+        "baseline",
+        "all"
+      ],
+      "zip_crc_and_sha256_verified": true
+    },
+    {
+      "all_error_csv_rows_reproduced": true,
+      "evidence_class": "COMPLETE_DECLARED_DIAGNOSTIC_MEMBERS_HASH_VERIFIED",
+      "historical_core_sha256": "a01d6dd7e5016c9224c0184053981eddd6621dcd3c6963edf3b391396d420d1b",
+      "missing_original_provenance_files": [],
+      "original_members_verified": 10,
+      "run_id": "188132b4-7975-4ae9-8df4-0cbbc1cad9ad",
+      "run_label": "v4.6",
+      "scopes_reproduced": [
+        "baseline",
+        "all"
+      ],
+      "zip_crc_and_sha256_verified": true
+    },
+    {
+      "all_error_csv_rows_reproduced": true,
+      "evidence_class": "COMPLETE_DECLARED_DIAGNOSTIC_MEMBERS_HASH_VERIFIED",
+      "historical_core_sha256": "ef221a718301ba59167360c696b8b22d8e65b0747baf1c41f058aea54a942a23",
+      "missing_original_provenance_files": [],
+      "original_members_verified": 11,
+      "run_id": "a50dd556-729c-4840-a509-0fdd9222b81b",
+      "run_label": "v4.7",
+      "scopes_reproduced": [
+        "baseline",
+        "all"
+      ],
+      "zip_crc_and_sha256_verified": true
+    },
+    {
+      "all_error_csv_rows_reproduced": true,
+      "evidence_class": "COMPLETE_DECLARED_DIAGNOSTIC_MEMBERS_HASH_VERIFIED",
+      "historical_core_sha256": "ab82ceb7019d8534515dd5e6ead0153b3d92bed545c6e251bc64e97d2a816853",
+      "missing_original_provenance_files": [],
+      "original_members_verified": 11,
+      "run_id": "201e1b3a-2e27-431c-ba03-0c9a822af43f",
+      "run_label": "v4.8",
+      "scopes_reproduced": [
+        "baseline",
+        "all"
+      ],
+      "zip_crc_and_sha256_verified": true
+    },
+    {
+      "all_error_csv_rows_reproduced": true,
+      "evidence_class": "COMPLETE_DECLARED_DIAGNOSTIC_MEMBERS_HASH_VERIFIED",
+      "historical_core_sha256": "a0e1b1c0156e48d6a4bdae27a02fdfd9e0bedfbdd05bac79c2db812468937b22",
+      "missing_original_provenance_files": [],
+      "original_members_verified": 11,
+      "run_id": "8096127b-4cbd-4e77-a9c4-a9c2c5dc0c03",
+      "run_label": "v4.9",
+      "scopes_reproduced": [
+        "baseline",
+        "all"
+      ],
+      "zip_crc_and_sha256_verified": true
+    },
+    {
+      "all_error_csv_rows_reproduced": true,
+      "evidence_class": "COMPLETE_DECLARED_DIAGNOSTIC_MEMBERS_HASH_VERIFIED",
+      "historical_core_sha256": null,
+      "missing_original_provenance_files": [],
+      "original_members_verified": 12,
+      "run_id": "fbb1c892-88e4-4e49-80cb-0a433eaaa87a",
+      "run_label": "cached scope recheck",
+      "scopes_reproduced": [
+        "baseline",
+        "all"
+      ],
+      "zip_crc_and_sha256_verified": true
+    }
+  ],
+  "scored_scope_rows_reproduced": 14,
+  "status": "VERIFIED_DEVELOPMENT_RESULTS_NO_API_CALLED",
+  "unchanged_scorer_sha256": "18553a3a195a490102348e199233ef4ae752efaf8b80e351e52ff354c6d88895"
+}
+............                                                             [100%]
+12 passed in 2.94s
+Local tests and primary-effect forecast only; no API will be called.
+.................................................................. [ 67%]
+...............................s                                         [100%]
+97 passed, 1 skipped, 6 subtests passed in 5.11s
+{
+  "status": "PRIMARY_EFFECT_DRY_RUN_NO_API_CALLED",
+  "experiment_kind": "PRIMARY_HUNK_EFFECT_EXPERIMENT",
+  "mock_primary_requests": 12,
+  "independent_critic_requests": 0,
+  "forecast_complete": true,
+  "forecast_input_estimate": 269494,
+  "forecast_within_input_ceiling": true,
+  "max_input_tokens": 400000,
+  "max_provider_requests": 24,
+  "coverage": {
+    "planned_event_count": 6,
+    "planned_artifact_count": 30,
+    "reviewed_artifact_count": 30,
+    "planned_review_complete": true,
+    "all_history_artifact_count": 53,
+    "selected_artifact_count": 36,
+    "all_history_model_reported_reviewed": false,
+    "coverage_note": "Validated review-row coverage does not certify semantic correctness."
+  },
+  "baseline_selected_line_count": 147,
+  "toolkit_sha256": "e9c479cb8386f9afe0b86c94b3648c365d3f5ebb5daaf6f1c13520ec36972cb1",
+  "technical_failures": [],
+  "output_created": false,
+  "hosted_accuracy_available": false,
+  "note": "Local all-negative fixtures forecast request envelopes, not F1."
+}
+Local tests and cached-check forecast only; no API will be called.
+.....................................                       [100%]
+37 passed, 13 subtests passed in 2.12s
+{
+  "status": "SCOPE_RECHECK_DRY_RUN_NO_API_CALLED",
+  "experiment_kind": "CACHED_V49_PRIMARY_SCOPE_RECHECK",
+  "primary_predictions": "CACHED_V49_UNCHANGED",
+  "new_primary_api_requests": 0,
+  "mock_checker_requests": 3,
+  "forecast_input_estimate": 45651,
+  "forecast_complete": true,
+  "forecast_within_input_ceiling": true,
+  "max_input_tokens": 100000,
+  "max_provider_requests": 6,
+  "cache_batches": 6,
+  "model": "gpt-6.1-sol",
+  "source_run_id": "8096127b-4cbd-4e77-a9c4-a9c2c5dc0c03",
+  "toolkit_sha256": "8a5e1f81d0fdadcf2e337a3c232ccafa73dea418482853d660ccef2d19f172ae",
+  "technical_failures": [],
+  "stopping_reason": "event_round_limit",
+  "output_created": false,
+  "hosted_accuracy_available": false,
+  "note": "All-reject local fixture forecasts request envelopes only; no F1 is measured."
+}
+{
+  "frozen_reference_members_verified": 7,
+  "hosted_runs_verified": 7,
+  "legacy_comparison_only_values_not_rescored": 3,
+  "note": "Artifact consistency and exact-triple rescoring; no held-out or outcome accuracy established.",
+  "original_diagnostic_members_verified": 72,
+  "primary_hosted_accuracy_available": false,
+  "provider_requests_made": 0,
+  "read_only_default": true,
+  "runs": [
+    {
+      "all_error_csv_rows_reproduced": true,
+      "evidence_class": "UPLOADED_FLAT_DIAGNOSTIC_ZIP_RECEIPT_LINKED_PARTIAL_PROVENANCE",
+      "historical_core_sha256": "9c7fc66afd6d315c5f02a7b4d88a10ca91c7ad43360fadba9d01cd3e71f91e3e",
+      "missing_original_provenance_files": [
+        "DEV_PREP_MANIFEST.json",
+        "run/manifest.json",
+        "score/SCORE_RECEIPT.json",
+        "DIAGNOSTIC_BUNDLE_MANIFEST.json"
+      ],
+      "original_members_verified": 7,
+      "run_id": "472626dc-dd7c-48c5-8a94-3420bb8c4ef4",
+      "run_label": "v4.4",
+      "scopes_reproduced": [
+        "baseline",
+        "all"
+      ],
+      "zip_crc_and_sha256_verified": true
+    },
+    {
+      "all_error_csv_rows_reproduced": true,
+      "evidence_class": "COMPLETE_DECLARED_DIAGNOSTIC_MEMBERS_HASH_VERIFIED",
+      "historical_core_sha256": "e53412024165759b0dec7c6e45556f6857fca39674faf119acf1290f512f5afd",
+      "missing_original_provenance_files": [],
+      "original_members_verified": 10,
+      "run_id": "e98cc3a9-fe80-4db8-99d9-cc23a64c115f",
+      "run_label": "v4.5",
+      "scopes_reproduced": [
+        "baseline",
+        "all"
+      ],
+      "zip_crc_and_sha256_verified": true
+    },
+    {
+      "all_error_csv_rows_reproduced": true,
+      "evidence_class": "COMPLETE_DECLARED_DIAGNOSTIC_MEMBERS_HASH_VERIFIED",
+      "historical_core_sha256": "a01d6dd7e5016c9224c0184053981eddd6621dcd3c6963edf3b391396d420d1b",
+      "missing_original_provenance_files": [],
+      "original_members_verified": 10,
+      "run_id": "188132b4-7975-4ae9-8df4-0cbbc1cad9ad",
+      "run_label": "v4.6",
+      "scopes_reproduced": [
+        "baseline",
+        "all"
+      ],
+      "zip_crc_and_sha256_verified": true
+    },
+    {
+      "all_error_csv_rows_reproduced": true,
+      "evidence_class": "COMPLETE_DECLARED_DIAGNOSTIC_MEMBERS_HASH_VERIFIED",
+      "historical_core_sha256": "ef221a718301ba59167360c696b8b22d8e65b0747baf1c41f058aea54a942a23",
+      "missing_original_provenance_files": [],
+      "original_members_verified": 11,
+      "run_id": "a50dd556-729c-4840-a509-0fdd9222b81b",
+      "run_label": "v4.7",
+      "scopes_reproduced": [
+        "baseline",
+        "all"
+      ],
+      "zip_crc_and_sha256_verified": true
+    },
+    {
+      "all_error_csv_rows_reproduced": true,
+      "evidence_class": "COMPLETE_DECLARED_DIAGNOSTIC_MEMBERS_HASH_VERIFIED",
+      "historical_core_sha256": "ab82ceb7019d8534515dd5e6ead0153b3d92bed545c6e251bc64e97d2a816853",
+      "missing_original_provenance_files": [],
+      "original_members_verified": 11,
+      "run_id": "201e1b3a-2e27-431c-ba03-0c9a822af43f",
+      "run_label": "v4.8",
+      "scopes_reproduced": [
+        "baseline",
+        "all"
+      ],
+      "zip_crc_and_sha256_verified": true
+    },
+    {
+      "all_error_csv_rows_reproduced": true,
+      "evidence_class": "COMPLETE_DECLARED_DIAGNOSTIC_MEMBERS_HASH_VERIFIED",
+      "historical_core_sha256": "a0e1b1c0156e48d6a4bdae27a02fdfd9e0bedfbdd05bac79c2db812468937b22",
+      "missing_original_provenance_files": [],
+      "original_members_verified": 11,
+      "run_id": "8096127b-4cbd-4e77-a9c4-a9c2c5dc0c03",
+      "run_label": "v4.9",
+      "scopes_reproduced": [
+        "baseline",
+        "all"
+      ],
+      "zip_crc_and_sha256_verified": true
+    },
+    {
+      "all_error_csv_rows_reproduced": true,
+      "evidence_class": "COMPLETE_DECLARED_DIAGNOSTIC_MEMBERS_HASH_VERIFIED",
+      "historical_core_sha256": null,
+      "missing_original_provenance_files": [],
+      "original_members_verified": 12,
+      "run_id": "fbb1c892-88e4-4e49-80cb-0a433eaaa87a",
+      "run_label": "cached scope recheck",
+      "scopes_reproduced": [
+        "baseline",
+        "all"
+      ],
+      "zip_crc_and_sha256_verified": true
+    }
+  ],
+  "scored_scope_rows_reproduced": 14,
+  "status": "VERIFIED_DEVELOPMENT_RESULTS_NO_API_CALLED",
+  "unchanged_scorer_sha256": "18553a3a195a490102348e199233ef4ae752efaf8b80e351e52ff354c6d88895"
+}
+{
+  "status": "EXPORT_LOCAL_CHECKS_AND_FORECASTS_COMPLETED_NO_API_CALLED",
+  "provider_requests_made": 0,
+  "core_tests_run": false,
+  "hosted_accuracy_measured_by_checks": false
+}

@@ -1,0 +1,50 @@
+{
+  "all_four_failure_traces_are_checkpoint_publication": true,
+  "atomic_publication_attempt_limit": 9,
+  "checkpoint_serializations_per_save": 1,
+  "failure_after_complete_pending_write_preserves_previous_and_pending": true,
+  "historical_v49_modified": false,
+  "hosted_requests_in_reported_preflight": 0,
+  "inference_semantic_files_unchanged": {
+    "baseline_context.py": "821e69702a91b7e9e886aaee44f730274387e6d05419e245d27130e6d9789768",
+    "data/public_baseline_README.md": "f42855e662d154268b3fca59ef816128f8b7e5359e56466a174a375a930b26fa",
+    "effect_classifier.py": "06bfc8d77c023210f356bac1c8a34607f8c9cec6b9c6f9104dd53744f22003ee",
+    "score_primary_effect.py": "ccdba7b94e921cb5568f56166a36100c7897eed9bd95177153a0596fc2944861"
+  },
+  "new_hosted_accuracy_measured": false,
+  "observed_failure_site": "pinned_v49_FileMemory.save: Path.replace -> os.replace",
+  "observed_winerror": 5,
+  "official_documentation": [
+    "https://docs.python.org/3/library/os.html#os.replace",
+    "https://learn.microsoft.com/en-us/windows/win32/api/fileapi/nf-fileapi-createfilew"
+  ],
+  "other_io_errors_fail_immediately": true,
+  "provider_request_retried_for_storage": false,
+  "repair_location": "isolated_experiment_only: checkpoint_store.py",
+  "responsible_process_or_policy_identified": false,
+  "retryable_permission_winerrors": [
+    5,
+    32,
+    33
+  ],
+  "scheduled_backoff_seconds": [
+    0.05,
+    0.1,
+    0.2,
+    0.4,
+    0.8,
+    1.6,
+    2,
+    2
+  ],
+  "scheduled_backoff_total_seconds": 7.15,
+  "status": "WINDOWS_CHECKPOINT_COMMIT_FAILURE_DIAGNOSED_NO_API_CALLED",
+  "user_preflight": {
+    "duration_seconds": 87.52,
+    "errors": 3,
+    "failed": 1,
+    "passed": 71,
+    "subtests_passed": 6
+  },
+  "user_preflight_used_synthetic_provider": true
+}

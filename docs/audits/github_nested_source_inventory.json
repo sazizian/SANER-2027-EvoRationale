@@ -1,0 +1,206 @@
+[
+  {
+    "path": "EvoRationale_v41_PATCH_TESTED.zip",
+    "sha256": "a6afd7b3bf24007c7bfe5f2c908996006312de28635b4cbd1d728d7620649ec0",
+    "bytes": 34800,
+    "core_trees": []
+  },
+  {
+    "path": "research/EvoRationale_KEP1287_Adjudication_EN.zip",
+    "sha256": "2fb0c9e5b4c763b2ddfd75a5eb0bbcfe2ed96bf940d0371a1ab3a031ed946884",
+    "bytes": 79651,
+    "core_trees": []
+  },
+  {
+    "path": "research/EvoRationale_KEP1287_Historical_S0_EN.zip",
+    "sha256": "04cac2287152b450014436ab5bcbe1bf7b82a8b9b6109096bf299c42c60b2a12",
+    "bytes": 16215,
+    "core_trees": []
+  },
+  {
+    "path": "research/EvoRationale_PaperAligned_v4_FULL_TESTED.zip",
+    "sha256": "c9ed36f5788f323570ecf163594e8903f51252776065106f077b6ff9578c6a23",
+    "bytes": 512160,
+    "core_trees": [
+      {
+        "root": "EvoRationale_v42_DEV_EN",
+        "python_files": 26,
+        "core_sha256": "ab892cc339348fc6db243ecbdb18cb6df3a4959d5636332d5f2cdb7945fbdd09"
+      }
+    ]
+  },
+  {
+    "path": "research/EvoRationale_v42_Development_Pilot_EN.zip",
+    "sha256": "c9ed36f5788f323570ecf163594e8903f51252776065106f077b6ff9578c6a23",
+    "bytes": 512160,
+    "core_trees": [
+      {
+        "root": "EvoRationale_v42_DEV_EN",
+        "python_files": 26,
+        "core_sha256": "ab892cc339348fc6db243ecbdb18cb6df3a4959d5636332d5f2cdb7945fbdd09"
+      }
+    ]
+  },
+  {
+    "path": "research/EvoRationale_v43_DiffScope_Development_EN.zip",
+    "sha256": "5fe3fd1c2f8b5c51f71aeac0b4b3bef7faac3e49fad6a1da1292de97e8ceb88f",
+    "bytes": 542048,
+    "core_trees": [
+      {
+        "root": "EvoRationale_v43_DEV_EN",
+        "python_files": 28,
+        "core_sha256": "b53989d04604b68d76eddd92412db89b0b33025637e42649abda27714ee53d94"
+      }
+    ]
+  },
+  {
+    "path": "research/EvoRationale_v44_Diagnostics_20261011-130744-846.zip",
+    "sha256": "2e1a3c92870eaf4a8583184b2c368bdcde4d9f7f8bc864d0aeafd4ec747ec0e7",
+    "bytes": 110580,
+    "core_trees": []
+  },
+  {
+    "path": "research/EvoRationale_v44_EventCoverage_Reviewed_EN.zip",
+    "sha256": "89aee5fc83c762cc1b2c222bf168ac2d9d8e88b01971fde6c4146cb708032728",
+    "bytes": 632521,
+    "core_trees": [
+      {
+        "root": "EvoRationale_v44_DEV_EN",
+        "python_files": 32,
+        "core_sha256": "9c7fc66afd6d315c5f02a7b4d88a10ca91c7ad43360fadba9d01cd3e71f91e3e"
+      }
+    ]
+  },
+  {
+    "path": "research/EvoRationale_v45_DeltaReview_Tested_EN.zip",
+    "sha256": "bbc7d511c851e4c35712861e6e3c819a5e8948a7aef8dc7887e10020d9fb7764",
+    "bytes": 717817,
+    "core_trees": [
+      {
+        "root": "EvoRationale_v45_DEV_EN",
+        "python_files": 35,
+        "core_sha256": "e53412024165759b0dec7c6e45556f6857fca39674faf119acf1290f512f5afd"
+      }
+    ]
+  },
+  {
+    "path": "research/EvoRationale_v45_Diagnostics_20261011-140009-585.zip",
+    "sha256": "dc4f08eff1db1c634766adf73477aa21ac47aafd60e0da20dbc01fa68a86d119",
+    "bytes": 70753,
+    "core_trees": []
+  },
+  {
+    "path": "research/EvoRationale_v46_Diagnostics_20261011-153804-929.zip",
+    "sha256": "b8468b7b1a70a5cd127525d25788c7bba90bae82157700d45829b211be887f98",
+    "bytes": 134932,
+    "core_trees": []
+  },
+  {
+    "path": "research/EvoRationale_v46_EvidenceTrace_Tested_EN.zip",
+    "sha256": "00b25c0f2c44aa7ec5eb879cfec3aacf57369c531a1061ba623356b06d3926be",
+    "bytes": 826508,
+    "core_trees": [
+      {
+        "root": "EvoRationale_v46_DEV_EN",
+        "python_files": 37,
+        "core_sha256": "a01d6dd7e5016c9224c0184053981eddd6621dcd3c6963edf3b391396d420d1b"
+      }
+    ]
+  },
+  {
+    "path": "research/EvoRationale_v47_GroundedTrace_Tested_EN.zip",
+    "sha256": "3ef1eaffc22b983ac63124756e39672383c330bc402f319e2c2b9e3fb6a63cff",
+    "bytes": 896259,
+    "core_trees": [
+      {
+        "root": "EvoRationale_v47_DEV_EN",
+        "python_files": 38,
+        "core_sha256": "ef221a718301ba59167360c696b8b22d8e65b0747baf1c41f058aea54a942a23"
+      }
+    ]
+  },
+  {
+    "path": "research/EvoRationale_v48_DiagnosticReview_EN.zip",
+    "sha256": "11a11867544492d2581f8fc0151a1ac749ba204b67b76b2488ee8beac06e09a6",
+    "bytes": 79037,
+    "core_trees": []
+  },
+  {
+    "path": "research/EvoRationale_v48_V46PolicyRepair_Tested_EN (1).zip",
+    "sha256": "8b866fb029b356681e25c954975ce06723526b2ee8bdbbf0c44e10959dea2e54",
+    "bytes": 982377,
+    "core_trees": [
+      {
+        "root": "EvoRationale_v48_DEV_EN",
+        "python_files": 39,
+        "core_sha256": "ab82ceb7019d8534515dd5e6ead0153b3d92bed545c6e251bc64e97d2a816853"
+      }
+    ]
+  },
+  {
+    "path": "research/EvoRationale_v49_PairReview_Experimental_Tested_EN.zip",
+    "sha256": "7012422732f8eaa27c9ee73f0ae5831271d0523664cf1764ae1960d19bc71d74",
+    "bytes": 1060944,
+    "core_trees": [
+      {
+        "root": "EvoRationale_v49_DEV_EN",
+        "python_files": 40,
+        "core_sha256": "a0e1b1c0156e48d6a4bdae27a02fdfd9e0bedfbdd05bac79c2db812468937b22"
+      }
+    ]
+  },
+  {
+    "path": "research/KEP1287_API_Comparison_Tools_EN.zip",
+    "sha256": "ad765881a620be46337a23f111bcb2d2e946936c7119ef4b51c63242d4f8240e",
+    "bytes": 13520,
+    "core_trees": []
+  },
+  {
+    "path": "research/KEP1287_Consensus/KEP1287_PI_Attested_Consensus_Candidate_EN.zip",
+    "sha256": "6a16063a4134d300bf0046e58dea2829d6040b3e154eb640a8951bfdb2f2c676",
+    "bytes": 201844,
+    "core_trees": []
+  },
+  {
+    "path": "research/KEP1287_Frozen_Evaluation_Tools_EN.zip",
+    "sha256": "b3dd123c889c9b341f0b051fb932e82f479e2350af282990406c5190509587bb",
+    "bytes": 8830,
+    "core_trees": []
+  },
+  {
+    "path": "research/KEP1287_Historical_S0/KEP1287_capture_2023_2024.zip",
+    "sha256": "a750e76cc909d9b49e3a3cc5a2c42a06035a7a79e03c2c7c929950a9e6d00f52",
+    "bytes": 35949,
+    "core_trees": []
+  },
+  {
+    "path": "research/KEP1287_PI_Attested_Consensus_Candidate_EN.zip",
+    "sha256": "6a16063a4134d300bf0046e58dea2829d6040b3e154eb640a8951bfdb2f2c676",
+    "bytes": 201844,
+    "core_trees": []
+  },
+  {
+    "path": "research/KEP1287_Reviewer_A_Independent_EN.zip",
+    "sha256": "32360f9e098721ea40dd700fd8fa18be41551c32d47a4834d803f9375992d0db",
+    "bytes": 57381,
+    "core_trees": []
+  },
+  {
+    "path": "research/KEP1287_Reviewer_B_Independent_EN.zip",
+    "sha256": "892557ba004e282492d682bbf57c7d2f4c3229bb257ac29a1a81755e31d32c2d",
+    "bytes": 57766,
+    "core_trees": []
+  },
+  {
+    "path": "research/KEP1287_Verifier_Gate_Diagnostic_EN.zip",
+    "sha256": "be243056bb4323adf1381f014d0212f76693fac59a8dd3573aaf23674e210ae4",
+    "bytes": 4901,
+    "core_trees": []
+  },
+  {
+    "path": "research/RationalePath_ABC_Evidence_Checkpoint.zip",
+    "sha256": "deb532ed40b35a3ce91d3000c7571adc331f934cc628473acb95e058f2763a9a",
+    "bytes": 98807,
+    "core_trees": []
+  }
+]

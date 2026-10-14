@@ -1,0 +1,87 @@
+[
+  {
+    "at": "2026-10-10T23:05:14.816576+00:00",
+    "cached_verifier_decisions": 0,
+    "elapsed_ms": 16.34,
+    "new_artifact_keys": [
+      "Azure/Enterprise-Scale::github-pull_request-1946::2026-10-10T06:46:42.972931Z-655f8bd93249b6e8",
+      "Azure/Enterprise-Scale::github-pr-diff-1880-64ee2c93f8e5-001::2026-10-10T23:00:40.538840Z-0eef41da0a809fa2",
+      "Azure/Enterprise-Scale::github-pull_request-1896::2026-10-10T06:46:40.355361Z-d0103ca4455cef27",
+      "Azure/Enterprise-Scale::github-pull_request-1880::2026-10-10T06:46:37.202355Z-a14e7e6f5ca6d066",
+      "Azure/Enterprise-Scale::github-pr-diff-2083-7670fd175764-001::2026-10-10T23:00:42.428231Z-fcd450088b2d82f3",
+      "Azure/Enterprise-Scale::github-pr-diff-1880-58a2a55a8192-016::2026-10-10T23:00:40.543732Z-d45f17445ea1ae11"
+    ],
+    "question": {
+      "attempt": 1,
+      "element_id": null,
+      "id": "global",
+      "interval": [
+        "2025-01-10T05:46:36Z",
+        "2026-10-10T23:00:44.429499Z"
+      ],
+      "query": "Introduce optional Azure Virtual Network Manager deployment in Azure Enterprise-Scale landing-zone ARM/portal templates Add support for deploying Azure Virtual Network Manager (AVNM) in the ESLZ deployment templates. AVNM Virtual Network Manager deployment templates support Update AVNM-related deployment conditions. AVNM deployment conditions Update AVNM-related deployment dependencies. AVNM deployment dependencies Introduce deployAVNM as an ARM deployment parameter in eslzArm.json. deployAVNM eslzArm.json AVNM parameter Expose an AVNM deployment checkbox in eslz-portal.json. AVNM checkbox eslz-portal.json deployAVNM Integrate AVNM deployment conditions in eslzArm.json. AVNM deployment conditions eslzArm.json",
+      "repository": "Azure/Enterprise-Scale"
+    },
+    "retrieved_artifact_keys": [
+      "Azure/Enterprise-Scale::github-pull_request-1946::2026-10-10T06:46:42.972931Z-655f8bd93249b6e8",
+      "Azure/Enterprise-Scale::github-pr-diff-1880-64ee2c93f8e5-001::2026-10-10T23:00:40.538840Z-0eef41da0a809fa2",
+      "Azure/Enterprise-Scale::github-pull_request-1896::2026-10-10T06:46:40.355361Z-d0103ca4455cef27",
+      "Azure/Enterprise-Scale::github-pull_request-1880::2026-10-10T06:46:37.202355Z-a14e7e6f5ca6d066",
+      "Azure/Enterprise-Scale::github-pr-diff-2083-7670fd175764-001::2026-10-10T23:00:42.428231Z-fcd450088b2d82f3",
+      "Azure/Enterprise-Scale::github-pr-diff-1880-58a2a55a8192-016::2026-10-10T23:00:40.543732Z-d45f17445ea1ae11"
+    ],
+    "reused_artifact_keys": [],
+    "round": 1,
+    "skipped_due_to_token_budget": [],
+    "unresolved_required": [
+      "need:I1a"
+    ],
+    "verification": "PASS",
+    "verified_links_added": 7,
+    "verifier_rejections": 0
+  },
+  {
+    "at": "2026-10-10T23:05:14.831505+00:00",
+    "cached_verifier_decisions": 2,
+    "elapsed_ms": 10.75,
+    "new_artifact_keys": [
+      "Azure/Enterprise-Scale::github-commit-9b3bbf2387233e70213769c3a15cd5d040a37aec::2026-10-10T06:46:48.967303Z-997a14f4c3fa0392",
+      "Azure/Enterprise-Scale::github-pr-diff-1880-58a2a55a8192-001::2026-10-10T23:00:40.543143Z-e3aa3c8e72d97fc9",
+      "Azure/Enterprise-Scale::github-pr-diff-1880-58a2a55a8192-013::2026-10-10T23:00:40.543627Z-bc56b38eea484782",
+      "Azure/Enterprise-Scale::github-pr-diff-1880-58a2a55a8192-018::2026-10-10T23:00:40.543800Z-cefcf5a2aa0190fb",
+      "Azure/Enterprise-Scale::github-pr-diff-1896-58a2a55a8192-008::2026-10-10T23:00:41.012778Z-295210a2d4ee2d31",
+      "Azure/Enterprise-Scale::github-pr-diff-1880-58a2a55a8192-002::2026-10-10T23:00:40.543206Z-04e788d939a61621"
+    ],
+    "question": {
+      "attempt": 1,
+      "element_id": "I1a",
+      "id": "need:I1a",
+      "interval": [
+        "2025-01-10T05:46:36Z",
+        "2026-10-10T23:00:44.429499Z"
+      ],
+      "query": "Introduce deployAVNM as an ARM deployment parameter in eslzArm.json. deployAVNM eslzArm.json AVNM parameter",
+      "repository": "Azure/Enterprise-Scale"
+    },
+    "retrieved_artifact_keys": [
+      "Azure/Enterprise-Scale::github-commit-9b3bbf2387233e70213769c3a15cd5d040a37aec::2026-10-10T06:46:48.967303Z-997a14f4c3fa0392",
+      "Azure/Enterprise-Scale::github-pr-diff-1880-58a2a55a8192-001::2026-10-10T23:00:40.543143Z-e3aa3c8e72d97fc9",
+      "Azure/Enterprise-Scale::github-pr-diff-1880-58a2a55a8192-013::2026-10-10T23:00:40.543627Z-bc56b38eea484782",
+      "Azure/Enterprise-Scale::github-pr-diff-1880-58a2a55a8192-018::2026-10-10T23:00:40.543800Z-cefcf5a2aa0190fb",
+      "Azure/Enterprise-Scale::github-pr-diff-1896-58a2a55a8192-008::2026-10-10T23:00:41.012778Z-295210a2d4ee2d31",
+      "Azure/Enterprise-Scale::github-pr-diff-1880-58a2a55a8192-002::2026-10-10T23:00:40.543206Z-04e788d939a61621",
+      "Azure/Enterprise-Scale::github-pull_request-1896::2026-10-10T06:46:40.355361Z-d0103ca4455cef27",
+      "Azure/Enterprise-Scale::github-pull_request-1946::2026-10-10T06:46:42.972931Z-655f8bd93249b6e8"
+    ],
+    "reused_artifact_keys": [
+      "Azure/Enterprise-Scale::github-pull_request-1896::2026-10-10T06:46:40.355361Z-d0103ca4455cef27",
+      "Azure/Enterprise-Scale::github-pull_request-1946::2026-10-10T06:46:42.972931Z-655f8bd93249b6e8"
+    ],
+    "round": 2,
+    "skipped_due_to_token_budget": [],
+    "unresolved_required": [],
+    "verification": "PASS",
+    "verified_links_added": 7,
+    "verifier_rejections": 0
+  }
+]

@@ -1,0 +1,129 @@
+{
+  "cached_primary_cost_is_not_zero": true,
+  "comparison": {
+    "all": {
+      "cached_scope_recheck_f1": 0.604651,
+      "delta_recheck_minus_v49": -0.031713,
+      "note": "Same cached primary predictions; changed critic. This is not a fresh full-pipeline or held-out evaluation.",
+      "v49_full_run_f1": 0.636364
+    },
+    "baseline": {
+      "cached_scope_recheck_f1": 0.666667,
+      "delta_recheck_minus_v49": 0.0,
+      "note": "Same cached primary predictions; changed critic. This is not a fresh full-pipeline or held-out evaluation.",
+      "v49_full_run_f1": 0.666667
+    }
+  },
+  "experiment_kind": "CACHED_V49_PRIMARY_SCOPE_RECHECK",
+  "frozen_manifest_sha256": "2cfce69a76edea3b950394bd570d07a6cc3a1736481d1603ce4efd21344ee53c",
+  "frozen_s0_sha256": "6557ea5d549fbc2bac280be4f46d948948dbb70673c0c1f53ff21c24c4fbde42",
+  "limitations": [
+    "Post-run development comparison; the reference has been examined during development.",
+    "Cached v49 proposals constrain recall; an omitted primary relation cannot be recovered here.",
+    "Report original classification cost when comparing end-to-end performance.",
+    "Matching opaque model IDs do not certify immutable provider snapshots.",
+    "No architecture-outcome Gold or held-out generalization is established."
+  ],
+  "new_checker_budget_usage": {
+    "accounting": "REQUEST_ENVELOPE_ESTIMATE_INCLUDING_RETRIES_NOT_BILLING",
+    "estimated_input_tokens": 45651,
+    "max_output_tokens_per_request": 16384,
+    "max_provider_requests": 6,
+    "provider_reported_input_tokens": 35281,
+    "provider_reported_output_tokens": 6628,
+    "provider_requests_reserved": 3,
+    "provider_responses_received": 3,
+    "queries": 6,
+    "requests": [
+      {
+        "estimated_input_tokens": 23134,
+        "max_output_tokens": 12000,
+        "model": "gpt-6.1-sol",
+        "provider_input_tokens": 17776,
+        "provider_output_tokens": 3412,
+        "provider_total_tokens": 21188,
+        "request_schema_name": "cached_v49_primary_scope_recheck",
+        "response_received": true
+      },
+      {
+        "estimated_input_tokens": 12100,
+        "max_output_tokens": 12000,
+        "model": "gpt-6.1-sol",
+        "provider_input_tokens": 9446,
+        "provider_output_tokens": 1200,
+        "provider_total_tokens": 10646,
+        "request_schema_name": "cached_v49_primary_scope_recheck",
+        "response_received": true
+      },
+      {
+        "estimated_input_tokens": 10417,
+        "max_output_tokens": 12000,
+        "model": "gpt-6.1-sol",
+        "provider_input_tokens": 8059,
+        "provider_output_tokens": 2016,
+        "provider_total_tokens": 10075,
+        "request_schema_name": "cached_v49_primary_scope_recheck",
+        "response_received": true
+      }
+    ],
+    "responses_with_reported_usage": 3,
+    "rounds": 6,
+    "unique_artifact_reads": 30
+  },
+  "new_primary_api_requests": 0,
+  "results": {
+    "all": {
+      "evaluated_hunks": 30,
+      "f1": 0.604651,
+      "fn": 6,
+      "fp": 11,
+      "fp_on_unrelated_or_implementation_only_hunks": 3,
+      "gold_positive_exact_triples": 19,
+      "limitations": [
+        "curated single-repository pilot",
+        "not a certified 2024 historical replay",
+        "no gold architecture-outcome labels",
+        "offline mode is a deterministic extractive baseline"
+      ],
+      "precision": 0.541667,
+      "predicted_exact_triples": 24,
+      "predicted_hunk_coverage": {
+        "count": 16,
+        "of": 30
+      },
+      "recall": 0.684211,
+      "scope": "all",
+      "tp": 13,
+      "unscored_prediction_links_outside_hunk_universe": 0
+    },
+    "baseline": {
+      "evaluated_hunks": 24,
+      "f1": 0.666667,
+      "fn": 2,
+      "fp": 10,
+      "fp_on_unrelated_or_implementation_only_hunks": 2,
+      "gold_positive_exact_triples": 14,
+      "limitations": [
+        "curated single-repository pilot",
+        "not a certified 2024 historical replay",
+        "no gold architecture-outcome labels",
+        "offline mode is a deterministic extractive baseline"
+      ],
+      "precision": 0.545455,
+      "predicted_exact_triples": 22,
+      "predicted_hunk_coverage": {
+        "count": 14,
+        "of": 24
+      },
+      "recall": 0.857143,
+      "scope": "baseline",
+      "tp": 12,
+      "unscored_prediction_links_outside_hunk_universe": 2
+    }
+  },
+  "run_id": "fbb1c892-88e4-4e49-80cb-0a433eaaa87a",
+  "run_report_sha256": "425164a40e192fab94752f87c42a8a992d48bcd842fe75a2c21a3181744dc17f",
+  "source_run_id": "8096127b-4cbd-4e77-a9c4-a9c2c5dc0c03",
+  "status": "SCOPE_RECHECK_DEVELOPMENT_POST_RUN_REFERENCE_COMPARISON",
+  "toolkit_sha256": "8a5e1f81d0fdadcf2e337a3c232ccafa73dea418482853d660ccef2d19f172ae"
+}

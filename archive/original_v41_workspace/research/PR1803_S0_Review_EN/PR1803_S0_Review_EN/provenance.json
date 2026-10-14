@@ -1,0 +1,21 @@
+{
+  "package_name": "EvoRationale_PR1803_S0_Review_ENGLISH",
+  "document_language": "English",
+  "episode": "GitHub-PR-1803",
+  "repository": "Azure/Enterprise-Scale",
+  "source_pr_url": "https://github.com/Azure/Enterprise-Scale/pull/1803",
+  "pr_merged_at": "2025-01-10T05:46:36Z",
+  "evaluation_type": "PRE_DECISION_RATIONALE_CANDIDATE_REVIEW_ONLY",
+  "candidate_rows": 13,
+  "comment_rows": 12,
+  "human_gold_labels": false,
+  "source_table_sha256": "962f82f56ed9f448267ef883d9b00b031caaf70210d05ee40381c55305448012",
+  "transformation": "English translation of the original review table; source identifiers, timestamps, categories, statuses and URLs preserved.",
+  "notes": [
+    "Entries are paraphrases, not copied comment bodies.",
+    "Review comments were retrieved from public GitHub in October 2026; original historic body versions have not been independently certified.",
+    "Existing approved decision-state files, experimental results, source code and earlier datasets remain unchanged.",
+    "No explicit central architecture alternative comparison or independent rationale for choosing AVNM has been identified in the selected records.",
+    "This archive contains only the research review artifacts, not the EvoRationale program source code."
+  ]
+}

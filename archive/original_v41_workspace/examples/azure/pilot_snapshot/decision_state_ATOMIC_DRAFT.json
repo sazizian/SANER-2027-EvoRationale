@@ -1,0 +1,152 @@
+{
+  "accepted_at": "2025-01-10T05:46:36Z",
+  "accepted_at_basis": "GitHub merged_at; developer merge confirms integration, but a human must review the extracted S0 rationale",
+  "assumptions": [],
+  "builder_status": "EXPLORATORY_ATOMIC_DRAFT_HUMAN_APPROVAL_REQUIRED",
+  "candidate_source": "https://github.com/Azure/Enterprise-Scale/pull/1803",
+  "central_element_ids": [
+    "G1",
+    "I1a",
+    "I1b",
+    "I1c"
+  ],
+  "composite_groups": [
+    {
+      "member_ids": [
+        "I1a",
+        "I1b",
+        "I1c"
+      ],
+      "original_id": "I1"
+    },
+    {
+      "member_ids": [
+        "C1a",
+        "C1b"
+      ],
+      "original_id": "C1"
+    }
+  ],
+  "constraints_dependencies": [
+    {
+      "decomposed_from_id": "C1",
+      "id": "C1a",
+      "keywords": [
+        "AVNM",
+        "deployment",
+        "conditions"
+      ],
+      "source": "https://github.com/Azure/Enterprise-Scale/pull/1803",
+      "source_status": "DRAFT_CANDIDATE_REQUIRES_ANCHOR_REVIEW",
+      "text": "Update AVNM-related deployment conditions."
+    },
+    {
+      "decomposed_from_id": "C1",
+      "id": "C1b",
+      "keywords": [
+        "AVNM",
+        "deployment",
+        "dependencies"
+      ],
+      "source": "https://github.com/Azure/Enterprise-Scale/pull/1803",
+      "source_status": "DRAFT_CANDIDATE_REQUIRES_ANCHOR_REVIEW",
+      "text": "Update AVNM-related deployment dependencies."
+    }
+  ],
+  "cutoff_at": "2026-10-10T06:46:50.967433Z",
+  "decision": "Introduce optional Azure Virtual Network Manager deployment in Azure Enterprise-Scale landing-zone ARM/portal templates",
+  "decision_id": "GitHub-PR-1803",
+  "derived_from_approved_s0_sha256": "7e4be7e2216118cd0534b0c7c3f7891d97822cd6e3bba9f76c154736117e0700",
+  "episode_id": "pilot-azure-eslz-avnm-1803-live-github-pilot-atomic-exploratory",
+  "goals": [
+    {
+      "id": "G1",
+      "keywords": [
+        "AVNM",
+        "Virtual Network Manager",
+        "deployment",
+        "templates",
+        "support"
+      ],
+      "source": "https://github.com/Azure/Enterprise-Scale/pull/1803",
+      "text": "Add support for deploying Azure Virtual Network Manager (AVNM) in the ESLZ deployment templates."
+    }
+  ],
+  "human_approved": false,
+  "human_review_required": true,
+  "implementation_scope": [
+    {
+      "decomposed_from_id": "I1",
+      "id": "I1a",
+      "keywords": [
+        "deployAVNM",
+        "eslzArm.json",
+        "AVNM",
+        "parameter"
+      ],
+      "source": "https://github.com/Azure/Enterprise-Scale/pull/1803",
+      "source_status": "DRAFT_CANDIDATE_REQUIRES_ANCHOR_REVIEW",
+      "text": "Introduce deployAVNM as an ARM deployment parameter in eslzArm.json."
+    },
+    {
+      "decomposed_from_id": "I1",
+      "id": "I1b",
+      "keywords": [
+        "AVNM",
+        "checkbox",
+        "eslz-portal.json",
+        "deployAVNM"
+      ],
+      "source": "https://github.com/Azure/Enterprise-Scale/pull/1803",
+      "source_status": "DRAFT_CANDIDATE_REQUIRES_ANCHOR_REVIEW",
+      "text": "Expose an AVNM deployment checkbox in eslz-portal.json."
+    },
+    {
+      "decomposed_from_id": "I1",
+      "id": "I1c",
+      "keywords": [
+        "AVNM",
+        "deployment",
+        "conditions",
+        "eslzArm.json"
+      ],
+      "source": "https://github.com/Azure/Enterprise-Scale/pull/1803",
+      "source_status": "DRAFT_CANDIDATE_REQUIRES_ANCHOR_REVIEW",
+      "text": "Integrate AVNM deployment conditions in eslzArm.json."
+    }
+  ],
+  "original_composite_elements": [
+    {
+      "id": "I1",
+      "keywords": [
+        "AVNM",
+        "eslzArm",
+        "eslz-portal",
+        "checkbox",
+        "parameter",
+        "deployment"
+      ],
+      "source": "https://github.com/Azure/Enterprise-Scale/pull/1803",
+      "text": "Include deployAVNM in eslzArm.json and eslz-portal.json with portal checkbox and deployment conditions."
+    },
+    {
+      "id": "C1",
+      "keywords": [
+        "AVNM",
+        "conditions",
+        "dependencies",
+        "deployment"
+      ],
+      "source": "https://github.com/Azure/Enterprise-Scale/pull/1803",
+      "text": "Update deployment conditions and dependencies to include AVNM."
+    }
+  ],
+  "original_episode_id": "pilot-azure-eslz-avnm-1803-live-github-pilot",
+  "original_evidence": [],
+  "quality_attributes": [],
+  "repository": "Azure/Enterprise-Scale",
+  "requirements": [],
+  "research_label": "EXPLORATORY_S0_REVISION_NOT_ORIGINAL_GOLD",
+  "review_instructions": "Check every proposed atomic statement against the accepted PR #1803 at the decision time; remove unsupported clauses and document all corrections before explicit human approval. Do not present exploratory rerun as held-out evaluation.",
+  "snapshot_note": "Current captured source bodies cannot be used for historical cutoff replay"
+}

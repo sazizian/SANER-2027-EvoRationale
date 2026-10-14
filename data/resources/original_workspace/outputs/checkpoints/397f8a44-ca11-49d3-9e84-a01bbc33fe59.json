@@ -1,0 +1,1310 @@
+{
+  "artifact_reads": [
+    "Azure/Enterprise-Scale::github-pull_request-1946::2026-10-10T06:46:42.972931Z-655f8bd93249b6e8",
+    "Azure/Enterprise-Scale::github-pr-diff-1880-64ee2c93f8e5-001::2026-10-10T23:00:40.538840Z-0eef41da0a809fa2",
+    "Azure/Enterprise-Scale::github-pull_request-1896::2026-10-10T06:46:40.355361Z-d0103ca4455cef27",
+    "Azure/Enterprise-Scale::github-pull_request-1880::2026-10-10T06:46:37.202355Z-a14e7e6f5ca6d066",
+    "Azure/Enterprise-Scale::github-pr-diff-2083-7670fd175764-001::2026-10-10T23:00:42.428231Z-fcd450088b2d82f3",
+    "Azure/Enterprise-Scale::github-pr-diff-1880-58a2a55a8192-016::2026-10-10T23:00:40.543732Z-d45f17445ea1ae11",
+    "Azure/Enterprise-Scale::github-commit-9b3bbf2387233e70213769c3a15cd5d040a37aec::2026-10-10T06:46:48.967303Z-997a14f4c3fa0392",
+    "Azure/Enterprise-Scale::github-pr-diff-1880-58a2a55a8192-001::2026-10-10T23:00:40.543143Z-e3aa3c8e72d97fc9",
+    "Azure/Enterprise-Scale::github-pr-diff-1880-58a2a55a8192-013::2026-10-10T23:00:40.543627Z-bc56b38eea484782",
+    "Azure/Enterprise-Scale::github-pr-diff-1880-58a2a55a8192-018::2026-10-10T23:00:40.543800Z-cefcf5a2aa0190fb",
+    "Azure/Enterprise-Scale::github-pr-diff-1896-58a2a55a8192-008::2026-10-10T23:00:41.012778Z-295210a2d4ee2d31",
+    "Azure/Enterprise-Scale::github-pr-diff-1880-58a2a55a8192-002::2026-10-10T23:00:40.543206Z-04e788d939a61621"
+  ],
+  "attempts": [
+    "global#1",
+    "need:I1a#1"
+  ],
+  "human_reviews": [],
+  "initial_state": {
+    "accepted_at": "2025-01-10T05:46:36Z",
+    "accepted_at_basis": "GitHub merged_at; developer merge confirms integration, but a human must review the extracted S0 rationale",
+    "assumptions": [],
+    "builder_status": "DIFF_ENRICHED_DRAFT_REQUIRES_HUMAN_APPROVAL",
+    "candidate_source": "https://github.com/Azure/Enterprise-Scale/pull/1803",
+    "central_element_ids": [
+      "G1",
+      "I1a",
+      "I1b",
+      "I1c"
+    ],
+    "composite_groups": [
+      {
+        "member_ids": [
+          "I1a",
+          "I1b",
+          "I1c"
+        ],
+        "original_id": "I1"
+      },
+      {
+        "member_ids": [
+          "C1a",
+          "C1b"
+        ],
+        "original_id": "C1"
+      }
+    ],
+    "constraints_dependencies": [
+      {
+        "decomposed_from_id": "C1",
+        "id": "C1a",
+        "keywords": [
+          "AVNM",
+          "deployment",
+          "conditions"
+        ],
+        "source": "https://github.com/Azure/Enterprise-Scale/pull/1803",
+        "source_status": "DRAFT_CANDIDATE_REQUIRES_ANCHOR_REVIEW",
+        "text": "Update AVNM-related deployment conditions."
+      },
+      {
+        "decomposed_from_id": "C1",
+        "id": "C1b",
+        "keywords": [
+          "AVNM",
+          "deployment",
+          "dependencies"
+        ],
+        "source": "https://github.com/Azure/Enterprise-Scale/pull/1803",
+        "source_status": "DRAFT_CANDIDATE_REQUIRES_ANCHOR_REVIEW",
+        "text": "Update AVNM-related deployment dependencies."
+      }
+    ],
+    "cutoff_at": "2026-10-10T23:00:44.429499Z",
+    "decision": "Introduce optional Azure Virtual Network Manager deployment in Azure Enterprise-Scale landing-zone ARM/portal templates",
+    "decision_id": "GitHub-PR-1803",
+    "derived_from_approved_decision_sha256": "ba324d5ffb2ca5fe4c9cdcc6e476cb490e7c59f4fa5c04e0dab76ddc862ffd51",
+    "derived_from_approved_s0_sha256": "7e4be7e2216118cd0534b0c7c3f7891d97822cd6e3bba9f76c154736117e0700",
+    "episode_id": "pilot-azure-eslz-avnm-1803-live-github-pilot-atomic-exploratory-diff-enrichment-v41",
+    "goals": [
+      {
+        "id": "G1",
+        "keywords": [
+          "AVNM",
+          "Virtual Network Manager",
+          "deployment",
+          "templates",
+          "support"
+        ],
+        "source": "https://github.com/Azure/Enterprise-Scale/pull/1803",
+        "text": "Add support for deploying Azure Virtual Network Manager (AVNM) in the ESLZ deployment templates."
+      }
+    ],
+    "human_approved": true,
+    "human_review_required": true,
+    "implementation_scope": [
+      {
+        "decomposed_from_id": "I1",
+        "id": "I1a",
+        "keywords": [
+          "deployAVNM",
+          "eslzArm.json",
+          "AVNM",
+          "parameter"
+        ],
+        "source": "https://github.com/Azure/Enterprise-Scale/pull/1803",
+        "source_status": "DRAFT_CANDIDATE_REQUIRES_ANCHOR_REVIEW",
+        "text": "Introduce deployAVNM as an ARM deployment parameter in eslzArm.json."
+      },
+      {
+        "decomposed_from_id": "I1",
+        "id": "I1b",
+        "keywords": [
+          "AVNM",
+          "checkbox",
+          "eslz-portal.json",
+          "deployAVNM"
+        ],
+        "source": "https://github.com/Azure/Enterprise-Scale/pull/1803",
+        "source_status": "DRAFT_CANDIDATE_REQUIRES_ANCHOR_REVIEW",
+        "text": "Expose an AVNM deployment checkbox in eslz-portal.json."
+      },
+      {
+        "decomposed_from_id": "I1",
+        "id": "I1c",
+        "keywords": [
+          "AVNM",
+          "deployment",
+          "conditions",
+          "eslzArm.json"
+        ],
+        "source": "https://github.com/Azure/Enterprise-Scale/pull/1803",
+        "source_status": "DRAFT_CANDIDATE_REQUIRES_ANCHOR_REVIEW",
+        "text": "Integrate AVNM deployment conditions in eslzArm.json."
+      }
+    ],
+    "original_composite_elements": [
+      {
+        "id": "I1",
+        "keywords": [
+          "AVNM",
+          "eslzArm",
+          "eslz-portal",
+          "checkbox",
+          "parameter",
+          "deployment"
+        ],
+        "source": "https://github.com/Azure/Enterprise-Scale/pull/1803",
+        "text": "Include deployAVNM in eslzArm.json and eslz-portal.json with portal checkbox and deployment conditions."
+      },
+      {
+        "id": "C1",
+        "keywords": [
+          "AVNM",
+          "conditions",
+          "dependencies",
+          "deployment"
+        ],
+        "source": "https://github.com/Azure/Enterprise-Scale/pull/1803",
+        "text": "Update deployment conditions and dependencies to include AVNM."
+      }
+    ],
+    "original_episode_id": "pilot-azure-eslz-avnm-1803-live-github-pilot",
+    "original_evidence": [],
+    "quality_attributes": [],
+    "repository": "Azure/Enterprise-Scale",
+    "requirements": [],
+    "research_label": "EXPLORATORY_DIFF_AUGMENTATION_NOT_HISTORICAL_REPLAY",
+    "review_instructions": "Check every proposed atomic statement against the accepted PR #1803 at the decision time; remove unsupported clauses and document all corrections before explicit human approval. Do not present exploratory rerun as held-out evaluation.",
+    "snapshot_note": "Diff excerpts captured now; historical body versions not independently reconstructed.",
+    "source_history_sha256": "cda8af27d99647d941efc3b1e5aa1aa7c02f8710ae6faa440e2e8b91d2254ca0"
+  },
+  "needs": [
+    {
+      "attempts": 1,
+      "element_id": null,
+      "id": "global",
+      "question": "Which post-decision artifacts affect the accepted decision?",
+      "required": false,
+      "status": "RESOLVED"
+    },
+    {
+      "attempts": 0,
+      "element_id": "G1",
+      "id": "need:G1",
+      "question": "Does post-decision evidence still support Add support for deploying Azure Virtual Network Manager (AVNM) in the ESLZ deployment templates.?",
+      "required": true,
+      "status": "RESOLVED"
+    },
+    {
+      "attempts": 0,
+      "element_id": "C1a",
+      "id": "need:C1a",
+      "question": "Does post-decision evidence still support Update AVNM-related deployment conditions.?",
+      "required": false,
+      "status": "RESOLVED"
+    },
+    {
+      "attempts": 0,
+      "element_id": "C1b",
+      "id": "need:C1b",
+      "question": "Does post-decision evidence still support Update AVNM-related deployment dependencies.?",
+      "required": false,
+      "status": "OPEN"
+    },
+    {
+      "attempts": 1,
+      "element_id": "I1a",
+      "id": "need:I1a",
+      "question": "Does post-decision evidence still support Introduce deployAVNM as an ARM deployment parameter in eslzArm.json.?",
+      "required": true,
+      "status": "RESOLVED"
+    },
+    {
+      "attempts": 0,
+      "element_id": "I1b",
+      "id": "need:I1b",
+      "question": "Does post-decision evidence still support Expose an AVNM deployment checkbox in eslz-portal.json.?",
+      "required": true,
+      "status": "RESOLVED"
+    },
+    {
+      "attempts": 0,
+      "element_id": "I1c",
+      "id": "need:I1c",
+      "question": "Does post-decision evidence still support Integrate AVNM deployment conditions in eslzArm.json.?",
+      "required": true,
+      "status": "RESOLVED"
+    }
+  ],
+  "query_count": 2,
+  "rejected_interpretations": [],
+  "report": {
+    "budget_usage": {
+      "estimated_input_tokens": 20007,
+      "queries": 2,
+      "rounds": 2,
+      "unique_artifact_reads": 12
+    },
+    "composite_coverage": [
+      {
+        "adverse_or_conflicting_member_ids": [],
+        "all_members_supported": true,
+        "member_ids": [
+          "I1a",
+          "I1b",
+          "I1c"
+        ],
+        "missing_member_ids": [],
+        "note": "Diagnostic evidence coverage, not an independent architectural verdict",
+        "original_composite_id": "I1",
+        "supporting_member_ids": [
+          "I1a",
+          "I1b",
+          "I1c"
+        ]
+      },
+      {
+        "adverse_or_conflicting_member_ids": [],
+        "all_members_supported": false,
+        "member_ids": [
+          "C1a",
+          "C1b"
+        ],
+        "missing_member_ids": [
+          "C1b"
+        ],
+        "note": "Diagnostic evidence coverage, not an independent architectural verdict",
+        "original_composite_id": "C1",
+        "supporting_member_ids": [
+          "C1a"
+        ]
+      }
+    ],
+    "confidence": 0.4,
+    "confidence_kind": "HEURISTIC_NOT_CALIBRATED",
+    "decision_id": "GitHub-PR-1803",
+    "drift_types": [],
+    "episode_id": "pilot-azure-eslz-avnm-1803-live-github-pilot-atomic-exploratory-diff-enrichment-v41",
+    "evidence_grounded_rationale": [
+      {
+        "artifact_key": "Azure/Enterprise-Scale::github-pr-diff-1880-64ee2c93f8e5-001::2026-10-10T23:00:40.538840Z-0eef41da0a809fa2",
+        "decision_element_id": "I1b",
+        "relation": "supports",
+        "verbatim_quote": "GitHub PR #1880 added ARM/portal code for AVNM in eslzArm/eslz-portal.json:\n                             \"visible\": true\n                         },\n+                        {\n+                            \"name\": \"deployAVNM\",\n+                            \"type\": \"Microsoft.Common.CheckBox\",\n+                            \"label\": \"Deploy Azure Virtual Network Manager - PREVIEW\",\n+                            \"toolTip\": \"If selected, Azure Virtual Network Manager will be deployed to manage your virtual networks. Currently, ALZ will only enable Security Admin Rules role by default\","
+      },
+      {
+        "artifact_key": "Azure/Enterprise-Scale::github-pull_request-1896::2026-10-10T06:46:40.355361Z-d0103ca4455cef27",
+        "decision_element_id": "G1",
+        "relation": "supports",
+        "verbatim_quote": "This pull request includes several changes to the `eslzArm` templates to add support for AVNM Lite deployments and to introduce a new `dedicatedSubscription` parameter."
+      },
+      {
+        "artifact_key": "Azure/Enterprise-Scale::github-pull_request-1896::2026-10-10T06:46:40.355361Z-d0103ca4455cef27",
+        "decision_element_id": "C1a",
+        "relation": "supports",
+        "verbatim_quote": "This pull request includes several changes to the `eslzArm` templates to add support for AVNM Lite deployments and to introduce a new `dedicatedSubscription` parameter. The most important changes include the addition of new deployment names, new deployment conditions, and the introduction of the `dedicatedSubscription` parameter."
+      },
+      {
+        "artifact_key": "Azure/Enterprise-Scale::github-pull_request-1880::2026-10-10T06:46:37.202355Z-a14e7e6f5ca6d066",
+        "decision_element_id": "G1",
+        "relation": "supports",
+        "verbatim_quote": "* Introduced a new checkbox option in the `eslz-portal.json` file to deploy the Azure Virtual Network Manager (AVNM) in preview mode."
+      },
+      {
+        "artifact_key": "Azure/Enterprise-Scale::github-pull_request-1880::2026-10-10T06:46:37.202355Z-a14e7e6f5ca6d066",
+        "decision_element_id": "I1b",
+        "relation": "supports",
+        "verbatim_quote": "* Introduced a new checkbox option in the `eslz-portal.json` file to deploy the Azure Virtual Network Manager (AVNM) in preview mode."
+      },
+      {
+        "artifact_key": "Azure/Enterprise-Scale::github-pr-diff-1880-58a2a55a8192-016::2026-10-10T23:00:40.543732Z-d45f17445ea1ae11",
+        "decision_element_id": "C1a",
+        "relation": "supports",
+        "verbatim_quote": "GitHub PR #1880 added ARM/portal code for AVNM in eslzArm/eslzArm.json:\n+                    }\n+                }\n+            }\n+        },\n+        {\n+            // Deploying AVNM Lite policy - to add virtual networks to AVNM network groups\n+            \"condition\": \"[and(parameters('deployAVNM'), or(equals(parameters('enableHub'), 'vhub'), equals(parameters('enableHub'), 'nva')), not(empty(parameters('singlePlatformSubscriptionId'))))]\",\n+            \"type\": \"Microsoft.Resources/deployments\",\n+            \"apiVersion\": \"2019-10-01\","
+      },
+      {
+        "artifact_key": "Azure/Enterprise-Scale::github-pr-diff-1880-58a2a55a8192-016::2026-10-10T23:00:40.543732Z-d45f17445ea1ae11",
+        "decision_element_id": "I1c",
+        "relation": "supports",
+        "verbatim_quote": "GitHub PR #1880 added ARM/portal code for AVNM in eslzArm/eslzArm.json:\n+                    }\n+                }\n+            }\n+        },\n+        {\n+            // Deploying AVNM Lite policy - to add virtual networks to AVNM network groups\n+            \"condition\": \"[and(parameters('deployAVNM'), or(equals(parameters('enableHub'), 'vhub'), equals(parameters('enableHub'), 'nva')), not(empty(parameters('singlePlatformSubscriptionId'))))]\",\n+            \"type\": \"Microsoft.Resources/deployments\",\n+            \"apiVersion\": \"2019-10-01\","
+      },
+      {
+        "artifact_key": "Azure/Enterprise-Scale::github-pr-diff-1880-58a2a55a8192-001::2026-10-10T23:00:40.543143Z-e3aa3c8e72d97fc9",
+        "decision_element_id": "I1a",
+        "relation": "supports",
+        "verbatim_quote": "GitHub PR #1880 added ARM/portal code for AVNM in eslzArm/eslzArm.json:\n             \"type\": \"string\",\n             \"defaultValue\": \"[deployment().location]\"\n         },\n+        \"deployAVNM\": {\n+            \"type\": \"bool\",\n+            \"defaultValue\": false\n+        },\n         \"enableDdoS\": {\n             \"type\": \"string\",\n             \"defaultValue\": \"No\","
+      },
+      {
+        "artifact_key": "Azure/Enterprise-Scale::github-pr-diff-1880-58a2a55a8192-013::2026-10-10T23:00:40.543627Z-bc56b38eea484782",
+        "decision_element_id": "C1a",
+        "relation": "supports",
+        "verbatim_quote": "GitHub PR #1880 added ARM/portal code for AVNM in eslzArm/eslzArm.json:\n+            \"condition\": \"[and(parameters('deployAVNM'), or(equals(parameters('enableHub'), 'vhub'), equals(parameters('enableHub'), 'nva')), not(empty(parameters('connectivitySubscriptionId'))))]\",\n+            \"type\": \"Microsoft.Resources/deployments\",\n+            \"apiVersion\": \"2019-10-01\",\n+            \"name\": \"[variables('deploymentNames').avnmPolicyDeploymentName]\",\n+            \"location\": \"[deployment().location]\",\n+            \"scope\": \"[variables('scopes').eslzRootManagementGroup]\","
+      },
+      {
+        "artifact_key": "Azure/Enterprise-Scale::github-pr-diff-1880-58a2a55a8192-013::2026-10-10T23:00:40.543627Z-bc56b38eea484782",
+        "decision_element_id": "I1c",
+        "relation": "supports",
+        "verbatim_quote": "GitHub PR #1880 added ARM/portal code for AVNM in eslzArm/eslzArm.json:\n+            \"condition\": \"[and(parameters('deployAVNM'), or(equals(parameters('enableHub'), 'vhub'), equals(parameters('enableHub'), 'nva')), not(empty(parameters('connectivitySubscriptionId'))))]\",\n+            \"type\": \"Microsoft.Resources/deployments\",\n+            \"apiVersion\": \"2019-10-01\",\n+            \"name\": \"[variables('deploymentNames').avnmPolicyDeploymentName]\",\n+            \"location\": \"[deployment().location]\",\n+            \"scope\": \"[variables('scopes').eslzRootManagementGroup]\","
+      },
+      {
+        "artifact_key": "Azure/Enterprise-Scale::github-pr-diff-1880-58a2a55a8192-018::2026-10-10T23:00:40.543800Z-cefcf5a2aa0190fb",
+        "decision_element_id": "C1a",
+        "relation": "supports",
+        "verbatim_quote": "GitHub PR #1880 added ARM/portal code for AVNM in eslzArm/eslzArm.json:\n+            \"condition\": \"[and(parameters('deployAVNM'), or(equals(parameters('enableHub'), 'vhub'), equals(parameters('enableHub'), 'nva')), not(empty(parameters('singlePlatformSubscriptionId'))))]\",\n+            \"type\": \"Microsoft.Resources/deployments\",\n+            \"apiVersion\": \"2019-10-01\",\n+            \"name\": \"[variables('esLiteDeploymentNames').avnmLitePolicyDeploymentName]\",\n+            \"location\": \"[deployment().location]\",\n+            \"scope\": \"[variables('scopes').eslzRootManagementGroup]\","
+      },
+      {
+        "artifact_key": "Azure/Enterprise-Scale::github-pr-diff-1880-58a2a55a8192-018::2026-10-10T23:00:40.543800Z-cefcf5a2aa0190fb",
+        "decision_element_id": "I1c",
+        "relation": "supports",
+        "verbatim_quote": "GitHub PR #1880 added ARM/portal code for AVNM in eslzArm/eslzArm.json:\n+            \"condition\": \"[and(parameters('deployAVNM'), or(equals(parameters('enableHub'), 'vhub'), equals(parameters('enableHub'), 'nva')), not(empty(parameters('singlePlatformSubscriptionId'))))]\",\n+            \"type\": \"Microsoft.Resources/deployments\",\n+            \"apiVersion\": \"2019-10-01\",\n+            \"name\": \"[variables('esLiteDeploymentNames').avnmLitePolicyDeploymentName]\",\n+            \"location\": \"[deployment().location]\",\n+            \"scope\": \"[variables('scopes').eslzRootManagementGroup]\","
+      },
+      {
+        "artifact_key": "Azure/Enterprise-Scale::github-pr-diff-1896-58a2a55a8192-008::2026-10-10T23:00:41.012778Z-295210a2d4ee2d31",
+        "decision_element_id": "C1a",
+        "relation": "supports",
+        "verbatim_quote": "GitHub PR #1896 added ARM/portal code for AVNM in eslzArm/eslzArm.json:\n+            \"condition\": \"[and(parameters('deployAVNM'), or(equals(parameters('enableHub'), 'vhub'), equals(parameters('enableHub'), 'nva')), not(empty(parameters('singlePlatformSubscriptionId'))))]\",\n+            \"type\": \"Microsoft.Resources/deployments\",\n+            \"apiVersion\": \"2019-10-01\",\n+            \"name\": \"[variables('esLiteDeploymentNames').avnmLitePolicyDeploymentName]\",\n+            \"location\": \"[deployment().location]\",\n+            \"scope\": \"[variables('scopes').eslzRootManagementGroup]\","
+      },
+      {
+        "artifact_key": "Azure/Enterprise-Scale::github-pr-diff-1896-58a2a55a8192-008::2026-10-10T23:00:41.012778Z-295210a2d4ee2d31",
+        "decision_element_id": "I1c",
+        "relation": "supports",
+        "verbatim_quote": "GitHub PR #1896 added ARM/portal code for AVNM in eslzArm/eslzArm.json:\n+            \"condition\": \"[and(parameters('deployAVNM'), or(equals(parameters('enableHub'), 'vhub'), equals(parameters('enableHub'), 'nva')), not(empty(parameters('singlePlatformSubscriptionId'))))]\",\n+            \"type\": \"Microsoft.Resources/deployments\",\n+            \"apiVersion\": \"2019-10-01\",\n+            \"name\": \"[variables('esLiteDeploymentNames').avnmLitePolicyDeploymentName]\",\n+            \"location\": \"[deployment().location]\",\n+            \"scope\": \"[variables('scopes').eslzRootManagementGroup]\","
+      }
+    ],
+    "formal_evidence": [],
+    "human_review_required": true,
+    "human_review_status": "PENDING",
+    "investigation_coverage": {
+      "all_need_statuses": [
+        {
+          "attempts": 1,
+          "element_id": null,
+          "id": "global",
+          "required": false,
+          "status": "RESOLVED"
+        },
+        {
+          "attempts": 0,
+          "element_id": "G1",
+          "id": "need:G1",
+          "required": true,
+          "status": "RESOLVED"
+        },
+        {
+          "attempts": 0,
+          "element_id": "C1a",
+          "id": "need:C1a",
+          "required": false,
+          "status": "RESOLVED"
+        },
+        {
+          "attempts": 0,
+          "element_id": "C1b",
+          "id": "need:C1b",
+          "required": false,
+          "status": "OPEN"
+        },
+        {
+          "attempts": 1,
+          "element_id": "I1a",
+          "id": "need:I1a",
+          "required": true,
+          "status": "RESOLVED"
+        },
+        {
+          "attempts": 0,
+          "element_id": "I1b",
+          "id": "need:I1b",
+          "required": true,
+          "status": "RESOLVED"
+        },
+        {
+          "attempts": 0,
+          "element_id": "I1c",
+          "id": "need:I1c",
+          "required": true,
+          "status": "RESOLVED"
+        }
+      ],
+      "note": "An unattempted element is NOT evidence of invalid architecture",
+      "required_element_ids": [
+        "G1",
+        "I1a",
+        "I1b",
+        "I1c"
+      ],
+      "required_never_attempted_element_ids": [],
+      "required_unresolved_element_ids": []
+    },
+    "material_claims": [
+      {
+        "citations": [
+          "Azure/Enterprise-Scale::github-pr-diff-1880-64ee2c93f8e5-001::2026-10-10T23:00:40.538840Z-0eef41da0a809fa2"
+        ],
+        "claim_id": "a4ce028534222a1c9bea",
+        "decision_element_id": "I1b",
+        "material": true,
+        "quote": "GitHub PR #1880 added ARM/portal code for AVNM in eslzArm/eslz-portal.json:\n                             \"visible\": true\n                         },\n+                        {\n+                            \"name\": \"deployAVNM\",\n+                            \"type\": \"Microsoft.Common.CheckBox\",\n+                            \"label\": \"Deploy Azure Virtual Network Manager - PREVIEW\",\n+                            \"toolTip\": \"If selected, Azure Virtual Network Manager will be deployed to manage your virtual networks. Currently, ALZ will only enable Security Admin Rules role by default\",",
+        "relation": "supports",
+        "text": "Artifact github-pr-diff-1880-64ee2c93f8e5-001 (version 2026-10-10T23:00:40.538840Z-0eef41da0a809fa2) states: GitHub PR #1880 added ARM/portal code for AVNM in eslzArm/eslz-portal.json:\n                             \"visible\": true\n                         },\n+                        {\n+                            \"name\": \"deployAVNM\",\n+                            \"type\": \"Microsoft.Common.CheckBox\",\n+                            \"label\": \"Deploy Azure Virtual Network Manager - PREVIEW\",\n+                            \"toolTip\": \"If selected, Azure Virtual Network Manager will be deployed to manage your virtual networks. Currently, ALZ will only enable Security Admin Rules role by default\","
+      },
+      {
+        "citations": [
+          "Azure/Enterprise-Scale::github-pull_request-1896::2026-10-10T06:46:40.355361Z-d0103ca4455cef27"
+        ],
+        "claim_id": "0d7a2ca263ee0a12e77d",
+        "decision_element_id": "G1",
+        "material": true,
+        "quote": "This pull request includes several changes to the `eslzArm` templates to add support for AVNM Lite deployments and to introduce a new `dedicatedSubscription` parameter.",
+        "relation": "supports",
+        "text": "Artifact github-pull_request-1896 (version 2026-10-10T06:46:40.355361Z-d0103ca4455cef27) states: This pull request includes several changes to the `eslzArm` templates to add support for AVNM Lite deployments and to introduce a new `dedicatedSubscription` parameter."
+      },
+      {
+        "citations": [
+          "Azure/Enterprise-Scale::github-pull_request-1896::2026-10-10T06:46:40.355361Z-d0103ca4455cef27"
+        ],
+        "claim_id": "de77f5fb6271e5d9fad0",
+        "decision_element_id": "C1a",
+        "material": true,
+        "quote": "This pull request includes several changes to the `eslzArm` templates to add support for AVNM Lite deployments and to introduce a new `dedicatedSubscription` parameter. The most important changes include the addition of new deployment names, new deployment conditions, and the introduction of the `dedicatedSubscription` parameter.",
+        "relation": "supports",
+        "text": "Artifact github-pull_request-1896 (version 2026-10-10T06:46:40.355361Z-d0103ca4455cef27) states: This pull request includes several changes to the `eslzArm` templates to add support for AVNM Lite deployments and to introduce a new `dedicatedSubscription` parameter. The most important changes include the addition of new deployment names, new deployment conditions, and the introduction of the `dedicatedSubscription` parameter."
+      },
+      {
+        "citations": [
+          "Azure/Enterprise-Scale::github-pull_request-1880::2026-10-10T06:46:37.202355Z-a14e7e6f5ca6d066"
+        ],
+        "claim_id": "4dacb459b9db06b3d40f",
+        "decision_element_id": "G1",
+        "material": true,
+        "quote": "* Introduced a new checkbox option in the `eslz-portal.json` file to deploy the Azure Virtual Network Manager (AVNM) in preview mode.",
+        "relation": "supports",
+        "text": "Artifact github-pull_request-1880 (version 2026-10-10T06:46:37.202355Z-a14e7e6f5ca6d066) states: * Introduced a new checkbox option in the `eslz-portal.json` file to deploy the Azure Virtual Network Manager (AVNM) in preview mode."
+      },
+      {
+        "citations": [
+          "Azure/Enterprise-Scale::github-pull_request-1880::2026-10-10T06:46:37.202355Z-a14e7e6f5ca6d066"
+        ],
+        "claim_id": "5a167fd7725a144a8ea5",
+        "decision_element_id": "I1b",
+        "material": true,
+        "quote": "* Introduced a new checkbox option in the `eslz-portal.json` file to deploy the Azure Virtual Network Manager (AVNM) in preview mode.",
+        "relation": "supports",
+        "text": "Artifact github-pull_request-1880 (version 2026-10-10T06:46:37.202355Z-a14e7e6f5ca6d066) states: * Introduced a new checkbox option in the `eslz-portal.json` file to deploy the Azure Virtual Network Manager (AVNM) in preview mode."
+      },
+      {
+        "citations": [
+          "Azure/Enterprise-Scale::github-pr-diff-1880-58a2a55a8192-016::2026-10-10T23:00:40.543732Z-d45f17445ea1ae11"
+        ],
+        "claim_id": "9396f872a0f8ea91c15e",
+        "decision_element_id": "C1a",
+        "material": true,
+        "quote": "GitHub PR #1880 added ARM/portal code for AVNM in eslzArm/eslzArm.json:\n+                    }\n+                }\n+            }\n+        },\n+        {\n+            // Deploying AVNM Lite policy - to add virtual networks to AVNM network groups\n+            \"condition\": \"[and(parameters('deployAVNM'), or(equals(parameters('enableHub'), 'vhub'), equals(parameters('enableHub'), 'nva')), not(empty(parameters('singlePlatformSubscriptionId'))))]\",\n+            \"type\": \"Microsoft.Resources/deployments\",\n+            \"apiVersion\": \"2019-10-01\",",
+        "relation": "supports",
+        "text": "Artifact github-pr-diff-1880-58a2a55a8192-016 (version 2026-10-10T23:00:40.543732Z-d45f17445ea1ae11) states: GitHub PR #1880 added ARM/portal code for AVNM in eslzArm/eslzArm.json:\n+                    }\n+                }\n+            }\n+        },\n+        {\n+            // Deploying AVNM Lite policy - to add virtual networks to AVNM network groups\n+            \"condition\": \"[and(parameters('deployAVNM'), or(equals(parameters('enableHub'), 'vhub'), equals(parameters('enableHub'), 'nva')), not(empty(parameters('singlePlatformSubscriptionId'))))]\",\n+            \"type\": \"Microsoft.Resources/deployments\",\n+            \"apiVersion\": \"2019-10-01\","
+      },
+      {
+        "citations": [
+          "Azure/Enterprise-Scale::github-pr-diff-1880-58a2a55a8192-016::2026-10-10T23:00:40.543732Z-d45f17445ea1ae11"
+        ],
+        "claim_id": "4629f2362137b87df9f3",
+        "decision_element_id": "I1c",
+        "material": true,
+        "quote": "GitHub PR #1880 added ARM/portal code for AVNM in eslzArm/eslzArm.json:\n+                    }\n+                }\n+            }\n+        },\n+        {\n+            // Deploying AVNM Lite policy - to add virtual networks to AVNM network groups\n+            \"condition\": \"[and(parameters('deployAVNM'), or(equals(parameters('enableHub'), 'vhub'), equals(parameters('enableHub'), 'nva')), not(empty(parameters('singlePlatformSubscriptionId'))))]\",\n+            \"type\": \"Microsoft.Resources/deployments\",\n+            \"apiVersion\": \"2019-10-01\",",
+        "relation": "supports",
+        "text": "Artifact github-pr-diff-1880-58a2a55a8192-016 (version 2026-10-10T23:00:40.543732Z-d45f17445ea1ae11) states: GitHub PR #1880 added ARM/portal code for AVNM in eslzArm/eslzArm.json:\n+                    }\n+                }\n+            }\n+        },\n+        {\n+            // Deploying AVNM Lite policy - to add virtual networks to AVNM network groups\n+            \"condition\": \"[and(parameters('deployAVNM'), or(equals(parameters('enableHub'), 'vhub'), equals(parameters('enableHub'), 'nva')), not(empty(parameters('singlePlatformSubscriptionId'))))]\",\n+            \"type\": \"Microsoft.Resources/deployments\",\n+            \"apiVersion\": \"2019-10-01\","
+      },
+      {
+        "citations": [
+          "Azure/Enterprise-Scale::github-pr-diff-1880-58a2a55a8192-001::2026-10-10T23:00:40.543143Z-e3aa3c8e72d97fc9"
+        ],
+        "claim_id": "545a0cd6967959120da1",
+        "decision_element_id": "I1a",
+        "material": true,
+        "quote": "GitHub PR #1880 added ARM/portal code for AVNM in eslzArm/eslzArm.json:\n             \"type\": \"string\",\n             \"defaultValue\": \"[deployment().location]\"\n         },\n+        \"deployAVNM\": {\n+            \"type\": \"bool\",\n+            \"defaultValue\": false\n+        },\n         \"enableDdoS\": {\n             \"type\": \"string\",\n             \"defaultValue\": \"No\",",
+        "relation": "supports",
+        "text": "Artifact github-pr-diff-1880-58a2a55a8192-001 (version 2026-10-10T23:00:40.543143Z-e3aa3c8e72d97fc9) states: GitHub PR #1880 added ARM/portal code for AVNM in eslzArm/eslzArm.json:\n             \"type\": \"string\",\n             \"defaultValue\": \"[deployment().location]\"\n         },\n+        \"deployAVNM\": {\n+            \"type\": \"bool\",\n+            \"defaultValue\": false\n+        },\n         \"enableDdoS\": {\n             \"type\": \"string\",\n             \"defaultValue\": \"No\","
+      },
+      {
+        "citations": [
+          "Azure/Enterprise-Scale::github-pr-diff-1880-58a2a55a8192-013::2026-10-10T23:00:40.543627Z-bc56b38eea484782"
+        ],
+        "claim_id": "b7fc2fbebb78ede264bc",
+        "decision_element_id": "C1a",
+        "material": true,
+        "quote": "GitHub PR #1880 added ARM/portal code for AVNM in eslzArm/eslzArm.json:\n+            \"condition\": \"[and(parameters('deployAVNM'), or(equals(parameters('enableHub'), 'vhub'), equals(parameters('enableHub'), 'nva')), not(empty(parameters('connectivitySubscriptionId'))))]\",\n+            \"type\": \"Microsoft.Resources/deployments\",\n+            \"apiVersion\": \"2019-10-01\",\n+            \"name\": \"[variables('deploymentNames').avnmPolicyDeploymentName]\",\n+            \"location\": \"[deployment().location]\",\n+            \"scope\": \"[variables('scopes').eslzRootManagementGroup]\",",
+        "relation": "supports",
+        "text": "Artifact github-pr-diff-1880-58a2a55a8192-013 (version 2026-10-10T23:00:40.543627Z-bc56b38eea484782) states: GitHub PR #1880 added ARM/portal code for AVNM in eslzArm/eslzArm.json:\n+            \"condition\": \"[and(parameters('deployAVNM'), or(equals(parameters('enableHub'), 'vhub'), equals(parameters('enableHub'), 'nva')), not(empty(parameters('connectivitySubscriptionId'))))]\",\n+            \"type\": \"Microsoft.Resources/deployments\",\n+            \"apiVersion\": \"2019-10-01\",\n+            \"name\": \"[variables('deploymentNames').avnmPolicyDeploymentName]\",\n+            \"location\": \"[deployment().location]\",\n+            \"scope\": \"[variables('scopes').eslzRootManagementGroup]\","
+      },
+      {
+        "citations": [
+          "Azure/Enterprise-Scale::github-pr-diff-1880-58a2a55a8192-013::2026-10-10T23:00:40.543627Z-bc56b38eea484782"
+        ],
+        "claim_id": "d586ade41df7db172b02",
+        "decision_element_id": "I1c",
+        "material": true,
+        "quote": "GitHub PR #1880 added ARM/portal code for AVNM in eslzArm/eslzArm.json:\n+            \"condition\": \"[and(parameters('deployAVNM'), or(equals(parameters('enableHub'), 'vhub'), equals(parameters('enableHub'), 'nva')), not(empty(parameters('connectivitySubscriptionId'))))]\",\n+            \"type\": \"Microsoft.Resources/deployments\",\n+            \"apiVersion\": \"2019-10-01\",\n+            \"name\": \"[variables('deploymentNames').avnmPolicyDeploymentName]\",\n+            \"location\": \"[deployment().location]\",\n+            \"scope\": \"[variables('scopes').eslzRootManagementGroup]\",",
+        "relation": "supports",
+        "text": "Artifact github-pr-diff-1880-58a2a55a8192-013 (version 2026-10-10T23:00:40.543627Z-bc56b38eea484782) states: GitHub PR #1880 added ARM/portal code for AVNM in eslzArm/eslzArm.json:\n+            \"condition\": \"[and(parameters('deployAVNM'), or(equals(parameters('enableHub'), 'vhub'), equals(parameters('enableHub'), 'nva')), not(empty(parameters('connectivitySubscriptionId'))))]\",\n+            \"type\": \"Microsoft.Resources/deployments\",\n+            \"apiVersion\": \"2019-10-01\",\n+            \"name\": \"[variables('deploymentNames').avnmPolicyDeploymentName]\",\n+            \"location\": \"[deployment().location]\",\n+            \"scope\": \"[variables('scopes').eslzRootManagementGroup]\","
+      },
+      {
+        "citations": [
+          "Azure/Enterprise-Scale::github-pr-diff-1880-58a2a55a8192-018::2026-10-10T23:00:40.543800Z-cefcf5a2aa0190fb"
+        ],
+        "claim_id": "754e70d6df8d2a5ee9c3",
+        "decision_element_id": "C1a",
+        "material": true,
+        "quote": "GitHub PR #1880 added ARM/portal code for AVNM in eslzArm/eslzArm.json:\n+            \"condition\": \"[and(parameters('deployAVNM'), or(equals(parameters('enableHub'), 'vhub'), equals(parameters('enableHub'), 'nva')), not(empty(parameters('singlePlatformSubscriptionId'))))]\",\n+            \"type\": \"Microsoft.Resources/deployments\",\n+            \"apiVersion\": \"2019-10-01\",\n+            \"name\": \"[variables('esLiteDeploymentNames').avnmLitePolicyDeploymentName]\",\n+            \"location\": \"[deployment().location]\",\n+            \"scope\": \"[variables('scopes').eslzRootManagementGroup]\",",
+        "relation": "supports",
+        "text": "Artifact github-pr-diff-1880-58a2a55a8192-018 (version 2026-10-10T23:00:40.543800Z-cefcf5a2aa0190fb) states: GitHub PR #1880 added ARM/portal code for AVNM in eslzArm/eslzArm.json:\n+            \"condition\": \"[and(parameters('deployAVNM'), or(equals(parameters('enableHub'), 'vhub'), equals(parameters('enableHub'), 'nva')), not(empty(parameters('singlePlatformSubscriptionId'))))]\",\n+            \"type\": \"Microsoft.Resources/deployments\",\n+            \"apiVersion\": \"2019-10-01\",\n+            \"name\": \"[variables('esLiteDeploymentNames').avnmLitePolicyDeploymentName]\",\n+            \"location\": \"[deployment().location]\",\n+            \"scope\": \"[variables('scopes').eslzRootManagementGroup]\","
+      },
+      {
+        "citations": [
+          "Azure/Enterprise-Scale::github-pr-diff-1880-58a2a55a8192-018::2026-10-10T23:00:40.543800Z-cefcf5a2aa0190fb"
+        ],
+        "claim_id": "837a3e0714326e17a00a",
+        "decision_element_id": "I1c",
+        "material": true,
+        "quote": "GitHub PR #1880 added ARM/portal code for AVNM in eslzArm/eslzArm.json:\n+            \"condition\": \"[and(parameters('deployAVNM'), or(equals(parameters('enableHub'), 'vhub'), equals(parameters('enableHub'), 'nva')), not(empty(parameters('singlePlatformSubscriptionId'))))]\",\n+            \"type\": \"Microsoft.Resources/deployments\",\n+            \"apiVersion\": \"2019-10-01\",\n+            \"name\": \"[variables('esLiteDeploymentNames').avnmLitePolicyDeploymentName]\",\n+            \"location\": \"[deployment().location]\",\n+            \"scope\": \"[variables('scopes').eslzRootManagementGroup]\",",
+        "relation": "supports",
+        "text": "Artifact github-pr-diff-1880-58a2a55a8192-018 (version 2026-10-10T23:00:40.543800Z-cefcf5a2aa0190fb) states: GitHub PR #1880 added ARM/portal code for AVNM in eslzArm/eslzArm.json:\n+            \"condition\": \"[and(parameters('deployAVNM'), or(equals(parameters('enableHub'), 'vhub'), equals(parameters('enableHub'), 'nva')), not(empty(parameters('singlePlatformSubscriptionId'))))]\",\n+            \"type\": \"Microsoft.Resources/deployments\",\n+            \"apiVersion\": \"2019-10-01\",\n+            \"name\": \"[variables('esLiteDeploymentNames').avnmLitePolicyDeploymentName]\",\n+            \"location\": \"[deployment().location]\",\n+            \"scope\": \"[variables('scopes').eslzRootManagementGroup]\","
+      },
+      {
+        "citations": [
+          "Azure/Enterprise-Scale::github-pr-diff-1896-58a2a55a8192-008::2026-10-10T23:00:41.012778Z-295210a2d4ee2d31"
+        ],
+        "claim_id": "3a063e7c3b751a313d5e",
+        "decision_element_id": "C1a",
+        "material": true,
+        "quote": "GitHub PR #1896 added ARM/portal code for AVNM in eslzArm/eslzArm.json:\n+            \"condition\": \"[and(parameters('deployAVNM'), or(equals(parameters('enableHub'), 'vhub'), equals(parameters('enableHub'), 'nva')), not(empty(parameters('singlePlatformSubscriptionId'))))]\",\n+            \"type\": \"Microsoft.Resources/deployments\",\n+            \"apiVersion\": \"2019-10-01\",\n+            \"name\": \"[variables('esLiteDeploymentNames').avnmLitePolicyDeploymentName]\",\n+            \"location\": \"[deployment().location]\",\n+            \"scope\": \"[variables('scopes').eslzRootManagementGroup]\",",
+        "relation": "supports",
+        "text": "Artifact github-pr-diff-1896-58a2a55a8192-008 (version 2026-10-10T23:00:41.012778Z-295210a2d4ee2d31) states: GitHub PR #1896 added ARM/portal code for AVNM in eslzArm/eslzArm.json:\n+            \"condition\": \"[and(parameters('deployAVNM'), or(equals(parameters('enableHub'), 'vhub'), equals(parameters('enableHub'), 'nva')), not(empty(parameters('singlePlatformSubscriptionId'))))]\",\n+            \"type\": \"Microsoft.Resources/deployments\",\n+            \"apiVersion\": \"2019-10-01\",\n+            \"name\": \"[variables('esLiteDeploymentNames').avnmLitePolicyDeploymentName]\",\n+            \"location\": \"[deployment().location]\",\n+            \"scope\": \"[variables('scopes').eslzRootManagementGroup]\","
+      },
+      {
+        "citations": [
+          "Azure/Enterprise-Scale::github-pr-diff-1896-58a2a55a8192-008::2026-10-10T23:00:41.012778Z-295210a2d4ee2d31"
+        ],
+        "claim_id": "ae2c815b113432c00116",
+        "decision_element_id": "I1c",
+        "material": true,
+        "quote": "GitHub PR #1896 added ARM/portal code for AVNM in eslzArm/eslzArm.json:\n+            \"condition\": \"[and(parameters('deployAVNM'), or(equals(parameters('enableHub'), 'vhub'), equals(parameters('enableHub'), 'nva')), not(empty(parameters('singlePlatformSubscriptionId'))))]\",\n+            \"type\": \"Microsoft.Resources/deployments\",\n+            \"apiVersion\": \"2019-10-01\",\n+            \"name\": \"[variables('esLiteDeploymentNames').avnmLitePolicyDeploymentName]\",\n+            \"location\": \"[deployment().location]\",\n+            \"scope\": \"[variables('scopes').eslzRootManagementGroup]\",",
+        "relation": "supports",
+        "text": "Artifact github-pr-diff-1896-58a2a55a8192-008 (version 2026-10-10T23:00:41.012778Z-295210a2d4ee2d31) states: GitHub PR #1896 added ARM/portal code for AVNM in eslzArm/eslzArm.json:\n+            \"condition\": \"[and(parameters('deployAVNM'), or(equals(parameters('enableHub'), 'vhub'), equals(parameters('enableHub'), 'nva')), not(empty(parameters('singlePlatformSubscriptionId'))))]\",\n+            \"type\": \"Microsoft.Resources/deployments\",\n+            \"apiVersion\": \"2019-10-01\",\n+            \"name\": \"[variables('esLiteDeploymentNames').avnmLitePolicyDeploymentName]\",\n+            \"location\": \"[deployment().location]\",\n+            \"scope\": \"[variables('scopes').eslzRootManagementGroup]\","
+      }
+    ],
+    "next_action": "Collect additional verified evidence; the agent did not establish complete revalidation.",
+    "outcome_probabilities": {
+      "KEEP": 0.19999999999999998,
+      "REOPEN": 0.19999999999999998,
+      "REVALIDATE": 0.4,
+      "REVISE": 0.19999999999999998
+    },
+    "recommended_outcome": "REVALIDATE",
+    "s0_rationale_sufficiency": {
+      "has_documented_central_predecision_rationale": false,
+      "inspected_fields": [
+        "assumptions",
+        "requirements",
+        "original_evidence",
+        "quality_attributes"
+      ],
+      "note": "A code change proves neither a design rationale nor an optimal decision."
+    },
+    "stopping_reason": "initial_rationale_not_documented",
+    "unresolved_questions": [
+      "Initial S0 has no central, documented assumption, requirement, original evidence or quality attribute; implementation-only links cannot revalidate architectural rationale."
+    ],
+    "unsupported_claim_rate": 0.0,
+    "verification": {
+      "claim_count": 14,
+      "failures": [],
+      "grounding_kind": "EXTRACTIVE_AND_SEMANTICALLY_SCREENED",
+      "human_review_required": true,
+      "investigation_complete": false,
+      "status": "UNRESOLVED",
+      "unsupported_claim_rate": 0.0
+    },
+    "verified_evidence": [
+      {
+        "artifact_id": "github-pr-diff-1880-64ee2c93f8e5-001",
+        "artifact_key": "Azure/Enterprise-Scale::github-pr-diff-1880-64ee2c93f8e5-001::2026-10-10T23:00:40.538840Z-0eef41da0a809fa2",
+        "content_sha256": "0eef41da0a809fa2934fb414e6253ae70b45fc44681a92671760efdc0736a0de",
+        "decision_element_id": "I1b",
+        "decision_element_type": "implementation_scope",
+        "first_auditable_at": "2026-10-10T23:00:40.538840Z",
+        "question_id": "global",
+        "quote": "GitHub PR #1880 added ARM/portal code for AVNM in eslzArm/eslz-portal.json:\n                             \"visible\": true\n                         },\n+                        {\n+                            \"name\": \"deployAVNM\",\n+                            \"type\": \"Microsoft.Common.CheckBox\",\n+                            \"label\": \"Deploy Azure Virtual Network Manager - PREVIEW\",\n+                            \"toolTip\": \"If selected, Azure Virtual Network Manager will be deployed to manage your virtual networks. Currently, ALZ will only enable Security Admin Rules role by default\",",
+        "relation": "supports",
+        "relation_confidence": 0.72,
+        "repository": "Azure/Enterprise-Scale",
+        "semantic_check": "PATCH_SYNTAX_SCREEN_REQUIRES_HUMAN_AUDIT:ADDED_PORTAL_CHECKBOX_CONTROL",
+        "source_location": "https://github.com/Azure/Enterprise-Scale/pull/1880/files",
+        "source_type": "pull_request_diff_excerpt",
+        "timestamp": "2026-10-10T23:00:40.538840Z",
+        "verifier_status": "PASS",
+        "version_id": "2026-10-10T23:00:40.538840Z-0eef41da0a809fa2"
+      },
+      {
+        "artifact_id": "github-pull_request-1896",
+        "artifact_key": "Azure/Enterprise-Scale::github-pull_request-1896::2026-10-10T06:46:40.355361Z-d0103ca4455cef27",
+        "content_sha256": "d0103ca4455cef27536025c04ad95ff8f1a355d3e7d2c4eeb28f746a6d2ee0ab",
+        "decision_element_id": "G1",
+        "decision_element_type": "goals",
+        "first_auditable_at": "2026-10-10T06:46:40.355361Z",
+        "question_id": "global",
+        "quote": "This pull request includes several changes to the `eslzArm` templates to add support for AVNM Lite deployments and to introduce a new `dedicatedSubscription` parameter.",
+        "relation": "supports",
+        "relation_confidence": 0.6172,
+        "repository": "Azure/Enterprise-Scale",
+        "semantic_check": "EXTRACTIVE_DIRECT_SCREEN_REQUIRES_HUMAN_AUDIT",
+        "source_location": "https://github.com/Azure/Enterprise-Scale/pull/1896",
+        "source_type": "pull_request",
+        "timestamp": "2025-01-24T08:27:07Z",
+        "verifier_status": "PASS",
+        "version_id": "2026-10-10T06:46:40.355361Z-d0103ca4455cef27"
+      },
+      {
+        "artifact_id": "github-pull_request-1896",
+        "artifact_key": "Azure/Enterprise-Scale::github-pull_request-1896::2026-10-10T06:46:40.355361Z-d0103ca4455cef27",
+        "content_sha256": "d0103ca4455cef27536025c04ad95ff8f1a355d3e7d2c4eeb28f746a6d2ee0ab",
+        "decision_element_id": "C1a",
+        "decision_element_type": "constraints_dependencies",
+        "first_auditable_at": "2026-10-10T06:46:40.355361Z",
+        "question_id": "global",
+        "quote": "This pull request includes several changes to the `eslzArm` templates to add support for AVNM Lite deployments and to introduce a new `dedicatedSubscription` parameter. The most important changes include the addition of new deployment names, new deployment conditions, and the introduction of the `dedicatedSubscription` parameter.",
+        "relation": "supports",
+        "relation_confidence": 0.6144833333333334,
+        "repository": "Azure/Enterprise-Scale",
+        "semantic_check": "EXTRACTIVE_DIRECT_SCREEN_REQUIRES_HUMAN_AUDIT",
+        "source_location": "https://github.com/Azure/Enterprise-Scale/pull/1896",
+        "source_type": "pull_request",
+        "timestamp": "2025-01-24T08:27:07Z",
+        "verifier_status": "PASS",
+        "version_id": "2026-10-10T06:46:40.355361Z-d0103ca4455cef27"
+      },
+      {
+        "artifact_id": "github-pull_request-1880",
+        "artifact_key": "Azure/Enterprise-Scale::github-pull_request-1880::2026-10-10T06:46:37.202355Z-a14e7e6f5ca6d066",
+        "content_sha256": "a14e7e6f5ca6d066a3ed1ba27f7dd13fc8c29193a8ee33647e8b4e971666018d",
+        "decision_element_id": "G1",
+        "decision_element_type": "goals",
+        "first_auditable_at": "2026-10-10T06:46:37.202355Z",
+        "question_id": "global",
+        "quote": "* Introduced a new checkbox option in the `eslz-portal.json` file to deploy the Azure Virtual Network Manager (AVNM) in preview mode.",
+        "relation": "supports",
+        "relation_confidence": 0.8177833333333333,
+        "repository": "Azure/Enterprise-Scale",
+        "semantic_check": "EXTRACTIVE_DIRECT_SCREEN_REQUIRES_HUMAN_AUDIT",
+        "source_location": "https://github.com/Azure/Enterprise-Scale/pull/1880",
+        "source_type": "pull_request",
+        "timestamp": "2025-01-10T08:35:08Z",
+        "verifier_status": "PASS",
+        "version_id": "2026-10-10T06:46:37.202355Z-a14e7e6f5ca6d066"
+      },
+      {
+        "artifact_id": "github-pull_request-1880",
+        "artifact_key": "Azure/Enterprise-Scale::github-pull_request-1880::2026-10-10T06:46:37.202355Z-a14e7e6f5ca6d066",
+        "content_sha256": "a14e7e6f5ca6d066a3ed1ba27f7dd13fc8c29193a8ee33647e8b4e971666018d",
+        "decision_element_id": "I1b",
+        "decision_element_type": "implementation_scope",
+        "first_auditable_at": "2026-10-10T06:46:37.202355Z",
+        "question_id": "global",
+        "quote": "* Introduced a new checkbox option in the `eslz-portal.json` file to deploy the Azure Virtual Network Manager (AVNM) in preview mode.",
+        "relation": "supports",
+        "relation_confidence": 0.7677833333333334,
+        "repository": "Azure/Enterprise-Scale",
+        "semantic_check": "EXTRACTIVE_DIRECT_SCREEN_REQUIRES_HUMAN_AUDIT",
+        "source_location": "https://github.com/Azure/Enterprise-Scale/pull/1880",
+        "source_type": "pull_request",
+        "timestamp": "2025-01-10T08:35:08Z",
+        "verifier_status": "PASS",
+        "version_id": "2026-10-10T06:46:37.202355Z-a14e7e6f5ca6d066"
+      },
+      {
+        "artifact_id": "github-pr-diff-1880-58a2a55a8192-016",
+        "artifact_key": "Azure/Enterprise-Scale::github-pr-diff-1880-58a2a55a8192-016::2026-10-10T23:00:40.543732Z-d45f17445ea1ae11",
+        "content_sha256": "d45f17445ea1ae11b07fb027ef2b9603a762983a2bc4a91a671bbd4147dad037",
+        "decision_element_id": "C1a",
+        "decision_element_type": "constraints_dependencies",
+        "first_auditable_at": "2026-10-10T23:00:40.543732Z",
+        "question_id": "global",
+        "quote": "GitHub PR #1880 added ARM/portal code for AVNM in eslzArm/eslzArm.json:\n+                    }\n+                }\n+            }\n+        },\n+        {\n+            // Deploying AVNM Lite policy - to add virtual networks to AVNM network groups\n+            \"condition\": \"[and(parameters('deployAVNM'), or(equals(parameters('enableHub'), 'vhub'), equals(parameters('enableHub'), 'nva')), not(empty(parameters('singlePlatformSubscriptionId'))))]\",\n+            \"type\": \"Microsoft.Resources/deployments\",\n+            \"apiVersion\": \"2019-10-01\",",
+        "relation": "supports",
+        "relation_confidence": 0.72,
+        "repository": "Azure/Enterprise-Scale",
+        "semantic_check": "PATCH_SYNTAX_SCREEN_REQUIRES_HUMAN_AUDIT:ADDED_AVNM_DEPLOYMENT_GUARD",
+        "source_location": "https://github.com/Azure/Enterprise-Scale/pull/1880/files",
+        "source_type": "pull_request_diff_excerpt",
+        "timestamp": "2026-10-10T23:00:40.543732Z",
+        "verifier_status": "PASS",
+        "version_id": "2026-10-10T23:00:40.543732Z-d45f17445ea1ae11"
+      },
+      {
+        "artifact_id": "github-pr-diff-1880-58a2a55a8192-016",
+        "artifact_key": "Azure/Enterprise-Scale::github-pr-diff-1880-58a2a55a8192-016::2026-10-10T23:00:40.543732Z-d45f17445ea1ae11",
+        "content_sha256": "d45f17445ea1ae11b07fb027ef2b9603a762983a2bc4a91a671bbd4147dad037",
+        "decision_element_id": "I1c",
+        "decision_element_type": "implementation_scope",
+        "first_auditable_at": "2026-10-10T23:00:40.543732Z",
+        "question_id": "global",
+        "quote": "GitHub PR #1880 added ARM/portal code for AVNM in eslzArm/eslzArm.json:\n+                    }\n+                }\n+            }\n+        },\n+        {\n+            // Deploying AVNM Lite policy - to add virtual networks to AVNM network groups\n+            \"condition\": \"[and(parameters('deployAVNM'), or(equals(parameters('enableHub'), 'vhub'), equals(parameters('enableHub'), 'nva')), not(empty(parameters('singlePlatformSubscriptionId'))))]\",\n+            \"type\": \"Microsoft.Resources/deployments\",\n+            \"apiVersion\": \"2019-10-01\",",
+        "relation": "supports",
+        "relation_confidence": 0.72,
+        "repository": "Azure/Enterprise-Scale",
+        "semantic_check": "PATCH_SYNTAX_SCREEN_REQUIRES_HUMAN_AUDIT:ADDED_AVNM_DEPLOYMENT_GUARD",
+        "source_location": "https://github.com/Azure/Enterprise-Scale/pull/1880/files",
+        "source_type": "pull_request_diff_excerpt",
+        "timestamp": "2026-10-10T23:00:40.543732Z",
+        "verifier_status": "PASS",
+        "version_id": "2026-10-10T23:00:40.543732Z-d45f17445ea1ae11"
+      },
+      {
+        "artifact_id": "github-pr-diff-1880-58a2a55a8192-001",
+        "artifact_key": "Azure/Enterprise-Scale::github-pr-diff-1880-58a2a55a8192-001::2026-10-10T23:00:40.543143Z-e3aa3c8e72d97fc9",
+        "content_sha256": "e3aa3c8e72d97fc909d955daaa6432e2833584e268b57fb85ac5d0144bebc11e",
+        "decision_element_id": "I1a",
+        "decision_element_type": "implementation_scope",
+        "first_auditable_at": "2026-10-10T23:00:40.543143Z",
+        "question_id": "need:I1a",
+        "quote": "GitHub PR #1880 added ARM/portal code for AVNM in eslzArm/eslzArm.json:\n             \"type\": \"string\",\n             \"defaultValue\": \"[deployment().location]\"\n         },\n+        \"deployAVNM\": {\n+            \"type\": \"bool\",\n+            \"defaultValue\": false\n+        },\n         \"enableDdoS\": {\n             \"type\": \"string\",\n             \"defaultValue\": \"No\",",
+        "relation": "supports",
+        "relation_confidence": 0.72,
+        "repository": "Azure/Enterprise-Scale",
+        "semantic_check": "PATCH_SYNTAX_SCREEN_REQUIRES_HUMAN_AUDIT:ADDED_BOOLEAN_PARAMETER_DEFINITION",
+        "source_location": "https://github.com/Azure/Enterprise-Scale/pull/1880/files",
+        "source_type": "pull_request_diff_excerpt",
+        "timestamp": "2026-10-10T23:00:40.543143Z",
+        "verifier_status": "PASS",
+        "version_id": "2026-10-10T23:00:40.543143Z-e3aa3c8e72d97fc9"
+      },
+      {
+        "artifact_id": "github-pr-diff-1880-58a2a55a8192-013",
+        "artifact_key": "Azure/Enterprise-Scale::github-pr-diff-1880-58a2a55a8192-013::2026-10-10T23:00:40.543627Z-bc56b38eea484782",
+        "content_sha256": "bc56b38eea484782daa3e213f1eeac23af3175d38bad5668431aaf7830e9f8f2",
+        "decision_element_id": "C1a",
+        "decision_element_type": "constraints_dependencies",
+        "first_auditable_at": "2026-10-10T23:00:40.543627Z",
+        "question_id": "need:I1a",
+        "quote": "GitHub PR #1880 added ARM/portal code for AVNM in eslzArm/eslzArm.json:\n+            \"condition\": \"[and(parameters('deployAVNM'), or(equals(parameters('enableHub'), 'vhub'), equals(parameters('enableHub'), 'nva')), not(empty(parameters('connectivitySubscriptionId'))))]\",\n+            \"type\": \"Microsoft.Resources/deployments\",\n+            \"apiVersion\": \"2019-10-01\",\n+            \"name\": \"[variables('deploymentNames').avnmPolicyDeploymentName]\",\n+            \"location\": \"[deployment().location]\",\n+            \"scope\": \"[variables('scopes').eslzRootManagementGroup]\",",
+        "relation": "supports",
+        "relation_confidence": 0.72,
+        "repository": "Azure/Enterprise-Scale",
+        "semantic_check": "PATCH_SYNTAX_SCREEN_REQUIRES_HUMAN_AUDIT:ADDED_AVNM_DEPLOYMENT_GUARD",
+        "source_location": "https://github.com/Azure/Enterprise-Scale/pull/1880/files",
+        "source_type": "pull_request_diff_excerpt",
+        "timestamp": "2026-10-10T23:00:40.543627Z",
+        "verifier_status": "PASS",
+        "version_id": "2026-10-10T23:00:40.543627Z-bc56b38eea484782"
+      },
+      {
+        "artifact_id": "github-pr-diff-1880-58a2a55a8192-013",
+        "artifact_key": "Azure/Enterprise-Scale::github-pr-diff-1880-58a2a55a8192-013::2026-10-10T23:00:40.543627Z-bc56b38eea484782",
+        "content_sha256": "bc56b38eea484782daa3e213f1eeac23af3175d38bad5668431aaf7830e9f8f2",
+        "decision_element_id": "I1c",
+        "decision_element_type": "implementation_scope",
+        "first_auditable_at": "2026-10-10T23:00:40.543627Z",
+        "question_id": "need:I1a",
+        "quote": "GitHub PR #1880 added ARM/portal code for AVNM in eslzArm/eslzArm.json:\n+            \"condition\": \"[and(parameters('deployAVNM'), or(equals(parameters('enableHub'), 'vhub'), equals(parameters('enableHub'), 'nva')), not(empty(parameters('connectivitySubscriptionId'))))]\",\n+            \"type\": \"Microsoft.Resources/deployments\",\n+            \"apiVersion\": \"2019-10-01\",\n+            \"name\": \"[variables('deploymentNames').avnmPolicyDeploymentName]\",\n+            \"location\": \"[deployment().location]\",\n+            \"scope\": \"[variables('scopes').eslzRootManagementGroup]\",",
+        "relation": "supports",
+        "relation_confidence": 0.72,
+        "repository": "Azure/Enterprise-Scale",
+        "semantic_check": "PATCH_SYNTAX_SCREEN_REQUIRES_HUMAN_AUDIT:ADDED_AVNM_DEPLOYMENT_GUARD",
+        "source_location": "https://github.com/Azure/Enterprise-Scale/pull/1880/files",
+        "source_type": "pull_request_diff_excerpt",
+        "timestamp": "2026-10-10T23:00:40.543627Z",
+        "verifier_status": "PASS",
+        "version_id": "2026-10-10T23:00:40.543627Z-bc56b38eea484782"
+      },
+      {
+        "artifact_id": "github-pr-diff-1880-58a2a55a8192-018",
+        "artifact_key": "Azure/Enterprise-Scale::github-pr-diff-1880-58a2a55a8192-018::2026-10-10T23:00:40.543800Z-cefcf5a2aa0190fb",
+        "content_sha256": "cefcf5a2aa0190fbc318947998fbd85ab67dfb1fa7d214fca1ebf73aa74eb70f",
+        "decision_element_id": "C1a",
+        "decision_element_type": "constraints_dependencies",
+        "first_auditable_at": "2026-10-10T23:00:40.543800Z",
+        "question_id": "need:I1a",
+        "quote": "GitHub PR #1880 added ARM/portal code for AVNM in eslzArm/eslzArm.json:\n+            \"condition\": \"[and(parameters('deployAVNM'), or(equals(parameters('enableHub'), 'vhub'), equals(parameters('enableHub'), 'nva')), not(empty(parameters('singlePlatformSubscriptionId'))))]\",\n+            \"type\": \"Microsoft.Resources/deployments\",\n+            \"apiVersion\": \"2019-10-01\",\n+            \"name\": \"[variables('esLiteDeploymentNames').avnmLitePolicyDeploymentName]\",\n+            \"location\": \"[deployment().location]\",\n+            \"scope\": \"[variables('scopes').eslzRootManagementGroup]\",",
+        "relation": "supports",
+        "relation_confidence": 0.72,
+        "repository": "Azure/Enterprise-Scale",
+        "semantic_check": "PATCH_SYNTAX_SCREEN_REQUIRES_HUMAN_AUDIT:ADDED_AVNM_DEPLOYMENT_GUARD",
+        "source_location": "https://github.com/Azure/Enterprise-Scale/pull/1880/files",
+        "source_type": "pull_request_diff_excerpt",
+        "timestamp": "2026-10-10T23:00:40.543800Z",
+        "verifier_status": "PASS",
+        "version_id": "2026-10-10T23:00:40.543800Z-cefcf5a2aa0190fb"
+      },
+      {
+        "artifact_id": "github-pr-diff-1880-58a2a55a8192-018",
+        "artifact_key": "Azure/Enterprise-Scale::github-pr-diff-1880-58a2a55a8192-018::2026-10-10T23:00:40.543800Z-cefcf5a2aa0190fb",
+        "content_sha256": "cefcf5a2aa0190fbc318947998fbd85ab67dfb1fa7d214fca1ebf73aa74eb70f",
+        "decision_element_id": "I1c",
+        "decision_element_type": "implementation_scope",
+        "first_auditable_at": "2026-10-10T23:00:40.543800Z",
+        "question_id": "need:I1a",
+        "quote": "GitHub PR #1880 added ARM/portal code for AVNM in eslzArm/eslzArm.json:\n+            \"condition\": \"[and(parameters('deployAVNM'), or(equals(parameters('enableHub'), 'vhub'), equals(parameters('enableHub'), 'nva')), not(empty(parameters('singlePlatformSubscriptionId'))))]\",\n+            \"type\": \"Microsoft.Resources/deployments\",\n+            \"apiVersion\": \"2019-10-01\",\n+            \"name\": \"[variables('esLiteDeploymentNames').avnmLitePolicyDeploymentName]\",\n+            \"location\": \"[deployment().location]\",\n+            \"scope\": \"[variables('scopes').eslzRootManagementGroup]\",",
+        "relation": "supports",
+        "relation_confidence": 0.72,
+        "repository": "Azure/Enterprise-Scale",
+        "semantic_check": "PATCH_SYNTAX_SCREEN_REQUIRES_HUMAN_AUDIT:ADDED_AVNM_DEPLOYMENT_GUARD",
+        "source_location": "https://github.com/Azure/Enterprise-Scale/pull/1880/files",
+        "source_type": "pull_request_diff_excerpt",
+        "timestamp": "2026-10-10T23:00:40.543800Z",
+        "verifier_status": "PASS",
+        "version_id": "2026-10-10T23:00:40.543800Z-cefcf5a2aa0190fb"
+      },
+      {
+        "artifact_id": "github-pr-diff-1896-58a2a55a8192-008",
+        "artifact_key": "Azure/Enterprise-Scale::github-pr-diff-1896-58a2a55a8192-008::2026-10-10T23:00:41.012778Z-295210a2d4ee2d31",
+        "content_sha256": "295210a2d4ee2d319fec8e62c0db25bcb0144328449a8d40777217a5687de786",
+        "decision_element_id": "C1a",
+        "decision_element_type": "constraints_dependencies",
+        "first_auditable_at": "2026-10-10T23:00:41.012778Z",
+        "question_id": "need:I1a",
+        "quote": "GitHub PR #1896 added ARM/portal code for AVNM in eslzArm/eslzArm.json:\n+            \"condition\": \"[and(parameters('deployAVNM'), or(equals(parameters('enableHub'), 'vhub'), equals(parameters('enableHub'), 'nva')), not(empty(parameters('singlePlatformSubscriptionId'))))]\",\n+            \"type\": \"Microsoft.Resources/deployments\",\n+            \"apiVersion\": \"2019-10-01\",\n+            \"name\": \"[variables('esLiteDeploymentNames').avnmLitePolicyDeploymentName]\",\n+            \"location\": \"[deployment().location]\",\n+            \"scope\": \"[variables('scopes').eslzRootManagementGroup]\",",
+        "relation": "supports",
+        "relation_confidence": 0.72,
+        "repository": "Azure/Enterprise-Scale",
+        "semantic_check": "PATCH_SYNTAX_SCREEN_REQUIRES_HUMAN_AUDIT:ADDED_AVNM_DEPLOYMENT_GUARD",
+        "source_location": "https://github.com/Azure/Enterprise-Scale/pull/1896/files",
+        "source_type": "pull_request_diff_excerpt",
+        "timestamp": "2026-10-10T23:00:41.012778Z",
+        "verifier_status": "PASS",
+        "version_id": "2026-10-10T23:00:41.012778Z-295210a2d4ee2d31"
+      },
+      {
+        "artifact_id": "github-pr-diff-1896-58a2a55a8192-008",
+        "artifact_key": "Azure/Enterprise-Scale::github-pr-diff-1896-58a2a55a8192-008::2026-10-10T23:00:41.012778Z-295210a2d4ee2d31",
+        "content_sha256": "295210a2d4ee2d319fec8e62c0db25bcb0144328449a8d40777217a5687de786",
+        "decision_element_id": "I1c",
+        "decision_element_type": "implementation_scope",
+        "first_auditable_at": "2026-10-10T23:00:41.012778Z",
+        "question_id": "need:I1a",
+        "quote": "GitHub PR #1896 added ARM/portal code for AVNM in eslzArm/eslzArm.json:\n+            \"condition\": \"[and(parameters('deployAVNM'), or(equals(parameters('enableHub'), 'vhub'), equals(parameters('enableHub'), 'nva')), not(empty(parameters('singlePlatformSubscriptionId'))))]\",\n+            \"type\": \"Microsoft.Resources/deployments\",\n+            \"apiVersion\": \"2019-10-01\",\n+            \"name\": \"[variables('esLiteDeploymentNames').avnmLitePolicyDeploymentName]\",\n+            \"location\": \"[deployment().location]\",\n+            \"scope\": \"[variables('scopes').eslzRootManagementGroup]\",",
+        "relation": "supports",
+        "relation_confidence": 0.72,
+        "repository": "Azure/Enterprise-Scale",
+        "semantic_check": "PATCH_SYNTAX_SCREEN_REQUIRES_HUMAN_AUDIT:ADDED_AVNM_DEPLOYMENT_GUARD",
+        "source_location": "https://github.com/Azure/Enterprise-Scale/pull/1896/files",
+        "source_type": "pull_request_diff_excerpt",
+        "timestamp": "2026-10-10T23:00:41.012778Z",
+        "verifier_status": "PASS",
+        "version_id": "2026-10-10T23:00:41.012778Z-295210a2d4ee2d31"
+      }
+    ],
+    "zero_claim_report": false
+  },
+  "reviewed_proposals": {
+    "2248a79713afbcb9720c618a593ea6c8240f44adb74772997120528e85bb73a4": {
+      "accepted": true,
+      "feedback": []
+    },
+    "28b91401522330da8d4f06257c3a5024c8d8b25fa65370146e3ee4250c5aa235": {
+      "accepted": true,
+      "feedback": []
+    },
+    "3ccbf061b65f10e75a50aeba51360b5c61bee74277384621726c162ae0378217": {
+      "accepted": true,
+      "feedback": []
+    },
+    "498e8b3542ed2e80837406a13bc660a1e147308860b29fdbc2bf4a68682fa0f1": {
+      "accepted": true,
+      "feedback": []
+    },
+    "72e4a07bdc4417292d8eb45242c090c90b3fbea75d65c870c02826e1d817c2a4": {
+      "accepted": true,
+      "feedback": []
+    },
+    "807bf6e5daf8b92da280c7a47ba5feeda0b93989be7a43b1d06340ac9fad9bee": {
+      "accepted": true,
+      "feedback": []
+    },
+    "867ff95a76c5384a3bc9319c4013190d0ab637c27b15e7fb7512b473df41d550": {
+      "accepted": true,
+      "feedback": []
+    },
+    "8a6c26adc29c2f78c632ba92767c2f19e30c57428fdcd4dc46d061cfc46bbcc2": {
+      "accepted": true,
+      "feedback": []
+    },
+    "8be6093cc468ea353fd2915a10772674f4e80d2040141be23cd341905edd6c42": {
+      "accepted": true,
+      "feedback": []
+    },
+    "9a1e8357773db321f9cfea93301f9c0263457e93077f8c1980b1ed63ac1b431a": {
+      "accepted": true,
+      "feedback": []
+    },
+    "a22efa98395086644a89b6d89cdfc3bdbd300b26e3ed61af3c90c9102c425bec": {
+      "accepted": true,
+      "feedback": []
+    },
+    "b9c1e17ea9879b9d19fed9afaf54b5f0e79ef313ffbfb02f996763b22f31cbb0": {
+      "accepted": true,
+      "feedback": []
+    },
+    "efffe67905935165ee4819345817d2e02b43099c911869f3eafbd7565edd7759": {
+      "accepted": true,
+      "feedback": []
+    },
+    "f57802fa412fc50f786041117dcb7765b052c56612b189ec09595ff376af16d7": {
+      "accepted": true,
+      "feedback": []
+    }
+  },
+  "round_count": 2,
+  "run_id": "397f8a44-ca11-49d3-9e84-a01bbc33fe59",
+  "status": "AWAITING_HUMAN_REVIEW",
+  "technical_verification_failures": [],
+  "token_count": 20007,
+  "trace": [
+    {
+      "at": "2026-10-10T23:05:14.816576+00:00",
+      "cached_verifier_decisions": 0,
+      "elapsed_ms": 16.34,
+      "new_artifact_keys": [
+        "Azure/Enterprise-Scale::github-pull_request-1946::2026-10-10T06:46:42.972931Z-655f8bd93249b6e8",
+        "Azure/Enterprise-Scale::github-pr-diff-1880-64ee2c93f8e5-001::2026-10-10T23:00:40.538840Z-0eef41da0a809fa2",
+        "Azure/Enterprise-Scale::github-pull_request-1896::2026-10-10T06:46:40.355361Z-d0103ca4455cef27",
+        "Azure/Enterprise-Scale::github-pull_request-1880::2026-10-10T06:46:37.202355Z-a14e7e6f5ca6d066",
+        "Azure/Enterprise-Scale::github-pr-diff-2083-7670fd175764-001::2026-10-10T23:00:42.428231Z-fcd450088b2d82f3",
+        "Azure/Enterprise-Scale::github-pr-diff-1880-58a2a55a8192-016::2026-10-10T23:00:40.543732Z-d45f17445ea1ae11"
+      ],
+      "question": {
+        "attempt": 1,
+        "element_id": null,
+        "id": "global",
+        "interval": [
+          "2025-01-10T05:46:36Z",
+          "2026-10-10T23:00:44.429499Z"
+        ],
+        "query": "Introduce optional Azure Virtual Network Manager deployment in Azure Enterprise-Scale landing-zone ARM/portal templates Add support for deploying Azure Virtual Network Manager (AVNM) in the ESLZ deployment templates. AVNM Virtual Network Manager deployment templates support Update AVNM-related deployment conditions. AVNM deployment conditions Update AVNM-related deployment dependencies. AVNM deployment dependencies Introduce deployAVNM as an ARM deployment parameter in eslzArm.json. deployAVNM eslzArm.json AVNM parameter Expose an AVNM deployment checkbox in eslz-portal.json. AVNM checkbox eslz-portal.json deployAVNM Integrate AVNM deployment conditions in eslzArm.json. AVNM deployment conditions eslzArm.json",
+        "repository": "Azure/Enterprise-Scale"
+      },
+      "retrieved_artifact_keys": [
+        "Azure/Enterprise-Scale::github-pull_request-1946::2026-10-10T06:46:42.972931Z-655f8bd93249b6e8",
+        "Azure/Enterprise-Scale::github-pr-diff-1880-64ee2c93f8e5-001::2026-10-10T23:00:40.538840Z-0eef41da0a809fa2",
+        "Azure/Enterprise-Scale::github-pull_request-1896::2026-10-10T06:46:40.355361Z-d0103ca4455cef27",
+        "Azure/Enterprise-Scale::github-pull_request-1880::2026-10-10T06:46:37.202355Z-a14e7e6f5ca6d066",
+        "Azure/Enterprise-Scale::github-pr-diff-2083-7670fd175764-001::2026-10-10T23:00:42.428231Z-fcd450088b2d82f3",
+        "Azure/Enterprise-Scale::github-pr-diff-1880-58a2a55a8192-016::2026-10-10T23:00:40.543732Z-d45f17445ea1ae11"
+      ],
+      "reused_artifact_keys": [],
+      "round": 1,
+      "skipped_due_to_token_budget": [],
+      "unresolved_required": [
+        "need:I1a"
+      ],
+      "verification": "PASS",
+      "verified_links_added": 7,
+      "verifier_rejections": 0
+    },
+    {
+      "at": "2026-10-10T23:05:14.831505+00:00",
+      "cached_verifier_decisions": 2,
+      "elapsed_ms": 10.75,
+      "new_artifact_keys": [
+        "Azure/Enterprise-Scale::github-commit-9b3bbf2387233e70213769c3a15cd5d040a37aec::2026-10-10T06:46:48.967303Z-997a14f4c3fa0392",
+        "Azure/Enterprise-Scale::github-pr-diff-1880-58a2a55a8192-001::2026-10-10T23:00:40.543143Z-e3aa3c8e72d97fc9",
+        "Azure/Enterprise-Scale::github-pr-diff-1880-58a2a55a8192-013::2026-10-10T23:00:40.543627Z-bc56b38eea484782",
+        "Azure/Enterprise-Scale::github-pr-diff-1880-58a2a55a8192-018::2026-10-10T23:00:40.543800Z-cefcf5a2aa0190fb",
+        "Azure/Enterprise-Scale::github-pr-diff-1896-58a2a55a8192-008::2026-10-10T23:00:41.012778Z-295210a2d4ee2d31",
+        "Azure/Enterprise-Scale::github-pr-diff-1880-58a2a55a8192-002::2026-10-10T23:00:40.543206Z-04e788d939a61621"
+      ],
+      "question": {
+        "attempt": 1,
+        "element_id": "I1a",
+        "id": "need:I1a",
+        "interval": [
+          "2025-01-10T05:46:36Z",
+          "2026-10-10T23:00:44.429499Z"
+        ],
+        "query": "Introduce deployAVNM as an ARM deployment parameter in eslzArm.json. deployAVNM eslzArm.json AVNM parameter",
+        "repository": "Azure/Enterprise-Scale"
+      },
+      "retrieved_artifact_keys": [
+        "Azure/Enterprise-Scale::github-commit-9b3bbf2387233e70213769c3a15cd5d040a37aec::2026-10-10T06:46:48.967303Z-997a14f4c3fa0392",
+        "Azure/Enterprise-Scale::github-pr-diff-1880-58a2a55a8192-001::2026-10-10T23:00:40.543143Z-e3aa3c8e72d97fc9",
+        "Azure/Enterprise-Scale::github-pr-diff-1880-58a2a55a8192-013::2026-10-10T23:00:40.543627Z-bc56b38eea484782",
+        "Azure/Enterprise-Scale::github-pr-diff-1880-58a2a55a8192-018::2026-10-10T23:00:40.543800Z-cefcf5a2aa0190fb",
+        "Azure/Enterprise-Scale::github-pr-diff-1896-58a2a55a8192-008::2026-10-10T23:00:41.012778Z-295210a2d4ee2d31",
+        "Azure/Enterprise-Scale::github-pr-diff-1880-58a2a55a8192-002::2026-10-10T23:00:40.543206Z-04e788d939a61621",
+        "Azure/Enterprise-Scale::github-pull_request-1896::2026-10-10T06:46:40.355361Z-d0103ca4455cef27",
+        "Azure/Enterprise-Scale::github-pull_request-1946::2026-10-10T06:46:42.972931Z-655f8bd93249b6e8"
+      ],
+      "reused_artifact_keys": [
+        "Azure/Enterprise-Scale::github-pull_request-1896::2026-10-10T06:46:40.355361Z-d0103ca4455cef27",
+        "Azure/Enterprise-Scale::github-pull_request-1946::2026-10-10T06:46:42.972931Z-655f8bd93249b6e8"
+      ],
+      "round": 2,
+      "skipped_due_to_token_budget": [],
+      "unresolved_required": [],
+      "verification": "PASS",
+      "verified_links_added": 7,
+      "verifier_rejections": 0
+    }
+  ],
+  "verified_links": [
+    {
+      "artifact_id": "github-pr-diff-1880-64ee2c93f8e5-001",
+      "artifact_key": "Azure/Enterprise-Scale::github-pr-diff-1880-64ee2c93f8e5-001::2026-10-10T23:00:40.538840Z-0eef41da0a809fa2",
+      "content_sha256": "0eef41da0a809fa2934fb414e6253ae70b45fc44681a92671760efdc0736a0de",
+      "decision_element_id": "I1b",
+      "decision_element_type": "implementation_scope",
+      "first_auditable_at": "2026-10-10T23:00:40.538840Z",
+      "question_id": "global",
+      "quote": "GitHub PR #1880 added ARM/portal code for AVNM in eslzArm/eslz-portal.json:\n                             \"visible\": true\n                         },\n+                        {\n+                            \"name\": \"deployAVNM\",\n+                            \"type\": \"Microsoft.Common.CheckBox\",\n+                            \"label\": \"Deploy Azure Virtual Network Manager - PREVIEW\",\n+                            \"toolTip\": \"If selected, Azure Virtual Network Manager will be deployed to manage your virtual networks. Currently, ALZ will only enable Security Admin Rules role by default\",",
+      "relation": "supports",
+      "relation_confidence": 0.72,
+      "repository": "Azure/Enterprise-Scale",
+      "semantic_check": "PATCH_SYNTAX_SCREEN_REQUIRES_HUMAN_AUDIT:ADDED_PORTAL_CHECKBOX_CONTROL",
+      "source_location": "https://github.com/Azure/Enterprise-Scale/pull/1880/files",
+      "source_type": "pull_request_diff_excerpt",
+      "timestamp": "2026-10-10T23:00:40.538840Z",
+      "verifier_status": "PASS",
+      "version_id": "2026-10-10T23:00:40.538840Z-0eef41da0a809fa2"
+    },
+    {
+      "artifact_id": "github-pull_request-1896",
+      "artifact_key": "Azure/Enterprise-Scale::github-pull_request-1896::2026-10-10T06:46:40.355361Z-d0103ca4455cef27",
+      "content_sha256": "d0103ca4455cef27536025c04ad95ff8f1a355d3e7d2c4eeb28f746a6d2ee0ab",
+      "decision_element_id": "G1",
+      "decision_element_type": "goals",
+      "first_auditable_at": "2026-10-10T06:46:40.355361Z",
+      "question_id": "global",
+      "quote": "This pull request includes several changes to the `eslzArm` templates to add support for AVNM Lite deployments and to introduce a new `dedicatedSubscription` parameter.",
+      "relation": "supports",
+      "relation_confidence": 0.6172,
+      "repository": "Azure/Enterprise-Scale",
+      "semantic_check": "EXTRACTIVE_DIRECT_SCREEN_REQUIRES_HUMAN_AUDIT",
+      "source_location": "https://github.com/Azure/Enterprise-Scale/pull/1896",
+      "source_type": "pull_request",
+      "timestamp": "2025-01-24T08:27:07Z",
+      "verifier_status": "PASS",
+      "version_id": "2026-10-10T06:46:40.355361Z-d0103ca4455cef27"
+    },
+    {
+      "artifact_id": "github-pull_request-1896",
+      "artifact_key": "Azure/Enterprise-Scale::github-pull_request-1896::2026-10-10T06:46:40.355361Z-d0103ca4455cef27",
+      "content_sha256": "d0103ca4455cef27536025c04ad95ff8f1a355d3e7d2c4eeb28f746a6d2ee0ab",
+      "decision_element_id": "C1a",
+      "decision_element_type": "constraints_dependencies",
+      "first_auditable_at": "2026-10-10T06:46:40.355361Z",
+      "question_id": "global",
+      "quote": "This pull request includes several changes to the `eslzArm` templates to add support for AVNM Lite deployments and to introduce a new `dedicatedSubscription` parameter. The most important changes include the addition of new deployment names, new deployment conditions, and the introduction of the `dedicatedSubscription` parameter.",
+      "relation": "supports",
+      "relation_confidence": 0.6144833333333334,
+      "repository": "Azure/Enterprise-Scale",
+      "semantic_check": "EXTRACTIVE_DIRECT_SCREEN_REQUIRES_HUMAN_AUDIT",
+      "source_location": "https://github.com/Azure/Enterprise-Scale/pull/1896",
+      "source_type": "pull_request",
+      "timestamp": "2025-01-24T08:27:07Z",
+      "verifier_status": "PASS",
+      "version_id": "2026-10-10T06:46:40.355361Z-d0103ca4455cef27"
+    },
+    {
+      "artifact_id": "github-pull_request-1880",
+      "artifact_key": "Azure/Enterprise-Scale::github-pull_request-1880::2026-10-10T06:46:37.202355Z-a14e7e6f5ca6d066",
+      "content_sha256": "a14e7e6f5ca6d066a3ed1ba27f7dd13fc8c29193a8ee33647e8b4e971666018d",
+      "decision_element_id": "G1",
+      "decision_element_type": "goals",
+      "first_auditable_at": "2026-10-10T06:46:37.202355Z",
+      "question_id": "global",
+      "quote": "* Introduced a new checkbox option in the `eslz-portal.json` file to deploy the Azure Virtual Network Manager (AVNM) in preview mode.",
+      "relation": "supports",
+      "relation_confidence": 0.8177833333333333,
+      "repository": "Azure/Enterprise-Scale",
+      "semantic_check": "EXTRACTIVE_DIRECT_SCREEN_REQUIRES_HUMAN_AUDIT",
+      "source_location": "https://github.com/Azure/Enterprise-Scale/pull/1880",
+      "source_type": "pull_request",
+      "timestamp": "2025-01-10T08:35:08Z",
+      "verifier_status": "PASS",
+      "version_id": "2026-10-10T06:46:37.202355Z-a14e7e6f5ca6d066"
+    },
+    {
+      "artifact_id": "github-pull_request-1880",
+      "artifact_key": "Azure/Enterprise-Scale::github-pull_request-1880::2026-10-10T06:46:37.202355Z-a14e7e6f5ca6d066",
+      "content_sha256": "a14e7e6f5ca6d066a3ed1ba27f7dd13fc8c29193a8ee33647e8b4e971666018d",
+      "decision_element_id": "I1b",
+      "decision_element_type": "implementation_scope",
+      "first_auditable_at": "2026-10-10T06:46:37.202355Z",
+      "question_id": "global",
+      "quote": "* Introduced a new checkbox option in the `eslz-portal.json` file to deploy the Azure Virtual Network Manager (AVNM) in preview mode.",
+      "relation": "supports",
+      "relation_confidence": 0.7677833333333334,
+      "repository": "Azure/Enterprise-Scale",
+      "semantic_check": "EXTRACTIVE_DIRECT_SCREEN_REQUIRES_HUMAN_AUDIT",
+      "source_location": "https://github.com/Azure/Enterprise-Scale/pull/1880",
+      "source_type": "pull_request",
+      "timestamp": "2025-01-10T08:35:08Z",
+      "verifier_status": "PASS",
+      "version_id": "2026-10-10T06:46:37.202355Z-a14e7e6f5ca6d066"
+    },
+    {
+      "artifact_id": "github-pr-diff-1880-58a2a55a8192-016",
+      "artifact_key": "Azure/Enterprise-Scale::github-pr-diff-1880-58a2a55a8192-016::2026-10-10T23:00:40.543732Z-d45f17445ea1ae11",
+      "content_sha256": "d45f17445ea1ae11b07fb027ef2b9603a762983a2bc4a91a671bbd4147dad037",
+      "decision_element_id": "C1a",
+      "decision_element_type": "constraints_dependencies",
+      "first_auditable_at": "2026-10-10T23:00:40.543732Z",
+      "question_id": "global",
+      "quote": "GitHub PR #1880 added ARM/portal code for AVNM in eslzArm/eslzArm.json:\n+                    }\n+                }\n+            }\n+        },\n+        {\n+            // Deploying AVNM Lite policy - to add virtual networks to AVNM network groups\n+            \"condition\": \"[and(parameters('deployAVNM'), or(equals(parameters('enableHub'), 'vhub'), equals(parameters('enableHub'), 'nva')), not(empty(parameters('singlePlatformSubscriptionId'))))]\",\n+            \"type\": \"Microsoft.Resources/deployments\",\n+            \"apiVersion\": \"2019-10-01\",",
+      "relation": "supports",
+      "relation_confidence": 0.72,
+      "repository": "Azure/Enterprise-Scale",
+      "semantic_check": "PATCH_SYNTAX_SCREEN_REQUIRES_HUMAN_AUDIT:ADDED_AVNM_DEPLOYMENT_GUARD",
+      "source_location": "https://github.com/Azure/Enterprise-Scale/pull/1880/files",
+      "source_type": "pull_request_diff_excerpt",
+      "timestamp": "2026-10-10T23:00:40.543732Z",
+      "verifier_status": "PASS",
+      "version_id": "2026-10-10T23:00:40.543732Z-d45f17445ea1ae11"
+    },
+    {
+      "artifact_id": "github-pr-diff-1880-58a2a55a8192-016",
+      "artifact_key": "Azure/Enterprise-Scale::github-pr-diff-1880-58a2a55a8192-016::2026-10-10T23:00:40.543732Z-d45f17445ea1ae11",
+      "content_sha256": "d45f17445ea1ae11b07fb027ef2b9603a762983a2bc4a91a671bbd4147dad037",
+      "decision_element_id": "I1c",
+      "decision_element_type": "implementation_scope",
+      "first_auditable_at": "2026-10-10T23:00:40.543732Z",
+      "question_id": "global",
+      "quote": "GitHub PR #1880 added ARM/portal code for AVNM in eslzArm/eslzArm.json:\n+                    }\n+                }\n+            }\n+        },\n+        {\n+            // Deploying AVNM Lite policy - to add virtual networks to AVNM network groups\n+            \"condition\": \"[and(parameters('deployAVNM'), or(equals(parameters('enableHub'), 'vhub'), equals(parameters('enableHub'), 'nva')), not(empty(parameters('singlePlatformSubscriptionId'))))]\",\n+            \"type\": \"Microsoft.Resources/deployments\",\n+            \"apiVersion\": \"2019-10-01\",",
+      "relation": "supports",
+      "relation_confidence": 0.72,
+      "repository": "Azure/Enterprise-Scale",
+      "semantic_check": "PATCH_SYNTAX_SCREEN_REQUIRES_HUMAN_AUDIT:ADDED_AVNM_DEPLOYMENT_GUARD",
+      "source_location": "https://github.com/Azure/Enterprise-Scale/pull/1880/files",
+      "source_type": "pull_request_diff_excerpt",
+      "timestamp": "2026-10-10T23:00:40.543732Z",
+      "verifier_status": "PASS",
+      "version_id": "2026-10-10T23:00:40.543732Z-d45f17445ea1ae11"
+    },
+    {
+      "artifact_id": "github-pr-diff-1880-58a2a55a8192-001",
+      "artifact_key": "Azure/Enterprise-Scale::github-pr-diff-1880-58a2a55a8192-001::2026-10-10T23:00:40.543143Z-e3aa3c8e72d97fc9",
+      "content_sha256": "e3aa3c8e72d97fc909d955daaa6432e2833584e268b57fb85ac5d0144bebc11e",
+      "decision_element_id": "I1a",
+      "decision_element_type": "implementation_scope",
+      "first_auditable_at": "2026-10-10T23:00:40.543143Z",
+      "question_id": "need:I1a",
+      "quote": "GitHub PR #1880 added ARM/portal code for AVNM in eslzArm/eslzArm.json:\n             \"type\": \"string\",\n             \"defaultValue\": \"[deployment().location]\"\n         },\n+        \"deployAVNM\": {\n+            \"type\": \"bool\",\n+            \"defaultValue\": false\n+        },\n         \"enableDdoS\": {\n             \"type\": \"string\",\n             \"defaultValue\": \"No\",",
+      "relation": "supports",
+      "relation_confidence": 0.72,
+      "repository": "Azure/Enterprise-Scale",
+      "semantic_check": "PATCH_SYNTAX_SCREEN_REQUIRES_HUMAN_AUDIT:ADDED_BOOLEAN_PARAMETER_DEFINITION",
+      "source_location": "https://github.com/Azure/Enterprise-Scale/pull/1880/files",
+      "source_type": "pull_request_diff_excerpt",
+      "timestamp": "2026-10-10T23:00:40.543143Z",
+      "verifier_status": "PASS",
+      "version_id": "2026-10-10T23:00:40.543143Z-e3aa3c8e72d97fc9"
+    },
+    {
+      "artifact_id": "github-pr-diff-1880-58a2a55a8192-013",
+      "artifact_key": "Azure/Enterprise-Scale::github-pr-diff-1880-58a2a55a8192-013::2026-10-10T23:00:40.543627Z-bc56b38eea484782",
+      "content_sha256": "bc56b38eea484782daa3e213f1eeac23af3175d38bad5668431aaf7830e9f8f2",
+      "decision_element_id": "C1a",
+      "decision_element_type": "constraints_dependencies",
+      "first_auditable_at": "2026-10-10T23:00:40.543627Z",
+      "question_id": "need:I1a",
+      "quote": "GitHub PR #1880 added ARM/portal code for AVNM in eslzArm/eslzArm.json:\n+            \"condition\": \"[and(parameters('deployAVNM'), or(equals(parameters('enableHub'), 'vhub'), equals(parameters('enableHub'), 'nva')), not(empty(parameters('connectivitySubscriptionId'))))]\",\n+            \"type\": \"Microsoft.Resources/deployments\",\n+            \"apiVersion\": \"2019-10-01\",\n+            \"name\": \"[variables('deploymentNames').avnmPolicyDeploymentName]\",\n+            \"location\": \"[deployment().location]\",\n+            \"scope\": \"[variables('scopes').eslzRootManagementGroup]\",",
+      "relation": "supports",
+      "relation_confidence": 0.72,
+      "repository": "Azure/Enterprise-Scale",
+      "semantic_check": "PATCH_SYNTAX_SCREEN_REQUIRES_HUMAN_AUDIT:ADDED_AVNM_DEPLOYMENT_GUARD",
+      "source_location": "https://github.com/Azure/Enterprise-Scale/pull/1880/files",
+      "source_type": "pull_request_diff_excerpt",
+      "timestamp": "2026-10-10T23:00:40.543627Z",
+      "verifier_status": "PASS",
+      "version_id": "2026-10-10T23:00:40.543627Z-bc56b38eea484782"
+    },
+    {
+      "artifact_id": "github-pr-diff-1880-58a2a55a8192-013",
+      "artifact_key": "Azure/Enterprise-Scale::github-pr-diff-1880-58a2a55a8192-013::2026-10-10T23:00:40.543627Z-bc56b38eea484782",
+      "content_sha256": "bc56b38eea484782daa3e213f1eeac23af3175d38bad5668431aaf7830e9f8f2",
+      "decision_element_id": "I1c",
+      "decision_element_type": "implementation_scope",
+      "first_auditable_at": "2026-10-10T23:00:40.543627Z",
+      "question_id": "need:I1a",
+      "quote": "GitHub PR #1880 added ARM/portal code for AVNM in eslzArm/eslzArm.json:\n+            \"condition\": \"[and(parameters('deployAVNM'), or(equals(parameters('enableHub'), 'vhub'), equals(parameters('enableHub'), 'nva')), not(empty(parameters('connectivitySubscriptionId'))))]\",\n+            \"type\": \"Microsoft.Resources/deployments\",\n+            \"apiVersion\": \"2019-10-01\",\n+            \"name\": \"[variables('deploymentNames').avnmPolicyDeploymentName]\",\n+            \"location\": \"[deployment().location]\",\n+            \"scope\": \"[variables('scopes').eslzRootManagementGroup]\",",
+      "relation": "supports",
+      "relation_confidence": 0.72,
+      "repository": "Azure/Enterprise-Scale",
+      "semantic_check": "PATCH_SYNTAX_SCREEN_REQUIRES_HUMAN_AUDIT:ADDED_AVNM_DEPLOYMENT_GUARD",
+      "source_location": "https://github.com/Azure/Enterprise-Scale/pull/1880/files",
+      "source_type": "pull_request_diff_excerpt",
+      "timestamp": "2026-10-10T23:00:40.543627Z",
+      "verifier_status": "PASS",
+      "version_id": "2026-10-10T23:00:40.543627Z-bc56b38eea484782"
+    },
+    {
+      "artifact_id": "github-pr-diff-1880-58a2a55a8192-018",
+      "artifact_key": "Azure/Enterprise-Scale::github-pr-diff-1880-58a2a55a8192-018::2026-10-10T23:00:40.543800Z-cefcf5a2aa0190fb",
+      "content_sha256": "cefcf5a2aa0190fbc318947998fbd85ab67dfb1fa7d214fca1ebf73aa74eb70f",
+      "decision_element_id": "C1a",
+      "decision_element_type": "constraints_dependencies",
+      "first_auditable_at": "2026-10-10T23:00:40.543800Z",
+      "question_id": "need:I1a",
+      "quote": "GitHub PR #1880 added ARM/portal code for AVNM in eslzArm/eslzArm.json:\n+            \"condition\": \"[and(parameters('deployAVNM'), or(equals(parameters('enableHub'), 'vhub'), equals(parameters('enableHub'), 'nva')), not(empty(parameters('singlePlatformSubscriptionId'))))]\",\n+            \"type\": \"Microsoft.Resources/deployments\",\n+            \"apiVersion\": \"2019-10-01\",\n+            \"name\": \"[variables('esLiteDeploymentNames').avnmLitePolicyDeploymentName]\",\n+            \"location\": \"[deployment().location]\",\n+            \"scope\": \"[variables('scopes').eslzRootManagementGroup]\",",
+      "relation": "supports",
+      "relation_confidence": 0.72,
+      "repository": "Azure/Enterprise-Scale",
+      "semantic_check": "PATCH_SYNTAX_SCREEN_REQUIRES_HUMAN_AUDIT:ADDED_AVNM_DEPLOYMENT_GUARD",
+      "source_location": "https://github.com/Azure/Enterprise-Scale/pull/1880/files",
+      "source_type": "pull_request_diff_excerpt",
+      "timestamp": "2026-10-10T23:00:40.543800Z",
+      "verifier_status": "PASS",
+      "version_id": "2026-10-10T23:00:40.543800Z-cefcf5a2aa0190fb"
+    },
+    {
+      "artifact_id": "github-pr-diff-1880-58a2a55a8192-018",
+      "artifact_key": "Azure/Enterprise-Scale::github-pr-diff-1880-58a2a55a8192-018::2026-10-10T23:00:40.543800Z-cefcf5a2aa0190fb",
+      "content_sha256": "cefcf5a2aa0190fbc318947998fbd85ab67dfb1fa7d214fca1ebf73aa74eb70f",
+      "decision_element_id": "I1c",
+      "decision_element_type": "implementation_scope",
+      "first_auditable_at": "2026-10-10T23:00:40.543800Z",
+      "question_id": "need:I1a",
+      "quote": "GitHub PR #1880 added ARM/portal code for AVNM in eslzArm/eslzArm.json:\n+            \"condition\": \"[and(parameters('deployAVNM'), or(equals(parameters('enableHub'), 'vhub'), equals(parameters('enableHub'), 'nva')), not(empty(parameters('singlePlatformSubscriptionId'))))]\",\n+            \"type\": \"Microsoft.Resources/deployments\",\n+            \"apiVersion\": \"2019-10-01\",\n+            \"name\": \"[variables('esLiteDeploymentNames').avnmLitePolicyDeploymentName]\",\n+            \"location\": \"[deployment().location]\",\n+            \"scope\": \"[variables('scopes').eslzRootManagementGroup]\",",
+      "relation": "supports",
+      "relation_confidence": 0.72,
+      "repository": "Azure/Enterprise-Scale",
+      "semantic_check": "PATCH_SYNTAX_SCREEN_REQUIRES_HUMAN_AUDIT:ADDED_AVNM_DEPLOYMENT_GUARD",
+      "source_location": "https://github.com/Azure/Enterprise-Scale/pull/1880/files",
+      "source_type": "pull_request_diff_excerpt",
+      "timestamp": "2026-10-10T23:00:40.543800Z",
+      "verifier_status": "PASS",
+      "version_id": "2026-10-10T23:00:40.543800Z-cefcf5a2aa0190fb"
+    },
+    {
+      "artifact_id": "github-pr-diff-1896-58a2a55a8192-008",
+      "artifact_key": "Azure/Enterprise-Scale::github-pr-diff-1896-58a2a55a8192-008::2026-10-10T23:00:41.012778Z-295210a2d4ee2d31",
+      "content_sha256": "295210a2d4ee2d319fec8e62c0db25bcb0144328449a8d40777217a5687de786",
+      "decision_element_id": "C1a",
+      "decision_element_type": "constraints_dependencies",
+      "first_auditable_at": "2026-10-10T23:00:41.012778Z",
+      "question_id": "need:I1a",
+      "quote": "GitHub PR #1896 added ARM/portal code for AVNM in eslzArm/eslzArm.json:\n+            \"condition\": \"[and(parameters('deployAVNM'), or(equals(parameters('enableHub'), 'vhub'), equals(parameters('enableHub'), 'nva')), not(empty(parameters('singlePlatformSubscriptionId'))))]\",\n+            \"type\": \"Microsoft.Resources/deployments\",\n+            \"apiVersion\": \"2019-10-01\",\n+            \"name\": \"[variables('esLiteDeploymentNames').avnmLitePolicyDeploymentName]\",\n+            \"location\": \"[deployment().location]\",\n+            \"scope\": \"[variables('scopes').eslzRootManagementGroup]\",",
+      "relation": "supports",
+      "relation_confidence": 0.72,
+      "repository": "Azure/Enterprise-Scale",
+      "semantic_check": "PATCH_SYNTAX_SCREEN_REQUIRES_HUMAN_AUDIT:ADDED_AVNM_DEPLOYMENT_GUARD",
+      "source_location": "https://github.com/Azure/Enterprise-Scale/pull/1896/files",
+      "source_type": "pull_request_diff_excerpt",
+      "timestamp": "2026-10-10T23:00:41.012778Z",
+      "verifier_status": "PASS",
+      "version_id": "2026-10-10T23:00:41.012778Z-295210a2d4ee2d31"
+    },
+    {
+      "artifact_id": "github-pr-diff-1896-58a2a55a8192-008",
+      "artifact_key": "Azure/Enterprise-Scale::github-pr-diff-1896-58a2a55a8192-008::2026-10-10T23:00:41.012778Z-295210a2d4ee2d31",
+      "content_sha256": "295210a2d4ee2d319fec8e62c0db25bcb0144328449a8d40777217a5687de786",
+      "decision_element_id": "I1c",
+      "decision_element_type": "implementation_scope",
+      "first_auditable_at": "2026-10-10T23:00:41.012778Z",
+      "question_id": "need:I1a",
+      "quote": "GitHub PR #1896 added ARM/portal code for AVNM in eslzArm/eslzArm.json:\n+            \"condition\": \"[and(parameters('deployAVNM'), or(equals(parameters('enableHub'), 'vhub'), equals(parameters('enableHub'), 'nva')), not(empty(parameters('singlePlatformSubscriptionId'))))]\",\n+            \"type\": \"Microsoft.Resources/deployments\",\n+            \"apiVersion\": \"2019-10-01\",\n+            \"name\": \"[variables('esLiteDeploymentNames').avnmLitePolicyDeploymentName]\",\n+            \"location\": \"[deployment().location]\",\n+            \"scope\": \"[variables('scopes').eslzRootManagementGroup]\",",
+      "relation": "supports",
+      "relation_confidence": 0.72,
+      "repository": "Azure/Enterprise-Scale",
+      "semantic_check": "PATCH_SYNTAX_SCREEN_REQUIRES_HUMAN_AUDIT:ADDED_AVNM_DEPLOYMENT_GUARD",
+      "source_location": "https://github.com/Azure/Enterprise-Scale/pull/1896/files",
+      "source_type": "pull_request_diff_excerpt",
+      "timestamp": "2026-10-10T23:00:41.012778Z",
+      "verifier_status": "PASS",
+      "version_id": "2026-10-10T23:00:41.012778Z-295210a2d4ee2d31"
+    }
+  ],
+  "verifier_feedback": []
+}

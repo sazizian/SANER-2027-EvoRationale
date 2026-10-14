@@ -1,0 +1,62 @@
+{
+  "episode_id": "pilot-azure-eslz-avnm-1803",
+  "decision_id": "GitHub-PR-1803",
+  "decision": "Introduce optional Azure Virtual Network Manager deployment in Azure Enterprise-Scale landing-zone ARM/portal templates",
+  "repository": "Azure/Enterprise-Scale",
+  "accepted_at": "2025-01-10T05:46:36Z",
+  "cutoff_at": "2026-10-10T05:36:34Z",
+  "human_approved": false,
+  "candidate_source": "https://github.com/Azure/Enterprise-Scale/pull/1803",
+  "accepted_at_basis": "GitHub merged_at; developer merge confirms integration, but a human must review the extracted S0 rationale",
+  "research_label": "UNADJUDICATED_DRAFT_NOT_GOLD",
+  "central_element_ids": [
+    "G1",
+    "I1"
+  ],
+  "goals": [
+    {
+      "id": "G1",
+      "text": "Add support for deploying Azure Virtual Network Manager (AVNM) in the ESLZ deployment templates.",
+      "source": "https://github.com/Azure/Enterprise-Scale/pull/1803",
+      "keywords": [
+        "AVNM",
+        "Virtual Network Manager",
+        "deployment",
+        "templates",
+        "support"
+      ]
+    }
+  ],
+  "implementation_scope": [
+    {
+      "id": "I1",
+      "text": "Include deployAVNM in eslzArm.json and eslz-portal.json with portal checkbox and deployment conditions.",
+      "source": "https://github.com/Azure/Enterprise-Scale/pull/1803",
+      "keywords": [
+        "AVNM",
+        "eslzArm",
+        "eslz-portal",
+        "checkbox",
+        "parameter",
+        "deployment"
+      ]
+    }
+  ],
+  "constraints_dependencies": [
+    {
+      "id": "C1",
+      "text": "Update deployment conditions and dependencies to include AVNM.",
+      "source": "https://github.com/Azure/Enterprise-Scale/pull/1803",
+      "keywords": [
+        "AVNM",
+        "conditions",
+        "dependencies",
+        "deployment"
+      ]
+    }
+  ],
+  "requirements": [],
+  "assumptions": [],
+  "original_evidence": [],
+  "quality_attributes": []
+}

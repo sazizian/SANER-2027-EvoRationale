@@ -1,0 +1,10 @@
+{
+  "release_path": "/workspace/scratch/05efca32e040/deliverables/EvoRationale_v46_EvidenceTrace_Tested_EN.zip",
+  "sha256": "00b25c0f2c44aa7ec5eb879cfec3aacf57369c531a1061ba623356b06d3926be",
+  "archive_files": 166,
+  "python_files_identical_to_tested_archive": 105,
+  "tests_passed": 608,
+  "core_sha256": "a01d6dd7e5016c9224c0184053981eddd6621dcd3c6963edf3b391396d420d1b",
+  "archive_extract_test_status": "PASS",
+  "checksums_and_crc": "PASS"
+}

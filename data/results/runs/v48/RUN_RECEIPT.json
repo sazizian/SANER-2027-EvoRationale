@@ -1,0 +1,82 @@
+{
+  "checkpoint_relative_path": "checkpoints/201e1b3a-2e27-431c-ba03-0c9a822af43f.json",
+  "checkpoint_sha256": "172c352b361a48da48527a5bb8ea555bd4000238be6c21ec64816ba3ecc9db27",
+  "code_tree_sha256": "ab82ceb7019d8534515dd5e6ead0153b3d92bed545c6e251bc64e97d2a816853",
+  "command_without_credentials": [
+    "C:\\Users\\sazizian\\AppData\\Local\\er4venv\\Scripts\\python.exe",
+    "-m",
+    "evorationale",
+    "run",
+    "--decision",
+    "C:\\Users\\sazizian\\AppData\\Local\\ER1287Eval_v48Dev01\\inputs\\S0_RETROSPECTIVE_RUNTIME.json",
+    "--history",
+    "C:\\Users\\sazizian\\AppData\\Local\\ER1287Eval_v48Dev01\\inputs\\POST_S0_EVIDENCE_RETROSPECTIVE_53.jsonl",
+    "--output",
+    "C:\\Users\\sazizian\\AppData\\Local\\ER1287Eval_v48Dev01\\run",
+    "--mode",
+    "api",
+    "--allow-repository-text-to-api",
+    "--model",
+    "gpt-6.1-sol",
+    "--judge-model",
+    "gpt-6.1-sol",
+    "--backend",
+    "local",
+    "--memory",
+    "file",
+    "--memory-dir",
+    "C:\\Users\\sazizian\\AppData\\Local\\ER1287Eval_v48Dev01\\checkpoints",
+    "--investigation-profile",
+    "event-evidence-repair",
+    "--delta-nomination",
+    "none",
+    "--max-rounds",
+    "6",
+    "--max-queries",
+    "12",
+    "--max-reads",
+    "36",
+    "--max-input-tokens",
+    "100000"
+  ],
+  "comparison_note": "Descriptive development comparison: identical source inputs, opaque model IDs and nominal budgets as v4.6/v4.7; v4.6 semantic instructions/schema are restored with a narrow proof-routing repair and larger bounded initial output allowance. Provider-call/token accounting differs; earlier versions also used different models.",
+  "finish_utc": "2026-10-11T23:11:47.373963+00:00",
+  "investigation_profile": "event-evidence-repair",
+  "mode": "api",
+  "model": {
+    "judge": "gpt-6.1-sol",
+    "linker": "gpt-6.1-sol"
+  },
+  "model_change_note": "Linker and judge model IDs and nominal budgets are copied from the strongest measured v4.6 development run; they match the supplied v4.7 run. Nomination remains none; immutable provider model snapshots are not verified.",
+  "nominal_budgets": {
+    "max_input_tokens": 100000,
+    "max_queries": 12,
+    "max_reads": 36,
+    "max_rounds": 6
+  },
+  "nomination_mode": "none",
+  "parent_v44_models": {
+    "judge": "gpt-6-luna",
+    "linker": "gpt-6.1-sol"
+  },
+  "parent_v45_models": {
+    "judge": "gpt-6.1-sol",
+    "linker": "gpt-6.1-sol"
+  },
+  "parent_v46_models": {
+    "judge": "gpt-6.1-sol",
+    "linker": "gpt-6.1-sol"
+  },
+  "parent_v47_models": {
+    "judge": "gpt-6.1-sol",
+    "linker": "gpt-6.1-sol"
+  },
+  "policy_change_note": "v4.8 restores the v4.6 evidence-trace instructions and response schema verbatim. Only same-artifact adopted replacement proof routing is repaired; v4.7 contribution restrictions are not used in this profile. The larger bounded initial output allowance is retained. No provider phase is added. Fixed S0, frozen labels and the exact-triple scorer remain unchanged.",
+  "prep_sha256": "19b77ca65c5c42c5713c0140b72de2ccc2d77d3e8e335e66319d047ab7196cae",
+  "run_id": "201e1b3a-2e27-431c-ba03-0c9a822af43f",
+  "run_manifest_sha256": "f6637254b9d1a6e9fce267d4663443b8a0344a64d08bf56b3b5bc29e79048c35",
+  "run_report_sha256": "64bb93f460ed10f060ef440a4a27ba27f3a30b85e57e0c97b5337cefe7bcc619",
+  "start_utc": "2026-10-11T23:06:05.441608+00:00",
+  "status": "V48_DEV_HOSTED_RUN_COMPLETED_AND_HASHED",
+  "warning": "This is a development run; it is not independent held-out evaluation."
+}

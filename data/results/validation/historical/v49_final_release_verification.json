@@ -1,0 +1,13 @@
+{
+  "zip": "/workspace/scratch/05efca32e040/deliverables/EvoRationale_v49_PairReview_Experimental_Tested_EN.zip",
+  "zip_sha256": "7012422732f8eaa27c9ee73f0ae5831271d0523664cf1764ae1960d19bc71d74",
+  "bytes": 1060944,
+  "members": 225,
+  "all_member_hashes_and_crc_verified": true,
+  "shipping_python_and_config_bytes_equal_tested_root": true,
+  "shipping_cli_and_helper_help": "PASS",
+  "local_test_count": 782,
+  "source_core_sha256": "a0e1b1c0156e48d6a4bdae27a02fdfd9e0bedfbdd05bac79c2db812468937b22",
+  "new_real_api_calls": 0,
+  "hosted_v49_f1": null
+}

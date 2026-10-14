@@ -1,0 +1,150 @@
+SYNTHETIC FIXTURES ONLY; NO HOSTED ACCURACY RESULT
+v4.9 local tests and preparation only; no provider call will be made.
+........................................................................ [  9%]
+........................................................................ [ 18%]
+........................................................................ [ 27%]
+........................................................................ [ 36%]
+........................................................................ [ 46%]
+........................................................................ [ 55%]
+........................................................................ [ 64%]
+........................................................................ [ 73%]
+........................................................................ [ 82%]
+........................................................................ [ 92%]
+..............................................................           [100%]
+782 passed in 104.95s (0:01:44)
+{
+  "status": "READY_FOR_V49_DEVELOPMENT_ONLY_NO_API_CALLED",
+  "same_runtime_s0": true,
+  "same_53_artifacts": true,
+  "gold_labels_in_agent_inputs": false,
+  "investigation_profile": "event-pair-reviewed",
+  "comparison_note": "Descriptive development comparison: identical fixed S0, all 53 source artifacts and opaque model IDs as v4.6/v4.8; explicit pair classification and independent candidate verification change the architecture, call pattern and token accounting. The input budget is increased from 100000 to 400000 and provider requests are capped at 36. This is not an equal-compute comparison.",
+  "nomination_mode": "none",
+  "semantic_phase_config": {
+    "classification": "explicit_all_pairs",
+    "focused_artifacts_per_request": 3,
+    "candidate_verification": "independent",
+    "max_attempts_per_phase": 2,
+    "max_candidates_per_event": 64,
+    "initial_output_tokens": 12000,
+    "retry_output_tokens": 16384
+  },
+  "budgets": {
+    "max_input_tokens": 400000,
+    "max_queries": 12,
+    "max_reads": 36,
+    "max_rounds": 6,
+    "max_provider_requests": 36
+  },
+  "v41_code_sha256": "fixture-parent41-hash",
+  "v49_code_sha256": "a0e1b1c0156e48d6a4bdae27a02fdfd9e0bedfbdd05bac79c2db812468937b22",
+  "output": "/workspace/scratch/05efca32e040/tmp/v49_integrated_x0ihcxjp/synthetic_LOCALAPPDATA/ER1287Eval_v49Dev02"
+}
+{
+  "status": "DRY_RUN_NO_API_CALLED",
+  "model": {
+    "judge": "fixture-reused-linker",
+    "linker": "fixture-reused-linker"
+  },
+  "budgets": {
+    "max_input_tokens": 400000,
+    "max_provider_requests": 36,
+    "max_queries": 12,
+    "max_reads": 36,
+    "max_rounds": 6
+  },
+  "investigation_profile": "event-pair-reviewed",
+  "comparison_note": "Descriptive development comparison: identical fixed S0, all 53 source artifacts and opaque model IDs as v4.6/v4.8; explicit pair classification and independent candidate verification change the architecture, call pattern and token accounting. The input budget is increased from 100000 to 400000 and provider requests are capped at 36. This is not an equal-compute comparison.",
+  "nomination_mode": "none",
+  "parent_v44_models": {
+    "judge": "fixture-reused-judge",
+    "linker": "fixture-reused-linker"
+  },
+  "parent_v45_models": {
+    "judge": "fixture-reused-linker",
+    "linker": "fixture-reused-linker"
+  },
+  "parent_v46_models": {
+    "judge": "fixture-reused-linker",
+    "linker": "fixture-reused-linker"
+  },
+  "parent_v47_models": {
+    "judge": "fixture-reused-linker",
+    "linker": "fixture-reused-linker"
+  },
+  "parent_v48_models": {
+    "judge": "fixture-reused-linker",
+    "linker": "fixture-reused-linker"
+  },
+  "semantic_phase_config": {
+    "classification": "explicit_all_pairs",
+    "focused_artifacts_per_request": 3,
+    "candidate_verification": "independent",
+    "max_attempts_per_phase": 2,
+    "max_candidates_per_event": 64,
+    "initial_output_tokens": 12000,
+    "retry_output_tokens": 16384
+  },
+  "policy_change_note": "v4.9 explicitly classifies every artifact/atomic-S0 pair in focused groups of at most three artifacts, with full captured same-event context, and independently verifies proposed candidate effects. Classification and checking are separate provider phases; neither receives frozen Gold labels. Fixed S0, all 53 unlabeled input artifacts, frozen labels and the exact-triple scorer remain unchanged. No measured v4.9 accuracy is claimed by preparation or local tests.",
+  "model_change_note": "Linker and judge model IDs are copied exactly from the strongest measured v4.6 development run and match v4.8. Nomination remains none; immutable provider model snapshots are not verified.",
+  "inputs_hash_match": true,
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "-m",
+    "evorationale",
+    "run",
+    "--decision",
+    "/workspace/scratch/05efca32e040/tmp/v49_integrated_x0ihcxjp/synthetic_LOCALAPPDATA/ER1287Eval_v49Dev02/inputs/S0_RETROSPECTIVE_RUNTIME.json",
+    "--history",
+    "/workspace/scratch/05efca32e040/tmp/v49_integrated_x0ihcxjp/synthetic_LOCALAPPDATA/ER1287Eval_v49Dev02/inputs/POST_S0_EVIDENCE_RETROSPECTIVE_53.jsonl",
+    "--output",
+    "/workspace/scratch/05efca32e040/tmp/v49_integrated_x0ihcxjp/synthetic_LOCALAPPDATA/ER1287Eval_v49Dev02/run",
+    "--mode",
+    "api",
+    "--allow-repository-text-to-api",
+    "--model",
+    "fixture-reused-linker",
+    "--judge-model",
+    "fixture-reused-linker",
+    "--backend",
+    "local",
+    "--memory",
+    "file",
+    "--memory-dir",
+    "/workspace/scratch/05efca32e040/tmp/v49_integrated_x0ihcxjp/synthetic_LOCALAPPDATA/ER1287Eval_v49Dev02/checkpoints",
+    "--investigation-profile",
+    "event-pair-reviewed",
+    "--delta-nomination",
+    "none",
+    "--max-rounds",
+    "6",
+    "--max-queries",
+    "12",
+    "--max-reads",
+    "36",
+    "--max-input-tokens",
+    "400000",
+    "--max-provider-requests",
+    "36"
+  ]
+}
+{
+  "status": "V49_TESTS_AND_DRY_RUN_COMPLETED_NO_API_CALLED",
+  "code_root": "/workspace/scratch/05efca32e040/er_v49_build/EvoRationale_v49_DEV_EN",
+  "evaluation": "/workspace/scratch/05efca32e040/tmp/v49_integrated_x0ihcxjp/synthetic_LOCALAPPDATA/ER1287Eval_v49Dev02",
+  "python_executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+  "investigation_profile": "event-pair-reviewed",
+  "comparison_note": "Descriptive development comparison: identical fixed S0, all 53 source artifacts and opaque model IDs as v4.6/v4.8; explicit pair classification and independent candidate verification change the architecture, call pattern and token accounting. The input budget is increased from 100000 to 400000 and provider requests are capped at 36. This is not an equal-compute comparison.",
+  "nomination_mode": "none",
+  "semantic_phase_config": {
+    "classification": "explicit_all_pairs",
+    "focused_artifacts_per_request": 3,
+    "candidate_verification": "independent",
+    "max_attempts_per_phase": 2,
+    "max_candidates_per_event": 64,
+    "initial_output_tokens": 12000,
+    "retry_output_tokens": 16384
+  },
+  "model_change_note": "Linker and judge model IDs are copied exactly from the strongest measured v4.6 development run and match v4.8. Nomination remains none; immutable provider model snapshots are not verified.",
+  "policy_change_note": "v4.9 explicitly classifies every artifact/atomic-S0 pair in focused groups of at most three artifacts, with full captured same-event context, and independently verifies proposed candidate effects. Classification and checking are separate provider phases; neither receives frozen Gold labels. Fixed S0, all 53 unlabeled input artifacts, frozen labels and the exact-triple scorer remain unchanged. No measured v4.9 accuracy is claimed by preparation or local tests."
+}

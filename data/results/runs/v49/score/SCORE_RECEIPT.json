@@ -1,0 +1,8 @@
+{
+  "core_sha256": "a0e1b1c0156e48d6a4bdae27a02fdfd9e0bedfbdd05bac79c2db812468937b22",
+  "frozen_manifest_sha256": "2cfce69a76edea3b950394bd570d07a6cc3a1736481d1603ce4efd21344ee53c",
+  "link_errors_sha256": "6e91c70d4b77bb4ac02898ff69b61ff7815ed17d5888c0a3b394cc85b795dbe7",
+  "metrics_sha256": "c1ca19c93c09f310b434fff70bc5cbaaa724294df9baab2d73f52ad41b1e7646",
+  "run_report_sha256": "c59940bac54f4d7a66ed774443a6cc15bb5a5c43af52f91e3359a1aefb58a3bc",
+  "status": "V49_SCORE_COMMITTED"
+}

@@ -1,0 +1,24 @@
+Local tests and cached-check forecast only; no API will be called.
+.....................................                       [100%]
+37 passed, 13 subtests passed in 2.59s
+{
+  "status": "SCOPE_RECHECK_DRY_RUN_NO_API_CALLED",
+  "experiment_kind": "CACHED_V49_PRIMARY_SCOPE_RECHECK",
+  "primary_predictions": "CACHED_V49_UNCHANGED",
+  "new_primary_api_requests": 0,
+  "mock_checker_requests": 3,
+  "forecast_input_estimate": 45651,
+  "forecast_complete": true,
+  "forecast_within_input_ceiling": true,
+  "max_input_tokens": 100000,
+  "max_provider_requests": 6,
+  "cache_batches": 6,
+  "model": "gpt-6.1-sol",
+  "source_run_id": "8096127b-4cbd-4e77-a9c4-a9c2c5dc0c03",
+  "toolkit_sha256": "8a5e1f81d0fdadcf2e337a3c232ccafa73dea418482853d660ccef2d19f172ae",
+  "technical_failures": [],
+  "stopping_reason": "event_round_limit",
+  "output_created": false,
+  "hosted_accuracy_available": false,
+  "note": "All-reject local fixture forecasts request envelopes only; no F1 is measured."
+}

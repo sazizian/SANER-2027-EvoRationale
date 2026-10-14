@@ -1,0 +1,16 @@
+{
+  "frozen_manifest_sha256": "2cfce69a76edea3b950394bd570d07a6cc3a1736481d1603ce4efd21344ee53c",
+  "frozen_s0_sha256": "6557ea5d549fbc2bac280be4f46d948948dbb70673c0c1f53ff21c24c4fbde42",
+  "frozen_zip_sha256": "9fba47be59aca28c0553ec90402440037eb9cf8b0d6045e75798839fd366109b",
+  "human_identity_independently_authenticated": false,
+  "no_reference_rows_or_notes_in_model_inputs": true,
+  "reference_member_sha256": {
+    "COMMIT_SCREENING_CANDIDATE.csv": "5e165c10233b02794810eed81986f2ec795a4514d2a938f2fa25f3ca7a3c9304",
+    "EVENT_RELATIONS_CANDIDATE.csv": "e1f9b33899dd5b0977a97d912cf528aefbf3ecd8468423c8abe38c676a8c3fe6",
+    "HUNK_RELATIONS_CANDIDATE.csv": "8448a4efeca142d4410ea902b0e9f9e85958af52d745b8582a0757feb802f9ac",
+    "S0_ATOMIC_CANDIDATE.csv": "5255d9efd256f8c39004a3a476740f4d89d7a5f24d6e2907ed5fc3c1a4afdd5e"
+  },
+  "reviewer_confirmation_file_sha256": "e7be0e82eabbcbad3d1ebc5233ef1e9a4a097312f2fcbb40f942ead864652170",
+  "runtime_gold_rows_read_for_inference": false,
+  "status": "EXACT_FROZEN_REFERENCE_AND_PUBLIC_BASELINE_PINS_VERIFIED_NO_API_CALLED"
+}

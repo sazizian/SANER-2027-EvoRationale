@@ -1,0 +1,636 @@
+{
+  "catalog_kind": "ORIGINAL_EXCEL_RESOURCES_READ_ONLY_INVENTORY",
+  "file_count": 9,
+  "unique_byte_payloads": 8,
+  "workbooks": [
+    {
+      "arabic_or_persian_cells_found": 0,
+      "external_link_count": 0,
+      "formula_count": 0,
+      "original_cells_changed": false,
+      "path": "data/excel/review_workbooks/KEP1287_Candidate_Reference_Review.xlsx",
+      "sha256": "5eec09955c4d438b3797cb39070fe04b5a20ca6bcd1d55a293d21c88e28b8944",
+      "sheets": [
+        {
+          "columns": 2,
+          "declared_columns": null,
+          "declared_rows": null,
+          "formula_count": 0,
+          "name": "Read First",
+          "nonempty_cells": 20,
+          "rows": 10
+        },
+        {
+          "columns": 8,
+          "declared_columns": null,
+          "declared_rows": null,
+          "formula_count": 0,
+          "name": "S0 Atomic",
+          "nonempty_cells": 116,
+          "rows": 19
+        },
+        {
+          "columns": 7,
+          "declared_columns": null,
+          "declared_rows": null,
+          "formula_count": 0,
+          "name": "Commit Screening",
+          "nonempty_cells": 117,
+          "rows": 24
+        },
+        {
+          "columns": 7,
+          "declared_columns": null,
+          "declared_rows": null,
+          "formula_count": 0,
+          "name": "Selected Events",
+          "nonempty_cells": 31,
+          "rows": 5
+        },
+        {
+          "columns": 6,
+          "declared_columns": null,
+          "declared_rows": null,
+          "formula_count": 0,
+          "name": "Patch Hunks",
+          "nonempty_cells": 148,
+          "rows": 31
+        },
+        {
+          "columns": 3,
+          "declared_columns": null,
+          "declared_rows": null,
+          "formula_count": 0,
+          "name": "Readiness Checks",
+          "nonempty_cells": 30,
+          "rows": 10
+        }
+      ],
+      "size_bytes": 14122,
+      "source_aliases": [
+        "er_review/reference/KEP1287_PI_Attested_Consensus_Candidate_EN/KEP1287_Gold_Candidate_EN/KEP1287_Candidate_Reference_Review.xlsx",
+        "github_export_source/research/KEP1287_Consensus/KEP1287_PI_Attested_Consensus_Candidate_EN.zip!KEP1287_Gold_Candidate_EN/KEP1287_Candidate_Reference_Review.xlsx",
+        "github_export_source/research/KEP1287_PI_Attested_Consensus_Candidate_EN.zip!KEP1287_Gold_Candidate_EN/KEP1287_Candidate_Reference_Review.xlsx",
+        "er_review/reference/KEP1287_PI_Attested_Consensus_Candidate_EN.zip!KEP1287_Gold_Candidate_EN/KEP1287_Candidate_Reference_Review.xlsx"
+      ],
+      "source_role": "KEP1287_REVIEW_OR_CANDIDATE_RESOURCE_SCORING_ONLY"
+    },
+    {
+      "arabic_or_persian_cells_found": 0,
+      "external_link_count": 0,
+      "formula_count": 0,
+      "original_cells_changed": false,
+      "path": "data/excel/review_workbooks/PI_Attested_Consensus_Workbook_AS_RECEIVED.xlsx",
+      "sha256": "93190e194efc35e651efc1a1ff4fc2c107d9a117c1dff8eda56ab7ba367d188e",
+      "sheets": [
+        {
+          "columns": 4,
+          "declared_columns": null,
+          "declared_rows": null,
+          "formula_count": 0,
+          "name": "Read First",
+          "nonempty_cells": 60,
+          "rows": 15
+        },
+        {
+          "columns": 9,
+          "declared_columns": null,
+          "declared_rows": null,
+          "formula_count": 0,
+          "name": "S0 Wording",
+          "nonempty_cells": 72,
+          "rows": 8
+        },
+        {
+          "columns": 12,
+          "declared_columns": null,
+          "declared_rows": null,
+          "formula_count": 0,
+          "name": "Commit Map",
+          "nonempty_cells": 57,
+          "rows": 5
+        },
+        {
+          "columns": 11,
+          "declared_columns": null,
+          "declared_rows": null,
+          "formula_count": 0,
+          "name": "Hunk Map",
+          "nonempty_cells": 41,
+          "rows": 4
+        },
+        {
+          "columns": 12,
+          "declared_columns": null,
+          "declared_rows": null,
+          "formula_count": 0,
+          "name": "Adjudication Queue",
+          "nonempty_cells": 300,
+          "rows": 25
+        },
+        {
+          "columns": 4,
+          "declared_columns": null,
+          "declared_rows": null,
+          "formula_count": 0,
+          "name": "Provenance",
+          "nonempty_cells": 21,
+          "rows": 6
+        },
+        {
+          "columns": 4,
+          "declared_columns": null,
+          "declared_rows": null,
+          "formula_count": 0,
+          "name": "PI Attestation",
+          "nonempty_cells": 36,
+          "rows": 9
+        }
+      ],
+      "size_bytes": 24798,
+      "source_aliases": [
+        "github_export_source/research/KEP1287_Consensus/KEP1287_Consensus_PI_Attested_20261010.xlsx",
+        "er_review/reference/KEP1287_PI_Attested_Consensus_Candidate_EN/KEP1287_Gold_Candidate_EN/audit/PI_Attested_Consensus_Workbook_AS_RECEIVED.xlsx",
+        "github_export_source/research/KEP1287_Consensus/KEP1287_PI_Attested_Consensus_Candidate_EN.zip!KEP1287_Gold_Candidate_EN/audit/PI_Attested_Consensus_Workbook_AS_RECEIVED.xlsx",
+        "github_export_source/research/KEP1287_PI_Attested_Consensus_Candidate_EN.zip!KEP1287_Gold_Candidate_EN/audit/PI_Attested_Consensus_Workbook_AS_RECEIVED.xlsx",
+        "er_review/reference/KEP1287_PI_Attested_Consensus_Candidate_EN.zip!KEP1287_Gold_Candidate_EN/audit/PI_Attested_Consensus_Workbook_AS_RECEIVED.xlsx"
+      ],
+      "source_role": "KEP1287_REVIEW_OR_CANDIDATE_RESOURCE_SCORING_ONLY"
+    },
+    {
+      "arabic_or_persian_cells_found": 0,
+      "external_link_count": 0,
+      "formula_count": 0,
+      "original_cells_changed": false,
+      "path": "data/excel/review_workbooks/Reviewer_A_Consensus_Workbook_AS_RECEIVED.xlsx",
+      "sha256": "b0043dcba0b9e1b48098cf5be584af4a4bacdc3b255c9ca756c7ea4f4ec35c28",
+      "sheets": [
+        {
+          "columns": 7,
+          "declared_columns": 7,
+          "declared_rows": 19,
+          "formula_count": 0,
+          "name": "Overview",
+          "nonempty_cells": 43,
+          "rows": 19
+        },
+        {
+          "columns": 11,
+          "declared_columns": 11,
+          "declared_rows": 13,
+          "formula_count": 0,
+          "name": "S0 Decisions",
+          "nonempty_cells": 133,
+          "rows": 13
+        },
+        {
+          "columns": 12,
+          "declared_columns": 12,
+          "declared_rows": 24,
+          "formula_count": 0,
+          "name": "Commit Screening",
+          "nonempty_cells": 267,
+          "rows": 24
+        },
+        {
+          "columns": 15,
+          "declared_columns": 15,
+          "declared_rows": 5,
+          "formula_count": 0,
+          "name": "Selected Events",
+          "nonempty_cells": 75,
+          "rows": 5
+        },
+        {
+          "columns": 12,
+          "declared_columns": 12,
+          "declared_rows": 31,
+          "formula_count": 0,
+          "name": "Patch Hunks",
+          "nonempty_cells": 348,
+          "rows": 31
+        },
+        {
+          "columns": 8,
+          "declared_columns": 8,
+          "declared_rows": 25,
+          "formula_count": 0,
+          "name": "Adjudication Queue",
+          "nonempty_cells": 200,
+          "rows": 25
+        },
+        {
+          "columns": 9,
+          "declared_columns": 9,
+          "declared_rows": 2,
+          "formula_count": 0,
+          "name": "Source Integrity",
+          "nonempty_cells": 18,
+          "rows": 2
+        }
+      ],
+      "size_bytes": 30438,
+      "source_aliases": [
+        "er_review/reference/KEP1287_PI_Attested_Consensus_Candidate_EN/KEP1287_Gold_Candidate_EN/audit/Reviewer_A_Consensus_Workbook_AS_RECEIVED.xlsx",
+        "github_export_source/research/KEP1287_Consensus/KEP1287_PI_Attested_Consensus_Candidate_EN.zip!KEP1287_Gold_Candidate_EN/audit/Reviewer_A_Consensus_Workbook_AS_RECEIVED.xlsx",
+        "github_export_source/research/KEP1287_PI_Attested_Consensus_Candidate_EN.zip!KEP1287_Gold_Candidate_EN/audit/Reviewer_A_Consensus_Workbook_AS_RECEIVED.xlsx",
+        "er_review/reference/KEP1287_PI_Attested_Consensus_Candidate_EN.zip!KEP1287_Gold_Candidate_EN/audit/Reviewer_A_Consensus_Workbook_AS_RECEIVED.xlsx"
+      ],
+      "source_role": "KEP1287_REVIEW_OR_CANDIDATE_RESOURCE_SCORING_ONLY"
+    },
+    {
+      "arabic_or_persian_cells_found": 0,
+      "external_link_count": 0,
+      "formula_count": 0,
+      "original_cells_changed": false,
+      "path": "data/excel/review_workbooks/Reviewer_B_Consensus_Workbook_AS_RECEIVED.xlsx",
+      "sha256": "a52a053dac3dbaa935c47050be6d320a5a09f28c119f70c758a3b3f2c8168d62",
+      "sheets": [
+        {
+          "columns": 7,
+          "declared_columns": 7,
+          "declared_rows": 19,
+          "formula_count": 0,
+          "name": "Overview",
+          "nonempty_cells": 43,
+          "rows": 19
+        },
+        {
+          "columns": 11,
+          "declared_columns": 11,
+          "declared_rows": 13,
+          "formula_count": 0,
+          "name": "S0 Decisions",
+          "nonempty_cells": 133,
+          "rows": 13
+        },
+        {
+          "columns": 12,
+          "declared_columns": 12,
+          "declared_rows": 24,
+          "formula_count": 0,
+          "name": "Commit Screening",
+          "nonempty_cells": 267,
+          "rows": 24
+        },
+        {
+          "columns": 15,
+          "declared_columns": 15,
+          "declared_rows": 5,
+          "formula_count": 0,
+          "name": "Selected Events",
+          "nonempty_cells": 75,
+          "rows": 5
+        },
+        {
+          "columns": 12,
+          "declared_columns": 12,
+          "declared_rows": 31,
+          "formula_count": 0,
+          "name": "Patch Hunks",
+          "nonempty_cells": 348,
+          "rows": 31
+        },
+        {
+          "columns": 8,
+          "declared_columns": 8,
+          "declared_rows": 25,
+          "formula_count": 0,
+          "name": "Adjudication Queue",
+          "nonempty_cells": 200,
+          "rows": 25
+        },
+        {
+          "columns": 8,
+          "declared_columns": 8,
+          "declared_rows": 2,
+          "formula_count": 0,
+          "name": "Source Integrity",
+          "nonempty_cells": 16,
+          "rows": 2
+        }
+      ],
+      "size_bytes": 30878,
+      "source_aliases": [
+        "er_review/reference/KEP1287_PI_Attested_Consensus_Candidate_EN/KEP1287_Gold_Candidate_EN/audit/Reviewer_B_Consensus_Workbook_AS_RECEIVED.xlsx",
+        "github_export_source/research/KEP1287_Consensus/KEP1287_PI_Attested_Consensus_Candidate_EN.zip!KEP1287_Gold_Candidate_EN/audit/Reviewer_B_Consensus_Workbook_AS_RECEIVED.xlsx",
+        "github_export_source/research/KEP1287_PI_Attested_Consensus_Candidate_EN.zip!KEP1287_Gold_Candidate_EN/audit/Reviewer_B_Consensus_Workbook_AS_RECEIVED.xlsx",
+        "er_review/reference/KEP1287_PI_Attested_Consensus_Candidate_EN.zip!KEP1287_Gold_Candidate_EN/audit/Reviewer_B_Consensus_Workbook_AS_RECEIVED.xlsx"
+      ],
+      "source_role": "KEP1287_REVIEW_OR_CANDIDATE_RESOURCE_SCORING_ONLY"
+    },
+    {
+      "arabic_or_persian_cells_found": 0,
+      "external_link_count": 0,
+      "formula_count": 0,
+      "original_cells_changed": false,
+      "path": "data/excel/source_pilot_workbooks/reviewer_1_source_pilot_as_received.xlsx",
+      "sha256": "9f866f06e3bb6431eb6ba990cd8c9772b2c641fe523b89d95c7caeeb199023eb",
+      "sheets": [
+        {
+          "columns": 9,
+          "declared_columns": 9,
+          "declared_rows": 67,
+          "formula_count": 0,
+          "name": "SourceLog",
+          "nonempty_cells": 303,
+          "rows": 67
+        },
+        {
+          "columns": 11,
+          "declared_columns": 11,
+          "declared_rows": 339,
+          "formula_count": 0,
+          "name": "Concerns",
+          "nonempty_cells": 1622,
+          "rows": 339
+        },
+        {
+          "columns": 11,
+          "declared_columns": 11,
+          "declared_rows": 2,
+          "formula_count": 0,
+          "name": "Disclosure",
+          "nonempty_cells": 19,
+          "rows": 2
+        }
+      ],
+      "size_bytes": 45898,
+      "source_aliases": [
+        "github_export_source/research/RationalePath_ABC_Evidence_Checkpoint.zip!RationalePath_ABC_Evidence_Checkpoint/originals_unchanged/reviewer_1_source_pilot_as_received.xlsx"
+      ],
+      "source_role": "OTHER_UPLOADED_SOURCE_PILOT_RESOURCE_NOT_KEP1287_GOLD"
+    },
+    {
+      "arabic_or_persian_cells_found": 0,
+      "external_link_count": 0,
+      "formula_count": 0,
+      "original_cells_changed": false,
+      "path": "data/excel/source_pilot_workbooks/reviewer_2_source_pilot_as_received.xlsx",
+      "sha256": "6df89efbea38ff98ea0d20ec083cb1a1d4ba0a3e8993ac32c2800858e1bdd930",
+      "sheets": [
+        {
+          "columns": 9,
+          "declared_columns": 9,
+          "declared_rows": 67,
+          "formula_count": 0,
+          "name": "SourceLog",
+          "nonempty_cells": 303,
+          "rows": 67
+        },
+        {
+          "columns": 11,
+          "declared_columns": 11,
+          "declared_rows": 337,
+          "formula_count": 0,
+          "name": "Concerns",
+          "nonempty_cells": 1600,
+          "rows": 337
+        },
+        {
+          "columns": 11,
+          "declared_columns": 11,
+          "declared_rows": 2,
+          "formula_count": 0,
+          "name": "Disclosure",
+          "nonempty_cells": 14,
+          "rows": 2
+        }
+      ],
+      "size_bytes": 42515,
+      "source_aliases": [
+        "github_export_source/research/RationalePath_ABC_Evidence_Checkpoint.zip!RationalePath_ABC_Evidence_Checkpoint/originals_unchanged/reviewer_2_source_pilot_as_received.xlsx"
+      ],
+      "source_role": "OTHER_UPLOADED_SOURCE_PILOT_RESOURCE_NOT_KEP1287_GOLD"
+    },
+    {
+      "arabic_or_persian_cells_found": 0,
+      "external_link_count": 0,
+      "formula_count": 0,
+      "original_cells_changed": false,
+      "path": "data/excel/supplied_workbooks/KEP1287_A_B_Consensus_Reconciliation_B01-Result.xlsx",
+      "sha256": "a459bd54ddcd8caa9cfd0c92686b5199a88dff85efb8b4fbd38595016be154dc",
+      "sheets": [
+        {
+          "columns": 4,
+          "declared_columns": 4,
+          "declared_rows": 15,
+          "formula_count": 0,
+          "name": "Read First",
+          "nonempty_cells": 60,
+          "rows": 15
+        },
+        {
+          "columns": 9,
+          "declared_columns": 9,
+          "declared_rows": 8,
+          "formula_count": 0,
+          "name": "S0 Wording",
+          "nonempty_cells": 72,
+          "rows": 8
+        },
+        {
+          "columns": 12,
+          "declared_columns": 12,
+          "declared_rows": 5,
+          "formula_count": 0,
+          "name": "Commit Map",
+          "nonempty_cells": 57,
+          "rows": 5
+        },
+        {
+          "columns": 11,
+          "declared_columns": 11,
+          "declared_rows": 4,
+          "formula_count": 0,
+          "name": "Hunk Map",
+          "nonempty_cells": 41,
+          "rows": 4
+        },
+        {
+          "columns": 12,
+          "declared_columns": 12,
+          "declared_rows": 25,
+          "formula_count": 0,
+          "name": "Adjudication Queue",
+          "nonempty_cells": 300,
+          "rows": 25
+        },
+        {
+          "columns": 4,
+          "declared_columns": 4,
+          "declared_rows": 6,
+          "formula_count": 0,
+          "name": "Provenance",
+          "nonempty_cells": 21,
+          "rows": 6
+        }
+      ],
+      "size_bytes": 23365,
+      "source_aliases": [
+        "github_export_source/research/KEP1287_Consensus/KEP1287_A_B_Consensus_Reconciliation_B01-Result.xlsx"
+      ],
+      "source_role": "KEP1287_REVIEW_OR_CANDIDATE_RESOURCE_SCORING_ONLY"
+    },
+    {
+      "arabic_or_persian_cells_found": 0,
+      "external_link_count": 0,
+      "formula_count": 0,
+      "original_cells_changed": false,
+      "path": "data/excel/supplied_workbooks/KEP1287_Consensus_PI_Attested_20261010.xlsx",
+      "sha256": "93190e194efc35e651efc1a1ff4fc2c107d9a117c1dff8eda56ab7ba367d188e",
+      "sheets": [
+        {
+          "columns": 4,
+          "declared_columns": null,
+          "declared_rows": null,
+          "formula_count": 0,
+          "name": "Read First",
+          "nonempty_cells": 60,
+          "rows": 15
+        },
+        {
+          "columns": 9,
+          "declared_columns": null,
+          "declared_rows": null,
+          "formula_count": 0,
+          "name": "S0 Wording",
+          "nonempty_cells": 72,
+          "rows": 8
+        },
+        {
+          "columns": 12,
+          "declared_columns": null,
+          "declared_rows": null,
+          "formula_count": 0,
+          "name": "Commit Map",
+          "nonempty_cells": 57,
+          "rows": 5
+        },
+        {
+          "columns": 11,
+          "declared_columns": null,
+          "declared_rows": null,
+          "formula_count": 0,
+          "name": "Hunk Map",
+          "nonempty_cells": 41,
+          "rows": 4
+        },
+        {
+          "columns": 12,
+          "declared_columns": null,
+          "declared_rows": null,
+          "formula_count": 0,
+          "name": "Adjudication Queue",
+          "nonempty_cells": 300,
+          "rows": 25
+        },
+        {
+          "columns": 4,
+          "declared_columns": null,
+          "declared_rows": null,
+          "formula_count": 0,
+          "name": "Provenance",
+          "nonempty_cells": 21,
+          "rows": 6
+        },
+        {
+          "columns": 4,
+          "declared_columns": null,
+          "declared_rows": null,
+          "formula_count": 0,
+          "name": "PI Attestation",
+          "nonempty_cells": 36,
+          "rows": 9
+        }
+      ],
+      "size_bytes": 24798,
+      "source_aliases": [
+        "github_export_source/research/KEP1287_Consensus/KEP1287_Consensus_PI_Attested_20261010.xlsx",
+        "er_review/reference/KEP1287_PI_Attested_Consensus_Candidate_EN/KEP1287_Gold_Candidate_EN/audit/PI_Attested_Consensus_Workbook_AS_RECEIVED.xlsx",
+        "github_export_source/research/KEP1287_Consensus/KEP1287_PI_Attested_Consensus_Candidate_EN.zip!KEP1287_Gold_Candidate_EN/audit/PI_Attested_Consensus_Workbook_AS_RECEIVED.xlsx",
+        "github_export_source/research/KEP1287_PI_Attested_Consensus_Candidate_EN.zip!KEP1287_Gold_Candidate_EN/audit/PI_Attested_Consensus_Workbook_AS_RECEIVED.xlsx",
+        "er_review/reference/KEP1287_PI_Attested_Consensus_Candidate_EN.zip!KEP1287_Gold_Candidate_EN/audit/PI_Attested_Consensus_Workbook_AS_RECEIVED.xlsx"
+      ],
+      "source_role": "KEP1287_REVIEW_OR_CANDIDATE_RESOURCE_SCORING_ONLY"
+    },
+    {
+      "arabic_or_persian_cells_found": 0,
+      "external_link_count": 0,
+      "formula_count": 0,
+      "original_cells_changed": false,
+      "path": "data/excel/supplied_workbooks/KEP1287_Reviewer_Consensus_Workbook.xlsx",
+      "sha256": "745fd742379d1c7fba5017455f03cfef3de31d19a7a11c3e56e1e0120f474bed",
+      "sheets": [
+        {
+          "columns": 7,
+          "declared_columns": null,
+          "declared_rows": null,
+          "formula_count": 0,
+          "name": "Overview",
+          "nonempty_cells": 43,
+          "rows": 19
+        },
+        {
+          "columns": 11,
+          "declared_columns": null,
+          "declared_rows": null,
+          "formula_count": 0,
+          "name": "S0 Decisions",
+          "nonempty_cells": 97,
+          "rows": 13
+        },
+        {
+          "columns": 12,
+          "declared_columns": null,
+          "declared_rows": null,
+          "formula_count": 0,
+          "name": "Commit Screening",
+          "nonempty_cells": 205,
+          "rows": 24
+        },
+        {
+          "columns": 15,
+          "declared_columns": null,
+          "declared_rows": null,
+          "formula_count": 0,
+          "name": "Selected Events",
+          "nonempty_cells": 59,
+          "rows": 5
+        },
+        {
+          "columns": 12,
+          "declared_columns": null,
+          "declared_rows": null,
+          "formula_count": 0,
+          "name": "Patch Hunks",
+          "nonempty_cells": 266,
+          "rows": 31
+        },
+        {
+          "columns": 8,
+          "declared_columns": null,
+          "declared_rows": null,
+          "formula_count": 0,
+          "name": "Adjudication Queue",
+          "nonempty_cells": 176,
+          "rows": 25
+        },
+        {
+          "columns": 8,
+          "declared_columns": null,
+          "declared_rows": null,
+          "formula_count": 0,
+          "name": "Source Integrity",
+          "nonempty_cells": 16,
+          "rows": 2
+        }
+      ],
+      "size_bytes": 19218,
+      "source_aliases": [
+        "github_export_source/research/KEP1287_Consensus/KEP1287_Reviewer_Consensus_Workbook.xlsx"
+      ],
+      "source_role": "KEP1287_REVIEW_OR_CANDIDATE_RESOURCE_SCORING_ONLY"
+    }
+  ]
+}

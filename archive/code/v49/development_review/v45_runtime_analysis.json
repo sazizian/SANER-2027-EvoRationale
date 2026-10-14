@@ -1,0 +1,347 @@
+{
+  "run_id": "e98cc3a9-fe80-4db8-99d9-cc23a64c115f",
+  "integrity": {
+    "bundle_members_verified": 9,
+    "receipt_links_verified": true,
+    "checkpoint_report_and_state_match": true,
+    "source_artifact_digests_verified": 53,
+    "core_code_sha256": "e53412024165759b0dec7c6e45556f6857fca39674faf119acf1290f512f5afd",
+    "matches_local_v45_source": true,
+    "previous_results_and_frozen_gold_not_in_bundle": "Only current bundle and available v44 report bytes independently checked; frozen references and earlier receipt/manifest files not supplied."
+  },
+  "budget_usage": {
+    "accounting": "REQUEST_ENVELOPE_ESTIMATE_INCLUDING_RETRIES_NOT_BILLING",
+    "estimated_input_tokens": 49053,
+    "max_output_tokens_per_request": 16384,
+    "provider_reported_input_tokens": 36491,
+    "provider_reported_output_tokens": 8520,
+    "provider_requests_reserved": 6,
+    "provider_responses_received": 6,
+    "queries": 6,
+    "requests": [
+      {
+        "estimated_input_tokens": 14125,
+        "max_output_tokens": 10200,
+        "model": "gpt-6.1-sol",
+        "provider_input_tokens": 11151,
+        "provider_output_tokens": 4448,
+        "provider_total_tokens": 15599,
+        "response_received": true
+      },
+      {
+        "estimated_input_tokens": 10506,
+        "max_output_tokens": 5400,
+        "model": "gpt-6.1-sol",
+        "provider_input_tokens": 8302,
+        "provider_output_tokens": 1131,
+        "provider_total_tokens": 9433,
+        "response_received": true
+      },
+      {
+        "estimated_input_tokens": 8678,
+        "max_output_tokens": 4800,
+        "model": "gpt-6.1-sol",
+        "provider_input_tokens": 6670,
+        "provider_output_tokens": 1585,
+        "provider_total_tokens": 8255,
+        "response_received": true
+      },
+      {
+        "estimated_input_tokens": 5101,
+        "max_output_tokens": 4096,
+        "model": "gpt-6.1-sol",
+        "provider_input_tokens": 3252,
+        "provider_output_tokens": 558,
+        "provider_total_tokens": 3810,
+        "response_received": true
+      },
+      {
+        "estimated_input_tokens": 5311,
+        "max_output_tokens": 4096,
+        "model": "gpt-6.1-sol",
+        "provider_input_tokens": 3541,
+        "provider_output_tokens": 461,
+        "provider_total_tokens": 4002,
+        "response_received": true
+      },
+      {
+        "estimated_input_tokens": 5332,
+        "max_output_tokens": 4096,
+        "model": "gpt-6.1-sol",
+        "provider_input_tokens": 3575,
+        "provider_output_tokens": 337,
+        "provider_total_tokens": 3912,
+        "response_received": true
+      }
+    ],
+    "responses_with_reported_usage": 6,
+    "rounds": 6,
+    "unique_artifact_reads": 30
+  },
+  "run_elapsed_seconds": 159.973895,
+  "coverage": {
+    "eligible": 53,
+    "source_type_counts": {
+      "git_commit_metadata": 23,
+      "git_commit_diff_hunk": 30
+    },
+    "selected_versions": 36,
+    "reads": 30,
+    "semantic_reviews": 30,
+    "review_status_counts": {
+      "no_material_relation": 26,
+      "relation_found": 4
+    },
+    "all_reviewed_elements_per_artifact": [
+      18
+    ],
+    "context_complete": true,
+    "citation_gap_ids": [
+      "68952e4476e4-F01-H05",
+      "079aa5fb9ab1-F01-H05"
+    ],
+    "not_semantically_reviewed_ids": [
+      "kep1287-commit-04de3dac4669f4b2f792c17488c680ce4b144679",
+      "kep1287-commit-079aa5fb9ab1a66f09f1d0c841025f7451474265",
+      "kep1287-commit-1a4fefb34f1b420342acaef12fa53493ef66d03c",
+      "kep1287-commit-453b7fe01b591860fb8ab5f1effad8a1d67932c6",
+      "kep1287-commit-5388d74bfe6bd321ddb0584d2d993c2f82a8795d",
+      "kep1287-commit-59e0e46649aa623160ad2cdc00e221794e51d1e8",
+      "kep1287-commit-60c5d7995204cb5d5f4fb957fe0770a6e0e2dfdd",
+      "kep1287-commit-68952e4476e47eb71321a2c7f92844e602d38d22",
+      "kep1287-commit-7aee63a5e6f2a79499f4ba74bc032c0ae95a79ad",
+      "kep1287-commit-8a67b0703ea080a051a2569f577bccc3641b7954",
+      "kep1287-commit-8e48db13e95c5d174de95dd864f8c5d1beec3fc5",
+      "kep1287-commit-964260d9c2da8f75423771fffd9989077d4d92aa",
+      "kep1287-commit-9c2404dcfe491c7ce9917124a34a4ae5fd346969",
+      "kep1287-commit-a093b5b260a5016a5c6feb4407728fa1d1ee7dfd",
+      "kep1287-commit-a505a5a279973f011e02292fa858162097b69f51",
+      "kep1287-commit-ad13b95eae3dd61b2b82788d36fe392e039621be",
+      "kep1287-commit-ad43d22c5b32b2f85ac47ab4a9f04ef6690f2f02",
+      "kep1287-commit-be6445f8b7a20792aeb9da1f10f8bdb2c79e8194",
+      "kep1287-commit-d774b5cf414b6a13fd53064d157f2b535f25e430",
+      "kep1287-commit-d7b996fdccf555de7d5f951ee536041dd0d20305",
+      "kep1287-commit-da2e849176023b48579bca748ebc4124385e6b05",
+      "kep1287-commit-e53dcc52b8f0de6988e1dc34e2d6063be053e695",
+      "kep1287-commit-ff92a6e55373625ff15d5a46f3f163a3b1a493f4"
+    ],
+    "all_scored_fn_sources_reviewed": true
+  },
+  "failure_counts": {
+    "technical": 0,
+    "semantic_gate_rejections": 0,
+    "verifier_feedback": 0,
+    "recorded_repair_attempts": 0,
+    "provider_requests": 6,
+    "responses": 6,
+    "structured_batch_successes": 6,
+    "raw_provider_completion_statuses_available": false
+  },
+  "effects": {
+    "generated": 4,
+    "accepted": 4,
+    "target_relation_counts": {
+      "I1 supersedes": 4
+    },
+    "all_partial_scope": true
+  },
+  "unresolved_reason": {
+    "stopping_reason": "event_round_limit",
+    "required_unresolved_element_ids": [
+      "G1",
+      "R1",
+      "A1",
+      "Q1",
+      "I2"
+    ],
+    "original_evidence_empty": true,
+    "coverage_has_metadata_unreviewed": true,
+    "citation_coverage_gaps": [
+      "68952e4476e4-F01-H05",
+      "079aa5fb9ab1-F01-H05"
+    ]
+  },
+  "all_scope_fn_trace": [
+    {
+      "scope": "all",
+      "verdict": "FN",
+      "hunk_id": "04de3dac4669-F01-H01",
+      "atomic_s0_id": "I2",
+      "relation": "supersedes",
+      "reference_hunk_relation": "SUPERSEDES",
+      "temporal_basis": "INTERIM_2024",
+      "review_status": "no_material_relation",
+      "review_reason": "A0001:P0001 changes ResizePolicy from append-only (A0001:L0005–L0006) to mutable, while retaining append as the strictly necessary capability and qualifying full mutability as subject to reevaluation (A0001:L0007–L0009). I2 requires per-resource restart-policy choices but does not prescribe whether those choices are append-only or mutable; this change therefore does not replace or materially alter the fixed target claim. I1 concerns mutable desired resource values and allocated/applied resource reporting, not mutation of ResizePolicy. The retained restart behavior is unchanged context, not fresh evidence. No material effect on any other fixed-S0 element is established by this local change.",
+      "citation_coverage_complete": true
+    },
+    {
+      "scope": "all",
+      "verdict": "FN",
+      "hunk_id": "079aa5fb9ab1-F01-H02",
+      "atomic_s0_id": "I2",
+      "relation": "supersedes",
+      "reference_hunk_relation": "SUPERSEDES",
+      "temporal_basis": "INTERIM_2024",
+      "review_status": "no_material_relation",
+      "review_reason": "The change replaces mutable ResizePolicy entries with append-only entries, permitting additions for newly present resources. I2 requires per-resource restart-policy choices, but does not require subsequent modification of existing choices or an entry for every resource. The changed mutability rule therefore does not replace or retire a fixed-S0 claim. The passage also does not change the mutability of desired resource fields asserted by I1.",
+      "citation_coverage_complete": true
+    },
+    {
+      "scope": "all",
+      "verdict": "FN",
+      "hunk_id": "079aa5fb9ab1-F01-H05",
+      "atomic_s0_id": "C1",
+      "relation": "supports",
+      "reference_hunk_relation": "SUPPORTS",
+      "temporal_basis": "INTERIM_2024",
+      "review_status": "no_material_relation",
+      "review_reason": "The additions are future-enhancement design sketches, not adopted controller-resize or explicit-QoS mechanisms. The controller policy discussion does not newly operationalise G2 or I2, and it provides no explicit rationale for their exact qualified obligations. The mixed-QoS replica example documents a prospective workload-resize complication, but its suggested mitigation preserves recreation when changing QoS class; it neither supersedes C2a nor establishes a reduction in the feasibility of the qualified fixed-S0 in-place-resize goal. Removing a future-work item about updating limits does not retire G1's existing CPU/memory request-and-limit goal. No material effect on the remaining fixed elements is established.",
+      "citation_coverage_complete": false
+    },
+    {
+      "scope": "all",
+      "verdict": "FN",
+      "hunk_id": "079aa5fb9ab1-F01-H05",
+      "atomic_s0_id": "C2a",
+      "relation": "supports",
+      "reference_hunk_relation": "SUPPORTS",
+      "temporal_basis": "INTERIM_2024",
+      "review_status": "no_material_relation",
+      "review_reason": "The additions are future-enhancement design sketches, not adopted controller-resize or explicit-QoS mechanisms. The controller policy discussion does not newly operationalise G2 or I2, and it provides no explicit rationale for their exact qualified obligations. The mixed-QoS replica example documents a prospective workload-resize complication, but its suggested mitigation preserves recreation when changing QoS class; it neither supersedes C2a nor establishes a reduction in the feasibility of the qualified fixed-S0 in-place-resize goal. Removing a future-work item about updating limits does not retire G1's existing CPU/memory request-and-limit goal. No material effect on the remaining fixed elements is established.",
+      "citation_coverage_complete": false
+    },
+    {
+      "scope": "all",
+      "verdict": "FN",
+      "hunk_id": "079aa5fb9ab1-F01-H05",
+      "atomic_s0_id": "G2",
+      "relation": "supports",
+      "reference_hunk_relation": "SUPPORTS",
+      "temporal_basis": "INTERIM_2024",
+      "review_status": "no_material_relation",
+      "review_reason": "The additions are future-enhancement design sketches, not adopted controller-resize or explicit-QoS mechanisms. The controller policy discussion does not newly operationalise G2 or I2, and it provides no explicit rationale for their exact qualified obligations. The mixed-QoS replica example documents a prospective workload-resize complication, but its suggested mitigation preserves recreation when changing QoS class; it neither supersedes C2a nor establishes a reduction in the feasibility of the qualified fixed-S0 in-place-resize goal. Removing a future-work item about updating limits does not retire G1's existing CPU/memory request-and-limit goal. No material effect on the remaining fixed elements is established.",
+      "citation_coverage_complete": false
+    },
+    {
+      "scope": "all",
+      "verdict": "FN",
+      "hunk_id": "68952e4476e4-F01-H01",
+      "atomic_s0_id": "I3",
+      "relation": "supports",
+      "reference_hunk_relation": "SUPPORTS",
+      "temporal_basis": "BASELINE_2023",
+      "review_status": "no_material_relation",
+      "review_reason": "The added instrumentation counts Pod-level resize requests and transitions of an existing resize-status model. It provides aggregate monitoring, not a newly adopted model of resize progress (I3), per-container explanations and Events (R2), or a new distinction between desired, allocated, and applied resources (R1). The completion equality references those existing resource representations without changing or independently validating them. No material change to the other fixed elements is established.",
+      "citation_coverage_complete": true
+    },
+    {
+      "scope": "all",
+      "verdict": "FN",
+      "hunk_id": "68952e4476e4-F01-H01",
+      "atomic_s0_id": "R1",
+      "relation": "supports",
+      "reference_hunk_relation": "SUPPORTS",
+      "temporal_basis": "BASELINE_2023",
+      "review_status": "no_material_relation",
+      "review_reason": "The added instrumentation counts Pod-level resize requests and transitions of an existing resize-status model. It provides aggregate monitoring, not a newly adopted model of resize progress (I3), per-container explanations and Events (R2), or a new distinction between desired, allocated, and applied resources (R1). The completion equality references those existing resource representations without changing or independently validating them. No material change to the other fixed elements is established.",
+      "citation_coverage_complete": true
+    },
+    {
+      "scope": "all",
+      "verdict": "FN",
+      "hunk_id": "68952e4476e4-F01-H01",
+      "atomic_s0_id": "R2",
+      "relation": "supports",
+      "reference_hunk_relation": "SUPPORTS",
+      "temporal_basis": "BASELINE_2023",
+      "review_status": "no_material_relation",
+      "review_reason": "The added instrumentation counts Pod-level resize requests and transitions of an existing resize-status model. It provides aggregate monitoring, not a newly adopted model of resize progress (I3), per-container explanations and Events (R2), or a new distinction between desired, allocated, and applied resources (R1). The completion equality references those existing resource representations without changing or independently validating them. No material change to the other fixed elements is established.",
+      "citation_coverage_complete": true
+    },
+    {
+      "scope": "all",
+      "verdict": "FN",
+      "hunk_id": "68952e4476e4-F01-H04",
+      "atomic_s0_id": "I1",
+      "relation": "supports",
+      "reference_hunk_relation": "SUPPORTS",
+      "temporal_basis": "BASELINE_2023",
+      "review_status": "no_material_relation",
+      "review_reason": "The hunk clarifies default-behavior documentation by naming status fields the kubelet sets, formats the feature-gate name, removes an unused enablement template, and advises against disabling the feature on a running node. The status-field statement describes the existing reporting representation rather than establishing a newly introduced mechanism or validation of I1 or R1; applied-resource reporting already appears in unchanged text. The node-level feature-disable caveat does not change the restart requirements for resizing a running Pod, and Q1 does not guarantee disruption-free feature rollback. No material effect on another fixed element is established.",
+      "citation_coverage_complete": true
+    },
+    {
+      "scope": "all",
+      "verdict": "FN",
+      "hunk_id": "964260d9c2da-F01-H08",
+      "atomic_s0_id": "I1",
+      "relation": "supersedes",
+      "reference_hunk_relation": "SUPERSEDES",
+      "temporal_basis": "BOTH",
+      "review_status": "no_material_relation",
+      "review_reason": "The hunk changes scheduler accounting inputs and how InProgress is treated. It does not itself change which quantities are reported, retire the desired/allocated/actual distinction, or newly introduce the progress-state model. These consumer-side changes do not establish a material effect on an exact fixed-S0 clause.",
+      "citation_coverage_complete": true
+    },
+    {
+      "scope": "all",
+      "verdict": "FN",
+      "hunk_id": "964260d9c2da-F01-H09",
+      "atomic_s0_id": "I1",
+      "relation": "supersedes",
+      "reference_hunk_relation": "SUPERSEDES",
+      "temporal_basis": "BOTH",
+      "review_status": "no_material_relation",
+      "review_reason": "The accounting rule switches consumers from AllocatedResources to Resources while retaining the same anti-race rationale. Fixed S0 does not prescribe that accounting input. Existing Resources reporting is not newly operationalised, and the unchanged CPU-manager caveat supplies no fresh effect.",
+      "citation_coverage_complete": true
+    },
+    {
+      "scope": "all",
+      "verdict": "FN",
+      "hunk_id": "964260d9c2da-F01-H11",
+      "atomic_s0_id": "I1",
+      "relation": "supersedes",
+      "reference_hunk_relation": "SUPERSEDES",
+      "temporal_basis": "BOTH",
+      "review_status": "no_material_relation",
+      "review_reason": "The changes revise quota accounting, status-update triggers, and a component checklist. Fixed S0 does not choose these accounting formulas or require initialization of AllocatedResources on Create. The hunk does not independently establish a replacement of the reporting contract; the surviving validation and resize-policy entries are invariants, not fresh evidence.",
+      "citation_coverage_complete": true
+    },
+    {
+      "scope": "all",
+      "verdict": "FN",
+      "hunk_id": "964260d9c2da-F01-H12",
+      "atomic_s0_id": "I1",
+      "relation": "supersedes",
+      "reference_hunk_relation": "SUPERSEDES",
+      "temporal_basis": "BOTH",
+      "review_status": "no_material_relation",
+      "review_reason": "The scheduler checklist changes its accounting input to actual Status.Resources. That is a consumer implementation change, not a local change to I1's reporting mechanism or R1's required distinctions. The unchanged Linux/Windows CRI statement is not new support for G3a.",
+      "citation_coverage_complete": true
+    },
+    {
+      "scope": "all",
+      "verdict": "FN",
+      "hunk_id": "964260d9c2da-F01-H13",
+      "atomic_s0_id": "R1",
+      "relation": "supports",
+      "reference_hunk_relation": "SUPPORTS",
+      "temporal_basis": "BOTH",
+      "review_status": "no_material_relation",
+      "review_reason": "The completed-state expression replaces a status-field reference with the conceptual allocated quantity. Successful completion still equates desired, allocated, and actual resources. This preserves the completion invariant rather than introducing a new state model or independently changing public reporting.",
+      "citation_coverage_complete": true
+    },
+    {
+      "scope": "all",
+      "verdict": "FN",
+      "hunk_id": "964260d9c2da-F01-H14",
+      "atomic_s0_id": "I1",
+      "relation": "weakens",
+      "reference_hunk_relation": "WEAKENS",
+      "temporal_basis": "BOTH",
+      "review_status": "no_material_relation",
+      "review_reason": "The addition discusses conditional alternatives for an allocated-status API. No alternative is adopted here. Its benefits and costs concern particular candidate fields, type choices, migration paths, and container-versus-Pod granularity; they do not establish retirement or incompatibility with a fixed-S0 requirement. Nor do they directly reduce the justification of S0's broad PodStatus reporting choice: several costs arise specifically from proposed representations that S0 does not choose. Prospective DRA support does not supersede the CPU/memory-only scope.",
+      "citation_coverage_complete": true
+    }
+  ],
+  "recommendation": "Do not loosen mechanical proof checks or add budget blindly: all scored sources were read and no generated effects were rejected. Revisit the semantic contract and applicability of target-local delta vs fixed-S0 evidence relations; retain scoped relation provenance and honest original/interim state separation."
+}
