@@ -32,15 +32,13 @@ The bundled offline example requires no model-provider API key, database service
 
 ### 1. Obtain the Code
 
-```bash
-git -c core.autocrlf=false clone https://github.com/sazizian/SANER-2027-EvoRationale.git
-cd SANER-2027-EvoRationale
-git config --local core.autocrlf false
-```
+For double-anonymous review, access the source code and supporting resources through the [anonymous artifact page](ANONYMOUS_ARTIFACT_URL).
 
-Alternatively, use **Code → Download ZIP** on GitHub and extract the archive.
+Download the anonymized source archive from that page and extract it to a local folder.
 
-In Cursor, select **File → Open Folder** and open the repository root: the folder containing `README.md`, `pyproject.toml`, and `evorationale/`. Run the following commands from that folder.
+In Cursor, select **File → Open Folder** and open the extracted project root: the folder containing `README.md`, `pyproject.toml`, and `evorationale/`.
+
+Run the installation and execution commands below from that folder. Git cloning is not required when using the source archive.
 
 ### 2. Create an Environment and Install
 
